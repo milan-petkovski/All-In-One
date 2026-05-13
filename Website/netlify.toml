@@ -1,0 +1,27 @@
+# All In One - Website Netlify Configuration
+[build]
+  # Vite build komanda
+  command = "npm run build"
+  # Vite uvek izbacuje fajlove u dist folder
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/api/track"
+  to = "/.netlify/functions/track"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/health"
+  to = "/.netlify/functions/health"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/index"
+  status = 200
+  force = true
