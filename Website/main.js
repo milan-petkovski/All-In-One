@@ -15,7 +15,7 @@ async function applyLanguage(lang) {
     document.documentElement.lang = lang === 'sr' ? 'sr_RS' : 'en';
 
     try {
-        const response = await fetch(`${lang}.json`);
+        const response = await fetch(`/${lang}.json`);
         if (!response.ok) throw new Error("Neuspešno učitavanje JSON-a");
         
         const translations = await response.json();
