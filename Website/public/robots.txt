@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /hvala.html
-Disallow: /obrisano.html
-Disallow: /404.html
+Disallow: /hvala
+Disallow: /obrisano
+Disallow: /404
 
 Sitemap: https://allinone.milanwebportal.com/sitemap.xml
