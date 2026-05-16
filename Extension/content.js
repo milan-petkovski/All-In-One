@@ -121,7 +121,12 @@ function runMainContentScript() {
         const physicalY = Math.floor(y * dpr);
         const pixel = ctx.getImageData(physicalX, physicalY, 1, 1).data;
         const hex = rgbToHex(pixel[0], pixel[1], pixel[2]);
-        tooltip.innerHTML = `<div style="width:12px;height:12px;border-radius:50%;background:${hex};border:1px solid rgba(255,255,255,0.2);"></div><span>${hex}</span>`;
+        tooltip.textContent = '';
+        const dot = document.createElement('div');
+        dot.style.cssText = `width:12px;height:12px;border-radius:50%;background:${hex};border:1px solid rgba(255,255,255,0.2);`;
+        const span = document.createElement('span');
+        span.textContent = hex;
+        tooltip.append(dot, span);
         magCtx.clearRect(0, 0, MAG_SIZE, MAG_SIZE);
         const sourceX = physicalX - Math.floor(zoom / 2);
         const sourceY = physicalY - Math.floor(zoom / 2);
@@ -149,7 +154,19 @@ function runMainContentScript() {
         const toast = document.createElement('div');
         const copiedMsg = getI18nMsg("colorPickerCopied");
         toast.style.cssText = `position:fixed;bottom:40px;left:50%;transform:translateX(-50%) translateY(20px);background:#16161e;color:#fff;padding:12px 25px;border-radius:12px;font-family:sans-serif;font-weight:bold;border:1px solid ${hex};z-index:2147483647;opacity:0;transition:all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);box-shadow:0 10px 30px rgba(0,0,0,0.5);display:flex;align-items:center;gap:10px;`;
-        toast.innerHTML = `<span style="color:#00ff88;">✓</span> ${copiedMsg} <span style="color:#00ff88;font-size:16px;">${hex}</span>`;
+        
+        const check = document.createElement('span');
+        check.style.color = '#00ff88';
+        check.textContent = '✓';
+        
+        const msgText = document.createTextNode(` ${copiedMsg} `);
+        
+        const hexText = document.createElement('span');
+        hexText.style.color = '#00ff88';
+        hexText.style.fontSize = '16px';
+        hexText.textContent = hex;
+        
+        toast.append(check, msgText, hexText);
         document.body.appendChild(toast);
         requestAnimationFrame(() => { toast.style.opacity = '1'; toast.style.transform = 'translateX(-50%) translateY(0)'; });
         setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateX(-50%) translateY(20px)'; setTimeout(() => toast.remove(), 500); }, 2500);
@@ -198,13 +215,28 @@ function runMainContentScript() {
         r.style.left = Math.min(e.clientX, sx) + "px";
         r.style.top = Math.min(e.clientY, sy) + "px";
         r.style.width = w + "px"; r.style.height = h + "px";
-        r.innerHTML = `
-          <div style="background:rgba(0,0,0,0.75); padding:6px 12px; border-radius:8px; color:#00ff88; font-size:14px; font-weight:600; backdrop-filter:blur(4px); border:1px solid rgba(0,255,136,0.3); display:flex; gap:10px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
-            <span><span style="color:#fff; opacity:0.7;">W:</span> ${w}px</span>
-            <span style="color:rgba(255,255,255,0.2);">|</span>
-            <span><span style="color:#fff; opacity:0.7;">H:</span> ${h}px</span>
-          </div>
-        `;
+        
+        r.textContent = '';
+        const badge = document.createElement('div');
+        badge.style.cssText = "background:rgba(0,0,0,0.75); padding:6px 12px; border-radius:8px; color:#00ff88; font-size:14px; font-weight:600; backdrop-filter:blur(4px); border:1px solid rgba(0,255,136,0.3); display:flex; gap:10px; box-shadow:0 4px 15px rgba(0,0,0,0.5);";
+        
+        const wLabel = document.createElement('span');
+        wLabel.style.color = '#fff'; wLabel.style.opacity = '0.7'; wLabel.textContent = 'W: ';
+        const wVal = document.createTextNode(`${w}px`);
+        const wCont = document.createElement('span');
+        wCont.append(wLabel, wVal);
+
+        const divider = document.createElement('span');
+        divider.style.color = 'rgba(255,255,255,0.2)'; divider.textContent = '|';
+
+        const hLabel = document.createElement('span');
+        hLabel.style.color = '#fff'; hLabel.style.opacity = '0.7'; hLabel.textContent = 'H: ';
+        const hVal = document.createTextNode(`${h}px`);
+        const hCont = document.createElement('span');
+        hCont.append(hLabel, hVal);
+
+        badge.append(wCont, divider, hCont);
+        r.appendChild(badge);
       }
     };
     ov.onmouseup = onGlobalMouseUp;
@@ -262,7 +294,12 @@ function runMainContentScript() {
       currentTarget = result.node;
       const cistFont = result.font || "Unknown Font";
       tooltip.style.display = 'block';
-      tooltip.innerHTML = "<span style='color: #a0a0a8; font-size: 10px; display: block; margin-bottom: 2px;'>Font:</span>" + cistFont;
+      tooltip.textContent = '';
+      const label = document.createElement('span');
+      label.style.cssText = 'color: #a0a0a8; font-size: 10px; display: block; margin-bottom: 2px;';
+      label.textContent = 'Font:';
+      const fontName = document.createTextNode(cistFont);
+      tooltip.append(label, fontName);
     };
     const mouseMoveHandler = (e) => {
       if (tooltip.style.display === 'block') {
@@ -284,7 +321,12 @@ function runMainContentScript() {
       toast.className = "aio-font-toast";
       const copiedText = getI18nMsg("fontCopied", "Copied!");
       const notCopiedText = getI18nMsg("fontNotCopied", "Not copied");
-      toast.innerHTML = `<span style='color: #a0a0a8; font-size: 12px; display: block; margin-bottom: 4px;'>${copied ? copiedText : notCopiedText}</span>${cistFont}`;
+      toast.textContent = '';
+      const label = document.createElement('span');
+      label.style.cssText = 'color: #a0a0a8; font-size: 12px; display: block; margin-bottom: 4px;';
+      label.textContent = copied ? copiedText : notCopiedText;
+      const fontVal = document.createTextNode(cistFont);
+      toast.append(label, fontVal);
       document.body.appendChild(toast);
       requestAnimationFrame(() => { toast.style.opacity = "1"; toast.style.transform = "translateX(-50%) translateY(0)"; });
       setTimeout(() => {
@@ -614,73 +656,72 @@ function runMainContentScript() {
     cookieScanDebounceId = setTimeout(killCookies, 100);
   };
 
+  const processedElements = new WeakSet();
+  let cookieCleanupPending = false;
+
   const killCookies = () => {
-    const selectors = [
-      '[id*="cookie"]', '[class*="cookie"]',
-      '[id*="consent"]', '[class*="consent"]',
-      '[id*="onetrust"]', '[class*="onetrust"]',
-      '[id*="trustarc"]', '[class*="trustarc"]',
-      '[id*="gdpr"]', '[class*="gdpr"]',
-      '[id*="cmp"]', '[class*="cmp"]',
-      '[data-testid*="cookie"]', '[data-testid*="consent"]',
-      '[aria-label*="cookie" i]', '[aria-label*="consent" i]',
-      '.fc-consent-root', '.qc-cmp2-container', '.qc-cmp2-ui'
-    ];
+    if (cookieCleanupPending) return;
+    cookieCleanupPending = true;
 
-    document.querySelectorAll(selectors.join(",")).forEach(hideCookieElement);
+    const runCleanup = () => {
+      const selectors = [
+        '[id*="cookie" i]', '[class*="cookie" i]',
+        '[id*="consent" i]', '[class*="consent" i]',
+        '[id*="gdpr" i]', '[class*="gdpr" i]',
+        '.fc-consent-root', '.qc-cmp2-container'
+      ];
 
-    if (!document.getElementById("aio-cookie-hide-style")) {
-      const style = document.createElement("style");
-      style.id = "aio-cookie-hide-style";
-      style.textContent = `
-      [id*="cookie"], [class*="cookie"],
-      [id*="consent"], [class*="consent"],
-      [id*="onetrust"], [class*="onetrust"],
-      [id*="trustarc"], [class*="trustarc"],
-      [id*="gdpr"], [class*="gdpr"],
-      [data-testid*="cookie"], [data-testid*="consent"] {
-        display: none !important;
-        visibility: hidden !important;
-      }
-    `;
-      document.documentElement.appendChild(style);
-    }
+      try {
+        const elements = document.querySelectorAll(selectors.join(","));
+        elements.forEach(el => {
+          if (processedElements.has(el)) return;
+          processedElements.add(el);
+          
+          // Bezbedno sakrivanje bez brisanja (manje destruktivno za layout)
+          el.style.setProperty("display", "none", "important");
+          el.style.setProperty("visibility", "hidden", "important");
+          el.style.setProperty("pointer-events", "none", "important");
+          el.setAttribute("aria-hidden", "true");
+        });
+      } catch (e) {}
 
-    if (cookieObserver) return;
-
-    let cookieCleanupDebounceId = null;
-    const debouncedCookieCleanup = () => {
-      if (cookieCleanupDebounceId) clearTimeout(cookieCleanupDebounceId);
-      cookieCleanupDebounceId = setTimeout(() => {
-        requestAnimationFrame(killCookies);
-      }, 150);
+      cookieCleanupPending = false;
     };
 
-    cookieObserver = new MutationObserver(debouncedCookieCleanup);
+    if (window.requestIdleCallback) {
+      window.requestIdleCallback(runCleanup, { timeout: 500 });
+    } else {
+      setTimeout(runCleanup, 150);
+    }
+  };
+
+  const enableCookieBlock = () => {
+    if (cookieObserver) return;
+    
+    // Inicijalni scan
+    killCookies();
+
+    cookieObserver = new MutationObserver((mutations) => {
+      // Filtriramo mutacije: samo ako su dodati nodovi
+      const hasAddedNodes = mutations.some(m => m.addedNodes.length > 0);
+      if (hasAddedNodes) killCookies();
+    });
+
     cookieObserver.observe(document.documentElement, {
       childList: true,
       subtree: true
     });
   };
 
-  const enableCookieBlock = () => {
-
-    debouncedCookieScan();
-  };
-
   const disableCookieBlock = () => {
-
     if (cookieScanTimer) {
       clearTimeout(cookieScanTimer);
       cookieScanTimer = null;
     }
-
-    if (!cookieObserver) return;
-    cookieObserver.disconnect();
-    cookieObserver = null;
-
-    const style = document.getElementById("aio-cookie-hide-style");
-    if (style) style.remove();
+    if (cookieObserver) {
+      cookieObserver.disconnect();
+      cookieObserver = null;
+    }
   };
 
   chrome.storage.local.get("cookieBlock", (res) => {

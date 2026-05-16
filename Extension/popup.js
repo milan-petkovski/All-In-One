@@ -86,18 +86,22 @@ document.addEventListener("DOMContentLoaded", async () => {
         const mainView = document.getElementById("mainView");
         const overlay = document.createElement("div");
         overlay.className = "restricted-overlay";
-        overlay.innerHTML = `
-            <div class="overlay-content">
-                <div class="lock-glow">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                    </svg>
-                </div>
-                <p>${getI18nMsg("systemPageTitle", "SISTEMSKA STRANICA")}</p>
-                <span>${getI18nMsg("systemPageDesc", "Alati za modifikaciju su onemogućeni")}</span>
-            </div>
-        `;
+        
+        const content = document.createElement("div");
+        content.className = "overlay-content";
+        
+        const lockGlow = document.createElement("div");
+        lockGlow.className = "lock-glow";
+        lockGlow.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>`;
+        
+        const p = document.createElement("p");
+        p.textContent = getI18nMsg("systemPageTitle", "SISTEMSKA STRANICA");
+        
+        const span = document.createElement("span");
+        span.textContent = getI18nMsg("systemPageDesc", "Alati za modifikaciju su onemogućeni");
+        
+        content.append(lockGlow, p, span);
+        overlay.appendChild(content);
         mainView.appendChild(overlay);
     }
     //#region DOM ELEMENATI
@@ -607,9 +611,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }
     function sanitizeNotesHtml(rawHtml = "") {
-        const template = document.createElement("template");
-        template.innerHTML = rawHtml;
-        const allowedTags = new Set(["b", "i", "a", "br", "div", "span", "ul", "ol", "li", "p"]);
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(rawHtml, "text/html");
+        const allowedTags = new Set(["B", "I", "A", "BR", "DIV", "SPAN", "UL", "OL", "LI", "P"]);
+        
         const sanitizeNode = (node) => {
             if (node.nodeType === Node.TEXT_NODE) {
                 return document.createTextNode(node.textContent || "");
@@ -617,34 +622,43 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (node.nodeType !== Node.ELEMENT_NODE) {
                 return document.createTextNode("");
             }
-            const tag = node.tagName.toLowerCase();
+            
+            const tag = node.tagName.toUpperCase();
             if (!allowedTags.has(tag)) {
                 return document.createTextNode(node.textContent || "");
             }
+            
             const clean = document.createElement(tag);
-            if (tag === "a") {
-                const safeHref = getSafeHttpUrl(node.getAttribute("href") || "");
-                if (safeHref) {
-                    clean.setAttribute("href", safeHref);
+            
+            // Atributi su strogo ograničeni
+            if (tag === "A") {
+                const href = node.getAttribute("href") || "";
+                if (href.startsWith("https://") || href.startsWith("http://")) {
+                    clean.setAttribute("href", href);
                     clean.setAttribute("target", "_blank");
                     clean.setAttribute("rel", "noopener noreferrer");
                 }
             }
-            if (tag === "b") {
-                const styleVal = (node.getAttribute("style") || "").replace(/\s+/g, "").toLowerCase();
-                if (styleVal === "color:var(--accent);" || styleVal === "color:var(--accent)") {
+            
+            if (tag === "B" || tag === "SPAN") {
+                const style = node.getAttribute("style");
+                if (style && (style.includes("color: var(--accent)") || style.includes("color:var(--accent)"))) {
                     clean.setAttribute("style", "color: var(--accent);");
                 }
             }
+            
             Array.from(node.childNodes).forEach((child) => {
                 clean.appendChild(sanitizeNode(child));
             });
+            
             return clean;
         };
+        
         const root = document.createElement("div");
-        Array.from(template.content.childNodes).forEach((child) => {
+        Array.from(doc.body.childNodes).forEach((child) => {
             root.appendChild(sanitizeNode(child));
         });
+        
         return root.innerHTML;
     }
     function persistNotesHtml(safeHtml) {

@@ -109,35 +109,57 @@ async function pokreniMarker() {
 
         const menu = document.createElement("div");
         menu.className = "marker-menu";
-        menu.innerHTML = `
-            <div class="marker-btns">
-                <div class="marker-color-picker-wrapper" id="colorWrapper">
-                    <input type="color" id="markerColorPicker" value="#00ff88">
-                </div>
-                <button id="m_brush" class="active" title="${getMsg("markerDrawTooltip", "Crtaj")}">
-                    <svg viewBox="0 0 24 24"><path d="M13 21h8"/><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/></svg>
-                </button>
-                <button id="m_line" title="${getMsg("markerLineTooltip", "Linija")}">
-                    <svg viewBox="0 0 24 24"><line x1="5" y1="19" x2="19" y2="5"/></svg>
-                </button>
-                <button id="m_text" title="${getMsg("markerTextTooltip", "Tekst")}">
-                    <svg viewBox="0 0 24 24"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
-                </button>
-                <button id="m_move" title="${getMsg("markerMoveTooltip", "Pomeri")}">
-                    <svg viewBox="0 0 24 24"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="19 9 22 12 19 15"/><polyline points="9 19 12 22 15 19"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
-                </button>
-                <button id="m_eraser" title="${getMsg("markerEraseTooltip", "Briši")}">
-                    <svg viewBox="0 0 24 24"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></svg>
-                </button>
-                <button id="m_clear" title="${getMsg("markerClearAllTooltip", "Obriši sve")}">
-                    <svg viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
-                </button>
-            </div>
-            <input type="range" id="m_size" min="2" max="30" value="5" title="${getMsg("markerThicknessTooltip", "Debljina")}">
-            <button id="m_close" class="close-btn" title="${getMsg("markerCloseTooltip", "Zatvori")}">
-                <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-            </button>
-        `;
+        
+        const btnContainer = document.createElement("div");
+        btnContainer.className = "marker-btns";
+
+        const colorWrap = document.createElement("div");
+        colorWrap.className = "marker-color-picker-wrapper";
+        colorWrap.id = "colorWrapper";
+        const colorInput = document.createElement("input");
+        colorInput.type = "color";
+        colorInput.id = "markerColorPicker";
+        colorInput.value = "#00ff88";
+        colorWrap.appendChild(colorInput);
+        btnContainer.appendChild(colorWrap);
+
+        const createBtn = (id, iconSvg, title) => {
+            const btn = document.createElement("button");
+            btn.id = id;
+            btn.title = title;
+            if (id === "m_brush") btn.className = "active";
+            btn.innerHTML = iconSvg; // SVGs are safe as they are hardcoded below
+            return btn;
+        };
+
+        const tools = [
+            { id: "m_brush", icon: `<svg viewBox="0 0 24 24"><path d="M13 21h8"/><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/></svg>`, title: getMsg("markerDrawTooltip", "Crtaj") },
+            { id: "m_line", icon: `<svg viewBox="0 0 24 24"><line x1="5" y1="19" x2="19" y2="5"/></svg>`, title: getMsg("markerLineTooltip", "Linija") },
+            { id: "m_text", icon: `<svg viewBox="0 0 24 24"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>`, title: getMsg("markerTextTooltip", "Tekst") },
+            { id: "m_move", icon: `<svg viewBox="0 0 24 24"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="19 9 22 12 19 15"/><polyline points="9 19 12 22 15 19"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>`, title: getMsg("markerMoveTooltip", "Pomeri") },
+            { id: "m_eraser", icon: `<svg viewBox="0 0 24 24"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></svg>`, title: getMsg("markerEraseTooltip", "Briši") },
+            { id: "m_clear", icon: `<svg viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>`, title: getMsg("markerClearAllTooltip", "Obriši sve") }
+        ];
+
+        tools.forEach(t => btnContainer.appendChild(createBtn(t.id, t.icon, t.title)));
+        menu.appendChild(btnContainer);
+
+        const sizeInput = document.createElement("input");
+        sizeInput.type = "range";
+        sizeInput.id = "m_size";
+        sizeInput.min = "2";
+        sizeInput.max = "30";
+        sizeInput.value = "5";
+        sizeInput.title = getMsg("markerThicknessTooltip", "Debljina");
+        menu.appendChild(sizeInput);
+
+        const closeBtn = document.createElement("button");
+        closeBtn.id = "m_close";
+        closeBtn.className = "close-btn";
+        closeBtn.title = getMsg("markerCloseTooltip", "Zatvori");
+        closeBtn.innerHTML = `<svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`;
+        menu.appendChild(closeBtn);
+
         document.body.appendChild(menu);
 
         // --- SMART DOCKING LOGIC ---

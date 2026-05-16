@@ -42,14 +42,22 @@ function trackEvent(eventName, eventData = {}) {
 
     ensureGaClientId()
         .then((clientId) => {
+            const sanitizedData = { ...eventData };
+            if (sanitizedData.page_location) {
+                try {
+                    const u = new URL(sanitizedData.page_location);
+                    sanitizedData.page_location = u.origin + u.pathname;
+                } catch {
+                    delete sanitizedData.page_location;
+                }
+            }
+
             const body = {
                 client_id: clientId,
                 events: [
                     {
                         name: eventName,
-                        params: {
-                            ...eventData
-                        }
+                        params: sanitizedData
                     }
                 ]
             };
