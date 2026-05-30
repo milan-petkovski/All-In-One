@@ -30,7 +30,36 @@ function ensureGaClientId() {
     return gaClientIdPromise;
 }
 
+let analyticsQueue = [];
+let analyticsTimeout = null;
+let lastClearSiteDataAt = 0;
+let analyticsOptOut = false;
+
+const logger = {
+    info: (...args) => console.info("[All In One]", ...args),
+    warn: (...args) => console.warn("[All In One]", ...args),
+    error: (...args) => console.error("[All In One]", ...args)
+};
+
+chrome.storage.local.get(["analyticsOptOut"], (res) => {
+    analyticsOptOut = res.analyticsOptOut === true;
+});
+
+chrome.storage.onChanged.addListener((changes) => {
+    if (changes.analyticsOptOut) {
+        analyticsOptOut = changes.analyticsOptOut.newValue === true;
+        if (analyticsOptOut) {
+            analyticsQueue = [];
+            if (analyticsTimeout) {
+                clearTimeout(analyticsTimeout);
+                analyticsTimeout = null;
+            }
+        }
+    }
+});
+
 function trackEvent(eventName, eventData = {}) {
+    if (analyticsOptOut) return;
     ensureEventStatsCache().then(() => {
         eventStatsCache[eventName] = (eventStatsCache[eventName] || 0) + 1;
         if (eventStatsDebounce) clearTimeout(eventStatsDebounce);
@@ -40,26 +69,47 @@ function trackEvent(eventName, eventData = {}) {
         }, 300);
     }).catch(() => { });
 
+    const sanitizedData = { ...eventData };
+    if (sanitizedData.page_location) {
+        try {
+            const u = new URL(sanitizedData.page_location);
+            sanitizedData.page_location = u.origin + u.pathname;
+        } catch {
+            delete sanitizedData.page_location;
+        }
+    }
+
+    analyticsQueue.push({
+        name: eventName,
+        params: sanitizedData
+    });
+
+    if (analyticsQueue.length >= 20) {
+        if (analyticsTimeout) {
+            clearTimeout(analyticsTimeout);
+            analyticsTimeout = null;
+        }
+        flushAnalyticsQueue();
+    } else if (!analyticsTimeout) {
+        analyticsTimeout = setTimeout(flushAnalyticsQueue, 5000);
+    }
+}
+
+function flushAnalyticsQueue() {
+    if (analyticsTimeout) {
+        clearTimeout(analyticsTimeout);
+        analyticsTimeout = null;
+    }
+    if (analyticsQueue.length === 0) return;
+
+    const eventsToFlush = [...analyticsQueue];
+    analyticsQueue = [];
+
     ensureGaClientId()
         .then((clientId) => {
-            const sanitizedData = { ...eventData };
-            if (sanitizedData.page_location) {
-                try {
-                    const u = new URL(sanitizedData.page_location);
-                    sanitizedData.page_location = u.origin + u.pathname;
-                } catch {
-                    delete sanitizedData.page_location;
-                }
-            }
-
             const body = {
                 client_id: clientId,
-                events: [
-                    {
-                        name: eventName,
-                        params: sanitizedData
-                    }
-                ]
+                events: eventsToFlush
             };
             return fetch(AIO_API_ENDPOINT, {
                 method: "POST",
@@ -70,18 +120,30 @@ function trackEvent(eventName, eventData = {}) {
         })
         .then((response) => {
             if (response && !response.ok) {
-                console.warn("GA fetch failed:", response.status, response.statusText);
+                logger.warn("GA fetch failed:", response.status, response.statusText);
             }
         })
         .catch((err) => {
-            console.warn("GA fetch error:", err);
+            logger.warn("GA fetch error:", err);
         });
 }
+
+chrome.runtime.onSuspend?.addListener(() => {
+    flushAnalyticsQueue();
+});
 
 // --- OFFSCREEN ---
 let offscreenCreating = false;
 let offscreenCreatePromise = null;
 let bgI18nDict = null;
+let systemIdleState = 'active'; // 'active' | 'idle' | 'locked'
+
+/**
+ * @typedef {Object} NetworkInfoResult
+ * @property {string} category
+ * @property {string} name
+ * @property {string=} detail
+ */
 
 chrome.storage.onChanged.addListener((changes) => {
     if (changes.appLang) {
@@ -120,6 +182,69 @@ function safeSendRuntimeMessage(payload) {
     }
 }
 
+// Šalje poruku offscreen dokumentu sa jednim retry-em posle 80ms
+// u slučaju da offscreen listener još nije registrovan.
+function sendToOffscreen(payload) {
+    if (!chrome?.runtime?.id) return Promise.resolve({ ok: false, error: "runtime_unavailable" });
+
+    const sendOnce = () => new Promise((resolve) => {
+        try {
+            chrome.runtime.sendMessage(payload, (res) => {
+                if (chrome.runtime.lastError || res === undefined) {
+                    resolve({ ok: false, error: chrome.runtime.lastError?.message || "no_response" });
+                    return;
+                }
+                resolve(res);
+            });
+        } catch (err) {
+            resolve({ ok: false, error: err?.message || "send_failed" });
+        }
+    });
+
+    return sendOnce().then((res) => {
+        if (res?.ok) return res;
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                sendOnce().then(resolve);
+            }, 80);
+        });
+    });
+}
+
+/**
+ * Resolves DNS/IP details in the extension background context so scanned pages
+ * never observe the third-party network requests.
+ * @param {string} hostname
+ * @returns {Promise<NetworkInfoResult[]>}
+ */
+async function resolveNetworkInfo(hostname) {
+    const host = String(hostname || "").trim();
+    if (!/^[a-z0-9.-]+$/i.test(host) || host.length > 255) return [];
+    const results = [];
+    try {
+        const dnsRes = await fetch(`https://dns.google/resolve?name=${encodeURIComponent(host)}&type=A`);
+        const dnsJson = await dnsRes.json();
+        const ip = dnsJson?.Answer?.find(a => a.type === 1)?.data;
+        if (!ip) return results;
+
+        const ipinfoRes = await fetch(`https://ipinfo.io/${encodeURIComponent(ip)}/json`);
+        const ipinfo = await ipinfoRes.json();
+        if (ipinfo.ip) results.push({ category: "Mreža", name: ipinfo.ip });
+        if (ipinfo.hostname) results.push({ category: "Mreža", name: ipinfo.hostname });
+        if (ipinfo.org) results.push({ category: "Mreža", name: ipinfo.org });
+        const locationParts = [];
+        if (ipinfo.city) locationParts.push(ipinfo.city);
+        if (ipinfo.country) locationParts.push(ipinfo.country);
+        if (locationParts.length) results.push({ category: "Mreža", name: locationParts.join(", ") });
+        if (ipinfo.loc) results.push({ category: "Mreža", name: ipinfo.loc });
+        if (ipinfo.timezone) results.push({ category: "Mreža", name: ipinfo.timezone });
+        if (ipinfo.postal) results.push({ category: "Mreža", name: ipinfo.postal });
+    } catch (_) {
+        return results;
+    }
+    return results;
+}
+
 async function setupOffscreen() {
     if (await chrome.offscreen.hasDocument()) return;
 
@@ -151,7 +276,7 @@ async function playSystemSound(type) {
         await setupOffscreen();
         safeSendRuntimeMessage({ action: "playAudio", soundType: type });
     } catch (e) {
-        console.error("Audio error:", e);
+        logger.error("Audio error:", e);
     }
 }
 
@@ -219,6 +344,11 @@ async function clearSiteDataEverywhere(urlString) {
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     const action = request?.action;
 
+    if (action === "get_system_idle_state") {
+        sendResponse({ state: systemIdleState });
+        return false;
+    }
+
     if (action === "sw_start_session") {
         chrome.storage.local.set({ lastLapTime: 0 }).catch(() => { });
         sendResponse({ ok: true });
@@ -235,6 +365,33 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             sendResponse({ ok: false, error: err?.message || "error" });
         }
         return false;
+    }
+
+    if (action === "tech_resolve_network_info") {
+        (async () => {
+            try {
+                const results = await resolveNetworkInfo(request.hostname);
+                sendResponse({ ok: true, results });
+            } catch (err) {
+                sendResponse({ ok: false, results: [], error: err?.message || "error" });
+            }
+        })();
+        return true;
+    }
+
+    if (action === "get_locale_messages") {
+        (async () => {
+            try {
+                const lang = typeof request.lang === "string" ? request.lang : "sr";
+                const res = await fetch(chrome.runtime.getURL(`_locales/${lang}/messages.json`));
+                if (!res.ok) throw new Error("fetch_failed");
+                const json = await res.json();
+                sendResponse({ ok: true, messages: json });
+            } catch (err) {
+                sendResponse({ ok: false, error: err?.message || "error" });
+            }
+        })();
+        return true;
     }
 
     if (action === "shortcut_triggered") {
@@ -271,19 +428,28 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     }
 
     if (action === "playCustomUrl") {
-        const radioTitle = bgI18nDict?.radioTitle?.message || "Radio IN";
-        const radioArtist = bgI18nDict?.radioArtist?.message || "Pokreće All In One ekstenzija";
-        const currentVol = request.volume ?? 12;
+        (async () => {
+            await setupOffscreen();
+            const radioTitle = bgI18nDict?.radioTitle?.message || "Radio IN";
+            const radioArtist = bgI18nDict?.radioArtist?.message || "Pokreće All In One ekstenzija";
+            let currentVol = request.volume;
+            if (currentVol === undefined) {
+                const data = await chrome.storage.local.get(['volume']);
+                currentVol = data.volume ?? 30;
+            }
 
-        safeSendRuntimeMessage({
-            action: "play",
-            volume: currentVol,
-            title: radioTitle,
-            artist: radioArtist,
-            url: request.url
-        });
-        sendResponse({ ok: true });
-        return false;
+            const playResponse = await sendToOffscreen({
+                action: "play",
+                volume: currentVol,
+                title: radioTitle,
+                artist: radioArtist,
+                url: request.url
+            });
+            const ok = playResponse?.ok === true;
+            await chrome.storage.local.set({ playing: ok }).catch(() => { });
+            sendResponse({ ok });
+        })();
+        return true;
     }
 
     if (action === "setRadioVolume") {
@@ -300,10 +466,10 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                 const data = await chrome.storage.local.get(['volume']);
                 sendResponse({
                     playing: isActuallyPlaying,
-                    volume: data.volume !== undefined ? data.volume : 12
+                    volume: data.volume !== undefined ? data.volume : 30
                 });
             } catch (err) {
-                try { sendResponse({ playing: false, volume: 12, error: err?.message || "error" }); } catch { }
+                try { sendResponse({ playing: false, volume: 30, error: err?.message || "error" }); } catch { }
             }
         })();
         return true;
@@ -312,23 +478,25 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (action === "hardwarePlay") {
         (async () => {
             try {
+                await setupOffscreen();
                 const data = await chrome.storage.local.get(['volume']);
-                const currentVol = data.volume ?? 12;
+                const currentVol = data.volume ?? 30;
 
                 const radioTitle = bgI18nDict?.radioTitle?.message || "Radio IN";
                 const radioArtist = bgI18nDict?.radioArtist?.message || "Pokreće All In One ekstenzija";
                 const storage = await chrome.storage.local.get(['customRadioUrl']);
                 const customUrl = storage.customRadioUrl;
 
-                safeSendRuntimeMessage({
+                const playResponse = await sendToOffscreen({
                     action: "play",
                     volume: currentVol,
                     title: radioTitle,
                     artist: radioArtist,
                     url: customUrl
                 });
-                await chrome.storage.local.set({ playing: true }).catch(() => { });
-                sendResponse({ ok: true });
+                const ok = playResponse?.ok === true;
+                await chrome.storage.local.set({ playing: ok }).catch(() => { });
+                sendResponse({ ok });
             } catch (err) {
                 try { sendResponse({ ok: false, error: err?.message || "error" }); } catch { }
             }
@@ -342,6 +510,13 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             sendResponse({ ok: true });
         });
         return true;
+    }
+
+    if (action === "radio_status") {
+        const isPlaying = Boolean(request.playing);
+        chrome.storage.local.set({ playing: isPlaying }).catch(() => { });
+        sendResponse({ ok: true });
+        return false;
     }
 
     if (action === "manual_lap") {
@@ -360,10 +535,19 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                 const today = new Date();
                 const dateKey = `tracker_${today.getFullYear()}_${today.getMonth() + 1}_${today.getDate()}`;
                 if (trackerCache && trackerCache[dateKey]) {
-                    await chrome.storage.local.set({ [dateKey]: trackerCache[dateKey] });
+                    const resolveFn = trackerWriteResolve;
+                    const rejectFn = trackerWriteReject;
+                    trackerWritePromise = null;
+                    trackerWriteResolve = null;
+                    trackerWriteReject = null;
+                    try {
+                        await chrome.storage.local.set({ [dateKey]: trackerCache[dateKey] });
+                        if (resolveFn) resolveFn();
+                    } catch (err) {
+                        if (rejectFn) rejectFn(err);
+                    }
                 }
             }
-            await trackerWriteQueue;
         });
         run.then(() => sendResponse({ ok: true })).catch(() => sendResponse({ ok: false }));
         return true;
@@ -404,11 +588,17 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     }
 
     if (action === "clearSiteData") {
+        const now = Date.now();
+        if (now - lastClearSiteDataAt < 1500) {
+            sendResponse({ ok: false, error: "rate_limited" });
+            return false;
+        }
+        lastClearSiteDataAt = now;
         const targetUrl = typeof request.url === "string" ? request.url : "";
         clearSiteDataEverywhere(targetUrl)
             .then(() => sendResponse({ ok: true }))
             .catch((err) => {
-                console.error("clearSiteData error:", err);
+                logger.error("clearSiteData error:", err);
                 sendResponse({ ok: false });
             });
         return true;
@@ -431,7 +621,7 @@ async function handleToggle(sendResponse) {
         await setupOffscreen();
         const data = await chrome.storage.local.get(['playing', 'volume']);
         const newState = !data.playing;
-        const currentVol = data.volume ?? 12;
+        const currentVol = data.volume ?? 30;
 
         if (newState) {
             const radioTitle = bgI18nDict?.radioTitle?.message || "Radio IN";
@@ -439,31 +629,40 @@ async function handleToggle(sendResponse) {
             const storage = await chrome.storage.local.get(['customRadioUrl']);
             const customUrl = storage.customRadioUrl;
 
-            safeSendRuntimeMessage({
+            const playResponse = await sendToOffscreen({
                 action: "play",
                 volume: currentVol,
                 title: radioTitle,
                 artist: radioArtist,
                 url: customUrl
             });
+            if (playResponse?.ok !== true) {
+                await chrome.storage.local.set({ playing: false }).catch(() => { });
+                if (sendResponse) sendResponse({ ok: false, playing: false });
+                return;
+            }
         } else {
-            safeSendRuntimeMessage({ action: "pause" });
-            await chrome.storage.local.set({ volume: 12 });
+            await sendToOffscreen({ action: "pause" });
         }
 
         await chrome.storage.local.set({ playing: newState }).catch(() => { });
         if (sendResponse) sendResponse({ ok: true, playing: newState });
     } catch (err) {
-        console.error("toggleRadio error:", err);
+        logger.error("toggleRadio error:", err);
         if (sendResponse) sendResponse({ ok: false, playing: false });
     }
 }
 
-let trackerWriteQueue = Promise.resolve();
+let trackerWritePromise = null;
+let trackerWriteResolve = null;
+let trackerWriteReject = null;
 let trackerMutationQueue = Promise.resolve();
 let trackerCache = null;
 let trackerCacheLoadPromise = null;
 let trackerDebounce = null;
+let trackerIndexCache = null;
+let trackerIndexLoadPromise = null;
+let trackerIndexDebounce = null;
 
 function getTrackableSeconds(diff) {
     if (!Number.isFinite(diff) || diff <= 0) return 0;
@@ -492,10 +691,37 @@ function runTrackerMutation(task) {
     trackerMutationQueue = trackerMutationQueue
         .then(task)
         .catch((err) => {
-            console.error("Tracker mutation error:", err);
+            logger.error("Tracker mutation error:", err);
         });
 
     return trackerMutationQueue;
+}
+
+function ensureTrackerIndex() {
+    if (trackerIndexCache) return Promise.resolve(trackerIndexCache);
+    if (!trackerIndexLoadPromise) {
+        trackerIndexLoadPromise = chrome.storage.local.get(["tracker_index"]).then((res) => {
+            const raw = Array.isArray(res.tracker_index) ? res.tracker_index : [];
+            trackerIndexCache = new Set(raw.filter((k) => typeof k === "string"));
+            trackerIndexLoadPromise = null;
+            return trackerIndexCache;
+        }).catch(() => {
+            trackerIndexCache = new Set();
+            trackerIndexLoadPromise = null;
+            return trackerIndexCache;
+        });
+    }
+    return trackerIndexLoadPromise;
+}
+
+function scheduleTrackerIndexWrite() {
+    if (trackerIndexDebounce) clearTimeout(trackerIndexDebounce);
+    trackerIndexDebounce = setTimeout(() => {
+        if (!trackerIndexCache) return;
+        const payload = Array.from(trackerIndexCache);
+        chrome.storage.local.set({ tracker_index: payload }).catch(() => { });
+        trackerIndexDebounce = null;
+    }, 400);
 }
 
 async function addTrackedSeconds(domain, seconds) {
@@ -504,6 +730,12 @@ async function addTrackedSeconds(domain, seconds) {
 
     const today = new Date();
     const dateKey = `tracker_${today.getFullYear()}_${today.getMonth() + 1}_${today.getDate()}`;
+
+    await ensureTrackerIndex();
+    if (trackerIndexCache && !trackerIndexCache.has(dateKey)) {
+        trackerIndexCache.add(dateKey);
+        scheduleTrackerIndexWrite();
+    }
 
     if (!trackerCache) trackerCache = {};
     if (!trackerCache[dateKey]) {
@@ -522,13 +754,34 @@ async function addTrackedSeconds(domain, seconds) {
     const prev = Number(data[cleanDomain]) || 0;
     data[cleanDomain] = prev + seconds;
 
-    if (trackerDebounce) clearTimeout(trackerDebounce);
+    if (trackerDebounce) {
+        clearTimeout(trackerDebounce);
+    }
+
+    if (!trackerWritePromise) {
+        trackerWritePromise = new Promise((resolve, reject) => {
+            trackerWriteResolve = resolve;
+            trackerWriteReject = reject;
+        });
+    }
+
     trackerDebounce = setTimeout(async () => {
-        await chrome.storage.local.set({ [dateKey]: trackerCache[dateKey] });
+        const resolveFn = trackerWriteResolve;
+        const rejectFn = trackerWriteReject;
         trackerDebounce = null;
+        trackerWritePromise = null;
+        trackerWriteResolve = null;
+        trackerWriteReject = null;
+
+        try {
+            await chrome.storage.local.set({ [dateKey]: trackerCache[dateKey] });
+            if (resolveFn) resolveFn();
+        } catch (err) {
+            if (rejectFn) rejectFn(err);
+        }
     }, 400);
 
-    await trackerWriteQueue;
+    await trackerWritePromise;
 }
 
 async function trackerHeartbeat(domain, seconds) {
@@ -581,7 +834,7 @@ async function handleLapLogic() {
         }).catch(() => { });
 
     }).catch((err) => {
-        console.error("Lap write error:", err);
+        logger.error("Lap write error:", err);
     });
 
     await swLapWriteQueue;
@@ -628,7 +881,7 @@ async function flushTrackerBuffer() {
 
         await chrome.storage.local.remove('tracker_buffer');
     } catch (err) {
-        console.error("Flush tracker buffer error:", err);
+        logger.error("Flush tracker buffer error:", err);
     }
 }
 
@@ -644,20 +897,20 @@ const IDLE_DETECTION_INTERVAL_SEC = 60;
 
 chrome.idle.setDetectionInterval(IDLE_DETECTION_INTERVAL_SEC);
 
-let systemIdleState = 'active'; // 'active' | 'idle' | 'locked'
+systemIdleState = 'active'; // 'active' | 'idle' | 'locked'
 
 chrome.idle.onStateChanged.addListener((newState) => {
     systemIdleState = newState;
 
     if (newState === 'idle' || newState === 'locked') {
-        chrome.tabs.query({}, (tabs) => {
+        chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
             tabs.forEach((tab) => {
                 if (!tab.id || !tab.url || !tab.url.startsWith('http')) return;
                 chrome.tabs.sendMessage(tab.id, { action: "system_idle" }).catch(() => { });
             });
         });
     } else if (newState === 'active') {
-        chrome.tabs.query({}, (tabs) => {
+        chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
             tabs.forEach((tab) => {
                 if (!tab.id || !tab.url || !tab.url.startsWith('http')) return;
                 chrome.tabs.sendMessage(tab.id, { action: "system_active" }).catch(() => { });
@@ -666,12 +919,7 @@ chrome.idle.onStateChanged.addListener((newState) => {
     }
 });
 
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request?.action === "get_system_idle_state") {
-        sendResponse({ state: systemIdleState });
-        return false;
-    }
-});
+
 
 ensureKeepAliveAlarm();
 flushTrackerBuffer().catch(() => { });

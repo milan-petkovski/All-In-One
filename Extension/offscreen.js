@@ -1,8 +1,10 @@
 const DEFAULT_STREAM_URL = "https://radioinnis-naxinacional.streaming.rs:8622/;stream.nsv";
 const audio = new Audio();
+let currentStreamUrl = "";
 let audioCtx = null;
 let sfxCompressor = null;
 let sfxOutput = null;
+let audioCtxCloseTimer = null;
 
 function safeSendRuntimeMessage(payload) {
   if (!chrome?.runtime?.id) return;
@@ -18,10 +20,28 @@ function safeSendRuntimeMessage(payload) {
 }
 
 function getAudioContext() {
-  if (!audioCtx) {
+  if (!audioCtx || audioCtx.state === "closed") {
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   }
   return audioCtx;
+}
+
+function scheduleAudioContextClose() {
+  if (audioCtxCloseTimer) clearTimeout(audioCtxCloseTimer);
+  audioCtxCloseTimer = setTimeout(() => {
+    if (!audioCtx) return;
+    if (audioCtx.state === "running") return;
+    audioCtx.close().catch(() => { });
+  }, 20000);
+}
+
+function updateRadioStatus(isPlaying) {
+  safeSendRuntimeMessage({ action: "radio_status", playing: Boolean(isPlaying) });
+}
+
+
+function setRadioVolume(vol) {
+  audio.volume = Math.max(0, Math.min(1, vol));
 }
 
 function getSfxOutputNode(ctx) {
@@ -115,29 +135,52 @@ if ('mediaSession' in navigator) {
   });
 }
 
-chrome.runtime.onMessage.addListener((request) => {
+audio.addEventListener("play", () => updateRadioStatus(true));
+audio.addEventListener("pause", () => updateRadioStatus(false));
+audio.addEventListener("ended", () => updateRadioStatus(false));
+audio.addEventListener("error", () => updateRadioStatus(false));
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   const action = request?.action;
 
   if (action === "play") {
-    const streamUrl = request.url && request.url.trim() ? request.url.trim() : DEFAULT_STREAM_URL;
-    audio.src = streamUrl;
-    audio.volume = request.volume !== undefined ? request.volume / 100 : 0.12;
-    audio.play().catch(() => { });
+    currentStreamUrl = request.url && request.url.trim() ? request.url.trim() : DEFAULT_STREAM_URL;
+    audio.src = currentStreamUrl;
+
+    const vol = request.volume !== undefined ? request.volume / 100 : 0.30;
+    const normalized = Math.max(0, Math.min(1, vol));
+    audio.volume = normalized;
+    sendResponse({ ok: true });
+    audio.play().catch((err) => {
+      if (err.name === "AbortError") {
+        console.log("Radio playback was aborted (likely due to a new stream load or pause command).");
+      } else if (err.name === "NotAllowedError") {
+        console.warn("Radio autoplay was blocked. User interaction with extension required.");
+      } else {
+        console.error("Radio play error:", err);
+      }
+    });
 
     if ('mediaSession' in navigator) {
+      navigator.mediaSession.playbackState = "playing";
       navigator.mediaSession.metadata = new MediaMetadata({
         // Koristimo poslate prevode jer chrome.i18n ovde ume da zakaze
         title: request.title || 'Radio IN',
         artist: request.artist || 'Pokreće All In One ekstenzija'
       });
     }
+    return false;
   } else if (action === "pause") {
     audio.pause();
-    audio.src = "";
-    audio.currentTime = 0;
-    audio.volume = 0.12;
+    if ('mediaSession' in navigator) {
+      navigator.mediaSession.playbackState = "paused";
+    }
+    sendResponse({ ok: true });
   } else if (action === "setVolume") {
-    audio.volume = Math.max(0, Math.min(1, request.value / 100));
+    const vol = request.value / 100;
+    const normalized = Math.max(0, Math.min(1, vol));
+    setRadioVolume(normalized);
+    sendResponse({ ok: true });
   } else if (action === "playAudio") {
     try {
       const ctx = getAudioContext();
@@ -149,8 +192,11 @@ chrome.runtime.onMessage.addListener((request) => {
       } else if (request.soundType === "error") {
         playErrorSound(ctx, now);
       }
+      scheduleAudioContextClose();
+      sendResponse({ ok: true });
     } catch (err) {
       console.error("playAudio error:", err);
+      sendResponse({ ok: false, error: err?.message || "play_audio_failed" });
     }
   }
 });

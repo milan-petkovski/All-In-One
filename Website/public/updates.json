@@ -1,7 +1,21 @@
 [
     {
-        "verzija": "1.5.2",
+        "verzija": "1.5.3",
         "aktivno": true,
+        "sr": {
+            "datum": "31. Maj 2026.",
+            "naslov": "Pametna poboljšanja",
+            "opis": "Najnovije ažuriranje donosi znatno brže učitavanje popupa zahvaljujući novoj modularnoj podeli koda. Korisnički interfejs je unapređen brzim prečicama za popularne radio stanice i optimalnom početnom jačinom zvuka od 30%. Blokator kolačića je sada znatno pametniji i zaobilazi forme za prijavu i automatski otključava skrolovanje na stranici, a dodata je i mogućnost kreiranja bele liste za izuzimanje sajtova. U Color Picker je integrisano zumiranje pomoću točkića miša i precizno pomeranje preko strelica tastature. Webtime Tracker je dobio namensko polje za pretragu istorije sajtova, dok beleške i brojač karaktera imaju tastere za trenutno kopiranje teksta. Uz sve to, urađena su brojna pozadinska poboljšanja koja obezbeđuju veću stabilnost i bezbednost u radu cele ekstenzije."
+        },
+        "en": {
+            "datum": "May 31, 2026",
+            "naslov": "Smart Improvements",
+            "opis": "The latest update introduces significantly faster popup loading times due to code modularization. The user interface has been enhanced with quick presets for popular radio stations and an optimized default volume of 30%. The cookie blocker is now much smarter and it avoids blocking login screens and automatically unlocks page scrolling, with a new whitelisting feature to allow cookies on specific sites. The Color Picker now supports scroll wheel zooming and precise keyboard navigation. The Webtime Tracker includes a new search bar to easily filter history, while Smart Notes and Character Counter feature new quick-copy buttons. In addition, numerous under-the-hood optimizations have been made to ensure better performance, stability, and security."
+        }
+    },
+    {
+        "verzija": "1.5.2",
+        "aktivno": false,
         "sr": {
             "datum": "26. April 2026.",
             "naslov": "Vrhunska preciznost",

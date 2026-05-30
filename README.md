@@ -105,7 +105,7 @@ The All In One ecosystem includes a high-performance web platform that serves as
 
 ### 🎯 Case Study: The Website
 *   **The Problem**: Users often struggle to understand the value of multi-tool extensions. A simple store listing isn't enough to showcase 15+ features.
-*   **The Rešenje**: A dedicated platform that segments features by user profile (Creators, Developers, Power Users) and provides clear, 3-step installation guides.
+*   **The Solution**: A dedicated platform that segments features by user profile (Creators, Developers, Power Users) and provides clear, 3-step installation guides.
 *   **The Result**: Higher conversion rates and better user retention through clear value proposition and feature demonstrations.
 
 <br>

@@ -17,12 +17,27 @@ if (!isSystemPage()) {
 function runMainContentScript() {
 
   let contentI18nDict = null;
+  let contentI18nWarned = false;
   async function loadTranslations() {
     try {
       const data = await chrome.storage.local.get(['appLang']);
       const lang = data.appLang || 'sr';
-      const res = await fetch(chrome.runtime.getURL(`_locales/${lang}/messages.json`));
-      contentI18nDict = await res.json();
+      const response = await new Promise((resolve) => {
+        try {
+          chrome.runtime.sendMessage({ action: "get_locale_messages", lang }, (res) => {
+            if (chrome.runtime.lastError) return resolve({ ok: false });
+            resolve(res || { ok: false });
+          });
+        } catch (err) {
+          resolve({ ok: false, error: String(err?.message || err) });
+        }
+      });
+      if (response.ok && response.messages) {
+        contentI18nDict = response.messages;
+      } else if (!contentI18nWarned) {
+        contentI18nWarned = true;
+        console.warn("All In One: translations not loaded for content script.");
+      }
     } catch (e) { }
   }
   loadTranslations();
@@ -62,88 +77,196 @@ function runMainContentScript() {
       if (isCleanedUp) return;
       isCleanedUp = true;
       overlay.remove();
-      magnifier.remove();
-      tooltip.remove();
+      widget.remove();
       document.body.style.overflow = '';
-      window.removeEventListener('keydown', handleEsc);
+      window.removeEventListener('keydown', handleKeyDown);
       window.aioEyeDropperActive = false;
     };
 
-    const handleEsc = (e) => { if (e.key === 'Escape') cleanup(); };
-    window.addEventListener('keydown', handleEsc, { once: true });
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        cleanup();
+        return;
+      }
+      if (e.key === 'ArrowLeft') {
+        virtualX = Math.max(0, virtualX - 1);
+        updatePickerAt(virtualX, virtualY);
+        e.preventDefault();
+      } else if (e.key === 'ArrowRight') {
+        virtualX = Math.min(window.innerWidth - 1, virtualX + 1);
+        updatePickerAt(virtualX, virtualY);
+        e.preventDefault();
+      } else if (e.key === 'ArrowUp') {
+        virtualY = Math.max(0, virtualY - 1);
+        updatePickerAt(virtualX, virtualY);
+        e.preventDefault();
+      } else if (e.key === 'ArrowDown') {
+        virtualY = Math.min(window.innerHeight - 1, virtualY + 1);
+        updatePickerAt(virtualX, virtualY);
+        e.preventDefault();
+      } else if (e.key === 'Enter' || e.key === ' ') {
+        pickColorAndExit();
+        e.preventDefault();
+      }
+    };
+
     document.body.style.overflow = 'hidden';
 
     const overlay = document.createElement('div');
     overlay.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:2147483640;cursor:none;background:transparent;';
     document.body.appendChild(overlay);
 
-    const zoom = 9;
-    const CELL_SIZE = 12;
-    const MAG_SIZE = zoom * CELL_SIZE;
+    let zoom = 9;
+    const MAG_SIZE = 135;
+    let CELL_SIZE = MAG_SIZE / zoom;
 
+    // Unified widget wrapper centered on the cursor
+    const widget = document.createElement('div');
+    widget.setAttribute('data-aio-dark-exempt', '1');
+    widget.style.cssText = `
+      position: fixed;
+      pointer-events: none;
+      z-index: 2147483647;
+      width: ${MAG_SIZE}px;
+      height: ${MAG_SIZE}px;
+      display: none;
+      transform: scale(0.8);
+      transition: transform 0.15s cubic-bezier(0.25, 1, 0.5, 1);
+    `;
+
+    // Circular Magnifier
     const magnifier = document.createElement('div');
-    magnifier.style.cssText = `width:${MAG_SIZE}px;height:${MAG_SIZE}px;border:2px solid #fff;border-radius:50%;position:fixed;pointer-events:none;z-index:2147483647;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,0.5), 0 10px 25px rgba(0,0,0,0.4);background:#000;display:none;transform:scale(0.8);transition:transform 0.15s cubic-bezier(0.2, 0, 0.2, 1);`;
+    magnifier.style.cssText = `
+      width: 100%;
+      height: 100%;
+      border: 4px solid #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+      background: transparent;
+      box-sizing: border-box;
+      transition: border-color 0.1s ease;
+    `;
 
     const magCanvas = document.createElement('canvas');
     magCanvas.width = MAG_SIZE;
     magCanvas.height = MAG_SIZE;
+    magCanvas.style.cssText = 'display: block; width: 100%; height: 100%; border-radius: 50%; transform: scale(1.02);';
     const magCtx = magCanvas.getContext('2d');
     magCtx.imageSmoothingEnabled = false;
     magnifier.appendChild(magCanvas);
 
+    // Reticle (matches cell size exactly)
     const crosshair = document.createElement('div');
-    crosshair.style.cssText = `position:absolute;top:50%;left:50%;width:${CELL_SIZE}px;height:${CELL_SIZE}px;transform:translate(-50%, -50%);border:2px solid #ff4444;outline:1px solid #fff;box-sizing:border-box;z-index:10;box-shadow:0 0 8px rgba(255,68,68,0.4);`;
+    crosshair.style.cssText = `
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: ${CELL_SIZE}px;
+      height: ${CELL_SIZE}px;
+      transform: translate(-50%, -50%);
+      border: 1px solid #000;
+      box-sizing: border-box;
+      z-index: 10;
+    `;
     magnifier.appendChild(crosshair);
 
-    const tooltip = document.createElement('div');
-    tooltip.style.cssText = `position:fixed;pointer-events:none;background:rgba(15, 15, 20, 0.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#00ff88;padding:8px 14px;border-radius:12px;font-family:sans-serif;font-size:14px;font-weight:800;border:1px solid rgba(255, 255, 255, 0.1);z-index:2147483647;display:none;box-shadow:0 10px 25px rgba(0,0,0,0.3);align-items:center;gap:8px;`;
+    // Hex Pill Badge
+    const colorBadge = document.createElement('div');
+    colorBadge.style.cssText = `
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(15, 15, 20, 0.85);
+      backdrop-filter: blur(12px) saturate(180%);
+      -webkit-backdrop-filter: blur(12px) saturate(180%);
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-family: 'Inter', monospace;
+      font-size: 13px;
+      font-weight: 800;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      transition: top 0.15s ease, bottom 0.15s ease;
+    `;
 
-    document.body.appendChild(magnifier);
-    document.body.appendChild(tooltip);
+    widget.appendChild(magnifier);
+    widget.appendChild(colorBadge);
+    document.body.appendChild(widget);
 
     requestAnimationFrame(() => {
-      magnifier.style.display = 'block';
-      magnifier.style.transform = 'scale(1)';
+      widget.style.display = 'block';
+      widget.style.transform = 'scale(1)';
     });
 
     const rgbToHex = (r, g, b) => "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase();
 
-    overlay.onmousemove = (e) => {
-      const x = e.clientX, y = e.clientY;
-      tooltip.style.display = 'flex';
-      magnifier.style.left = (x - MAG_SIZE / 2) + 'px';
-      magnifier.style.top = (y - MAG_SIZE / 2) + 'px';
-      tooltip.style.left = (x + 20) + 'px';
-      tooltip.style.top = (y + 20) + 'px';
+    let virtualX = 0;
+    let virtualY = 0;
+    let hasPointer = false;
+
+    const updatePickerAt = (x, y) => {
+      widget.style.left = (x - MAG_SIZE / 2) + 'px';
+      widget.style.top = (y - MAG_SIZE / 2) + 'px';
+
+      if (y > window.innerHeight - 120) {
+        colorBadge.style.top = 'auto';
+        colorBadge.style.bottom = 'calc(100% + 12px)';
+      } else {
+        colorBadge.style.bottom = 'auto';
+        colorBadge.style.top = 'calc(100% + 12px)';
+      }
 
       try {
         const physicalX = Math.floor(x * dpr);
         const physicalY = Math.floor(y * dpr);
         const pixel = ctx.getImageData(physicalX, physicalY, 1, 1).data;
         const hex = rgbToHex(pixel[0], pixel[1], pixel[2]);
-        tooltip.textContent = '';
-        const dot = document.createElement('div');
-        dot.style.cssText = `width:12px;height:12px;border-radius:50%;background:${hex};border:1px solid rgba(255,255,255,0.2);`;
-        const span = document.createElement('span');
-        span.textContent = hex;
-        tooltip.append(dot, span);
+
+        magnifier.style.borderColor = hex;
+
+        colorBadge.textContent = '';
+        const colorDot = document.createElement('div');
+        colorDot.style.cssText = `
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: ${hex};
+          border: 1px solid rgba(255, 255, 255, 0.2);
+        `;
+        const textSpan = document.createElement('span');
+        textSpan.textContent = hex;
+        colorBadge.append(colorDot, textSpan);
+
         magCtx.clearRect(0, 0, MAG_SIZE, MAG_SIZE);
         const sourceX = physicalX - Math.floor(zoom / 2);
         const sourceY = physicalY - Math.floor(zoom / 2);
         magCtx.drawImage(canvas, sourceX, sourceY, zoom, zoom, 0, 0, MAG_SIZE, MAG_SIZE);
-        magCtx.strokeStyle = 'rgba(255,255,255,0.15)';
-        magCtx.lineWidth = 0.5;
+
+        const luma = 0.299 * pixel[0] + 0.587 * pixel[1] + 0.114 * pixel[2];
+        magCtx.strokeStyle = luma > 128 ? 'rgba(0, 0, 0, 0.15)' : 'rgba(255, 255, 255, 0.3)';
+        magCtx.lineWidth = 0.75;
         magCtx.beginPath();
-        for (let i = 0; i <= MAG_SIZE; i += CELL_SIZE) {
-          magCtx.moveTo(i, 0); magCtx.lineTo(i, MAG_SIZE);
-          magCtx.moveTo(0, i); magCtx.lineTo(MAG_SIZE, i);
+        for (let j = 0; j <= zoom; j++) {
+          const pos = j * CELL_SIZE;
+          magCtx.moveTo(pos, 0); magCtx.lineTo(pos, MAG_SIZE);
+          magCtx.moveTo(0, pos); magCtx.lineTo(MAG_SIZE, pos);
         }
         magCtx.stroke();
       } catch (err) { }
     };
 
-    overlay.onclick = async (e) => {
-      const x = e.clientX, y = e.clientY;
+    const pickColorAndExit = async () => {
+      const x = virtualX;
+      const y = virtualY;
+
       try {
         const physicalX = Math.floor(x * dpr);
         const physicalY = Math.floor(y * dpr);
@@ -152,20 +275,21 @@ function runMainContentScript() {
         await navigator.clipboard.writeText(hex);
 
         const toast = document.createElement('div');
+        toast.setAttribute('data-aio-dark-exempt', '1');
         const copiedMsg = getI18nMsg("colorPickerCopied");
         toast.style.cssText = `position:fixed;bottom:40px;left:50%;transform:translateX(-50%) translateY(20px);background:#16161e;color:#fff;padding:12px 25px;border-radius:12px;font-family:sans-serif;font-weight:bold;border:1px solid ${hex};z-index:2147483647;opacity:0;transition:all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);box-shadow:0 10px 30px rgba(0,0,0,0.5);display:flex;align-items:center;gap:10px;`;
-        
+
         const check = document.createElement('span');
         check.style.color = '#00ff88';
         check.textContent = '✓';
-        
+
         const msgText = document.createTextNode(` ${copiedMsg} `);
-        
+
         const hexText = document.createElement('span');
         hexText.style.color = '#00ff88';
         hexText.style.fontSize = '16px';
         hexText.textContent = hex;
-        
+
         toast.append(check, msgText, hexText);
         document.body.appendChild(toast);
         requestAnimationFrame(() => { toast.style.opacity = '1'; toast.style.transform = 'translateX(-50%) translateY(0)'; });
@@ -173,6 +297,39 @@ function runMainContentScript() {
       } catch (err) { }
       cleanup();
     };
+
+    overlay.onmousedown = (e) => {
+      if (e.button !== 0) return; // Left click only
+      pickColorAndExit();
+    };
+
+    overlay.onmousemove = (e) => {
+      virtualX = e.clientX;
+      virtualY = e.clientY;
+      hasPointer = true;
+      updatePickerAt(virtualX, virtualY);
+    };
+
+    overlay.onwheel = (e) => {
+      e.preventDefault();
+      if (e.deltaY < 0) {
+        if (zoom > 3) {
+          zoom -= 2;
+        }
+      } else {
+        if (zoom < 25) {
+          zoom += 2;
+        }
+      }
+      CELL_SIZE = MAG_SIZE / zoom;
+      crosshair.style.width = CELL_SIZE + 'px';
+      crosshair.style.height = CELL_SIZE + 'px';
+      if (hasPointer) {
+        updatePickerAt(virtualX, virtualY);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
   }
 
   function initRuler() {
@@ -181,27 +338,51 @@ function runMainContentScript() {
     const r = document.createElement("div");
     ov.id = "aioRulOv";
     r.id = "aioRul";
+    ov.setAttribute('data-aio-dark-exempt', '1');
+    r.setAttribute('data-aio-dark-exempt', '1');
     ov.style = "position:fixed;top:0;left:0;width:100%;height:100%;z-index:999998;cursor:crosshair;background:transparent;";
-    r.style = "position:fixed;border:1px solid #00ff88;background:rgba(0,255,136,0.1);z-index:999999;pointer-events:none;display:flex;align-items:center;justify-content:center;font-family: 'Inter', sans-serif;box-shadow:0 0 15px rgba(0,255,136,0.2); transition: none;";
+    r.style = "position:fixed;border:1px solid #00ff88;background:rgba(0,255,136,0.1);z-index:999999;pointer-events:none;font-family: 'Inter', sans-serif;box-shadow:0 0 15px rgba(0,255,136,0.2); transition: none;";
     document.body.append(ov, r);
+
+    const noSelectStyle = document.createElement("style");
+    noSelectStyle.id = "aio-ruler-no-select";
+    noSelectStyle.textContent = "html, body, * { user-select: none !important; -webkit-user-select: none !important; }";
+    (document.head || document.documentElement).appendChild(noSelectStyle);
+
+    const blockSelection = (e) => e.preventDefault();
+    document.addEventListener("selectstart", blockSelection, true);
+    document.addEventListener("dragstart", blockSelection, true);
+
     let sx, sy, drag = false;
     let isPointerDown = false;
     let removed = false;
+    const clearSelection = () => {
+      try {
+        window.getSelection()?.removeAllRanges();
+      } catch (_) { }
+    };
     const esc = (e) => { if (e.key === "Escape") cleanup(); };
     const onGlobalMouseUp = () => {
       if (!isPointerDown) return;
       isPointerDown = false;
+      clearSelection();
       if (!drag) cleanup();
     };
     const cleanup = () => {
       if (removed) return;
       removed = true;
+      clearSelection();
       ov.remove();
       r.remove();
+      noSelectStyle.remove();
+      document.removeEventListener("selectstart", blockSelection, true);
+      document.removeEventListener("dragstart", blockSelection, true);
       document.removeEventListener("keydown", esc);
       window.removeEventListener("mouseup", onGlobalMouseUp, true);
     };
     ov.onmousedown = (e) => {
+      e.preventDefault();
+      clearSelection();
       isPointerDown = true;
       sx = e.clientX; sy = e.clientY;
       drag = false;
@@ -210,16 +391,36 @@ function runMainContentScript() {
     };
     ov.onmousemove = (e) => {
       if (isPointerDown && e.buttons === 1) {
+        e.preventDefault();
         drag = true;
         const w = Math.abs(e.clientX - sx), h = Math.abs(e.clientY - sy);
         r.style.left = Math.min(e.clientX, sx) + "px";
         r.style.top = Math.min(e.clientY, sy) + "px";
         r.style.width = w + "px"; r.style.height = h + "px";
-        
+
         r.textContent = '';
         const badge = document.createElement('div');
-        badge.style.cssText = "background:rgba(0,0,0,0.75); padding:6px 12px; border-radius:8px; color:#00ff88; font-size:14px; font-weight:600; backdrop-filter:blur(4px); border:1px solid rgba(0,255,136,0.3); display:flex; gap:10px; box-shadow:0 4px 15px rgba(0,0,0,0.5);";
-        
+        badge.style.cssText = "position:absolute; background:rgba(0,0,0,0.75); padding:6px 12px; border-radius:8px; color:#00ff88; font-size:14px; font-weight:600; backdrop-filter:blur(4px); border:1px solid rgba(0,255,136,0.3); display:flex; gap:10px; box-shadow:0 4px 15px rgba(0,0,0,0.5); white-space:nowrap; z-index:1000000;";
+
+        const hasEnoughSpace = (w > 135) && (h > 50);
+        if (hasEnoughSpace) {
+          badge.style.left = "50%";
+          badge.style.top = "50%";
+          badge.style.bottom = "auto";
+          badge.style.transform = "translate(-50%, -50%)";
+        } else {
+          const boxBottom = Math.max(e.clientY, sy);
+          if (window.innerHeight - boxBottom < 50) {
+            badge.style.bottom = "calc(100% + 8px)";
+            badge.style.top = "auto";
+          } else {
+            badge.style.top = "calc(100% + 8px)";
+            badge.style.bottom = "auto";
+          }
+          badge.style.left = "50%";
+          badge.style.transform = "translateX(-50%)";
+        }
+
         const wLabel = document.createElement('span');
         wLabel.style.color = '#fff'; wLabel.style.opacity = '0.7'; wLabel.textContent = 'W: ';
         const wVal = document.createTextNode(`${w}px`);
@@ -355,6 +556,10 @@ function runMainContentScript() {
       initRuler();
     } else if (request.action === "toggleFontFinder") {
       initFontFinder();
+    } else if (request.action === "setDarkMode") {
+      applyDark(request.enabled === true, true);
+    } else if (request.action === "setMasterVolume") {
+      applyMasterVolume(request.value);
     }
   });
 
@@ -363,11 +568,28 @@ function runMainContentScript() {
   const stopBlockedEvent = (e) => e.stopImmediatePropagation();
   let cookieObserver = null;
   let cookieScanTimer = null;
+  let cookieWhitelist = [];
 
-  window.aioMediaCache = window.aioMediaCache || new WeakMap();
+  window.aioMediaNodes = window.aioMediaNodes || new WeakMap();
+
+  const isCriticalAppContainer = (el) => {
+    if (!el || el.nodeType !== 1) return false;
+    if (el === document.documentElement || el === document.body) return true;
+    const id = String(el.id || "").toLowerCase();
+    if (id === "root" || id === "__next" || id === "app" || id === "__nuxt") return true;
+    if (el.matches?.('main, #root, #__next, #app, #__nuxt, [data-reactroot], [data-react-helmet]')) return true;
+    return false;
+  };
+
+  const hasExplicitCookieSignal = (el) => {
+    if (!el || el.nodeType !== 1) return false;
+    const token = `${el.id || ""} ${String(el.className || "")} ${(el.getAttribute?.("aria-label") || "")}`.toLowerCase();
+    return /(cookie|consent|gdpr|onetrust|didomi|cookiebot|cmp|privacy[-_ ]?(banner|notice)|sp_message|trustarc|qc-cmp)/.test(token);
+  };
 
   const hideCookieElement = (el) => {
     if (!el || el.dataset?.aioCookieHidden === "1") return;
+    if (isCriticalAppContainer(el)) return;
     el.dataset.aioCookieHidden = "1";
     el.setAttribute("aria-hidden", "true");
     el.style.setProperty("display", "none", "important");
@@ -375,85 +597,333 @@ function runMainContentScript() {
     el.style.setProperty("pointer-events", "none", "important");
   };
 
-  const getEffectiveVolume = (res) => {
-    const siteRaw = Number(res[host + "_vol"]);
-    if (Number.isFinite(siteRaw)) return siteRaw;
+  const INTRUSIVE_SELECTORS = [
+    '[id*="cookie" i]', '[class*="cookie" i]',
+    '[id*="consent" i]', '[class*="consent" i]',
+    '[id*="gdpr" i]', '[class*="gdpr" i]',
+    '[id*="privacy" i]', '[class*="privacy-banner" i]', '[class*="privacy-notice" i]',
+    '[class*="cookie-banner" i]', '[class*="cookie-notice" i]', '[class*="cookie-modal" i]',
+    '[id*="onetrust" i]', '[class*="onetrust" i]', '#onetrust-banner-sdk', '#onetrust-consent-sdk',
+    '[id*="sp_message" i]', '[id*="didomi" i]', '[class*="didomi" i]',
+    '[id*="cookiebot" i]', '[class*="cookiebot" i]', '#CybotCookiebotDialog',
+    '[class*="fc-consent" i]', '[class*="qc-cmp" i]', '[class*="cmp-container" i]',
+    '[class*="newsletter" i]', '[id*="newsletter" i]', '[class*="subscribe" i]',
+    '[class*="webpush" i]', '[class*="web-push" i]', '[class*="push-prompt" i]',
+    '[class*="notification" i][class*="modal" i]', '[class*="notif" i][class*="popup" i]',
+    '[class*="ad-overlay" i]', '[class*="interstitial" i]',
+    '[class*="paywall" i]', '[class*="gdpr" i]',
+    '.fc-consent-root', '.qc-cmp2-container', '.trustarc-banner-container',
+    '[data-testid*="cookie" i]', '[data-test*="consent" i]',
+    'iframe[id*="consent" i]', 'iframe[src*="consent" i]', 'iframe[src*="cmp." i]', 'iframe[src*="gdpr" i]'
+  ];
 
+  const INTRUSIVE_TEXT_KEYWORDS = [
+    'cookie', 'kolačić', 'kolacic', 'kolačic', 'consent', 'gdpr', 'privatnost', 'privacy policy',
+    'obaveštenj', 'obavestenj', 'notifik', 'newsletter', 'push obave', 'web push',
+    'prihvatam', 'prihvati sve', 'accept all', 'accept cookies', 'agree to all', 'i agree',
+    'slažem se', 'slazem se', 'saglasan', 'koristimo kolačiće', 'use cookies',
+    'reklam', 'advertisement', 'personalizovane reklame', 'sponsored',
+    'pretplat', 'subscribe', 'sign up for', 'email list'
+  ];
+
+  const isProtectedModal = (el) => {
+    if (!el) return true;
+    const token = `${el.id || ""} ${String(el.className || "")}`.toLowerCase();
+    if (/\b(login|sign-?in|sign-?up|register|auth|checkout|payment|billing|account)\b/.test(token)) {
+      return true;
+    }
+    if (el.querySelector('input[type="password"]')) return true;
+    if (el.closest('[data-aio-dark-exempt="1"]')) return true;
+    return false;
+  };
+
+  const elementMatchesIntrusiveText = (el) => {
+    const text = (el.innerText || el.textContent || "").replace(/\s+/g, " ").trim().toLowerCase();
+    if (!text || text.length > 4000) return false;
+    return INTRUSIVE_TEXT_KEYWORDS.some((kw) => text.includes(kw));
+  };
+
+  const isLikelyIntrusiveOverlay = (el) => {
+    if (!el || el.nodeType !== 1 || isProtectedModal(el)) return false;
+    if (isCriticalAppContainer(el)) return false;
+    if (el.dataset?.aioCookieHidden === "1") return false;
+
+    const style = window.getComputedStyle(el);
+    const pos = style.position;
+    if (pos !== "fixed" && pos !== "sticky" && pos !== "absolute") return false;
+
+    const rect = el.getBoundingClientRect();
+    if (rect.width < 220 || rect.height < 120) return false;
+
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    const coversViewport = rect.width >= vw * 0.45 || rect.height >= vh * 0.35;
+    const nearFullViewport = rect.width >= vw * 0.85 && rect.height >= vh * 0.85;
+    const isDialog = el.matches('[role="dialog"], dialog, [aria-modal="true"]');
+    const zIndex = parseInt(style.zIndex, 10);
+
+    // Avoid blank-page regressions: never hide near full-screen containers unless
+    // they have explicit consent/cookie markers.
+    if (nearFullViewport && !hasExplicitCookieSignal(el)) return false;
+
+    if (!elementMatchesIntrusiveText(el)) return false;
+    if (isDialog) return true;
+    if (Number.isFinite(zIndex) && zIndex >= 100 && coversViewport) return true;
+    if (coversViewport && (style.backgroundColor.includes("rgba") || Number(style.opacity) < 1)) return true;
+
+    return rect.width >= 280 && rect.height >= 180;
+  };
+
+  const hideIntrusiveBackdrop = (el) => {
+    const parent = el.parentElement;
+    if (!parent || parent === document.body || parent === document.documentElement) return;
+    if (isCriticalAppContainer(parent)) return;
+    const siblingCount = parent.children.length;
+    if (siblingCount > 6) return;
+    const parentStyle = window.getComputedStyle(parent);
+    if (parentStyle.position === "fixed" && elementMatchesIntrusiveText(parent)) {
+      hideCookieElement(parent);
+    }
+  };
+
+  const unlockPageScroll = () => {
+    const html = document.documentElement;
+    const body = document.body;
+    if (!body) return;
+    body.style.removeProperty("overflow");
+    html.style.removeProperty("overflow");
+    ["modal-open", "no-scroll", "overflow-hidden", "disable-scroll", "has-modal", "noscroll", "is-locked", "scroll-lock"].forEach((cls) => {
+      body.classList.remove(cls);
+      html.classList.remove(cls);
+    });
+  };
+
+  const getEffectiveVolume = (res) => {
     const globalRaw = Number(res.global_vol);
     if (Number.isFinite(globalRaw)) return globalRaw;
 
     return 100;
   };
 
-  const applyMasterVolume = (rawValue) => {
-    const safeRaw = Number.isFinite(Number(rawValue)) ? Number(rawValue) : 100;
-    const clampedRaw = Math.max(0, Math.min(safeRaw, 1000));
-    const multiplier = Math.max(0, clampedRaw / 100);
+  const isMediaElementCorsSafe = (media) => {
+    try {
+      const src = media.currentSrc || media.src;
+      if (!src) return true;
 
-    if (clampedRaw === 100) {
-      if (window.aioVolGain) {
+      if (src.startsWith('blob:') || src.startsWith('data:')) {
+        return true;
+      }
+
+      const url = new URL(src, window.location.href);
+      if (url.origin === window.location.origin) {
+        return true;
+      }
+
+      if (media.crossOrigin === 'anonymous' || media.crossOrigin === 'use-credentials') {
+        return true;
+      }
+
+      return false;
+    } catch (_) {
+      return false;
+    }
+  };
+
+  let originalVolumeDescriptor = null;
+  let volumeOverrideActive = false;
+  try {
+    originalVolumeDescriptor = Object.getOwnPropertyDescriptor(HTMLMediaElement.prototype, 'volume');
+  } catch (_) { }
+
+  const captureBaseVolume = (media) => {
+    if (media.hasOwnProperty('_aioBaseVolume')) return media._aioBaseVolume;
+    try {
+      const actual = originalVolumeDescriptor.get.call(media);
+      const lastMult = media._aioLastMultiplier ?? 1.0;
+      const computedBase = lastMult > 0 ? (actual / lastMult) : actual;
+      media._aioBaseVolume = Number.isFinite(computedBase) ? Math.max(0, Math.min(computedBase, 1)) : 1.0;
+    } catch (_) {
+      media._aioBaseVolume = 1.0;
+    }
+    return media._aioBaseVolume;
+  };
+
+  const ensureAudioContext = () => {
+    if (!window.aioVolCtx) {
+      window.aioVolCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (window.aioVolCtx.state === "suspended") {
+      const resume = () => { if (window.aioVolCtx?.state === "suspended") window.aioVolCtx.resume(); };
+      ["pointerdown", "keydown", "click", "touchstart"].forEach(ev =>
+        document.addEventListener(ev, resume, { once: true, capture: true })
+      );
+    }
+  };
+
+  const ensureMediaAudioChain = (media) => {
+    if (window.aioMediaNodes.has(media)) return window.aioMediaNodes.get(media);
+    ensureAudioContext();
+    try {
+      const source = window.aioVolCtx.createMediaElementSource(media);
+      const gainNode = window.aioVolCtx.createGain();
+      source.connect(gainNode);
+      gainNode.connect(window.aioVolCtx.destination);
+      const nodes = { source, gainNode };
+      window.aioMediaNodes.set(media, nodes);
+      return nodes;
+    } catch (_) {
+      window.aioMediaNodes.set(media, null);
+      return null;
+    }
+  };
+
+  const applyVolumeToMedia = (media, rawVolume) => {
+    if (!originalVolumeDescriptor) return;
+
+    const multiplier = Math.max(0, rawVolume / 100);
+    const base = captureBaseVolume(media);
+    const target = base * multiplier;
+    const nodes = window.aioMediaNodes.get(media);
+    const needsBoost = target > 1.0 && isMediaElementCorsSafe(media);
+
+    if (needsBoost) {
+      const chain = ensureMediaAudioChain(media);
+      if (!chain) {
         try {
-          window.aioVolGain.gain.setTargetAtTime(1.0, window.aioVolCtx?.currentTime || 0, 0.01);
+          originalVolumeDescriptor.set.call(media, 1.0);
         } catch (_) { }
+        media._aioLastMultiplier = 1.0;
+        return;
       }
-      if (window.aioVolObserver) {
-        window.aioVolObserver.disconnect();
-        window.aioVolObserver = null;
-      }
+      try {
+        originalVolumeDescriptor.set.call(media, base);
+        chain.gainNode.gain.setTargetAtTime(multiplier, window.aioVolCtx.currentTime, 0.01);
+      } catch (_) { }
+      media._aioLastMultiplier = multiplier;
+      return;
+    }
+
+    if (nodes?.gainNode) {
+      try {
+        originalVolumeDescriptor.set.call(media, base);
+        nodes.gainNode.gain.setTargetAtTime(multiplier, window.aioVolCtx.currentTime, 0.01);
+      } catch (_) { }
+      media._aioLastMultiplier = multiplier;
       return;
     }
 
     try {
-      window.aioCurrentRawVolume = clampedRaw;
-
-      if (!window.aioVolCtx) {
-        window.aioVolCtx = new (window.AudioContext || window.webkitAudioContext)();
-        window.aioVolGain = window.aioVolCtx.createGain();
-        window.aioVolGain.connect(window.aioVolCtx.destination);
-      }
-
-      if (window.aioVolCtx.state === "suspended") {
-        const resume = () => { if (window.aioVolCtx.state === "suspended") window.aioVolCtx.resume(); };
-        ["pointerdown", "keydown", "click", "touchstart"].forEach(ev => document.addEventListener(ev, resume, { once: true, capture: true }));
-      }
-
-      window.aioVolGain.gain.setTargetAtTime(multiplier, window.aioVolCtx.currentTime, 0.01);
-
-      const connectMedia = () => {
-        document.querySelectorAll("audio, video").forEach((media) => {
-          if (window.aioMediaCache.has(media)) return;
-
-          try {
-            if (media.src && media.src.startsWith('http') && media.readyState === 0) {
-              try {
-                const url = new URL(media.src);
-                if (url.origin !== window.location.origin && !media.crossOrigin) {
-                  media.crossOrigin = "anonymous";
-                }
-              } catch (_) { }
-            }
-
-            const source = window.aioVolCtx.createMediaElementSource(media);
-            source.connect(window.aioVolGain);
-            window.aioMediaCache.set(media, true);
-          } catch (e) {
-            window.aioMediaCache.set(media, true);
-          }
-        });
-      };
-
-      connectMedia();
-      if (!window.aioVolObserver && document.documentElement && clampedRaw !== 100) {
-        window.aioVolObserver = new MutationObserver(connectMedia);
-        window.aioVolObserver.observe(document.documentElement, { childList: true, subtree: true });
-      }
-    } catch (e) {
-      // Global failure fallback
+      const clampedTarget = Math.max(0, Math.min(target, 1.0));
+      originalVolumeDescriptor.set.call(media, clampedTarget);
+      media._aioLastMultiplier = (clampedTarget > 0 && base > 0) ? (clampedTarget / base) : multiplier;
+    } catch (_) {
+      media._aioLastMultiplier = multiplier;
     }
   };
 
+  const installVolumeOverride = () => {
+    if (volumeOverrideActive || !originalVolumeDescriptor || !originalVolumeDescriptor.configurable) return;
+    try {
+      Object.defineProperty(HTMLMediaElement.prototype, 'volume', {
+        configurable: true,
+        enumerable: true,
+        get: function () {
+          return this.hasOwnProperty('_aioBaseVolume')
+            ? this._aioBaseVolume
+            : originalVolumeDescriptor.get.call(this);
+        },
+        set: function (val) {
+          const num = Number(val);
+          this._aioBaseVolume = Number.isFinite(num) ? Math.max(0, Math.min(num, 1)) : 1.0;
+          this._aioLastMultiplier = 1.0; // Reset last multiplier because we are setting a new unscaled baseline
+          applyVolumeToMedia(this, window.aioCurrentRawVolume ?? 100);
+        }
+      });
+      volumeOverrideActive = true;
+    } catch (_) { }
+  };
+
+  const restoreVolumeOverride = () => {
+    if (!volumeOverrideActive || !originalVolumeDescriptor || !originalVolumeDescriptor.configurable) return;
+    try {
+      Object.defineProperty(HTMLMediaElement.prototype, 'volume', originalVolumeDescriptor);
+      volumeOverrideActive = false;
+    } catch (_) { }
+  };
+
+  const captureAllMediaBaselines = () => {
+    try {
+      document.querySelectorAll("audio, video").forEach((media) => captureBaseVolume(media));
+    } catch (_) { }
+  };
+
+  const restoreMediaVolumesAt100 = () => {
+    try {
+      document.querySelectorAll("audio, video").forEach((media) => {
+        if (!media.hasOwnProperty('_aioBaseVolume')) return;
+        const base = media._aioBaseVolume;
+        const nodes = window.aioMediaNodes.get(media);
+        if (nodes?.gainNode) {
+          try {
+            nodes.gainNode.gain.setTargetAtTime(1.0, window.aioVolCtx?.currentTime || 0, 0.01);
+          } catch (_) { }
+        }
+        try {
+          originalVolumeDescriptor.set.call(media, base);
+        } catch (_) { }
+        delete media._aioBaseVolume;
+        delete media._aioLastMultiplier;
+      });
+    } catch (_) { }
+
+    restoreVolumeOverride();
+
+    if (window.aioVolObserver) {
+      window.aioVolObserver.disconnect();
+      window.aioVolObserver = null;
+    }
+  };
+
+  const applyMasterVolume = (rawValue) => {
+    const safeRaw = Number.isFinite(Number(rawValue)) ? Number(rawValue) : 100;
+    const clampedRaw = Math.max(0, Math.min(safeRaw, 1000));
+    const wasModified = window.aioVolumeModified === true;
+
+    window.aioCurrentRawVolume = clampedRaw;
+
+    if (clampedRaw === 100) {
+      if (wasModified) {
+        restoreMediaVolumesAt100();
+      }
+      window.aioVolumeModified = false;
+      return;
+    }
+
+    window.aioVolumeModified = true;
+
+    captureAllMediaBaselines();
+    installVolumeOverride();
+
+    const connectMedia = () => {
+      captureAllMediaBaselines();
+      const currentVol = window.aioCurrentRawVolume ?? 100;
+      document.querySelectorAll("audio, video").forEach((media) => {
+        applyVolumeToMedia(media, currentVol);
+      });
+    };
+
+    connectMedia();
+
+    try {
+      if (!window.aioVolObserver && document.documentElement) {
+        window.aioVolObserver = new MutationObserver(connectMedia);
+        window.aioVolObserver.observe(document.documentElement, { childList: true, subtree: true });
+      }
+    } catch (_) { }
+  };
+
   const syncVolumeFromStorage = () => {
-    chrome.storage.local.get(["ytToggle", "global_vol", host + "_vol"], (res) => {
+    chrome.storage.local.get(["global_vol"], (res) => {
       applyMasterVolume(getEffectiveVolume(res));
     });
   };
@@ -504,8 +974,6 @@ function runMainContentScript() {
       }
 
       if (isSiteAlreadyDark) return;
-
-
 
       if (isToggle && !transitionStyle) {
         transitionStyle = document.createElement("style");
@@ -598,7 +1066,7 @@ function runMainContentScript() {
 
     clearTimeout(foucHardDeadlineTimer);
 
-    chrome.storage.local.get([host, "nightToggle", "ytToggle", "global_vol", host + "_vol"], (res) => {
+    chrome.storage.local.get([host, "nightToggle", "global_vol"], (res) => {
       if (!res.nightToggle && foucStyle) {
         foucStyle.remove();
         foucStyle = null;
@@ -640,12 +1108,20 @@ function runMainContentScript() {
       else disableCopy();
     }
 
+    if (changes.cookieWhitelist !== undefined) {
+      cookieWhitelist = Array.isArray(changes.cookieWhitelist.newValue) ? changes.cookieWhitelist.newValue : [];
+      if (cookieBlockEnabled()) {
+        if (isWhitelisted(host)) disableCookieBlock();
+        else enableCookieBlock();
+      }
+    }
+
     if (changes.cookieBlock !== undefined) {
-      if (changes.cookieBlock.newValue) enableCookieBlock();
+      if (changes.cookieBlock.newValue && !isWhitelisted(host)) enableCookieBlock();
       else disableCookieBlock();
     }
 
-    if (changes.ytToggle !== undefined || changes.global_vol !== undefined || changes[host + "_vol"] !== undefined) {
+    if (changes.global_vol !== undefined) {
       syncVolumeFromStorage();
     }
   });
@@ -658,53 +1134,55 @@ function runMainContentScript() {
 
   const processedElements = new WeakSet();
   let cookieCleanupPending = false;
+  let cookieRescanTimers = [];
 
   const killCookies = () => {
     if (cookieCleanupPending) return;
+    if (window.top !== window) return;
     cookieCleanupPending = true;
 
     const runCleanup = () => {
-      const selectors = [
-        '[id*="cookie" i]', '[class*="cookie" i]',
-        '[id*="consent" i]', '[class*="consent" i]',
-        '[id*="gdpr" i]', '[class*="gdpr" i]',
-        '.fc-consent-root', '.qc-cmp2-container'
-      ];
-
       try {
-        const elements = document.querySelectorAll(selectors.join(","));
-        elements.forEach(el => {
-          if (processedElements.has(el)) return;
+        document.querySelectorAll(INTRUSIVE_SELECTORS.join(",")).forEach((el) => {
+          if (processedElements.has(el) || isProtectedModal(el)) return;
           processedElements.add(el);
-          
-          // Bezbedno sakrivanje bez brisanja (manje destruktivno za layout)
-          el.style.setProperty("display", "none", "important");
-          el.style.setProperty("visibility", "hidden", "important");
-          el.style.setProperty("pointer-events", "none", "important");
-          el.setAttribute("aria-hidden", "true");
+          hideCookieElement(el);
         });
-      } catch (e) {}
 
+        document.querySelectorAll('div, section, aside, dialog, [role="dialog"], [aria-modal="true"]').forEach((el) => {
+          if (processedElements.has(el) || !isLikelyIntrusiveOverlay(el)) return;
+          processedElements.add(el);
+          hideCookieElement(el);
+          hideIntrusiveBackdrop(el);
+        });
+      } catch (_) { }
+
+      unlockPageScroll();
       cookieCleanupPending = false;
     };
 
     if (window.requestIdleCallback) {
       window.requestIdleCallback(runCleanup, { timeout: 500 });
     } else {
-      setTimeout(runCleanup, 150);
+      setTimeout(runCleanup, 100);
     }
   };
 
+  const scheduleCookieRescans = () => {
+    cookieRescanTimers.forEach((id) => clearTimeout(id));
+    cookieRescanTimers = [300, 900, 1800, 3500, 6000].map((ms) => setTimeout(killCookies, ms));
+  };
+
   const enableCookieBlock = () => {
+    if (window.top !== window) return;
     if (cookieObserver) return;
-    
-    // Inicijalni scan
+
     killCookies();
+    scheduleCookieRescans();
 
     cookieObserver = new MutationObserver((mutations) => {
-      // Filtriramo mutacije: samo ako su dodati nodovi
       const hasAddedNodes = mutations.some(m => m.addedNodes.length > 0);
-      if (hasAddedNodes) killCookies();
+      if (hasAddedNodes) debouncedCookieScan();
     });
 
     cookieObserver.observe(document.documentElement, {
@@ -714,6 +1192,8 @@ function runMainContentScript() {
   };
 
   const disableCookieBlock = () => {
+    cookieRescanTimers.forEach((id) => clearTimeout(id));
+    cookieRescanTimers = [];
     if (cookieScanTimer) {
       clearTimeout(cookieScanTimer);
       cookieScanTimer = null;
@@ -724,8 +1204,16 @@ function runMainContentScript() {
     }
   };
 
-  chrome.storage.local.get("cookieBlock", (res) => {
-    const shouldEnable = res.cookieBlock === true;
+  const isWhitelisted = (domain) => {
+    if (!domain) return false;
+    return cookieWhitelist.includes(domain);
+  };
+
+  const cookieBlockEnabled = () => cookieObserver !== null;
+
+  chrome.storage.local.get(["cookieBlock", "cookieWhitelist"], (res) => {
+    cookieWhitelist = Array.isArray(res.cookieWhitelist) ? res.cookieWhitelist : [];
+    const shouldEnable = res.cookieBlock === true && !isWhitelisted(host);
     if (shouldEnable) enableCookieBlock();
     else disableCookieBlock();
   });

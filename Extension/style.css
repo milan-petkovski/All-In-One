@@ -9,6 +9,7 @@
   --accent: #00ff88;
   --accent-hover: #00d977;
   --accent-glow: rgba(0, 255, 136, 0.3);
+  --danger: #ff5a5a;
   --text-main: #ffffff;
   --text-dim: #a0a0a8;
   --border-color: #2d2d3d;
@@ -16,21 +17,41 @@
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-.hidden {
-  display: none !important;
-}
 
 /* =========================================
    2. OSNOVNI STILOVI (BASE)
    ========================================= */
 body {
-  width: 340px;
+  width: 372px;
+  height: 567px;
+  box-sizing: border-box;
   margin: 0;
   padding: 16px;
   font-family: 'Inter', system-ui, sans-serif;
   background-color: var(--bg-main);
   color: var(--text-main);
   user-select: none;
+  position: relative;
+  overflow: visible;
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+html[dir="rtl"] .card-header,
+html[dir="rtl"] .card-header-actions,
+html[dir="rtl"] .card-header-label {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .card-header-label span,
+html[dir="rtl"] .card span {
+  text-align: right;
+}
+
+html[dir="rtl"] .sliderTooltip {
+  direction: ltr;
 }
 
 #settingsView .footer-email-wrapper,
@@ -424,7 +445,7 @@ input:checked+.slider:before {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% + 2px));
   width: 31px;
   height: 31px;
   background: none !important;
@@ -452,18 +473,18 @@ input:checked+.slider:before {
 
 .settings-trigger:hover {
   color: var(--accent);
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(calc(-50% + 2px)) rotate(180deg);
 }
 
 .settings-trigger:active {
-  transform: translateY(-50%) rotate(180deg) scale(0.9);
+  transform: translateY(calc(-50% + 2px)) rotate(180deg) scale(0.9);
 }
 
 .logo-link {
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% + 2px));
   width: 28px;
   height: 28px;
   display: flex;
@@ -507,7 +528,6 @@ input:checked+.slider:before {
   flex-direction: column;
   height: 535px !important;
   overflow: hidden;
-  animation: fadeIn 0.3s ease;
 }
 
 @keyframes fadeIn {
@@ -541,9 +561,11 @@ input:checked+.slider:before {
 #counterArea {
   flex: 1;
   width: 100%;
+  height: 100% !important;
+  min-height: 0 !important;
   resize: none !important;
   overflow-y: auto !important;
-  margin-top: 15px;
+  margin-top: 0;
   background: var(--bg-card);
   color: #fff;
   border: 1px solid var(--border-color);
@@ -556,6 +578,8 @@ input:checked+.slider:before {
   box-sizing: border-box;
   box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: border-color 0.2s ease;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 #noteArea:focus,
@@ -563,9 +587,16 @@ input:checked+.slider:before {
   border-color: rgba(0, 255, 136, 0.5);
 }
 
+.notes-textarea-container,
+.counter-container {
+  margin-top: 15px;
+  min-height: 0 !important;
+}
+
 .smart-notes {
   width: 100%;
-  min-height: 415px;
+  height: 100%;
+  min-height: 0 !important;
   background: var(--bg-input);
   color: var(--text-main);
   padding: 12px;
@@ -579,6 +610,8 @@ input:checked+.slider:before {
   line-height: 1.6;
   box-sizing: border-box;
   transition: border-color 0.2s;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .smart-notes:focus {
@@ -679,11 +712,7 @@ input:checked+.slider:before {
 /* =========================================
    9. TRACKER (PRAĆENJE)
    ========================================= */
-#trackerView {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
+
 
 .tracker-controls {
   display: flex;
@@ -772,7 +801,6 @@ input:checked+.slider:before {
 #trackerList {
   flex: 1;
   overflow-y: auto;
-  margin-top: 12px;
   padding-right: 5px;
   padding-bottom: 60px;
   color: #fff;
@@ -811,7 +839,8 @@ input:checked+.slider:before {
 }
 
 #trackerDatePrikaz,
-#trackerMode {
+#trackerMode,
+#trackerSearch {
   width: 100% !important;
   height: 30px !important;
   display: flex !important;
@@ -834,9 +863,16 @@ input:checked+.slider:before {
 }
 
 #trackerDatePrikaz:hover,
-#trackerMode:hover {
+#trackerMode:hover,
+#trackerSearch:hover {
   background: var(--bg-hover) !important;
   border-color: var(--accent) !important;
+}
+
+#trackerSearch {
+  cursor: text !important;
+  text-align: left !important;
+  padding: 0 12px !important;
 }
 
 #trackerMode option {
@@ -1311,6 +1347,82 @@ input:checked+.slider:before {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.tech-icon-badge {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 900;
+  color: #0a0a0c;
+  background: var(--accent);
+}
+
+.tech-icon-react {
+  background: #61dafb;
+}
+
+.tech-icon-vue {
+  background: #41b883;
+}
+
+.tech-icon-angular {
+  background: #dd0031;
+  color: #fff;
+}
+
+.tech-icon-svelte {
+  background: #ff3e00;
+  color: #fff;
+}
+
+.tech-icon-next {
+  background: #ffffff;
+  color: #0a0a0c;
+}
+
+.tech-icon-nuxt {
+  background: #00dc82;
+  color: #0a0a0c;
+}
+
+.tech-icon-astro {
+  background: #ff7a18;
+  color: #0a0a0c;
+}
+
+.tech-icon-wp {
+  background: #21759b;
+  color: #fff;
+}
+
+.tech-icon-shopify {
+  background: #95bf47;
+  color: #0a0a0c;
+}
+
+.tech-icon-tailwind {
+  background: #38bdf8;
+  color: #0a0a0c;
+}
+
+.tech-icon-bootstrap {
+  background: #7952b3;
+  color: #fff;
+}
+
+.tech-icon-firebase {
+  background: #ffca28;
+  color: #0a0a0c;
+}
+
+.tech-icon-supabase {
+  background: #3ecf8e;
+  color: #0a0a0c;
 }
 
 .tech-info {
@@ -1820,13 +1932,17 @@ input:checked+.slider:before {
 }
 
 /* Dozvoljeni elementi za klik kad je ograničeno */
-.restricted-session .app-header,
-.restricted-session #settingsView {
+.restricted-session .app-header {
   position: relative;
   z-index: 1001 !important;
   pointer-events: auto !important;
   opacity: 1 !important;
   filter: none !important;
+}
+
+.restricted-session #settingsView {
+  z-index: 1001 !important;
+  pointer-events: auto !important;
 }
 
 /* Zabranjene kartice kad je ograničeno */
@@ -1837,7 +1953,6 @@ input:checked+.slider:before {
 }
 
 .restricted-session #mainView {
-  position: relative;
   background: #0a0a0c;
   display: flex;
   flex-direction: column;
@@ -1869,4 +1984,431 @@ input:checked+.slider:before {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
+}
+
+/* New classes for modularization & inline style removal */
+.card-header-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn-danger {
+  color: #ff4444;
+}
+
+.file-input-hidden {
+  display: none !important;
+}
+
+.tracker-date-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.tracker-date-display {
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+.tracker-date-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.tech-scroll-area {
+  padding: 10px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.tech-loading {
+  text-align: center;
+  color: var(--text-dim);
+  margin: 20px 0;
+}
+
+.tech-result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-email-selectable {
+  user-select: text;
+  cursor: text;
+}
+
+.card-header-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.cookie-block-label {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+
+/* =========================================
+   15. DYNAMIC UI SYSTEMS (TRANSITIONS, TOASTS, UPDATE MODAL)
+   ========================================= */
+
+/* --- VIEW TRANSITIONS --- */
+#mainView,
+.sub-view {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 340px;
+  height: 535px;
+  box-sizing: border-box;
+  will-change: transform;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease;
+  overflow: hidden;
+}
+
+#mainView {
+  display: flex;
+  flex-direction: column;
+}
+
+.view-hidden {
+  display: none !important;
+}
+
+.view-visible {
+  display: flex !important;
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+.view-slide-left {
+  transform: translateX(-100%) !important;
+  opacity: 0 !important;
+}
+
+.view-slide-right {
+  transform: translateX(100%) !important;
+  opacity: 0 !important;
+}
+
+/* --- PREMIUM TOASTS --- */
+#toastContainer {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 10050;
+  pointer-events: none;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: rgba(22, 22, 30, 0.85);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: var(--text-main);
+  font-size: 12px;
+  font-weight: 500;
+  pointer-events: auto;
+  animation: toastFadeIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  transition: all 0.3s ease;
+}
+
+.toast-success {
+  border-color: rgba(0, 255, 136, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 255, 136, 0.08), 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.toast-error {
+  border-color: rgba(255, 77, 77, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(255, 77, 77, 0.08), 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.toast-info {
+  border-color: rgba(0, 123, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 123, 255, 0.08), 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.toast-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.toast-icon svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+@keyframes toastFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.toast-fade-out {
+  opacity: 0 !important;
+  transform: translateY(-20px) scale(0.95) !important;
+}
+
+
+/* --- WHAT'S NEW OVERLAY --- */
+#whatsNewOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 12, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.whats-new-modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 20px;
+  width: 290px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.whats-new-modal h2 {
+  font-size: 16px;
+  color: var(--accent);
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.whats-new-modal p {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.whats-new-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.whats-new-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--text-main);
+}
+
+.whats-new-feature svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--accent);
+  fill: none;
+  stroke-width: 2.5;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.whats-new-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 1px;
+}
+
+.whats-new-btn:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+/* --- FIELD COPY BUTTONS --- */
+.copy-field-btn {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  background: transparent !important;
+  color: var(--text-dim) !important;
+  border: none;
+  cursor: pointer;
+  padding: 6px !important;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.2s ease;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.copy-field-btn:hover {
+  color: var(--accent) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+#noteArea,
+#counterArea {
+  padding-right: 36px !important;
+}
+
+/* =========================================
+   16. CUSTOM SVG ICON ANIMATIONS
+   ========================================= */
+
+/* Back Arrow Animation */
+.icon-back {
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.secondary.icon-btn:hover .icon-back {
+  transform: translateX(-3px);
+}
+
+/* Refresh Icon Animation */
+.icon-refresh {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.secondary.icon-btn:hover .icon-refresh {
+  transform: rotate(360deg);
+}
+
+.secondary.icon-btn.spinning .icon-refresh {
+  animation: infinite-spin 1.2s linear infinite !important;
+}
+
+@keyframes infinite-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Trash Can Lid Opening Animation */
+.icon-trash {
+  overflow: visible;
+}
+
+.trash-lid {
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-origin: 12px 7px;
+}
+
+.secondary.icon-btn:hover .trash-lid {
+  transform: translateY(-2.5px) rotate(-12deg);
+}
+
+/* Clear Radio Input Cross Animation */
+.radio-input-clear svg {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), color 0.2s ease;
+}
+
+.radio-input-clear:hover svg {
+  transform: rotate(90deg);
+}
+
+/* Radio Presets Grid Styling */
+.radio-presets {
+  margin-top: 5px;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.preset-label {
+  display: block;
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.preset-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.preset-btn {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-main) !important;
+  padding: 8px 6px !important;
+  border-radius: 8px !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  transition: all 0.2s ease !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.preset-btn:hover {
+  background: rgba(0, 255, 136, 0.05) !important;
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  transform: translateY(-1px);
+}
+
+.preset-btn.active {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #000 !important;
+  box-shadow: 0 0 10px var(--accent-glow) !important;
 }

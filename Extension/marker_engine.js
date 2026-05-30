@@ -30,7 +30,7 @@ function trackMarkerEvent(eventName, eventData = {}) {
                 page_location: location.href
             }
         });
-    } catch (e) {}
+    } catch (e) { }
 }
 
 async function pokreniMarker() {
@@ -50,9 +50,18 @@ async function pokreniMarker() {
         let markerDict = {};
 
         try {
-            const response = await fetch(chrome.runtime.getURL(`_locales/${currentLang}/messages.json`));
-            if (response.ok) {
-                markerDict = await response.json();
+            const response = await new Promise((resolve) => {
+                try {
+                    chrome.runtime.sendMessage({ action: "get_locale_messages", lang: currentLang }, (res) => {
+                        if (chrome.runtime.lastError) return resolve({ ok: false });
+                        resolve(res || { ok: false });
+                    });
+                } catch (err) {
+                    resolve({ ok: false, error: String(err?.message || err) });
+                }
+            });
+            if (response.ok && response.messages) {
+                markerDict = response.messages;
             }
         } catch (e) {
             console.warn("Marker translation fetch failed");
@@ -109,7 +118,7 @@ async function pokreniMarker() {
 
         const menu = document.createElement("div");
         menu.className = "marker-menu";
-        
+
         const btnContainer = document.createElement("div");
         btnContainer.className = "marker-btns";
 
@@ -184,7 +193,7 @@ async function pokreniMarker() {
         menu.onmouseleave = () => {
             startAutoHide(1000);
         };
-        
+
         startAutoHide(3000); // Inicijalno sakrivanje nakon 3s
         // ---------------------------
 
@@ -232,20 +241,20 @@ async function pokreniMarker() {
         menu.onclick = (e) => {
             const btn = e.target.closest("button");
             if (!btn) return;
-            if (btn.id === "m_close") { 
+            if (btn.id === "m_close") {
                 trackMarkerEvent("close");
-                removeMarker(); 
-                return; 
+                removeMarker();
+                return;
             }
-            if (btn.id === "m_clear") { 
+            if (btn.id === "m_clear") {
                 trackMarkerEvent("clear_all_click");
-                svg.innerHTML = ''; 
+                svg.innerHTML = '';
                 startAutoHide(1000);
-                return; 
+                return;
             }
             document.querySelectorAll(".marker-menu button:not(.close-btn):not(#m_clear)").forEach(b => b.classList.remove("active"));
             btn.classList.add("active");
-            
+
             const tool = btn.id.replace("m_", "");
             const eventNames = {
                 "brush": "draw_select",
@@ -255,10 +264,10 @@ async function pokreniMarker() {
                 "eraser": "erase_select"
             };
             trackMarkerEvent(eventNames[tool] || tool);
-            
+
             mode = tool;
             svg.style.cursor = (mode === "text") ? "text" : (mode === "move" ? "move" : "crosshair");
-            
+
             startAutoHide(1000); // Sakrij nakon biranja alata
         };
 

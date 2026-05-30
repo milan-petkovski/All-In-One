@@ -10,6 +10,7 @@ let ytRetryEndAt = 0;
 let ytApplyDebounce = null;
 let ytUrlWatcher = null;
 let ytObserver = null;
+let ytListenersAttached = false;
 
 function getVideoId() {
   let url;
@@ -218,12 +219,14 @@ function scheduleFetch() {
 }
 
 function initYtRyd() {
-  if (ytInitialized) return;
-  ytInitialized = true;
-
-  document.addEventListener("yt-navigate-finish", scheduleFetch);
-  document.addEventListener("yt-page-data-updated", scheduleFetch);
-
+  if (!ytListenersAttached) {
+    document.addEventListener("yt-navigate-finish", scheduleFetch);
+    document.addEventListener("yt-page-data-updated", scheduleFetch);
+    ytListenersAttached = true;
+  }
+  if (!ytInitialized) {
+    ytInitialized = true;
+  }
   startYtWatchers();
 }
 

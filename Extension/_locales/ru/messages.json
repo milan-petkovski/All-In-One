@@ -1,521 +1,527 @@
 {
-  "extName": {
-    "message": "All In One - Лучший инструмент для продуктивности"
-  },
-  "extDesc": {
-    "message": "Ультимативный инструмент объединяющий все основные функции в одном быстром современном и бесплатном интерфейсе."
-  },
-  "markLapDesc": {
-    "message": "Зафиксировать момент на секундомере"
-  },
-  "appTitle": {
-    "message": "ALL IN ONE"
-  },
-  "websiteTooltip": {
-    "message": "Официальный сайт расширения"
-  },
-  "settingsTooltip": {
-    "message": "Настройки"
-  },
-  "radioTitle": {
-    "message": "Радио"
-  },
-  "radioTitleCustom": {
-    "message": "Радио"
-  },
-  "importRadioTooltip": {
-    "message": "Импортировать пользовательскую радиостанцию"
-  },
-  "radioArtist": {
-    "message": "При поддержке расширения All In One"
-  },
-  "playBtn": {
-    "message": "Играть"
-  },
-  "soundTitle": {
-    "message": "Звук"
-  },
-  "resetBtn": {
-    "message": "Сброс"
-  },
-  "colorPickerTitle": {
-    "message": "Color Picker"
-  },
-  "darkModeTitle": {
-    "message": "Темная тема"
-  },
-  "rulerTitle": {
-    "message": "Линейка страницы"
-  },
-  "copyEnableTitle": {
-    "message": "Копирование"
-  },
-  "markerTitle": {
-    "message": "Маркер страницы"
-  },
-  "techTitle": {
-    "message": "Технологии сайта"
-  },
-  "cacheTitle": {
-    "message": "Куки и кэш"
-  },
-  "fontTitle": {
-    "message": "Поиск шрифтов"
-  },
-  "counterTitle": {
-    "message": "Счетчик символов"
-  },
-  "stopwatchTitle": {
-    "message": "Секундомер"
-  },
-  "notesTitle": {
-    "message": "Умные заметки"
-  },
-  "trackerTitle": {
-    "message": "Webtime Tracker"
-  },
-  "ytDislikeTitle": {
-    "message": "Return YouTube Dislike"
-  },
-  "cacheModalTitle": {
-    "message": "КУКИ И КЭШ"
-  },
-  "blockCookiesLabel": {
-    "message": "Автоматически блокировать куки"
-  },
-  "clearSiteDataBtn": {
-    "message": "Очистить все данные этого сайта"
-  },
-  "cancelBtn": {
-    "message": "ОТМЕНА"
-  },
-  "counterModalTitle": {
-    "message": "СЧЕТЧИК СИМВОЛОВ"
-  },
-  "counterPlaceholder": {
-    "message": "Вставьте текст здесь..."
-  },
-  "charsLabel": {
-    "message": "Символов"
-  },
-  "wordsLabel": {
-    "message": "Слов"
-  },
-  "stopwatchReady": {
-    "message": "ГОТОВО"
-  },
-  "startBtn": {
-    "message": "СТАРТ"
-  },
-  "lapBtn": {
-    "message": "КРУГ"
-  },
-  "stopBtn": {
-    "message": "СТОП"
-  },
-  "currentRecordedLabel": {
-    "message": "ТЕКУЩАЯ ЗАПИСЬ"
-  },
-  "liveHistoryLabel": {
-    "message": "ЖИВАЯ ИСТОРИЯ"
-  },
-  "clearAllBtn": {
-    "message": "ОЧИСТИТЬ ВСЕ"
-  },
-  "confirmClearHistory": {
-    "message": "Вы уверены что хотите очистить всю историю?"
-  },
-  "deleteBtn": {
-    "message": "УДАЛИТЬ"
-  },
-  "notesModalTitle": {
-    "message": "УМНЫЕ ЗАМЕТКИ"
-  },
-  "clearNotesTooltip": {
-    "message": "Очистить все заметки"
-  },
-  "notesPlaceholder": {
-    "message": "Пишите заметки здесь..."
-  },
-  "grabTextTooltip": {
-    "message": "Извлечь текст со страницы"
-  },
-  "textLabel": {
-    "message": "Текст"
-  },
-  "addUrlTooltip": {
-    "message": "Добавить URL текущей страницы"
-  },
-  "linkLabel": {
-    "message": "Ссылка"
-  },
-  "addDateTooltip": {
-    "message": "Добавить сегодняшнюю дату"
-  },
-  "dateLabel": {
-    "message": "Дата"
-  },
-  "exportNotesTooltip": {
-    "message": "Экспорт заметок"
-  },
-  "importNotesTooltip": {
-    "message": "Импорт заметок"
-  },
-  "savedIndicator": {
-    "message": "Сохранено"
-  },
-  "confirmClearNotes": {
-    "message": "Вы уверены что хотите очистить все заметки?"
-  },
-  "trackerModalTitle": {
-    "message": "Время на сайтах"
-  },
-  "exportTooltip": {
-    "message": "Export data"
-  },
-  "importTooltip": {
-    "message": "Import data"
-  },
-  "trackerModeDay": {
-    "message": "Дневной просмотр"
-  },
-  "trackerModeMonth": {
-    "message": "Месячный просмотр"
-  },
-  "trackerModeAll": {
-    "message": "За всё время"
-  },
-  "trackerTodayLabel": {
-    "message": "Сегодня"
-  },
-  "trackerMonthLabel": {
-    "message": "Этот месяц"
-  },
-  "trackerAvgLabel": {
-    "message": "Среднее"
-  },
-  "techModalTitle": {
-    "message": "ТЕХНОЛОГИИ САЙТА"
-  },
-  "techLoadingMsg": {
-    "message": "Сканер анализирует сайт..."
-  },
-  "uiSettings": {
-    "message": "НАСТРОЙКИ"
-  },
-  "supportTitle": {
-    "message": "Поддержать расширение"
-  },
-  "supportDesc": {
-    "message": "All In One это полностью бесплатный инструмент. Ваша поддержка помогает сохранять его таким и развивать новые функции."
-  },
-  "donateBtn": {
-    "message": "Пожертвовать и поддержать работу"
-  },
-  "websiteBtn": {
-    "message": "Официальный сайт расширения"
-  },
-  "rateBtn": {
-    "message": "Оценить расширение"
-  },
-  "versionLabel": {
-    "message": "Версия:"
-  },
-  "privacyLabel": {
-    "message": "Политика конфиденциальности"
-  },
-  "systemPageTitle": {
-    "message": "СИСТЕМНАЯ СТРАНИЦА"
-  },
-  "systemPageDesc": {
-    "message": "Инструменты модификации отключены"
-  },
-  "radioPlay": {
-    "message": "Играть"
-  },
-  "radioPause": {
-    "message": "Пауза"
-  },
-  "colorPickerPicking": {
-    "message": "Выбор..."
-  },
-  "colorPickerCopied": {
-    "message": "Скопировано: "
-  },
-  "cacheNotSupported": {
-    "message": "Не поддерживается"
-  },
-  "cacheClearConfirm": {
-    "message": "Очистить все данные этого сайта"
-  },
-  "cacheError": {
-    "message": "Ошибка"
-  },
-  "cacheClearing": {
-    "message": "Очистка..."
-  },
-  "cacheCleared": {
-    "message": "Очищено!"
-  },
-  "fontCopied": {
-    "message": "Скопировано!"
-  },
-  "fontNotCopied": {
-    "message": "Не скопировано"
-  },
-  "notesSaved": {
-    "message": "Сохранено"
-  },
-  "notesTooLarge": {
-    "message": "Заметка слишком большая"
-  },
-  "notesLinkText": {
-    "message": "Ссылка"
-  },
-  "trackerToday": {
-    "message": "Сегодня"
-  },
-  "trackerThatDay": {
-    "message": "Тот день"
-  },
-  "trackerSelectedMonth": {
-    "message": "Выбранный месяц"
-  },
-  "trackerTotal": {
-    "message": "Всего"
-  },
-  "trackerNoData": {
-    "message": "Нет данных за этот период"
-  },
-  "trackerExportEmpty": {
-    "message": "No tracker data to export."
-  },
-  "trackerExportTruncated": {
-    "message": "Export truncated to 10MB to keep the popup stable."
-  },
-  "trackerImportEmpty": {
-    "message": "No valid tracker data to import."
-  },
-  "trackerImportSuccess": {
-    "message": "Data successfully imported!"
-  },
-  "trackerImportError": {
-    "message": "Error reading the file."
-  },
-  "swStatusLive": {
-    "message": "ИДЕТ ЗАПИСЬ"
-  },
-  "swStatusReady": {
-    "message": "ГОТОВО"
-  },
-  "swUndoTitle": {
-    "message": "Удалить этот момент"
-  },
-  "swNoLaps": {
-    "message": "Нет записанных моментов"
-  },
-  "swLiveTitlePrefix": {
-    "message": "Запись #"
-  },
-  "swDurationLabel": {
-    "message": "Длительность: "
-  },
-  "swMomentLabel": {
-    "message": "Момент "
-  },
-  "swExportTxtBtn": {
-    "message": "ЭКСПОРТ В .TXT"
-  },
-  "swTotalDurationPrefix": {
-    "message": "ОБЩАЯ ДЛИТЕЛЬНОСТЬ: "
-  },
-  "swCopyBtn": {
-    "message": "КОПИРОВАТЬ В БУФЕР"
-  },
-  "swCopiedBtn": {
-    "message": "✓ СКОПИРОВАНО"
-  },
-  "swNoHistory": {
-    "message": "Нет живой истории"
-  },
-  "techScannerUnavailable": {
-    "message": "Сканер недоступен на этой странице."
-  },
-  "techFoundPrefix": {
-    "message": "Найдено: "
-  },
-  "techItemsSuffix": {
-    "message": "элементов"
-  },
-  "techNotFound": {
-    "message": "Ничего не найдено."
-  },
-  "techScannerFailed": {
-    "message": "Сканирование на этой странице не удалось."
-  },
-  "markerDrawTooltip": {
-    "message": "Рисовать"
-  },
-  "markerLineTooltip": {
-    "message": "Линия"
-  },
-  "markerTextTooltip": {
-    "message": "Текст"
-  },
-  "markerMoveTooltip": {
-    "message": "Двигать"
-  },
-  "markerEraseTooltip": {
-    "message": "Стереть"
-  },
-  "markerClearAllTooltip": {
-    "message": "Стереть все"
-  },
-  "markerThicknessTooltip": {
-    "message": "Толщина"
-  },
-  "markerCloseTooltip": {
-    "message": "Закрыть"
-  },
-  "linesLabel": {
-    "message": "Строки"
-  },
-  "clearCounterTooltip": {
-    "message": "Очистить всё"
-  },
-  "confirmClearCounter": {
-    "message": "Вы уверены, что хотите очистить всё?"
-  },
-  "trackerTotalShort": {
-    "message": "Всего"
-  },
-  "trackerThisMonth": {
-    "message": "Этот месяц"
-  },
-  "trackerThisMonthShort": {
-    "message": "Этот месяц"
-  },
-  "trackerThatMonth": {
-    "message": "Тот месяц"
-  },
-  "trackerAvgThisMonth": {
-    "message": "Среднее"
-  },
-  "trackerAvgThatMonth": {
-    "message": "Среднее"
-  },
-  "trackerAvgTotal": {
-    "message": "Среднее"
-  },
-  "trackerDeleteConfirm": {
-    "message": "Вы уверены, что хотите удалить данные для"
-  },
-  "techCatBase": {
-    "message": "База"
-  },
-  "techCatSystem": {
-    "message": "Система"
-  },
-  "techCatEcom": {
-    "message": "E-Commerce"
-  },
-  "techCatTech": {
-    "message": "Технологии"
-  },
-  "techCatStyles": {
-    "message": "Стили"
-  },
-  "techCatDb": {
-    "message": "База данных"
-  },
-  "techCatBackend": {
-    "message": "Backend"
-  },
-  "techCatServer": {
-    "message": "Сервер"
-  },
-  "techCatNetwork": {
-    "message": "Сеть"
-  },
-  "techCatSecurity": {
-    "message": "Безопасность"
-  },
-  "techCatCaching": {
-    "message": "Кэширование"
-  },
-  "techCatCdn": {
-    "message": "CDN"
-  },
-  "techCatAnalytics": {
-    "message": "Аналитика"
-  },
-  "techCatAds": {
-    "message": "Реклама"
-  },
-  "techCatPayment": {
-    "message": "Платежи"
-  },
-  "techCatComm": {
-    "message": "Коммуникация"
-  },
-  "techCatMedia": {
-    "message": "Медиа"
-  },
-  "techCatBuild": {
-    "message": "Build"
-  },
-  "techCatSeo": {
-    "message": "SEO"
-  },
-  "techCatStats": {
-    "message": "Статистика"
-  },
-  "techCatTools": {
-    "message": "Инструменты"
-  },
-  "techStatDom": {
-    "message": "DOM"
-  },
-  "techStatImages": {
-    "message": "Изображения"
-  },
-  "techStatScripts": {
-    "message": "Скрипты"
-  },
-  "techStatLinks": {
-    "message": "Ссылки"
-  },
-  "techStatCss": {
-    "message": "CSS"
-  },
-  "techStatForms": {
-    "message": "Формы"
-  },
-  "techStatTables": {
-    "message": "Таблицы"
-  },
-  "techStatSvg": {
-    "message": "SVG"
-  },
-  "techStatVideo": {
-    "message": "Видео"
-  },
-  "techStatAudio": {
-    "message": "Аудио"
-  },
-  "techStatIframes": {
-    "message": "Iframes"
-  },
-  "radioModalDesc": {
-    "message": "Введите прямую ссылку на любимую радиостанцию"
-  },
-  "radioUrlPlaceholder": {
-    "message": "https://stream.radio.com/play"
-  },
-  "clearRadioInputTooltip": {
-    "message": "Очистить поле"
-  },
-  "saveRadioStationBtn": {
-    "message": "СОХРАНИТЬ СТАНЦИЮ"
-  }
+    "notesTitle":  {
+                       "message":  "Умные заметки"
+                   },
+    "supportDesc":  {
+                        "message":  "All In One это полностью бесплатный инструмент. Ваша поддержка помогает сохранять его таким и развивать новые функции."
+                    },
+    "trackerExportTruncated":  {
+                                   "message":  "Export truncated to 10MB to keep the popup stable."
+                               },
+    "techCatBackend":  {
+                           "message":  "Backend"
+                       },
+    "markerEraseTooltip":  {
+                               "message":  "Стереть"
+                           },
+    "counterTitle":  {
+                         "message":  "Счетчик символов"
+                     },
+    "trackerAvgLabel":  {
+                            "message":  "Среднее"
+                        },
+    "trackerModeMonth":  {
+                             "message":  "Месячный просмотр"
+                         },
+    "trackerModeAll":  {
+                           "message":  "За всё время"
+                       },
+    "techCatMedia":  {
+                         "message":  "Медиа"
+                     },
+    "trackerNoData":  {
+                          "message":  "Нет данных за этот период"
+                      },
+    "swLiveTitlePrefix":  {
+                              "message":  "Запись #"
+                          },
+    "confirmClearNotes":  {
+                              "message":  "Вы уверены что хотите очистить все заметки?"
+                          },
+    "techCatSeo":  {
+                       "message":  "SEO"
+                   },
+    "techCatTools":  {
+                         "message":  "Инструменты"
+                     },
+    "soundTitle":  {
+                       "message":  "Звук"
+                   },
+    "clearCounterTooltip":  {
+                                "message":  "Очистить всё"
+                            },
+    "markerCloseTooltip":  {
+                               "message":  "Закрыть"
+                           },
+    "stopwatchTitle":  {
+                           "message":  "Секундомер"
+                       },
+    "clearNotesTooltip":  {
+                              "message":  "Очистить все заметки"
+                          },
+    "rulerTitle":  {
+                       "message":  "Линейка страницы"
+                   },
+    "markLapDesc":  {
+                        "message":  "Зафиксировать момент на секундомере"
+                    },
+    "trackerImportEmpty":  {
+                               "message":  "No valid tracker data to import."
+                           },
+    "systemPageDesc":  {
+                           "message":  "Инструменты модификации отключены"
+                       },
+    "techStatLinks":  {
+                          "message":  "Ссылки"
+                      },
+    "stopBtn":  {
+                    "message":  "СТОП"
+                },
+    "swNoLaps":  {
+                     "message":  "Нет записанных моментов"
+                 },
+    "trackerTitle":  {
+                         "message":  "Webtime Tracker"
+                     },
+    "trackerThisMonth":  {
+                             "message":  "Этот месяц"
+                         },
+    "linesLabel":  {
+                       "message":  "Строки"
+                   },
+    "toastTrackerError":  {
+                              "message":  "Error refreshing data"
+                          },
+    "trackerExportEmpty":  {
+                               "message":  "No tracker data to export."
+                           },
+    "techCatComm":  {
+                        "message":  "Коммуникация"
+                    },
+    "deleteBtn":  {
+                      "message":  "УДАЛИТЬ"
+                  },
+    "toastModuleLoadError":  {
+                                 "message":  "Error loading module"
+                             },
+    "notesSaved":  {
+                       "message":  "Сохранено"
+                   },
+    "lapBtn":  {
+                   "message":  "КРУГ"
+               },
+    "notesModalTitle":  {
+                            "message":  "УМНЫЕ ЗАМЕТКИ"
+                        },
+    "trackerAvgThisMonth":  {
+                                "message":  "Среднее"
+                            },
+    "versionLabel":  {
+                         "message":  "Версия:"
+                     },
+    "importNotesTooltip":  {
+                               "message":  "Импорт заметок"
+                           },
+    "techCatBuild":  {
+                         "message":  "Build"
+                     },
+    "fontNotCopied":  {
+                          "message":  "Не скопировано"
+                      },
+    "importTooltip":  {
+                          "message":  "Import data"
+                      },
+    "techCatTech":  {
+                        "message":  "Технологии"
+                    },
+    "techCatServer":  {
+                          "message":  "Сервер"
+                      },
+    "cacheNotSupported":  {
+                              "message":  "Не поддерживается"
+                          },
+    "techStatCss":  {
+                        "message":  "CSS"
+                    },
+    "techStatAudio":  {
+                          "message":  "Аудио"
+                      },
+    "cacheClearing":  {
+                          "message":  "Очистка..."
+                      },
+    "radioTitleCustom":  {
+                             "message":  "Радио"
+                         },
+    "websiteBtn":  {
+                       "message":  "Официальный сайт расширения"
+                   },
+    "markerThicknessTooltip":  {
+                                   "message":  "Толщина"
+                               },
+    "confirmClearCounter":  {
+                                "message":  "Вы уверены, что хотите очистить всё?"
+                            },
+    "techCatAds":  {
+                       "message":  "Реклама"
+                   },
+    "uiSettings":  {
+                       "message":  "НАСТРОЙКИ"
+                   },
+    "trackerThatMonth":  {
+                             "message":  "Тот месяц"
+                         },
+    "radioModalDesc":  {
+                           "message":  "Введите прямую ссылку на любимую радиостанцию"
+                       },
+    "trackerDeleteConfirm":  {
+                                 "message":  "Вы уверены, что хотите удалить данные для"
+                             },
+    "darkModeTitle":  {
+                          "message":  "Темная тема"
+                      },
+    "techStatScripts":  {
+                            "message":  "Скрипты"
+                        },
+    "swNoHistory":  {
+                        "message":  "Нет живой истории"
+                    },
+    "techNotFound":  {
+                         "message":  "Ничего не найдено."
+                     },
+    "notesPlaceholder":  {
+                             "message":  "Пишите заметки здесь..."
+                         },
+    "radioArtist":  {
+                        "message":  "При поддержке расширения All In One"
+                    },
+    "charsLabel":  {
+                       "message":  "Символов"
+                   },
+    "trackerImportSuccess":  {
+                                 "message":  "Data successfully imported!"
+                             },
+    "copyEnableTitle":  {
+                            "message":  "Копирование"
+                        },
+    "techCatStats":  {
+                         "message":  "Статистика"
+                     },
+    "dateLabel":  {
+                      "message":  "Дата"
+                  },
+    "techCatNetwork":  {
+                           "message":  "Сеть"
+                       },
+    "techCatEcom":  {
+                        "message":  "E-Commerce"
+                    },
+    "currentRecordedLabel":  {
+                                 "message":  "ТЕКУЩАЯ ЗАПИСЬ"
+                             },
+    "techCatStyles":  {
+                          "message":  "Стили"
+                      },
+    "extDesc":  {
+                    "message":  "Ультимативный инструмент объединяющий все основные функции в одном быстром современном и бесплатном интерфейсе."
+                },
+    "resetBtn":  {
+                     "message":  "Сброс"
+                 },
+    "addDateTooltip":  {
+                           "message":  "Добавить сегодняшнюю дату"
+                       },
+    "supportTitle":  {
+                         "message":  "Поддержать расширение"
+                     },
+    "savedIndicator":  {
+                           "message":  "Сохранено"
+                       },
+    "counterPlaceholder":  {
+                               "message":  "Вставьте текст здесь..."
+                           },
+    "techFoundPrefix":  {
+                            "message":  "Найдено: "
+                        },
+    "systemPageTitle":  {
+                            "message":  "СИСТЕМНАЯ СТРАНИЦА"
+                        },
+    "markerClearAllTooltip":  {
+                                  "message":  "Стереть все"
+                              },
+    "trackerModeDay":  {
+                           "message":  "Дневной просмотр"
+                       },
+    "techItemsSuffix":  {
+                            "message":  "элементов"
+                        },
+    "trackerTotal":  {
+                         "message":  "Всего"
+                     },
+    "swStatusReady":  {
+                          "message":  "ГОТОВО"
+                      },
+    "trackerTotalShort":  {
+                              "message":  "Всего"
+                          },
+    "blockCookiesLabel":  {
+                              "message":  "Автоматически блокировать куки"
+                          },
+    "markerDrawTooltip":  {
+                              "message":  "Рисовать"
+                          },
+    "trackerMonthLabel":  {
+                              "message":  "Этот месяц"
+                          },
+    "techStatSvg":  {
+                        "message":  "SVG"
+                    },
+    "techStatTables":  {
+                           "message":  "Таблицы"
+                       },
+    "techStatImages":  {
+                           "message":  "Изображения"
+                       },
+    "trackerToday":  {
+                         "message":  "Сегодня"
+                     },
+    "techStatDom":  {
+                        "message":  "DOM"
+                    },
+    "wordsLabel":  {
+                       "message":  "Слов"
+                   },
+    "clearAllBtn":  {
+                        "message":  "ОЧИСТИТЬ ВСЕ"
+                    },
+    "clearSiteDataBtn":  {
+                             "message":  "Очистить все данные этого сайта"
+                         },
+    "colorPickerPicking":  {
+                               "message":  "Выбор..."
+                           },
+    "cacheClearConfirm":  {
+                              "message":  "Очистить все данные этого сайта"
+                          },
+    "markerTextTooltip":  {
+                              "message":  "Текст"
+                          },
+    "radioTitle":  {
+                       "message":  "Радио"
+                   },
+    "trackerSelectedMonth":  {
+                                 "message":  "Выбранный месяц"
+                             },
+    "fontCopied":  {
+                       "message":  "Скопировано!"
+                   },
+    "notesLinkText":  {
+                          "message":  "Ссылка"
+                      },
+    "trackerAvgThatMonth":  {
+                                "message":  "Среднее"
+                            },
+    "techTitle":  {
+                      "message":  "Технологии сайта"
+                  },
+    "markerMoveTooltip":  {
+                              "message":  "Двигать"
+                          },
+    "playBtn":  {
+                    "message":  "Играть"
+                },
+    "techCatPayment":  {
+                           "message":  "Платежи"
+                       },
+    "markerLineTooltip":  {
+                              "message":  "Линия"
+                          },
+    "techStatIframes":  {
+                            "message":  "Iframes"
+                        },
+    "counterModalTitle":  {
+                              "message":  "СЧЕТЧИК СИМВОЛОВ"
+                          },
+    "fontTitle":  {
+                      "message":  "Поиск шрифтов"
+                  },
+    "swExportTxtBtn":  {
+                           "message":  "ЭКСПОРТ В .TXT"
+                       },
+    "swUndoTitle":  {
+                        "message":  "Удалить этот момент"
+                    },
+    "startBtn":  {
+                     "message":  "СТАРТ"
+                 },
+    "techModalTitle":  {
+                           "message":  "ТЕХНОЛОГИИ САЙТА"
+                       },
+    "saveRadioStationBtn":  {
+                                "message":  "СОХРАНИТЬ СТАНЦИЮ"
+                            },
+    "techCatDb":  {
+                      "message":  "База данных"
+                  },
+    "trackerImportError":  {
+                               "message":  "Error reading the file."
+                           },
+    "swStatusLive":  {
+                         "message":  "ИДЕТ ЗАПИСЬ"
+                     },
+    "linkLabel":  {
+                      "message":  "Ссылка"
+                  },
+    "techCatAnalytics":  {
+                             "message":  "Аналитика"
+                         },
+    "liveHistoryLabel":  {
+                             "message":  "ЖИВАЯ ИСТОРИЯ"
+                         },
+    "colorPickerTitle":  {
+                             "message":  "Color Picker"
+                         },
+    "appTitle":  {
+                     "message":  "ALL IN ONE"
+                 },
+    "swMomentLabel":  {
+                          "message":  "Момент "
+                      },
+    "swTotalDurationPrefix":  {
+                                  "message":  "ОБЩАЯ ДЛИТЕЛЬНОСТЬ: "
+                              },
+    "stopwatchReady":  {
+                           "message":  "ГОТОВО"
+                       },
+    "trackerThisMonthShort":  {
+                                  "message":  "Этот месяц"
+                              },
+    "confirmClearHistory":  {
+                                "message":  "Вы уверены что хотите очистить всю историю?"
+                            },
+    "markerTitle":  {
+                        "message":  "Маркер страницы"
+                    },
+    "trackerModalTitle":  {
+                              "message":  "Время на сайтах"
+                          },
+    "grabTextTooltip":  {
+                            "message":  "Извлечь текст со страницы"
+                        },
+    "radioUrlPlaceholder":  {
+                                "message":  "https://stream.radio.com/play"
+                            },
+    "clearRadioInputTooltip":  {
+                                   "message":  "Очистить поле"
+                               },
+    "privacyLabel":  {
+                         "message":  "Политика конфиденциальности"
+                     },
+    "trackerThatDay":  {
+                           "message":  "Тот день"
+                       },
+    "textLabel":  {
+                      "message":  "Текст"
+                  },
+    "cacheCleared":  {
+                         "message":  "Очищено!"
+                     },
+    "importRadioTooltip":  {
+                               "message":  "Импортировать пользовательскую радиостанцию"
+                           },
+    "radioPlay":  {
+                      "message":  "Играть"
+                  },
+    "techLoadingMsg":  {
+                           "message":  "Сканер анализирует сайт..."
+                       },
+    "swCopyBtn":  {
+                      "message":  "КОПИРОВАТЬ В БУФЕР"
+                  },
+    "techScannerFailed":  {
+                              "message":  "Сканирование на этой странице не удалось."
+                          },
+    "trackerTodayLabel":  {
+                              "message":  "Сегодня"
+                          },
+    "techCatCdn":  {
+                       "message":  "CDN"
+                   },
+    "colorPickerCopied":  {
+                              "message":  "Скопировано: "
+                          },
+    "swCopiedBtn":  {
+                        "message":  "✓ СКОПИРОВАНО"
+                    },
+    "techCatCaching":  {
+                           "message":  "Кэширование"
+                       },
+    "techCatSecurity":  {
+                            "message":  "Безопасность"
+                        },
+    "extName":  {
+                    "message":  "All In One - Лучший инструмент для продуктивности"
+                },
+    "techScannerUnavailable":  {
+                                   "message":  "Сканер недоступен на этой странице."
+                               },
+    "notesTooLarge":  {
+                          "message":  "Заметка слишком большая"
+                      },
+    "swDurationLabel":  {
+                            "message":  "Длительность: "
+                        },
+    "ytDislikeTitle":  {
+                           "message":  "Return YouTube Dislike"
+                       },
+    "donateBtn":  {
+                      "message":  "Пожертвовать и поддержать работу"
+                  },
+    "techStatVideo":  {
+                          "message":  "Видео"
+                      },
+    "settingsTooltip":  {
+                            "message":  "Настройки"
+                        },
+    "cacheTitle":  {
+                       "message":  "Куки и кэш"
+                   },
+    "techCatSystem":  {
+                          "message":  "Система"
+                      },
+    "exportTooltip":  {
+                          "message":  "Export data"
+                      },
+    "exportNotesTooltip":  {
+                               "message":  "Экспорт заметок"
+                           },
+    "radioPause":  {
+                       "message":  "Пауза"
+                   },
+    "websiteTooltip":  {
+                           "message":  "Официальный сайт расширения"
+                       },
+    "rateBtn":  {
+                    "message":  "Оценить расширение"
+                },
+    "techCatBase":  {
+                        "message":  "База"
+                    },
+    "cacheModalTitle":  {
+                            "message":  "КУКИ И КЭШ"
+                        },
+    "cancelBtn":  {
+                      "message":  "ОТМЕНА"
+                  },
+    "addUrlTooltip":  {
+                          "message":  "Добавить URL текущей страницы"
+                      },
+    "trackerAvgTotal":  {
+                            "message":  "Среднее"
+                        },
+    "techStatForms":  {
+                          "message":  "Формы"
+                      },
+    "cacheError":  {
+                       "message":  "Ошибка"
+                   }
 }

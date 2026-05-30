@@ -1,521 +1,527 @@
 {
-  "extName": {
-    "message": "All In One - Công cụ năng suất đỉnh cao"
-  },
-  "extDesc": {
-    "message": "Công cụ tối ưu kết hợp mọi tính năng thiết yếu trong một giao diện nhanh, hiện đại và miễn phí."
-  },
-  "markLapDesc": {
-    "message": "Ghi lại một vòng trên đồng hồ bấm giờ"
-  },
-  "appTitle": {
-    "message": "ALL IN ONE"
-  },
-  "websiteTooltip": {
-    "message": "Trang web chính thức của tiện ích"
-  },
-  "settingsTooltip": {
-    "message": "Cài đặt"
-  },
-  "radioTitle": {
-    "message": "Radio"
-  },
-  "radioTitleCustom": {
-    "message": "Radio"
-  },
-  "importRadioTooltip": {
-    "message": "Nhập đài radio tùy chỉnh"
-  },
-  "radioArtist": {
-    "message": "Cung cấp bởi tiện ích All In One"
-  },
-  "playBtn": {
-    "message": "Phát"
-  },
-  "soundTitle": {
-    "message": "Âm thanh"
-  },
-  "resetBtn": {
-    "message": "Đặt lại"
-  },
-  "colorPickerTitle": {
-    "message": "Bộ chọn màu"
-  },
-  "darkModeTitle": {
-    "message": "Chế độ tối"
-  },
-  "rulerTitle": {
-    "message": "Thước kẻ trang"
-  },
-  "copyEnableTitle": {
-    "message": "Bật sao chép"
-  },
-  "markerTitle": {
-    "message": "Bút đánh dấu trang"
-  },
-  "techTitle": {
-    "message": "Công nghệ"
-  },
-  "cacheTitle": {
-    "message": "Bộ nhớ đệm"
-  },
-  "fontTitle": {
-    "message": "Tìm phông chữ"
-  },
-  "counterTitle": {
-    "message": "Bộ đếm ký tự"
-  },
-  "stopwatchTitle": {
-    "message": "Đồng hồ bấm giờ"
-  },
-  "notesTitle": {
-    "message": "Ghi chú thông minh"
-  },
-  "trackerTitle": {
-    "message": "Bộ đếm giờ"
-  },
-  "ytDislikeTitle": {
-    "message": "Hiện lại lượt không thích YouTube"
-  },
-  "cacheModalTitle": {
-    "message": "COOKIE VÀ BỘ NHỚ ĐỆM"
-  },
-  "blockCookiesLabel": {
-    "message": "Tự động chặn cookie"
-  },
-  "clearSiteDataBtn": {
-    "message": "Xóa tất cả dữ liệu từ trang này"
-  },
-  "cancelBtn": {
-    "message": "HỦY"
-  },
-  "counterModalTitle": {
-    "message": "BỘ ĐẾM KÝ TỰ"
-  },
-  "counterPlaceholder": {
-    "message": "Dán văn bản vào đây..."
-  },
-  "charsLabel": {
-    "message": "Ký tự"
-  },
-  "wordsLabel": {
-    "message": "Từ"
-  },
-  "stopwatchReady": {
-    "message": "SẴN SÀNG"
-  },
-  "startBtn": {
-    "message": "BẮT ĐẦU"
-  },
-  "lapBtn": {
-    "message": "VÒNG"
-  },
-  "stopBtn": {
-    "message": "DỪNG"
-  },
-  "currentRecordedLabel": {
-    "message": "ĐANG GHI LẠI"
-  },
-  "liveHistoryLabel": {
-    "message": "LỊCH SỬ TRỰC TIẾP"
-  },
-  "clearAllBtn": {
-    "message": "XÓA TẤT CẢ"
-  },
-  "confirmClearHistory": {
-    "message": "Bạn có chắc chắn muốn xóa toàn bộ lịch sử không?"
-  },
-  "deleteBtn": {
-    "message": "XÓA"
-  },
-  "notesModalTitle": {
-    "message": "GHI CHÚ THÔNG MINH"
-  },
-  "clearNotesTooltip": {
-    "message": "Xóa tất cả ghi chú"
-  },
-  "notesPlaceholder": {
-    "message": "Viết ghi chú tại đây..."
-  },
-  "grabTextTooltip": {
-    "message": "Trích xuất văn bản từ trang"
-  },
-  "textLabel": {
-    "message": "Văn bản"
-  },
-  "addUrlTooltip": {
-    "message": "Thêm URL của trang hiện tại"
-  },
-  "linkLabel": {
-    "message": "Liên kết"
-  },
-  "addDateTooltip": {
-    "message": "Thêm ngày hôm nay"
-  },
-  "dateLabel": {
-    "message": "Ngày"
-  },
-  "exportNotesTooltip": {
-    "message": "Xuất ghi chú"
-  },
-  "importNotesTooltip": {
-    "message": "Nhập ghi chú"
-  },
-  "savedIndicator": {
-    "message": "Đã lưu"
-  },
-  "confirmClearNotes": {
-    "message": "Bạn có chắc chắn muốn xóa tất cả ghi chú không?"
-  },
-  "trackerModalTitle": {
-    "message": "Theo dõi thời gian"
-  },
-  "exportTooltip": {
-    "message": "Export data"
-  },
-  "importTooltip": {
-    "message": "Import data"
-  },
-  "trackerModeDay": {
-    "message": "Xem theo ngày"
-  },
-  "trackerModeMonth": {
-    "message": "Xem theo tháng"
-  },
-  "trackerModeAll": {
-    "message": "Tất cả thời gian"
-  },
-  "trackerTodayLabel": {
-    "message": "Hôm nay"
-  },
-  "trackerMonthLabel": {
-    "message": "Tháng này"
-  },
-  "trackerAvgLabel": {
-    "message": "Trung bình"
-  },
-  "techModalTitle": {
-    "message": "CÔNG NGHỆ TRANG WEB"
-  },
-  "techLoadingMsg": {
-    "message": "Công cụ đang phân tích trang web..."
-  },
-  "uiSettings": {
-    "message": "CÀI ĐẶT"
-  },
-  "supportTitle": {
-    "message": "Hỗ trợ tiện ích"
-  },
-  "supportDesc": {
-    "message": "All In One là một công cụ hoàn toàn miễn phí. Sự hỗ trợ của bạn giúp duy trì điều này và cho phép phát triển thường xuyên các tùy chọn mới."
-  },
-  "donateBtn": {
-    "message": "Quyên góp và hỗ trợ công việc"
-  },
-  "websiteBtn": {
-    "message": "Trang web chính thức của tiện ích"
-  },
-  "rateBtn": {
-    "message": "Đánh giá tiện ích"
-  },
-  "versionLabel": {
-    "message": "Phiên bản:"
-  },
-  "privacyLabel": {
-    "message": "Chính sách bảo mật"
-  },
-  "systemPageTitle": {
-    "message": "TRANG HỆ THỐNG"
-  },
-  "systemPageDesc": {
-    "message": "Các công cụ sửa đổi đã bị vô hiệu hóa"
-  },
-  "radioPlay": {
-    "message": "Phát"
-  },
-  "radioPause": {
-    "message": "Dừng"
-  },
-  "colorPickerPicking": {
-    "message": "Đang chọn..."
-  },
-  "colorPickerCopied": {
-    "message": "Đã sao chép: "
-  },
-  "cacheNotSupported": {
-    "message": "Không hỗ trợ"
-  },
-  "cacheClearConfirm": {
-    "message": "Xóa tất cả dữ liệu từ trang này"
-  },
-  "cacheError": {
-    "message": "Lỗi"
-  },
-  "cacheClearing": {
-    "message": "Đang xóa..."
-  },
-  "cacheCleared": {
-    "message": "Đã xóa!"
-  },
-  "fontCopied": {
-    "message": "Đã sao chép!"
-  },
-  "fontNotCopied": {
-    "message": "Không thể sao chép"
-  },
-  "notesSaved": {
-    "message": "Đã lưu"
-  },
-  "notesTooLarge": {
-    "message": "Ghi chú quá lớn"
-  },
-  "notesLinkText": {
-    "message": "Liên kết"
-  },
-  "trackerToday": {
-    "message": "Hôm nay"
-  },
-  "trackerThatDay": {
-    "message": "Hôm đó"
-  },
-  "trackerSelectedMonth": {
-    "message": "Tháng đã chọn"
-  },
-  "trackerTotal": {
-    "message": "Tổng cộng"
-  },
-  "trackerNoData": {
-    "message": "Không có dữ liệu cho giai đoạn này"
-  },
-  "trackerExportEmpty": {
-    "message": "No tracker data to export."
-  },
-  "trackerExportTruncated": {
-    "message": "Export truncated to 10MB to keep the popup stable."
-  },
-  "trackerImportEmpty": {
-    "message": "No valid tracker data to import."
-  },
-  "trackerImportSuccess": {
-    "message": "Data successfully imported!"
-  },
-  "trackerImportError": {
-    "message": "Error reading the file."
-  },
-  "swStatusLive": {
-    "message": "ĐANG CHẠY TRỰC TIẾP"
-  },
-  "swStatusReady": {
-    "message": "SẴN SÀNG"
-  },
-  "swUndoTitle": {
-    "message": "Xóa khoảnh khắc này"
-  },
-  "swNoLaps": {
-    "message": "Không có khoảnh khắc nào được ghi lại"
-  },
-  "swLiveTitlePrefix": {
-    "message": "Trực tiếp #"
-  },
-  "swDurationLabel": {
-    "message": "Thời lượng: "
-  },
-  "swMomentLabel": {
-    "message": "Khoảnh khắc "
-  },
-  "swExportTxtBtn": {
-    "message": "XUẤT DƯỚI DẠNG .TXT"
-  },
-  "swTotalDurationPrefix": {
-    "message": "TỔNG THỜI LƯỢNG: "
-  },
-  "swCopyBtn": {
-    "message": "SAO CHÉP VÀO BỘ NHỚ TẠM"
-  },
-  "swCopiedBtn": {
-    "message": "✓ ĐÃ SAO CHÉP"
-  },
-  "swNoHistory": {
-    "message": "Không có lịch sử trực tiếp"
-  },
-  "techScannerUnavailable": {
-    "message": "Công cụ không khả dụng trên trang này."
-  },
-  "techFoundPrefix": {
-    "message": "Đã tìm thấy: "
-  },
-  "techItemsSuffix": {
-    "message": "mục"
-  },
-  "techNotFound": {
-    "message": "Không tìm thấy gì."
-  },
-  "techScannerFailed": {
-    "message": "Quá trình phân tích trên trang này thất bại."
-  },
-  "markerDrawTooltip": {
-    "message": "Vẽ"
-  },
-  "markerLineTooltip": {
-    "message": "Đường thẳng"
-  },
-  "markerTextTooltip": {
-    "message": "Văn bản"
-  },
-  "markerMoveTooltip": {
-    "message": "Di chuyển"
-  },
-  "markerEraseTooltip": {
-    "message": "Tẩy"
-  },
-  "markerClearAllTooltip": {
-    "message": "Xóa tất cả"
-  },
-  "markerThicknessTooltip": {
-    "message": "Độ dày"
-  },
-  "markerCloseTooltip": {
-    "message": "Đóng"
-  },
-  "linesLabel": {
-    "message": "Dòng"
-  },
-  "clearCounterTooltip": {
-    "message": "Xóa tất cả"
-  },
-  "confirmClearCounter": {
-    "message": "Bạn có chắc chắn muốn xóa tất cả không?"
-  },
-  "trackerTotalShort": {
-    "message": "Tổng cộng"
-  },
-  "trackerThisMonth": {
-    "message": "Tháng này"
-  },
-  "trackerThisMonthShort": {
-    "message": "Tháng này"
-  },
-  "trackerThatMonth": {
-    "message": "Tháng đó"
-  },
-  "trackerAvgThisMonth": {
-    "message": "Trung bình"
-  },
-  "trackerAvgThatMonth": {
-    "message": "Trung bình"
-  },
-  "trackerAvgTotal": {
-    "message": "Trung bình"
-  },
-  "trackerDeleteConfirm": {
-    "message": "Bạn có chắc chắn muốn xóa dữ liệu cho"
-  },
-  "techCatBase": {
-    "message": "Cơ bản"
-  },
-  "techCatSystem": {
-    "message": "Hệ thống"
-  },
-  "techCatEcom": {
-    "message": "Thương mại điện tử"
-  },
-  "techCatTech": {
-    "message": "Công nghệ"
-  },
-  "techCatStyles": {
-    "message": "Kiểu dáng"
-  },
-  "techCatDb": {
-    "message": "Cơ sở dữ liệu"
-  },
-  "techCatBackend": {
-    "message": "Backend"
-  },
-  "techCatServer": {
-    "message": "Máy chủ"
-  },
-  "techCatNetwork": {
-    "message": "Mạng"
-  },
-  "techCatSecurity": {
-    "message": "Bảo mật"
-  },
-  "techCatCaching": {
-    "message": "Bộ nhớ đệm"
-  },
-  "techCatCdn": {
-    "message": "CDN"
-  },
-  "techCatAnalytics": {
-    "message": "Phân tích"
-  },
-  "techCatAds": {
-    "message": "Quảng cáo"
-  },
-  "techCatPayment": {
-    "message": "Thanh toán"
-  },
-  "techCatComm": {
-    "message": "Giao tiếp"
-  },
-  "techCatMedia": {
-    "message": "Truyền thông"
-  },
-  "techCatBuild": {
-    "message": "Build"
-  },
-  "techCatSeo": {
-    "message": "SEO"
-  },
-  "techCatStats": {
-    "message": "Thống kê"
-  },
-  "techCatTools": {
-    "message": "Công cụ"
-  },
-  "techStatDom": {
-    "message": "DOM"
-  },
-  "techStatImages": {
-    "message": "Hình ảnh"
-  },
-  "techStatScripts": {
-    "message": "Kịch bản"
-  },
-  "techStatLinks": {
-    "message": "Liên kết"
-  },
-  "techStatCss": {
-    "message": "CSS"
-  },
-  "techStatForms": {
-    "message": "Biểu mẫu"
-  },
-  "techStatTables": {
-    "message": "Bảng"
-  },
-  "techStatSvg": {
-    "message": "SVG"
-  },
-  "techStatVideo": {
-    "message": "Video"
-  },
-  "techStatAudio": {
-    "message": "Âm thanh"
-  },
-  "techStatIframes": {
-    "message": "Iframes"
-  },
-  "radioModalDesc": {
-    "message": "Nhập liên kết trực tiếp đến đài radio yêu thích của bạn"
-  },
-  "radioUrlPlaceholder": {
-    "message": "https://stream.radio.com/play"
-  },
-  "clearRadioInputTooltip": {
-    "message": "Xóa trường"
-  },
-  "saveRadioStationBtn": {
-    "message": "LƯU ĐÀI"
-  }
+    "notesTitle":  {
+                       "message":  "Ghi chú thông minh"
+                   },
+    "supportDesc":  {
+                        "message":  "All In One là một công cụ hoàn toàn miễn phí. Sự hỗ trợ của bạn giúp duy trì điều này và cho phép phát triển thường xuyên các tùy chọn mới."
+                    },
+    "trackerExportTruncated":  {
+                                   "message":  "Export truncated to 10MB to keep the popup stable."
+                               },
+    "techCatBackend":  {
+                           "message":  "Backend"
+                       },
+    "markerEraseTooltip":  {
+                               "message":  "Tẩy"
+                           },
+    "counterTitle":  {
+                         "message":  "Bộ đếm ký tự"
+                     },
+    "trackerAvgLabel":  {
+                            "message":  "Trung bình"
+                        },
+    "trackerModeMonth":  {
+                             "message":  "Xem theo tháng"
+                         },
+    "trackerModeAll":  {
+                           "message":  "Tất cả thời gian"
+                       },
+    "techCatMedia":  {
+                         "message":  "Truyền thông"
+                     },
+    "trackerNoData":  {
+                          "message":  "Không có dữ liệu cho giai đoạn này"
+                      },
+    "swLiveTitlePrefix":  {
+                              "message":  "Trực tiếp #"
+                          },
+    "confirmClearNotes":  {
+                              "message":  "Bạn có chắc chắn muốn xóa tất cả ghi chú không?"
+                          },
+    "techCatSeo":  {
+                       "message":  "SEO"
+                   },
+    "techCatTools":  {
+                         "message":  "Công cụ"
+                     },
+    "soundTitle":  {
+                       "message":  "Âm thanh"
+                   },
+    "clearCounterTooltip":  {
+                                "message":  "Xóa tất cả"
+                            },
+    "markerCloseTooltip":  {
+                               "message":  "Đóng"
+                           },
+    "stopwatchTitle":  {
+                           "message":  "Đồng hồ bấm giờ"
+                       },
+    "clearNotesTooltip":  {
+                              "message":  "Xóa tất cả ghi chú"
+                          },
+    "rulerTitle":  {
+                       "message":  "Thước kẻ trang"
+                   },
+    "markLapDesc":  {
+                        "message":  "Ghi lại một vòng trên đồng hồ bấm giờ"
+                    },
+    "trackerImportEmpty":  {
+                               "message":  "No valid tracker data to import."
+                           },
+    "systemPageDesc":  {
+                           "message":  "Các công cụ sửa đổi đã bị vô hiệu hóa"
+                       },
+    "techStatLinks":  {
+                          "message":  "Liên kết"
+                      },
+    "stopBtn":  {
+                    "message":  "DỪNG"
+                },
+    "swNoLaps":  {
+                     "message":  "Không có khoảnh khắc nào được ghi lại"
+                 },
+    "trackerTitle":  {
+                         "message":  "Bộ đếm giờ"
+                     },
+    "trackerThisMonth":  {
+                             "message":  "Tháng này"
+                         },
+    "linesLabel":  {
+                       "message":  "Dòng"
+                   },
+    "toastTrackerError":  {
+                              "message":  "Error refreshing data"
+                          },
+    "trackerExportEmpty":  {
+                               "message":  "No tracker data to export."
+                           },
+    "techCatComm":  {
+                        "message":  "Giao tiếp"
+                    },
+    "deleteBtn":  {
+                      "message":  "XÓA"
+                  },
+    "toastModuleLoadError":  {
+                                 "message":  "Error loading module"
+                             },
+    "notesSaved":  {
+                       "message":  "Đã lưu"
+                   },
+    "lapBtn":  {
+                   "message":  "VÒNG"
+               },
+    "notesModalTitle":  {
+                            "message":  "GHI CHÚ THÔNG MINH"
+                        },
+    "trackerAvgThisMonth":  {
+                                "message":  "Trung bình"
+                            },
+    "versionLabel":  {
+                         "message":  "Phiên bản:"
+                     },
+    "importNotesTooltip":  {
+                               "message":  "Nhập ghi chú"
+                           },
+    "techCatBuild":  {
+                         "message":  "Build"
+                     },
+    "fontNotCopied":  {
+                          "message":  "Không thể sao chép"
+                      },
+    "importTooltip":  {
+                          "message":  "Import data"
+                      },
+    "techCatTech":  {
+                        "message":  "Công nghệ"
+                    },
+    "techCatServer":  {
+                          "message":  "Máy chủ"
+                      },
+    "cacheNotSupported":  {
+                              "message":  "Không hỗ trợ"
+                          },
+    "techStatCss":  {
+                        "message":  "CSS"
+                    },
+    "techStatAudio":  {
+                          "message":  "Âm thanh"
+                      },
+    "cacheClearing":  {
+                          "message":  "Đang xóa..."
+                      },
+    "radioTitleCustom":  {
+                             "message":  "Radio"
+                         },
+    "websiteBtn":  {
+                       "message":  "Trang web chính thức của tiện ích"
+                   },
+    "markerThicknessTooltip":  {
+                                   "message":  "Độ dày"
+                               },
+    "confirmClearCounter":  {
+                                "message":  "Bạn có chắc chắn muốn xóa tất cả không?"
+                            },
+    "techCatAds":  {
+                       "message":  "Quảng cáo"
+                   },
+    "uiSettings":  {
+                       "message":  "CÀI ĐẶT"
+                   },
+    "trackerThatMonth":  {
+                             "message":  "Tháng đó"
+                         },
+    "radioModalDesc":  {
+                           "message":  "Nhập liên kết trực tiếp đến đài radio yêu thích của bạn"
+                       },
+    "trackerDeleteConfirm":  {
+                                 "message":  "Bạn có chắc chắn muốn xóa dữ liệu cho"
+                             },
+    "darkModeTitle":  {
+                          "message":  "Chế độ tối"
+                      },
+    "techStatScripts":  {
+                            "message":  "Kịch bản"
+                        },
+    "swNoHistory":  {
+                        "message":  "Không có lịch sử trực tiếp"
+                    },
+    "techNotFound":  {
+                         "message":  "Không tìm thấy gì."
+                     },
+    "notesPlaceholder":  {
+                             "message":  "Viết ghi chú tại đây..."
+                         },
+    "radioArtist":  {
+                        "message":  "Cung cấp bởi tiện ích All In One"
+                    },
+    "charsLabel":  {
+                       "message":  "Ký tự"
+                   },
+    "trackerImportSuccess":  {
+                                 "message":  "Data successfully imported!"
+                             },
+    "copyEnableTitle":  {
+                            "message":  "Bật sao chép"
+                        },
+    "techCatStats":  {
+                         "message":  "Thống kê"
+                     },
+    "dateLabel":  {
+                      "message":  "Ngày"
+                  },
+    "techCatNetwork":  {
+                           "message":  "Mạng"
+                       },
+    "techCatEcom":  {
+                        "message":  "Thương mại điện tử"
+                    },
+    "currentRecordedLabel":  {
+                                 "message":  "ĐANG GHI LẠI"
+                             },
+    "techCatStyles":  {
+                          "message":  "Kiểu dáng"
+                      },
+    "extDesc":  {
+                    "message":  "Công cụ tối ưu kết hợp mọi tính năng thiết yếu trong một giao diện nhanh, hiện đại và miễn phí."
+                },
+    "resetBtn":  {
+                     "message":  "Đặt lại"
+                 },
+    "addDateTooltip":  {
+                           "message":  "Thêm ngày hôm nay"
+                       },
+    "supportTitle":  {
+                         "message":  "Hỗ trợ tiện ích"
+                     },
+    "savedIndicator":  {
+                           "message":  "Đã lưu"
+                       },
+    "counterPlaceholder":  {
+                               "message":  "Dán văn bản vào đây..."
+                           },
+    "techFoundPrefix":  {
+                            "message":  "Đã tìm thấy: "
+                        },
+    "systemPageTitle":  {
+                            "message":  "TRANG HỆ THỐNG"
+                        },
+    "markerClearAllTooltip":  {
+                                  "message":  "Xóa tất cả"
+                              },
+    "trackerModeDay":  {
+                           "message":  "Xem theo ngày"
+                       },
+    "techItemsSuffix":  {
+                            "message":  "mục"
+                        },
+    "trackerTotal":  {
+                         "message":  "Tổng cộng"
+                     },
+    "swStatusReady":  {
+                          "message":  "SẴN SÀNG"
+                      },
+    "trackerTotalShort":  {
+                              "message":  "Tổng cộng"
+                          },
+    "blockCookiesLabel":  {
+                              "message":  "Tự động chặn cookie"
+                          },
+    "markerDrawTooltip":  {
+                              "message":  "Vẽ"
+                          },
+    "trackerMonthLabel":  {
+                              "message":  "Tháng này"
+                          },
+    "techStatSvg":  {
+                        "message":  "SVG"
+                    },
+    "techStatTables":  {
+                           "message":  "Bảng"
+                       },
+    "techStatImages":  {
+                           "message":  "Hình ảnh"
+                       },
+    "trackerToday":  {
+                         "message":  "Hôm nay"
+                     },
+    "techStatDom":  {
+                        "message":  "DOM"
+                    },
+    "wordsLabel":  {
+                       "message":  "Từ"
+                   },
+    "clearAllBtn":  {
+                        "message":  "XÓA TẤT CẢ"
+                    },
+    "clearSiteDataBtn":  {
+                             "message":  "Xóa tất cả dữ liệu từ trang này"
+                         },
+    "colorPickerPicking":  {
+                               "message":  "Đang chọn..."
+                           },
+    "cacheClearConfirm":  {
+                              "message":  "Xóa tất cả dữ liệu từ trang này"
+                          },
+    "markerTextTooltip":  {
+                              "message":  "Văn bản"
+                          },
+    "radioTitle":  {
+                       "message":  "Radio"
+                   },
+    "trackerSelectedMonth":  {
+                                 "message":  "Tháng đã chọn"
+                             },
+    "fontCopied":  {
+                       "message":  "Đã sao chép!"
+                   },
+    "notesLinkText":  {
+                          "message":  "Liên kết"
+                      },
+    "trackerAvgThatMonth":  {
+                                "message":  "Trung bình"
+                            },
+    "techTitle":  {
+                      "message":  "Công nghệ"
+                  },
+    "markerMoveTooltip":  {
+                              "message":  "Di chuyển"
+                          },
+    "playBtn":  {
+                    "message":  "Phát"
+                },
+    "techCatPayment":  {
+                           "message":  "Thanh toán"
+                       },
+    "markerLineTooltip":  {
+                              "message":  "Đường thẳng"
+                          },
+    "techStatIframes":  {
+                            "message":  "Iframes"
+                        },
+    "counterModalTitle":  {
+                              "message":  "BỘ ĐẾM KÝ TỰ"
+                          },
+    "fontTitle":  {
+                      "message":  "Tìm phông chữ"
+                  },
+    "swExportTxtBtn":  {
+                           "message":  "XUẤT DƯỚI DẠNG .TXT"
+                       },
+    "swUndoTitle":  {
+                        "message":  "Xóa khoảnh khắc này"
+                    },
+    "startBtn":  {
+                     "message":  "BẮT ĐẦU"
+                 },
+    "techModalTitle":  {
+                           "message":  "CÔNG NGHỆ TRANG WEB"
+                       },
+    "saveRadioStationBtn":  {
+                                "message":  "LƯU ĐÀI"
+                            },
+    "techCatDb":  {
+                      "message":  "Cơ sở dữ liệu"
+                  },
+    "trackerImportError":  {
+                               "message":  "Error reading the file."
+                           },
+    "swStatusLive":  {
+                         "message":  "ĐANG CHẠY TRỰC TIẾP"
+                     },
+    "linkLabel":  {
+                      "message":  "Liên kết"
+                  },
+    "techCatAnalytics":  {
+                             "message":  "Phân tích"
+                         },
+    "liveHistoryLabel":  {
+                             "message":  "LỊCH SỬ TRỰC TIẾP"
+                         },
+    "colorPickerTitle":  {
+                             "message":  "Bộ chọn màu"
+                         },
+    "appTitle":  {
+                     "message":  "ALL IN ONE"
+                 },
+    "swMomentLabel":  {
+                          "message":  "Khoảnh khắc "
+                      },
+    "swTotalDurationPrefix":  {
+                                  "message":  "TỔNG THỜI LƯỢNG: "
+                              },
+    "stopwatchReady":  {
+                           "message":  "SẴN SÀNG"
+                       },
+    "trackerThisMonthShort":  {
+                                  "message":  "Tháng này"
+                              },
+    "confirmClearHistory":  {
+                                "message":  "Bạn có chắc chắn muốn xóa toàn bộ lịch sử không?"
+                            },
+    "markerTitle":  {
+                        "message":  "Bút đánh dấu trang"
+                    },
+    "trackerModalTitle":  {
+                              "message":  "Theo dõi thời gian"
+                          },
+    "grabTextTooltip":  {
+                            "message":  "Trích xuất văn bản từ trang"
+                        },
+    "radioUrlPlaceholder":  {
+                                "message":  "https://stream.radio.com/play"
+                            },
+    "clearRadioInputTooltip":  {
+                                   "message":  "Xóa trường"
+                               },
+    "privacyLabel":  {
+                         "message":  "Chính sách bảo mật"
+                     },
+    "trackerThatDay":  {
+                           "message":  "Hôm đó"
+                       },
+    "textLabel":  {
+                      "message":  "Văn bản"
+                  },
+    "cacheCleared":  {
+                         "message":  "Đã xóa!"
+                     },
+    "importRadioTooltip":  {
+                               "message":  "Nhập đài radio tùy chỉnh"
+                           },
+    "radioPlay":  {
+                      "message":  "Phát"
+                  },
+    "techLoadingMsg":  {
+                           "message":  "Công cụ đang phân tích trang web..."
+                       },
+    "swCopyBtn":  {
+                      "message":  "SAO CHÉP VÀO BỘ NHỚ TẠM"
+                  },
+    "techScannerFailed":  {
+                              "message":  "Quá trình phân tích trên trang này thất bại."
+                          },
+    "trackerTodayLabel":  {
+                              "message":  "Hôm nay"
+                          },
+    "techCatCdn":  {
+                       "message":  "CDN"
+                   },
+    "colorPickerCopied":  {
+                              "message":  "Đã sao chép: "
+                          },
+    "swCopiedBtn":  {
+                        "message":  "✓ ĐÃ SAO CHÉP"
+                    },
+    "techCatCaching":  {
+                           "message":  "Bộ nhớ đệm"
+                       },
+    "techCatSecurity":  {
+                            "message":  "Bảo mật"
+                        },
+    "extName":  {
+                    "message":  "All In One - Công cụ năng suất đỉnh cao"
+                },
+    "techScannerUnavailable":  {
+                                   "message":  "Công cụ không khả dụng trên trang này."
+                               },
+    "notesTooLarge":  {
+                          "message":  "Ghi chú quá lớn"
+                      },
+    "swDurationLabel":  {
+                            "message":  "Thời lượng: "
+                        },
+    "ytDislikeTitle":  {
+                           "message":  "Hiện lại lượt không thích YouTube"
+                       },
+    "donateBtn":  {
+                      "message":  "Quyên góp và hỗ trợ công việc"
+                  },
+    "techStatVideo":  {
+                          "message":  "Video"
+                      },
+    "settingsTooltip":  {
+                            "message":  "Cài đặt"
+                        },
+    "cacheTitle":  {
+                       "message":  "Bộ nhớ đệm"
+                   },
+    "techCatSystem":  {
+                          "message":  "Hệ thống"
+                      },
+    "exportTooltip":  {
+                          "message":  "Export data"
+                      },
+    "exportNotesTooltip":  {
+                               "message":  "Xuất ghi chú"
+                           },
+    "radioPause":  {
+                       "message":  "Dừng"
+                   },
+    "websiteTooltip":  {
+                           "message":  "Trang web chính thức của tiện ích"
+                       },
+    "rateBtn":  {
+                    "message":  "Đánh giá tiện ích"
+                },
+    "techCatBase":  {
+                        "message":  "Cơ bản"
+                    },
+    "cacheModalTitle":  {
+                            "message":  "COOKIE VÀ BỘ NHỚ ĐỆM"
+                        },
+    "cancelBtn":  {
+                      "message":  "HỦY"
+                  },
+    "addUrlTooltip":  {
+                          "message":  "Thêm URL của trang hiện tại"
+                      },
+    "trackerAvgTotal":  {
+                            "message":  "Trung bình"
+                        },
+    "techStatForms":  {
+                          "message":  "Biểu mẫu"
+                      },
+    "cacheError":  {
+                       "message":  "Lỗi"
+                   }
 }

@@ -1,0 +1,11 @@
+{
+  "name": "all-in-one-extension",
+  "version": "1.5.3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check:js": "node --check background.js && node --check content.js && node --check offscreen.js && node --check popup.js && node --check popup-core.js && node --check popup-radio.js && node --check popup-notes.js && node --check popup-counter.js && node --check popup-tracker.js && node --check popup-stopwatch.js && node --check popup-settings.js && node --check popup-tech.js && node --check yt.js"
+  },
+  "devDependencies": {}
+}

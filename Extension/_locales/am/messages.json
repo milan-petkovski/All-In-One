@@ -1,407 +1,413 @@
 {
-  "extName": {
-    "message": "All In One - ምርጥ ምርታማነት መሣሪያ"
-  },
-  "extDesc": {
-    "message": "ሁሉንም አስፈላጊ ተግባራት በአንድ ፈጣን፣ ዘመናዊ እና ነፃ በይነገጽ ውስጥ የሚያገናኝ የመጨረሻው መሣሪያ።"
-  },
-  "markLapDesc": {
-    "message": "በሰዓት መቁጠሪያው ላይ ቅጽበት ይመዝግቡ"
-  },
-  "appTitle": {
-    "message": "ALL IN ONE"
-  },
-  "websiteTooltip": {
-    "message": "ፈጣን፣ ዘመናዊ፣ ነፃ መሳሪያ።"
-  },
-  "settingsTooltip": {
-    "message": "ዙር"
-  },
-  "radioTitle": {
-    "message": "ድህረ"
-  },
-  "radioArtist": {
-    "message": "በ All In One ቅጥያ የተጎላበተ"
-  },
-  "playBtn": {
-    "message": "ኩኪ/ካሽ"
-  },
-  "soundTitle": {
-    "message": "ፎንት"
-  },
-  "resetBtn": {
-    "message": "ቆጣሪ"
-  },
-  "colorPickerTitle": {
-    "message": "ቀለም መራጭ"
-  },
-  "darkModeTitle": {
-    "message": "ጨለማ ሁነታ"
-  },
-  "rulerTitle": {
-    "message": "የገጽ ገዢ"
-  },
-  "copyEnableTitle": {
-    "message": "ቅጂን አንቃ"
-  },
-  "markerTitle": {
-    "message": "የገጽ ምልክት ማድረጊያ"
-  },
-  "techTitle": {
-    "message": "የጣቢያ ቴክኖሎጂዎች"
-  },
-  "cacheTitle": {
-    "message": "ኩኪዎች እና መሸጎጫ"
-  },
-  "fontTitle": {
-    "message": "ቅርጸ-ቁምፊ ፈላጊ"
-  },
-  "counterTitle": {
-    "message": "ባህሪ ቆጣሪ"
-  },
-  "stopwatchTitle": {
-    "message": "የማቆሚያ ሰዓት"
-  },
-  "notesTitle": {
-    "message": "ብልጥ ማስታወሻዎች"
-  },
-  "trackerTitle": {
-    "message": "የድር ጊዜ መከታተያ"
-  },
-  "ytDislikeTitle": {
-    "message": "የዩቲዩብ አለመውደድን መልስ"
-  },
-  "cacheModalTitle": {
-    "message": "ኩኪዎች እና መሸጎጫ"
-  },
-  "blockCookiesLabel": {
-    "message": "ኩኪዎችን በራስ-ሰር አግድ"
-  },
-  "clearSiteDataBtn": {
-    "message": "ሁሉንም ውሂብ ከዚህ ጣቢያ አጽዳ"
-  },
-  "cancelBtn": {
-    "message": "ሰርዝ"
-  },
-  "counterModalTitle": {
-    "message": "ባህሪ ቆጣሪ"
-  },
-  "counterPlaceholder": {
-    "message": "ጽሑፍ እዚህ ይለጥፉ..."
-  },
-  "charsLabel": {
-    "message": "ገጸ-ባህሪያት"
-  },
-  "wordsLabel": {
-    "message": "ቃላት"
-  },
-  "stopwatchReady": {
-    "message": "ዝግጁ"
-  },
-  "startBtn": {
-    "message": "ጀምር"
-  },
-  "lapBtn": {
-    "message": "ዙር"
-  },
-  "stopBtn": {
-    "message": "አቁም"
-  },
-  "currentRecordedLabel": {
-    "message": "በአሁኑ ጊዜ የተመዘገበ"
-  },
-  "liveHistoryLabel": {
-    "message": "የቀጥታ ታሪክ"
-  },
-  "clearAllBtn": {
-    "message": "ሁሉንም አጽዳ"
-  },
-  "confirmClearHistory": {
-    "message": "እርግጠኛ ነዎት ሁሉንም ታሪክ ማጽዳት ይፈልጋሉ?"
-  },
-  "deleteBtn": {
-    "message": "ሰርዝ"
-  },
-  "notesModalTitle": {
-    "message": "ብልጥ ማስታወሻዎች"
-  },
-  "clearNotesTooltip": {
-    "message": "ሁሉንም ማስታወሻዎች አጽዳ"
-  },
-  "notesPlaceholder": {
-    "message": "ማስታወሻዎችን እዚህ ይፃፉ..."
-  },
-  "grabTextTooltip": {
-    "message": "ከገጽ ላይ ጽሑፍ ያውጡ"
-  },
-  "textLabel": {
-    "message": "ጽሑፍ"
-  },
-  "addUrlTooltip": {
-    "message": "አሁን ያለውን ገጽ ዩአርኤል ያክሉ"
-  },
-  "linkLabel": {
-    "message": "አገናኝ"
-  },
-  "addDateTooltip": {
-    "message": "የዛሬውን ቀን ያክሉ"
-  },
-  "dateLabel": {
-    "message": "ቀን"
-  },
-  "exportNotesTooltip": {
-    "message": "ማስታወሻዎችን ወደ ውጭ ላክ"
-  },
-  "importNotesTooltip": {
-    "message": "ማስታወሻዎችን አስገባ"
-  },
-  "savedIndicator": {
-    "message": "ተቀምጧል"
-  },
-  "confirmClearNotes": {
-    "message": "እርግጠኛ ነዎት ሁሉንም ማስታወሻዎች ማጽዳት ይፈልጋሉ?"
-  },
-  "trackerModalTitle": {
-    "message": "Webtime Tracker"
-  },
-  "exportTooltip": {
-    "message": "Export data"
-  },
-  "importTooltip": {
-    "message": "Import data"
-  },
-  "trackerModeDay": {
-    "message": "ዕለታዊ እይታ"
-  },
-  "trackerModeMonth": {
-    "message": "ወርሃዊ እይታ"
-  },
-  "trackerModeAll": {
-    "message": "ሁሉም ሰዓት"
-  },
-  "trackerTodayLabel": {
-    "message": "ዛሬ"
-  },
-  "trackerMonthLabel": {
-    "message": "በዚህ ወር"
-  },
-  "trackerAvgLabel": {
-    "message": "አማካይ"
-  },
-  "techModalTitle": {
-    "message": "የጣቢያ ቴክኖሎጂዎች"
-  },
-  "techLoadingMsg": {
-    "message": "አስካኚው ጣቢያውን እየተነተነ ነው..."
-  },
-  "uiSettings": {
-    "message": "ቅንብሮች"
-  },
-  "supportTitle": {
-    "message": "ቅጥያውን ይደግፉ"
-  },
-  "supportDesc": {
-    "message": "All In One ሙሉ በሙሉ ነፃ መሣሪያ ነው። የእርስዎ ድጋፍ እንደዛው እንዲቆይ ይረዳል እና አዳዲስ ባህሪያትን አዘውትሮ ለማዳበር ያስችላል።"
-  },
-  "donateBtn": {
-    "message": "ይለግሱ እና ይደግፉ"
-  },
-  "websiteBtn": {
-    "message": "ኦፊሴላዊ ድር ጣቢያ"
-  },
-  "rateBtn": {
-    "message": "ቅጥያውን ደረጃ ይስጡ"
-  },
-  "versionLabel": {
-    "message": "ስሪት:"
-  },
-  "privacyLabel": {
-    "message": "የግላዊነት ፖሊሲ"
-  },
-  "systemPageTitle": {
-    "message": "የስርዓት ገጽ"
-  },
-  "systemPageDesc": {
-    "message": "የማሻሻያ መሳሪያዎች ተሰናክለዋል"
-  },
-  "radioPlay": {
-    "message": "አጫውት"
-  },
-  "radioPause": {
-    "message": "አቁም"
-  },
-  "colorPickerPicking": {
-    "message": "በመምረጥ ላይ..."
-  },
-  "colorPickerCopied": {
-    "message": "ተቀድቷል: "
-  },
-  "cacheNotSupported": {
-    "message": "አይደገፍም"
-  },
-  "cacheClearConfirm": {
-    "message": "ሁሉንም ውሂብ ከዚህ ጣቢያ አጽዳ"
-  },
-  "cacheError": {
-    "message": "ስህተት"
-  },
-  "cacheClearing": {
-    "message": "በማጽዳት ላይ..."
-  },
-  "cacheCleared": {
-    "message": "ጸድቷል!"
-  },
-  "fontCopied": {
-    "message": "ተቀድቷል!"
-  },
-  "fontNotCopied": {
-    "message": "አልተቀዳም"
-  },
-  "notesSaved": {
-    "message": "ተቀምጧል"
-  },
-  "notesTooLarge": {
-    "message": "ማስታወሻ በጣም ትልቅ ነው"
-  },
-  "notesLinkText": {
-    "message": "አገናኝ"
-  },
-  "trackerToday": {
-    "message": "Today"
-  },
-  "trackerThatDay": {
-    "message": "That day"
-  },
-  "trackerSelectedMonth": {
-    "message": "Selected month"
-  },
-  "trackerTotal": {
-    "message": "Total"
-  },
-  "trackerNoData": {
-    "message": "No data for this period"
-  },
-  "trackerExportEmpty": {
-    "message": "No tracker data to export."
-  },
-  "trackerExportTruncated": {
-    "message": "Export truncated to 10MB to keep the popup stable."
-  },
-  "trackerImportEmpty": {
-    "message": "No valid tracker data to import."
-  },
-  "trackerImportSuccess": {
-    "message": "Data successfully imported!"
-  },
-  "trackerImportError": {
-    "message": "Error reading the file."
-  },
-  "swStatusLive": {
-    "message": "በቀጥታ ስርጭት ላይ"
-  },
-  "swStatusReady": {
-    "message": "ዝግጁ"
-  },
-  "swUndoTitle": {
-    "message": "ይህን አፍታ ሰርዝ"
-  },
-  "swNoLaps": {
-    "message": "ምንም የተቀረጹ አፍታዎች የሉም"
-  },
-  "swLiveTitlePrefix": {
-    "message": "ቀጥታ #"
-  },
-  "swDurationLabel": {
-    "message": "ቆይታ: "
-  },
-  "swMomentLabel": {
-    "message": "አፍታ "
-  },
-  "swExportTxtBtn": {
-    "message": "እንደ .TXT ላክ"
-  },
-  "swTotalDurationPrefix": {
-    "message": "ጠቅላላ ቆይታ: "
-  },
-  "swCopyBtn": {
-    "message": "ወደ ቅንጥብ ሰሌዳ ቅዳ"
-  },
-  "swCopiedBtn": {
-    "message": "✓ ተቀድቷል"
-  },
-  "swNoHistory": {
-    "message": "ምንም የቀጥታ ታሪክ የለም"
-  },
-  "techScannerUnavailable": {
-    "message": "አስካኚው በዚህ ገጽ ላይ አይገኝም።"
-  },
-  "techFoundPrefix": {
-    "message": "ተገኝቷል: "
-  },
-  "techItemsSuffix": {
-    "message": "ንጥሎች"
-  },
-  "techNotFound": {
-    "message": "አልተገኘም."
-  },
-  "techScannerFailed": {
-    "message": "በዚህ ገጽ ላይ መቃኘት አልተሳካም።"
-  },
-  "markerDrawTooltip": {
-    "message": "ሳል"
-  },
-  "markerLineTooltip": {
-    "message": "መስመር"
-  },
-  "markerTextTooltip": {
-    "message": "ጽሑፍ"
-  },
-  "markerMoveTooltip": {
-    "message": "አንቀሳቅስ"
-  },
-  "markerEraseTooltip": {
-    "message": "አጥፋ"
-  },
-  "markerClearAllTooltip": {
-    "message": "ሁሉንም አጽዳ"
-  },
-  "markerThicknessTooltip": {
-    "message": "ውፍረት"
-  },
-  "markerCloseTooltip": {
-    "message": "ዝጋ"
-  },
-  "linesLabel": {
-    "message": "መስመሮች"
-  },
-  "clearCounterTooltip": {
-    "message": "ሁሉንም አጥፋ"
-  },
-  "confirmClearCounter": {
-    "message": "ሁሉንም ማጥፋት እርግጠኛ ነህ?"
-  },
-  "trackerTotalShort": {
-    "message": "Total"
-  },
-  "trackerThisMonth": {
-    "message": "This month"
-  },
-  "trackerThisMonthShort": {
-    "message": "This month"
-  },
-  "trackerThatMonth": {
-    "message": "That month"
-  },
-  "trackerAvgThisMonth": {
-    "message": "Average (month)"
-  },
-  "trackerAvgThatMonth": {
-    "message": "Average (month)"
-  },
-  "trackerAvgTotal": {
-    "message": "Average"
-  },
-  "trackerDeleteConfirm": {
-    "message": "Are you sure you want to delete data for"
-  }
+    "swCopiedBtn":  {
+                        "message":  "✓ ተቀድቷል"
+                    },
+    "trackerImportSuccess":  {
+                                 "message":  "Data successfully imported!"
+                             },
+    "techNotFound":  {
+                         "message":  "አልተገኘም."
+                     },
+    "cacheNotSupported":  {
+                              "message":  "አይደገፍም"
+                          },
+    "trackerAvgLabel":  {
+                            "message":  "አማካይ"
+                        },
+    "colorPickerTitle":  {
+                             "message":  "ቀለም መራጭ"
+                         },
+    "trackerThatMonth":  {
+                             "message":  "That month"
+                         },
+    "counterPlaceholder":  {
+                               "message":  "ጽሑፍ እዚህ ይለጥፉ..."
+                           },
+    "cacheClearConfirm":  {
+                              "message":  "ሁሉንም ውሂብ ከዚህ ጣቢያ አጽዳ"
+                          },
+    "trackerModeAll":  {
+                           "message":  "ሁሉም ሰዓት"
+                       },
+    "swLiveTitlePrefix":  {
+                              "message":  "ቀጥታ #"
+                          },
+    "notesSaved":  {
+                       "message":  "ተቀምጧል"
+                   },
+    "trackerTitle":  {
+                         "message":  "የድር ጊዜ መከታተያ"
+                     },
+    "appTitle":  {
+                     "message":  "ALL IN ONE"
+                 },
+    "trackerTotal":  {
+                         "message":  "Total"
+                     },
+    "savedIndicator":  {
+                           "message":  "ተቀምጧል"
+                       },
+    "markerDrawTooltip":  {
+                              "message":  "ሳል"
+                          },
+    "trackerExportEmpty":  {
+                               "message":  "No tracker data to export."
+                           },
+    "wordsLabel":  {
+                       "message":  "ቃላት"
+                   },
+    "stopwatchReady":  {
+                           "message":  "ዝግጁ"
+                       },
+    "notesLinkText":  {
+                          "message":  "አገናኝ"
+                      },
+    "extDesc":  {
+                    "message":  "ሁሉንም አስፈላጊ ተግባራት በአንድ ፈጣን፣ ዘመናዊ እና ነፃ በይነገጽ ውስጥ የሚያገናኝ የመጨረሻው መሣሪያ።"
+                },
+    "dateLabel":  {
+                      "message":  "ቀን"
+                  },
+    "swStatusLive":  {
+                         "message":  "በቀጥታ ስርጭት ላይ"
+                     },
+    "linkLabel":  {
+                      "message":  "አገናኝ"
+                  },
+    "trackerAvgThatMonth":  {
+                                "message":  "Average (month)"
+                            },
+    "addUrlTooltip":  {
+                          "message":  "አሁን ያለውን ገጽ ዩአርኤል ያክሉ"
+                      },
+    "clearCounterTooltip":  {
+                                "message":  "ሁሉንም አጥፋ"
+                            },
+    "counterTitle":  {
+                         "message":  "ባህሪ ቆጣሪ"
+                     },
+    "markerEraseTooltip":  {
+                               "message":  "አጥፋ"
+                           },
+    "swNoHistory":  {
+                        "message":  "ምንም የቀጥታ ታሪክ የለም"
+                    },
+    "deleteBtn":  {
+                      "message":  "ሰርዝ"
+                  },
+    "toastModuleLoadError":  {
+                                 "message":  "Error loading module"
+                             },
+    "versionLabel":  {
+                         "message":  "ስሪት:"
+                     },
+    "clearAllBtn":  {
+                        "message":  "ሁሉንም አጽዳ"
+                    },
+    "uiSettings":  {
+                       "message":  "ቅንብሮች"
+                   },
+    "copyEnableTitle":  {
+                            "message":  "ቅጂን አንቃ"
+                        },
+    "soundTitle":  {
+                       "message":  "ፎንት"
+                   },
+    "toastTrackerError":  {
+                              "message":  "Error refreshing data"
+                          },
+    "charsLabel":  {
+                       "message":  "ገጸ-ባህሪያት"
+                   },
+    "markerCloseTooltip":  {
+                               "message":  "ዝጋ"
+                           },
+    "playBtn":  {
+                    "message":  "ኩኪ/ካሽ"
+                },
+    "exportTooltip":  {
+                          "message":  "Export data"
+                      },
+    "markerLineTooltip":  {
+                              "message":  "መስመር"
+                          },
+    "colorPickerCopied":  {
+                              "message":  "ተቀድቷል: "
+                          },
+    "swStatusReady":  {
+                          "message":  "ዝግጁ"
+                      },
+    "cacheModalTitle":  {
+                            "message":  "ኩኪዎች እና መሸጎጫ"
+                        },
+    "trackerMonthLabel":  {
+                              "message":  "በዚህ ወር"
+                          },
+    "colorPickerPicking":  {
+                               "message":  "በመምረጥ ላይ..."
+                           },
+    "swUndoTitle":  {
+                        "message":  "ይህን አፍታ ሰርዝ"
+                    },
+    "trackerAvgTotal":  {
+                            "message":  "Average"
+                        },
+    "addDateTooltip":  {
+                           "message":  "የዛሬውን ቀን ያክሉ"
+                       },
+    "techTitle":  {
+                      "message":  "የጣቢያ ቴክኖሎጂዎች"
+                  },
+    "trackerToday":  {
+                         "message":  "Today"
+                     },
+    "notesModalTitle":  {
+                            "message":  "ብልጥ ማስታወሻዎች"
+                        },
+    "notesTooLarge":  {
+                          "message":  "ማስታወሻ በጣም ትልቅ ነው"
+                      },
+    "cacheCleared":  {
+                         "message":  "ጸድቷል!"
+                     },
+    "markerTitle":  {
+                        "message":  "የገጽ ምልክት ማድረጊያ"
+                    },
+    "exportNotesTooltip":  {
+                               "message":  "ማስታወሻዎችን ወደ ውጭ ላክ"
+                           },
+    "techFoundPrefix":  {
+                            "message":  "ተገኝቷል: "
+                        },
+    "techModalTitle":  {
+                           "message":  "የጣቢያ ቴክኖሎጂዎች"
+                       },
+    "confirmClearNotes":  {
+                              "message":  "እርግጠኛ ነዎት ሁሉንም ማስታወሻዎች ማጽዳት ይፈልጋሉ?"
+                          },
+    "swNoLaps":  {
+                     "message":  "ምንም የተቀረጹ አፍታዎች የሉም"
+                 },
+    "confirmClearCounter":  {
+                                "message":  "ሁሉንም ማጥፋት እርግጠኛ ነህ?"
+                            },
+    "supportDesc":  {
+                        "message":  "All In One ሙሉ በሙሉ ነፃ መሣሪያ ነው። የእርስዎ ድጋፍ እንደዛው እንዲቆይ ይረዳል እና አዳዲስ ባህሪያትን አዘውትሮ ለማዳበር ያስችላል።"
+                    },
+    "websiteTooltip":  {
+                           "message":  "ፈጣን፣ ዘመናዊ፣ ነፃ መሳሪያ።"
+                       },
+    "privacyLabel":  {
+                         "message":  "የግላዊነት ፖሊሲ"
+                     },
+    "fontNotCopied":  {
+                          "message":  "አልተቀዳም"
+                      },
+    "trackerNoData":  {
+                          "message":  "No data for this period"
+                      },
+    "trackerModeMonth":  {
+                             "message":  "ወርሃዊ እይታ"
+                         },
+    "swExportTxtBtn":  {
+                           "message":  "እንደ .TXT ላክ"
+                       },
+    "markerTextTooltip":  {
+                              "message":  "ጽሑፍ"
+                          },
+    "importTooltip":  {
+                          "message":  "Import data"
+                      },
+    "cacheClearing":  {
+                          "message":  "በማጽዳት ላይ..."
+                      },
+    "trackerThatDay":  {
+                           "message":  "That day"
+                       },
+    "swTotalDurationPrefix":  {
+                                  "message":  "ጠቅላላ ቆይታ: "
+                              },
+    "trackerAvgThisMonth":  {
+                                "message":  "Average (month)"
+                            },
+    "trackerDeleteConfirm":  {
+                                 "message":  "Are you sure you want to delete data for"
+                             },
+    "ytDislikeTitle":  {
+                           "message":  "የዩቲዩብ አለመውደድን መልስ"
+                       },
+    "techItemsSuffix":  {
+                            "message":  "ንጥሎች"
+                        },
+    "rateBtn":  {
+                    "message":  "ቅጥያውን ደረጃ ይስጡ"
+                },
+    "clearNotesTooltip":  {
+                              "message":  "ሁሉንም ማስታወሻዎች አጽዳ"
+                          },
+    "fontCopied":  {
+                       "message":  "ተቀድቷል!"
+                   },
+    "websiteBtn":  {
+                       "message":  "ኦፊሴላዊ ድር ጣቢያ"
+                   },
+    "darkModeTitle":  {
+                          "message":  "ጨለማ ሁነታ"
+                      },
+    "rulerTitle":  {
+                       "message":  "የገጽ ገዢ"
+                   },
+    "trackerTodayLabel":  {
+                              "message":  "ዛሬ"
+                          },
+    "currentRecordedLabel":  {
+                                 "message":  "በአሁኑ ጊዜ የተመዘገበ"
+                             },
+    "trackerImportEmpty":  {
+                               "message":  "No valid tracker data to import."
+                           },
+    "trackerImportError":  {
+                               "message":  "Error reading the file."
+                           },
+    "extName":  {
+                    "message":  "All In One - ምርጥ ምርታማነት መሣሪያ"
+                },
+    "trackerThisMonth":  {
+                             "message":  "This month"
+                         },
+    "trackerTotalShort":  {
+                              "message":  "Total"
+                          },
+    "trackerSelectedMonth":  {
+                                 "message":  "Selected month"
+                             },
+    "techLoadingMsg":  {
+                           "message":  "አስካኚው ጣቢያውን እየተነተነ ነው..."
+                       },
+    "radioPause":  {
+                       "message":  "አቁም"
+                   },
+    "trackerThisMonthShort":  {
+                                  "message":  "This month"
+                              },
+    "swCopyBtn":  {
+                      "message":  "ወደ ቅንጥብ ሰሌዳ ቅዳ"
+                  },
+    "swMomentLabel":  {
+                          "message":  "አፍታ "
+                      },
+    "donateBtn":  {
+                      "message":  "ይለግሱ እና ይደግፉ"
+                  },
+    "systemPageDesc":  {
+                           "message":  "የማሻሻያ መሳሪያዎች ተሰናክለዋል"
+                       },
+    "radioTitle":  {
+                       "message":  "ድህረ"
+                   },
+    "notesTitle":  {
+                       "message":  "ብልጥ ማስታወሻዎች"
+                   },
+    "techScannerUnavailable":  {
+                                   "message":  "አስካኚው በዚህ ገጽ ላይ አይገኝም።"
+                               },
+    "resetBtn":  {
+                     "message":  "ቆጣሪ"
+                 },
+    "linesLabel":  {
+                       "message":  "መስመሮች"
+                   },
+    "stopBtn":  {
+                    "message":  "አቁም"
+                },
+    "supportTitle":  {
+                         "message":  "ቅጥያውን ይደግፉ"
+                     },
+    "cacheError":  {
+                       "message":  "ስህተት"
+                   },
+    "stopwatchTitle":  {
+                           "message":  "የማቆሚያ ሰዓት"
+                       },
+    "trackerModalTitle":  {
+                              "message":  "Webtime Tracker"
+                          },
+    "fontTitle":  {
+                      "message":  "ቅርጸ-ቁምፊ ፈላጊ"
+                  },
+    "notesPlaceholder":  {
+                             "message":  "ማስታወሻዎችን እዚህ ይፃፉ..."
+                         },
+    "cacheTitle":  {
+                       "message":  "ኩኪዎች እና መሸጎጫ"
+                   },
+    "radioArtist":  {
+                        "message":  "በ All In One ቅጥያ የተጎላበተ"
+                    },
+    "liveHistoryLabel":  {
+                             "message":  "የቀጥታ ታሪክ"
+                         },
+    "trackerExportTruncated":  {
+                                   "message":  "Export truncated to 10MB to keep the popup stable."
+                               },
+    "clearSiteDataBtn":  {
+                             "message":  "ሁሉንም ውሂብ ከዚህ ጣቢያ አጽዳ"
+                         },
+    "settingsTooltip":  {
+                            "message":  "ዙር"
+                        },
+    "lapBtn":  {
+                   "message":  "ዙር"
+               },
+    "radioPlay":  {
+                      "message":  "አጫውት"
+                  },
+    "markerClearAllTooltip":  {
+                                  "message":  "ሁሉንም አጽዳ"
+                              },
+    "textLabel":  {
+                      "message":  "ጽሑፍ"
+                  },
+    "cancelBtn":  {
+                      "message":  "ሰርዝ"
+                  },
+    "startBtn":  {
+                     "message":  "ጀምር"
+                 },
+    "counterModalTitle":  {
+                              "message":  "ባህሪ ቆጣሪ"
+                          },
+    "importNotesTooltip":  {
+                               "message":  "ማስታወሻዎችን አስገባ"
+                           },
+    "markerThicknessTooltip":  {
+                                   "message":  "ውፍረት"
+                               },
+    "blockCookiesLabel":  {
+                              "message":  "ኩኪዎችን በራስ-ሰር አግድ"
+                          },
+    "confirmClearHistory":  {
+                                "message":  "እርግጠኛ ነዎት ሁሉንም ታሪክ ማጽዳት ይፈልጋሉ?"
+                            },
+    "systemPageTitle":  {
+                            "message":  "የስርዓት ገጽ"
+                        },
+    "grabTextTooltip":  {
+                            "message":  "ከገጽ ላይ ጽሑፍ ያውጡ"
+                        },
+    "markLapDesc":  {
+                        "message":  "በሰዓት መቁጠሪያው ላይ ቅጽበት ይመዝግቡ"
+                    },
+    "techScannerFailed":  {
+                              "message":  "በዚህ ገጽ ላይ መቃኘት አልተሳካም።"
+                          },
+    "markerMoveTooltip":  {
+                              "message":  "አንቀሳቅስ"
+                          },
+    "trackerModeDay":  {
+                           "message":  "ዕለታዊ እይታ"
+                       },
+    "swDurationLabel":  {
+                            "message":  "ቆይታ: "
+                        }
 }

@@ -1,521 +1,527 @@
 {
-  "extName": {
-    "message": "All In One - Cel mai bun instrument de productivitate"
-  },
-  "extDesc": {
-    "message": "Instrumentul suprem care combină toate funcțiile esențiale în cadrul unei interfețe rapide, moderne și gratuite."
-  },
-  "markLapDesc": {
-    "message": "Înregistrează un moment pe cronometru"
-  },
-  "appTitle": {
-    "message": "ALL IN ONE"
-  },
-  "websiteTooltip": {
-    "message": "Site-ul oficial al extensiei"
-  },
-  "settingsTooltip": {
-    "message": "Setări"
-  },
-  "radioTitle": {
-    "message": "Radio"
-  },
-  "radioTitleCustom": {
-    "message": "Radio"
-  },
-  "importRadioTooltip": {
-    "message": "Importă stație radio personalizată"
-  },
-  "radioArtist": {
-    "message": "Oferit de extensia All In One"
-  },
-  "playBtn": {
-    "message": "Redare"
-  },
-  "soundTitle": {
-    "message": "Sunet"
-  },
-  "resetBtn": {
-    "message": "Resetează"
-  },
-  "colorPickerTitle": {
-    "message": "Selector de culori"
-  },
-  "darkModeTitle": {
-    "message": "Mod întunecat"
-  },
-  "rulerTitle": {
-    "message": "Riglă de pagină"
-  },
-  "copyEnableTitle": {
-    "message": "Copiază"
-  },
-  "markerTitle": {
-    "message": "Marcator de pagină"
-  },
-  "techTitle": {
-    "message": "Tehnologii site"
-  },
-  "cacheTitle": {
-    "message": "Cookie-uri și Cache"
-  },
-  "fontTitle": {
-    "message": "Detector de fonturi"
-  },
-  "counterTitle": {
-    "message": "Contor de caractere"
-  },
-  "stopwatchTitle": {
-    "message": "Cronometru"
-  },
-  "notesTitle": {
-    "message": "Notițe inteligente"
-  },
-  "trackerTitle": {
-    "message": "Webtime Tracker"
-  },
-  "ytDislikeTitle": {
-    "message": "Afișează dislike-urile pe YouTube"
-  },
-  "cacheModalTitle": {
-    "message": "COOKIE-URI ȘI CACHE"
-  },
-  "blockCookiesLabel": {
-    "message": "Blochează automat cookie-urile"
-  },
-  "clearSiteDataBtn": {
-    "message": "Șterge toate datele de pe acest site"
-  },
-  "cancelBtn": {
-    "message": "ANULEAZĂ"
-  },
-  "counterModalTitle": {
-    "message": "CONTOR DE CARACTERE"
-  },
-  "counterPlaceholder": {
-    "message": "Lipește textul aici..."
-  },
-  "charsLabel": {
-    "message": "Caractere"
-  },
-  "wordsLabel": {
-    "message": "Cuvinte"
-  },
-  "stopwatchReady": {
-    "message": "PREGĂTIT"
-  },
-  "startBtn": {
-    "message": "START"
-  },
-  "lapBtn": {
-    "message": "TUR"
-  },
-  "stopBtn": {
-    "message": "STOP"
-  },
-  "currentRecordedLabel": {
-    "message": "ÎNREGISTRARE CURENTĂ"
-  },
-  "liveHistoryLabel": {
-    "message": "ISTORIC LIVE-URI"
-  },
-  "clearAllBtn": {
-    "message": "ȘTERGE TOT"
-  },
-  "confirmClearHistory": {
-    "message": "Ești sigur că vrei să ștergi tot istoricul?"
-  },
-  "deleteBtn": {
-    "message": "ȘTERGE"
-  },
-  "notesModalTitle": {
-    "message": "NOTIȚE INTELIGENTE"
-  },
-  "clearNotesTooltip": {
-    "message": "Șterge toate notițele"
-  },
-  "notesPlaceholder": {
-    "message": "Scrie notițele aici..."
-  },
-  "grabTextTooltip": {
-    "message": "Extrage textul din pagină"
-  },
-  "textLabel": {
-    "message": "Text"
-  },
-  "addUrlTooltip": {
-    "message": "Adaugă URL-ul paginii actuale"
-  },
-  "linkLabel": {
-    "message": "Link"
-  },
-  "addDateTooltip": {
-    "message": "Adaugă data de azi"
-  },
-  "dateLabel": {
-    "message": "Data"
-  },
-  "exportNotesTooltip": {
-    "message": "Exportă notițele"
-  },
-  "importNotesTooltip": {
-    "message": "Importă notițe"
-  },
-  "savedIndicator": {
-    "message": "Salvat"
-  },
-  "confirmClearNotes": {
-    "message": "Ești sigur că vrei să ștergi toate notițele?"
-  },
-  "trackerModalTitle": {
-    "message": "Urmărire Timp"
-  },
-  "exportTooltip": {
-    "message": "Export data"
-  },
-  "importTooltip": {
-    "message": "Import data"
-  },
-  "trackerModeDay": {
-    "message": "Vizualizare zilnică"
-  },
-  "trackerModeMonth": {
-    "message": "Vizualizare lunară"
-  },
-  "trackerModeAll": {
-    "message": "Tot timpul"
-  },
-  "trackerTodayLabel": {
-    "message": "Astăzi"
-  },
-  "trackerMonthLabel": {
-    "message": "Luna aceasta"
-  },
-  "trackerAvgLabel": {
-    "message": "Medie"
-  },
-  "techModalTitle": {
-    "message": "TEHNOLOGII SITE"
-  },
-  "techLoadingMsg": {
-    "message": "Scanerul analizează site-ul..."
-  },
-  "uiSettings": {
-    "message": "SETĂRI"
-  },
-  "supportTitle": {
-    "message": "Susține extensia"
-  },
-  "supportDesc": {
-    "message": "All In One este un instrument complet gratuit. Susținerea ta ajută la menținerea acestuia și permite dezvoltarea de noi opțiuni."
-  },
-  "donateBtn": {
-    "message": "Donează și susține munca"
-  },
-  "websiteBtn": {
-    "message": "Website-ul oficial"
-  },
-  "rateBtn": {
-    "message": "Evaluează extensia"
-  },
-  "versionLabel": {
-    "message": "Versiune:"
-  },
-  "privacyLabel": {
-    "message": "Politica de confidențialitate"
-  },
-  "systemPageTitle": {
-    "message": "PAGINĂ DE SISTEM"
-  },
-  "systemPageDesc": {
-    "message": "Instrumentele de modificare sunt dezactivate"
-  },
-  "radioPlay": {
-    "message": "Redă"
-  },
-  "radioPause": {
-    "message": "Pauză"
-  },
-  "colorPickerPicking": {
-    "message": "Se alege..."
-  },
-  "colorPickerCopied": {
-    "message": "Copiat: "
-  },
-  "cacheNotSupported": {
-    "message": "Nu este suportat"
-  },
-  "cacheClearConfirm": {
-    "message": "Șterge toate datele de pe acest site"
-  },
-  "cacheError": {
-    "message": "Eroare"
-  },
-  "cacheClearing": {
-    "message": "Se șterge..."
-  },
-  "cacheCleared": {
-    "message": "Șters!"
-  },
-  "fontCopied": {
-    "message": "Copiat!"
-  },
-  "fontNotCopied": {
-    "message": "Nu a fost copiat"
-  },
-  "notesSaved": {
-    "message": "Salvat"
-  },
-  "notesTooLarge": {
-    "message": "Notiță prea mare"
-  },
-  "notesLinkText": {
-    "message": "Link"
-  },
-  "trackerToday": {
-    "message": "Astăzi"
-  },
-  "trackerThatDay": {
-    "message": "Ziua aceea"
-  },
-  "trackerSelectedMonth": {
-    "message": "Luna selectată"
-  },
-  "trackerTotal": {
-    "message": "Total"
-  },
-  "trackerNoData": {
-    "message": "Nu există date pentru această perioadă"
-  },
-  "trackerExportEmpty": {
-    "message": "No tracker data to export."
-  },
-  "trackerExportTruncated": {
-    "message": "Export truncated to 10MB to keep the popup stable."
-  },
-  "trackerImportEmpty": {
-    "message": "No valid tracker data to import."
-  },
-  "trackerImportSuccess": {
-    "message": "Data successfully imported!"
-  },
-  "trackerImportError": {
-    "message": "Error reading the file."
-  },
-  "swStatusLive": {
-    "message": "LIVE ÎN CURS"
-  },
-  "swStatusReady": {
-    "message": "PREGĂTIT"
-  },
-  "swUndoTitle": {
-    "message": "Șterge acest moment"
-  },
-  "swNoLaps": {
-    "message": "Nu există momente înregistrate"
-  },
-  "swLiveTitlePrefix": {
-    "message": "Live #"
-  },
-  "swDurationLabel": {
-    "message": "Durată: "
-  },
-  "swMomentLabel": {
-    "message": "Moment "
-  },
-  "swExportTxtBtn": {
-    "message": "EXPORTĂ CA .TXT"
-  },
-  "swTotalDurationPrefix": {
-    "message": "DURATĂ TOTALĂ: "
-  },
-  "swCopyBtn": {
-    "message": "COPIAZĂ ÎN CLIPBOARD"
-  },
-  "swCopiedBtn": {
-    "message": "✓ COPIAT"
-  },
-  "swNoHistory": {
-    "message": "Nu există istoric de live-uri"
-  },
-  "techScannerUnavailable": {
-    "message": "Scanerul nu este disponibil pe această pagină."
-  },
-  "techFoundPrefix": {
-    "message": "Găsite: "
-  },
-  "techItemsSuffix": {
-    "message": "elemente"
-  },
-  "techNotFound": {
-    "message": "Nu s-a găsit nimic."
-  },
-  "techScannerFailed": {
-    "message": "Scanarea a eșuat pe această pagină."
-  },
-  "markerDrawTooltip": {
-    "message": "Desen"
-  },
-  "markerLineTooltip": {
-    "message": "Linie"
-  },
-  "markerTextTooltip": {
-    "message": "Text"
-  },
-  "markerMoveTooltip": {
-    "message": "Mută"
-  },
-  "markerEraseTooltip": {
-    "message": "Șterge"
-  },
-  "markerClearAllTooltip": {
-    "message": "Șterge tot"
-  },
-  "markerThicknessTooltip": {
-    "message": "Grosime"
-  },
-  "markerCloseTooltip": {
-    "message": "Închide"
-  },
-  "linesLabel": {
-    "message": "Linii"
-  },
-  "clearCounterTooltip": {
-    "message": "Șterge tot"
-  },
-  "confirmClearCounter": {
-    "message": "Sigur doriți să ștergeți tot?"
-  },
-  "trackerTotalShort": {
-    "message": "Total"
-  },
-  "trackerThisMonth": {
-    "message": "Luna aceasta"
-  },
-  "trackerThisMonthShort": {
-    "message": "Luna aceasta"
-  },
-  "trackerThatMonth": {
-    "message": "Luna aceea"
-  },
-  "trackerAvgThisMonth": {
-    "message": "Medie"
-  },
-  "trackerAvgThatMonth": {
-    "message": "Medie"
-  },
-  "trackerAvgTotal": {
-    "message": "Medie"
-  },
-  "trackerDeleteConfirm": {
-    "message": "Sigur doriți să ștergeți datele pentru"
-  },
-  "techCatBase": {
-    "message": "Bază"
-  },
-  "techCatSystem": {
-    "message": "Sistem"
-  },
-  "techCatEcom": {
-    "message": "E-Commerce"
-  },
-  "techCatTech": {
-    "message": "Tehnologii"
-  },
-  "techCatStyles": {
-    "message": "Stiluri"
-  },
-  "techCatDb": {
-    "message": "Bază de date"
-  },
-  "techCatBackend": {
-    "message": "Backend"
-  },
-  "techCatServer": {
-    "message": "Server"
-  },
-  "techCatNetwork": {
-    "message": "Rețea"
-  },
-  "techCatSecurity": {
-    "message": "Securitate"
-  },
-  "techCatCaching": {
-    "message": "Cache"
-  },
-  "techCatCdn": {
-    "message": "CDN"
-  },
-  "techCatAnalytics": {
-    "message": "Analiză"
-  },
-  "techCatAds": {
-    "message": "Reclame"
-  },
-  "techCatPayment": {
-    "message": "Plată"
-  },
-  "techCatComm": {
-    "message": "Comunicare"
-  },
-  "techCatMedia": {
-    "message": "Media"
-  },
-  "techCatBuild": {
-    "message": "Build"
-  },
-  "techCatSeo": {
-    "message": "SEO"
-  },
-  "techCatStats": {
-    "message": "Statistici"
-  },
-  "techCatTools": {
-    "message": "Unelte"
-  },
-  "techStatDom": {
-    "message": "DOM"
-  },
-  "techStatImages": {
-    "message": "Imagini"
-  },
-  "techStatScripts": {
-    "message": "Scripturi"
-  },
-  "techStatLinks": {
-    "message": "Linkuri"
-  },
-  "techStatCss": {
-    "message": "CSS"
-  },
-  "techStatForms": {
-    "message": "Formulare"
-  },
-  "techStatTables": {
-    "message": "Tabele"
-  },
-  "techStatSvg": {
-    "message": "SVG"
-  },
-  "techStatVideo": {
-    "message": "Video"
-  },
-  "techStatAudio": {
-    "message": "Audio"
-  },
-  "techStatIframes": {
-    "message": "Iframes"
-  },
-  "radioModalDesc": {
-    "message": "Introduceți linkul direct către stația radio preferată"
-  },
-  "radioUrlPlaceholder": {
-    "message": "https://stream.radio.com/play"
-  },
-  "clearRadioInputTooltip": {
-    "message": "Șterge câmpul"
-  },
-  "saveRadioStationBtn": {
-    "message": "SALVEAZĂ STAȚIA"
-  }
+    "notesTitle":  {
+                       "message":  "Notițe inteligente"
+                   },
+    "supportDesc":  {
+                        "message":  "All In One este un instrument complet gratuit. Susținerea ta ajută la menținerea acestuia și permite dezvoltarea de noi opțiuni."
+                    },
+    "trackerExportTruncated":  {
+                                   "message":  "Export truncated to 10MB to keep the popup stable."
+                               },
+    "techCatBackend":  {
+                           "message":  "Backend"
+                       },
+    "markerEraseTooltip":  {
+                               "message":  "Șterge"
+                           },
+    "counterTitle":  {
+                         "message":  "Contor de caractere"
+                     },
+    "trackerAvgLabel":  {
+                            "message":  "Medie"
+                        },
+    "trackerModeMonth":  {
+                             "message":  "Vizualizare lunară"
+                         },
+    "trackerModeAll":  {
+                           "message":  "Tot timpul"
+                       },
+    "techCatMedia":  {
+                         "message":  "Media"
+                     },
+    "trackerNoData":  {
+                          "message":  "Nu există date pentru această perioadă"
+                      },
+    "swLiveTitlePrefix":  {
+                              "message":  "Live #"
+                          },
+    "confirmClearNotes":  {
+                              "message":  "Ești sigur că vrei să ștergi toate notițele?"
+                          },
+    "techCatSeo":  {
+                       "message":  "SEO"
+                   },
+    "techCatTools":  {
+                         "message":  "Unelte"
+                     },
+    "soundTitle":  {
+                       "message":  "Sunet"
+                   },
+    "clearCounterTooltip":  {
+                                "message":  "Șterge tot"
+                            },
+    "markerCloseTooltip":  {
+                               "message":  "Închide"
+                           },
+    "stopwatchTitle":  {
+                           "message":  "Cronometru"
+                       },
+    "clearNotesTooltip":  {
+                              "message":  "Șterge toate notițele"
+                          },
+    "rulerTitle":  {
+                       "message":  "Riglă de pagină"
+                   },
+    "markLapDesc":  {
+                        "message":  "Înregistrează un moment pe cronometru"
+                    },
+    "trackerImportEmpty":  {
+                               "message":  "No valid tracker data to import."
+                           },
+    "systemPageDesc":  {
+                           "message":  "Instrumentele de modificare sunt dezactivate"
+                       },
+    "techStatLinks":  {
+                          "message":  "Linkuri"
+                      },
+    "stopBtn":  {
+                    "message":  "STOP"
+                },
+    "swNoLaps":  {
+                     "message":  "Nu există momente înregistrate"
+                 },
+    "trackerTitle":  {
+                         "message":  "Webtime Tracker"
+                     },
+    "trackerThisMonth":  {
+                             "message":  "Luna aceasta"
+                         },
+    "linesLabel":  {
+                       "message":  "Linii"
+                   },
+    "toastTrackerError":  {
+                              "message":  "Error refreshing data"
+                          },
+    "trackerExportEmpty":  {
+                               "message":  "No tracker data to export."
+                           },
+    "techCatComm":  {
+                        "message":  "Comunicare"
+                    },
+    "deleteBtn":  {
+                      "message":  "ȘTERGE"
+                  },
+    "toastModuleLoadError":  {
+                                 "message":  "Error loading module"
+                             },
+    "notesSaved":  {
+                       "message":  "Salvat"
+                   },
+    "lapBtn":  {
+                   "message":  "TUR"
+               },
+    "notesModalTitle":  {
+                            "message":  "NOTIȚE INTELIGENTE"
+                        },
+    "trackerAvgThisMonth":  {
+                                "message":  "Medie"
+                            },
+    "versionLabel":  {
+                         "message":  "Versiune:"
+                     },
+    "importNotesTooltip":  {
+                               "message":  "Importă notițe"
+                           },
+    "techCatBuild":  {
+                         "message":  "Build"
+                     },
+    "fontNotCopied":  {
+                          "message":  "Nu a fost copiat"
+                      },
+    "importTooltip":  {
+                          "message":  "Import data"
+                      },
+    "techCatTech":  {
+                        "message":  "Tehnologii"
+                    },
+    "techCatServer":  {
+                          "message":  "Server"
+                      },
+    "cacheNotSupported":  {
+                              "message":  "Nu este suportat"
+                          },
+    "techStatCss":  {
+                        "message":  "CSS"
+                    },
+    "techStatAudio":  {
+                          "message":  "Audio"
+                      },
+    "cacheClearing":  {
+                          "message":  "Se șterge..."
+                      },
+    "radioTitleCustom":  {
+                             "message":  "Radio"
+                         },
+    "websiteBtn":  {
+                       "message":  "Website-ul oficial"
+                   },
+    "markerThicknessTooltip":  {
+                                   "message":  "Grosime"
+                               },
+    "confirmClearCounter":  {
+                                "message":  "Sigur doriți să ștergeți tot?"
+                            },
+    "techCatAds":  {
+                       "message":  "Reclame"
+                   },
+    "uiSettings":  {
+                       "message":  "SETĂRI"
+                   },
+    "trackerThatMonth":  {
+                             "message":  "Luna aceea"
+                         },
+    "radioModalDesc":  {
+                           "message":  "Introduceți linkul direct către stația radio preferată"
+                       },
+    "trackerDeleteConfirm":  {
+                                 "message":  "Sigur doriți să ștergeți datele pentru"
+                             },
+    "darkModeTitle":  {
+                          "message":  "Mod întunecat"
+                      },
+    "techStatScripts":  {
+                            "message":  "Scripturi"
+                        },
+    "swNoHistory":  {
+                        "message":  "Nu există istoric de live-uri"
+                    },
+    "techNotFound":  {
+                         "message":  "Nu s-a găsit nimic."
+                     },
+    "notesPlaceholder":  {
+                             "message":  "Scrie notițele aici..."
+                         },
+    "radioArtist":  {
+                        "message":  "Oferit de extensia All In One"
+                    },
+    "charsLabel":  {
+                       "message":  "Caractere"
+                   },
+    "trackerImportSuccess":  {
+                                 "message":  "Data successfully imported!"
+                             },
+    "copyEnableTitle":  {
+                            "message":  "Copiază"
+                        },
+    "techCatStats":  {
+                         "message":  "Statistici"
+                     },
+    "dateLabel":  {
+                      "message":  "Data"
+                  },
+    "techCatNetwork":  {
+                           "message":  "Rețea"
+                       },
+    "techCatEcom":  {
+                        "message":  "E-Commerce"
+                    },
+    "currentRecordedLabel":  {
+                                 "message":  "ÎNREGISTRARE CURENTĂ"
+                             },
+    "techCatStyles":  {
+                          "message":  "Stiluri"
+                      },
+    "extDesc":  {
+                    "message":  "Instrumentul suprem care combină toate funcțiile esențiale în cadrul unei interfețe rapide, moderne și gratuite."
+                },
+    "resetBtn":  {
+                     "message":  "Resetează"
+                 },
+    "addDateTooltip":  {
+                           "message":  "Adaugă data de azi"
+                       },
+    "supportTitle":  {
+                         "message":  "Susține extensia"
+                     },
+    "savedIndicator":  {
+                           "message":  "Salvat"
+                       },
+    "counterPlaceholder":  {
+                               "message":  "Lipește textul aici..."
+                           },
+    "techFoundPrefix":  {
+                            "message":  "Găsite: "
+                        },
+    "systemPageTitle":  {
+                            "message":  "PAGINĂ DE SISTEM"
+                        },
+    "markerClearAllTooltip":  {
+                                  "message":  "Șterge tot"
+                              },
+    "trackerModeDay":  {
+                           "message":  "Vizualizare zilnică"
+                       },
+    "techItemsSuffix":  {
+                            "message":  "elemente"
+                        },
+    "trackerTotal":  {
+                         "message":  "Total"
+                     },
+    "swStatusReady":  {
+                          "message":  "PREGĂTIT"
+                      },
+    "trackerTotalShort":  {
+                              "message":  "Total"
+                          },
+    "blockCookiesLabel":  {
+                              "message":  "Blochează automat cookie-urile"
+                          },
+    "markerDrawTooltip":  {
+                              "message":  "Desen"
+                          },
+    "trackerMonthLabel":  {
+                              "message":  "Luna aceasta"
+                          },
+    "techStatSvg":  {
+                        "message":  "SVG"
+                    },
+    "techStatTables":  {
+                           "message":  "Tabele"
+                       },
+    "techStatImages":  {
+                           "message":  "Imagini"
+                       },
+    "trackerToday":  {
+                         "message":  "Astăzi"
+                     },
+    "techStatDom":  {
+                        "message":  "DOM"
+                    },
+    "wordsLabel":  {
+                       "message":  "Cuvinte"
+                   },
+    "clearAllBtn":  {
+                        "message":  "ȘTERGE TOT"
+                    },
+    "clearSiteDataBtn":  {
+                             "message":  "Șterge toate datele de pe acest site"
+                         },
+    "colorPickerPicking":  {
+                               "message":  "Se alege..."
+                           },
+    "cacheClearConfirm":  {
+                              "message":  "Șterge toate datele de pe acest site"
+                          },
+    "markerTextTooltip":  {
+                              "message":  "Text"
+                          },
+    "radioTitle":  {
+                       "message":  "Radio"
+                   },
+    "trackerSelectedMonth":  {
+                                 "message":  "Luna selectată"
+                             },
+    "fontCopied":  {
+                       "message":  "Copiat!"
+                   },
+    "notesLinkText":  {
+                          "message":  "Link"
+                      },
+    "trackerAvgThatMonth":  {
+                                "message":  "Medie"
+                            },
+    "techTitle":  {
+                      "message":  "Tehnologii site"
+                  },
+    "markerMoveTooltip":  {
+                              "message":  "Mută"
+                          },
+    "playBtn":  {
+                    "message":  "Redare"
+                },
+    "techCatPayment":  {
+                           "message":  "Plată"
+                       },
+    "markerLineTooltip":  {
+                              "message":  "Linie"
+                          },
+    "techStatIframes":  {
+                            "message":  "Iframes"
+                        },
+    "counterModalTitle":  {
+                              "message":  "CONTOR DE CARACTERE"
+                          },
+    "fontTitle":  {
+                      "message":  "Detector de fonturi"
+                  },
+    "swExportTxtBtn":  {
+                           "message":  "EXPORTĂ CA .TXT"
+                       },
+    "swUndoTitle":  {
+                        "message":  "Șterge acest moment"
+                    },
+    "startBtn":  {
+                     "message":  "START"
+                 },
+    "techModalTitle":  {
+                           "message":  "TEHNOLOGII SITE"
+                       },
+    "saveRadioStationBtn":  {
+                                "message":  "SALVEAZĂ STAȚIA"
+                            },
+    "techCatDb":  {
+                      "message":  "Bază de date"
+                  },
+    "trackerImportError":  {
+                               "message":  "Error reading the file."
+                           },
+    "swStatusLive":  {
+                         "message":  "LIVE ÎN CURS"
+                     },
+    "linkLabel":  {
+                      "message":  "Link"
+                  },
+    "techCatAnalytics":  {
+                             "message":  "Analiză"
+                         },
+    "liveHistoryLabel":  {
+                             "message":  "ISTORIC LIVE-URI"
+                         },
+    "colorPickerTitle":  {
+                             "message":  "Selector de culori"
+                         },
+    "appTitle":  {
+                     "message":  "ALL IN ONE"
+                 },
+    "swMomentLabel":  {
+                          "message":  "Moment "
+                      },
+    "swTotalDurationPrefix":  {
+                                  "message":  "DURATĂ TOTALĂ: "
+                              },
+    "stopwatchReady":  {
+                           "message":  "PREGĂTIT"
+                       },
+    "trackerThisMonthShort":  {
+                                  "message":  "Luna aceasta"
+                              },
+    "confirmClearHistory":  {
+                                "message":  "Ești sigur că vrei să ștergi tot istoricul?"
+                            },
+    "markerTitle":  {
+                        "message":  "Marcator de pagină"
+                    },
+    "trackerModalTitle":  {
+                              "message":  "Urmărire Timp"
+                          },
+    "grabTextTooltip":  {
+                            "message":  "Extrage textul din pagină"
+                        },
+    "radioUrlPlaceholder":  {
+                                "message":  "https://stream.radio.com/play"
+                            },
+    "clearRadioInputTooltip":  {
+                                   "message":  "Șterge câmpul"
+                               },
+    "privacyLabel":  {
+                         "message":  "Politica de confidențialitate"
+                     },
+    "trackerThatDay":  {
+                           "message":  "Ziua aceea"
+                       },
+    "textLabel":  {
+                      "message":  "Text"
+                  },
+    "cacheCleared":  {
+                         "message":  "Șters!"
+                     },
+    "importRadioTooltip":  {
+                               "message":  "Importă stație radio personalizată"
+                           },
+    "radioPlay":  {
+                      "message":  "Redă"
+                  },
+    "techLoadingMsg":  {
+                           "message":  "Scanerul analizează site-ul..."
+                       },
+    "swCopyBtn":  {
+                      "message":  "COPIAZĂ ÎN CLIPBOARD"
+                  },
+    "techScannerFailed":  {
+                              "message":  "Scanarea a eșuat pe această pagină."
+                          },
+    "trackerTodayLabel":  {
+                              "message":  "Astăzi"
+                          },
+    "techCatCdn":  {
+                       "message":  "CDN"
+                   },
+    "colorPickerCopied":  {
+                              "message":  "Copiat: "
+                          },
+    "swCopiedBtn":  {
+                        "message":  "✓ COPIAT"
+                    },
+    "techCatCaching":  {
+                           "message":  "Cache"
+                       },
+    "techCatSecurity":  {
+                            "message":  "Securitate"
+                        },
+    "extName":  {
+                    "message":  "All In One - Cel mai bun instrument de productivitate"
+                },
+    "techScannerUnavailable":  {
+                                   "message":  "Scanerul nu este disponibil pe această pagină."
+                               },
+    "notesTooLarge":  {
+                          "message":  "Notiță prea mare"
+                      },
+    "swDurationLabel":  {
+                            "message":  "Durată: "
+                        },
+    "ytDislikeTitle":  {
+                           "message":  "Afișează dislike-urile pe YouTube"
+                       },
+    "donateBtn":  {
+                      "message":  "Donează și susține munca"
+                  },
+    "techStatVideo":  {
+                          "message":  "Video"
+                      },
+    "settingsTooltip":  {
+                            "message":  "Setări"
+                        },
+    "cacheTitle":  {
+                       "message":  "Cookie-uri și Cache"
+                   },
+    "techCatSystem":  {
+                          "message":  "Sistem"
+                      },
+    "exportTooltip":  {
+                          "message":  "Export data"
+                      },
+    "exportNotesTooltip":  {
+                               "message":  "Exportă notițele"
+                           },
+    "radioPause":  {
+                       "message":  "Pauză"
+                   },
+    "websiteTooltip":  {
+                           "message":  "Site-ul oficial al extensiei"
+                       },
+    "rateBtn":  {
+                    "message":  "Evaluează extensia"
+                },
+    "techCatBase":  {
+                        "message":  "Bază"
+                    },
+    "cacheModalTitle":  {
+                            "message":  "COOKIE-URI ȘI CACHE"
+                        },
+    "cancelBtn":  {
+                      "message":  "ANULEAZĂ"
+                  },
+    "addUrlTooltip":  {
+                          "message":  "Adaugă URL-ul paginii actuale"
+                      },
+    "trackerAvgTotal":  {
+                            "message":  "Medie"
+                        },
+    "techStatForms":  {
+                          "message":  "Formulare"
+                      },
+    "cacheError":  {
+                       "message":  "Eroare"
+                   }
 }

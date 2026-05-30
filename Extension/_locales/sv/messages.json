@@ -1,521 +1,527 @@
 {
-  "extName": {
-    "message": "All In One: Det bästa produktivitetsverktyget"
-  },
-  "extDesc": {
-    "message": "Det ultimata verktyget som förenar alla viktiga funktioner i ett snabbt, modernt och gratis gränssnitt."
-  },
-  "markLapDesc": {
-    "message": "Registrera ett ögonblick på tidtagaruret"
-  },
-  "appTitle": {
-    "message": "ALL IN ONE"
-  },
-  "websiteTooltip": {
-    "message": "Tilläggets officiella webbplats"
-  },
-  "settingsTooltip": {
-    "message": "Inställningar"
-  },
-  "radioTitle": {
-    "message": "Radio"
-  },
-  "radioTitleCustom": {
-    "message": "Radio"
-  },
-  "importRadioTooltip": {
-    "message": "Importera anpassad radiostation"
-  },
-  "radioArtist": {
-    "message": "Drivs av tillägget All In One"
-  },
-  "playBtn": {
-    "message": "Spela"
-  },
-  "soundTitle": {
-    "message": "Ljud"
-  },
-  "resetBtn": {
-    "message": "Återställ"
-  },
-  "colorPickerTitle": {
-    "message": "Färgväljare"
-  },
-  "darkModeTitle": {
-    "message": "Mörkt läge"
-  },
-  "rulerTitle": {
-    "message": "Sidlinjal"
-  },
-  "copyEnableTitle": {
-    "message": "Kopiering"
-  },
-  "markerTitle": {
-    "message": "Sidmarkör"
-  },
-  "techTitle": {
-    "message": "Webbplatsteknik"
-  },
-  "cacheTitle": {
-    "message": "Cookies och cache"
-  },
-  "fontTitle": {
-    "message": "Typsnittssökare"
-  },
-  "counterTitle": {
-    "message": "Teckenräknare"
-  },
-  "stopwatchTitle": {
-    "message": "Tidtagarur"
-  },
-  "notesTitle": {
-    "message": "Smarta anteckningar"
-  },
-  "trackerTitle": {
-    "message": "Webtime Tracker"
-  },
-  "ytDislikeTitle": {
-    "message": "Return YouTube Dislike"
-  },
-  "cacheModalTitle": {
-    "message": "COOKIES OCH CACHE"
-  },
-  "blockCookiesLabel": {
-    "message": "Blockera cookies automatiskt"
-  },
-  "clearSiteDataBtn": {
-    "message": "Rensa all data från denna webbplats"
-  },
-  "cancelBtn": {
-    "message": "AVBRYT"
-  },
-  "counterModalTitle": {
-    "message": "TECKENRÄKNARE"
-  },
-  "counterPlaceholder": {
-    "message": "Klistra in text här..."
-  },
-  "charsLabel": {
-    "message": "Tecken"
-  },
-  "wordsLabel": {
-    "message": "Ord"
-  },
-  "stopwatchReady": {
-    "message": "REDO"
-  },
-  "startBtn": {
-    "message": "START"
-  },
-  "lapBtn": {
-    "message": "VARV"
-  },
-  "stopBtn": {
-    "message": "STOPP"
-  },
-  "currentRecordedLabel": {
-    "message": "REGISTRERAT JUST NU"
-  },
-  "liveHistoryLabel": {
-    "message": "LIVE HISTORIK"
-  },
-  "clearAllBtn": {
-    "message": "RENSA ALLT"
-  },
-  "confirmClearHistory": {
-    "message": "Är du säker på att du vill rensa hela historiken?"
-  },
-  "deleteBtn": {
-    "message": "TA BORT"
-  },
-  "notesModalTitle": {
-    "message": "SMARTA ANTECKNINGAR"
-  },
-  "clearNotesTooltip": {
-    "message": "Rensa alla anteckningar"
-  },
-  "notesPlaceholder": {
-    "message": "Skriv anteckningar här..."
-  },
-  "grabTextTooltip": {
-    "message": "Extrahera text från sidan"
-  },
-  "textLabel": {
-    "message": "Text"
-  },
-  "addUrlTooltip": {
-    "message": "Lägg till aktuell sidas URL"
-  },
-  "linkLabel": {
-    "message": "Länk"
-  },
-  "addDateTooltip": {
-    "message": "Lägg till dagens datum"
-  },
-  "dateLabel": {
-    "message": "Datum"
-  },
-  "exportNotesTooltip": {
-    "message": "Exportera anteckningar"
-  },
-  "importNotesTooltip": {
-    "message": "Importera anteckningar"
-  },
-  "savedIndicator": {
-    "message": "Sparat"
-  },
-  "confirmClearNotes": {
-    "message": "Är du säker på att du vill rensa alla anteckningar?"
-  },
-  "trackerModalTitle": {
-    "message": "Tidsspårning"
-  },
-  "exportTooltip": {
-    "message": "Export data"
-  },
-  "importTooltip": {
-    "message": "Import data"
-  },
-  "trackerModeDay": {
-    "message": "Daglig vy"
-  },
-  "trackerModeMonth": {
-    "message": "Månadsvis vy"
-  },
-  "trackerModeAll": {
-    "message": "All tid"
-  },
-  "trackerTodayLabel": {
-    "message": "Idag"
-  },
-  "trackerMonthLabel": {
-    "message": "Denna månad"
-  },
-  "trackerAvgLabel": {
-    "message": "Genomsnitt"
-  },
-  "techModalTitle": {
-    "message": "WEBBPLATSTEKNIK"
-  },
-  "techLoadingMsg": {
-    "message": "Skannern analyserar webbplatsen..."
-  },
-  "uiSettings": {
-    "message": "INSTÄLLNINGAR"
-  },
-  "supportTitle": {
-    "message": "Stöd tillägget"
-  },
-  "supportDesc": {
-    "message": "All In One är ett helt gratis verktyg. Ditt stöd hjälper oss att hålla det gratis och möjliggör regelbunden utveckling av nya funktioner."
-  },
-  "donateBtn": {
-    "message": "Donera och stöd arbetet"
-  },
-  "websiteBtn": {
-    "message": "Tilläggets officiella webbplats"
-  },
-  "rateBtn": {
-    "message": "Betygsätt tillägget"
-  },
-  "versionLabel": {
-    "message": "Version:"
-  },
-  "privacyLabel": {
-    "message": "Integritetspolicy"
-  },
-  "systemPageTitle": {
-    "message": "SYSTEMSIDA"
-  },
-  "systemPageDesc": {
-    "message": "Modifieringsverktygen är inaktiverade"
-  },
-  "radioPlay": {
-    "message": "Spela"
-  },
-  "radioPause": {
-    "message": "Paus"
-  },
-  "colorPickerPicking": {
-    "message": "Väljer..."
-  },
-  "colorPickerCopied": {
-    "message": "Kopierat: "
-  },
-  "cacheNotSupported": {
-    "message": "Stöds inte"
-  },
-  "cacheClearConfirm": {
-    "message": "Rensa all data från denna webbplats"
-  },
-  "cacheError": {
-    "message": "Fel"
-  },
-  "cacheClearing": {
-    "message": "Rensar..."
-  },
-  "cacheCleared": {
-    "message": "Rensat!"
-  },
-  "fontCopied": {
-    "message": "Kopierat!"
-  },
-  "fontNotCopied": {
-    "message": "Inte kopierat"
-  },
-  "notesSaved": {
-    "message": "Sparat"
-  },
-  "notesTooLarge": {
-    "message": "Anteckningen är för stor"
-  },
-  "notesLinkText": {
-    "message": "Länk"
-  },
-  "trackerToday": {
-    "message": "Idag"
-  },
-  "trackerThatDay": {
-    "message": "Den dagen"
-  },
-  "trackerSelectedMonth": {
-    "message": "Vald månad"
-  },
-  "trackerTotal": {
-    "message": "Totalt"
-  },
-  "trackerNoData": {
-    "message": "Inga data för denna period"
-  },
-  "trackerExportEmpty": {
-    "message": "No tracker data to export."
-  },
-  "trackerExportTruncated": {
-    "message": "Export truncated to 10MB to keep the popup stable."
-  },
-  "trackerImportEmpty": {
-    "message": "No valid tracker data to import."
-  },
-  "trackerImportSuccess": {
-    "message": "Data successfully imported!"
-  },
-  "trackerImportError": {
-    "message": "Error reading the file."
-  },
-  "swStatusLive": {
-    "message": "LIVE PÅGÅR"
-  },
-  "swStatusReady": {
-    "message": "REDO"
-  },
-  "swUndoTitle": {
-    "message": "Ta bort detta ögonblick"
-  },
-  "swNoLaps": {
-    "message": "Inga registrerade ögonblick"
-  },
-  "swLiveTitlePrefix": {
-    "message": "Live #"
-  },
-  "swDurationLabel": {
-    "message": "Varaktighet: "
-  },
-  "swMomentLabel": {
-    "message": "Ögonblick "
-  },
-  "swExportTxtBtn": {
-    "message": "EXPORTERA SOM .TXT"
-  },
-  "swTotalDurationPrefix": {
-    "message": "TOTAL VARAKTIGHET: "
-  },
-  "swCopyBtn": {
-    "message": "KOPIERA TILL URKLIPP"
-  },
-  "swCopiedBtn": {
-    "message": "✓ KOPIERAT"
-  },
-  "swNoHistory": {
-    "message": "Ingen live historik"
-  },
-  "techScannerUnavailable": {
-    "message": "Skannern är inte tillgänglig på denna sida."
-  },
-  "techFoundPrefix": {
-    "message": "Hittade: "
-  },
-  "techItemsSuffix": {
-    "message": "objekt"
-  },
-  "techNotFound": {
-    "message": "Ingenting hittades."
-  },
-  "techScannerFailed": {
-    "message": "Skanningen misslyckades på denna sida."
-  },
-  "markerDrawTooltip": {
-    "message": "Rita"
-  },
-  "markerLineTooltip": {
-    "message": "Linje"
-  },
-  "markerTextTooltip": {
-    "message": "Text"
-  },
-  "markerMoveTooltip": {
-    "message": "Flytta"
-  },
-  "markerEraseTooltip": {
-    "message": "Radera"
-  },
-  "markerClearAllTooltip": {
-    "message": "Rensa allt"
-  },
-  "markerThicknessTooltip": {
-    "message": "Tjocklek"
-  },
-  "markerCloseTooltip": {
-    "message": "Stäng"
-  },
-  "linesLabel": {
-    "message": "Rader"
-  },
-  "clearCounterTooltip": {
-    "message": "Rensa allt"
-  },
-  "confirmClearCounter": {
-    "message": "Är du säker på att du vill rensa allt?"
-  },
-  "trackerTotalShort": {
-    "message": "Totalt"
-  },
-  "trackerThisMonth": {
-    "message": "Denna månad"
-  },
-  "trackerThisMonthShort": {
-    "message": "Denna månad"
-  },
-  "trackerThatMonth": {
-    "message": "Den månaden"
-  },
-  "trackerAvgThisMonth": {
-    "message": "Genomsnitt"
-  },
-  "trackerAvgThatMonth": {
-    "message": "Genomsnitt"
-  },
-  "trackerAvgTotal": {
-    "message": "Genomsnitt"
-  },
-  "trackerDeleteConfirm": {
-    "message": "Är du säker på att du vill ta bort data för"
-  },
-  "techCatBase": {
-    "message": "Bas"
-  },
-  "techCatSystem": {
-    "message": "System"
-  },
-  "techCatEcom": {
-    "message": "E-Commerce"
-  },
-  "techCatTech": {
-    "message": "Teknologier"
-  },
-  "techCatStyles": {
-    "message": "Stilar"
-  },
-  "techCatDb": {
-    "message": "Databas"
-  },
-  "techCatBackend": {
-    "message": "Backend"
-  },
-  "techCatServer": {
-    "message": "Server"
-  },
-  "techCatNetwork": {
-    "message": "Nätverk"
-  },
-  "techCatSecurity": {
-    "message": "Säkerhet"
-  },
-  "techCatCaching": {
-    "message": "Caching"
-  },
-  "techCatCdn": {
-    "message": "CDN"
-  },
-  "techCatAnalytics": {
-    "message": "Analytics"
-  },
-  "techCatAds": {
-    "message": "Annonser"
-  },
-  "techCatPayment": {
-    "message": "Betalning"
-  },
-  "techCatComm": {
-    "message": "Kommunikation"
-  },
-  "techCatMedia": {
-    "message": "Media"
-  },
-  "techCatBuild": {
-    "message": "Build"
-  },
-  "techCatSeo": {
-    "message": "SEO"
-  },
-  "techCatStats": {
-    "message": "Statistik"
-  },
-  "techCatTools": {
-    "message": "Verktyg"
-  },
-  "techStatDom": {
-    "message": "DOM"
-  },
-  "techStatImages": {
-    "message": "Bilder"
-  },
-  "techStatScripts": {
-    "message": "Skript"
-  },
-  "techStatLinks": {
-    "message": "Länkar"
-  },
-  "techStatCss": {
-    "message": "CSS"
-  },
-  "techStatForms": {
-    "message": "Formulär"
-  },
-  "techStatTables": {
-    "message": "Tabeller"
-  },
-  "techStatSvg": {
-    "message": "SVG"
-  },
-  "techStatVideo": {
-    "message": "Video"
-  },
-  "techStatAudio": {
-    "message": "Ljud"
-  },
-  "techStatIframes": {
-    "message": "Iframes"
-  },
-  "radioModalDesc": {
-    "message": "Ange direktlänken till din favoritradiostation"
-  },
-  "radioUrlPlaceholder": {
-    "message": "https://stream.radio.com/play"
-  },
-  "clearRadioInputTooltip": {
-    "message": "Rensa fält"
-  },
-  "saveRadioStationBtn": {
-    "message": "SPARA STATION"
-  }
+    "notesTitle":  {
+                       "message":  "Smarta anteckningar"
+                   },
+    "supportDesc":  {
+                        "message":  "All In One är ett helt gratis verktyg. Ditt stöd hjälper oss att hålla det gratis och möjliggör regelbunden utveckling av nya funktioner."
+                    },
+    "trackerExportTruncated":  {
+                                   "message":  "Export truncated to 10MB to keep the popup stable."
+                               },
+    "techCatBackend":  {
+                           "message":  "Backend"
+                       },
+    "markerEraseTooltip":  {
+                               "message":  "Radera"
+                           },
+    "counterTitle":  {
+                         "message":  "Teckenräknare"
+                     },
+    "trackerAvgLabel":  {
+                            "message":  "Genomsnitt"
+                        },
+    "trackerModeMonth":  {
+                             "message":  "Månadsvis vy"
+                         },
+    "trackerModeAll":  {
+                           "message":  "All tid"
+                       },
+    "techCatMedia":  {
+                         "message":  "Media"
+                     },
+    "trackerNoData":  {
+                          "message":  "Inga data för denna period"
+                      },
+    "swLiveTitlePrefix":  {
+                              "message":  "Live #"
+                          },
+    "confirmClearNotes":  {
+                              "message":  "Är du säker på att du vill rensa alla anteckningar?"
+                          },
+    "techCatSeo":  {
+                       "message":  "SEO"
+                   },
+    "techCatTools":  {
+                         "message":  "Verktyg"
+                     },
+    "soundTitle":  {
+                       "message":  "Ljud"
+                   },
+    "clearCounterTooltip":  {
+                                "message":  "Rensa allt"
+                            },
+    "markerCloseTooltip":  {
+                               "message":  "Stäng"
+                           },
+    "stopwatchTitle":  {
+                           "message":  "Tidtagarur"
+                       },
+    "clearNotesTooltip":  {
+                              "message":  "Rensa alla anteckningar"
+                          },
+    "rulerTitle":  {
+                       "message":  "Sidlinjal"
+                   },
+    "markLapDesc":  {
+                        "message":  "Registrera ett ögonblick på tidtagaruret"
+                    },
+    "trackerImportEmpty":  {
+                               "message":  "No valid tracker data to import."
+                           },
+    "systemPageDesc":  {
+                           "message":  "Modifieringsverktygen är inaktiverade"
+                       },
+    "techStatLinks":  {
+                          "message":  "Länkar"
+                      },
+    "stopBtn":  {
+                    "message":  "STOPP"
+                },
+    "swNoLaps":  {
+                     "message":  "Inga registrerade ögonblick"
+                 },
+    "trackerTitle":  {
+                         "message":  "Webtime Tracker"
+                     },
+    "trackerThisMonth":  {
+                             "message":  "Denna månad"
+                         },
+    "linesLabel":  {
+                       "message":  "Rader"
+                   },
+    "toastTrackerError":  {
+                              "message":  "Error refreshing data"
+                          },
+    "trackerExportEmpty":  {
+                               "message":  "No tracker data to export."
+                           },
+    "techCatComm":  {
+                        "message":  "Kommunikation"
+                    },
+    "deleteBtn":  {
+                      "message":  "TA BORT"
+                  },
+    "toastModuleLoadError":  {
+                                 "message":  "Error loading module"
+                             },
+    "notesSaved":  {
+                       "message":  "Sparat"
+                   },
+    "lapBtn":  {
+                   "message":  "VARV"
+               },
+    "notesModalTitle":  {
+                            "message":  "SMARTA ANTECKNINGAR"
+                        },
+    "trackerAvgThisMonth":  {
+                                "message":  "Genomsnitt"
+                            },
+    "versionLabel":  {
+                         "message":  "Version:"
+                     },
+    "importNotesTooltip":  {
+                               "message":  "Importera anteckningar"
+                           },
+    "techCatBuild":  {
+                         "message":  "Build"
+                     },
+    "fontNotCopied":  {
+                          "message":  "Inte kopierat"
+                      },
+    "importTooltip":  {
+                          "message":  "Import data"
+                      },
+    "techCatTech":  {
+                        "message":  "Teknologier"
+                    },
+    "techCatServer":  {
+                          "message":  "Server"
+                      },
+    "cacheNotSupported":  {
+                              "message":  "Stöds inte"
+                          },
+    "techStatCss":  {
+                        "message":  "CSS"
+                    },
+    "techStatAudio":  {
+                          "message":  "Ljud"
+                      },
+    "cacheClearing":  {
+                          "message":  "Rensar..."
+                      },
+    "radioTitleCustom":  {
+                             "message":  "Radio"
+                         },
+    "websiteBtn":  {
+                       "message":  "Tilläggets officiella webbplats"
+                   },
+    "markerThicknessTooltip":  {
+                                   "message":  "Tjocklek"
+                               },
+    "confirmClearCounter":  {
+                                "message":  "Är du säker på att du vill rensa allt?"
+                            },
+    "techCatAds":  {
+                       "message":  "Annonser"
+                   },
+    "uiSettings":  {
+                       "message":  "INSTÄLLNINGAR"
+                   },
+    "trackerThatMonth":  {
+                             "message":  "Den månaden"
+                         },
+    "radioModalDesc":  {
+                           "message":  "Ange direktlänken till din favoritradiostation"
+                       },
+    "trackerDeleteConfirm":  {
+                                 "message":  "Är du säker på att du vill ta bort data för"
+                             },
+    "darkModeTitle":  {
+                          "message":  "Mörkt läge"
+                      },
+    "techStatScripts":  {
+                            "message":  "Skript"
+                        },
+    "swNoHistory":  {
+                        "message":  "Ingen live historik"
+                    },
+    "techNotFound":  {
+                         "message":  "Ingenting hittades."
+                     },
+    "notesPlaceholder":  {
+                             "message":  "Skriv anteckningar här..."
+                         },
+    "radioArtist":  {
+                        "message":  "Drivs av tillägget All In One"
+                    },
+    "charsLabel":  {
+                       "message":  "Tecken"
+                   },
+    "trackerImportSuccess":  {
+                                 "message":  "Data successfully imported!"
+                             },
+    "copyEnableTitle":  {
+                            "message":  "Kopiering"
+                        },
+    "techCatStats":  {
+                         "message":  "Statistik"
+                     },
+    "dateLabel":  {
+                      "message":  "Datum"
+                  },
+    "techCatNetwork":  {
+                           "message":  "Nätverk"
+                       },
+    "techCatEcom":  {
+                        "message":  "E-Commerce"
+                    },
+    "currentRecordedLabel":  {
+                                 "message":  "REGISTRERAT JUST NU"
+                             },
+    "techCatStyles":  {
+                          "message":  "Stilar"
+                      },
+    "extDesc":  {
+                    "message":  "Det ultimata verktyget som förenar alla viktiga funktioner i ett snabbt, modernt och gratis gränssnitt."
+                },
+    "resetBtn":  {
+                     "message":  "Återställ"
+                 },
+    "addDateTooltip":  {
+                           "message":  "Lägg till dagens datum"
+                       },
+    "supportTitle":  {
+                         "message":  "Stöd tillägget"
+                     },
+    "savedIndicator":  {
+                           "message":  "Sparat"
+                       },
+    "counterPlaceholder":  {
+                               "message":  "Klistra in text här..."
+                           },
+    "techFoundPrefix":  {
+                            "message":  "Hittade: "
+                        },
+    "systemPageTitle":  {
+                            "message":  "SYSTEMSIDA"
+                        },
+    "markerClearAllTooltip":  {
+                                  "message":  "Rensa allt"
+                              },
+    "trackerModeDay":  {
+                           "message":  "Daglig vy"
+                       },
+    "techItemsSuffix":  {
+                            "message":  "objekt"
+                        },
+    "trackerTotal":  {
+                         "message":  "Totalt"
+                     },
+    "swStatusReady":  {
+                          "message":  "REDO"
+                      },
+    "trackerTotalShort":  {
+                              "message":  "Totalt"
+                          },
+    "blockCookiesLabel":  {
+                              "message":  "Blockera cookies automatiskt"
+                          },
+    "markerDrawTooltip":  {
+                              "message":  "Rita"
+                          },
+    "trackerMonthLabel":  {
+                              "message":  "Denna månad"
+                          },
+    "techStatSvg":  {
+                        "message":  "SVG"
+                    },
+    "techStatTables":  {
+                           "message":  "Tabeller"
+                       },
+    "techStatImages":  {
+                           "message":  "Bilder"
+                       },
+    "trackerToday":  {
+                         "message":  "Idag"
+                     },
+    "techStatDom":  {
+                        "message":  "DOM"
+                    },
+    "wordsLabel":  {
+                       "message":  "Ord"
+                   },
+    "clearAllBtn":  {
+                        "message":  "RENSA ALLT"
+                    },
+    "clearSiteDataBtn":  {
+                             "message":  "Rensa all data från denna webbplats"
+                         },
+    "colorPickerPicking":  {
+                               "message":  "Väljer..."
+                           },
+    "cacheClearConfirm":  {
+                              "message":  "Rensa all data från denna webbplats"
+                          },
+    "markerTextTooltip":  {
+                              "message":  "Text"
+                          },
+    "radioTitle":  {
+                       "message":  "Radio"
+                   },
+    "trackerSelectedMonth":  {
+                                 "message":  "Vald månad"
+                             },
+    "fontCopied":  {
+                       "message":  "Kopierat!"
+                   },
+    "notesLinkText":  {
+                          "message":  "Länk"
+                      },
+    "trackerAvgThatMonth":  {
+                                "message":  "Genomsnitt"
+                            },
+    "techTitle":  {
+                      "message":  "Webbplatsteknik"
+                  },
+    "markerMoveTooltip":  {
+                              "message":  "Flytta"
+                          },
+    "playBtn":  {
+                    "message":  "Spela"
+                },
+    "techCatPayment":  {
+                           "message":  "Betalning"
+                       },
+    "markerLineTooltip":  {
+                              "message":  "Linje"
+                          },
+    "techStatIframes":  {
+                            "message":  "Iframes"
+                        },
+    "counterModalTitle":  {
+                              "message":  "TECKENRÄKNARE"
+                          },
+    "fontTitle":  {
+                      "message":  "Typsnittssökare"
+                  },
+    "swExportTxtBtn":  {
+                           "message":  "EXPORTERA SOM .TXT"
+                       },
+    "swUndoTitle":  {
+                        "message":  "Ta bort detta ögonblick"
+                    },
+    "startBtn":  {
+                     "message":  "START"
+                 },
+    "techModalTitle":  {
+                           "message":  "WEBBPLATSTEKNIK"
+                       },
+    "saveRadioStationBtn":  {
+                                "message":  "SPARA STATION"
+                            },
+    "techCatDb":  {
+                      "message":  "Databas"
+                  },
+    "trackerImportError":  {
+                               "message":  "Error reading the file."
+                           },
+    "swStatusLive":  {
+                         "message":  "LIVE PÅGÅR"
+                     },
+    "linkLabel":  {
+                      "message":  "Länk"
+                  },
+    "techCatAnalytics":  {
+                             "message":  "Analytics"
+                         },
+    "liveHistoryLabel":  {
+                             "message":  "LIVE HISTORIK"
+                         },
+    "colorPickerTitle":  {
+                             "message":  "Färgväljare"
+                         },
+    "appTitle":  {
+                     "message":  "ALL IN ONE"
+                 },
+    "swMomentLabel":  {
+                          "message":  "Ögonblick "
+                      },
+    "swTotalDurationPrefix":  {
+                                  "message":  "TOTAL VARAKTIGHET: "
+                              },
+    "stopwatchReady":  {
+                           "message":  "REDO"
+                       },
+    "trackerThisMonthShort":  {
+                                  "message":  "Denna månad"
+                              },
+    "confirmClearHistory":  {
+                                "message":  "Är du säker på att du vill rensa hela historiken?"
+                            },
+    "markerTitle":  {
+                        "message":  "Sidmarkör"
+                    },
+    "trackerModalTitle":  {
+                              "message":  "Tidsspårning"
+                          },
+    "grabTextTooltip":  {
+                            "message":  "Extrahera text från sidan"
+                        },
+    "radioUrlPlaceholder":  {
+                                "message":  "https://stream.radio.com/play"
+                            },
+    "clearRadioInputTooltip":  {
+                                   "message":  "Rensa fält"
+                               },
+    "privacyLabel":  {
+                         "message":  "Integritetspolicy"
+                     },
+    "trackerThatDay":  {
+                           "message":  "Den dagen"
+                       },
+    "textLabel":  {
+                      "message":  "Text"
+                  },
+    "cacheCleared":  {
+                         "message":  "Rensat!"
+                     },
+    "importRadioTooltip":  {
+                               "message":  "Importera anpassad radiostation"
+                           },
+    "radioPlay":  {
+                      "message":  "Spela"
+                  },
+    "techLoadingMsg":  {
+                           "message":  "Skannern analyserar webbplatsen..."
+                       },
+    "swCopyBtn":  {
+                      "message":  "KOPIERA TILL URKLIPP"
+                  },
+    "techScannerFailed":  {
+                              "message":  "Skanningen misslyckades på denna sida."
+                          },
+    "trackerTodayLabel":  {
+                              "message":  "Idag"
+                          },
+    "techCatCdn":  {
+                       "message":  "CDN"
+                   },
+    "colorPickerCopied":  {
+                              "message":  "Kopierat: "
+                          },
+    "swCopiedBtn":  {
+                        "message":  "✓ KOPIERAT"
+                    },
+    "techCatCaching":  {
+                           "message":  "Caching"
+                       },
+    "techCatSecurity":  {
+                            "message":  "Säkerhet"
+                        },
+    "extName":  {
+                    "message":  "All In One: Det bästa produktivitetsverktyget"
+                },
+    "techScannerUnavailable":  {
+                                   "message":  "Skannern är inte tillgänglig på denna sida."
+                               },
+    "notesTooLarge":  {
+                          "message":  "Anteckningen är för stor"
+                      },
+    "swDurationLabel":  {
+                            "message":  "Varaktighet: "
+                        },
+    "ytDislikeTitle":  {
+                           "message":  "Return YouTube Dislike"
+                       },
+    "donateBtn":  {
+                      "message":  "Donera och stöd arbetet"
+                  },
+    "techStatVideo":  {
+                          "message":  "Video"
+                      },
+    "settingsTooltip":  {
+                            "message":  "Inställningar"
+                        },
+    "cacheTitle":  {
+                       "message":  "Cookies och cache"
+                   },
+    "techCatSystem":  {
+                          "message":  "System"
+                      },
+    "exportTooltip":  {
+                          "message":  "Export data"
+                      },
+    "exportNotesTooltip":  {
+                               "message":  "Exportera anteckningar"
+                           },
+    "radioPause":  {
+                       "message":  "Paus"
+                   },
+    "websiteTooltip":  {
+                           "message":  "Tilläggets officiella webbplats"
+                       },
+    "rateBtn":  {
+                    "message":  "Betygsätt tillägget"
+                },
+    "techCatBase":  {
+                        "message":  "Bas"
+                    },
+    "cacheModalTitle":  {
+                            "message":  "COOKIES OCH CACHE"
+                        },
+    "cancelBtn":  {
+                      "message":  "AVBRYT"
+                  },
+    "addUrlTooltip":  {
+                          "message":  "Lägg till aktuell sidas URL"
+                      },
+    "trackerAvgTotal":  {
+                            "message":  "Genomsnitt"
+                        },
+    "techStatForms":  {
+                          "message":  "Formulär"
+                      },
+    "cacheError":  {
+                       "message":  "Fel"
+                   }
 }

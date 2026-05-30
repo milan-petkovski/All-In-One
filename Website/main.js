@@ -1,4 +1,4 @@
-import { updateData } from './updates.js';
+let updateData = [];
 import { trackEvent, trackWebVitals } from './js/analytics.js';
 
 // Initialize Analytics & Performance Monitoring
@@ -258,6 +258,16 @@ async function detectInitialLanguage() {
  * GLAVNA INICIJALIZACIJA
  */
 document.addEventListener('DOMContentLoaded', async () => {
+    // Učitaj ažuriranja dinamički
+    try {
+        const response = await fetch('/updates.json');
+        if (response.ok) {
+            updateData = await response.json();
+        }
+    } catch (error) {
+        console.error('Greška pri učitavanju ažuriranja:', error);
+    }
+
     // Odredi jezik i primeni ga
     const langToUse = await detectInitialLanguage();
     applyLanguage(langToUse);
