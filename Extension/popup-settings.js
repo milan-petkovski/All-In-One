@@ -18,7 +18,7 @@ export function initSettings() {
 
     document.getElementById("donateBtn")?.addEventListener("click", () => {
         trackEvent("donate_click");
-        chrome.tabs.create({ url: "https://paypal.me/milanpetkovski1" });
+        chrome.tabs.create({ url: "https://paypal.me/milanwebportal" });
     });
 
     document.getElementById("webBtn")?.addEventListener("click", () => {

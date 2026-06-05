@@ -34,7 +34,7 @@ Hi! I am Milan, a 19 year old student and web developer from Serbia. I built the
 
 I am committed to keeping this extension 100% free forever, with zero ads and zero popups. If this tool saves you time and you want to support my late night coding sessions, you can buy me a coffee!
 
-💖 <a href="https://paypal.me/milanpetkovski1">Support my work via PayPal</a>
+💖 <a href="https://paypal.me/milanwebportal">Support my work via PayPal</a>
 
 Every donation means a lot and helps me maintain and improve the extension. Thank you!
 
@@ -198,4 +198,4 @@ Author's Website: <a href="https://milanwebportal.com/">milanwebportal.com</a>
 
 Contact Email: contact@milanwebportal.com
 
-💖 <a href="https://paypal.me/milanpetkovski1">Support my work via PayPal</a>
+💖 <a href="https://paypal.me/milanwebportal">Support my work via PayPal</a>
