@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Notes"
-                   },
-    "supportDesc":  {
-                        "message":  "All In One est gratuit. Votre soutien aide à ajouter des fonctions."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Effacer"
-                           },
-    "counterTitle":  {
-                         "message":  "Compteur"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Moyenne"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Vue mensuelle"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Tout le temps"
-                       },
-    "techCatMedia":  {
-                         "message":  "Médias"
-                     },
-    "trackerNoData":  {
-                          "message":  "Aucune donnée pour cette période"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "Direct #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Effacer toutes les notes ?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Outils"
-                     },
-    "soundTitle":  {
-                       "message":  "Son"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "Tout effacer"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Fermer"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Chronomètre"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "Effacer notes"
-                          },
-    "rulerTitle":  {
-                       "message":  "Règle"
-                   },
-    "markLapDesc":  {
-                        "message":  "Enregistrer un temps intermédiaire sur le chronomètre"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "Outils désactivés"
-                       },
-    "techStatLinks":  {
-                          "message":  "Liens"
-                      },
-    "stopBtn":  {
-                    "message":  "ARRÊTER"
-                },
-    "swNoLaps":  {
-                     "message":  "Aucun moment"
-                 },
-    "trackerTitle":  {
-                         "message":  "Temps web"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "Ce mois"
-                         },
-    "linesLabel":  {
-                       "message":  "Lignes"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "Communication"
-                    },
-    "deleteBtn":  {
-                      "message":  "SUPPRIMER"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Enregistré"
-                   },
-    "lapBtn":  {
-                   "message":  "TOUR"
-               },
-    "notesModalTitle":  {
-                            "message":  "NOTES"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Moyenne"
-                            },
-    "versionLabel":  {
-                         "message":  "Version :"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "Importer"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Non copié"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Technologies"
-                    },
-    "techCatServer":  {
-                          "message":  "Serveur"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Non supporté"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Audio"
-                      },
-    "cacheClearing":  {
-                          "message":  "Effacement..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Radio"
-                         },
-    "websiteBtn":  {
-                       "message":  "Site officiel"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Épaisseur"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Voulez-vous vraiment tout effacer ?"
-                            },
-    "techCatAds":  {
-                       "message":  "Publicités"
-                   },
-    "uiSettings":  {
-                       "message":  "PARAMÈTRES"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "Ce mois"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Entrez le lien direct vers votre station radio préférée"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Êtes-vous sûr de vouloir supprimer les données pour"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Mode sombre"
-                      },
-    "techStatScripts":  {
-                            "message":  "Scripts"
-                        },
-    "swNoHistory":  {
-                        "message":  "Aucun historique"
-                    },
-    "techNotFound":  {
-                         "message":  "Non trouvé."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Notes ici..."
-                         },
-    "radioArtist":  {
-                        "message":  "Avec All In One"
-                    },
-    "charsLabel":  {
-                       "message":  "Caractères"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Copie"
-                        },
-    "techCatStats":  {
-                         "message":  "Statistiques"
-                     },
-    "dateLabel":  {
-                      "message":  "Date"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Réseau"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Commerce"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "ACTUEL"
-                             },
-    "techCatStyles":  {
-                          "message":  "Styles"
-                      },
-    "extDesc":  {
-                    "message":  "L\u0027outil ultime qui regroupe toutes les fonctions essentielles dans une interface rapide, moderne et gratuite."
-                },
-    "resetBtn":  {
-                     "message":  "Réinitialiser"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Ajouter date"
-                       },
-    "supportTitle":  {
-                         "message":  "Soutenir extension"
-                     },
-    "savedIndicator":  {
-                           "message":  "Enregistré"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "Texte ici..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Trouvé : "
-                        },
-    "systemPageTitle":  {
-                            "message":  "SYSTÈME"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "Tout effacer"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Vue quotidienne"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "éléments"
-                        },
-    "trackerTotal":  {
-                         "message":  "Total"
-                     },
-    "swStatusReady":  {
-                          "message":  "PRÊT"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Bloquer cookies"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Dessiner"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Ce mois-ci"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Tableaux"
-                       },
-    "techStatImages":  {
-                           "message":  "Images"
-                       },
-    "trackerToday":  {
-                         "message":  "Aujourd\u0027hui"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Mots"
-                   },
-    "clearAllBtn":  {
-                        "message":  "TOUT EFFACER"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "Effacer site"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Sélection..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Effacer site"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Texte"
-                          },
-    "radioTitle":  {
-                       "message":  "Radio"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Mois sélectionné"
-                             },
-    "fontCopied":  {
-                       "message":  "Copié !"
-                   },
-    "notesLinkText":  {
-                          "message":  "Lien"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Moyenne"
-                            },
-    "techTitle":  {
-                      "message":  "Technologies"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Déplacer"
-                          },
-    "playBtn":  {
-                    "message":  "Jouer"
-                },
-    "techCatPayment":  {
-                           "message":  "Paiement"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Ligne"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "COMPTEUR"
-                          },
-    "fontTitle":  {
-                      "message":  "Polices"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "EXPORT .TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Supprimer moment"
-                    },
-    "startBtn":  {
-                     "message":  "DÉMARRER"
-                 },
-    "techModalTitle":  {
-                           "message":  "TECHNOLOGIES"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "ENREGISTRER LA STATION"
-                            },
-    "techCatDb":  {
-                      "message":  "Base de données"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "DIRECT"
-                     },
-    "linkLabel":  {
-                      "message":  "Lien"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Analytique"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "HISTORIQUE"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Couleurs"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "Moment "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "TOTAL : "
-                              },
-    "stopwatchReady":  {
-                           "message":  "PRÊT"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Ce mois"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Effacer historique ?"
-                            },
-    "markerTitle":  {
-                        "message":  "Marqueur"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Suivi de Temps"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Extraire texte"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Effacer le champ"
-                               },
-    "privacyLabel":  {
-                         "message":  "Confidentialité"
-                     },
-    "trackerThatDay":  {
-                           "message":  "Ce jour"
-                       },
-    "textLabel":  {
-                      "message":  "Texte"
-                  },
-    "cacheCleared":  {
-                         "message":  "Effacé !"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Importer une station radio personnalisée"
-                           },
-    "radioPlay":  {
-                      "message":  "Jouer"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "Analyse du site..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "COPIER"
-                  },
-    "techScannerFailed":  {
-                              "message":  "Erreur d\u0027analyse."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "Aujourd\u0027hui"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Copié : "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ COPIÉ"
-                    },
-    "techCatCaching":  {
-                           "message":  "Mise en cache"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Sécurité"
-                        },
-    "extName":  {
-                    "message":  "All In One - Le meilleur outil de productivité"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "Pas de scanner ici."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Note trop grande"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Durée : "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "Donner et soutenir"
-                  },
-    "techStatVideo":  {
-                          "message":  "Vidéo"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Paramètres"
-                        },
-    "cacheTitle":  {
-                       "message":  "Cookies/cache"
-                   },
-    "techCatSystem":  {
-                          "message":  "Système"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "Exporter"
-                           },
-    "radioPause":  {
-                       "message":  "Pause"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Site officiel"
-                       },
-    "rateBtn":  {
-                    "message":  "Évaluer extension"
-                },
-    "techCatBase":  {
-                        "message":  "Base"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "COOKIES/CACHE"
-                        },
-    "cancelBtn":  {
-                      "message":  "ANNULER"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "Ajouter URL"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Moyenne"
-                        },
-    "techStatForms":  {
-                          "message":  "Formulaires"
-                      },
-    "cacheError":  {
-                       "message":  "Erreur"
-                   }
+    "notesTitle": {
+        "message": "Notes"
+    },
+    "whatsNewDesc": {
+        "message": "Découvrez les dernières améliorations de l'interface qui rendent All In One encore plus rapide et plus élégant :"
+    },
+    "toastPermissionDenied": {
+        "message": "Autorisation non accordée"
+    },
+    "clearCounterTooltip": {
+        "message": "Tout effacer"
+    },
+    "supportDesc": {
+        "message": "All In One est gratuit. Votre soutien aide à ajouter des fonctions."
+    },
+    "trackerExportTruncated": {
+        "message": "Exportation tronquée à 10 Mo pour maintenir la stabilité de la fenêtre contextuelle."
+    },
+    "whatsNewClose": {
+        "message": "J'AI COMPRIS"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Effacer"
+    },
+    "counterTitle": {
+        "message": "Compteur"
+    },
+    "trackerAvgLabel": {
+        "message": "Moyenne"
+    },
+    "trackerModeMonth": {
+        "message": "Vue mensuelle"
+    },
+    "trackerModeAll": {
+        "message": "Tout le temps"
+    },
+    "techCatMedia": {
+        "message": "Médias"
+    },
+    "trackerNoData": {
+        "message": "Aucune donnée pour cette période"
+    },
+    "whatsNewFeature3": {
+        "message": "Prise en charge des favicon : favicons du site dans la liste des trackers."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Direct #"
+    },
+    "confirmClearNotes": {
+        "message": "Effacer toutes les notes ?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Toutes les données de ce site ont été effacées !"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Rechercher des sites Web..."
+    },
+    "techCatTools": {
+        "message": "Outils"
+    },
+    "toastYtOff": {
+        "message": "L'affichage des \"Je n'aime pas\" sur YouTube est désactivé"
+    },
+    "soundTitle": {
+        "message": "Son"
+    },
+    "cacheTitle": {
+        "message": "Cookies/cache"
+    },
+    "markerCloseTooltip": {
+        "message": "Fermer"
+    },
+    "stopwatchTitle": {
+        "message": "Chronomètre"
+    },
+    "clearNotesTooltip": {
+        "message": "Effacer notes"
+    },
+    "rulerTitle": {
+        "message": "Règle"
+    },
+    "markLapDesc": {
+        "message": "Enregistrer un temps intermédiaire sur le chronomètre"
+    },
+    "trackerImportEmpty": {
+        "message": "Aucune donnée de suivi valide à importer."
+    },
+    "whatsNewFeature1": {
+        "message": "Transitions fluides : animations de diapositives fluides entre les outils."
+    },
+    "systemPageDesc": {
+        "message": "Outils désactivés"
+    },
+    "techStatLinks": {
+        "message": "Liens"
+    },
+    "stopBtn": {
+        "message": "ARRÊTER"
+    },
+    "swNoLaps": {
+        "message": "Aucun moment"
+    },
+    "toastTrackerImportError": {
+        "message": "Erreur lors de l'importation des données du tracker !"
+    },
+    "toastRadioPlayError": {
+        "message": "La radio ne peut pas démarrer pour le moment."
+    },
+    "trackerTitle": {
+        "message": "Temps web"
+    },
+    "offscreenJustification": {
+        "message": "Streaming radio et sons du système"
+    },
+    "trackerThisMonth": {
+        "message": "Ce mois"
+    },
+    "linesLabel": {
+        "message": "Lignes"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Cookies bloqués pour ce site"
+    },
+    "toastTrackerError": {
+        "message": "Erreur lors de l'actualisation des données"
+    },
+    "trackerExportEmpty": {
+        "message": "Aucune donnée de suivi à exporter."
+    },
+    "techCatComm": {
+        "message": "Communication"
+    },
+    "deleteBtn": {
+        "message": "SUPPRIMER"
+    },
+    "techCatTech": {
+        "message": "Technologies"
+    },
+    "notesSaved": {
+        "message": "Enregistré"
+    },
+    "toastNotesExported": {
+        "message": "Notes exportées avec succès !"
+    },
+    "swMomentLabel": {
+        "message": "Moment"
+    },
+    "notesModalTitle": {
+        "message": "NOTES"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Moyenne"
+    },
+    "versionLabel": {
+        "message": "Version :"
+    },
+    "importNotesTooltip": {
+        "message": "Importer"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Mode lumière activé"
+    },
+    "toastNotesCopied": {
+        "message": "Texte copié dans le presse-papier !"
+    },
+    "whatsNewFeature2": {
+        "message": "Toasts Premium : système de notification moderne pour les actions importantes."
+    },
+    "fontNotCopied": {
+        "message": "Non copié"
+    },
+    "importTooltip": {
+        "message": "Importer des données"
+    },
+    "wordsLabelShort": {
+        "message": "mots"
+    },
+    "techCatServer": {
+        "message": "Serveur"
+    },
+    "cacheNotSupported": {
+        "message": "Non supporté"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "Effacement..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Données actualisées !"
+    },
+    "websiteBtn": {
+        "message": "Site officiel"
+    },
+    "markerThicknessTooltip": {
+        "message": "Épaisseur"
+    },
+    "confirmClearCounter": {
+        "message": "Voulez-vous vraiment tout effacer ?"
+    },
+    "techCatAds": {
+        "message": "Publicités"
+    },
+    "uiSettings": {
+        "message": "PARAMÈTRES"
+    },
+    "trackerThatMonth": {
+        "message": "Ce mois"
+    },
+    "radioModalDesc": {
+        "message": "Entrez le lien direct vers votre station radio préférée"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Êtes-vous sûr de vouloir supprimer les données pour"
+    },
+    "darkModeTitle": {
+        "message": "Mode sombre"
+    },
+    "toastCounterCleared": {
+        "message": "Le texte du compteur a été effacé !"
+    },
+    "techStatScripts": {
+        "message": "Scripts"
+    },
+    "techNetworkOptInHint": {
+        "message": "Envoie des requêtes à dns.google et ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Aucun historique"
+    },
+    "whatsNewTitle": {
+        "message": "Quoi de neuf dans la version 1.6"
+    },
+    "techNotFound": {
+        "message": "Non trouvé."
+    },
+    "notesPlaceholder": {
+        "message": "Notes ici..."
+    },
+    "radioArtist": {
+        "message": "Avec All In One"
+    },
+    "charsLabel": {
+        "message": "Caractères"
+    },
+    "trackerImportSuccess": {
+        "message": "Données importées avec succès !"
+    },
+    "copyEnableTitle": {
+        "message": "Copie"
+    },
+    "techCatStats": {
+        "message": "Statistiques"
+    },
+    "dateLabel": {
+        "message": "Date"
+    },
+    "techCatNetwork": {
+        "message": "Réseau"
+    },
+    "techCatEcom": {
+        "message": "Commerce électronique"
+    },
+    "currentRecordedLabel": {
+        "message": "ACTUEL"
+    },
+    "toastCookieOff": {
+        "message": "Le blocage automatique des cookies est désactivé"
+    },
+    "toastModuleLoadError": {
+        "message": "Erreur de chargement du module"
+    },
+    "techCatStyles": {
+        "message": "Styles"
+    },
+    "extDesc": {
+        "message": "L'outil ultime qui regroupe toutes les fonctions essentielles dans une interface rapide, moderne et gratuite."
+    },
+    "resetBtn": {
+        "message": "Réinitialiser"
+    },
+    "addDateTooltip": {
+        "message": "Ajouter date"
+    },
+    "supportTitle": {
+        "message": "Soutenir extension"
+    },
+    "toastCounterCopied": {
+        "message": "Texte copié dans le presse-papier !"
+    },
+    "savedIndicator": {
+        "message": "Enregistré"
+    },
+    "counterPlaceholder": {
+        "message": "Texte ici..."
+    },
+    "techFoundPrefix": {
+        "message": "Trouvé : "
+    },
+    "systemPageTitle": {
+        "message": "SYSTÈME"
+    },
+    "markerClearAllTooltip": {
+        "message": "Tout effacer"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Désactiver les analyses"
+    },
+    "trackerModeDay": {
+        "message": "Vue quotidienne"
+    },
+    "techItemsSuffix": {
+        "message": "éléments"
+    },
+    "toastStopwatchCleared": {
+        "message": "L'historique en direct a été effacé !"
+    },
+    "trackerTotal": {
+        "message": "Total"
+    },
+    "swStatusReady": {
+        "message": "PRÊT"
+    },
+    "trackerTotalShort": {
+        "message": "Total"
+    },
+    "blockCookiesLabel": {
+        "message": "Bloquer cookies"
+    },
+    "markerDrawTooltip": {
+        "message": "Dessiner"
+    },
+    "trackerMonthLabel": {
+        "message": "Ce mois-ci"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Tableaux"
+    },
+    "techStatImages": {
+        "message": "Images"
+    },
+    "toastRadioSaved": {
+        "message": "URL de la station de radio enregistrée !"
+    },
+    "trackerToday": {
+        "message": "Aujourd'hui"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Mots"
+    },
+    "clearAllBtn": {
+        "message": "TOUT EFFACER"
+    },
+    "toastCopyOn": {
+        "message": "Copie activée pour ce site"
+    },
+    "clearSiteDataBtn": {
+        "message": "Effacer site"
+    },
+    "colorPickerPicking": {
+        "message": "Sélection..."
+    },
+    "cacheClearConfirm": {
+        "message": "Effacer site"
+    },
+    "markerTextTooltip": {
+        "message": "Texte"
+    },
+    "radioTitle": {
+        "message": "Radio"
+    },
+    "trackerSelectedMonth": {
+        "message": "Mois sélectionné"
+    },
+    "toastCopyOff": {
+        "message": "Copie désactivée"
+    },
+    "fontCopied": {
+        "message": "Copié !"
+    },
+    "notesLinkText": {
+        "message": "Lien"
+    },
+    "radioClearConfirm": {
+        "message": "Effacer la station de radio enregistrée ?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Moyenne"
+    },
+    "techTitle": {
+        "message": "Technologies"
+    },
+    "lapBtn": {
+        "message": "TOUR"
+    },
+    "playBtn": {
+        "message": "Jouer"
+    },
+    "toastDarkModeOn": {
+        "message": "Mode sombre activé"
+    },
+    "techCatPayment": {
+        "message": "Paiement"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Cookies autorisés pour ce site"
+    },
+    "markerLineTooltip": {
+        "message": "Ligne"
+    },
+    "techStatIframes": {
+        "message": "Iframe"
+    },
+    "counterModalTitle": {
+        "message": "COMPTEUR"
+    },
+    "fontTitle": {
+        "message": "Polices"
+    },
+    "toastTrackerExported": {
+        "message": "Données du tracker exportées avec succès !"
+    },
+    "toastNotesImportError": {
+        "message": "Erreur lors de l'importation des notes !"
+    },
+    "swExportTxtBtn": {
+        "message": "EXPORT .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Supprimer moment"
+    },
+    "startBtn": {
+        "message": "DÉMARRER"
+    },
+    "markerMoveTooltip": {
+        "message": "Déplacer"
+    },
+    "techModalTitle": {
+        "message": "TECHNOLOGIES"
+    },
+    "saveRadioStationBtn": {
+        "message": "ENREGISTRER LA STATION"
+    },
+    "techCatDb": {
+        "message": "Base de données"
+    },
+    "toastNotesCleared": {
+        "message": "Toutes les notes ont été effacées !"
+    },
+    "toastTrackerImported": {
+        "message": "Les données du tracker ont été importées avec succès !"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "URL invalide ! L'URL doit commencer par http:// ou https://"
+    },
+    "trackerImportError": {
+        "message": "Erreur de lecture du fichier."
+    },
+    "swStatusLive": {
+        "message": "DIRECT"
+    },
+    "linkLabel": {
+        "message": "Lien"
+    },
+    "techCatAnalytics": {
+        "message": "Analytique"
+    },
+    "liveHistoryLabel": {
+        "message": "HISTORIQUE"
+    },
+    "colorPickerTitle": {
+        "message": "Couleurs"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "TOTAL : "
+    },
+    "stopwatchReady": {
+        "message": "PRÊT"
+    },
+    "confirmClearHistory": {
+        "message": "Effacer historique ?"
+    },
+    "markerTitle": {
+        "message": "Marqueur"
+    },
+    "trackerModalTitle": {
+        "message": "Suivi de Temps"
+    },
+    "grabTextTooltip": {
+        "message": "Extraire texte"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Effacer le champ"
+    },
+    "privacyLabel": {
+        "message": "Confidentialité"
+    },
+    "whatsNewFeature4": {
+        "message": "Basculer les commentaires : courtes animations d'impulsions et confirmations lors de la modification des paramètres."
+    },
+    "trackerThatDay": {
+        "message": "Ce jour"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Impossible de mettre à jour la liste"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Autoriser les cookies pour ce site"
+    },
+    "textLabel": {
+        "message": "Texte"
+    },
+    "cacheCleared": {
+        "message": "Effacé !"
+    },
+    "importRadioTooltip": {
+        "message": "Importer une station radio personnalisée"
+    },
+    "radioPlay": {
+        "message": "Jouer"
+    },
+    "techLoadingMsg": {
+        "message": "Analyse du site..."
+    },
+    "swCopyBtn": {
+        "message": "COPIER"
+    },
+    "techScannerFailed": {
+        "message": "Erreur d'analyse."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Afficher les informations réseau (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Aujourd'hui"
+    },
+    "toastNotesImported": {
+        "message": "Notes importées avec succès !"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Copié : "
+    },
+    "swCopiedBtn": {
+        "message": "✓ COPIÉ"
+    },
+    "techCatCaching": {
+        "message": "Mise en cache"
+    },
+    "techCatSecurity": {
+        "message": "Sécurité"
+    },
+    "toastYtOn": {
+        "message": "L'affichage des \"Je n'aime pas\" sur YouTube est activé"
+    },
+    "extName": {
+        "message": "All In One - Le meilleur outil de productivité"
+    },
+    "toastCookieOn": {
+        "message": "Le blocage automatique des cookies est activé"
+    },
+    "techScannerUnavailable": {
+        "message": "Pas de scanner ici."
+    },
+    "notesTooLarge": {
+        "message": "Note trop grande"
+    },
+    "swDurationLabel": {
+        "message": "Durée : "
+    },
+    "ytDislikeTitle": {
+        "message": "YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Donner et soutenir"
+    },
+    "techStatVideo": {
+        "message": "Vidéo"
+    },
+    "settingsTooltip": {
+        "message": "Paramètres"
+    },
+    "trackerThisMonthShort": {
+        "message": "Ce mois"
+    },
+    "techCatSystem": {
+        "message": "Système"
+    },
+    "exportTooltip": {
+        "message": "Exporter des données"
+    },
+    "exportNotesTooltip": {
+        "message": "Exporter"
+    },
+    "radioPause": {
+        "message": "Pause"
+    },
+    "websiteTooltip": {
+        "message": "Site officiel"
+    },
+    "rateBtn": {
+        "message": "Évaluer extension"
+    },
+    "techCatBase": {
+        "message": "Base"
+    },
+    "cacheModalTitle": {
+        "message": "COOKIES/CACHE"
+    },
+    "cancelBtn": {
+        "message": "ANNULER"
+    },
+    "addUrlTooltip": {
+        "message": "Ajouter URL"
+    },
+    "trackerAvgTotal": {
+        "message": "Moyenne"
+    },
+    "techStatForms": {
+        "message": "Formulaires"
+    },
+    "cacheError": {
+        "message": "Erreur"
+    }
 }

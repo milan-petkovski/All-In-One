@@ -35,8 +35,8 @@ const env = createExtensionTestEnv({
 
 env.popupDocument.getElementById("stopwatchView").classList.add("view-visible");
 
-const stopwatch = await import(new URL("../popup-stopwatch.js", import.meta.url));
-const core = await import(new URL("../popup-core.js", import.meta.url));
+const stopwatch = await import(new URL("../js/popup-stopwatch.js", import.meta.url));
+const core = await import(new URL("../js/popup-core.js", import.meta.url));
 
 test("start button activates a running session", async () => {
   stopwatch.initStopwatch();

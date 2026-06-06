@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "குறிப்புகள்"
-                   },
-    "supportDesc":  {
-                        "message":  "இலவச சேவை."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "பின்தளம்"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "அழி"
-                           },
-    "counterTitle":  {
-                         "message":  "கவுண்டர்"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "சராசரி"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "மாதாந்திர காட்சி"
-                         },
-    "trackerModeAll":  {
-                           "message":  "எல்லா நேரமும்"
-                       },
-    "techCatMedia":  {
-                         "message":  "ஊடகம்"
-                     },
-    "trackerNoData":  {
-                          "message":  "No data for this period"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "லைவ் #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "அழிக்கவா?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "கருவிகள்"
-                     },
-    "soundTitle":  {
-                       "message":  "ஒலி"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "அனைத்தையும் அழி"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "மூடு"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "ஸ்டாப்வாட்ச்"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "அழி"
-                          },
-    "rulerTitle":  {
-                       "message":  "அளவுகோல்"
-                   },
-    "markLapDesc":  {
-                        "message":  "ஸ்டாப்வாட்சில் ஒரு தருணத்தைப் பதிவுசெய்க"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "முடக்கப்பட்டது"
-                       },
-    "techStatLinks":  {
-                          "message":  "இணைப்புகள்"
-                      },
-    "stopBtn":  {
-                    "message":  "நிறுத்து"
-                },
-    "swNoLaps":  {
-                     "message":  "இல்லை"
-                 },
-    "trackerTitle":  {
-                         "message":  "நேரமானி"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "This month"
-                         },
-    "linesLabel":  {
-                       "message":  "வரி"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "தொடர்பாடல்"
-                    },
-    "deleteBtn":  {
-                      "message":  "அழி"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "சேமிக்கப்பட்டது"
-                   },
-    "lapBtn":  {
-                   "message":  "லேப்"
-               },
-    "notesModalTitle":  {
-                            "message":  "குறிப்புகள்"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "versionLabel":  {
-                         "message":  "பதிப்பு:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "இறக்குமதி"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "பிழை"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "தொழில்நுட்பங்கள்"
-                    },
-    "techCatServer":  {
-                          "message":  "சேவையகம்"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "இல்லை"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "ஆடியோ"
-                      },
-    "cacheClearing":  {
-                          "message":  "அழிக்கப்படுகிறது"
-                      },
-    "radioTitleCustom":  {
-                             "message":  "வானொலி"
-                         },
-    "websiteBtn":  {
-                       "message":  "தளம்"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "தடிமன்"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "நீங்கள் நிச்சயமாக அனைத்தையும் அழிக்க விரும்புகிறீர்களா?"
-                            },
-    "techCatAds":  {
-                       "message":  "விளம்பரங்கள்"
-                   },
-    "uiSettings":  {
-                       "message":  "அமைப்புகள்"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "அந்த மாதம்"
-                         },
-    "radioModalDesc":  {
-                           "message":  "உங்களுக்கு பிடித்த வானொலி நிலையத்தின் நேரடி இணைப்பை உள்ளிடவும்"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "தரவை நிச்சயமாக நீக்க விரும்புகிறீர்களா"
-                             },
-    "darkModeTitle":  {
-                          "message":  "இருள்"
-                      },
-    "techStatScripts":  {
-                            "message":  "ஸ்கிரிப்ட்கள்"
-                        },
-    "swNoHistory":  {
-                        "message":  "வரலாறு இல்லை"
-                    },
-    "techNotFound":  {
-                         "message":  "இல்லை"
-                     },
-    "notesPlaceholder":  {
-                             "message":  "எழுதுக"
-                         },
-    "radioArtist":  {
-                        "message":  "All In One நீட்டிப்பால் இயக்கப்படுகிறது"
-                    },
-    "charsLabel":  {
-                       "message":  "எழுத்துக்கள்"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "நகல்"
-                        },
-    "techCatStats":  {
-                         "message":  "புள்ளிவிவரங்கள்"
-                     },
-    "dateLabel":  {
-                      "message":  "தேதி"
-                  },
-    "techCatNetwork":  {
-                           "message":  "பிணையம்"
-                       },
-    "techCatEcom":  {
-                        "message":  "மின் வணிகம்"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "பதிவானது"
-                             },
-    "techCatStyles":  {
-                          "message":  "பாணிகள்"
-                      },
-    "extDesc":  {
-                    "message":  "ஒரு வேகமான, நவீன மற்றும் இலவச இடைமுகத்தில் அனைத்து அத்தியாவசிய செயல்பாடுகளையும் இணைக்கும் இறுதி கருவி."
-                },
-    "resetBtn":  {
-                     "message":  "மீளமை"
-                 },
-    "addDateTooltip":  {
-                           "message":  "தேதி"
-                       },
-    "supportTitle":  {
-                         "message":  "ஆதரிக்கவும்"
-                     },
-    "savedIndicator":  {
-                           "message":  "சேமிக்கப்பட்டது"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "ஒட்டவும்"
-                           },
-    "techFoundPrefix":  {
-                            "message":  "உள்ளது: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "சிஸ்டம்"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "அனைத்தையும் அழி"
-                              },
-    "trackerModeDay":  {
-                           "message":  "நாள்தோறும் காட்சி"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "எண்ணிக்கை"
-                        },
-    "trackerTotal":  {
-                         "message":  "மொத்தம்"
-                     },
-    "swStatusReady":  {
-                          "message":  "தயார்"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "தடு"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "வரை"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "இந்த மாதம்"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "அட்டவணைகள்"
-                       },
-    "techStatImages":  {
-                           "message":  "படங்கள்"
-                       },
-    "trackerToday":  {
-                         "message":  "இன்று"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "சொற்கள்"
-                   },
-    "clearAllBtn":  {
-                        "message":  "அனைத்தையும் அழி"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "தரவை அழி"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "தேர்வு"
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "அழி"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "உரை"
-                          },
-    "radioTitle":  {
-                       "message":  "வானொலி"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Selected month"
-                             },
-    "fontCopied":  {
-                       "message":  "நகலானது"
-                   },
-    "notesLinkText":  {
-                          "message":  "லிங்க்"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "techTitle":  {
-                      "message":  "தொழில்நுட்பம்"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "நகர்த்து"
-                          },
-    "playBtn":  {
-                    "message":  "பிளே"
-                },
-    "techCatPayment":  {
-                           "message":  "கட்டணம்"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "கோடு"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "கவுண்டர்"
-                          },
-    "fontTitle":  {
-                      "message":  "எழுத்துரு"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  ".TXT ஏற்றுமதி"
-                       },
-    "swUndoTitle":  {
-                        "message":  "நீக்கு"
-                    },
-    "startBtn":  {
-                     "message":  "தொடங்கு"
-                 },
-    "techModalTitle":  {
-                           "message":  "தொழில்நுட்பம்"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "நிலையத்தை சேமிக்கவும்"
-                            },
-    "techCatDb":  {
-                      "message":  "தரவுத்தளம்"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "நடப்பில்"
-                     },
-    "linkLabel":  {
-                      "message":  "லிங்க்"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "பகுப்பாய்வு"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "வரலாறு"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "நிறம் தேர்வி"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "தருணம் "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "மொத்த நேரம்: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "தயார்"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "இந்த மாதம்"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "அழிக்கவா?"
-                            },
-    "markerTitle":  {
-                        "message":  "குறிப்பான்"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "நேரம் கண்காணிப்பு"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "எடு"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "புலத்தை அழிக்கவும்"
-                               },
-    "privacyLabel":  {
-                         "message":  "தனியுரிமை"
-                     },
-    "trackerThatDay":  {
-                           "message":  "அந்த நாள்"
-                       },
-    "textLabel":  {
-                      "message":  "உரை"
-                  },
-    "cacheCleared":  {
-                         "message":  "அழிக்கப்பட்டது"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "தனிப்பயன் வானொலி நிலையத்தை இறக்குமதி செய்"
-                           },
-    "radioPlay":  {
-                      "message":  "பிளே"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "ஆய்வு செய்கிறது"
-                       },
-    "swCopyBtn":  {
-                      "message":  "நகல்"
-                  },
-    "techScannerFailed":  {
-                              "message":  "தோல்வி"
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "இன்று"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "நகலானது: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ நகலானது"
-                    },
-    "techCatCaching":  {
-                           "message":  "தற்காலிக சேமிப்பு"
-                       },
-    "techCatSecurity":  {
-                            "message":  "பாதுகாப்பு"
-                        },
-    "extName":  {
-                    "message":  "All In One - மிகச்சிறந்த செயல்திறன் கருவி"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "கிடைக்கவில்லை"
-                               },
-    "notesTooLarge":  {
-                          "message":  "பெரியது"
-                      },
-    "swDurationLabel":  {
-                            "message":  "நேரம்: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "Return YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "ஆதரவு தருக"
-                  },
-    "techStatVideo":  {
-                          "message":  "வீடியோ"
-                      },
-    "settingsTooltip":  {
-                            "message":  "அமைப்புகள்"
-                        },
-    "cacheTitle":  {
-                       "message":  "குக்கீகள்"
-                   },
-    "techCatSystem":  {
-                          "message":  "கணினி"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "ஏற்றுமதி"
-                           },
-    "radioPause":  {
-                       "message":  "பாஸ்"
-                   },
-    "websiteTooltip":  {
-                           "message":  "நீட்டிப்பின் அதிகாரப்பூர்வ இணையதளம்"
-                       },
-    "rateBtn":  {
-                    "message":  "மதிப்பிடுக"
-                },
-    "techCatBase":  {
-                        "message":  "அடிப்படை"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "குக்கீகள்"
-                        },
-    "cancelBtn":  {
-                      "message":  "ரத்து"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "லிங்க்"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "சராசரி"
-                        },
-    "techStatForms":  {
-                          "message":  "படிவங்கள்"
-                      },
-    "cacheError":  {
-                       "message":  "பிழை"
-                   }
+    "notesTitle": {
+        "message": "குறிப்புகள்"
+    },
+    "whatsNewDesc": {
+        "message": "அனைத்தையும் இன்னும் வேகமாகவும் நேர்த்தியாகவும் மாற்றும் சமீபத்திய இடைமுக மேம்பாடுகளைப் பார்க்கவும்:"
+    },
+    "toastPermissionDenied": {
+        "message": "அனுமதி வழங்கப்படவில்லை"
+    },
+    "clearCounterTooltip": {
+        "message": "அனைத்தையும் அழி"
+    },
+    "supportDesc": {
+        "message": "இலவச சேவை."
+    },
+    "trackerExportTruncated": {
+        "message": "பாப்அப்பை நிலையாக வைத்திருக்க ஏற்றுமதி 10MBக்கு துண்டிக்கப்பட்டது."
+    },
+    "whatsNewClose": {
+        "message": "கிடைத்தது"
+    },
+    "techCatBackend": {
+        "message": "பின்தளம்"
+    },
+    "markerEraseTooltip": {
+        "message": "அழி"
+    },
+    "counterTitle": {
+        "message": "கவுண்டர்"
+    },
+    "trackerAvgLabel": {
+        "message": "சராசரி"
+    },
+    "trackerModeMonth": {
+        "message": "மாதாந்திர காட்சி"
+    },
+    "trackerModeAll": {
+        "message": "எல்லா நேரமும்"
+    },
+    "techCatMedia": {
+        "message": "ஊடகம்"
+    },
+    "trackerNoData": {
+        "message": "இந்தக் காலத்திற்கான தரவு இல்லை"
+    },
+    "whatsNewFeature3": {
+        "message": "ஃபேவிகான் ஆதரவு: டிராக்கர் பட்டியலில் உள்ள தள ஃபேவிகான்கள்."
+    },
+    "swLiveTitlePrefix": {
+        "message": "லைவ் #"
+    },
+    "confirmClearNotes": {
+        "message": "அழிக்கவா?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "இந்த தளத்தில் இருந்து அனைத்து தரவு அழிக்கப்பட்டது!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "இணையதளங்களைத் தேடு..."
+    },
+    "techCatTools": {
+        "message": "கருவிகள்"
+    },
+    "toastYtOff": {
+        "message": "YouTube பிடிக்காத காட்சி முடக்கப்பட்டது"
+    },
+    "soundTitle": {
+        "message": "ஒலி"
+    },
+    "cacheTitle": {
+        "message": "குக்கீகள்"
+    },
+    "markerCloseTooltip": {
+        "message": "மூடு"
+    },
+    "stopwatchTitle": {
+        "message": "ஸ்டாப்வாட்ச்"
+    },
+    "clearNotesTooltip": {
+        "message": "அழி"
+    },
+    "rulerTitle": {
+        "message": "அளவுகோல்"
+    },
+    "markLapDesc": {
+        "message": "ஸ்டாப்வாட்சில் ஒரு தருணத்தைப் பதிவுசெய்க"
+    },
+    "trackerImportEmpty": {
+        "message": "இறக்குமதி செய்ய சரியான டிராக்கர் தரவு இல்லை."
+    },
+    "whatsNewFeature1": {
+        "message": "மென்மையான மாற்றங்கள்: கருவிகளுக்கு இடையே மென்மையான ஸ்லைடு அனிமேஷன்கள்."
+    },
+    "systemPageDesc": {
+        "message": "முடக்கப்பட்டது"
+    },
+    "techStatLinks": {
+        "message": "இணைப்புகள்"
+    },
+    "stopBtn": {
+        "message": "நிறுத்து"
+    },
+    "swNoLaps": {
+        "message": "இல்லை"
+    },
+    "toastTrackerImportError": {
+        "message": "டிராக்கர் தரவை இறக்குமதி செய்வதில் பிழை!"
+    },
+    "toastRadioPlayError": {
+        "message": "வானொலியை இப்போது தொடங்க முடியாது."
+    },
+    "trackerTitle": {
+        "message": "நேரமானி"
+    },
+    "offscreenJustification": {
+        "message": "ரேடியோ ஸ்ட்ரீமிங் மற்றும் கணினி ஒலிகள்"
+    },
+    "trackerThisMonth": {
+        "message": "இந்த மாதம்"
+    },
+    "linesLabel": {
+        "message": "வரி"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "இந்தத் தளத்திற்கான குக்கீகள் தடுக்கப்பட்டுள்ளன"
+    },
+    "toastTrackerError": {
+        "message": "தரவைப் புதுப்பிப்பதில் பிழை"
+    },
+    "trackerExportEmpty": {
+        "message": "ஏற்றுமதி செய்ய டிராக்கர் தரவு இல்லை."
+    },
+    "techCatComm": {
+        "message": "தொடர்பாடல்"
+    },
+    "deleteBtn": {
+        "message": "அழி"
+    },
+    "techCatTech": {
+        "message": "தொழில்நுட்பங்கள்"
+    },
+    "notesSaved": {
+        "message": "சேமிக்கப்பட்டது"
+    },
+    "toastNotesExported": {
+        "message": "குறிப்புகள் வெற்றிகரமாக ஏற்றுமதி செய்யப்பட்டன!"
+    },
+    "swMomentLabel": {
+        "message": "தருணம் "
+    },
+    "notesModalTitle": {
+        "message": "குறிப்புகள்"
+    },
+    "trackerAvgThisMonth": {
+        "message": "சராசரி (மாதம்)"
+    },
+    "versionLabel": {
+        "message": "பதிப்பு:"
+    },
+    "importNotesTooltip": {
+        "message": "இறக்குமதி"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "ஒளி பயன்முறை இயக்கப்பட்டது"
+    },
+    "toastNotesCopied": {
+        "message": "உரை கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது!"
+    },
+    "whatsNewFeature2": {
+        "message": "பிரீமியம் டோஸ்ட்கள்: முக்கியமான செயல்களுக்கான நவீன அறிவிப்பு அமைப்பு."
+    },
+    "fontNotCopied": {
+        "message": "பிழை"
+    },
+    "importTooltip": {
+        "message": "தரவை இறக்குமதி செய்யவும்"
+    },
+    "wordsLabelShort": {
+        "message": "வார்த்தைகள்"
+    },
+    "techCatServer": {
+        "message": "சேவையகம்"
+    },
+    "cacheNotSupported": {
+        "message": "இல்லை"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "ஆடியோ"
+    },
+    "cacheClearing": {
+        "message": "அழிக்கப்படுகிறது"
+    },
+    "radioTitleCustom": {
+        "message": "வானொலி"
+    },
+    "toastTrackerRefreshed": {
+        "message": "தரவு புதுப்பிக்கப்பட்டது!"
+    },
+    "websiteBtn": {
+        "message": "தளம்"
+    },
+    "markerThicknessTooltip": {
+        "message": "தடிமன்"
+    },
+    "confirmClearCounter": {
+        "message": "நீங்கள் நிச்சயமாக அனைத்தையும் அழிக்க விரும்புகிறீர்களா?"
+    },
+    "techCatAds": {
+        "message": "விளம்பரங்கள்"
+    },
+    "uiSettings": {
+        "message": "அமைப்புகள்"
+    },
+    "trackerThatMonth": {
+        "message": "அந்த மாதம்"
+    },
+    "radioModalDesc": {
+        "message": "உங்களுக்கு பிடித்த வானொலி நிலையத்தின் நேரடி இணைப்பை உள்ளிடவும்"
+    },
+    "trackerDeleteConfirm": {
+        "message": "தரவை நிச்சயமாக நீக்க விரும்புகிறீர்களா"
+    },
+    "darkModeTitle": {
+        "message": "இருள்"
+    },
+    "toastCounterCleared": {
+        "message": "எதிர் உரை அழிக்கப்பட்டது!"
+    },
+    "techStatScripts": {
+        "message": "ஸ்கிரிப்ட்கள்"
+    },
+    "techNetworkOptInHint": {
+        "message": "கோரிக்கைகளை dns.google மற்றும் ipinfo.io க்கு அனுப்புகிறது."
+    },
+    "swNoHistory": {
+        "message": "வரலாறு இல்லை"
+    },
+    "whatsNewTitle": {
+        "message": "பதிப்பு 1.6 இல் புதிதாக என்ன இருக்கிறது"
+    },
+    "techNotFound": {
+        "message": "இல்லை"
+    },
+    "notesPlaceholder": {
+        "message": "எழுதுக"
+    },
+    "radioArtist": {
+        "message": "All In One நீட்டிப்பால் இயக்கப்படுகிறது"
+    },
+    "charsLabel": {
+        "message": "எழுத்துக்கள்"
+    },
+    "trackerImportSuccess": {
+        "message": "தரவு வெற்றிகரமாக இறக்குமதி செய்யப்பட்டது!"
+    },
+    "copyEnableTitle": {
+        "message": "நகல்"
+    },
+    "techCatStats": {
+        "message": "புள்ளிவிவரங்கள்"
+    },
+    "dateLabel": {
+        "message": "தேதி"
+    },
+    "techCatNetwork": {
+        "message": "பிணையம்"
+    },
+    "techCatEcom": {
+        "message": "மின் வணிகம்"
+    },
+    "currentRecordedLabel": {
+        "message": "பதிவானது"
+    },
+    "toastCookieOff": {
+        "message": "தானியங்கி குக்கீ தடுப்பு முடக்கப்பட்டுள்ளது"
+    },
+    "toastModuleLoadError": {
+        "message": "தொகுதி ஏற்றுவதில் பிழை"
+    },
+    "techCatStyles": {
+        "message": "பாணிகள்"
+    },
+    "extDesc": {
+        "message": "ஒரு வேகமான, நவீன மற்றும் இலவச இடைமுகத்தில் அனைத்து அத்தியாவசிய செயல்பாடுகளையும் இணைக்கும் இறுதி கருவி."
+    },
+    "resetBtn": {
+        "message": "மீளமை"
+    },
+    "addDateTooltip": {
+        "message": "தேதி"
+    },
+    "supportTitle": {
+        "message": "ஆதரிக்கவும்"
+    },
+    "toastCounterCopied": {
+        "message": "உரை கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது!"
+    },
+    "savedIndicator": {
+        "message": "சேமிக்கப்பட்டது"
+    },
+    "counterPlaceholder": {
+        "message": "ஒட்டவும்"
+    },
+    "techFoundPrefix": {
+        "message": "உள்ளது: "
+    },
+    "systemPageTitle": {
+        "message": "சிஸ்டம்"
+    },
+    "markerClearAllTooltip": {
+        "message": "அனைத்தையும் அழி"
+    },
+    "analyticsOptOutLabel": {
+        "message": "பகுப்பாய்வுகளை முடக்கு"
+    },
+    "trackerModeDay": {
+        "message": "நாள்தோறும் காட்சி"
+    },
+    "techItemsSuffix": {
+        "message": "எண்ணிக்கை"
+    },
+    "toastStopwatchCleared": {
+        "message": "நேரடி வரலாறு அழிக்கப்பட்டது!"
+    },
+    "trackerTotal": {
+        "message": "மொத்தம்"
+    },
+    "swStatusReady": {
+        "message": "தயார்"
+    },
+    "trackerTotalShort": {
+        "message": "மொத்தம்"
+    },
+    "blockCookiesLabel": {
+        "message": "தடு"
+    },
+    "markerDrawTooltip": {
+        "message": "வரை"
+    },
+    "trackerMonthLabel": {
+        "message": "இந்த மாதம்"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "அட்டவணைகள்"
+    },
+    "techStatImages": {
+        "message": "படங்கள்"
+    },
+    "toastRadioSaved": {
+        "message": "வானொலி நிலைய URL சேமிக்கப்பட்டது!"
+    },
+    "trackerToday": {
+        "message": "இன்று"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "சொற்கள்"
+    },
+    "clearAllBtn": {
+        "message": "அனைத்தையும் அழி"
+    },
+    "toastCopyOn": {
+        "message": "இந்த தளத்தில் நகல் இயக்கப்பட்டது"
+    },
+    "clearSiteDataBtn": {
+        "message": "தரவை அழி"
+    },
+    "colorPickerPicking": {
+        "message": "தேர்வு"
+    },
+    "cacheClearConfirm": {
+        "message": "அழி"
+    },
+    "markerTextTooltip": {
+        "message": "உரை"
+    },
+    "radioTitle": {
+        "message": "வானொலி"
+    },
+    "trackerSelectedMonth": {
+        "message": "தேர்ந்தெடுக்கப்பட்ட மாதம்"
+    },
+    "toastCopyOff": {
+        "message": "நகல் முடக்கப்பட்டது"
+    },
+    "fontCopied": {
+        "message": "நகலானது"
+    },
+    "notesLinkText": {
+        "message": "லிங்க்"
+    },
+    "radioClearConfirm": {
+        "message": "சேமித்த வானொலி நிலையத்தை அழிக்கவா?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "சராசரி (மாதம்)"
+    },
+    "techTitle": {
+        "message": "தொழில்நுட்பம்"
+    },
+    "lapBtn": {
+        "message": "லேப்"
+    },
+    "playBtn": {
+        "message": "பிளே"
+    },
+    "toastDarkModeOn": {
+        "message": "இருண்ட பயன்முறை இயக்கப்பட்டது"
+    },
+    "techCatPayment": {
+        "message": "கட்டணம்"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "இந்த தளத்தில் குக்கீகள் அனுமதிக்கப்பட்டுள்ளன"
+    },
+    "markerLineTooltip": {
+        "message": "கோடு"
+    },
+    "techStatIframes": {
+        "message": "இஃப்ரேம்கள்"
+    },
+    "counterModalTitle": {
+        "message": "கவுண்டர்"
+    },
+    "fontTitle": {
+        "message": "எழுத்துரு"
+    },
+    "toastTrackerExported": {
+        "message": "டிராக்கர் தரவு வெற்றிகரமாக ஏற்றுமதி செய்யப்பட்டது!"
+    },
+    "toastNotesImportError": {
+        "message": "நோட்டுகளை இறக்குமதி செய்வதில் பிழை!"
+    },
+    "swExportTxtBtn": {
+        "message": ".TXT ஏற்றுமதி"
+    },
+    "swUndoTitle": {
+        "message": "நீக்கு"
+    },
+    "startBtn": {
+        "message": "தொடங்கு"
+    },
+    "markerMoveTooltip": {
+        "message": "நகர்த்து"
+    },
+    "techModalTitle": {
+        "message": "தொழில்நுட்பம்"
+    },
+    "saveRadioStationBtn": {
+        "message": "நிலையத்தை சேமிக்கவும்"
+    },
+    "techCatDb": {
+        "message": "தரவுத்தளம்"
+    },
+    "toastNotesCleared": {
+        "message": "அனைத்து குறிப்புகளும் அழிக்கப்பட்டன!"
+    },
+    "toastTrackerImported": {
+        "message": "டிராக்கர் தரவு வெற்றிகரமாக இறக்குமதி செய்யப்பட்டது!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "தவறான URL! URL கண்டிப்பாக http:// அல்லது https:// உடன் தொடங்க வேண்டும்"
+    },
+    "trackerImportError": {
+        "message": "கோப்பைப் படிப்பதில் பிழை."
+    },
+    "swStatusLive": {
+        "message": "நடப்பில்"
+    },
+    "linkLabel": {
+        "message": "லிங்க்"
+    },
+    "techCatAnalytics": {
+        "message": "பகுப்பாய்வு"
+    },
+    "liveHistoryLabel": {
+        "message": "வரலாறு"
+    },
+    "colorPickerTitle": {
+        "message": "நிறம் தேர்வி"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "மொத்த நேரம்: "
+    },
+    "stopwatchReady": {
+        "message": "தயார்"
+    },
+    "confirmClearHistory": {
+        "message": "அழிக்கவா?"
+    },
+    "markerTitle": {
+        "message": "குறிப்பான்"
+    },
+    "trackerModalTitle": {
+        "message": "நேரம் கண்காணிப்பு"
+    },
+    "grabTextTooltip": {
+        "message": "எடு"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "புலத்தை அழிக்கவும்"
+    },
+    "privacyLabel": {
+        "message": "தனியுரிமை"
+    },
+    "whatsNewFeature4": {
+        "message": "கருத்தை நிலைமாற்று: அமைப்புகளை மாற்றும்போது குறுகிய துடிப்பு அனிமேஷன்கள் மற்றும் உறுதிப்படுத்தல்கள்."
+    },
+    "trackerThatDay": {
+        "message": "அந்த நாள்"
+    },
+    "toastCookieWhitelistError": {
+        "message": "பட்டியலை புதுப்பிக்க முடியவில்லை"
+    },
+    "cookieWhitelistLabel": {
+        "message": "இந்த தளத்திற்கு குக்கீகளை அனுமதிக்கவும்"
+    },
+    "textLabel": {
+        "message": "உரை"
+    },
+    "cacheCleared": {
+        "message": "அழிக்கப்பட்டது"
+    },
+    "importRadioTooltip": {
+        "message": "தனிப்பயன் வானொலி நிலையத்தை இறக்குமதி செய்"
+    },
+    "radioPlay": {
+        "message": "பிளே"
+    },
+    "techLoadingMsg": {
+        "message": "ஆய்வு செய்கிறது"
+    },
+    "swCopyBtn": {
+        "message": "நகல்"
+    },
+    "techScannerFailed": {
+        "message": "தோல்வி"
+    },
+    "techNetworkOptInLabel": {
+        "message": "நெட்வொர்க் தகவலைக் காட்டு (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "இன்று"
+    },
+    "toastNotesImported": {
+        "message": "குறிப்புகள் வெற்றிகரமாக இறக்குமதி செய்யப்பட்டன!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "நகலானது: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ நகலானது"
+    },
+    "techCatCaching": {
+        "message": "தற்காலிக சேமிப்பு"
+    },
+    "techCatSecurity": {
+        "message": "பாதுகாப்பு"
+    },
+    "toastYtOn": {
+        "message": "YouTube விருப்பமின்மை காட்சி இயக்கப்பட்டது"
+    },
+    "extName": {
+        "message": "All In One - மிகச்சிறந்த செயல்திறன் கருவி"
+    },
+    "toastCookieOn": {
+        "message": "தானியங்கி குக்கீ தடுப்பு இயக்கப்பட்டது"
+    },
+    "techScannerUnavailable": {
+        "message": "கிடைக்கவில்லை"
+    },
+    "notesTooLarge": {
+        "message": "பெரியது"
+    },
+    "swDurationLabel": {
+        "message": "நேரம்: "
+    },
+    "ytDislikeTitle": {
+        "message": "Return YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "ஆதரவு தருக"
+    },
+    "techStatVideo": {
+        "message": "வீடியோ"
+    },
+    "settingsTooltip": {
+        "message": "அமைப்புகள்"
+    },
+    "trackerThisMonthShort": {
+        "message": "இந்த மாதம்"
+    },
+    "techCatSystem": {
+        "message": "கணினி"
+    },
+    "exportTooltip": {
+        "message": "தரவு ஏற்றுமதி"
+    },
+    "exportNotesTooltip": {
+        "message": "ஏற்றுமதி"
+    },
+    "radioPause": {
+        "message": "பாஸ்"
+    },
+    "websiteTooltip": {
+        "message": "நீட்டிப்பின் அதிகாரப்பூர்வ இணையதளம்"
+    },
+    "rateBtn": {
+        "message": "மதிப்பிடுக"
+    },
+    "techCatBase": {
+        "message": "அடிப்படை"
+    },
+    "cacheModalTitle": {
+        "message": "குக்கீகள்"
+    },
+    "cancelBtn": {
+        "message": "ரத்து"
+    },
+    "addUrlTooltip": {
+        "message": "லிங்க்"
+    },
+    "trackerAvgTotal": {
+        "message": "சராசரி"
+    },
+    "techStatForms": {
+        "message": "படிவங்கள்"
+    },
+    "cacheError": {
+        "message": "பிழை"
+    }
 }

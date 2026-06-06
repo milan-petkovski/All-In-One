@@ -1,413 +1,656 @@
 {
-    "swCopiedBtn":  {
-                        "message":  "✓ ΑΝΤΙΓΡΑΦΗΚΕ"
-                    },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "techNotFound":  {
-                         "message":  "Δεν βρέθηκε."
-                     },
-    "cacheNotSupported":  {
-                              "message":  "Δεν υποστηρίζεται"
-                          },
-    "trackerAvgLabel":  {
-                            "message":  "Μέσος όρος"
-                        },
-    "colorPickerTitle":  {
-                             "message":  "Χρώματα"
-                         },
-    "trackerThatMonth":  {
-                             "message":  "That month"
-                         },
-    "counterPlaceholder":  {
-                               "message":  "Κείμενο..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Εκκαθάριση όλων των δεδομένων του ιστότοπου"
-                          },
-    "trackerModeAll":  {
-                           "message":  "Όλος ο χρόνος"
-                       },
-    "swLiveTitlePrefix":  {
-                              "message":  "Live #"
-                          },
-    "notesSaved":  {
-                       "message":  "Αποθηκεύτηκε"
-                   },
-    "trackerTitle":  {
-                         "message":  "Χρόνος web"
-                     },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "trackerTotal":  {
-                         "message":  "Total"
-                     },
-    "savedIndicator":  {
-                           "message":  "Αποθηκεύτηκε"
-                       },
-    "markerDrawTooltip":  {
-                              "message":  "Σχεδίαση"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "wordsLabel":  {
-                       "message":  "Λέξεις"
-                   },
-    "stopwatchReady":  {
-                           "message":  "ΕΤΟΙΜΟ"
-                       },
-    "notesLinkText":  {
-                          "message":  "Σύνδεσμος"
-                      },
-    "extDesc":  {
-                    "message":  "Το απόλυτο εργαλείο που ενσωματώνει όλες τις βασικές λειτουργίες σε ένα γρήγορο, σύγχρονο και δωρεάν περιβάλλον χρήσης."
-                },
-    "dateLabel":  {
-                      "message":  "Ημερομηνία"
-                  },
-    "swStatusLive":  {
-                         "message":  "ΤΟ LIVE ΒΡΙΣΚΕΤΑΙ ΣΕ ΕΞΕΛΙΞΗ"
-                     },
-    "linkLabel":  {
-                      "message":  "Σύνδεσμος"
-                  },
-    "trackerAvgThatMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "addUrlTooltip":  {
-                          "message":  "Προσθήκη URL"
-                      },
-    "clearCounterTooltip":  {
-                                "message":  "Διαγραφή όλων"
-                            },
-    "counterTitle":  {
-                         "message":  "Μετρ."
-                     },
-    "markerEraseTooltip":  {
-                               "message":  "Σβήσιμο"
-                           },
-    "swNoHistory":  {
-                        "message":  "Δεν υπάρχει ιστορικό live"
-                    },
-    "deleteBtn":  {
-                      "message":  "ΔΙΑΓΡΑΦΗ"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "versionLabel":  {
-                         "message":  "Έκδοση:"
-                     },
-    "clearAllBtn":  {
-                        "message":  "ΕΚΚΑΘΑΡΙΣΗ ΟΛΩΝ"
-                    },
-    "uiSettings":  {
-                       "message":  "ΡΥΘΜΙΣΕΙΣ"
-                   },
-    "copyEnableTitle":  {
-                            "message":  "Αντίγραφο"
-                        },
-    "soundTitle":  {
-                       "message":  "Ήχος"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "charsLabel":  {
-                       "message":  "Χαρακτήρες"
-                   },
-    "markerCloseTooltip":  {
-                               "message":  "Κλείσιμο"
-                           },
-    "playBtn":  {
-                    "message":  "Αναπαραγωγή"
-                },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "markerLineTooltip":  {
-                              "message":  "Γραμμή"
-                          },
-    "colorPickerCopied":  {
-                              "message":  "Αντιγράφηκε: "
-                          },
-    "swStatusReady":  {
-                          "message":  "ΕΤΟΙΜΟ"
-                      },
-    "cacheModalTitle":  {
-                            "message":  "COOKIES/CACHE"
-                        },
-    "trackerMonthLabel":  {
-                              "message":  "Αυτός ο μήνας"
-                          },
-    "colorPickerPicking":  {
-                               "message":  "Επιλογή..."
-                           },
-    "swUndoTitle":  {
-                        "message":  "Διαγραφή αυτής της στιγμής"
-                    },
-    "trackerAvgTotal":  {
-                            "message":  "Average"
-                        },
-    "addDateTooltip":  {
-                           "message":  "Προσθήκη ημερομηνίας"
-                       },
-    "techTitle":  {
-                      "message":  "Τεχν."
-                  },
-    "trackerToday":  {
-                         "message":  "Today"
-                     },
-    "notesModalTitle":  {
-                            "message":  "Σημειώσεις"
-                        },
-    "notesTooLarge":  {
-                          "message":  "Πολύ μεγάλη σημείωση"
-                      },
-    "cacheCleared":  {
-                         "message":  "Ολοκληρώθηκε!"
-                     },
-    "markerTitle":  {
-                        "message":  "Δείκτης"
-                    },
-    "exportNotesTooltip":  {
-                               "message":  "Εξαγωγή"
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Βρέθηκαν: "
-                        },
-    "techModalTitle":  {
-                           "message":  "ΤΕΧΝΟΛΟΓΙΕΣ ΙΣΤΟΤΟΠΟΥ"
-                       },
-    "confirmClearNotes":  {
-                              "message":  "Διαγραφή όλων των σημειώσεων;"
-                          },
-    "swNoLaps":  {
-                     "message":  "Δεν υπάρχουν καταγεγραμμένες στιγμές"
-                 },
-    "confirmClearCounter":  {
-                                "message":  "Είστε σίγουροι ότι θέλετε να διαγράψετε τα πάντα;"
-                            },
-    "supportDesc":  {
-                        "message":  "All In One δωρεάν. Η υποστήριξή σας φέρνει νέες λειτουργίες."
-                    },
-    "websiteTooltip":  {
-                           "message":  "Ιστοσελίδα"
-                       },
-    "privacyLabel":  {
-                         "message":  "Απορρήτου"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Δεν αντιγράφηκε"
-                      },
-    "trackerNoData":  {
-                          "message":  "No data for this period"
-                      },
-    "trackerModeMonth":  {
-                             "message":  "Μηνιαία προβολή"
-                         },
-    "swExportTxtBtn":  {
-                           "message":  "ΕΞΑΓΩΓΗ ΣΕ .TXT"
-                       },
-    "markerTextTooltip":  {
-                              "message":  "Κείμενο"
-                          },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "cacheClearing":  {
-                          "message":  "Εκκαθάριση..."
-                      },
-    "trackerThatDay":  {
-                           "message":  "That day"
-                       },
-    "swTotalDurationPrefix":  {
-                                  "message":  "ΣΥΝΟΛΙΚΗ ΔΙΑΡΚΕΙΑ: "
-                              },
-    "trackerAvgThisMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Are you sure you want to delete data for"
-                             },
-    "ytDislikeTitle":  {
-                           "message":  "YouTube Dislike"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "στοιχεία"
-                        },
-    "rateBtn":  {
-                    "message":  "Βαθμολογήστε την επέκταση"
-                },
-    "clearNotesTooltip":  {
-                              "message":  "Εκκαθάριση σημειώσεων"
-                          },
-    "fontCopied":  {
-                       "message":  "Αντιγράφηκε!"
-                   },
-    "websiteBtn":  {
-                       "message":  "Επίσημη ιστοσελίδα"
-                   },
-    "darkModeTitle":  {
-                          "message":  "Σκούρο"
-                      },
-    "rulerTitle":  {
-                       "message":  "Χάρακας"
-                   },
-    "trackerTodayLabel":  {
-                              "message":  "Σήμερα"
-                          },
-    "currentRecordedLabel":  {
-                                 "message":  "ΤΡΕΧΟΥΣΑ"
-                             },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "extName":  {
-                    "message":  "All In One - Το κορυφαίο εργαλείο παραγωγικότητας"
-                },
-    "trackerThisMonth":  {
-                             "message":  "This month"
-                         },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "trackerSelectedMonth":  {
-                                 "message":  "Selected month"
-                             },
-    "techLoadingMsg":  {
-                           "message":  "Ανάλυση ιστότοπου..."
-                       },
-    "radioPause":  {
-                       "message":  "Παύση"
-                   },
-    "trackerThisMonthShort":  {
-                                  "message":  "This month"
-                              },
-    "swCopyBtn":  {
-                      "message":  "ΑΝΤΙΓΡΑΦΗ ΣΤΟ ΠΡΟΧΕΙΡΟ"
-                  },
-    "swMomentLabel":  {
-                          "message":  "Στιγμή "
-                      },
-    "donateBtn":  {
-                      "message":  "Δωρεά και υποστήριξη"
-                  },
-    "systemPageDesc":  {
-                           "message":  "Εργαλεία απενεργοποιημένα"
-                       },
-    "radioTitle":  {
-                       "message":  "Ράδιο"
-                   },
-    "notesTitle":  {
-                       "message":  "Σημειώσεις"
-                   },
-    "techScannerUnavailable":  {
-                                   "message":  "Ο σαρωτής δεν είναι διαθέσιμος σε αυτήν τη σελίδα."
-                               },
-    "resetBtn":  {
-                     "message":  "Μηδέν"
-                 },
-    "linesLabel":  {
-                       "message":  "Γραμμές"
-                   },
-    "stopBtn":  {
-                    "message":  "ΔΙΑΚΟΠΗ"
-                },
-    "supportTitle":  {
-                         "message":  "Υποστηρίξτε την επέκταση"
-                     },
-    "cacheError":  {
-                       "message":  "Σφάλμα"
-                   },
-    "stopwatchTitle":  {
-                           "message":  "Χρονόμετρο"
-                       },
-    "trackerModalTitle":  {
-                              "message":  "Webtime Tracker"
-                          },
-    "fontTitle":  {
-                      "message":  "Γραμματ."
-                  },
-    "notesPlaceholder":  {
-                             "message":  "Σημειώσεις..."
-                         },
-    "cacheTitle":  {
-                       "message":  "Cache"
-                   },
-    "radioArtist":  {
-                        "message":  "Υποστήριξη All In One"
-                    },
-    "liveHistoryLabel":  {
-                             "message":  "ΙΣΤΟΡΙΚΟ"
-                         },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "clearSiteDataBtn":  {
-                             "message":  "Εκκαθάριση ιστότοπου"
-                         },
-    "settingsTooltip":  {
-                            "message":  "Ρυθμίσεις"
-                        },
-    "lapBtn":  {
-                   "message":  "ΓΥΡΟΣ"
-               },
-    "radioPlay":  {
-                      "message":  "Παίξε"
-                  },
-    "markerClearAllTooltip":  {
-                                  "message":  "Εκκαθάριση όλων"
-                              },
-    "textLabel":  {
-                      "message":  "Κείμενο"
-                  },
-    "cancelBtn":  {
-                      "message":  "ΑΚΥΡΩΣΗ"
-                  },
-    "startBtn":  {
-                     "message":  "ΕΝΑΡΞΗ"
-                 },
-    "counterModalTitle":  {
-                              "message":  "ΜΕΤΡΗΤΗΣ ΧΑΡΑΚΤΗΡΩΝ"
-                          },
-    "importNotesTooltip":  {
-                               "message":  "Εισαγωγή"
-                           },
-    "markerThicknessTooltip":  {
-                                   "message":  "Πάχος"
-                               },
-    "blockCookiesLabel":  {
-                              "message":  "Αποκλεισμός cookies"
-                          },
-    "confirmClearHistory":  {
-                                "message":  "Διαγραφή όλου του ιστορικού;"
-                            },
-    "systemPageTitle":  {
-                            "message":  "ΣΥΣΤΗΜΑ"
-                        },
-    "grabTextTooltip":  {
-                            "message":  "Εξαγωγή κειμένου"
-                        },
-    "markLapDesc":  {
-                        "message":  "Καταγραφή στιγμής στο χρονόμετρο"
-                    },
-    "techScannerFailed":  {
-                              "message":  "Αποτυχία σάρωσης σε αυτήν τη σελίδα."
-                          },
-    "markerMoveTooltip":  {
-                              "message":  "Μετακίνηση"
-                          },
-    "trackerModeDay":  {
-                           "message":  "Ημερήσια προβολή"
-                       },
-    "swDurationLabel":  {
-                            "message":  "Διάρκεια: "
-                        }
+    "notesTitle": {
+        "message": "Σημειώσεις"
+    },
+    "whatsNewDesc": {
+        "message": "Δείτε τις τελευταίες βελτιώσεις διεπαφής που κάνουν το All In One ακόμα πιο γρήγορο και κομψό:"
+    },
+    "toastPermissionDenied": {
+        "message": "Η άδεια δεν χορηγήθηκε"
+    },
+    "clearCounterTooltip": {
+        "message": "Διαγραφή όλων"
+    },
+    "supportDesc": {
+        "message": "All In One δωρεάν. Η υποστήριξή σας φέρνει νέες λειτουργίες."
+    },
+    "trackerExportTruncated": {
+        "message": "Η εξαγωγή περικόπηκε στα 10 MB για να διατηρήσετε το αναδυόμενο παράθυρο σταθερό."
+    },
+    "whatsNewClose": {
+        "message": "ΤΟ ΚΑΤΑΛΑΒΑ"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Σβήσιμο"
+    },
+    "counterTitle": {
+        "message": "Μετρ."
+    },
+    "trackerAvgLabel": {
+        "message": "Μέσος όρος"
+    },
+    "trackerModeMonth": {
+        "message": "Μηνιαία προβολή"
+    },
+    "trackerModeAll": {
+        "message": "Όλος ο χρόνος"
+    },
+    "techCatMedia": {
+        "message": "Μέσα ενημέρωσης"
+    },
+    "trackerNoData": {
+        "message": "Δεν υπάρχουν δεδομένα για αυτήν την περίοδο"
+    },
+    "whatsNewFeature3": {
+        "message": "Υποστήριξη Favicon: Τοποθεσίες favicon στη λίστα παρακολούθησης."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Live #"
+    },
+    "confirmClearNotes": {
+        "message": "Διαγραφή όλων των σημειώσεων;"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Όλα τα δεδομένα από αυτόν τον ιστότοπο έχουν διαγραφεί!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Αναζήτηση ιστοσελίδων..."
+    },
+    "techCatTools": {
+        "message": "Εργαλεία"
+    },
+    "toastYtOff": {
+        "message": "Η προβολή \"Δεν μου αρέσει\" στο YouTube είναι απενεργοποιημένη"
+    },
+    "soundTitle": {
+        "message": "Ήχος"
+    },
+    "cacheTitle": {
+        "message": "Cache"
+    },
+    "markerCloseTooltip": {
+        "message": "Κλείσιμο"
+    },
+    "stopwatchTitle": {
+        "message": "Χρονόμετρο"
+    },
+    "clearNotesTooltip": {
+        "message": "Εκκαθάριση σημειώσεων"
+    },
+    "rulerTitle": {
+        "message": "Χάρακας"
+    },
+    "markLapDesc": {
+        "message": "Καταγραφή στιγμής στο χρονόμετρο"
+    },
+    "trackerImportEmpty": {
+        "message": "Δεν υπάρχουν έγκυρα δεδομένα παρακολούθησης για εισαγωγή."
+    },
+    "whatsNewFeature1": {
+        "message": "Ομαλές μεταβάσεις: Ομαλά κινούμενα σχέδια διαφανειών μεταξύ των εργαλείων."
+    },
+    "systemPageDesc": {
+        "message": "Εργαλεία απενεργοποιημένα"
+    },
+    "techStatLinks": {
+        "message": "Εδαφος διά παιγνίδι γκολφ"
+    },
+    "stopBtn": {
+        "message": "ΔΙΑΚΟΠΗ"
+    },
+    "swNoLaps": {
+        "message": "Δεν υπάρχουν καταγεγραμμένες στιγμές"
+    },
+    "toastTrackerImportError": {
+        "message": "Σφάλμα κατά την εισαγωγή δεδομένων παρακολούθησης!"
+    },
+    "toastRadioPlayError": {
+        "message": "Δεν είναι δυνατή η εκκίνηση του ραδιοφώνου αυτήν τη στιγμή."
+    },
+    "trackerTitle": {
+        "message": "Χρόνος web"
+    },
+    "offscreenJustification": {
+        "message": "Ροή ραδιοφώνου και ήχοι συστήματος"
+    },
+    "trackerThisMonth": {
+        "message": "Αυτόν τον μήνα"
+    },
+    "linesLabel": {
+        "message": "Γραμμές"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Αποκλείστηκαν τα cookies για αυτόν τον ιστότοπο"
+    },
+    "toastTrackerError": {
+        "message": "Σφάλμα ανανέωσης δεδομένων"
+    },
+    "trackerExportEmpty": {
+        "message": "Δεν υπάρχουν δεδομένα παρακολούθησης για εξαγωγή."
+    },
+    "techCatComm": {
+        "message": "Ανακοίνωση"
+    },
+    "deleteBtn": {
+        "message": "ΔΙΑΓΡΑΦΗ"
+    },
+    "techCatTech": {
+        "message": "τεχνολογίες"
+    },
+    "notesSaved": {
+        "message": "Αποθηκεύτηκε"
+    },
+    "toastNotesExported": {
+        "message": "Οι σημειώσεις εξήχθησαν με επιτυχία!"
+    },
+    "swMomentLabel": {
+        "message": "Στιγμή "
+    },
+    "notesModalTitle": {
+        "message": "Σημειώσεις"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Μέσος όρος (μήνας)"
+    },
+    "versionLabel": {
+        "message": "Έκδοση:"
+    },
+    "importNotesTooltip": {
+        "message": "Εισαγωγή"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Η λειτουργία φωτός ενεργοποιήθηκε"
+    },
+    "toastNotesCopied": {
+        "message": "Το κείμενο αντιγράφηκε στο πρόχειρο!"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toasts: Σύγχρονο σύστημα ειδοποιήσεων για σημαντικές ενέργειες."
+    },
+    "fontNotCopied": {
+        "message": "Δεν αντιγράφηκε"
+    },
+    "importTooltip": {
+        "message": "Εισαγωγή δεδομένων"
+    },
+    "wordsLabelShort": {
+        "message": "λόγια"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "Δεν υποστηρίζεται"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "Εκκαθάριση..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Τα δεδομένα ανανεώθηκαν!"
+    },
+    "websiteBtn": {
+        "message": "Επίσημη ιστοσελίδα"
+    },
+    "markerThicknessTooltip": {
+        "message": "Πάχος"
+    },
+    "confirmClearCounter": {
+        "message": "Είστε σίγουροι ότι θέλετε να διαγράψετε τα πάντα;"
+    },
+    "techCatAds": {
+        "message": "Διαφημίσεις"
+    },
+    "uiSettings": {
+        "message": "ΡΥΘΜΙΣΕΙΣ"
+    },
+    "trackerThatMonth": {
+        "message": "Εκείνος ο μήνας"
+    },
+    "radioModalDesc": {
+        "message": "Εισαγάγετε τον άμεσο σύνδεσμο προς τον αγαπημένο σας ραδιοφωνικό σταθμό"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Είστε βέβαιοι ότι θέλετε να διαγράψετε δεδομένα για"
+    },
+    "darkModeTitle": {
+        "message": "Σκούρο"
+    },
+    "toastCounterCleared": {
+        "message": "Το κείμενο του μετρητή έχει διαγραφεί!"
+    },
+    "techStatScripts": {
+        "message": "Σενάρια"
+    },
+    "techNetworkOptInHint": {
+        "message": "Στέλνει αιτήματα στο dns.google και στο ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Δεν υπάρχει ιστορικό live"
+    },
+    "whatsNewTitle": {
+        "message": "Τι νέο υπάρχει στην έκδοση 1.6"
+    },
+    "techNotFound": {
+        "message": "Δεν βρέθηκε."
+    },
+    "notesPlaceholder": {
+        "message": "Σημειώσεις..."
+    },
+    "radioArtist": {
+        "message": "Υποστήριξη All In One"
+    },
+    "charsLabel": {
+        "message": "Χαρακτήρες"
+    },
+    "trackerImportSuccess": {
+        "message": "Τα δεδομένα εισήχθησαν με επιτυχία!"
+    },
+    "copyEnableTitle": {
+        "message": "Αντίγραφο"
+    },
+    "techCatStats": {
+        "message": "Στατιστική"
+    },
+    "dateLabel": {
+        "message": "Ημερομηνία"
+    },
+    "techCatNetwork": {
+        "message": "Δίκτυο"
+    },
+    "techCatEcom": {
+        "message": "Ηλεκτρονικό Εμπόριο"
+    },
+    "currentRecordedLabel": {
+        "message": "ΤΡΕΧΟΥΣΑ"
+    },
+    "toastCookieOff": {
+        "message": "Ο αυτόματος αποκλεισμός cookie είναι απενεργοποιημένος"
+    },
+    "toastModuleLoadError": {
+        "message": "Σφάλμα κατά τη φόρτωση της μονάδας"
+    },
+    "techCatStyles": {
+        "message": "Στυλ"
+    },
+    "extDesc": {
+        "message": "Το απόλυτο εργαλείο που ενσωματώνει όλες τις βασικές λειτουργίες σε ένα γρήγορο, σύγχρονο και δωρεάν περιβάλλον χρήσης."
+    },
+    "resetBtn": {
+        "message": "Μηδέν"
+    },
+    "addDateTooltip": {
+        "message": "Προσθήκη ημερομηνίας"
+    },
+    "supportTitle": {
+        "message": "Υποστηρίξτε την επέκταση"
+    },
+    "toastCounterCopied": {
+        "message": "Το κείμενο αντιγράφηκε στο πρόχειρο!"
+    },
+    "savedIndicator": {
+        "message": "Αποθηκεύτηκε"
+    },
+    "counterPlaceholder": {
+        "message": "Κείμενο..."
+    },
+    "techFoundPrefix": {
+        "message": "Βρέθηκαν: "
+    },
+    "systemPageTitle": {
+        "message": "ΣΥΣΤΗΜΑ"
+    },
+    "markerClearAllTooltip": {
+        "message": "Εκκαθάριση όλων"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Απενεργοποιήστε τα αναλυτικά στοιχεία"
+    },
+    "trackerModeDay": {
+        "message": "Ημερήσια προβολή"
+    },
+    "techItemsSuffix": {
+        "message": "στοιχεία"
+    },
+    "toastStopwatchCleared": {
+        "message": "Το ζωντανό ιστορικό διαγράφηκε!"
+    },
+    "trackerTotal": {
+        "message": "Σύνολο"
+    },
+    "swStatusReady": {
+        "message": "ΕΤΟΙΜΟ"
+    },
+    "trackerTotalShort": {
+        "message": "Σύνολο"
+    },
+    "blockCookiesLabel": {
+        "message": "Αποκλεισμός cookies"
+    },
+    "markerDrawTooltip": {
+        "message": "Σχεδίαση"
+    },
+    "trackerMonthLabel": {
+        "message": "Αυτός ο μήνας"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Πίνακες"
+    },
+    "techStatImages": {
+        "message": "εικόνες"
+    },
+    "toastRadioSaved": {
+        "message": "Η διεύθυνση URL του ραδιοφωνικού σταθμού αποθηκεύτηκε!"
+    },
+    "trackerToday": {
+        "message": "Σήμερα"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Λέξεις"
+    },
+    "clearAllBtn": {
+        "message": "ΕΚΚΑΘΑΡΙΣΗ ΟΛΩΝ"
+    },
+    "toastCopyOn": {
+        "message": "Το αντίγραφο ενεργοποιήθηκε για αυτόν τον ιστότοπο"
+    },
+    "clearSiteDataBtn": {
+        "message": "Εκκαθάριση ιστότοπου"
+    },
+    "colorPickerPicking": {
+        "message": "Επιλογή..."
+    },
+    "cacheClearConfirm": {
+        "message": "Εκκαθάριση όλων των δεδομένων του ιστότοπου"
+    },
+    "markerTextTooltip": {
+        "message": "Κείμενο"
+    },
+    "radioTitle": {
+        "message": "Ράδιο"
+    },
+    "trackerSelectedMonth": {
+        "message": "Επιλεγμένος μήνας"
+    },
+    "toastCopyOff": {
+        "message": "Η αντιγραφή απενεργοποιήθηκε"
+    },
+    "fontCopied": {
+        "message": "Αντιγράφηκε!"
+    },
+    "notesLinkText": {
+        "message": "Σύνδεσμος"
+    },
+    "radioClearConfirm": {
+        "message": "Διαγραφή του αποθηκευμένου ραδιοφωνικού σταθμού;"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Μέσος όρος (μήνας)"
+    },
+    "techTitle": {
+        "message": "Τεχν."
+    },
+    "lapBtn": {
+        "message": "ΓΥΡΟΣ"
+    },
+    "playBtn": {
+        "message": "Αναπαραγωγή"
+    },
+    "toastDarkModeOn": {
+        "message": "Η σκοτεινή λειτουργία ενεργοποιήθηκε"
+    },
+    "techCatPayment": {
+        "message": "Πληρωμή"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Επιτρέπονται cookies για αυτόν τον ιστότοπο"
+    },
+    "markerLineTooltip": {
+        "message": "Γραμμή"
+    },
+    "techStatIframes": {
+        "message": "Iframes"
+    },
+    "counterModalTitle": {
+        "message": "ΜΕΤΡΗΤΗΣ ΧΑΡΑΚΤΗΡΩΝ"
+    },
+    "fontTitle": {
+        "message": "Γραμματ."
+    },
+    "toastTrackerExported": {
+        "message": "Η εξαγωγή των δεδομένων παρακολούθησης έγινε με επιτυχία!"
+    },
+    "toastNotesImportError": {
+        "message": "Σφάλμα κατά την εισαγωγή σημειώσεων!"
+    },
+    "swExportTxtBtn": {
+        "message": "ΕΞΑΓΩΓΗ ΣΕ .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Διαγραφή αυτής της στιγμής"
+    },
+    "startBtn": {
+        "message": "ΕΝΑΡΞΗ"
+    },
+    "markerMoveTooltip": {
+        "message": "Μετακίνηση"
+    },
+    "techModalTitle": {
+        "message": "ΤΕΧΝΟΛΟΓΙΕΣ ΙΣΤΟΤΟΠΟΥ"
+    },
+    "saveRadioStationBtn": {
+        "message": "ΑΠΟΘΗΚΕΥΣΗ ΣΤΑΘΜΟΥ"
+    },
+    "techCatDb": {
+        "message": "Database"
+    },
+    "toastNotesCleared": {
+        "message": "Όλες οι σημειώσεις έχουν διαγραφεί!"
+    },
+    "toastTrackerImported": {
+        "message": "Τα δεδομένα παρακολούθησης εισήχθησαν με επιτυχία!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Μη έγκυρη διεύθυνση URL! Η διεύθυνση URL πρέπει να ξεκινά με http:// ή https://"
+    },
+    "trackerImportError": {
+        "message": "Σφάλμα κατά την ανάγνωση του αρχείου."
+    },
+    "swStatusLive": {
+        "message": "ΤΟ LIVE ΒΡΙΣΚΕΤΑΙ ΣΕ ΕΞΕΛΙΞΗ"
+    },
+    "linkLabel": {
+        "message": "Σύνδεσμος"
+    },
+    "techCatAnalytics": {
+        "message": "Analytics"
+    },
+    "liveHistoryLabel": {
+        "message": "ΙΣΤΟΡΙΚΟ"
+    },
+    "colorPickerTitle": {
+        "message": "Χρώματα"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "ΣΥΝΟΛΙΚΗ ΔΙΑΡΚΕΙΑ: "
+    },
+    "stopwatchReady": {
+        "message": "ΕΤΟΙΜΟ"
+    },
+    "confirmClearHistory": {
+        "message": "Διαγραφή όλου του ιστορικού;"
+    },
+    "markerTitle": {
+        "message": "Δείκτης"
+    },
+    "trackerModalTitle": {
+        "message": "Webtime Tracker"
+    },
+    "grabTextTooltip": {
+        "message": "Εξαγωγή κειμένου"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Καθαρό πεδίο"
+    },
+    "privacyLabel": {
+        "message": "Απορρήτου"
+    },
+    "whatsNewFeature4": {
+        "message": "Εναλλαγή σχολίων: Σύντομες κινούμενες εικόνες και επιβεβαιώσεις παλμών κατά την αλλαγή των ρυθμίσεων."
+    },
+    "trackerThatDay": {
+        "message": "Εκείνη τη μέρα"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Δεν ήταν δυνατή η ενημέρωση της λίστας"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Να επιτρέπονται τα cookies για αυτόν τον ιστότοπο"
+    },
+    "textLabel": {
+        "message": "Κείμενο"
+    },
+    "cacheCleared": {
+        "message": "Ολοκληρώθηκε!"
+    },
+    "importRadioTooltip": {
+        "message": "Εισαγωγή προσαρμοσμένου ραδιοφωνικού σταθμού"
+    },
+    "radioPlay": {
+        "message": "Παίξε"
+    },
+    "techLoadingMsg": {
+        "message": "Ανάλυση ιστότοπου..."
+    },
+    "swCopyBtn": {
+        "message": "ΑΝΤΙΓΡΑΦΗ ΣΤΟ ΠΡΟΧΕΙΡΟ"
+    },
+    "techScannerFailed": {
+        "message": "Αποτυχία σάρωσης σε αυτήν τη σελίδα."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Εμφάνιση πληροφοριών δικτύου (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Σήμερα"
+    },
+    "toastNotesImported": {
+        "message": "Οι σημειώσεις εισήχθησαν με επιτυχία!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Αντιγράφηκε: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ ΑΝΤΙΓΡΑΦΗΚΕ"
+    },
+    "techCatCaching": {
+        "message": "Προσωρινή αποθήκευση"
+    },
+    "techCatSecurity": {
+        "message": "Ασφάλεια"
+    },
+    "toastYtOn": {
+        "message": "Η προβολή \"Δεν μου αρέσει\" στο YouTube είναι ενεργοποιημένη"
+    },
+    "extName": {
+        "message": "All In One - Το κορυφαίο εργαλείο παραγωγικότητας"
+    },
+    "toastCookieOn": {
+        "message": "Ο αυτόματος αποκλεισμός cookie είναι ενεργοποιημένος"
+    },
+    "techScannerUnavailable": {
+        "message": "Ο σαρωτής δεν είναι διαθέσιμος σε αυτήν τη σελίδα."
+    },
+    "notesTooLarge": {
+        "message": "Πολύ μεγάλη σημείωση"
+    },
+    "swDurationLabel": {
+        "message": "Διάρκεια: "
+    },
+    "ytDislikeTitle": {
+        "message": "YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Δωρεά και υποστήριξη"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Ρυθμίσεις"
+    },
+    "trackerThisMonthShort": {
+        "message": "Αυτόν τον μήνα"
+    },
+    "techCatSystem": {
+        "message": "Σύστημα"
+    },
+    "exportTooltip": {
+        "message": "Εξαγωγή δεδομένων"
+    },
+    "exportNotesTooltip": {
+        "message": "Εξαγωγή"
+    },
+    "radioPause": {
+        "message": "Παύση"
+    },
+    "websiteTooltip": {
+        "message": "Ιστοσελίδα"
+    },
+    "rateBtn": {
+        "message": "Βαθμολογήστε την επέκταση"
+    },
+    "techCatBase": {
+        "message": "Βάση"
+    },
+    "cacheModalTitle": {
+        "message": "COOKIES/CACHE"
+    },
+    "cancelBtn": {
+        "message": "ΑΚΥΡΩΣΗ"
+    },
+    "addUrlTooltip": {
+        "message": "Προσθήκη URL"
+    },
+    "trackerAvgTotal": {
+        "message": "Μέσος"
+    },
+    "techStatForms": {
+        "message": "Έντυπα"
+    },
+    "cacheError": {
+        "message": "Σφάλμα"
+    }
 }

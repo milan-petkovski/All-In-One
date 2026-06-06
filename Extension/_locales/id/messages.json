@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Catatan Cerdas"
-                   },
-    "supportDesc":  {
-                        "message":  "All In One adalah alat yang sepenuhnya gratis. Dukungan Anda membantu menjaganya tetap gratis dan memungkinkan pengembangan fitur baru."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Hapus"
-                           },
-    "counterTitle":  {
-                         "message":  "Penghitung Karakter"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Rata-rata"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Tampilan bulanan"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Semua waktu"
-                       },
-    "techCatMedia":  {
-                         "message":  "Media"
-                     },
-    "trackerNoData":  {
-                          "message":  "Tidak ada data untuk periode ini"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "Langsung #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Apakah Anda yakin ingin menghapus semua catatan?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Alat"
-                     },
-    "soundTitle":  {
-                       "message":  "Suara"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "Hapus semua"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Tutup"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Stopwatch"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "Hapus semua catatan"
-                          },
-    "rulerTitle":  {
-                       "message":  "Penggaris Halaman"
-                   },
-    "markLapDesc":  {
-                        "message":  "Rekam momen pada stopwatch"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "Alat modifikasi dinonaktifkan"
-                       },
-    "techStatLinks":  {
-                          "message":  "Tautan"
-                      },
-    "stopBtn":  {
-                    "message":  "BERHENTI"
-                },
-    "swNoLaps":  {
-                     "message":  "Tidak ada momen yang terekam"
-                 },
-    "trackerTitle":  {
-                         "message":  "Pelacak Waktu Web"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "Bulan ini"
-                         },
-    "linesLabel":  {
-                       "message":  "Baris"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "Komunikasi"
-                    },
-    "deleteBtn":  {
-                      "message":  "HAPUS"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Disimpan"
-                   },
-    "lapBtn":  {
-                   "message":  "PUTARAN"
-               },
-    "notesModalTitle":  {
-                            "message":  "CATATAN CERDAS"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Rata-rata"
-                            },
-    "versionLabel":  {
-                         "message":  "Versi:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "Impor catatan"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Tidak disalin"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Teknologi"
-                    },
-    "techCatServer":  {
-                          "message":  "Server"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Tidak didukung"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Audio"
-                      },
-    "cacheClearing":  {
-                          "message":  "Menghapus..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Radio"
-                         },
-    "websiteBtn":  {
-                       "message":  "Situs web resmi"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Ketebalan"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Apakah Anda yakin ingin menghapus semua?"
-                            },
-    "techCatAds":  {
-                       "message":  "Iklan"
-                   },
-    "uiSettings":  {
-                       "message":  "PENGATURAN"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "Bulan itu"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Masukkan tautan langsung ke stasiun radio favorit Anda"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Apakah Anda yakin ingin menghapus data untuk"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Mode Gelap"
-                      },
-    "techStatScripts":  {
-                            "message":  "Skrip"
-                        },
-    "swNoHistory":  {
-                        "message":  "Tidak ada riwayat langsung"
-                    },
-    "techNotFound":  {
-                         "message":  "Tidak ditemukan."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Tulis catatan di sini..."
-                         },
-    "radioArtist":  {
-                        "message":  "Didukung oleh ekstensi All In One"
-                    },
-    "charsLabel":  {
-                       "message":  "Karakter"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Aktifkan Salin"
-                        },
-    "techCatStats":  {
-                         "message":  "Statistik"
-                     },
-    "dateLabel":  {
-                      "message":  "Tanggal"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Jaringan"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Commerce"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "SAAT INI TEREKAM"
-                             },
-    "techCatStyles":  {
-                          "message":  "Gaya"
-                      },
-    "extDesc":  {
-                    "message":  "Alat pamungkas yang menyatukan semua fungsi penting dalam satu antarmuka yang cepat, modern, dan gratis."
-                },
-    "resetBtn":  {
-                     "message":  "Atur Ulang"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Tambahkan tanggal hari ini"
-                       },
-    "supportTitle":  {
-                         "message":  "Dukung ekstensi"
-                     },
-    "savedIndicator":  {
-                           "message":  "Disimpan"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "Tempel teks di sini..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Ditemukan: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "HALAMAN SISTEM"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "Hapus semua"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Tampilan harian"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "item"
-                        },
-    "trackerTotal":  {
-                         "message":  "Total"
-                     },
-    "swStatusReady":  {
-                          "message":  "SIAP"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Blokir cookie secara otomatis"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Gambar"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Bulan ini"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Tabel"
-                       },
-    "techStatImages":  {
-                           "message":  "Gambar"
-                       },
-    "trackerToday":  {
-                         "message":  "Hari ini"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Kata"
-                   },
-    "clearAllBtn":  {
-                        "message":  "HAPUS SEMUA"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "Hapus semua data dari situs ini"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Memilih..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Hapus semua data dari situs ini"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Teks"
-                          },
-    "radioTitle":  {
-                       "message":  "Radio"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Bulan terpilih"
-                             },
-    "fontCopied":  {
-                       "message":  "Disalin!"
-                   },
-    "notesLinkText":  {
-                          "message":  "Tautan"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Rata-rata"
-                            },
-    "techTitle":  {
-                      "message":  "Teknologi Situs"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Pindah"
-                          },
-    "playBtn":  {
-                    "message":  "Putar"
-                },
-    "techCatPayment":  {
-                           "message":  "Pembayaran"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Garis"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "PENGHITUNG KARAKTER"
-                          },
-    "fontTitle":  {
-                      "message":  "Pencari Font"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "EKSPOR SEBAGAI .TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Hapus momen ini"
-                    },
-    "startBtn":  {
-                     "message":  "MULAI"
-                 },
-    "techModalTitle":  {
-                           "message":  "TEKNOLOGI SITUS"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "SIMPAN STASIUN"
-                            },
-    "techCatDb":  {
-                      "message":  "Basis Data"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "SIARAN LANGSUNG BERLANGSUNG"
-                     },
-    "linkLabel":  {
-                      "message":  "Tautan"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Analitik"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "RIWAYAT LANGSUNG"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Pemilih Warna"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "Momen "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "TOTAL DURASI: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "SIAP"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Bulan ini"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Apakah Anda yakin ingin menghapus semua riwayat?"
-                            },
-    "markerTitle":  {
-                        "message":  "Penanda Halaman"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Pelacak Waktu"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Ekstrak teks dari halaman"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Hapus bidang"
-                               },
-    "privacyLabel":  {
-                         "message":  "Kebijakan Privasi"
-                     },
-    "trackerThatDay":  {
-                           "message":  "Hari itu"
-                       },
-    "textLabel":  {
-                      "message":  "Teks"
-                  },
-    "cacheCleared":  {
-                         "message":  "Dihapus!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Impor stasiun radio kustom"
-                           },
-    "radioPlay":  {
-                      "message":  "Putar"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "Pemindai sedang menganalisis situs..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "SALIN KE PAPAN KLIP"
-                  },
-    "techScannerFailed":  {
-                              "message":  "Pemindaian gagal di halaman ini."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "Hari ini"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Disalin: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ DISALIN"
-                    },
-    "techCatCaching":  {
-                           "message":  "Caching"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Keamanan"
-                        },
-    "extName":  {
-                    "message":  "All In One - Alat Produktivitas Terbaik"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "Pemindai tidak tersedia di halaman ini."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Catatan terlalu besar"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Durasi: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "Kembalikan Dislike YouTube"
-                       },
-    "donateBtn":  {
-                      "message":  "Donasi dan dukung"
-                  },
-    "techStatVideo":  {
-                          "message":  "Video"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Pengaturan"
-                        },
-    "cacheTitle":  {
-                       "message":  "Cookie dan Cache"
-                   },
-    "techCatSystem":  {
-                          "message":  "Sistem"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "Ekspor catatan"
-                           },
-    "radioPause":  {
-                       "message":  "Jeda"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Situs web ekstensi resmi"
-                       },
-    "rateBtn":  {
-                    "message":  "Beri peringkat ekstensi"
-                },
-    "techCatBase":  {
-                        "message":  "Dasar"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "COOKIE DAN CACHE"
-                        },
-    "cancelBtn":  {
-                      "message":  "BATAL"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "Tambahkan URL saat ini"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Rata-rata"
-                        },
-    "techStatForms":  {
-                          "message":  "Formulir"
-                      },
-    "cacheError":  {
-                       "message":  "Kesalahan"
-                   }
+    "notesTitle": {
+        "message": "Catatan Cerdas"
+    },
+    "whatsNewDesc": {
+        "message": "Lihat peningkatan antarmuka terbaru yang menjadikan All In One lebih cepat dan elegan:"
+    },
+    "toastPermissionDenied": {
+        "message": "Izin tidak diberikan"
+    },
+    "clearCounterTooltip": {
+        "message": "Hapus semua"
+    },
+    "supportDesc": {
+        "message": "All In One adalah alat yang sepenuhnya gratis. Dukungan Anda membantu menjaganya tetap gratis dan memungkinkan pengembangan fitur baru."
+    },
+    "trackerExportTruncated": {
+        "message": "Ekspor dipotong menjadi 10MB untuk menjaga popup tetap stabil."
+    },
+    "whatsNewClose": {
+        "message": "MENGERTI"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Hapus"
+    },
+    "counterTitle": {
+        "message": "Penghitung Karakter"
+    },
+    "trackerAvgLabel": {
+        "message": "Rata-rata"
+    },
+    "trackerModeMonth": {
+        "message": "Tampilan bulanan"
+    },
+    "trackerModeAll": {
+        "message": "Semua waktu"
+    },
+    "techCatMedia": {
+        "message": "Media"
+    },
+    "trackerNoData": {
+        "message": "Tidak ada data untuk periode ini"
+    },
+    "whatsNewFeature3": {
+        "message": "Dukungan Favicon: Situs favicon di daftar pelacak."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Langsung #"
+    },
+    "confirmClearNotes": {
+        "message": "Apakah Anda yakin ingin menghapus semua catatan?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Semua data dari situs ini telah dihapus!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Telusuri situs web..."
+    },
+    "techCatTools": {
+        "message": "Alat"
+    },
+    "toastYtOff": {
+        "message": "Tampilan Tidak Suka YouTube dinonaktifkan"
+    },
+    "soundTitle": {
+        "message": "Suara"
+    },
+    "cacheTitle": {
+        "message": "Cookie dan Cache"
+    },
+    "markerCloseTooltip": {
+        "message": "Tutup"
+    },
+    "stopwatchTitle": {
+        "message": "Stopwatch"
+    },
+    "clearNotesTooltip": {
+        "message": "Hapus semua catatan"
+    },
+    "rulerTitle": {
+        "message": "Penggaris Halaman"
+    },
+    "markLapDesc": {
+        "message": "Rekam momen pada stopwatch"
+    },
+    "trackerImportEmpty": {
+        "message": "Tidak ada data pelacak yang valid untuk diimpor."
+    },
+    "whatsNewFeature1": {
+        "message": "Transisi Halus: Animasi slide yang halus antar alat."
+    },
+    "systemPageDesc": {
+        "message": "Alat modifikasi dinonaktifkan"
+    },
+    "techStatLinks": {
+        "message": "Tautan"
+    },
+    "stopBtn": {
+        "message": "BERHENTI"
+    },
+    "swNoLaps": {
+        "message": "Tidak ada momen yang terekam"
+    },
+    "toastTrackerImportError": {
+        "message": "Terjadi kesalahan saat mengimpor data pelacak!"
+    },
+    "toastRadioPlayError": {
+        "message": "Radio tidak dapat dimulai sekarang."
+    },
+    "trackerTitle": {
+        "message": "Pelacak Waktu Web"
+    },
+    "offscreenJustification": {
+        "message": "Streaming radio dan suara sistem"
+    },
+    "trackerThisMonth": {
+        "message": "Bulan ini"
+    },
+    "linesLabel": {
+        "message": "Baris"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Cookie diblokir untuk situs ini"
+    },
+    "toastTrackerError": {
+        "message": "Terjadi kesalahan saat menyegarkan data"
+    },
+    "trackerExportEmpty": {
+        "message": "Tidak ada data pelacak untuk diekspor."
+    },
+    "techCatComm": {
+        "message": "Komunikasi"
+    },
+    "deleteBtn": {
+        "message": "HAPUS"
+    },
+    "techCatTech": {
+        "message": "Teknologi"
+    },
+    "notesSaved": {
+        "message": "Disimpan"
+    },
+    "toastNotesExported": {
+        "message": "Catatan berhasil diekspor!"
+    },
+    "swMomentLabel": {
+        "message": "Momen "
+    },
+    "notesModalTitle": {
+        "message": "CATATAN CERDAS"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Rata-rata"
+    },
+    "versionLabel": {
+        "message": "Versi:"
+    },
+    "importNotesTooltip": {
+        "message": "Impor catatan"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Mode cahaya diaktifkan"
+    },
+    "toastNotesCopied": {
+        "message": "Teks disalin ke papan klip!"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toasts: Sistem notifikasi modern untuk tindakan penting."
+    },
+    "fontNotCopied": {
+        "message": "Tidak disalin"
+    },
+    "importTooltip": {
+        "message": "Impor data"
+    },
+    "wordsLabelShort": {
+        "message": "kata-kata"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "Tidak didukung"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "Menghapus..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Data disegarkan!"
+    },
+    "websiteBtn": {
+        "message": "Situs web resmi"
+    },
+    "markerThicknessTooltip": {
+        "message": "Ketebalan"
+    },
+    "confirmClearCounter": {
+        "message": "Apakah Anda yakin ingin menghapus semua?"
+    },
+    "techCatAds": {
+        "message": "Iklan"
+    },
+    "uiSettings": {
+        "message": "PENGATURAN"
+    },
+    "trackerThatMonth": {
+        "message": "Bulan itu"
+    },
+    "radioModalDesc": {
+        "message": "Masukkan tautan langsung ke stasiun radio favorit Anda"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Apakah Anda yakin ingin menghapus data untuk"
+    },
+    "darkModeTitle": {
+        "message": "Mode Gelap"
+    },
+    "toastCounterCleared": {
+        "message": "Teks balasan telah dihapus!"
+    },
+    "techStatScripts": {
+        "message": "Skrip"
+    },
+    "techNetworkOptInHint": {
+        "message": "Mengirim permintaan ke dns.google dan ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Tidak ada riwayat langsung"
+    },
+    "whatsNewTitle": {
+        "message": "Yang Baru di Versi 1.6"
+    },
+    "techNotFound": {
+        "message": "Tidak ditemukan."
+    },
+    "notesPlaceholder": {
+        "message": "Tulis catatan di sini..."
+    },
+    "radioArtist": {
+        "message": "Didukung oleh ekstensi All In One"
+    },
+    "charsLabel": {
+        "message": "Karakter"
+    },
+    "trackerImportSuccess": {
+        "message": "Data berhasil diimpor!"
+    },
+    "copyEnableTitle": {
+        "message": "Aktifkan Salin"
+    },
+    "techCatStats": {
+        "message": "Statistik"
+    },
+    "dateLabel": {
+        "message": "Tanggal"
+    },
+    "techCatNetwork": {
+        "message": "Jaringan"
+    },
+    "techCatEcom": {
+        "message": "perdagangan elektronik"
+    },
+    "currentRecordedLabel": {
+        "message": "SAAT INI TEREKAM"
+    },
+    "toastCookieOff": {
+        "message": "Pemblokiran cookie otomatis dinonaktifkan"
+    },
+    "toastModuleLoadError": {
+        "message": "Terjadi kesalahan saat memuat modul"
+    },
+    "techCatStyles": {
+        "message": "Gaya"
+    },
+    "extDesc": {
+        "message": "Alat pamungkas yang menyatukan semua fungsi penting dalam satu antarmuka yang cepat, modern, dan gratis."
+    },
+    "resetBtn": {
+        "message": "Atur Ulang"
+    },
+    "addDateTooltip": {
+        "message": "Tambahkan tanggal hari ini"
+    },
+    "supportTitle": {
+        "message": "Dukung ekstensi"
+    },
+    "toastCounterCopied": {
+        "message": "Teks disalin ke papan klip!"
+    },
+    "savedIndicator": {
+        "message": "Disimpan"
+    },
+    "counterPlaceholder": {
+        "message": "Tempel teks di sini..."
+    },
+    "techFoundPrefix": {
+        "message": "Ditemukan: "
+    },
+    "systemPageTitle": {
+        "message": "HALAMAN SISTEM"
+    },
+    "markerClearAllTooltip": {
+        "message": "Hapus semua"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Nonaktifkan analitik"
+    },
+    "trackerModeDay": {
+        "message": "Tampilan harian"
+    },
+    "techItemsSuffix": {
+        "message": "item"
+    },
+    "toastStopwatchCleared": {
+        "message": "Riwayat langsung telah dihapus!"
+    },
+    "trackerTotal": {
+        "message": "Total"
+    },
+    "swStatusReady": {
+        "message": "SIAP"
+    },
+    "trackerTotalShort": {
+        "message": "Total"
+    },
+    "blockCookiesLabel": {
+        "message": "Blokir cookie secara otomatis"
+    },
+    "markerDrawTooltip": {
+        "message": "Gambar"
+    },
+    "trackerMonthLabel": {
+        "message": "Bulan ini"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Tabel"
+    },
+    "techStatImages": {
+        "message": "Gambar"
+    },
+    "toastRadioSaved": {
+        "message": "URL stasiun radio disimpan!"
+    },
+    "trackerToday": {
+        "message": "Hari ini"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Kata"
+    },
+    "clearAllBtn": {
+        "message": "HAPUS SEMUA"
+    },
+    "toastCopyOn": {
+        "message": "Salin diaktifkan untuk situs ini"
+    },
+    "clearSiteDataBtn": {
+        "message": "Hapus semua data dari situs ini"
+    },
+    "colorPickerPicking": {
+        "message": "Memilih..."
+    },
+    "cacheClearConfirm": {
+        "message": "Hapus semua data dari situs ini"
+    },
+    "markerTextTooltip": {
+        "message": "Teks"
+    },
+    "radioTitle": {
+        "message": "Radio"
+    },
+    "trackerSelectedMonth": {
+        "message": "Bulan terpilih"
+    },
+    "toastCopyOff": {
+        "message": "Salin dinonaktifkan"
+    },
+    "fontCopied": {
+        "message": "Disalin!"
+    },
+    "notesLinkText": {
+        "message": "Tautan"
+    },
+    "radioClearConfirm": {
+        "message": "Hapus stasiun radio yang disimpan?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Rata-rata"
+    },
+    "techTitle": {
+        "message": "Teknologi Situs"
+    },
+    "lapBtn": {
+        "message": "PUTARAN"
+    },
+    "playBtn": {
+        "message": "Putar"
+    },
+    "toastDarkModeOn": {
+        "message": "Mode gelap diaktifkan"
+    },
+    "techCatPayment": {
+        "message": "Pembayaran"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Cookie diperbolehkan untuk situs ini"
+    },
+    "markerLineTooltip": {
+        "message": "Garis"
+    },
+    "techStatIframes": {
+        "message": "iframe"
+    },
+    "counterModalTitle": {
+        "message": "PENGHITUNG KARAKTER"
+    },
+    "fontTitle": {
+        "message": "Pencari Font"
+    },
+    "toastTrackerExported": {
+        "message": "Data pelacak berhasil diekspor!"
+    },
+    "toastNotesImportError": {
+        "message": "Terjadi kesalahan saat mengimpor catatan!"
+    },
+    "swExportTxtBtn": {
+        "message": "EKSPOR SEBAGAI .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Hapus momen ini"
+    },
+    "startBtn": {
+        "message": "MULAI"
+    },
+    "markerMoveTooltip": {
+        "message": "Pindah"
+    },
+    "techModalTitle": {
+        "message": "TEKNOLOGI SITUS"
+    },
+    "saveRadioStationBtn": {
+        "message": "SIMPAN STASIUN"
+    },
+    "techCatDb": {
+        "message": "Basis Data"
+    },
+    "toastNotesCleared": {
+        "message": "Semua catatan telah dihapus!"
+    },
+    "toastTrackerImported": {
+        "message": "Data pelacak berhasil diimpor!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "URL tidak valid! URL harus diawali dengan http:// atau https://"
+    },
+    "trackerImportError": {
+        "message": "Terjadi kesalahan saat membaca file."
+    },
+    "swStatusLive": {
+        "message": "SIARAN LANGSUNG BERLANGSUNG"
+    },
+    "linkLabel": {
+        "message": "Tautan"
+    },
+    "techCatAnalytics": {
+        "message": "Analitik"
+    },
+    "liveHistoryLabel": {
+        "message": "RIWAYAT LANGSUNG"
+    },
+    "colorPickerTitle": {
+        "message": "Pemilih Warna"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "TOTAL DURASI: "
+    },
+    "stopwatchReady": {
+        "message": "SIAP"
+    },
+    "confirmClearHistory": {
+        "message": "Apakah Anda yakin ingin menghapus semua riwayat?"
+    },
+    "markerTitle": {
+        "message": "Penanda Halaman"
+    },
+    "trackerModalTitle": {
+        "message": "Pelacak Waktu"
+    },
+    "grabTextTooltip": {
+        "message": "Ekstrak teks dari halaman"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Hapus bidang"
+    },
+    "privacyLabel": {
+        "message": "Kebijakan Privasi"
+    },
+    "whatsNewFeature4": {
+        "message": "Toggle Feedback: Animasi pulsa pendek dan konfirmasi saat mengubah pengaturan."
+    },
+    "trackerThatDay": {
+        "message": "Hari itu"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Tidak dapat memperbarui daftar"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Izinkan cookie untuk situs ini"
+    },
+    "textLabel": {
+        "message": "Teks"
+    },
+    "cacheCleared": {
+        "message": "Dihapus!"
+    },
+    "importRadioTooltip": {
+        "message": "Impor stasiun radio kustom"
+    },
+    "radioPlay": {
+        "message": "Putar"
+    },
+    "techLoadingMsg": {
+        "message": "Pemindai sedang menganalisis situs..."
+    },
+    "swCopyBtn": {
+        "message": "SALIN KE PAPAN KLIP"
+    },
+    "techScannerFailed": {
+        "message": "Pemindaian gagal di halaman ini."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Tampilkan info jaringan (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Hari ini"
+    },
+    "toastNotesImported": {
+        "message": "Catatan berhasil diimpor!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Disalin: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ DISALIN"
+    },
+    "techCatCaching": {
+        "message": "cache"
+    },
+    "techCatSecurity": {
+        "message": "Keamanan"
+    },
+    "toastYtOn": {
+        "message": "Tampilan Tidak Suka YouTube diaktifkan"
+    },
+    "extName": {
+        "message": "All In One - Alat Produktivitas Terbaik"
+    },
+    "toastCookieOn": {
+        "message": "Pemblokiran cookie otomatis diaktifkan"
+    },
+    "techScannerUnavailable": {
+        "message": "Pemindai tidak tersedia di halaman ini."
+    },
+    "notesTooLarge": {
+        "message": "Catatan terlalu besar"
+    },
+    "swDurationLabel": {
+        "message": "Durasi: "
+    },
+    "ytDislikeTitle": {
+        "message": "Kembalikan Dislike YouTube"
+    },
+    "donateBtn": {
+        "message": "Donasi dan dukung"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Pengaturan"
+    },
+    "trackerThisMonthShort": {
+        "message": "Bulan ini"
+    },
+    "techCatSystem": {
+        "message": "Sistem"
+    },
+    "exportTooltip": {
+        "message": "Ekspor data"
+    },
+    "exportNotesTooltip": {
+        "message": "Ekspor catatan"
+    },
+    "radioPause": {
+        "message": "Jeda"
+    },
+    "websiteTooltip": {
+        "message": "Situs web ekstensi resmi"
+    },
+    "rateBtn": {
+        "message": "Beri peringkat ekstensi"
+    },
+    "techCatBase": {
+        "message": "Dasar"
+    },
+    "cacheModalTitle": {
+        "message": "COOKIE DAN CACHE"
+    },
+    "cancelBtn": {
+        "message": "BATAL"
+    },
+    "addUrlTooltip": {
+        "message": "Tambahkan URL saat ini"
+    },
+    "trackerAvgTotal": {
+        "message": "Rata-rata"
+    },
+    "techStatForms": {
+        "message": "Formulir"
+    },
+    "cacheError": {
+        "message": "Kesalahan"
+    }
 }

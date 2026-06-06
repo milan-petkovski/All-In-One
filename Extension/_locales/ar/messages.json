@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "ملاحظات"
-                   },
-    "supportDesc":  {
-                        "message":  "All In One مجانية. دعمك يضيف ميزات جديدة."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "الخلفية"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "مسح"
-                           },
-    "counterTitle":  {
-                         "message":  "عداد"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "متوسط"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "العرض الشهري"
-                         },
-    "trackerModeAll":  {
-                           "message":  "كل الوقت"
-                       },
-    "techCatMedia":  {
-                         "message":  "الوسائط"
-                     },
-    "trackerNoData":  {
-                          "message":  "لا توجد بيانات لهذه الفترة"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "مباشر #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "مسح كل الملاحظات؟"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "الأدوات"
-                     },
-    "soundTitle":  {
-                       "message":  "الصوت"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "مسح الكل"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "إغلاق"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "ساعة الإيقاف"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "مسح الملاحظات"
-                          },
-    "rulerTitle":  {
-                       "message":  "مسطرة"
-                   },
-    "markLapDesc":  {
-                        "message":  "سجل لحظة على ساعة الإيقاف"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "الأدوات معطلة"
-                       },
-    "techStatLinks":  {
-                          "message":  "الروابط"
-                      },
-    "stopBtn":  {
-                    "message":  "إيقاف"
-                },
-    "swNoLaps":  {
-                     "message":  "لا توجد لحظات مسجلة"
-                 },
-    "trackerTitle":  {
-                         "message":  "وقت الويب"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "هذا الشهر"
-                         },
-    "linesLabel":  {
-                       "message":  "أسطر"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "التواصل"
-                    },
-    "deleteBtn":  {
-                      "message":  "حذف"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "تم الحفظ"
-                   },
-    "lapBtn":  {
-                   "message":  "لفة"
-               },
-    "notesModalTitle":  {
-                            "message":  "ملاحظات"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "متوسط"
-                            },
-    "versionLabel":  {
-                         "message":  "الإصدار:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "استيراد"
-                           },
-    "techCatBuild":  {
-                         "message":  "البناء"
-                     },
-    "fontNotCopied":  {
-                          "message":  "لم يتم النسخ"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "التقنيات"
-                    },
-    "techCatServer":  {
-                          "message":  "الخادم"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "غير مدعوم"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "الصوت"
-                      },
-    "cacheClearing":  {
-                          "message":  "جارِ المسح..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "راديو"
-                         },
-    "websiteBtn":  {
-                       "message":  "الموقع الرسمي"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "السُمك"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "هل أنت متأكد أنك تريد مسح الكل؟"
-                            },
-    "techCatAds":  {
-                       "message":  "الإعلانات"
-                   },
-    "uiSettings":  {
-                       "message":  "الإعدادات"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "ذلك الشهر"
-                         },
-    "radioModalDesc":  {
-                           "message":  "أدخل الرابط المباشر لمحطة الراديو المفضلة لديك"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "هل أنت متأكد أنك تريد حذف البيانات لـ"
-                             },
-    "darkModeTitle":  {
-                          "message":  "الوضع الداكن"
-                      },
-    "techStatScripts":  {
-                            "message":  "البرامج النصية"
-                        },
-    "swNoHistory":  {
-                        "message":  "لا يوجد سجل مباشر"
-                    },
-    "techNotFound":  {
-                         "message":  "غير موجود."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "ملاحظات..."
-                         },
-    "radioArtist":  {
-                        "message":  "بدعم All In One"
-                    },
-    "charsLabel":  {
-                       "message":  "حروف"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "نسخ"
-                        },
-    "techCatStats":  {
-                         "message":  "الإحصائيات"
-                     },
-    "dateLabel":  {
-                      "message":  "تاريخ"
-                  },
-    "techCatNetwork":  {
-                           "message":  "الشبكة"
-                       },
-    "techCatEcom":  {
-                        "message":  "التجارة الإلكترونية"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "الحالي"
-                             },
-    "techCatStyles":  {
-                          "message":  "الأنماط"
-                      },
-    "extDesc":  {
-                    "message":  "الأداة النهائية التي تجمع كل الوظائف الأساسية في واجهة واحدة سريعة، حديثة ومجانية."
-                },
-    "resetBtn":  {
-                     "message":  "إعادة تعيين"
-                 },
-    "addDateTooltip":  {
-                           "message":  "إضافة تاريخ"
-                       },
-    "supportTitle":  {
-                         "message":  "دعم الإضافة"
-                     },
-    "savedIndicator":  {
-                           "message":  "تم الحفظ"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "النص..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "تم العثور على: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "النظام"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "مسح الكل"
-                              },
-    "trackerModeDay":  {
-                           "message":  "العرض اليومي"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "عناصر"
-                        },
-    "trackerTotal":  {
-                         "message":  "المجموع"
-                     },
-    "swStatusReady":  {
-                          "message":  "جاهز"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "المجموع"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "حظر الكوكيز"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "رسم"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "هذا الشهر"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "الجداول"
-                       },
-    "techStatImages":  {
-                           "message":  "الصور"
-                       },
-    "trackerToday":  {
-                         "message":  "اليوم"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "كلمات"
-                   },
-    "clearAllBtn":  {
-                        "message":  "مسح الكل"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "مسح الموقع"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "تحديد..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "مسح جميع البيانات من هذا الموقع"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "نص"
-                          },
-    "radioTitle":  {
-                       "message":  "راديو"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "الشهر المحدد"
-                             },
-    "fontCopied":  {
-                       "message":  "تم النسخ!"
-                   },
-    "notesLinkText":  {
-                          "message":  "رابط"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "متوسط"
-                            },
-    "techTitle":  {
-                      "message":  "تقنيات"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "تحريك"
-                          },
-    "playBtn":  {
-                    "message":  "تشغيل"
-                },
-    "techCatPayment":  {
-                           "message":  "الدفع"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "خط"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "عداد"
-                          },
-    "fontTitle":  {
-                      "message":  "الخطوط"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "تصدير كـ .TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "احذف هذه اللحظة"
-                    },
-    "startBtn":  {
-                     "message":  "بدء"
-                 },
-    "techModalTitle":  {
-                           "message":  "تقنيات"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "حفظ المحطة"
-                            },
-    "techCatDb":  {
-                      "message":  "قاعدة البيانات"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "بث مباشر قيد التقدم"
-                     },
-    "linkLabel":  {
-                      "message":  "رابط"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "التحليلات"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "التاريخ"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "الألوان"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "لحظة "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "المدة الإجمالية: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "جاهز"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "هذا الشهر"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "مسح كل السجل؟"
-                            },
-    "markerTitle":  {
-                        "message":  "علامة"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "متتبع الوقت"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "استخراج النص"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "مسح الحقل"
-                               },
-    "privacyLabel":  {
-                         "message":  "الخصوصية"
-                     },
-    "trackerThatDay":  {
-                           "message":  "ذلك اليوم"
-                       },
-    "textLabel":  {
-                      "message":  "نص"
-                  },
-    "cacheCleared":  {
-                         "message":  "تم المسح!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "استيراد محطة راديو مخصصة"
-                           },
-    "radioPlay":  {
-                      "message":  "تشغيل"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "تحليل الموقع..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "نسخ إلى الحافظة"
-                  },
-    "techScannerFailed":  {
-                              "message":  "فشل المسح في هذه الصفحة."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "اليوم"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "تم النسخ: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ تم النسخ"
-                    },
-    "techCatCaching":  {
-                           "message":  "التخزين المؤقت"
-                       },
-    "techCatSecurity":  {
-                            "message":  "الأمان"
-                        },
-    "extName":  {
-                    "message":  "All In One - أفضل أداة للإنتاجية"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "الماسح غير متاح في هذه الصفحة."
-                               },
-    "notesTooLarge":  {
-                          "message":  "الملاحظة كبيرة جدًا"
-                      },
-    "swDurationLabel":  {
-                            "message":  "المدة: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "يوتيوب Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "تبرع وادعم"
-                  },
-    "techStatVideo":  {
-                          "message":  "الفيديو"
-                      },
-    "settingsTooltip":  {
-                            "message":  "الإعدادات"
-                        },
-    "cacheTitle":  {
-                       "message":  "كوكيز/كاش"
-                   },
-    "techCatSystem":  {
-                          "message":  "النظام"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "تصدير"
-                           },
-    "radioPause":  {
-                       "message":  "إيقاف مؤقت"
-                   },
-    "websiteTooltip":  {
-                           "message":  "الموقع الرسمي"
-                       },
-    "rateBtn":  {
-                    "message":  "تقييم الإضافة"
-                },
-    "techCatBase":  {
-                        "message":  "الأساس"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "كوكيز/كاش"
-                        },
-    "cancelBtn":  {
-                      "message":  "إلغاء"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "إضافة رابط"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "متوسط"
-                        },
-    "techStatForms":  {
-                          "message":  "النماذج"
-                      },
-    "cacheError":  {
-                       "message":  "خطأ"
-                   }
+    "notesTitle": {
+        "message": "ملاحظات"
+    },
+    "whatsNewDesc": {
+        "message": "اطلع على أحدث تحسينات الواجهة التي تجعل الكل في واحد أسرع وأكثر أناقة:"
+    },
+    "toastPermissionDenied": {
+        "message": "لم يتم منح الإذن"
+    },
+    "clearCounterTooltip": {
+        "message": "مسح الكل"
+    },
+    "supportDesc": {
+        "message": "All In One مجانية. دعمك يضيف ميزات جديدة."
+    },
+    "trackerExportTruncated": {
+        "message": "تم اقتطاع التصدير إلى 10 ميغابايت للحفاظ على استقرار النافذة المنبثقة."
+    },
+    "whatsNewClose": {
+        "message": "فهمتها"
+    },
+    "techCatBackend": {
+        "message": "الخلفية"
+    },
+    "markerEraseTooltip": {
+        "message": "مسح"
+    },
+    "counterTitle": {
+        "message": "عداد"
+    },
+    "trackerAvgLabel": {
+        "message": "متوسط"
+    },
+    "trackerModeMonth": {
+        "message": "العرض الشهري"
+    },
+    "trackerModeAll": {
+        "message": "كل الوقت"
+    },
+    "techCatMedia": {
+        "message": "الوسائط"
+    },
+    "trackerNoData": {
+        "message": "لا توجد بيانات لهذه الفترة"
+    },
+    "whatsNewFeature3": {
+        "message": "دعم Favicon: أيقونات الموقع المفضلة في قائمة التتبع."
+    },
+    "swLiveTitlePrefix": {
+        "message": "مباشر #"
+    },
+    "confirmClearNotes": {
+        "message": "مسح كل الملاحظات؟"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "تم مسح كافة البيانات من هذا الموقع!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "بحث في المواقع..."
+    },
+    "techCatTools": {
+        "message": "الأدوات"
+    },
+    "toastYtOff": {
+        "message": "تم تعطيل عرض عدم الإعجاب على YouTube"
+    },
+    "soundTitle": {
+        "message": "الصوت"
+    },
+    "cacheTitle": {
+        "message": "كوكيز/كاش"
+    },
+    "markerCloseTooltip": {
+        "message": "إغلاق"
+    },
+    "stopwatchTitle": {
+        "message": "ساعة الإيقاف"
+    },
+    "clearNotesTooltip": {
+        "message": "مسح الملاحظات"
+    },
+    "rulerTitle": {
+        "message": "مسطرة"
+    },
+    "markLapDesc": {
+        "message": "سجل لحظة على ساعة الإيقاف"
+    },
+    "trackerImportEmpty": {
+        "message": "لا توجد بيانات تعقب صالحة لاستيرادها."
+    },
+    "whatsNewFeature1": {
+        "message": "انتقالات سلسة: رسوم متحركة سلسة للشرائح بين الأدوات."
+    },
+    "systemPageDesc": {
+        "message": "الأدوات معطلة"
+    },
+    "techStatLinks": {
+        "message": "الروابط"
+    },
+    "stopBtn": {
+        "message": "إيقاف"
+    },
+    "swNoLaps": {
+        "message": "لا توجد لحظات مسجلة"
+    },
+    "toastTrackerImportError": {
+        "message": "خطأ في استيراد بيانات التعقب!"
+    },
+    "toastRadioPlayError": {
+        "message": "لا يمكن بدء تشغيل الراديو الآن."
+    },
+    "trackerTitle": {
+        "message": "وقت الويب"
+    },
+    "offscreenJustification": {
+        "message": "تدفق الراديو وأصوات النظام"
+    },
+    "trackerThisMonth": {
+        "message": "هذا الشهر"
+    },
+    "linesLabel": {
+        "message": "أسطر"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "تم حظر ملفات تعريف الارتباط لهذا الموقع"
+    },
+    "toastTrackerError": {
+        "message": "حدث خطأ أثناء تحديث البيانات"
+    },
+    "trackerExportEmpty": {
+        "message": "لا توجد بيانات تعقب للتصدير."
+    },
+    "techCatComm": {
+        "message": "التواصل"
+    },
+    "deleteBtn": {
+        "message": "حذف"
+    },
+    "techCatTech": {
+        "message": "التقنيات"
+    },
+    "notesSaved": {
+        "message": "تم الحفظ"
+    },
+    "toastNotesExported": {
+        "message": "تم تصدير الملاحظات بنجاح!"
+    },
+    "swMomentLabel": {
+        "message": "لحظة "
+    },
+    "notesModalTitle": {
+        "message": "ملاحظات"
+    },
+    "trackerAvgThisMonth": {
+        "message": "متوسط"
+    },
+    "versionLabel": {
+        "message": "الإصدار:"
+    },
+    "importNotesTooltip": {
+        "message": "استيراد"
+    },
+    "techCatBuild": {
+        "message": "البناء"
+    },
+    "toastDarkModeOff": {
+        "message": "تم تمكين وضع الضوء"
+    },
+    "toastNotesCopied": {
+        "message": "تم نسخ النص إلى الحافظة!"
+    },
+    "whatsNewFeature2": {
+        "message": "الخبز المحمص المميز: نظام إعلام حديث للإجراءات المهمة."
+    },
+    "fontNotCopied": {
+        "message": "لم يتم النسخ"
+    },
+    "importTooltip": {
+        "message": "استيراد البيانات"
+    },
+    "wordsLabelShort": {
+        "message": "كلمات"
+    },
+    "techCatServer": {
+        "message": "الخادم"
+    },
+    "cacheNotSupported": {
+        "message": "غير مدعوم"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "الصوت"
+    },
+    "cacheClearing": {
+        "message": "جارِ المسح..."
+    },
+    "radioTitleCustom": {
+        "message": "راديو"
+    },
+    "toastTrackerRefreshed": {
+        "message": "تم تحديث البيانات!"
+    },
+    "websiteBtn": {
+        "message": "الموقع الرسمي"
+    },
+    "markerThicknessTooltip": {
+        "message": "السُمك"
+    },
+    "confirmClearCounter": {
+        "message": "هل أنت متأكد أنك تريد مسح الكل؟"
+    },
+    "techCatAds": {
+        "message": "الإعلانات"
+    },
+    "uiSettings": {
+        "message": "الإعدادات"
+    },
+    "trackerThatMonth": {
+        "message": "ذلك الشهر"
+    },
+    "radioModalDesc": {
+        "message": "أدخل الرابط المباشر لمحطة الراديو المفضلة لديك"
+    },
+    "trackerDeleteConfirm": {
+        "message": "هل أنت متأكد أنك تريد حذف البيانات لـ"
+    },
+    "darkModeTitle": {
+        "message": "الوضع الداكن"
+    },
+    "toastCounterCleared": {
+        "message": "تم مسح النص المضاد!"
+    },
+    "techStatScripts": {
+        "message": "البرامج النصية"
+    },
+    "techNetworkOptInHint": {
+        "message": "يرسل الطلبات إلى dns.google وipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "لا يوجد سجل مباشر"
+    },
+    "whatsNewTitle": {
+        "message": "ما الجديد في الإصدار 1.6"
+    },
+    "techNotFound": {
+        "message": "غير موجود."
+    },
+    "notesPlaceholder": {
+        "message": "ملاحظات..."
+    },
+    "radioArtist": {
+        "message": "بدعم All In One"
+    },
+    "charsLabel": {
+        "message": "حروف"
+    },
+    "trackerImportSuccess": {
+        "message": "تم استيراد البيانات بنجاح!"
+    },
+    "copyEnableTitle": {
+        "message": "نسخ"
+    },
+    "techCatStats": {
+        "message": "الإحصائيات"
+    },
+    "dateLabel": {
+        "message": "تاريخ"
+    },
+    "techCatNetwork": {
+        "message": "الشبكة"
+    },
+    "techCatEcom": {
+        "message": "التجارة الإلكترونية"
+    },
+    "currentRecordedLabel": {
+        "message": "الحالي"
+    },
+    "toastCookieOff": {
+        "message": "تم تعطيل الحظر التلقائي لملفات تعريف الارتباط"
+    },
+    "toastModuleLoadError": {
+        "message": "خطأ في تحميل الوحدة النمطية"
+    },
+    "techCatStyles": {
+        "message": "الأنماط"
+    },
+    "extDesc": {
+        "message": "الأداة النهائية التي تجمع كل الوظائف الأساسية في واجهة واحدة سريعة، حديثة ومجانية."
+    },
+    "resetBtn": {
+        "message": "إعادة تعيين"
+    },
+    "addDateTooltip": {
+        "message": "إضافة تاريخ"
+    },
+    "supportTitle": {
+        "message": "دعم الإضافة"
+    },
+    "toastCounterCopied": {
+        "message": "تم نسخ النص إلى الحافظة!"
+    },
+    "savedIndicator": {
+        "message": "تم الحفظ"
+    },
+    "counterPlaceholder": {
+        "message": "النص..."
+    },
+    "techFoundPrefix": {
+        "message": "تم العثور على: "
+    },
+    "systemPageTitle": {
+        "message": "النظام"
+    },
+    "markerClearAllTooltip": {
+        "message": "مسح الكل"
+    },
+    "analyticsOptOutLabel": {
+        "message": "تعطيل التحليلات"
+    },
+    "trackerModeDay": {
+        "message": "العرض اليومي"
+    },
+    "techItemsSuffix": {
+        "message": "عناصر"
+    },
+    "toastStopwatchCleared": {
+        "message": "تم مسح التاريخ المباشر!"
+    },
+    "trackerTotal": {
+        "message": "المجموع"
+    },
+    "swStatusReady": {
+        "message": "جاهز"
+    },
+    "trackerTotalShort": {
+        "message": "المجموع"
+    },
+    "blockCookiesLabel": {
+        "message": "حظر الكوكيز"
+    },
+    "markerDrawTooltip": {
+        "message": "رسم"
+    },
+    "trackerMonthLabel": {
+        "message": "هذا الشهر"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "الجداول"
+    },
+    "techStatImages": {
+        "message": "الصور"
+    },
+    "toastRadioSaved": {
+        "message": "تم حفظ عنوان URL لمحطة الراديو!"
+    },
+    "trackerToday": {
+        "message": "اليوم"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "كلمات"
+    },
+    "clearAllBtn": {
+        "message": "مسح الكل"
+    },
+    "toastCopyOn": {
+        "message": "تم تمكين النسخ لهذا الموقع"
+    },
+    "clearSiteDataBtn": {
+        "message": "مسح الموقع"
+    },
+    "colorPickerPicking": {
+        "message": "تحديد..."
+    },
+    "cacheClearConfirm": {
+        "message": "مسح جميع البيانات من هذا الموقع"
+    },
+    "markerTextTooltip": {
+        "message": "نص"
+    },
+    "radioTitle": {
+        "message": "راديو"
+    },
+    "trackerSelectedMonth": {
+        "message": "الشهر المحدد"
+    },
+    "toastCopyOff": {
+        "message": "تم تعطيل النسخ"
+    },
+    "fontCopied": {
+        "message": "تم النسخ!"
+    },
+    "notesLinkText": {
+        "message": "رابط"
+    },
+    "radioClearConfirm": {
+        "message": "هل تريد مسح محطة الراديو المحفوظة؟"
+    },
+    "trackerAvgThatMonth": {
+        "message": "متوسط"
+    },
+    "techTitle": {
+        "message": "تقنيات"
+    },
+    "lapBtn": {
+        "message": "لفة"
+    },
+    "playBtn": {
+        "message": "تشغيل"
+    },
+    "toastDarkModeOn": {
+        "message": "تم تمكين الوضع المظلم"
+    },
+    "techCatPayment": {
+        "message": "الدفع"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "ملفات تعريف الارتباط المسموح بها لهذا الموقع"
+    },
+    "markerLineTooltip": {
+        "message": "خط"
+    },
+    "techStatIframes": {
+        "message": "إطارات iframe"
+    },
+    "counterModalTitle": {
+        "message": "عداد"
+    },
+    "fontTitle": {
+        "message": "الخطوط"
+    },
+    "toastTrackerExported": {
+        "message": "تم تصدير بيانات التعقب بنجاح!"
+    },
+    "toastNotesImportError": {
+        "message": "حدث خطأ أثناء استيراد الملاحظات!"
+    },
+    "swExportTxtBtn": {
+        "message": "تصدير كـ .TXT"
+    },
+    "swUndoTitle": {
+        "message": "احذف هذه اللحظة"
+    },
+    "startBtn": {
+        "message": "بدء"
+    },
+    "markerMoveTooltip": {
+        "message": "تحريك"
+    },
+    "techModalTitle": {
+        "message": "تقنيات"
+    },
+    "saveRadioStationBtn": {
+        "message": "حفظ المحطة"
+    },
+    "techCatDb": {
+        "message": "قاعدة البيانات"
+    },
+    "toastNotesCleared": {
+        "message": "لقد تم مسح كافة الملاحظات!"
+    },
+    "toastTrackerImported": {
+        "message": "تم استيراد بيانات التعقب بنجاح!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "عنوان URL غير صالح! يجب أن يبدأ عنوان URL بـ http:// أو https://"
+    },
+    "trackerImportError": {
+        "message": "خطأ في قراءة الملف."
+    },
+    "swStatusLive": {
+        "message": "بث مباشر قيد التقدم"
+    },
+    "linkLabel": {
+        "message": "رابط"
+    },
+    "techCatAnalytics": {
+        "message": "التحليلات"
+    },
+    "liveHistoryLabel": {
+        "message": "التاريخ"
+    },
+    "colorPickerTitle": {
+        "message": "الألوان"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "المدة الإجمالية: "
+    },
+    "stopwatchReady": {
+        "message": "جاهز"
+    },
+    "confirmClearHistory": {
+        "message": "مسح كل السجل؟"
+    },
+    "markerTitle": {
+        "message": "علامة"
+    },
+    "trackerModalTitle": {
+        "message": "متتبع الوقت"
+    },
+    "grabTextTooltip": {
+        "message": "استخراج النص"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "مسح الحقل"
+    },
+    "privacyLabel": {
+        "message": "الخصوصية"
+    },
+    "whatsNewFeature4": {
+        "message": "تبديل التعليقات: الرسوم المتحركة والتأكيدات ذات النبضة القصيرة عند تغيير الإعدادات."
+    },
+    "trackerThatDay": {
+        "message": "ذلك اليوم"
+    },
+    "toastCookieWhitelistError": {
+        "message": "لا يمكن تحديث القائمة"
+    },
+    "cookieWhitelistLabel": {
+        "message": "السماح بملفات تعريف الارتباط لهذا الموقع"
+    },
+    "textLabel": {
+        "message": "نص"
+    },
+    "cacheCleared": {
+        "message": "تم المسح!"
+    },
+    "importRadioTooltip": {
+        "message": "استيراد محطة راديو مخصصة"
+    },
+    "radioPlay": {
+        "message": "تشغيل"
+    },
+    "techLoadingMsg": {
+        "message": "تحليل الموقع..."
+    },
+    "swCopyBtn": {
+        "message": "نسخ إلى الحافظة"
+    },
+    "techScannerFailed": {
+        "message": "فشل المسح في هذه الصفحة."
+    },
+    "techNetworkOptInLabel": {
+        "message": "عرض معلومات الشبكة (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "اليوم"
+    },
+    "toastNotesImported": {
+        "message": "تم استيراد الملاحظات بنجاح!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "تم النسخ: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ تم النسخ"
+    },
+    "techCatCaching": {
+        "message": "التخزين المؤقت"
+    },
+    "techCatSecurity": {
+        "message": "الأمان"
+    },
+    "toastYtOn": {
+        "message": "تم تمكين عرض عدم الإعجاب على YouTube"
+    },
+    "extName": {
+        "message": "All In One - أفضل أداة للإنتاجية"
+    },
+    "toastCookieOn": {
+        "message": "تم تمكين الحظر التلقائي لملفات تعريف الارتباط"
+    },
+    "techScannerUnavailable": {
+        "message": "الماسح غير متاح في هذه الصفحة."
+    },
+    "notesTooLarge": {
+        "message": "الملاحظة كبيرة جدًا"
+    },
+    "swDurationLabel": {
+        "message": "المدة: "
+    },
+    "ytDislikeTitle": {
+        "message": "يوتيوب Dislike"
+    },
+    "donateBtn": {
+        "message": "تبرع وادعم"
+    },
+    "techStatVideo": {
+        "message": "الفيديو"
+    },
+    "settingsTooltip": {
+        "message": "الإعدادات"
+    },
+    "trackerThisMonthShort": {
+        "message": "هذا الشهر"
+    },
+    "techCatSystem": {
+        "message": "النظام"
+    },
+    "exportTooltip": {
+        "message": "تصدير البيانات"
+    },
+    "exportNotesTooltip": {
+        "message": "تصدير"
+    },
+    "radioPause": {
+        "message": "إيقاف مؤقت"
+    },
+    "websiteTooltip": {
+        "message": "الموقع الرسمي"
+    },
+    "rateBtn": {
+        "message": "تقييم الإضافة"
+    },
+    "techCatBase": {
+        "message": "الأساس"
+    },
+    "cacheModalTitle": {
+        "message": "كوكيز/كاش"
+    },
+    "cancelBtn": {
+        "message": "إلغاء"
+    },
+    "addUrlTooltip": {
+        "message": "إضافة رابط"
+    },
+    "trackerAvgTotal": {
+        "message": "متوسط"
+    },
+    "techStatForms": {
+        "message": "النماذج"
+    },
+    "cacheError": {
+        "message": "خطأ"
+    }
 }

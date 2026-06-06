@@ -1,413 +1,656 @@
 {
-    "swCopiedBtn":  {
-                        "message":  "✓ КОПИРАНО"
-                    },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "techNotFound":  {
-                         "message":  "Не е намерено."
-                     },
-    "cacheNotSupported":  {
-                              "message":  "Не се поддържа"
-                          },
-    "trackerAvgLabel":  {
-                            "message":  "Средно"
-                        },
-    "colorPickerTitle":  {
-                             "message":  "Цветове"
-                         },
-    "trackerThatMonth":  {
-                             "message":  "Този месец"
-                         },
-    "counterPlaceholder":  {
-                               "message":  "Текст тук..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Изчисти сайта"
-                          },
-    "trackerModeAll":  {
-                           "message":  "Цялото време"
-                       },
-    "swLiveTitlePrefix":  {
-                              "message":  "Живо #"
-                          },
-    "notesSaved":  {
-                       "message":  "Запазено"
-                   },
-    "trackerTitle":  {
-                         "message":  "Проследяване"
-                     },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "trackerTotal":  {
-                         "message":  "Общо"
-                     },
-    "savedIndicator":  {
-                           "message":  "Запазено"
-                       },
-    "markerDrawTooltip":  {
-                              "message":  "Рисувай"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "wordsLabel":  {
-                       "message":  "Думи"
-                   },
-    "stopwatchReady":  {
-                           "message":  "ГОТОВ"
-                       },
-    "notesLinkText":  {
-                          "message":  "Връзка"
-                      },
-    "extDesc":  {
-                    "message":  "Ултимативният инструмент, който обединява всички важни функции в един бърз, модерен и безплатен интерфейс."
-                },
-    "dateLabel":  {
-                      "message":  "Дата"
-                  },
-    "swStatusLive":  {
-                         "message":  "НА ЖИВО"
-                     },
-    "linkLabel":  {
-                      "message":  "Връзка"
-                  },
-    "trackerAvgThatMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "addUrlTooltip":  {
-                          "message":  "Добави URL"
-                      },
-    "clearCounterTooltip":  {
-                                "message":  "Изчисти всичко"
-                            },
-    "counterTitle":  {
-                         "message":  "Брояч знаци"
-                     },
-    "markerEraseTooltip":  {
-                               "message":  "Изтрий"
-                           },
-    "swNoHistory":  {
-                        "message":  "Няма история"
-                    },
-    "deleteBtn":  {
-                      "message":  "ИЗТРИЙ"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "versionLabel":  {
-                         "message":  "Версия:"
-                     },
-    "clearAllBtn":  {
-                        "message":  "ИЗЧИСТИ ВСИЧКО"
-                    },
-    "uiSettings":  {
-                       "message":  "НАСТРОЙКИ"
-                   },
-    "copyEnableTitle":  {
-                            "message":  "Копирай"
-                        },
-    "soundTitle":  {
-                       "message":  "Звук"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "charsLabel":  {
-                       "message":  "Знаци"
-                   },
-    "markerCloseTooltip":  {
-                               "message":  "Затвори"
-                           },
-    "playBtn":  {
-                    "message":  "Пусни"
-                },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "markerLineTooltip":  {
-                              "message":  "Линия"
-                          },
-    "colorPickerCopied":  {
-                              "message":  "Копирано: "
-                          },
-    "swStatusReady":  {
-                          "message":  "ГОТОВ"
-                      },
-    "cacheModalTitle":  {
-                            "message":  "БИСКВИТКИ/КЕШ"
-                        },
-    "trackerMonthLabel":  {
-                              "message":  "Този месец"
-                          },
-    "colorPickerPicking":  {
-                               "message":  "Избор..."
-                           },
-    "swUndoTitle":  {
-                        "message":  "Изтрий момент"
-                    },
-    "trackerAvgTotal":  {
-                            "message":  "Средно"
-                        },
-    "addDateTooltip":  {
-                           "message":  "Добави дата"
-                       },
-    "techTitle":  {
-                      "message":  "Технологии"
-                  },
-    "trackerToday":  {
-                         "message":  "Днес"
-                     },
-    "notesModalTitle":  {
-                            "message":  "БЕЛЕЖКИ"
-                        },
-    "notesTooLarge":  {
-                          "message":  "Бележка твърде голяма"
-                      },
-    "cacheCleared":  {
-                         "message":  "Изчистено!"
-                     },
-    "markerTitle":  {
-                        "message":  "Маркер"
-                    },
-    "exportNotesTooltip":  {
-                               "message":  "Експортирай"
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Намерени: "
-                        },
-    "techModalTitle":  {
-                           "message":  "ТЕХНОЛОГИИ"
-                       },
-    "confirmClearNotes":  {
-                              "message":  "Изчисти всички бележки?"
-                          },
-    "swNoLaps":  {
-                     "message":  "Няма моменти"
-                 },
-    "confirmClearCounter":  {
-                                "message":  "Сигурни ли сте, че искате да изчистите всичко?"
-                            },
-    "supportDesc":  {
-                        "message":  "All In One е безплатен. Подкрепата ти помага за нови функции."
-                    },
-    "websiteTooltip":  {
-                           "message":  "Официален сайт"
-                       },
-    "privacyLabel":  {
-                         "message":  "Поверителност"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Не е копирано"
-                      },
-    "trackerNoData":  {
-                          "message":  "No data for this period"
-                      },
-    "trackerModeMonth":  {
-                             "message":  "Месечен изглед"
-                         },
-    "swExportTxtBtn":  {
-                           "message":  "ЕКСПОРТ .TXT"
-                       },
-    "markerTextTooltip":  {
-                              "message":  "Текст"
-                          },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "cacheClearing":  {
-                          "message":  "Изчистване..."
-                      },
-    "trackerThatDay":  {
-                           "message":  "Този ден"
-                       },
-    "swTotalDurationPrefix":  {
-                                  "message":  "ОБЩО ВРЕМЕ: "
-                              },
-    "trackerAvgThisMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Are you sure you want to delete data for"
-                             },
-    "ytDislikeTitle":  {
-                           "message":  "YouTube Dislike"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "елемента"
-                        },
-    "rateBtn":  {
-                    "message":  "Оцени разширението"
-                },
-    "clearNotesTooltip":  {
-                              "message":  "Изчисти бележки"
-                          },
-    "fontCopied":  {
-                       "message":  "Копирано!"
-                   },
-    "websiteBtn":  {
-                       "message":  "Официален сайт"
-                   },
-    "darkModeTitle":  {
-                          "message":  "Тъмен режим"
-                      },
-    "rulerTitle":  {
-                       "message":  "Линия"
-                   },
-    "trackerTodayLabel":  {
-                              "message":  "Днес"
-                          },
-    "currentRecordedLabel":  {
-                                 "message":  "ТЕКУЩО"
-                             },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "extName":  {
-                    "message":  "All In One - Най-добрият инструмент за продуктивност"
-                },
-    "trackerThisMonth":  {
-                             "message":  "This month"
-                         },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "trackerSelectedMonth":  {
-                                 "message":  "Selected month"
-                             },
-    "techLoadingMsg":  {
-                           "message":  "Анализ на сайта..."
-                       },
-    "radioPause":  {
-                       "message":  "Пауза"
-                   },
-    "trackerThisMonthShort":  {
-                                  "message":  "Този месец"
-                              },
-    "swCopyBtn":  {
-                      "message":  "КОПИРАЙ"
-                  },
-    "swMomentLabel":  {
-                          "message":  "Момент "
-                      },
-    "donateBtn":  {
-                      "message":  "Дарете и подкрепете"
-                  },
-    "systemPageDesc":  {
-                           "message":  "Модифицирането е изключено"
-                       },
-    "radioTitle":  {
-                       "message":  "Радио"
-                   },
-    "notesTitle":  {
-                       "message":  "Бележки"
-                   },
-    "techScannerUnavailable":  {
-                                   "message":  "Няма скенер тук."
-                               },
-    "resetBtn":  {
-                     "message":  "Нулирай"
-                 },
-    "linesLabel":  {
-                       "message":  "Редове"
-                   },
-    "stopBtn":  {
-                    "message":  "СТОП"
-                },
-    "supportTitle":  {
-                         "message":  "Подкрепи разширението"
-                     },
-    "cacheError":  {
-                       "message":  "Грешка"
-                   },
-    "stopwatchTitle":  {
-                           "message":  "Хронометър"
-                       },
-    "trackerModalTitle":  {
-                              "message":  "Проследяване на времето"
-                          },
-    "fontTitle":  {
-                      "message":  "Шрифт"
-                  },
-    "notesPlaceholder":  {
-                             "message":  "Бележки тук..."
-                         },
-    "cacheTitle":  {
-                       "message":  "Бисквитки и кеш"
-                   },
-    "radioArtist":  {
-                        "message":  "С подкрепа All In One"
-                    },
-    "liveHistoryLabel":  {
-                             "message":  "ЖИВА ИСТОРИЯ"
-                         },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "clearSiteDataBtn":  {
-                             "message":  "Изчисти сайта"
-                         },
-    "settingsTooltip":  {
-                            "message":  "Настройки"
-                        },
-    "lapBtn":  {
-                   "message":  "ОБИКОЛКА"
-               },
-    "radioPlay":  {
-                      "message":  "Пусни"
-                  },
-    "markerClearAllTooltip":  {
-                                  "message":  "Изчисти всичко"
-                              },
-    "textLabel":  {
-                      "message":  "Текст"
-                  },
-    "cancelBtn":  {
-                      "message":  "ОТКАЗ"
-                  },
-    "startBtn":  {
-                     "message":  "СТАРТ"
-                 },
-    "counterModalTitle":  {
-                              "message":  "БРОЯЧ ЗНАЦИ"
-                          },
-    "importNotesTooltip":  {
-                               "message":  "Импортирай"
-                           },
-    "markerThicknessTooltip":  {
-                                   "message":  "Дебелина"
-                               },
-    "blockCookiesLabel":  {
-                              "message":  "Блокирай бисквитки"
-                          },
-    "confirmClearHistory":  {
-                                "message":  "Изчисти цялата история?"
-                            },
-    "systemPageTitle":  {
-                            "message":  "СИСТЕМНА СТРАНИЦА"
-                        },
-    "grabTextTooltip":  {
-                            "message":  "Вземи текст от страница"
-                        },
-    "markLapDesc":  {
-                        "message":  "Запиши момент на хронометъра"
-                    },
-    "techScannerFailed":  {
-                              "message":  "Сканиране неуспешно."
-                          },
-    "markerMoveTooltip":  {
-                              "message":  "Премести"
-                          },
-    "trackerModeDay":  {
-                           "message":  "Дневен изглед"
-                       },
-    "swDurationLabel":  {
-                            "message":  "Време: "
-                        }
+    "notesTitle": {
+        "message": "Бележки"
+    },
+    "whatsNewDesc": {
+        "message": "Вижте най-новите подобрения на интерфейса, които правят All In One още по-бързо и по-елегантно:"
+    },
+    "toastPermissionDenied": {
+        "message": "Разрешението не е дадено"
+    },
+    "clearCounterTooltip": {
+        "message": "Изчисти всичко"
+    },
+    "supportDesc": {
+        "message": "All In One е безплатен. Подкрепата ти помага за нови функции."
+    },
+    "trackerExportTruncated": {
+        "message": "Експортирайте съкратено до 10 MB, за да запазите изскачащия прозорец стабилен."
+    },
+    "whatsNewClose": {
+        "message": "РАЗБРАХ"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Изтрий"
+    },
+    "counterTitle": {
+        "message": "Брояч знаци"
+    },
+    "trackerAvgLabel": {
+        "message": "Средно"
+    },
+    "trackerModeMonth": {
+        "message": "Месечен изглед"
+    },
+    "trackerModeAll": {
+        "message": "Цялото време"
+    },
+    "techCatMedia": {
+        "message": "Медия"
+    },
+    "trackerNoData": {
+        "message": "Няма данни за този период"
+    },
+    "whatsNewFeature3": {
+        "message": "Поддръжка на фавикони: Фавикони на сайта в списъка за проследяване."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Живо #"
+    },
+    "confirmClearNotes": {
+        "message": "Изчисти всички бележки?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Всички данни от този сайт са изтрити!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Търсене в уебсайтове..."
+    },
+    "techCatTools": {
+        "message": "Инструменти"
+    },
+    "toastYtOff": {
+        "message": "Дисплеят на YouTube Dislike е деактивиран"
+    },
+    "soundTitle": {
+        "message": "Звук"
+    },
+    "cacheTitle": {
+        "message": "Бисквитки и кеш"
+    },
+    "markerCloseTooltip": {
+        "message": "Затвори"
+    },
+    "stopwatchTitle": {
+        "message": "Хронометър"
+    },
+    "clearNotesTooltip": {
+        "message": "Изчисти бележки"
+    },
+    "rulerTitle": {
+        "message": "Линия"
+    },
+    "markLapDesc": {
+        "message": "Запиши момент на хронометъра"
+    },
+    "trackerImportEmpty": {
+        "message": "Няма валидни данни за проследяване за импортиране."
+    },
+    "whatsNewFeature1": {
+        "message": "Плавни преходи: Плавни слайд анимации между инструментите."
+    },
+    "systemPageDesc": {
+        "message": "Модифицирането е изключено"
+    },
+    "techStatLinks": {
+        "message": "Връзки"
+    },
+    "stopBtn": {
+        "message": "СТОП"
+    },
+    "swNoLaps": {
+        "message": "Няма моменти"
+    },
+    "toastTrackerImportError": {
+        "message": "Грешка при импортирането на данни за проследяване!"
+    },
+    "toastRadioPlayError": {
+        "message": "Радиото не може да се стартира в момента."
+    },
+    "trackerTitle": {
+        "message": "Проследяване"
+    },
+    "offscreenJustification": {
+        "message": "Радио стрийминг и системни звуци"
+    },
+    "trackerThisMonth": {
+        "message": "Този месец"
+    },
+    "linesLabel": {
+        "message": "Редове"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Бисквитките са блокирани за този сайт"
+    },
+    "toastTrackerError": {
+        "message": "Грешка при опресняване на данните"
+    },
+    "trackerExportEmpty": {
+        "message": "Няма данни за проследяване за експортиране."
+    },
+    "techCatComm": {
+        "message": "Комуникация"
+    },
+    "deleteBtn": {
+        "message": "ИЗТРИЙ"
+    },
+    "techCatTech": {
+        "message": "Технологии"
+    },
+    "notesSaved": {
+        "message": "Запазено"
+    },
+    "toastNotesExported": {
+        "message": "Бележките са експортирани успешно!"
+    },
+    "swMomentLabel": {
+        "message": "Момент "
+    },
+    "notesModalTitle": {
+        "message": "БЕЛЕЖКИ"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Средно (месец)"
+    },
+    "versionLabel": {
+        "message": "Версия:"
+    },
+    "importNotesTooltip": {
+        "message": "Импортирай"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Светлият режим е активиран"
+    },
+    "toastNotesCopied": {
+        "message": "Текстът е копиран в клипборда!"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toasts: Модерна система за уведомяване за важни действия."
+    },
+    "fontNotCopied": {
+        "message": "Не е копирано"
+    },
+    "importTooltip": {
+        "message": "Импортиране на данни"
+    },
+    "wordsLabelShort": {
+        "message": "думи"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "Не се поддържа"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "Изчистване..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Данните са обновени!"
+    },
+    "websiteBtn": {
+        "message": "Официален сайт"
+    },
+    "markerThicknessTooltip": {
+        "message": "Дебелина"
+    },
+    "confirmClearCounter": {
+        "message": "Сигурни ли сте, че искате да изчистите всичко?"
+    },
+    "techCatAds": {
+        "message": "реклами"
+    },
+    "uiSettings": {
+        "message": "НАСТРОЙКИ"
+    },
+    "trackerThatMonth": {
+        "message": "Този месец"
+    },
+    "radioModalDesc": {
+        "message": "Въведете директната връзка към любимата си радиостанция"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Сигурни ли сте, че искате да изтриете данните за"
+    },
+    "darkModeTitle": {
+        "message": "Тъмен режим"
+    },
+    "toastCounterCleared": {
+        "message": "Текстът на брояча е изчистен!"
+    },
+    "techStatScripts": {
+        "message": "Скриптове"
+    },
+    "techNetworkOptInHint": {
+        "message": "Изпраща заявки до dns.google и ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Няма история"
+    },
+    "whatsNewTitle": {
+        "message": "Какво е новото във версия 1.6"
+    },
+    "techNotFound": {
+        "message": "Не е намерено."
+    },
+    "notesPlaceholder": {
+        "message": "Бележки тук..."
+    },
+    "radioArtist": {
+        "message": "С подкрепа All In One"
+    },
+    "charsLabel": {
+        "message": "Знаци"
+    },
+    "trackerImportSuccess": {
+        "message": "Данните са импортирани успешно!"
+    },
+    "copyEnableTitle": {
+        "message": "Копирай"
+    },
+    "techCatStats": {
+        "message": "Статистика"
+    },
+    "dateLabel": {
+        "message": "Дата"
+    },
+    "techCatNetwork": {
+        "message": "мрежа"
+    },
+    "techCatEcom": {
+        "message": "Електронна търговия"
+    },
+    "currentRecordedLabel": {
+        "message": "ТЕКУЩО"
+    },
+    "toastCookieOff": {
+        "message": "Автоматичното блокиране на бисквитки е деактивирано"
+    },
+    "toastModuleLoadError": {
+        "message": "Грешка при зареждане на модула"
+    },
+    "techCatStyles": {
+        "message": "Стилове"
+    },
+    "extDesc": {
+        "message": "Ултимативният инструмент, който обединява всички важни функции в един бърз, модерен и безплатен интерфейс."
+    },
+    "resetBtn": {
+        "message": "Нулирай"
+    },
+    "addDateTooltip": {
+        "message": "Добави дата"
+    },
+    "supportTitle": {
+        "message": "Подкрепи разширението"
+    },
+    "toastCounterCopied": {
+        "message": "Текстът е копиран в клипборда!"
+    },
+    "savedIndicator": {
+        "message": "Запазено"
+    },
+    "counterPlaceholder": {
+        "message": "Текст тук..."
+    },
+    "techFoundPrefix": {
+        "message": "Намерени: "
+    },
+    "systemPageTitle": {
+        "message": "СИСТЕМНА СТРАНИЦА"
+    },
+    "markerClearAllTooltip": {
+        "message": "Изчисти всичко"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Деактивиране на анализа"
+    },
+    "trackerModeDay": {
+        "message": "Дневен изглед"
+    },
+    "techItemsSuffix": {
+        "message": "елемента"
+    },
+    "toastStopwatchCleared": {
+        "message": "Историята на живо е изчистена!"
+    },
+    "trackerTotal": {
+        "message": "Общо"
+    },
+    "swStatusReady": {
+        "message": "ГОТОВ"
+    },
+    "trackerTotalShort": {
+        "message": "Общо"
+    },
+    "blockCookiesLabel": {
+        "message": "Блокирай бисквитки"
+    },
+    "markerDrawTooltip": {
+        "message": "Рисувай"
+    },
+    "trackerMonthLabel": {
+        "message": "Този месец"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Маси"
+    },
+    "techStatImages": {
+        "message": "Изображения"
+    },
+    "toastRadioSaved": {
+        "message": "URL адресът на радиостанцията е запазен!"
+    },
+    "trackerToday": {
+        "message": "Днес"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Думи"
+    },
+    "clearAllBtn": {
+        "message": "ИЗЧИСТИ ВСИЧКО"
+    },
+    "toastCopyOn": {
+        "message": "Копирането е активирано за този сайт"
+    },
+    "clearSiteDataBtn": {
+        "message": "Изчисти сайта"
+    },
+    "colorPickerPicking": {
+        "message": "Избор..."
+    },
+    "cacheClearConfirm": {
+        "message": "Изчисти сайта"
+    },
+    "markerTextTooltip": {
+        "message": "Текст"
+    },
+    "radioTitle": {
+        "message": "Радио"
+    },
+    "trackerSelectedMonth": {
+        "message": "Избран месец"
+    },
+    "toastCopyOff": {
+        "message": "Копирането е деактивирано"
+    },
+    "fontCopied": {
+        "message": "Копирано!"
+    },
+    "notesLinkText": {
+        "message": "Връзка"
+    },
+    "radioClearConfirm": {
+        "message": "Изчистване на запазената радиостанция?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Средно (месец)"
+    },
+    "techTitle": {
+        "message": "Технологии"
+    },
+    "lapBtn": {
+        "message": "ОБИКОЛКА"
+    },
+    "playBtn": {
+        "message": "Пусни"
+    },
+    "toastDarkModeOn": {
+        "message": "Тъмният режим е активиран"
+    },
+    "techCatPayment": {
+        "message": "Плащане"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Бисквитките са разрешени за този сайт"
+    },
+    "markerLineTooltip": {
+        "message": "Линия"
+    },
+    "techStatIframes": {
+        "message": "Вградени рамки"
+    },
+    "counterModalTitle": {
+        "message": "БРОЯЧ ЗНАЦИ"
+    },
+    "fontTitle": {
+        "message": "Шрифт"
+    },
+    "toastTrackerExported": {
+        "message": "Данните от тракера са експортирани успешно!"
+    },
+    "toastNotesImportError": {
+        "message": "Грешка при импортирането на бележки!"
+    },
+    "swExportTxtBtn": {
+        "message": "ЕКСПОРТ .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Изтрий момент"
+    },
+    "startBtn": {
+        "message": "СТАРТ"
+    },
+    "markerMoveTooltip": {
+        "message": "Премести"
+    },
+    "techModalTitle": {
+        "message": "ТЕХНОЛОГИИ"
+    },
+    "saveRadioStationBtn": {
+        "message": "ЗАПАЗЕТЕ СТАНЦИЯТА"
+    },
+    "techCatDb": {
+        "message": "Database"
+    },
+    "toastNotesCleared": {
+        "message": "Всички бележки са изчистени!"
+    },
+    "toastTrackerImported": {
+        "message": "Данните от тракера са импортирани успешно!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Невалиден URL! URL адресът трябва да започва с http:// или https://"
+    },
+    "trackerImportError": {
+        "message": "Грешка при четене на файла."
+    },
+    "swStatusLive": {
+        "message": "НА ЖИВО"
+    },
+    "linkLabel": {
+        "message": "Връзка"
+    },
+    "techCatAnalytics": {
+        "message": "Анализ"
+    },
+    "liveHistoryLabel": {
+        "message": "ЖИВА ИСТОРИЯ"
+    },
+    "colorPickerTitle": {
+        "message": "Цветове"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "ОБЩО ВРЕМЕ: "
+    },
+    "stopwatchReady": {
+        "message": "ГОТОВ"
+    },
+    "confirmClearHistory": {
+        "message": "Изчисти цялата история?"
+    },
+    "markerTitle": {
+        "message": "Маркер"
+    },
+    "trackerModalTitle": {
+        "message": "Проследяване на времето"
+    },
+    "grabTextTooltip": {
+        "message": "Вземи текст от страница"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Чисто поле"
+    },
+    "privacyLabel": {
+        "message": "Поверителност"
+    },
+    "whatsNewFeature4": {
+        "message": "Превключване на обратната връзка: Кратки импулсни анимации и потвърждения при промяна на настройките."
+    },
+    "trackerThatDay": {
+        "message": "Този ден"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Списъкът не можа да се актуализира"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Разрешете бисквитки за този сайт"
+    },
+    "textLabel": {
+        "message": "Текст"
+    },
+    "cacheCleared": {
+        "message": "Изчистено!"
+    },
+    "importRadioTooltip": {
+        "message": "Импортирайте персонализирана радиостанция"
+    },
+    "radioPlay": {
+        "message": "Пусни"
+    },
+    "techLoadingMsg": {
+        "message": "Анализ на сайта..."
+    },
+    "swCopyBtn": {
+        "message": "КОПИРАЙ"
+    },
+    "techScannerFailed": {
+        "message": "Сканиране неуспешно."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Показване на мрежова информация (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Днес"
+    },
+    "toastNotesImported": {
+        "message": "Бележките са импортирани успешно!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Копирано: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ КОПИРАНО"
+    },
+    "techCatCaching": {
+        "message": "Кеширане"
+    },
+    "techCatSecurity": {
+        "message": "сигурност"
+    },
+    "toastYtOn": {
+        "message": "Показването на нехаресвания в YouTube е активирано"
+    },
+    "extName": {
+        "message": "All In One - Най-добрият инструмент за продуктивност"
+    },
+    "toastCookieOn": {
+        "message": "Автоматичното блокиране на бисквитки е активирано"
+    },
+    "techScannerUnavailable": {
+        "message": "Няма скенер тук."
+    },
+    "notesTooLarge": {
+        "message": "Бележка твърде голяма"
+    },
+    "swDurationLabel": {
+        "message": "Време: "
+    },
+    "ytDislikeTitle": {
+        "message": "YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Дарете и подкрепете"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Настройки"
+    },
+    "trackerThisMonthShort": {
+        "message": "Този месец"
+    },
+    "techCatSystem": {
+        "message": "система"
+    },
+    "exportTooltip": {
+        "message": "Експортиране на данни"
+    },
+    "exportNotesTooltip": {
+        "message": "Експортирай"
+    },
+    "radioPause": {
+        "message": "Пауза"
+    },
+    "websiteTooltip": {
+        "message": "Официален сайт"
+    },
+    "rateBtn": {
+        "message": "Оцени разширението"
+    },
+    "techCatBase": {
+        "message": "База"
+    },
+    "cacheModalTitle": {
+        "message": "БИСКВИТКИ/КЕШ"
+    },
+    "cancelBtn": {
+        "message": "ОТКАЗ"
+    },
+    "addUrlTooltip": {
+        "message": "Добави URL"
+    },
+    "trackerAvgTotal": {
+        "message": "Средно"
+    },
+    "techStatForms": {
+        "message": "формуляри"
+    },
+    "cacheError": {
+        "message": "Грешка"
+    }
 }

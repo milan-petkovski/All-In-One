@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Viedās piezīmes"
-                   },
-    "supportDesc":  {
-                        "message":  "„All In One“ ir pilnīgi bezmaksas rīks. Jūsu atbalsts palīdz tam tādam palikt un ļauj regulāri izstrādāt jaunas iespējas."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Dzēst"
-                           },
-    "counterTitle":  {
-                         "message":  "Rakstzīmju skaitītājs"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Vidējais"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Mēneša skats"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Viss laiks"
-                       },
-    "techCatMedia":  {
-                         "message":  "Mediji"
-                     },
-    "trackerNoData":  {
-                          "message":  "Nav datu par šo periodu"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "Tiešraide #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Vai tiešām vēlaties dzēst visas piezīmes?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Rīki"
-                     },
-    "soundTitle":  {
-                       "message":  "Skaņa"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "Dzēst visu"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Aizvērt"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Hronometrs"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "Dzēst visas piezīmes"
-                          },
-    "rulerTitle":  {
-                       "message":  "Lapas lineāls"
-                   },
-    "markLapDesc":  {
-                        "message":  "Fiksējiet mirkli ar hronometru"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "Modifikācijas rīki ir atspējoti"
-                       },
-    "techStatLinks":  {
-                          "message":  "Saites"
-                      },
-    "stopBtn":  {
-                    "message":  "APTURĒT"
-                },
-    "swNoLaps":  {
-                     "message":  "Nav reģistrētu mirkļu"
-                 },
-    "trackerTitle":  {
-                         "message":  "Webtime Tracker"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "Šis mēnesis"
-                         },
-    "linesLabel":  {
-                       "message":  "Rindas"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "Komunikācija"
-                    },
-    "deleteBtn":  {
-                      "message":  "DZĒST"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Saglabāts"
-                   },
-    "lapBtn":  {
-                   "message":  "APLIS"
-               },
-    "notesModalTitle":  {
-                            "message":  "VIEDĀS PIEZĪMES"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Vidējais"
-                            },
-    "versionLabel":  {
-                         "message":  "Versija:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "Importēt piezīmes"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Netika nokopēts"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Tehnoloģijas"
-                    },
-    "techCatServer":  {
-                          "message":  "Serveris"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Netiek atbalstīts"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Audio"
-                      },
-    "cacheClearing":  {
-                          "message":  "Notiek dzēšana..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Radio"
-                         },
-    "websiteBtn":  {
-                       "message":  "Paplašinājuma oficiālā vietne"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Biezums"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Vai tiešām vēlaties dzēst visu?"
-                            },
-    "techCatAds":  {
-                       "message":  "Reklāmas"
-                   },
-    "uiSettings":  {
-                       "message":  "IESTATĪJUMI"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "Tas mēnesis"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Ievadiet tiešo saiti uz iecienītāko radiostaciju"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Vai tiešām vēlaties izdzēst datus par"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Tumšais"
-                      },
-    "techStatScripts":  {
-                            "message":  "Skripti"
-                        },
-    "swNoHistory":  {
-                        "message":  "Nav tiešraižu vēstures"
-                    },
-    "techNotFound":  {
-                         "message":  "Nekas netika atrasts."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Rakstiet piezīmes šeit..."
-                         },
-    "radioArtist":  {
-                        "message":  "Nodrošina All In One paplašinājums"
-                    },
-    "charsLabel":  {
-                       "message":  "Rakstzīmes"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Kopēt"
-                        },
-    "techCatStats":  {
-                         "message":  "Statistika"
-                     },
-    "dateLabel":  {
-                      "message":  "Datums"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Tīkls"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Commerce"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "PAŠLAIK REĢISTRĒTS"
-                             },
-    "techCatStyles":  {
-                          "message":  "Stili"
-                      },
-    "extDesc":  {
-                    "message":  "Augstākās klases rīks, kas apvieno visas svarīgākās funkcijas vienā ātrā, modernā un bezmaksas saskarnē."
-                },
-    "resetBtn":  {
-                     "message":  "Atiestatīt"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Pievienot šodienas datumu"
-                       },
-    "supportTitle":  {
-                         "message":  "Atbalstiet paplašinājumu"
-                     },
-    "savedIndicator":  {
-                           "message":  "Saglabāts"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "Ielīmējiet tekstu šeit..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Atrasts: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "SISTĒMAS LAPA"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "Dzēst visu"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Dienas skats"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "elementi"
-                        },
-    "trackerTotal":  {
-                         "message":  "Kopā"
-                     },
-    "swStatusReady":  {
-                          "message":  "GATAVS"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Kopā"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Automatiski bloķēt sīkfailus"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Zīmēt"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Šis mēnesis"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Tabulas"
-                       },
-    "techStatImages":  {
-                           "message":  "Attēli"
-                       },
-    "trackerToday":  {
-                         "message":  "Šodien"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Vārdi"
-                   },
-    "clearAllBtn":  {
-                        "message":  "NOTĪRĪT VISU"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "Dzēst visus datus no šīs vietnes"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Atlasīšana..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Dzēst visus datus no šīs vietnes"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Teksts"
-                          },
-    "radioTitle":  {
-                       "message":  "Radio"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Izvēlētais mēnesis"
-                             },
-    "fontCopied":  {
-                       "message":  "Nokopēts!"
-                   },
-    "notesLinkText":  {
-                          "message":  "Saite"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Vidējais"
-                            },
-    "techTitle":  {
-                      "message":  "Vietnes tehnoloģijas"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Pārvietot"
-                          },
-    "playBtn":  {
-                    "message":  "Sākt"
-                },
-    "techCatPayment":  {
-                           "message":  "Maksājums"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Līnija"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "RAKSTZĪMJU SKAITĪTĀJS"
-                          },
-    "fontTitle":  {
-                      "message":  "Fontu meklētājs"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "EKSPORTĒT KAIP .TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Dzēst šo mirkli"
-                    },
-    "startBtn":  {
-                     "message":  "SĀKT"
-                 },
-    "techModalTitle":  {
-                           "message":  "VIETNES TEHNOLOĢIJAS"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "SAGLABĀT STACIJU"
-                            },
-    "techCatDb":  {
-                      "message":  "Datu bāze"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "TIEŠRAIDE"
-                     },
-    "linkLabel":  {
-                      "message":  "Saite"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Analītika"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "TIEŠRAIŽU VĒSTURE"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Krāsu atlasītājs"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "Mirklis "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "KOPĒJAIS ILGUMS: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "GATAVS"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Šis mēnesis"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Vai tiešām vēlaties dzēst visu vēsturi?"
-                            },
-    "markerTitle":  {
-                        "message":  "Lapas marķieris"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Laika uzskaite"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Iegūt tekstu no lapas"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Notīrīt lauku"
-                               },
-    "privacyLabel":  {
-                         "message":  "Konfidencialitātes politika"
-                     },
-    "trackerThatDay":  {
-                           "message":  "Tā diena"
-                       },
-    "textLabel":  {
-                      "message":  "Teksts"
-                  },
-    "cacheCleared":  {
-                         "message":  "Izdzēsts!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Importēt pielāgotu radiostaciju"
-                           },
-    "radioPlay":  {
-                      "message":  "Sākt"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "Skenēšanas laikā tiek analizēta vietne..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "KOPĒT STARPTUVI"
-                  },
-    "techScannerFailed":  {
-                              "message":  "Skenēšana neizdevās."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "Šodien"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Kopēts: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ NOKOPĒTS"
-                    },
-    "techCatCaching":  {
-                           "message":  "Caching"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Drošība"
-                        },
-    "extName":  {
-                    "message":  "All In One - labākais produktivitātes rīks"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "Skenēšana šajā lapā nav pieejama."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Piezīme ir pārāk liela"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Ilgums: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "Return YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "Ziedojiet un atbalstiet darbu"
-                  },
-    "techStatVideo":  {
-                          "message":  "Video"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Iestatījumi"
-                        },
-    "cacheTitle":  {
-                       "message":  "Sīkfaili un kešatmiņa"
-                   },
-    "techCatSystem":  {
-                          "message":  "Sistēma"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "Eksportēt piezīmes"
-                           },
-    "radioPause":  {
-                       "message":  "Pauze"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Paplašinājuma oficiālā vietne"
-                       },
-    "rateBtn":  {
-                    "message":  "Novērtējiet paplašinājumu"
-                },
-    "techCatBase":  {
-                        "message":  "Bāze"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "SĪKFAILI UN KEŠATMIŅA"
-                        },
-    "cancelBtn":  {
-                      "message":  "ATCELT"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "Pievienot pašreizējās lapas URL"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Vidējais"
-                        },
-    "techStatForms":  {
-                          "message":  "Formas"
-                      },
-    "cacheError":  {
-                       "message":  "Kļūda"
-                   }
+    "notesTitle": {
+        "message": "Viedās piezīmes"
+    },
+    "whatsNewDesc": {
+        "message": "Apskatiet jaunākos interfeisa uzlabojumus, kas padara All In One vēl ātrāku un elegantāku:"
+    },
+    "toastPermissionDenied": {
+        "message": "Atļauja nav piešķirta"
+    },
+    "clearCounterTooltip": {
+        "message": "Dzēst visu"
+    },
+    "supportDesc": {
+        "message": "„All In One“ ir pilnīgi bezmaksas rīks. Jūsu atbalsts palīdz tam tādam palikt un ļauj regulāri izstrādāt jaunas iespējas."
+    },
+    "trackerExportTruncated": {
+        "message": "Eksportējiet saīsinātu līdz 10 MB, lai uznirstošais logs būtu stabils."
+    },
+    "whatsNewClose": {
+        "message": "SAPRĀT"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Dzēst"
+    },
+    "counterTitle": {
+        "message": "Rakstzīmju skaitītājs"
+    },
+    "trackerAvgLabel": {
+        "message": "Vidējais"
+    },
+    "trackerModeMonth": {
+        "message": "Mēneša skats"
+    },
+    "trackerModeAll": {
+        "message": "Viss laiks"
+    },
+    "techCatMedia": {
+        "message": "Mediji"
+    },
+    "trackerNoData": {
+        "message": "Nav datu par šo periodu"
+    },
+    "whatsNewFeature3": {
+        "message": "Favicon atbalsts: vietņu favicons izsekotāju sarakstā."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Tiešraide #"
+    },
+    "confirmClearNotes": {
+        "message": "Vai tiešām vēlaties dzēst visas piezīmes?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Visi dati no šīs vietnes ir dzēsti!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Meklēt tīmekļa vietnēs..."
+    },
+    "techCatTools": {
+        "message": "Rīki"
+    },
+    "toastYtOff": {
+        "message": "YouTube displejs Nepatīk ir atspējots"
+    },
+    "soundTitle": {
+        "message": "Skaņa"
+    },
+    "cacheTitle": {
+        "message": "Sīkfaili un kešatmiņa"
+    },
+    "markerCloseTooltip": {
+        "message": "Aizvērt"
+    },
+    "stopwatchTitle": {
+        "message": "Hronometrs"
+    },
+    "clearNotesTooltip": {
+        "message": "Dzēst visas piezīmes"
+    },
+    "rulerTitle": {
+        "message": "Lapas lineāls"
+    },
+    "markLapDesc": {
+        "message": "Fiksējiet mirkli ar hronometru"
+    },
+    "trackerImportEmpty": {
+        "message": "Nav derīgu izsekotāja datu, ko importēt."
+    },
+    "whatsNewFeature1": {
+        "message": "Gludas pārejas: vienmērīgas slaidu animācijas starp rīkiem."
+    },
+    "systemPageDesc": {
+        "message": "Modifikācijas rīki ir atspējoti"
+    },
+    "techStatLinks": {
+        "message": "Saites"
+    },
+    "stopBtn": {
+        "message": "APTURĒT"
+    },
+    "swNoLaps": {
+        "message": "Nav reģistrētu mirkļu"
+    },
+    "toastTrackerImportError": {
+        "message": "Importējot izsekotāja datus, radās kļūda!"
+    },
+    "toastRadioPlayError": {
+        "message": "Radio šobrīd nevar palaist."
+    },
+    "trackerTitle": {
+        "message": "Webtime Tracker"
+    },
+    "offscreenJustification": {
+        "message": "Radio straumēšana un sistēmas skaņas"
+    },
+    "trackerThisMonth": {
+        "message": "Šis mēnesis"
+    },
+    "linesLabel": {
+        "message": "Rindas"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Šai vietnei ir bloķēti sīkfaili"
+    },
+    "toastTrackerError": {
+        "message": "Atsvaidzinot datus, radās kļūda"
+    },
+    "trackerExportEmpty": {
+        "message": "Nav eksportējamu izsekotāja datu."
+    },
+    "techCatComm": {
+        "message": "Komunikācija"
+    },
+    "deleteBtn": {
+        "message": "DZĒST"
+    },
+    "techCatTech": {
+        "message": "Tehnoloģijas"
+    },
+    "notesSaved": {
+        "message": "Saglabāts"
+    },
+    "toastNotesExported": {
+        "message": "Piezīmes veiksmīgi eksportētas!"
+    },
+    "swMomentLabel": {
+        "message": "Mirklis "
+    },
+    "notesModalTitle": {
+        "message": "VIEDĀS PIEZĪMES"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Vidējais"
+    },
+    "versionLabel": {
+        "message": "Versija:"
+    },
+    "importNotesTooltip": {
+        "message": "Importēt piezīmes"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Gaismas režīms ir iespējots"
+    },
+    "toastNotesCopied": {
+        "message": "Teksts ir kopēts starpliktuvē!"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toasts: Mūsdienīga paziņojumu sistēma svarīgām darbībām."
+    },
+    "fontNotCopied": {
+        "message": "Netika nokopēts"
+    },
+    "importTooltip": {
+        "message": "Importēt datus"
+    },
+    "wordsLabelShort": {
+        "message": "vārdus"
+    },
+    "techCatServer": {
+        "message": "Serveris"
+    },
+    "cacheNotSupported": {
+        "message": "Netiek atbalstīts"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "Notiek dzēšana..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Dati ir atjaunināti!"
+    },
+    "websiteBtn": {
+        "message": "Paplašinājuma oficiālā vietne"
+    },
+    "markerThicknessTooltip": {
+        "message": "Biezums"
+    },
+    "confirmClearCounter": {
+        "message": "Vai tiešām vēlaties dzēst visu?"
+    },
+    "techCatAds": {
+        "message": "Reklāmas"
+    },
+    "uiSettings": {
+        "message": "IESTATĪJUMI"
+    },
+    "trackerThatMonth": {
+        "message": "Tas mēnesis"
+    },
+    "radioModalDesc": {
+        "message": "Ievadiet tiešo saiti uz iecienītāko radiostaciju"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Vai tiešām vēlaties izdzēst datus par"
+    },
+    "darkModeTitle": {
+        "message": "Tumšais"
+    },
+    "toastCounterCleared": {
+        "message": "Skaitītāja teksts ir notīrīts!"
+    },
+    "techStatScripts": {
+        "message": "Skripti"
+    },
+    "techNetworkOptInHint": {
+        "message": "Nosūta pieprasījumus uz dns.google un ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Nav tiešraižu vēstures"
+    },
+    "whatsNewTitle": {
+        "message": "Kas jauns versijā 1.6"
+    },
+    "techNotFound": {
+        "message": "Nekas netika atrasts."
+    },
+    "notesPlaceholder": {
+        "message": "Rakstiet piezīmes šeit..."
+    },
+    "radioArtist": {
+        "message": "Nodrošina All In One paplašinājums"
+    },
+    "charsLabel": {
+        "message": "Rakstzīmes"
+    },
+    "trackerImportSuccess": {
+        "message": "Dati veiksmīgi importēti!"
+    },
+    "copyEnableTitle": {
+        "message": "Kopēt"
+    },
+    "techCatStats": {
+        "message": "Statistika"
+    },
+    "dateLabel": {
+        "message": "Datums"
+    },
+    "techCatNetwork": {
+        "message": "Tīkls"
+    },
+    "techCatEcom": {
+        "message": "E-komercija"
+    },
+    "currentRecordedLabel": {
+        "message": "PAŠLAIK REĢISTRĒTS"
+    },
+    "toastCookieOff": {
+        "message": "Automātiskā sīkfailu bloķēšana ir atspējota"
+    },
+    "toastModuleLoadError": {
+        "message": "Ielādējot moduli, radās kļūda"
+    },
+    "techCatStyles": {
+        "message": "Stili"
+    },
+    "extDesc": {
+        "message": "Augstākās klases rīks, kas apvieno visas svarīgākās funkcijas vienā ātrā, modernā un bezmaksas saskarnē."
+    },
+    "resetBtn": {
+        "message": "Atiestatīt"
+    },
+    "addDateTooltip": {
+        "message": "Pievienot šodienas datumu"
+    },
+    "supportTitle": {
+        "message": "Atbalstiet paplašinājumu"
+    },
+    "toastCounterCopied": {
+        "message": "Teksts ir kopēts starpliktuvē!"
+    },
+    "savedIndicator": {
+        "message": "Saglabāts"
+    },
+    "counterPlaceholder": {
+        "message": "Ielīmējiet tekstu šeit..."
+    },
+    "techFoundPrefix": {
+        "message": "Atrasts: "
+    },
+    "systemPageTitle": {
+        "message": "SISTĒMAS LAPA"
+    },
+    "markerClearAllTooltip": {
+        "message": "Dzēst visu"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Atspējot analīzi"
+    },
+    "trackerModeDay": {
+        "message": "Dienas skats"
+    },
+    "techItemsSuffix": {
+        "message": "elementi"
+    },
+    "toastStopwatchCleared": {
+        "message": "Tiešraides vēsture ir notīrīta!"
+    },
+    "trackerTotal": {
+        "message": "Kopā"
+    },
+    "swStatusReady": {
+        "message": "GATAVS"
+    },
+    "trackerTotalShort": {
+        "message": "Kopā"
+    },
+    "blockCookiesLabel": {
+        "message": "Automatiski bloķēt sīkfailus"
+    },
+    "markerDrawTooltip": {
+        "message": "Zīmēt"
+    },
+    "trackerMonthLabel": {
+        "message": "Šis mēnesis"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Tabulas"
+    },
+    "techStatImages": {
+        "message": "Attēli"
+    },
+    "toastRadioSaved": {
+        "message": "Radiostacijas URL saglabāts!"
+    },
+    "trackerToday": {
+        "message": "Šodien"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Vārdi"
+    },
+    "clearAllBtn": {
+        "message": "NOTĪRĪT VISU"
+    },
+    "toastCopyOn": {
+        "message": "Šai vietnei ir iespējota kopēšana"
+    },
+    "clearSiteDataBtn": {
+        "message": "Dzēst visus datus no šīs vietnes"
+    },
+    "colorPickerPicking": {
+        "message": "Atlasīšana..."
+    },
+    "cacheClearConfirm": {
+        "message": "Dzēst visus datus no šīs vietnes"
+    },
+    "markerTextTooltip": {
+        "message": "Teksts"
+    },
+    "radioTitle": {
+        "message": "Radio"
+    },
+    "trackerSelectedMonth": {
+        "message": "Izvēlētais mēnesis"
+    },
+    "toastCopyOff": {
+        "message": "Kopēšana ir atspējota"
+    },
+    "fontCopied": {
+        "message": "Nokopēts!"
+    },
+    "notesLinkText": {
+        "message": "Saite"
+    },
+    "radioClearConfirm": {
+        "message": "Vai dzēst saglabāto radiostaciju?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Vidējais"
+    },
+    "techTitle": {
+        "message": "Vietnes tehnoloģijas"
+    },
+    "lapBtn": {
+        "message": "APLIS"
+    },
+    "playBtn": {
+        "message": "Sākt"
+    },
+    "toastDarkModeOn": {
+        "message": "Tumšais režīms ir iespējots"
+    },
+    "techCatPayment": {
+        "message": "Maksājums"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Šai vietnei ir atļautas sīkdatnes"
+    },
+    "markerLineTooltip": {
+        "message": "Līnija"
+    },
+    "techStatIframes": {
+        "message": "Iframes"
+    },
+    "counterModalTitle": {
+        "message": "RAKSTZĪMJU SKAITĪTĀJS"
+    },
+    "fontTitle": {
+        "message": "Fontu meklētājs"
+    },
+    "toastTrackerExported": {
+        "message": "Izsekotāja dati veiksmīgi eksportēti!"
+    },
+    "toastNotesImportError": {
+        "message": "Importējot piezīmes, radās kļūda!"
+    },
+    "swExportTxtBtn": {
+        "message": "EKSPORTĒT KAIP .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Dzēst šo mirkli"
+    },
+    "startBtn": {
+        "message": "SĀKT"
+    },
+    "markerMoveTooltip": {
+        "message": "Pārvietot"
+    },
+    "techModalTitle": {
+        "message": "VIETNES TEHNOLOĢIJAS"
+    },
+    "saveRadioStationBtn": {
+        "message": "SAGLABĀT STACIJU"
+    },
+    "techCatDb": {
+        "message": "Datu bāze"
+    },
+    "toastNotesCleared": {
+        "message": "Visas piezīmes ir notīrītas!"
+    },
+    "toastTrackerImported": {
+        "message": "Izsekotāja dati veiksmīgi importēti!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Nederīgs URL! URL jāsākas ar http:// vai https://"
+    },
+    "trackerImportError": {
+        "message": "Kļūda, lasot failu."
+    },
+    "swStatusLive": {
+        "message": "TIEŠRAIDE"
+    },
+    "linkLabel": {
+        "message": "Saite"
+    },
+    "techCatAnalytics": {
+        "message": "Analītika"
+    },
+    "liveHistoryLabel": {
+        "message": "TIEŠRAIŽU VĒSTURE"
+    },
+    "colorPickerTitle": {
+        "message": "Krāsu atlasītājs"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "KOPĒJAIS ILGUMS: "
+    },
+    "stopwatchReady": {
+        "message": "GATAVS"
+    },
+    "confirmClearHistory": {
+        "message": "Vai tiešām vēlaties dzēst visu vēsturi?"
+    },
+    "markerTitle": {
+        "message": "Lapas marķieris"
+    },
+    "trackerModalTitle": {
+        "message": "Laika uzskaite"
+    },
+    "grabTextTooltip": {
+        "message": "Iegūt tekstu no lapas"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Notīrīt lauku"
+    },
+    "privacyLabel": {
+        "message": "Konfidencialitātes politika"
+    },
+    "whatsNewFeature4": {
+        "message": "Pārslēgt atsauksmes: īsas impulsa animācijas un apstiprinājumi, mainot iestatījumus."
+    },
+    "trackerThatDay": {
+        "message": "Tā diena"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Nevarēja atjaunināt sarakstu"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Atļaut sīkfailus šai vietnei"
+    },
+    "textLabel": {
+        "message": "Teksts"
+    },
+    "cacheCleared": {
+        "message": "Izdzēsts!"
+    },
+    "importRadioTooltip": {
+        "message": "Importēt pielāgotu radiostaciju"
+    },
+    "radioPlay": {
+        "message": "Sākt"
+    },
+    "techLoadingMsg": {
+        "message": "Skenēšanas laikā tiek analizēta vietne..."
+    },
+    "swCopyBtn": {
+        "message": "KOPĒT STARPTUVI"
+    },
+    "techScannerFailed": {
+        "message": "Skenēšana neizdevās."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Rādīt tīkla informāciju (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Šodien"
+    },
+    "toastNotesImported": {
+        "message": "Piezīmes veiksmīgi importētas!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Kopēts: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ NOKOPĒTS"
+    },
+    "techCatCaching": {
+        "message": "Kešatmiņa"
+    },
+    "techCatSecurity": {
+        "message": "Drošība"
+    },
+    "toastYtOn": {
+        "message": "YouTube displejs Nepatīk ir iespējots"
+    },
+    "extName": {
+        "message": "All In One - labākais produktivitātes rīks"
+    },
+    "toastCookieOn": {
+        "message": "Ir iespējota automātiskā sīkfailu bloķēšana"
+    },
+    "techScannerUnavailable": {
+        "message": "Skenēšana šajā lapā nav pieejama."
+    },
+    "notesTooLarge": {
+        "message": "Piezīme ir pārāk liela"
+    },
+    "swDurationLabel": {
+        "message": "Ilgums: "
+    },
+    "ytDislikeTitle": {
+        "message": "Return YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Ziedojiet un atbalstiet darbu"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Iestatījumi"
+    },
+    "trackerThisMonthShort": {
+        "message": "Šis mēnesis"
+    },
+    "techCatSystem": {
+        "message": "Sistēma"
+    },
+    "exportTooltip": {
+        "message": "Eksportēt datus"
+    },
+    "exportNotesTooltip": {
+        "message": "Eksportēt piezīmes"
+    },
+    "radioPause": {
+        "message": "Pauze"
+    },
+    "websiteTooltip": {
+        "message": "Paplašinājuma oficiālā vietne"
+    },
+    "rateBtn": {
+        "message": "Novērtējiet paplašinājumu"
+    },
+    "techCatBase": {
+        "message": "Bāze"
+    },
+    "cacheModalTitle": {
+        "message": "SĪKFAILI UN KEŠATMIŅA"
+    },
+    "cancelBtn": {
+        "message": "ATCELT"
+    },
+    "addUrlTooltip": {
+        "message": "Pievienot pašreizējās lapas URL"
+    },
+    "trackerAvgTotal": {
+        "message": "Vidējais"
+    },
+    "techStatForms": {
+        "message": "Formas"
+    },
+    "cacheError": {
+        "message": "Kļūda"
+    }
 }

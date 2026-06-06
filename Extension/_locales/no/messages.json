@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Smarte notater"
-                   },
-    "supportDesc":  {
-                        "message":  "All In One er et helt gratis verktøy. Din støtte hjelper med å holde det slik og muliggjør utvikling av nye funksjoner."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Visk ut"
-                           },
-    "counterTitle":  {
-                         "message":  "Tegnteller"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Gjennomsnitt"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Månedlig visning"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Hele tiden"
-                       },
-    "techCatMedia":  {
-                         "message":  "Medier"
-                     },
-    "trackerNoData":  {
-                          "message":  "Ingen data for denne perioden"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "Live #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Er du sikker på at du vil slette alle notater?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Verktøy"
-                     },
-    "soundTitle":  {
-                       "message":  "Lyd"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "Tøm alt"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Lukk"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Stoppeklokke"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "Tøm alle notater"
-                          },
-    "rulerTitle":  {
-                       "message":  "Sidelinjal"
-                   },
-    "markLapDesc":  {
-                        "message":  "Registrer et øyeblikk på stoppeklokken"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "Modifikasjonsverktøy er deaktivert"
-                       },
-    "techStatLinks":  {
-                          "message":  "Lenker"
-                      },
-    "stopBtn":  {
-                    "message":  "STOPP"
-                },
-    "swNoLaps":  {
-                     "message":  "Ingen registrerte øyeblikk"
-                 },
-    "trackerTitle":  {
-                         "message":  "Nettid-sporer"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "Denne måneden"
-                         },
-    "linesLabel":  {
-                       "message":  "Linjer"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "Kommunikasjon"
-                    },
-    "deleteBtn":  {
-                      "message":  "SLETT"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Lagret"
-                   },
-    "lapBtn":  {
-                   "message":  "RUNDE"
-               },
-    "notesModalTitle":  {
-                            "message":  "SMARTE NOTATER"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Gjennomsnitt"
-                            },
-    "versionLabel":  {
-                         "message":  "Versjon:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "Importer notater"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Ikke kopiert"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Teknologier"
-                    },
-    "techCatServer":  {
-                          "message":  "Server"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Ikke støttet"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Lyd"
-                      },
-    "cacheClearing":  {
-                          "message":  "Fjerner..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Radio"
-                         },
-    "websiteBtn":  {
-                       "message":  "Offisielt nettsted"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Tykkelse"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Er du sikker på at du vil tømme alt?"
-                            },
-    "techCatAds":  {
-                       "message":  "Annonser"
-                   },
-    "uiSettings":  {
-                       "message":  "INNSTILLINGER"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "Den måneden"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Angi direktelinken til favorittradiostasjonen din"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Er du sikker på at du vil slette data for"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Mørk modus"
-                      },
-    "techStatScripts":  {
-                            "message":  "Skript"
-                        },
-    "swNoHistory":  {
-                        "message":  "Ingen live historikk"
-                    },
-    "techNotFound":  {
-                         "message":  "Ikke funnet."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Skriv notater her..."
-                         },
-    "radioArtist":  {
-                        "message":  "Drevet av All In One-utvidelsen"
-                    },
-    "charsLabel":  {
-                       "message":  "Tegn"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Kopiering"
-                        },
-    "techCatStats":  {
-                         "message":  "Statistikk"
-                     },
-    "dateLabel":  {
-                      "message":  "Dato"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Nettverk"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Commerce"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "MOMENTANT REGISTRERT"
-                             },
-    "techCatStyles":  {
-                          "message":  "Stiler"
-                      },
-    "extDesc":  {
-                    "message":  "Det ultimate verktøyet som kombinerer alle essensielle funksjoner i et raskt, moderne og gratis grensesnitt."
-                },
-    "resetBtn":  {
-                     "message":  "Tilbakestill"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Legg til dagens dato"
-                       },
-    "supportTitle":  {
-                         "message":  "Støtt utvidelsen"
-                     },
-    "savedIndicator":  {
-                           "message":  "Lagret"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "Lim inn tekst her..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Funnet: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "SYSTEMSIDE"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "Tøm alt"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Daglig visning"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "elementer"
-                        },
-    "trackerTotal":  {
-                         "message":  "Totalt"
-                     },
-    "swStatusReady":  {
-                          "message":  "KLAR"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Totalt"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Blokker informasjonskapsler automatisk"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Tegn"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Denne måneden"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Tabeller"
-                       },
-    "techStatImages":  {
-                           "message":  "Bilder"
-                       },
-    "trackerToday":  {
-                         "message":  "I dag"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Ord"
-                   },
-    "clearAllBtn":  {
-                        "message":  "TØM ALT"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "Fjern alle data fra dette nettstedet"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Velger..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Fjern alle data fra dette nettstedet"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Tekst"
-                          },
-    "radioTitle":  {
-                       "message":  "Radio"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Valgt måned"
-                             },
-    "fontCopied":  {
-                       "message":  "Kopiert!"
-                   },
-    "notesLinkText":  {
-                          "message":  "Lenke"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Gjennomsnitt"
-                            },
-    "techTitle":  {
-                      "message":  "Nettstedteknologier"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Flytt"
-                          },
-    "playBtn":  {
-                    "message":  "Spill av"
-                },
-    "techCatPayment":  {
-                           "message":  "Betaling"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Linje"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "TEGNTELLER"
-                          },
-    "fontTitle":  {
-                      "message":  "Skriftfinner"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "EKSPORTER SOM .TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Slett dette øyeblikket"
-                    },
-    "startBtn":  {
-                     "message":  "START"
-                 },
-    "techModalTitle":  {
-                           "message":  "NETTSTEDTEKNOLOGIER"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "LAGRE STASJON"
-                            },
-    "techCatDb":  {
-                      "message":  "Database"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "LIVE PÅGÅR"
-                     },
-    "linkLabel":  {
-                      "message":  "Lenke"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Analytics"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "LIVE HISTORIKK"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Fargevelger"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "Øyeblikk "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "TOTAL VARIGHET: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "KLAR"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Denne måneden"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Er du sikker på at du vil tømme all historikk?"
-                            },
-    "markerTitle":  {
-                        "message":  "Sidemarkør"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Tidssporing"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Trekk ut tekst fra siden"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Tøm felt"
-                               },
-    "privacyLabel":  {
-                         "message":  "Personvernerklæring"
-                     },
-    "trackerThatDay":  {
-                           "message":  "Den dagen"
-                       },
-    "textLabel":  {
-                      "message":  "Tekst"
-                  },
-    "cacheCleared":  {
-                         "message":  "Fjernet!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Importer tilpasset radiostasjon"
-                           },
-    "radioPlay":  {
-                      "message":  "Spill av"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "Skanneren analyserer nettstedet..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "KOPIER TIL UTKLIPPSTAVLE"
-                  },
-    "techScannerFailed":  {
-                              "message":  "Skanning mislyktes på denne siden."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "I dag"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Kopiert: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ KOPIERT"
-                    },
-    "techCatCaching":  {
-                           "message":  "Caching"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Sikkerhet"
-                        },
-    "extName":  {
-                    "message":  "All In One - Det beste produktivitetsverktøyet"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "Skanneren er ikke tilgjengelig på denne siden."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Notatet er for stort"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Varighet: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "Return YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "Doner og støtt"
-                  },
-    "techStatVideo":  {
-                          "message":  "Video"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Innstillinger"
-                        },
-    "cacheTitle":  {
-                       "message":  "Cache \u0026 Cookies"
-                   },
-    "techCatSystem":  {
-                          "message":  "System"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "Eksporter notater"
-                           },
-    "radioPause":  {
-                       "message":  "Pause"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Offisielt utvidelsesnettsted"
-                       },
-    "rateBtn":  {
-                    "message":  "Vurder utvidelsen"
-                },
-    "techCatBase":  {
-                        "message":  "Base"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "INFORMASJONSKAPSLER OG HURTIGBUFFER"
-                        },
-    "cancelBtn":  {
-                      "message":  "AVBRYT"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "Legg til gjeldende URL"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Gjennomsnitt"
-                        },
-    "techStatForms":  {
-                          "message":  "Skjemaer"
-                      },
-    "cacheError":  {
-                       "message":  "Feil"
-                   }
+    "notesTitle": {
+        "message": "Smarte notater"
+    },
+    "whatsNewDesc": {
+        "message": "Sjekk ut de siste grensesnittforbedringene som gjør All In One enda raskere og mer elegant:"
+    },
+    "toastPermissionDenied": {
+        "message": "Tillatelse ikke gitt"
+    },
+    "clearCounterTooltip": {
+        "message": "Tøm alt"
+    },
+    "supportDesc": {
+        "message": "All In One er et helt gratis verktøy. Din støtte hjelper med å holde det slik og muliggjør utvikling av nye funksjoner."
+    },
+    "trackerExportTruncated": {
+        "message": "Eksport avkortet til 10 MB for å holde popup-vinduet stabilt."
+    },
+    "whatsNewClose": {
+        "message": "FÅR DET"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Visk ut"
+    },
+    "counterTitle": {
+        "message": "Tegnteller"
+    },
+    "trackerAvgLabel": {
+        "message": "Gjennomsnitt"
+    },
+    "trackerModeMonth": {
+        "message": "Månedlig visning"
+    },
+    "trackerModeAll": {
+        "message": "Hele tiden"
+    },
+    "techCatMedia": {
+        "message": "Medier"
+    },
+    "trackerNoData": {
+        "message": "Ingen data for denne perioden"
+    },
+    "whatsNewFeature3": {
+        "message": "Favicon Support: Nettstedsfavikoner i sporingslisten."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Live #"
+    },
+    "confirmClearNotes": {
+        "message": "Er du sikker på at du vil slette alle notater?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Alle data fra denne siden er slettet!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Søk på nettsteder..."
+    },
+    "techCatTools": {
+        "message": "Verktøy"
+    },
+    "toastYtOff": {
+        "message": "YouTube misliker visning deaktivert"
+    },
+    "soundTitle": {
+        "message": "Lyd"
+    },
+    "cacheTitle": {
+        "message": "Cache & Cookies"
+    },
+    "markerCloseTooltip": {
+        "message": "Lukk"
+    },
+    "stopwatchTitle": {
+        "message": "Stoppeklokke"
+    },
+    "clearNotesTooltip": {
+        "message": "Tøm alle notater"
+    },
+    "rulerTitle": {
+        "message": "Sidelinjal"
+    },
+    "markLapDesc": {
+        "message": "Registrer et øyeblikk på stoppeklokken"
+    },
+    "trackerImportEmpty": {
+        "message": "Ingen gyldige sporingsdata å importere."
+    },
+    "whatsNewFeature1": {
+        "message": "Glatte overganger: Glatte lysbildeanimasjoner mellom verktøy."
+    },
+    "systemPageDesc": {
+        "message": "Modifikasjonsverktøy er deaktivert"
+    },
+    "techStatLinks": {
+        "message": "Lenker"
+    },
+    "stopBtn": {
+        "message": "STOPP"
+    },
+    "swNoLaps": {
+        "message": "Ingen registrerte øyeblikk"
+    },
+    "toastTrackerImportError": {
+        "message": "Feil ved import av sporingsdata!"
+    },
+    "toastRadioPlayError": {
+        "message": "Radio kan ikke startes akkurat nå."
+    },
+    "trackerTitle": {
+        "message": "Nettid-sporer"
+    },
+    "offscreenJustification": {
+        "message": "Radiostrømming og systemlyder"
+    },
+    "trackerThisMonth": {
+        "message": "Denne måneden"
+    },
+    "linesLabel": {
+        "message": "Linjer"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Informasjonskapsler blokkert for dette nettstedet"
+    },
+    "toastTrackerError": {
+        "message": "Feil under oppdatering av data"
+    },
+    "trackerExportEmpty": {
+        "message": "Ingen sporingsdata å eksportere."
+    },
+    "techCatComm": {
+        "message": "Kommunikasjon"
+    },
+    "deleteBtn": {
+        "message": "SLETT"
+    },
+    "techCatTech": {
+        "message": "Teknologier"
+    },
+    "notesSaved": {
+        "message": "Lagret"
+    },
+    "toastNotesExported": {
+        "message": "Notater er eksportert!"
+    },
+    "swMomentLabel": {
+        "message": "Øyeblikk "
+    },
+    "notesModalTitle": {
+        "message": "SMARTE NOTATER"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Gjennomsnitt"
+    },
+    "versionLabel": {
+        "message": "Versjon:"
+    },
+    "importNotesTooltip": {
+        "message": "Importer notater"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Lysmodus aktivert"
+    },
+    "toastNotesCopied": {
+        "message": "Tekst kopiert til utklippstavlen!"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toasts: Moderne varslingssystem for viktige handlinger."
+    },
+    "fontNotCopied": {
+        "message": "Ikke kopiert"
+    },
+    "importTooltip": {
+        "message": "Importer data"
+    },
+    "wordsLabelShort": {
+        "message": "ord"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "Ikke støttet"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Lyd"
+    },
+    "cacheClearing": {
+        "message": "Fjerner..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Data oppdatert!"
+    },
+    "websiteBtn": {
+        "message": "Offisielt nettsted"
+    },
+    "markerThicknessTooltip": {
+        "message": "Tykkelse"
+    },
+    "confirmClearCounter": {
+        "message": "Er du sikker på at du vil tømme alt?"
+    },
+    "techCatAds": {
+        "message": "Annonser"
+    },
+    "uiSettings": {
+        "message": "INNSTILLINGER"
+    },
+    "trackerThatMonth": {
+        "message": "Den måneden"
+    },
+    "radioModalDesc": {
+        "message": "Angi direktelinken til favorittradiostasjonen din"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Er du sikker på at du vil slette data for"
+    },
+    "darkModeTitle": {
+        "message": "Mørk modus"
+    },
+    "toastCounterCleared": {
+        "message": "Mottekst er slettet!"
+    },
+    "techStatScripts": {
+        "message": "Skript"
+    },
+    "techNetworkOptInHint": {
+        "message": "Sender forespørsler til dns.google og ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Ingen live historikk"
+    },
+    "whatsNewTitle": {
+        "message": "Hva er nytt i versjon 1.6"
+    },
+    "techNotFound": {
+        "message": "Ikke funnet."
+    },
+    "notesPlaceholder": {
+        "message": "Skriv notater her..."
+    },
+    "radioArtist": {
+        "message": "Drevet av All In One-utvidelsen"
+    },
+    "charsLabel": {
+        "message": "Tegn"
+    },
+    "trackerImportSuccess": {
+        "message": "Data ble importert!"
+    },
+    "copyEnableTitle": {
+        "message": "Kopiering"
+    },
+    "techCatStats": {
+        "message": "Statistikk"
+    },
+    "dateLabel": {
+        "message": "Dato"
+    },
+    "techCatNetwork": {
+        "message": "Nettverk"
+    },
+    "techCatEcom": {
+        "message": "E-handel"
+    },
+    "currentRecordedLabel": {
+        "message": "MOMENTANT REGISTRERT"
+    },
+    "toastCookieOff": {
+        "message": "Automatisk blokkering av informasjonskapsler er deaktivert"
+    },
+    "toastModuleLoadError": {
+        "message": "Feil ved lasting av modulen"
+    },
+    "techCatStyles": {
+        "message": "Stiler"
+    },
+    "extDesc": {
+        "message": "Det ultimate verktøyet som kombinerer alle essensielle funksjoner i et raskt, moderne og gratis grensesnitt."
+    },
+    "resetBtn": {
+        "message": "Tilbakestill"
+    },
+    "addDateTooltip": {
+        "message": "Legg til dagens dato"
+    },
+    "supportTitle": {
+        "message": "Støtt utvidelsen"
+    },
+    "toastCounterCopied": {
+        "message": "Tekst kopiert til utklippstavlen!"
+    },
+    "savedIndicator": {
+        "message": "Lagret"
+    },
+    "counterPlaceholder": {
+        "message": "Lim inn tekst her..."
+    },
+    "techFoundPrefix": {
+        "message": "Funnet: "
+    },
+    "systemPageTitle": {
+        "message": "SYSTEMSIDE"
+    },
+    "markerClearAllTooltip": {
+        "message": "Tøm alt"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Deaktiver analyse"
+    },
+    "trackerModeDay": {
+        "message": "Daglig visning"
+    },
+    "techItemsSuffix": {
+        "message": "elementer"
+    },
+    "toastStopwatchCleared": {
+        "message": "Live-historien er tømt!"
+    },
+    "trackerTotal": {
+        "message": "Totalt"
+    },
+    "swStatusReady": {
+        "message": "KLAR"
+    },
+    "trackerTotalShort": {
+        "message": "Totalt"
+    },
+    "blockCookiesLabel": {
+        "message": "Blokker informasjonskapsler automatisk"
+    },
+    "markerDrawTooltip": {
+        "message": "Tegn"
+    },
+    "trackerMonthLabel": {
+        "message": "Denne måneden"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Tabeller"
+    },
+    "techStatImages": {
+        "message": "Bilder"
+    },
+    "toastRadioSaved": {
+        "message": "Radiostasjonens URL lagret!"
+    },
+    "trackerToday": {
+        "message": "I dag"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Ord"
+    },
+    "clearAllBtn": {
+        "message": "TØM ALT"
+    },
+    "toastCopyOn": {
+        "message": "Kopiering aktivert for dette nettstedet"
+    },
+    "clearSiteDataBtn": {
+        "message": "Fjern alle data fra dette nettstedet"
+    },
+    "colorPickerPicking": {
+        "message": "Velger..."
+    },
+    "cacheClearConfirm": {
+        "message": "Fjern alle data fra dette nettstedet"
+    },
+    "markerTextTooltip": {
+        "message": "Tekst"
+    },
+    "radioTitle": {
+        "message": "Radio"
+    },
+    "trackerSelectedMonth": {
+        "message": "Valgt måned"
+    },
+    "toastCopyOff": {
+        "message": "Kopiering er deaktivert"
+    },
+    "fontCopied": {
+        "message": "Kopiert!"
+    },
+    "notesLinkText": {
+        "message": "Lenke"
+    },
+    "radioClearConfirm": {
+        "message": "Vil du slette den lagrede radiostasjonen?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Gjennomsnitt"
+    },
+    "techTitle": {
+        "message": "Nettstedteknologier"
+    },
+    "lapBtn": {
+        "message": "RUNDE"
+    },
+    "playBtn": {
+        "message": "Spill av"
+    },
+    "toastDarkModeOn": {
+        "message": "Mørk modus aktivert"
+    },
+    "techCatPayment": {
+        "message": "Betaling"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Informasjonskapsler tillatt for dette nettstedet"
+    },
+    "markerLineTooltip": {
+        "message": "Linje"
+    },
+    "techStatIframes": {
+        "message": "Iframes"
+    },
+    "counterModalTitle": {
+        "message": "TEGNTELLER"
+    },
+    "fontTitle": {
+        "message": "Skriftfinner"
+    },
+    "toastTrackerExported": {
+        "message": "Sporingsdata ble eksportert!"
+    },
+    "toastNotesImportError": {
+        "message": "Feil ved import av notater!"
+    },
+    "swExportTxtBtn": {
+        "message": "EKSPORTER SOM .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Slett dette øyeblikket"
+    },
+    "startBtn": {
+        "message": "START"
+    },
+    "markerMoveTooltip": {
+        "message": "Flytt"
+    },
+    "techModalTitle": {
+        "message": "NETTSTEDTEKNOLOGIER"
+    },
+    "saveRadioStationBtn": {
+        "message": "LAGRE STASJON"
+    },
+    "techCatDb": {
+        "message": "Database"
+    },
+    "toastNotesCleared": {
+        "message": "Alle notater er slettet!"
+    },
+    "toastTrackerImported": {
+        "message": "Sporingsdata ble importert!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Ugyldig URL! URL-en må begynne med http:// eller https://"
+    },
+    "trackerImportError": {
+        "message": "Feil ved lesing av filen."
+    },
+    "swStatusLive": {
+        "message": "LIVE PÅGÅR"
+    },
+    "linkLabel": {
+        "message": "Lenke"
+    },
+    "techCatAnalytics": {
+        "message": "Analytics"
+    },
+    "liveHistoryLabel": {
+        "message": "LIVE HISTORIKK"
+    },
+    "colorPickerTitle": {
+        "message": "Fargevelger"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "TOTAL VARIGHET: "
+    },
+    "stopwatchReady": {
+        "message": "KLAR"
+    },
+    "confirmClearHistory": {
+        "message": "Er du sikker på at du vil tømme all historikk?"
+    },
+    "markerTitle": {
+        "message": "Sidemarkør"
+    },
+    "trackerModalTitle": {
+        "message": "Tidssporing"
+    },
+    "grabTextTooltip": {
+        "message": "Trekk ut tekst fra siden"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Tøm felt"
+    },
+    "privacyLabel": {
+        "message": "Personvernerklæring"
+    },
+    "whatsNewFeature4": {
+        "message": "Slå tilbakemelding: Kort puls animasjoner og bekreftelser når du endrer innstillinger."
+    },
+    "trackerThatDay": {
+        "message": "Den dagen"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Kunne ikke oppdatere listen"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Tillat informasjonskapsler for dette nettstedet"
+    },
+    "textLabel": {
+        "message": "Tekst"
+    },
+    "cacheCleared": {
+        "message": "Fjernet!"
+    },
+    "importRadioTooltip": {
+        "message": "Importer tilpasset radiostasjon"
+    },
+    "radioPlay": {
+        "message": "Spill av"
+    },
+    "techLoadingMsg": {
+        "message": "Skanneren analyserer nettstedet..."
+    },
+    "swCopyBtn": {
+        "message": "KOPIER TIL UTKLIPPSTAVLE"
+    },
+    "techScannerFailed": {
+        "message": "Skanning mislyktes på denne siden."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Vis nettverksinformasjon (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "I dag"
+    },
+    "toastNotesImported": {
+        "message": "Notater ble importert!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Kopiert: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ KOPIERT"
+    },
+    "techCatCaching": {
+        "message": "Buffer"
+    },
+    "techCatSecurity": {
+        "message": "Sikkerhet"
+    },
+    "toastYtOn": {
+        "message": "YouTube misliker-visning aktivert"
+    },
+    "extName": {
+        "message": "All In One - Det beste produktivitetsverktøyet"
+    },
+    "toastCookieOn": {
+        "message": "Automatisk blokkering av informasjonskapsler er aktivert"
+    },
+    "techScannerUnavailable": {
+        "message": "Skanneren er ikke tilgjengelig på denne siden."
+    },
+    "notesTooLarge": {
+        "message": "Notatet er for stort"
+    },
+    "swDurationLabel": {
+        "message": "Varighet: "
+    },
+    "ytDislikeTitle": {
+        "message": "Return YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Doner og støtt"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Innstillinger"
+    },
+    "trackerThisMonthShort": {
+        "message": "Denne måneden"
+    },
+    "techCatSystem": {
+        "message": "System"
+    },
+    "exportTooltip": {
+        "message": "Eksporter data"
+    },
+    "exportNotesTooltip": {
+        "message": "Eksporter notater"
+    },
+    "radioPause": {
+        "message": "Pause"
+    },
+    "websiteTooltip": {
+        "message": "Offisielt utvidelsesnettsted"
+    },
+    "rateBtn": {
+        "message": "Vurder utvidelsen"
+    },
+    "techCatBase": {
+        "message": "Base"
+    },
+    "cacheModalTitle": {
+        "message": "INFORMASJONSKAPSLER OG HURTIGBUFFER"
+    },
+    "cancelBtn": {
+        "message": "AVBRYT"
+    },
+    "addUrlTooltip": {
+        "message": "Legg til gjeldende URL"
+    },
+    "trackerAvgTotal": {
+        "message": "Gjennomsnitt"
+    },
+    "techStatForms": {
+        "message": "Skjemaer"
+    },
+    "cacheError": {
+        "message": "Feil"
+    }
 }

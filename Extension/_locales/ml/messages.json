@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "കുറിപ്പുകൾ"
-                   },
-    "supportDesc":  {
-                        "message":  "സൗജന്യ സേവനത്തിന് പിന്തുണ നൽകുക."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "ബാക്കെൻഡ്"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "മായ്ക്കുക"
-                           },
-    "counterTitle":  {
-                         "message":  "കൗണ്ടർ"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "ശരാശരി"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "മാസത്തിന്റെ കാഴ്ച"
-                         },
-    "trackerModeAll":  {
-                           "message":  "എല്ലാ സമയവും"
-                       },
-    "techCatMedia":  {
-                         "message":  "മീഡിയ"
-                     },
-    "trackerNoData":  {
-                          "message":  "No data for this period"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "ലൈവ് #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "കുറിപ്പുകൾ മായ്ക്കണോ?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "ടൂളുകൾ"
-                     },
-    "soundTitle":  {
-                       "message":  "ശബ്ദം"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "എല്ലാം മായ്ക്കുക"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "അടയ്ക്കുക"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "സ്റ്റോപ്പ് വാച്ച്"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "കുറിപ്പുകൾ മായ്ക്കുക"
-                          },
-    "rulerTitle":  {
-                       "message":  "റൂളർ"
-                   },
-    "markLapDesc":  {
-                        "message":  "സ്റ്റോപ്പ് വാച്ചിൽ സമയം രേഖപ്പെടുത്തുക"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു"
-                       },
-    "techStatLinks":  {
-                          "message":  "ലിങ്കുകൾ"
-                      },
-    "stopBtn":  {
-                    "message":  "നിർത്തുക"
-                },
-    "swNoLaps":  {
-                     "message":  "വിവരങ്ങളില്ല"
-                 },
-    "trackerTitle":  {
-                         "message":  "ടൈം ട്രാക്കർ"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "This month"
-                         },
-    "linesLabel":  {
-                       "message":  "വരികൾ"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "കമ്യൂണിക്കേഷൻ"
-                    },
-    "deleteBtn":  {
-                      "message":  "നീക്കം ചെയ്യുക"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "സേവ് ചെയ്തു"
-                   },
-    "lapBtn":  {
-                   "message":  "ലാപ്പ്"
-               },
-    "notesModalTitle":  {
-                            "message":  "കുറിപ്പുകൾ"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "versionLabel":  {
-                         "message":  "പതിപ്പ്:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "ഇമ്പോർട്ട്"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "പരാജയപ്പെട്ടു"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "ടെക്നോളജികൾ"
-                    },
-    "techCatServer":  {
-                          "message":  "സെർവർ"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "ലഭ്യമല്ല"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "ഓഡിയോ"
-                      },
-    "cacheClearing":  {
-                          "message":  "മായ്ക്കുന്നു"
-                      },
-    "radioTitleCustom":  {
-                             "message":  "റേഡിയോ"
-                         },
-    "websiteBtn":  {
-                       "message":  "ഔദ്യോഗിക സൈറ്റ്"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "കനം"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "നിങ്ങൾക്ക് ഉറപ്പാണോ എല്ലാം മായ്ക്കാൻ?"
-                            },
-    "techCatAds":  {
-                       "message":  "വipartemenുകൾ"
-                   },
-    "uiSettings":  {
-                       "message":  "ക്രമീകരണങ്ങൾ"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "ആ മാസം"
-                         },
-    "radioModalDesc":  {
-                           "message":  "നിങ്ങളുടെ പ്രിയപ്പെട്ട റേഡിയോ സ്റ്റേഷനിലേക്കുള്ള നേരിട്ടുള്ള ലിങ്ക് നൽകുക"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "ഡാറ്റ ഡിലീറ്റ് ചെയ്യാൻ നിങ്ങൾ ഉറപ്പാണോ"
-                             },
-    "darkModeTitle":  {
-                          "message":  "ഇരുണ്ടത്"
-                      },
-    "techStatScripts":  {
-                            "message":  "സ്ക്രിപ്റ്റുകൾ"
-                        },
-    "swNoHistory":  {
-                        "message":  "ചരിത്രമില്ല"
-                    },
-    "techNotFound":  {
-                         "message":  "ഒന്നുമില്ല."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "ഇവിടെ എഴുതുക"
-                         },
-    "radioArtist":  {
-                        "message":  "All In One നൽകുന്നത്"
-                    },
-    "charsLabel":  {
-                       "message":  "അക്ഷരങ്ങൾ"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "കോപ്പി"
-                        },
-    "techCatStats":  {
-                         "message":  "സ്റ്റാറ്റിസ്റ്റിക്സ്"
-                     },
-    "dateLabel":  {
-                      "message":  "തീയതി"
-                  },
-    "techCatNetwork":  {
-                           "message":  "നെറ്റ്‌വർക്ക്"
-                       },
-    "techCatEcom":  {
-                        "message":  "ഇ-കൊമേഴ്സ്"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "രേഖപ്പെടുത്തിയത്"
-                             },
-    "techCatStyles":  {
-                          "message":  "സ്റ്റൈലുകൾ"
-                      },
-    "extDesc":  {
-                    "message":  "വേഗതയേറിയതും ആധുനികവും സൗജന്യവുമായ ഇന്റർഫേസിൽ എല്ലാ അത്യാവശ്യ പ്രവർത്തനങ്ങളും സമന്വയിപ്പിക്കുന്ന ആത്യന്തിക ഉപകരണം."
-                },
-    "resetBtn":  {
-                     "message":  "Reset"
-                 },
-    "addDateTooltip":  {
-                           "message":  "തീയതി ചേർക്കുക"
-                       },
-    "supportTitle":  {
-                         "message":  "പിന്തുണയ്ക്കുക"
-                     },
-    "savedIndicator":  {
-                           "message":  "സേവ് ചെയ്തു"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "ടെക്സ്റ്റ് നൽകുക"
-                           },
-    "techFoundPrefix":  {
-                            "message":  "കണ്ടെത്തി: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "സിസ്റ്റം"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "എല്ലാം മായ്ക്കുക"
-                              },
-    "trackerModeDay":  {
-                           "message":  "ദൈനംദിന കാഴ്ച"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "എണ്ണം"
-                        },
-    "trackerTotal":  {
-                         "message":  "മൊത്തം"
-                     },
-    "swStatusReady":  {
-                          "message":  "തയ്യാറാണ്"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "കുക്കികൾ തടയുക"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "വരയ്ക്കുക"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "ഈ മാസം"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "പട്ടികകൾ"
-                       },
-    "techStatImages":  {
-                           "message":  "ചിത്രങ്ങൾ"
-                       },
-    "trackerToday":  {
-                         "message":  "ഇന്ന്"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "വാക്കുകൾ"
-                   },
-    "clearAllBtn":  {
-                        "message":  "മായ്ക്കുക"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "വിവരങ്ങൾ മായ്ക്കുക"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "തിരഞ്ഞെടുക്കുന്നു"
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "വിവരങ്ങൾ മായ്ക്കുക"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "ടെക്സ്റ്റ്"
-                          },
-    "radioTitle":  {
-                       "message":  "റേഡിയോ"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Selected month"
-                             },
-    "fontCopied":  {
-                       "message":  "കോപ്പി ചെയ്തു"
-                   },
-    "notesLinkText":  {
-                          "message":  "ലിങ്ക്"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "techTitle":  {
-                      "message":  "ടെക്നോളജി"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "നീക്കുക"
-                          },
-    "playBtn":  {
-                    "message":  "പ്ലേ"
-                },
-    "techCatPayment":  {
-                           "message":  "പേയ്മെന്റ്"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "ലൈൻ"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "കൗണ്ടർ"
-                          },
-    "fontTitle":  {
-                      "message":  "ഫോണ്ട്"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  ".TXT എക്സ്പോർട്ട്"
-                       },
-    "swUndoTitle":  {
-                        "message":  "മായ്ക്കുക"
-                    },
-    "startBtn":  {
-                     "message":  "തുടങ്ങുക"
-                 },
-    "techModalTitle":  {
-                           "message":  "ടെക്നോളജി"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "സ്റ്റേഷൻ സേവ് ചെയ്യുക"
-                            },
-    "techCatDb":  {
-                      "message":  "ഡാറ്റാബേസ്"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "ലൈവ്"
-                     },
-    "linkLabel":  {
-                      "message":  "ലിങ്ക്"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "അനലിറ്റിക്സ്"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "ചരിത്രം"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "കളർ പിക്കർ"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "നിമിഷം "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "ആകെ സമയം: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "തയ്യാറാണ്"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "ഈ മാസം"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "ചരിത്രം മായ്ക്കണോ?"
-                            },
-    "markerTitle":  {
-                        "message":  "മാർക്കർ"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "സമയ ട്രാക്കർ"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "ടെക്സ്റ്റ് എടുക്കുക"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "ഫീൽഡ് മായ്ക്കുക"
-                               },
-    "privacyLabel":  {
-                         "message":  "സ്വകാര്യത"
-                     },
-    "trackerThatDay":  {
-                           "message":  "ആ ദിവസം"
-                       },
-    "textLabel":  {
-                      "message":  "ടെക്സ്റ്റ്"
-                  },
-    "cacheCleared":  {
-                         "message":  "മായ്ച്ചു"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "കസ്റ്റം റേഡിയോ സ്റ്റേഷൻ ഇമ്പോർട്ട് ചെയ്യുക"
-                           },
-    "radioPlay":  {
-                      "message":  "Play"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "പരിശോധിക്കുന്നു"
-                       },
-    "swCopyBtn":  {
-                      "message":  "കോപ്പി"
-                  },
-    "techScannerFailed":  {
-                              "message":  "പരാജയപ്പെട്ടു."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "ഇന്ന്"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "കോപ്പി ചെയ്തു: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ കോപ്പി ചെയ്തു"
-                    },
-    "techCatCaching":  {
-                           "message":  "കാഷിംഗ്"
-                       },
-    "techCatSecurity":  {
-                            "message":  "സുരക്ഷ"
-                        },
-    "extName":  {
-                    "message":  "All In One മികച്ച പ്രൊഡക്ടിവിറ്റി ടൂൾ"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "ലഭ്യമല്ല."
-                               },
-    "notesTooLarge":  {
-                          "message":  "വലുതാണ്"
-                      },
-    "swDurationLabel":  {
-                            "message":  "സമയം: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "Return YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "പിന്തുണ നൽകുക"
-                  },
-    "techStatVideo":  {
-                          "message":  "വീഡിയോ"
-                      },
-    "settingsTooltip":  {
-                            "message":  "ക്രമീകരണങ്ങൾ"
-                        },
-    "cacheTitle":  {
-                       "message":  "കുക്കികൾ"
-                   },
-    "techCatSystem":  {
-                          "message":  "സിസ്റ്റം"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "എക്സ്പോർട്ട്"
-                           },
-    "radioPause":  {
-                       "message":  "Pause"
-                   },
-    "websiteTooltip":  {
-                           "message":  "ഔദ്യോഗിക സൈറ്റ്"
-                       },
-    "rateBtn":  {
-                    "message":  "റേറ്റിംഗ് നൽകുക"
-                },
-    "techCatBase":  {
-                        "message":  "അടിസ്ഥാനം"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "കുക്കികൾ"
-                        },
-    "cancelBtn":  {
-                      "message":  "റദ്ദാക്കുക"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "ലിങ്ക് ചേർക്കുക"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "ശരാശരി"
-                        },
-    "techStatForms":  {
-                          "message":  "ഫോമുകൾ"
-                      },
-    "cacheError":  {
-                       "message":  "പിശക്"
-                   }
+    "notesTitle": {
+        "message": "കുറിപ്പുകൾ"
+    },
+    "whatsNewDesc": {
+        "message": "ഓൾ ഇൻ വണ്ണിനെ കൂടുതൽ വേഗമേറിയതും മനോഹരവുമാക്കുന്ന ഏറ്റവും പുതിയ ഇൻ്റർഫേസ് മെച്ചപ്പെടുത്തലുകൾ പരിശോധിക്കുക:"
+    },
+    "toastPermissionDenied": {
+        "message": "അനുമതി നൽകിയിട്ടില്ല"
+    },
+    "clearCounterTooltip": {
+        "message": "എല്ലാം മായ്ക്കുക"
+    },
+    "supportDesc": {
+        "message": "സൗജന്യ സേവനത്തിന് പിന്തുണ നൽകുക."
+    },
+    "trackerExportTruncated": {
+        "message": "പോപ്പ്അപ്പ് സ്ഥിരത നിലനിർത്താൻ 10MB ലേക്ക് കയറ്റുമതി ചുരുക്കി."
+    },
+    "whatsNewClose": {
+        "message": "മനസ്സിലായി"
+    },
+    "techCatBackend": {
+        "message": "ബാക്കെൻഡ്"
+    },
+    "markerEraseTooltip": {
+        "message": "മായ്ക്കുക"
+    },
+    "counterTitle": {
+        "message": "കൗണ്ടർ"
+    },
+    "trackerAvgLabel": {
+        "message": "ശരാശരി"
+    },
+    "trackerModeMonth": {
+        "message": "മാസത്തിന്റെ കാഴ്ച"
+    },
+    "trackerModeAll": {
+        "message": "എല്ലാ സമയവും"
+    },
+    "techCatMedia": {
+        "message": "മീഡിയ"
+    },
+    "trackerNoData": {
+        "message": "ഈ കാലയളവിലേക്ക് ഡാറ്റയില്ല"
+    },
+    "whatsNewFeature3": {
+        "message": "ഫാവിക്കോൺ പിന്തുണ: ട്രാക്കർ ലിസ്റ്റിലെ സൈറ്റ് ഫെവിക്കോണുകൾ."
+    },
+    "swLiveTitlePrefix": {
+        "message": "ലൈവ് #"
+    },
+    "confirmClearNotes": {
+        "message": "കുറിപ്പുകൾ മായ്ക്കണോ?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "ഈ സൈറ്റിൽ നിന്നുള്ള എല്ലാ ഡാറ്റയും മായ്‌ച്ചു!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "വെബ്‌സൈറ്റുകൾ തിരയുക..."
+    },
+    "techCatTools": {
+        "message": "ടൂളുകൾ"
+    },
+    "toastYtOff": {
+        "message": "YouTube ഡിസ്‌ലൈക്ക് ഡിസ്‌പ്ലേ പ്രവർത്തനരഹിതമാക്കി"
+    },
+    "soundTitle": {
+        "message": "ശബ്ദം"
+    },
+    "cacheTitle": {
+        "message": "കുക്കികൾ"
+    },
+    "markerCloseTooltip": {
+        "message": "അടയ്ക്കുക"
+    },
+    "stopwatchTitle": {
+        "message": "സ്റ്റോപ്പ് വാച്ച്"
+    },
+    "clearNotesTooltip": {
+        "message": "കുറിപ്പുകൾ മായ്ക്കുക"
+    },
+    "rulerTitle": {
+        "message": "റൂളർ"
+    },
+    "markLapDesc": {
+        "message": "സ്റ്റോപ്പ് വാച്ചിൽ സമയം രേഖപ്പെടുത്തുക"
+    },
+    "trackerImportEmpty": {
+        "message": "ഇറക്കുമതി ചെയ്യാൻ സാധുവായ ട്രാക്കർ ഡാറ്റയില്ല."
+    },
+    "whatsNewFeature1": {
+        "message": "സുഗമമായ സംക്രമണങ്ങൾ: ഉപകരണങ്ങൾക്കിടയിൽ സുഗമമായ സ്ലൈഡ് ആനിമേഷനുകൾ."
+    },
+    "systemPageDesc": {
+        "message": "പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു"
+    },
+    "techStatLinks": {
+        "message": "ലിങ്കുകൾ"
+    },
+    "stopBtn": {
+        "message": "നിർത്തുക"
+    },
+    "swNoLaps": {
+        "message": "വിവരങ്ങളില്ല"
+    },
+    "toastTrackerImportError": {
+        "message": "ട്രാക്കർ ഡാറ്റ ഇറക്കുമതി ചെയ്യുന്നതിൽ പിശക്!"
+    },
+    "toastRadioPlayError": {
+        "message": "ഇപ്പോൾ റേഡിയോ ആരംഭിക്കാൻ കഴിയില്ല."
+    },
+    "trackerTitle": {
+        "message": "ടൈം ട്രാക്കർ"
+    },
+    "offscreenJustification": {
+        "message": "റേഡിയോ സ്ട്രീമിംഗും സിസ്റ്റം ശബ്ദങ്ങളും"
+    },
+    "trackerThisMonth": {
+        "message": "ഈ മാസം"
+    },
+    "linesLabel": {
+        "message": "വരികൾ"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "ഈ സൈറ്റിനായി കുക്കികൾ തടഞ്ഞു"
+    },
+    "toastTrackerError": {
+        "message": "ഡാറ്റ പുതുക്കുന്നതിൽ പിശക്"
+    },
+    "trackerExportEmpty": {
+        "message": "എക്‌സ്‌പോർട്ട് ചെയ്യാൻ ട്രാക്കർ ഡാറ്റയൊന്നുമില്ല."
+    },
+    "techCatComm": {
+        "message": "കമ്യൂണിക്കേഷൻ"
+    },
+    "deleteBtn": {
+        "message": "നീക്കം ചെയ്യുക"
+    },
+    "techCatTech": {
+        "message": "ടെക്നോളജികൾ"
+    },
+    "notesSaved": {
+        "message": "സേവ് ചെയ്തു"
+    },
+    "toastNotesExported": {
+        "message": "കുറിപ്പുകൾ വിജയകരമായി കയറ്റുമതി ചെയ്തു!"
+    },
+    "swMomentLabel": {
+        "message": "നിമിഷം "
+    },
+    "notesModalTitle": {
+        "message": "കുറിപ്പുകൾ"
+    },
+    "trackerAvgThisMonth": {
+        "message": "ശരാശരി (മാസം)"
+    },
+    "versionLabel": {
+        "message": "പതിപ്പ്:"
+    },
+    "importNotesTooltip": {
+        "message": "ഇമ്പോർട്ട്"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "ലൈറ്റ് മോഡ് പ്രവർത്തനക്ഷമമാക്കി"
+    },
+    "toastNotesCopied": {
+        "message": "ടെക്സ്റ്റ് ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി!"
+    },
+    "whatsNewFeature2": {
+        "message": "പ്രീമിയം ടോസ്റ്റുകൾ: പ്രധാനപ്പെട്ട പ്രവർത്തനങ്ങൾക്കായുള്ള ആധുനിക അറിയിപ്പ് സംവിധാനം."
+    },
+    "fontNotCopied": {
+        "message": "പരാജയപ്പെട്ടു"
+    },
+    "importTooltip": {
+        "message": "ഡാറ്റ ഇറക്കുമതി ചെയ്യുക"
+    },
+    "wordsLabelShort": {
+        "message": "വാക്കുകൾ"
+    },
+    "techCatServer": {
+        "message": "സെർവർ"
+    },
+    "cacheNotSupported": {
+        "message": "ലഭ്യമല്ല"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "ഓഡിയോ"
+    },
+    "cacheClearing": {
+        "message": "മായ്ക്കുന്നു"
+    },
+    "radioTitleCustom": {
+        "message": "റേഡിയോ"
+    },
+    "toastTrackerRefreshed": {
+        "message": "ഡാറ്റ പുതുക്കി!"
+    },
+    "websiteBtn": {
+        "message": "ഔദ്യോഗിക സൈറ്റ്"
+    },
+    "markerThicknessTooltip": {
+        "message": "കനം"
+    },
+    "confirmClearCounter": {
+        "message": "നിങ്ങൾക്ക് ഉറപ്പാണോ എല്ലാം മായ്ക്കാൻ?"
+    },
+    "techCatAds": {
+        "message": "വipartemenുകൾ"
+    },
+    "uiSettings": {
+        "message": "ക്രമീകരണങ്ങൾ"
+    },
+    "trackerThatMonth": {
+        "message": "ആ മാസം"
+    },
+    "radioModalDesc": {
+        "message": "നിങ്ങളുടെ പ്രിയപ്പെട്ട റേഡിയോ സ്റ്റേഷനിലേക്കുള്ള നേരിട്ടുള്ള ലിങ്ക് നൽകുക"
+    },
+    "trackerDeleteConfirm": {
+        "message": "ഡാറ്റ ഡിലീറ്റ് ചെയ്യാൻ നിങ്ങൾ ഉറപ്പാണോ"
+    },
+    "darkModeTitle": {
+        "message": "ഇരുണ്ടത്"
+    },
+    "toastCounterCleared": {
+        "message": "എതിർ വാചകം മായ്‌ച്ചു!"
+    },
+    "techStatScripts": {
+        "message": "സ്ക്രിപ്റ്റുകൾ"
+    },
+    "techNetworkOptInHint": {
+        "message": "dns.google, ipinfo.io എന്നിവയിലേക്ക് അഭ്യർത്ഥനകൾ അയയ്ക്കുന്നു."
+    },
+    "swNoHistory": {
+        "message": "ചരിത്രമില്ല"
+    },
+    "whatsNewTitle": {
+        "message": "പതിപ്പ് 1.6-ൽ എന്താണ് പുതിയത്"
+    },
+    "techNotFound": {
+        "message": "ഒന്നുമില്ല."
+    },
+    "notesPlaceholder": {
+        "message": "ഇവിടെ എഴുതുക"
+    },
+    "radioArtist": {
+        "message": "All In One നൽകുന്നത്"
+    },
+    "charsLabel": {
+        "message": "അക്ഷരങ്ങൾ"
+    },
+    "trackerImportSuccess": {
+        "message": "ഡാറ്റ വിജയകരമായി ഇറക്കുമതി ചെയ്തു!"
+    },
+    "copyEnableTitle": {
+        "message": "കോപ്പി"
+    },
+    "techCatStats": {
+        "message": "സ്റ്റാറ്റിസ്റ്റിക്സ്"
+    },
+    "dateLabel": {
+        "message": "തീയതി"
+    },
+    "techCatNetwork": {
+        "message": "നെറ്റ്‌വർക്ക്"
+    },
+    "techCatEcom": {
+        "message": "ഇ-കൊമേഴ്സ്"
+    },
+    "currentRecordedLabel": {
+        "message": "രേഖപ്പെടുത്തിയത്"
+    },
+    "toastCookieOff": {
+        "message": "സ്വയമേവയുള്ള കുക്കി തടയൽ പ്രവർത്തനരഹിതമാക്കി"
+    },
+    "toastModuleLoadError": {
+        "message": "മൊഡ്യൂൾ ലോഡ് ചെയ്യുന്നതിൽ പിശക്"
+    },
+    "techCatStyles": {
+        "message": "സ്റ്റൈലുകൾ"
+    },
+    "extDesc": {
+        "message": "വേഗതയേറിയതും ആധുനികവും സൗജന്യവുമായ ഇന്റർഫേസിൽ എല്ലാ അത്യാവശ്യ പ്രവർത്തനങ്ങളും സമന്വയിപ്പിക്കുന്ന ആത്യന്തിക ഉപകരണം."
+    },
+    "resetBtn": {
+        "message": "പുനഃസജ്ജമാക്കുക"
+    },
+    "addDateTooltip": {
+        "message": "തീയതി ചേർക്കുക"
+    },
+    "supportTitle": {
+        "message": "പിന്തുണയ്ക്കുക"
+    },
+    "toastCounterCopied": {
+        "message": "ടെക്സ്റ്റ് ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി!"
+    },
+    "savedIndicator": {
+        "message": "സേവ് ചെയ്തു"
+    },
+    "counterPlaceholder": {
+        "message": "ടെക്സ്റ്റ് നൽകുക"
+    },
+    "techFoundPrefix": {
+        "message": "കണ്ടെത്തി: "
+    },
+    "systemPageTitle": {
+        "message": "സിസ്റ്റം"
+    },
+    "markerClearAllTooltip": {
+        "message": "എല്ലാം മായ്ക്കുക"
+    },
+    "analyticsOptOutLabel": {
+        "message": "അനലിറ്റിക്സ് പ്രവർത്തനരഹിതമാക്കുക"
+    },
+    "trackerModeDay": {
+        "message": "ദൈനംദിന കാഴ്ച"
+    },
+    "techItemsSuffix": {
+        "message": "എണ്ണം"
+    },
+    "toastStopwatchCleared": {
+        "message": "തത്സമയ ചരിത്രം മായ്‌ച്ചു!"
+    },
+    "trackerTotal": {
+        "message": "മൊത്തം"
+    },
+    "swStatusReady": {
+        "message": "തയ്യാറാണ്"
+    },
+    "trackerTotalShort": {
+        "message": "ആകെ"
+    },
+    "blockCookiesLabel": {
+        "message": "കുക്കികൾ തടയുക"
+    },
+    "markerDrawTooltip": {
+        "message": "വരയ്ക്കുക"
+    },
+    "trackerMonthLabel": {
+        "message": "ഈ മാസം"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "പട്ടികകൾ"
+    },
+    "techStatImages": {
+        "message": "ചിത്രങ്ങൾ"
+    },
+    "toastRadioSaved": {
+        "message": "റേഡിയോ സ്റ്റേഷൻ URL സംരക്ഷിച്ചു!"
+    },
+    "trackerToday": {
+        "message": "ഇന്ന്"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "വാക്കുകൾ"
+    },
+    "clearAllBtn": {
+        "message": "മായ്ക്കുക"
+    },
+    "toastCopyOn": {
+        "message": "ഈ സൈറ്റിനായി പകർത്തൽ പ്രവർത്തനക്ഷമമാക്കി"
+    },
+    "clearSiteDataBtn": {
+        "message": "വിവരങ്ങൾ മായ്ക്കുക"
+    },
+    "colorPickerPicking": {
+        "message": "തിരഞ്ഞെടുക്കുന്നു"
+    },
+    "cacheClearConfirm": {
+        "message": "വിവരങ്ങൾ മായ്ക്കുക"
+    },
+    "markerTextTooltip": {
+        "message": "ടെക്സ്റ്റ്"
+    },
+    "radioTitle": {
+        "message": "റേഡിയോ"
+    },
+    "trackerSelectedMonth": {
+        "message": "തിരഞ്ഞെടുത്ത മാസം"
+    },
+    "toastCopyOff": {
+        "message": "പകർപ്പ് പ്രവർത്തനരഹിതമാക്കി"
+    },
+    "fontCopied": {
+        "message": "കോപ്പി ചെയ്തു"
+    },
+    "notesLinkText": {
+        "message": "ലിങ്ക്"
+    },
+    "radioClearConfirm": {
+        "message": "സംരക്ഷിച്ച റേഡിയോ സ്റ്റേഷൻ മായ്‌ക്കണോ?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "ശരാശരി (മാസം)"
+    },
+    "techTitle": {
+        "message": "ടെക്നോളജി"
+    },
+    "lapBtn": {
+        "message": "ലാപ്പ്"
+    },
+    "playBtn": {
+        "message": "പ്ലേ"
+    },
+    "toastDarkModeOn": {
+        "message": "ഡാർക്ക് മോഡ് പ്രവർത്തനക്ഷമമാക്കി"
+    },
+    "techCatPayment": {
+        "message": "പേയ്മെന്റ്"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "ഈ സൈറ്റിനായി കുക്കികൾ അനുവദിച്ചിരിക്കുന്നു"
+    },
+    "markerLineTooltip": {
+        "message": "ലൈൻ"
+    },
+    "techStatIframes": {
+        "message": "ഐഫ്രെയിമുകൾ"
+    },
+    "counterModalTitle": {
+        "message": "കൗണ്ടർ"
+    },
+    "fontTitle": {
+        "message": "ഫോണ്ട്"
+    },
+    "toastTrackerExported": {
+        "message": "ട്രാക്കർ ഡാറ്റ വിജയകരമായി കയറ്റുമതി ചെയ്തു!"
+    },
+    "toastNotesImportError": {
+        "message": "നോട്ടുകൾ ഇറക്കുമതി ചെയ്യുന്നതിൽ പിശക്!"
+    },
+    "swExportTxtBtn": {
+        "message": ".TXT എക്സ്പോർട്ട്"
+    },
+    "swUndoTitle": {
+        "message": "മായ്ക്കുക"
+    },
+    "startBtn": {
+        "message": "തുടങ്ങുക"
+    },
+    "markerMoveTooltip": {
+        "message": "നീക്കുക"
+    },
+    "techModalTitle": {
+        "message": "ടെക്നോളജി"
+    },
+    "saveRadioStationBtn": {
+        "message": "സ്റ്റേഷൻ സേവ് ചെയ്യുക"
+    },
+    "techCatDb": {
+        "message": "ഡാറ്റാബേസ്"
+    },
+    "toastNotesCleared": {
+        "message": "എല്ലാ കുറിപ്പുകളും മായ്‌ച്ചു!"
+    },
+    "toastTrackerImported": {
+        "message": "ട്രാക്കർ ഡാറ്റ വിജയകരമായി ഇറക്കുമതി ചെയ്തു!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "അസാധുവായ URL! URL ആരംഭിക്കേണ്ടത് http:// അല്ലെങ്കിൽ https://"
+    },
+    "trackerImportError": {
+        "message": "ഫയൽ വായിക്കുന്നതിൽ പിശക്."
+    },
+    "swStatusLive": {
+        "message": "ലൈവ്"
+    },
+    "linkLabel": {
+        "message": "ലിങ്ക്"
+    },
+    "techCatAnalytics": {
+        "message": "അനലിറ്റിക്സ്"
+    },
+    "liveHistoryLabel": {
+        "message": "ചരിത്രം"
+    },
+    "colorPickerTitle": {
+        "message": "കളർ പിക്കർ"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "ആകെ സമയം: "
+    },
+    "stopwatchReady": {
+        "message": "തയ്യാറാണ്"
+    },
+    "confirmClearHistory": {
+        "message": "ചരിത്രം മായ്ക്കണോ?"
+    },
+    "markerTitle": {
+        "message": "മാർക്കർ"
+    },
+    "trackerModalTitle": {
+        "message": "സമയ ട്രാക്കർ"
+    },
+    "grabTextTooltip": {
+        "message": "ടെക്സ്റ്റ് എടുക്കുക"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "ഫീൽഡ് മായ്ക്കുക"
+    },
+    "privacyLabel": {
+        "message": "സ്വകാര്യത"
+    },
+    "whatsNewFeature4": {
+        "message": "ഫീഡ്‌ബാക്ക് ടോഗിൾ ചെയ്യുക: ക്രമീകരണങ്ങൾ മാറ്റുമ്പോൾ ഹ്രസ്വ പൾസ് ആനിമേഷനുകളും സ്ഥിരീകരണങ്ങളും."
+    },
+    "trackerThatDay": {
+        "message": "ആ ദിവസം"
+    },
+    "toastCookieWhitelistError": {
+        "message": "ലിസ്റ്റ് അപ്ഡേറ്റ് ചെയ്യാനായില്ല"
+    },
+    "cookieWhitelistLabel": {
+        "message": "ഈ സൈറ്റിനായി കുക്കികൾ അനുവദിക്കുക"
+    },
+    "textLabel": {
+        "message": "ടെക്സ്റ്റ്"
+    },
+    "cacheCleared": {
+        "message": "മായ്ച്ചു"
+    },
+    "importRadioTooltip": {
+        "message": "കസ്റ്റം റേഡിയോ സ്റ്റേഷൻ ഇമ്പോർട്ട് ചെയ്യുക"
+    },
+    "radioPlay": {
+        "message": "Play"
+    },
+    "techLoadingMsg": {
+        "message": "പരിശോധിക്കുന്നു"
+    },
+    "swCopyBtn": {
+        "message": "കോപ്പി"
+    },
+    "techScannerFailed": {
+        "message": "പരാജയപ്പെട്ടു."
+    },
+    "techNetworkOptInLabel": {
+        "message": "നെറ്റ്‌വർക്ക് വിവരങ്ങൾ കാണിക്കുക (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "ഇന്ന്"
+    },
+    "toastNotesImported": {
+        "message": "കുറിപ്പുകൾ വിജയകരമായി ഇറക്കുമതി ചെയ്തു!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "കോപ്പി ചെയ്തു: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ കോപ്പി ചെയ്തു"
+    },
+    "techCatCaching": {
+        "message": "കാഷിംഗ്"
+    },
+    "techCatSecurity": {
+        "message": "സുരക്ഷ"
+    },
+    "toastYtOn": {
+        "message": "YouTube ഡിസ്‌ലൈക്ക് ഡിസ്‌പ്ലേ പ്രവർത്തനക്ഷമമാക്കി"
+    },
+    "extName": {
+        "message": "All In One മികച്ച പ്രൊഡക്ടിവിറ്റി ടൂൾ"
+    },
+    "toastCookieOn": {
+        "message": "സ്വയമേവയുള്ള കുക്കി തടയൽ പ്രവർത്തനക്ഷമമാക്കി"
+    },
+    "techScannerUnavailable": {
+        "message": "ലഭ്യമല്ല."
+    },
+    "notesTooLarge": {
+        "message": "വലുതാണ്"
+    },
+    "swDurationLabel": {
+        "message": "സമയം: "
+    },
+    "ytDislikeTitle": {
+        "message": "Return YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "പിന്തുണ നൽകുക"
+    },
+    "techStatVideo": {
+        "message": "വീഡിയോ"
+    },
+    "settingsTooltip": {
+        "message": "ക്രമീകരണങ്ങൾ"
+    },
+    "trackerThisMonthShort": {
+        "message": "ഈ മാസം"
+    },
+    "techCatSystem": {
+        "message": "സിസ്റ്റം"
+    },
+    "exportTooltip": {
+        "message": "ഡാറ്റ കയറ്റുമതി ചെയ്യുക"
+    },
+    "exportNotesTooltip": {
+        "message": "എക്സ്പോർട്ട്"
+    },
+    "radioPause": {
+        "message": "Pause"
+    },
+    "websiteTooltip": {
+        "message": "ഔദ്യോഗിക സൈറ്റ്"
+    },
+    "rateBtn": {
+        "message": "റേറ്റിംഗ് നൽകുക"
+    },
+    "techCatBase": {
+        "message": "അടിസ്ഥാനം"
+    },
+    "cacheModalTitle": {
+        "message": "കുക്കികൾ"
+    },
+    "cancelBtn": {
+        "message": "റദ്ദാക്കുക"
+    },
+    "addUrlTooltip": {
+        "message": "ലിങ്ക് ചേർക്കുക"
+    },
+    "trackerAvgTotal": {
+        "message": "ശരാശരി"
+    },
+    "techStatForms": {
+        "message": "ഫോമുകൾ"
+    },
+    "cacheError": {
+        "message": "പിശക്"
+    }
 }

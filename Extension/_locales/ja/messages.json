@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "スマートノート"
-                   },
-    "supportDesc":  {
-                        "message":  "All In Oneは完全に無料のツールです。皆様のサポートが無料提供の継続と新機能の開発を支えています。"
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "バックエンド"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "消しゴム"
-                           },
-    "counterTitle":  {
-                         "message":  "文字数カウンター"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "平均"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "月別表示"
-                         },
-    "trackerModeAll":  {
-                           "message":  "全期間"
-                       },
-    "techCatMedia":  {
-                         "message":  "メディア"
-                     },
-    "trackerNoData":  {
-                          "message":  "この期間のデータはありません"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "ライブ #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "すべてのノートを消去してもよろしいですか？"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "ツール"
-                     },
-    "soundTitle":  {
-                       "message":  "音"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "すべてクリア"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "閉じる"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "ストップウォッチ"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "すべてのノートを消去"
-                          },
-    "rulerTitle":  {
-                       "message":  "ページ定規"
-                   },
-    "markLapDesc":  {
-                        "message":  "ストップウォッチで瞬間を記録する"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "編集ツールは無効化されています"
-                       },
-    "techStatLinks":  {
-                          "message":  "リンク"
-                      },
-    "stopBtn":  {
-                    "message":  "ストップ"
-                },
-    "swNoLaps":  {
-                     "message":  "記録された瞬間はありません"
-                 },
-    "trackerTitle":  {
-                         "message":  "閲覧時間タイマー"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "今月"
-                         },
-    "linesLabel":  {
-                       "message":  "行数"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "通信"
-                    },
-    "deleteBtn":  {
-                      "message":  "削除"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "保存済み"
-                   },
-    "lapBtn":  {
-                   "message":  "ラップ"
-               },
-    "notesModalTitle":  {
-                            "message":  "スマートノート"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "平均"
-                            },
-    "versionLabel":  {
-                         "message":  "バージョン："
-                     },
-    "importNotesTooltip":  {
-                               "message":  "ノートをインポート"
-                           },
-    "techCatBuild":  {
-                         "message":  "ビルド"
-                     },
-    "fontNotCopied":  {
-                          "message":  "コピーできませんでした"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "技術"
-                    },
-    "techCatServer":  {
-                          "message":  "サーバー"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "未対応"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "音声"
-                      },
-    "cacheClearing":  {
-                          "message":  "消去中..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "ラジオ"
-                         },
-    "websiteBtn":  {
-                       "message":  "拡張機能の公式サイト"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "太さ"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "本当にすべてクリアしますか？"
-                            },
-    "techCatAds":  {
-                       "message":  "広告"
-                   },
-    "uiSettings":  {
-                       "message":  "設定"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "その月"
-                         },
-    "radioModalDesc":  {
-                           "message":  "お気に入りのラジオ局への直接リンクを入力してください"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "データを削除してもよろしいですか"
-                             },
-    "darkModeTitle":  {
-                          "message":  "ダークモード"
-                      },
-    "techStatScripts":  {
-                            "message":  "スクリプト"
-                        },
-    "swNoHistory":  {
-                        "message":  "ライブ履歴はありません"
-                    },
-    "techNotFound":  {
-                         "message":  "見つかりませんでした。"
-                     },
-    "notesPlaceholder":  {
-                             "message":  "ここにノートを記入..."
-                         },
-    "radioArtist":  {
-                        "message":  "All In One 拡張機能提供"
-                    },
-    "charsLabel":  {
-                       "message":  "文字数"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "コピー可能"
-                        },
-    "techCatStats":  {
-                         "message":  "統計"
-                     },
-    "dateLabel":  {
-                      "message":  "日付"
-                  },
-    "techCatNetwork":  {
-                           "message":  "ネットワーク"
-                       },
-    "techCatEcom":  {
-                        "message":  "Eコマース"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "現在の記録"
-                             },
-    "techCatStyles":  {
-                          "message":  "スタイル"
-                      },
-    "extDesc":  {
-                    "message":  "すべての必須機能を1つの高速でモダンな無料インターフェースに集約した究極のツール。"
-                },
-    "resetBtn":  {
-                     "message":  "リセット"
-                 },
-    "addDateTooltip":  {
-                           "message":  "今日の日付を追加"
-                       },
-    "supportTitle":  {
-                         "message":  "拡張機能をサポート"
-                     },
-    "savedIndicator":  {
-                           "message":  "保存済み"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "ここにテキストを貼り付け..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "検出："
-                        },
-    "systemPageTitle":  {
-                            "message":  "システムページ"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "すべて消去"
-                              },
-    "trackerModeDay":  {
-                           "message":  "日別表示"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "項目"
-                        },
-    "trackerTotal":  {
-                         "message":  "合計"
-                     },
-    "swStatusReady":  {
-                          "message":  "準備完了"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "合計"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "クッキーを自動的にブロックする"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "描画"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "今月"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "テーブル"
-                       },
-    "techStatImages":  {
-                           "message":  "画像"
-                       },
-    "trackerToday":  {
-                         "message":  "今日"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "単語数"
-                   },
-    "clearAllBtn":  {
-                        "message":  "すべて消去"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "このサイトのすべてのデータを消去する"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "選択中..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "このサイトのすべてのデータを消去する"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "テキスト"
-                          },
-    "radioTitle":  {
-                       "message":  "ラジオ"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "選択された月"
-                             },
-    "fontCopied":  {
-                       "message":  "コピーしました！"
-                   },
-    "notesLinkText":  {
-                          "message":  "リンク"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "平均"
-                            },
-    "techTitle":  {
-                      "message":  "サイトのテクノロジー"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "移動"
-                          },
-    "playBtn":  {
-                    "message":  "再生"
-                },
-    "techCatPayment":  {
-                           "message":  "決済"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "直線"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "文字数カウンター"
-                          },
-    "fontTitle":  {
-                      "message":  "フォントファインダー"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  ".TXTとしてエクスポート"
-                       },
-    "swUndoTitle":  {
-                        "message":  "この瞬間を削除"
-                    },
-    "startBtn":  {
-                     "message":  "スタート"
-                 },
-    "techModalTitle":  {
-                           "message":  "サイトのテクノロジー"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "局を保存"
-                            },
-    "techCatDb":  {
-                      "message":  "データベース"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "ライブ配信中"
-                     },
-    "linkLabel":  {
-                      "message":  "リンク"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "分析"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "ライブ履歴"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "カラーピッカー"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "瞬間 "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "合計期間："
-                              },
-    "stopwatchReady":  {
-                           "message":  "準備完了"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "今月"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "すべての履歴を消去してもよろしいですか？"
-                            },
-    "markerTitle":  {
-                        "message":  "ページマーカー"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "時間追跡"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "ページからテキストを抽出"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "フィールドをクリア"
-                               },
-    "privacyLabel":  {
-                         "message":  "プライバシーポリシー"
-                     },
-    "trackerThatDay":  {
-                           "message":  "その日"
-                       },
-    "textLabel":  {
-                      "message":  "テキスト"
-                  },
-    "cacheCleared":  {
-                         "message":  "消去しました！"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "カスタムラジオ局をインポート"
-                           },
-    "radioPlay":  {
-                      "message":  "再生"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "スキャナーがサイトを分析しています..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "クリップボードにコピー"
-                  },
-    "techScannerFailed":  {
-                              "message":  "このページのスキャンに失敗しました。"
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "今日"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "コピーしました： "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ コピー完了"
-                    },
-    "techCatCaching":  {
-                           "message":  "キャッシュ"
-                       },
-    "techCatSecurity":  {
-                            "message":  "セキュリティ"
-                        },
-    "extName":  {
-                    "message":  "All In One - 最強の生産性ツール"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "このページではスキャナーを利用できません。"
-                               },
-    "notesTooLarge":  {
-                          "message":  "ノートのサイズが大きすぎます"
-                      },
-    "swDurationLabel":  {
-                            "message":  "期間："
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "Return YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "寄付をして開発を支援する"
-                  },
-    "techStatVideo":  {
-                          "message":  "動画"
-                      },
-    "settingsTooltip":  {
-                            "message":  "設定"
-                        },
-    "cacheTitle":  {
-                       "message":  "クッキーとキャッシュ"
-                   },
-    "techCatSystem":  {
-                          "message":  "システム"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "ノートをエクスポート"
-                           },
-    "radioPause":  {
-                       "message":  "停止"
-                   },
-    "websiteTooltip":  {
-                           "message":  "拡張機能の公式サイト"
-                       },
-    "rateBtn":  {
-                    "message":  "拡張機能を評価する"
-                },
-    "techCatBase":  {
-                        "message":  "ベース"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "クッキーとキャッシュ"
-                        },
-    "cancelBtn":  {
-                      "message":  "キャンセル"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "現在のページのURLを追加"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "平均"
-                        },
-    "techStatForms":  {
-                          "message":  "フォーム"
-                      },
-    "cacheError":  {
-                       "message":  "エラー"
-                   }
+    "notesTitle": {
+        "message": "スマートノート"
+    },
+    "whatsNewDesc": {
+        "message": "All In One をさらに高速かつエレガントにする最新のインターフェイスの改善を確認してください。"
+    },
+    "toastPermissionDenied": {
+        "message": "許可が与えられませんでした"
+    },
+    "clearCounterTooltip": {
+        "message": "すべてクリア"
+    },
+    "supportDesc": {
+        "message": "All In Oneは完全に無料のツールです。皆様のサポートが無料提供の継続と新機能の開発を支えています。"
+    },
+    "trackerExportTruncated": {
+        "message": "ポップアップを安定させるために、エクスポートは 10MB に切り詰められました。"
+    },
+    "whatsNewClose": {
+        "message": "わかった"
+    },
+    "techCatBackend": {
+        "message": "バックエンド"
+    },
+    "markerEraseTooltip": {
+        "message": "消しゴム"
+    },
+    "counterTitle": {
+        "message": "文字数カウンター"
+    },
+    "trackerAvgLabel": {
+        "message": "平均"
+    },
+    "trackerModeMonth": {
+        "message": "月別表示"
+    },
+    "trackerModeAll": {
+        "message": "全期間"
+    },
+    "techCatMedia": {
+        "message": "メディア"
+    },
+    "trackerNoData": {
+        "message": "この期間のデータはありません"
+    },
+    "whatsNewFeature3": {
+        "message": "ファビコンのサポート: トラッカー リスト内のサイトのファビコン。"
+    },
+    "swLiveTitlePrefix": {
+        "message": "ライブ #"
+    },
+    "confirmClearNotes": {
+        "message": "すべてのノートを消去してもよろしいですか？"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "このサイトのデータはすべて消去されました。"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Web サイトを検索..."
+    },
+    "techCatTools": {
+        "message": "ツール"
+    },
+    "toastYtOff": {
+        "message": "YouTube の嫌いな表示が無効になっています"
+    },
+    "soundTitle": {
+        "message": "音"
+    },
+    "cacheTitle": {
+        "message": "クッキーとキャッシュ"
+    },
+    "markerCloseTooltip": {
+        "message": "閉じる"
+    },
+    "stopwatchTitle": {
+        "message": "ストップウォッチ"
+    },
+    "clearNotesTooltip": {
+        "message": "すべてのノートを消去"
+    },
+    "rulerTitle": {
+        "message": "ページ定規"
+    },
+    "markLapDesc": {
+        "message": "ストップウォッチで瞬間を記録する"
+    },
+    "trackerImportEmpty": {
+        "message": "インポートする有効なトラッカー データがありません。"
+    },
+    "whatsNewFeature1": {
+        "message": "スムーズなトランジション: ツール間のスムーズなスライド アニメーション。"
+    },
+    "systemPageDesc": {
+        "message": "編集ツールは無効化されています"
+    },
+    "techStatLinks": {
+        "message": "リンク"
+    },
+    "stopBtn": {
+        "message": "ストップ"
+    },
+    "swNoLaps": {
+        "message": "記録された瞬間はありません"
+    },
+    "toastTrackerImportError": {
+        "message": "トラッカー データのインポート中にエラーが発生しました!"
+    },
+    "toastRadioPlayError": {
+        "message": "現在ラジオを開始できません。"
+    },
+    "trackerTitle": {
+        "message": "閲覧時間タイマー"
+    },
+    "offscreenJustification": {
+        "message": "ラジオストリーミングとシステムサウンド"
+    },
+    "trackerThisMonth": {
+        "message": "今月"
+    },
+    "linesLabel": {
+        "message": "行数"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "このサイトでは Cookie がブロックされています"
+    },
+    "toastTrackerError": {
+        "message": "データのリフレッシュ中にエラーが発生しました"
+    },
+    "trackerExportEmpty": {
+        "message": "エクスポートするトラッカー データがありません。"
+    },
+    "techCatComm": {
+        "message": "通信"
+    },
+    "deleteBtn": {
+        "message": "削除"
+    },
+    "techCatTech": {
+        "message": "技術"
+    },
+    "notesSaved": {
+        "message": "保存済み"
+    },
+    "toastNotesExported": {
+        "message": "メモは正常にエクスポートされました。"
+    },
+    "swMomentLabel": {
+        "message": "瞬間 "
+    },
+    "notesModalTitle": {
+        "message": "スマートノート"
+    },
+    "trackerAvgThisMonth": {
+        "message": "平均"
+    },
+    "versionLabel": {
+        "message": "バージョン："
+    },
+    "importNotesTooltip": {
+        "message": "ノートをインポート"
+    },
+    "techCatBuild": {
+        "message": "ビルド"
+    },
+    "toastDarkModeOff": {
+        "message": "ライトモード有効"
+    },
+    "toastNotesCopied": {
+        "message": "テキストがクリップボードにコピーされました!"
+    },
+    "whatsNewFeature2": {
+        "message": "プレミアム トースト: 重要なアクションに関する最新の通知システム。"
+    },
+    "fontNotCopied": {
+        "message": "コピーできませんでした"
+    },
+    "importTooltip": {
+        "message": "データのインポート"
+    },
+    "wordsLabelShort": {
+        "message": "言葉"
+    },
+    "techCatServer": {
+        "message": "サーバー"
+    },
+    "cacheNotSupported": {
+        "message": "未対応"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "音声"
+    },
+    "cacheClearing": {
+        "message": "消去中..."
+    },
+    "radioTitleCustom": {
+        "message": "ラジオ"
+    },
+    "toastTrackerRefreshed": {
+        "message": "データが更新されました！"
+    },
+    "websiteBtn": {
+        "message": "拡張機能の公式サイト"
+    },
+    "markerThicknessTooltip": {
+        "message": "太さ"
+    },
+    "confirmClearCounter": {
+        "message": "本当にすべてクリアしますか？"
+    },
+    "techCatAds": {
+        "message": "広告"
+    },
+    "uiSettings": {
+        "message": "設定"
+    },
+    "trackerThatMonth": {
+        "message": "その月"
+    },
+    "radioModalDesc": {
+        "message": "お気に入りのラジオ局への直接リンクを入力してください"
+    },
+    "trackerDeleteConfirm": {
+        "message": "データを削除してもよろしいですか"
+    },
+    "darkModeTitle": {
+        "message": "ダークモード"
+    },
+    "toastCounterCleared": {
+        "message": "カウンターテキストがクリアされました！"
+    },
+    "techStatScripts": {
+        "message": "スクリプト"
+    },
+    "techNetworkOptInHint": {
+        "message": "リクエストを dns.google と ipinfo.io に送信します。"
+    },
+    "swNoHistory": {
+        "message": "ライブ履歴はありません"
+    },
+    "whatsNewTitle": {
+        "message": "バージョン 1.6 の新機能"
+    },
+    "techNotFound": {
+        "message": "見つかりませんでした。"
+    },
+    "notesPlaceholder": {
+        "message": "ここにノートを記入..."
+    },
+    "radioArtist": {
+        "message": "All In One 拡張機能提供"
+    },
+    "charsLabel": {
+        "message": "文字数"
+    },
+    "trackerImportSuccess": {
+        "message": "データは正常にインポートされました。"
+    },
+    "copyEnableTitle": {
+        "message": "コピー可能"
+    },
+    "techCatStats": {
+        "message": "統計"
+    },
+    "dateLabel": {
+        "message": "日付"
+    },
+    "techCatNetwork": {
+        "message": "ネットワーク"
+    },
+    "techCatEcom": {
+        "message": "Eコマース"
+    },
+    "currentRecordedLabel": {
+        "message": "現在の記録"
+    },
+    "toastCookieOff": {
+        "message": "自動 Cookie ブロックが無効になっています"
+    },
+    "toastModuleLoadError": {
+        "message": "モジュールのロード中にエラーが発生しました"
+    },
+    "techCatStyles": {
+        "message": "スタイル"
+    },
+    "extDesc": {
+        "message": "すべての必須機能を1つの高速でモダンな無料インターフェースに集約した究極のツール。"
+    },
+    "resetBtn": {
+        "message": "リセット"
+    },
+    "addDateTooltip": {
+        "message": "今日の日付を追加"
+    },
+    "supportTitle": {
+        "message": "拡張機能をサポート"
+    },
+    "toastCounterCopied": {
+        "message": "テキストがクリップボードにコピーされました!"
+    },
+    "savedIndicator": {
+        "message": "保存済み"
+    },
+    "counterPlaceholder": {
+        "message": "ここにテキストを貼り付け..."
+    },
+    "techFoundPrefix": {
+        "message": "検出："
+    },
+    "systemPageTitle": {
+        "message": "システムページ"
+    },
+    "markerClearAllTooltip": {
+        "message": "すべて消去"
+    },
+    "analyticsOptOutLabel": {
+        "message": "分析を無効にする"
+    },
+    "trackerModeDay": {
+        "message": "日別表示"
+    },
+    "techItemsSuffix": {
+        "message": "項目"
+    },
+    "toastStopwatchCleared": {
+        "message": "ライブ履歴がクリアされました！"
+    },
+    "trackerTotal": {
+        "message": "合計"
+    },
+    "swStatusReady": {
+        "message": "準備完了"
+    },
+    "trackerTotalShort": {
+        "message": "合計"
+    },
+    "blockCookiesLabel": {
+        "message": "クッキーを自動的にブロックする"
+    },
+    "markerDrawTooltip": {
+        "message": "描画"
+    },
+    "trackerMonthLabel": {
+        "message": "今月"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "テーブル"
+    },
+    "techStatImages": {
+        "message": "画像"
+    },
+    "toastRadioSaved": {
+        "message": "ラジオ局のURLが保存されました！"
+    },
+    "trackerToday": {
+        "message": "今日"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "単語数"
+    },
+    "clearAllBtn": {
+        "message": "すべて消去"
+    },
+    "toastCopyOn": {
+        "message": "このサイトではコピーが有効になっています"
+    },
+    "clearSiteDataBtn": {
+        "message": "このサイトのすべてのデータを消去する"
+    },
+    "colorPickerPicking": {
+        "message": "選択中..."
+    },
+    "cacheClearConfirm": {
+        "message": "このサイトのすべてのデータを消去する"
+    },
+    "markerTextTooltip": {
+        "message": "テキスト"
+    },
+    "radioTitle": {
+        "message": "ラジオ"
+    },
+    "trackerSelectedMonth": {
+        "message": "選択された月"
+    },
+    "toastCopyOff": {
+        "message": "コピーが無効になっています"
+    },
+    "fontCopied": {
+        "message": "コピーしました！"
+    },
+    "notesLinkText": {
+        "message": "リンク"
+    },
+    "radioClearConfirm": {
+        "message": "保存したラジオ局を消去しますか?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "平均"
+    },
+    "techTitle": {
+        "message": "サイトのテクノロジー"
+    },
+    "lapBtn": {
+        "message": "ラップ"
+    },
+    "playBtn": {
+        "message": "再生"
+    },
+    "toastDarkModeOn": {
+        "message": "ダークモード有効"
+    },
+    "techCatPayment": {
+        "message": "決済"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "このサイトでは Cookie が許可されています"
+    },
+    "markerLineTooltip": {
+        "message": "直線"
+    },
+    "techStatIframes": {
+        "message": "iframe"
+    },
+    "counterModalTitle": {
+        "message": "文字数カウンター"
+    },
+    "fontTitle": {
+        "message": "フォントファインダー"
+    },
+    "toastTrackerExported": {
+        "message": "トラッカー データは正常にエクスポートされました。"
+    },
+    "toastNotesImportError": {
+        "message": "メモのインポートでエラーが発生しました!"
+    },
+    "swExportTxtBtn": {
+        "message": ".TXTとしてエクスポート"
+    },
+    "swUndoTitle": {
+        "message": "この瞬間を削除"
+    },
+    "startBtn": {
+        "message": "スタート"
+    },
+    "markerMoveTooltip": {
+        "message": "移動"
+    },
+    "techModalTitle": {
+        "message": "サイトのテクノロジー"
+    },
+    "saveRadioStationBtn": {
+        "message": "局を保存"
+    },
+    "techCatDb": {
+        "message": "データベース"
+    },
+    "toastNotesCleared": {
+        "message": "すべてのノートがクリアされました！"
+    },
+    "toastTrackerImported": {
+        "message": "トラッカー データが正常にインポートされました。"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "URLが無効です! URL は http:// または https:// で始まる必要があります"
+    },
+    "trackerImportError": {
+        "message": "ファイルの読み取りエラー。"
+    },
+    "swStatusLive": {
+        "message": "ライブ配信中"
+    },
+    "linkLabel": {
+        "message": "リンク"
+    },
+    "techCatAnalytics": {
+        "message": "分析"
+    },
+    "liveHistoryLabel": {
+        "message": "ライブ履歴"
+    },
+    "colorPickerTitle": {
+        "message": "カラーピッカー"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "合計期間："
+    },
+    "stopwatchReady": {
+        "message": "準備完了"
+    },
+    "confirmClearHistory": {
+        "message": "すべての履歴を消去してもよろしいですか？"
+    },
+    "markerTitle": {
+        "message": "ページマーカー"
+    },
+    "trackerModalTitle": {
+        "message": "時間追跡"
+    },
+    "grabTextTooltip": {
+        "message": "ページからテキストを抽出"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "フィールドをクリア"
+    },
+    "privacyLabel": {
+        "message": "プライバシーポリシー"
+    },
+    "whatsNewFeature4": {
+        "message": "フィードバックの切り替え: 設定変更時の短パルスアニメーションと確認。"
+    },
+    "trackerThatDay": {
+        "message": "その日"
+    },
+    "toastCookieWhitelistError": {
+        "message": "リストを更新できませんでした"
+    },
+    "cookieWhitelistLabel": {
+        "message": "このサイトの Cookie を許可する"
+    },
+    "textLabel": {
+        "message": "テキスト"
+    },
+    "cacheCleared": {
+        "message": "消去しました！"
+    },
+    "importRadioTooltip": {
+        "message": "カスタムラジオ局をインポート"
+    },
+    "radioPlay": {
+        "message": "再生"
+    },
+    "techLoadingMsg": {
+        "message": "スキャナーがサイトを分析しています..."
+    },
+    "swCopyBtn": {
+        "message": "クリップボードにコピー"
+    },
+    "techScannerFailed": {
+        "message": "このページのスキャンに失敗しました。"
+    },
+    "techNetworkOptInLabel": {
+        "message": "ネットワーク情報を表示 (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "今日"
+    },
+    "toastNotesImported": {
+        "message": "メモは正常にインポートされました。"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "コピーしました： "
+    },
+    "swCopiedBtn": {
+        "message": "✓ コピー完了"
+    },
+    "techCatCaching": {
+        "message": "キャッシュ"
+    },
+    "techCatSecurity": {
+        "message": "セキュリティ"
+    },
+    "toastYtOn": {
+        "message": "YouTube の嫌いな表示が有効になっています"
+    },
+    "extName": {
+        "message": "All In One - 最強の生産性ツール"
+    },
+    "toastCookieOn": {
+        "message": "自動 Cookie ブロックが有効になっています"
+    },
+    "techScannerUnavailable": {
+        "message": "このページではスキャナーを利用できません。"
+    },
+    "notesTooLarge": {
+        "message": "ノートのサイズが大きすぎます"
+    },
+    "swDurationLabel": {
+        "message": "期間："
+    },
+    "ytDislikeTitle": {
+        "message": "Return YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "寄付をして開発を支援する"
+    },
+    "techStatVideo": {
+        "message": "動画"
+    },
+    "settingsTooltip": {
+        "message": "設定"
+    },
+    "trackerThisMonthShort": {
+        "message": "今月"
+    },
+    "techCatSystem": {
+        "message": "システム"
+    },
+    "exportTooltip": {
+        "message": "データのエクスポート"
+    },
+    "exportNotesTooltip": {
+        "message": "ノートをエクスポート"
+    },
+    "radioPause": {
+        "message": "停止"
+    },
+    "websiteTooltip": {
+        "message": "拡張機能の公式サイト"
+    },
+    "rateBtn": {
+        "message": "拡張機能を評価する"
+    },
+    "techCatBase": {
+        "message": "ベース"
+    },
+    "cacheModalTitle": {
+        "message": "クッキーとキャッシュ"
+    },
+    "cancelBtn": {
+        "message": "キャンセル"
+    },
+    "addUrlTooltip": {
+        "message": "現在のページのURLを追加"
+    },
+    "trackerAvgTotal": {
+        "message": "平均"
+    },
+    "techStatForms": {
+        "message": "フォーム"
+    },
+    "cacheError": {
+        "message": "エラー"
+    }
 }

@@ -1,413 +1,656 @@
 {
-    "swCopiedBtn":  {
-                        "message":  "✓ הועתק"
-                    },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "techNotFound":  {
-                         "message":  "לא נמצא."
-                     },
-    "cacheNotSupported":  {
-                              "message":  "לא נתמך"
-                          },
-    "trackerAvgLabel":  {
-                            "message":  "ממוצע"
-                        },
-    "colorPickerTitle":  {
-                             "message":  "בוחר צבעים"
-                         },
-    "trackerThatMonth":  {
-                             "message":  "That month"
-                         },
-    "counterPlaceholder":  {
-                               "message":  "הדבק טקסט כאן..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "נקה את כל הנתונים מאתר זה"
-                          },
-    "trackerModeAll":  {
-                           "message":  "כל הזמן"
-                       },
-    "swLiveTitlePrefix":  {
-                              "message":  "לייב #"
-                          },
-    "notesSaved":  {
-                       "message":  "נשמר"
-                   },
-    "trackerTitle":  {
-                         "message":  "מעקב זמן אינטרנט"
-                     },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "trackerTotal":  {
-                         "message":  "Total"
-                     },
-    "savedIndicator":  {
-                           "message":  "נשמר"
-                       },
-    "markerDrawTooltip":  {
-                              "message":  "צייר"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "wordsLabel":  {
-                       "message":  "מילים"
-                   },
-    "stopwatchReady":  {
-                           "message":  "מוכן"
-                       },
-    "notesLinkText":  {
-                          "message":  "קישור"
-                      },
-    "extDesc":  {
-                    "message":  "הכלי האולטימטיבי המשלב את כל התכונות החיוניות בממשק אחד מהיר, מודרני וחינמי."
-                },
-    "dateLabel":  {
-                      "message":  "תאריך"
-                  },
-    "swStatusLive":  {
-                         "message":  "שידור חי מתקיים"
-                     },
-    "linkLabel":  {
-                      "message":  "קישור"
-                  },
-    "trackerAvgThatMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "addUrlTooltip":  {
-                          "message":  "הוסף כתובת URL נוכחית"
-                      },
-    "clearCounterTooltip":  {
-                                "message":  "נקה הכל"
-                            },
-    "counterTitle":  {
-                         "message":  "מונה תווים"
-                     },
-    "markerEraseTooltip":  {
-                               "message":  "מחק"
-                           },
-    "swNoHistory":  {
-                        "message":  "אין היסטוריית שידורים"
-                    },
-    "deleteBtn":  {
-                      "message":  "מחק"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "versionLabel":  {
-                         "message":  "גרסה:"
-                     },
-    "clearAllBtn":  {
-                        "message":  "נקה הכל"
-                    },
-    "uiSettings":  {
-                       "message":  "הגדרות"
-                   },
-    "copyEnableTitle":  {
-                            "message":  "אפשר העתקה"
-                        },
-    "soundTitle":  {
-                       "message":  "קול"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "charsLabel":  {
-                       "message":  "תווים"
-                   },
-    "markerCloseTooltip":  {
-                               "message":  "סגור"
-                           },
-    "playBtn":  {
-                    "message":  "נגן"
-                },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "markerLineTooltip":  {
-                              "message":  "קו"
-                          },
-    "colorPickerCopied":  {
-                              "message":  "הועתק: "
-                          },
-    "swStatusReady":  {
-                          "message":  "מוכן"
-                      },
-    "cacheModalTitle":  {
-                            "message":  "קובצי COOKIE ומטמון"
-                        },
-    "trackerMonthLabel":  {
-                              "message":  "החודש הזה"
-                          },
-    "colorPickerPicking":  {
-                               "message":  "בוחר..."
-                           },
-    "swUndoTitle":  {
-                        "message":  "מחק רגע זה"
-                    },
-    "trackerAvgTotal":  {
-                            "message":  "Average"
-                        },
-    "addDateTooltip":  {
-                           "message":  "הוסף תאריך של היום"
-                       },
-    "techTitle":  {
-                      "message":  "טכנולוגיות אתר"
-                  },
-    "trackerToday":  {
-                         "message":  "Today"
-                     },
-    "notesModalTitle":  {
-                            "message":  "פתקים חכמים"
-                        },
-    "notesTooLarge":  {
-                          "message":  "פתק גדול מדי"
-                      },
-    "cacheCleared":  {
-                         "message":  "נוקה!"
-                     },
-    "markerTitle":  {
-                        "message":  "סמן עמוד"
-                    },
-    "exportNotesTooltip":  {
-                               "message":  "ייצוא פתקים"
-                           },
-    "techFoundPrefix":  {
-                            "message":  "נמצא: "
-                        },
-    "techModalTitle":  {
-                           "message":  "טכנולוגיות אתר"
-                       },
-    "confirmClearNotes":  {
-                              "message":  "האם אתה בטוח שברצונך לנקות את כל הפתקים?"
-                          },
-    "swNoLaps":  {
-                     "message":  "אין רגעים מתועדים"
-                 },
-    "confirmClearCounter":  {
-                                "message":  "האם אתה בטוח שברצונך לנקות הכל?"
-                            },
-    "supportDesc":  {
-                        "message":  "All In One הוא כלי חינמי לחלוטין. התמיכה שלך עוזרת לשמור אותו כזה ומאפשרת פיתוח של תכונות חדשות."
-                    },
-    "websiteTooltip":  {
-                           "message":  "אתר התוסף הרשמי"
-                       },
-    "privacyLabel":  {
-                         "message":  "מדיניות פרטיות"
-                     },
-    "fontNotCopied":  {
-                          "message":  "לא הועתק"
-                      },
-    "trackerNoData":  {
-                          "message":  "No data for this period"
-                      },
-    "trackerModeMonth":  {
-                             "message":  "תצוגה חודשית"
-                         },
-    "swExportTxtBtn":  {
-                           "message":  "ייצוא כ- .TXT"
-                       },
-    "markerTextTooltip":  {
-                              "message":  "טקסט"
-                          },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "cacheClearing":  {
-                          "message":  "מנקה..."
-                      },
-    "trackerThatDay":  {
-                           "message":  "That day"
-                       },
-    "swTotalDurationPrefix":  {
-                                  "message":  "משך כולל: "
-                              },
-    "trackerAvgThisMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Are you sure you want to delete data for"
-                             },
-    "ytDislikeTitle":  {
-                           "message":  "החזרת Dislike ביוטיוב"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "פריטים"
-                        },
-    "rateBtn":  {
-                    "message":  "דרג את התוסף"
-                },
-    "clearNotesTooltip":  {
-                              "message":  "נקה את כל הפתקים"
-                          },
-    "fontCopied":  {
-                       "message":  "הועתק!"
-                   },
-    "websiteBtn":  {
-                       "message":  "אתר רשמי"
-                   },
-    "darkModeTitle":  {
-                          "message":  "מצב כהה"
-                      },
-    "rulerTitle":  {
-                       "message":  "סרגל עמוד"
-                   },
-    "trackerTodayLabel":  {
-                              "message":  "היום"
-                          },
-    "currentRecordedLabel":  {
-                                 "message":  "מתועד כעת"
-                             },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "extName":  {
-                    "message":  "All In One - כלי הפרודוקטיביות הטוב ביותר"
-                },
-    "trackerThisMonth":  {
-                             "message":  "This month"
-                         },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "trackerSelectedMonth":  {
-                                 "message":  "Selected month"
-                             },
-    "techLoadingMsg":  {
-                           "message":  "הסורק מנתח את האתר..."
-                       },
-    "radioPause":  {
-                       "message":  "השהה"
-                   },
-    "trackerThisMonthShort":  {
-                                  "message":  "This month"
-                              },
-    "swCopyBtn":  {
-                      "message":  "העתק ללוח"
-                  },
-    "swMomentLabel":  {
-                          "message":  "רגע "
-                      },
-    "donateBtn":  {
-                      "message":  "תרום ותמוך"
-                  },
-    "systemPageDesc":  {
-                           "message":  "כלי שינוי מושבתים"
-                       },
-    "radioTitle":  {
-                       "message":  "רדיו IN"
-                   },
-    "notesTitle":  {
-                       "message":  "פתקים חכמים"
-                   },
-    "techScannerUnavailable":  {
-                                   "message":  "הסורק אינו זמין בעמוד זה."
-                               },
-    "resetBtn":  {
-                     "message":  "איפוס"
-                 },
-    "linesLabel":  {
-                       "message":  "שורות"
-                   },
-    "stopBtn":  {
-                    "message":  "עצור"
-                },
-    "supportTitle":  {
-                         "message":  "תמוך בתוסף"
-                     },
-    "cacheError":  {
-                       "message":  "שגיאה"
-                   },
-    "stopwatchTitle":  {
-                           "message":  "שעון עצר"
-                       },
-    "trackerModalTitle":  {
-                              "message":  "Webtime Tracker"
-                          },
-    "fontTitle":  {
-                      "message":  "מאתר גופנים"
-                  },
-    "notesPlaceholder":  {
-                             "message":  "כתוב פתקים כאן..."
-                         },
-    "cacheTitle":  {
-                       "message":  "קובצי Cookie ומטמון"
-                   },
-    "radioArtist":  {
-                        "message":  "מופעל על ידי All In One"
-                    },
-    "liveHistoryLabel":  {
-                             "message":  "היסטוריית שידורים"
-                         },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "clearSiteDataBtn":  {
-                             "message":  "נקה את כל הנתונים מאתר זה"
-                         },
-    "settingsTooltip":  {
-                            "message":  "הגדרות"
-                        },
-    "lapBtn":  {
-                   "message":  "הקפה"
-               },
-    "radioPlay":  {
-                      "message":  "נגן"
-                  },
-    "markerClearAllTooltip":  {
-                                  "message":  "נקה הכל"
-                              },
-    "textLabel":  {
-                      "message":  "טקסט"
-                  },
-    "cancelBtn":  {
-                      "message":  "ביטול"
-                  },
-    "startBtn":  {
-                     "message":  "התחל"
-                 },
-    "counterModalTitle":  {
-                              "message":  "מונה תווים"
-                          },
-    "importNotesTooltip":  {
-                               "message":  "ייבוא פתקים"
-                           },
-    "markerThicknessTooltip":  {
-                                   "message":  "עובי"
-                               },
-    "blockCookiesLabel":  {
-                              "message":  "חסום קובצי Cookie אוטומטית"
-                          },
-    "confirmClearHistory":  {
-                                "message":  "האם אתה בטוח שברצונך לנקות את כל ההיסטוריה?"
-                            },
-    "systemPageTitle":  {
-                            "message":  "עמוד מערכת"
-                        },
-    "grabTextTooltip":  {
-                            "message":  "חלוץ טקסט מהעמוד"
-                        },
-    "markLapDesc":  {
-                        "message":  "תעד הקפה בשעון עצר"
-                    },
-    "techScannerFailed":  {
-                              "message":  "הסריקה נכשלה בעמוד זה."
-                          },
-    "markerMoveTooltip":  {
-                              "message":  "הזז"
-                          },
-    "trackerModeDay":  {
-                           "message":  "תצוגה יומית"
-                       },
-    "swDurationLabel":  {
-                            "message":  "משך: "
-                        }
+    "notesTitle": {
+        "message": "פתקים חכמים"
+    },
+    "whatsNewDesc": {
+        "message": "בדוק את שיפורי הממשק האחרונים שהופכים את All In One למהיר ואלגנטי אפילו יותר:"
+    },
+    "toastPermissionDenied": {
+        "message": "לא ניתן רשות"
+    },
+    "clearCounterTooltip": {
+        "message": "נקה הכל"
+    },
+    "supportDesc": {
+        "message": "All In One הוא כלי חינמי לחלוטין. התמיכה שלך עוזרת לשמור אותו כזה ומאפשרת פיתוח של תכונות חדשות."
+    },
+    "trackerExportTruncated": {
+        "message": "ייצוא קטוע ל-10MB כדי לשמור על יציבות החלון הקופץ."
+    },
+    "whatsNewClose": {
+        "message": "הבנתי"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "מחק"
+    },
+    "counterTitle": {
+        "message": "מונה תווים"
+    },
+    "trackerAvgLabel": {
+        "message": "ממוצע"
+    },
+    "trackerModeMonth": {
+        "message": "תצוגה חודשית"
+    },
+    "trackerModeAll": {
+        "message": "כל הזמן"
+    },
+    "techCatMedia": {
+        "message": "כְּלֵי תִקְשׁוֹרֶת"
+    },
+    "trackerNoData": {
+        "message": "אין נתונים לתקופה זו"
+    },
+    "whatsNewFeature3": {
+        "message": "תמיכה ב-favicon: סמלי אתרים ברשימת הגששים."
+    },
+    "swLiveTitlePrefix": {
+        "message": "לייב #"
+    },
+    "confirmClearNotes": {
+        "message": "האם אתה בטוח שברצונך לנקות את כל הפתקים?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "כל הנתונים מאתר זה נוקו!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "חפש באתרי אינטרנט..."
+    },
+    "techCatTools": {
+        "message": "כְּלֵי עֲבוֹדָה"
+    },
+    "toastYtOff": {
+        "message": "YouTube Dislike display מושבת"
+    },
+    "soundTitle": {
+        "message": "קול"
+    },
+    "cacheTitle": {
+        "message": "קובצי Cookie ומטמון"
+    },
+    "markerCloseTooltip": {
+        "message": "סגור"
+    },
+    "stopwatchTitle": {
+        "message": "שעון עצר"
+    },
+    "clearNotesTooltip": {
+        "message": "נקה את כל הפתקים"
+    },
+    "rulerTitle": {
+        "message": "סרגל עמוד"
+    },
+    "markLapDesc": {
+        "message": "תעד הקפה בשעון עצר"
+    },
+    "trackerImportEmpty": {
+        "message": "אין נתוני מעקב חוקיים לייבוא."
+    },
+    "whatsNewFeature1": {
+        "message": "מעברים חלקים: אנימציות שקופיות חלקות בין כלים."
+    },
+    "systemPageDesc": {
+        "message": "כלי שינוי מושבתים"
+    },
+    "techStatLinks": {
+        "message": "קישורים"
+    },
+    "stopBtn": {
+        "message": "עצור"
+    },
+    "swNoLaps": {
+        "message": "אין רגעים מתועדים"
+    },
+    "toastTrackerImportError": {
+        "message": "שגיאה בייבוא ​​נתוני המעקב!"
+    },
+    "toastRadioPlayError": {
+        "message": "לא ניתן להפעיל את הרדיו כרגע."
+    },
+    "trackerTitle": {
+        "message": "מעקב זמן אינטרנט"
+    },
+    "offscreenJustification": {
+        "message": "הזרמת רדיו וצלילי מערכת"
+    },
+    "trackerThisMonth": {
+        "message": "החודש הזה"
+    },
+    "linesLabel": {
+        "message": "שורות"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "קובצי Cookie חסומים עבור אתר זה"
+    },
+    "toastTrackerError": {
+        "message": "שגיאה ברענון הנתונים"
+    },
+    "trackerExportEmpty": {
+        "message": "אין נתוני מעקב לייצא."
+    },
+    "techCatComm": {
+        "message": "תִקשׁוֹרֶת"
+    },
+    "deleteBtn": {
+        "message": "מחק"
+    },
+    "techCatTech": {
+        "message": "טכנולוגיות"
+    },
+    "notesSaved": {
+        "message": "נשמר"
+    },
+    "toastNotesExported": {
+        "message": "הערות יוצאו בהצלחה!"
+    },
+    "swMomentLabel": {
+        "message": "רגע "
+    },
+    "notesModalTitle": {
+        "message": "פתקים חכמים"
+    },
+    "trackerAvgThisMonth": {
+        "message": "ממוצע (חודש)"
+    },
+    "versionLabel": {
+        "message": "גרסה:"
+    },
+    "importNotesTooltip": {
+        "message": "ייבוא פתקים"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "מצב אור מופעל"
+    },
+    "toastNotesCopied": {
+        "message": "הטקסט הועתק ללוח!"
+    },
+    "whatsNewFeature2": {
+        "message": "פרימיום טוסט: מערכת הודעות מודרנית לפעולות חשובות."
+    },
+    "fontNotCopied": {
+        "message": "לא הועתק"
+    },
+    "importTooltip": {
+        "message": "ייבוא ​​נתונים"
+    },
+    "wordsLabelShort": {
+        "message": "מילים"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "לא נתמך"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "מנקה..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "הנתונים רענון!"
+    },
+    "websiteBtn": {
+        "message": "אתר רשמי"
+    },
+    "markerThicknessTooltip": {
+        "message": "עובי"
+    },
+    "confirmClearCounter": {
+        "message": "האם אתה בטוח שברצונך לנקות הכל?"
+    },
+    "techCatAds": {
+        "message": "מודעות"
+    },
+    "uiSettings": {
+        "message": "הגדרות"
+    },
+    "trackerThatMonth": {
+        "message": "באותו חודש"
+    },
+    "radioModalDesc": {
+        "message": "היכנסו לקישור הישיר לתחנת הרדיו האהובה עליכם"
+    },
+    "trackerDeleteConfirm": {
+        "message": "האם אתה בטוח שברצונך למחוק נתונים עבור"
+    },
+    "darkModeTitle": {
+        "message": "מצב כהה"
+    },
+    "toastCounterCleared": {
+        "message": "טקסט הנגד נוקה!"
+    },
+    "techStatScripts": {
+        "message": "תסריטים"
+    },
+    "techNetworkOptInHint": {
+        "message": "שולח בקשות אל dns.google ו-ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "אין היסטוריית שידורים"
+    },
+    "whatsNewTitle": {
+        "message": "מה חדש בגרסה 1.6"
+    },
+    "techNotFound": {
+        "message": "לא נמצא."
+    },
+    "notesPlaceholder": {
+        "message": "כתוב פתקים כאן..."
+    },
+    "radioArtist": {
+        "message": "מופעל על ידי All In One"
+    },
+    "charsLabel": {
+        "message": "תווים"
+    },
+    "trackerImportSuccess": {
+        "message": "הנתונים יובאו בהצלחה!"
+    },
+    "copyEnableTitle": {
+        "message": "אפשר העתקה"
+    },
+    "techCatStats": {
+        "message": "סטָטִיסטִיקָה"
+    },
+    "dateLabel": {
+        "message": "תאריך"
+    },
+    "techCatNetwork": {
+        "message": "רֶשֶׁת"
+    },
+    "techCatEcom": {
+        "message": "מסחר אלקטרוני"
+    },
+    "currentRecordedLabel": {
+        "message": "מתועד כעת"
+    },
+    "toastCookieOff": {
+        "message": "חסימת קובצי Cookie אוטומטית מושבתת"
+    },
+    "toastModuleLoadError": {
+        "message": "שגיאה בטעינת המודול"
+    },
+    "techCatStyles": {
+        "message": "סגנונות"
+    },
+    "extDesc": {
+        "message": "הכלי האולטימטיבי המשלב את כל התכונות החיוניות בממשק אחד מהיר, מודרני וחינמי."
+    },
+    "resetBtn": {
+        "message": "איפוס"
+    },
+    "addDateTooltip": {
+        "message": "הוסף תאריך של היום"
+    },
+    "supportTitle": {
+        "message": "תמוך בתוסף"
+    },
+    "toastCounterCopied": {
+        "message": "הטקסט הועתק ללוח!"
+    },
+    "savedIndicator": {
+        "message": "נשמר"
+    },
+    "counterPlaceholder": {
+        "message": "הדבק טקסט כאן..."
+    },
+    "techFoundPrefix": {
+        "message": "נמצא: "
+    },
+    "systemPageTitle": {
+        "message": "עמוד מערכת"
+    },
+    "markerClearAllTooltip": {
+        "message": "נקה הכל"
+    },
+    "analyticsOptOutLabel": {
+        "message": "השבת את הניתוח"
+    },
+    "trackerModeDay": {
+        "message": "תצוגה יומית"
+    },
+    "techItemsSuffix": {
+        "message": "פריטים"
+    },
+    "toastStopwatchCleared": {
+        "message": "ההיסטוריה החיה נמחקה!"
+    },
+    "trackerTotal": {
+        "message": "סַך הַכֹּל"
+    },
+    "swStatusReady": {
+        "message": "מוכן"
+    },
+    "trackerTotalShort": {
+        "message": "סַך הַכֹּל"
+    },
+    "blockCookiesLabel": {
+        "message": "חסום קובצי Cookie אוטומטית"
+    },
+    "markerDrawTooltip": {
+        "message": "צייר"
+    },
+    "trackerMonthLabel": {
+        "message": "החודש הזה"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "טבלאות"
+    },
+    "techStatImages": {
+        "message": "תמונות"
+    },
+    "toastRadioSaved": {
+        "message": "כתובת האתר של תחנת הרדיו נשמרה!"
+    },
+    "trackerToday": {
+        "message": "הַיוֹם"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "מילים"
+    },
+    "clearAllBtn": {
+        "message": "נקה הכל"
+    },
+    "toastCopyOn": {
+        "message": "העתקה מופעלת עבור אתר זה"
+    },
+    "clearSiteDataBtn": {
+        "message": "נקה את כל הנתונים מאתר זה"
+    },
+    "colorPickerPicking": {
+        "message": "בוחר..."
+    },
+    "cacheClearConfirm": {
+        "message": "נקה את כל הנתונים מאתר זה"
+    },
+    "markerTextTooltip": {
+        "message": "טקסט"
+    },
+    "radioTitle": {
+        "message": "רדיו IN"
+    },
+    "trackerSelectedMonth": {
+        "message": "חודש נבחר"
+    },
+    "toastCopyOff": {
+        "message": "העתקה מושבתת"
+    },
+    "fontCopied": {
+        "message": "הועתק!"
+    },
+    "notesLinkText": {
+        "message": "קישור"
+    },
+    "radioClearConfirm": {
+        "message": "לנקות את תחנת הרדיו השמורה?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "ממוצע (חודש)"
+    },
+    "techTitle": {
+        "message": "טכנולוגיות אתר"
+    },
+    "lapBtn": {
+        "message": "הקפה"
+    },
+    "playBtn": {
+        "message": "נגן"
+    },
+    "toastDarkModeOn": {
+        "message": "מצב כהה מופעל"
+    },
+    "techCatPayment": {
+        "message": "תַשְׁלוּם"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "קובצי Cookie מותר לאתר זה"
+    },
+    "markerLineTooltip": {
+        "message": "קו"
+    },
+    "techStatIframes": {
+        "message": "Iframes"
+    },
+    "counterModalTitle": {
+        "message": "מונה תווים"
+    },
+    "fontTitle": {
+        "message": "מאתר גופנים"
+    },
+    "toastTrackerExported": {
+        "message": "נתוני המעקב יוצאו בהצלחה!"
+    },
+    "toastNotesImportError": {
+        "message": "שגיאה בייבוא ​​הערות!"
+    },
+    "swExportTxtBtn": {
+        "message": "ייצוא כ- .TXT"
+    },
+    "swUndoTitle": {
+        "message": "מחק רגע זה"
+    },
+    "startBtn": {
+        "message": "התחל"
+    },
+    "markerMoveTooltip": {
+        "message": "הזז"
+    },
+    "techModalTitle": {
+        "message": "טכנולוגיות אתר"
+    },
+    "saveRadioStationBtn": {
+        "message": "שמור תחנה"
+    },
+    "techCatDb": {
+        "message": "Database"
+    },
+    "toastNotesCleared": {
+        "message": "כל ההערות נוקו!"
+    },
+    "toastTrackerImported": {
+        "message": "נתוני המעקב יובאו בהצלחה!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "כתובת אתר לא חוקית! כתובת האתר חייבת להתחיל ב-http:// או https://"
+    },
+    "trackerImportError": {
+        "message": "שגיאה בקריאת הקובץ."
+    },
+    "swStatusLive": {
+        "message": "שידור חי מתקיים"
+    },
+    "linkLabel": {
+        "message": "קישור"
+    },
+    "techCatAnalytics": {
+        "message": "אנליטיקס"
+    },
+    "liveHistoryLabel": {
+        "message": "היסטוריית שידורים"
+    },
+    "colorPickerTitle": {
+        "message": "בוחר צבעים"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "משך כולל: "
+    },
+    "stopwatchReady": {
+        "message": "מוכן"
+    },
+    "confirmClearHistory": {
+        "message": "האם אתה בטוח שברצונך לנקות את כל ההיסטוריה?"
+    },
+    "markerTitle": {
+        "message": "סמן עמוד"
+    },
+    "trackerModalTitle": {
+        "message": "Webtime Tracker"
+    },
+    "grabTextTooltip": {
+        "message": "חלוץ טקסט מהעמוד"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "נקה שדה"
+    },
+    "privacyLabel": {
+        "message": "מדיניות פרטיות"
+    },
+    "whatsNewFeature4": {
+        "message": "החלף משוב: אנימציות דופק קצרות ואישורים בעת שינוי הגדרות."
+    },
+    "trackerThatDay": {
+        "message": "באותו היום"
+    },
+    "toastCookieWhitelistError": {
+        "message": "לא ניתן היה לעדכן את הרשימה"
+    },
+    "cookieWhitelistLabel": {
+        "message": "אפשר עוגיות עבור אתר זה"
+    },
+    "textLabel": {
+        "message": "טקסט"
+    },
+    "cacheCleared": {
+        "message": "נוקה!"
+    },
+    "importRadioTooltip": {
+        "message": "ייבוא ​​תחנת רדיו מותאמת אישית"
+    },
+    "radioPlay": {
+        "message": "נגן"
+    },
+    "techLoadingMsg": {
+        "message": "הסורק מנתח את האתר..."
+    },
+    "swCopyBtn": {
+        "message": "העתק ללוח"
+    },
+    "techScannerFailed": {
+        "message": "הסריקה נכשלה בעמוד זה."
+    },
+    "techNetworkOptInLabel": {
+        "message": "הצג מידע רשת (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "היום"
+    },
+    "toastNotesImported": {
+        "message": "הערות יובאו בהצלחה!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "הועתק: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ הועתק"
+    },
+    "techCatCaching": {
+        "message": "שמירה במטמון"
+    },
+    "techCatSecurity": {
+        "message": "בִּטָחוֹן"
+    },
+    "toastYtOn": {
+        "message": "תצוגת דיסלייק ב-YouTube מופעלת"
+    },
+    "extName": {
+        "message": "All In One - כלי הפרודוקטיביות הטוב ביותר"
+    },
+    "toastCookieOn": {
+        "message": "חסימת עוגיות אוטומטית מופעלת"
+    },
+    "techScannerUnavailable": {
+        "message": "הסורק אינו זמין בעמוד זה."
+    },
+    "notesTooLarge": {
+        "message": "פתק גדול מדי"
+    },
+    "swDurationLabel": {
+        "message": "משך: "
+    },
+    "ytDislikeTitle": {
+        "message": "החזרת Dislike ביוטיוב"
+    },
+    "donateBtn": {
+        "message": "תרום ותמוך"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "הגדרות"
+    },
+    "trackerThisMonthShort": {
+        "message": "החודש הזה"
+    },
+    "techCatSystem": {
+        "message": "מַעֲרֶכֶת"
+    },
+    "exportTooltip": {
+        "message": "ייצוא נתונים"
+    },
+    "exportNotesTooltip": {
+        "message": "ייצוא פתקים"
+    },
+    "radioPause": {
+        "message": "השהה"
+    },
+    "websiteTooltip": {
+        "message": "אתר התוסף הרשמי"
+    },
+    "rateBtn": {
+        "message": "דרג את התוסף"
+    },
+    "techCatBase": {
+        "message": "בָּסִיס"
+    },
+    "cacheModalTitle": {
+        "message": "קובצי COOKIE ומטמון"
+    },
+    "cancelBtn": {
+        "message": "ביטול"
+    },
+    "addUrlTooltip": {
+        "message": "הוסף כתובת URL נוכחית"
+    },
+    "trackerAvgTotal": {
+        "message": "מְמוּצָע"
+    },
+    "techStatForms": {
+        "message": "טפסים"
+    },
+    "cacheError": {
+        "message": "שגיאה"
+    }
 }

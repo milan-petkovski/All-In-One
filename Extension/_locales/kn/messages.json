@@ -1,413 +1,656 @@
 {
-    "swCopiedBtn":  {
-                        "message":  "✓ ನಕಲಿಸಲಾಗಿದೆ"
-                    },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "techNotFound":  {
-                         "message":  "ಯಾವುದೂ ಕಂಡುಬಂದಿಲ್ಲ."
-                     },
-    "cacheNotSupported":  {
-                              "message":  "ಬೆಂಬಲವಿಲ್ಲ"
-                          },
-    "trackerAvgLabel":  {
-                            "message":  "ಸರಾಸರಿ"
-                        },
-    "colorPickerTitle":  {
-                             "message":  "ಕಲರ್ ಪಿಕರ್"
-                         },
-    "trackerThatMonth":  {
-                             "message":  "That month"
-                         },
-    "counterPlaceholder":  {
-                               "message":  "ಪಠ್ಯವನ್ನು ಇಲ್ಲಿ ಅಂಟಿಸಿ..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "ಈ ಸೈಟ್‌ನಿಂದ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಅಳಿಸಿ"
-                          },
-    "trackerModeAll":  {
-                           "message":  "ಎಲ್ಲಾ ಸಮಯ"
-                       },
-    "swLiveTitlePrefix":  {
-                              "message":  "ಲೈವ್ #"
-                          },
-    "notesSaved":  {
-                       "message":  "ಉಳಿಸಲಾಗಿದೆ"
-                   },
-    "trackerTitle":  {
-                         "message":  "ವೆಬ್‌ಟೈಮ್ ಟ್ರ್ಯಾಕರ್"
-                     },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "trackerTotal":  {
-                         "message":  "Total"
-                     },
-    "savedIndicator":  {
-                           "message":  "ಉಳಿಸಲಾಗಿದೆ"
-                       },
-    "markerDrawTooltip":  {
-                              "message":  "ಡ್ರಾ"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "wordsLabel":  {
-                       "message":  "ಪದಗಳು"
-                   },
-    "stopwatchReady":  {
-                           "message":  "ಸಿದ್ಧವಾಗಿದೆ"
-                       },
-    "notesLinkText":  {
-                          "message":  "ಲಿಂಕ್"
-                      },
-    "extDesc":  {
-                    "message":  "ಎಲ್ಲಾ ಅಗತ್ಯ ಕಾರ್ಯಗಳನ್ನು ಒಂದು ವೇಗವಾದ, ಆಧುನಿಕ ಮತ್ತು ಉಚಿತ ಇಂಟರ್ಫೇಸ್‌ನಲ್ಲಿ ಸಂಯೋಜಿಸುವ ಅಂತಿಮ ಸಾಧನ."
-                },
-    "dateLabel":  {
-                      "message":  "ದಿನಾಂಕ"
-                  },
-    "swStatusLive":  {
-                         "message":  "ಲೈವ್ ನಡೆಯುತ್ತಿದೆ"
-                     },
-    "linkLabel":  {
-                      "message":  "ಲಿಂಕ್"
-                  },
-    "trackerAvgThatMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "addUrlTooltip":  {
-                          "message":  "ಪ್ರಸ್ತುತ ಪುಟದ URL ಸೇರಿಸಿ"
-                      },
-    "clearCounterTooltip":  {
-                                "message":  "ಎಲ್ಲವನ್ನು ತೆರವುಗೊಳಿಸಿ"
-                            },
-    "counterTitle":  {
-                         "message":  "ಅಕ್ಷರಗಳ ಕೌಂಟರ್"
-                     },
-    "markerEraseTooltip":  {
-                               "message":  "ಅಳಿಸು"
-                           },
-    "swNoHistory":  {
-                        "message":  "ಯಾವುದೇ ಲೈವ್ ಇತಿಹಾಸವಿಲ್ಲ"
-                    },
-    "deleteBtn":  {
-                      "message":  "ಅಳಿಸಿ"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "versionLabel":  {
-                         "message":  "ಆವೃತ್ತಿ:"
-                     },
-    "clearAllBtn":  {
-                        "message":  "ಎಲ್ಲವನ್ನೂ ಅಳಿಸಿ"
-                    },
-    "uiSettings":  {
-                       "message":  "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
-                   },
-    "copyEnableTitle":  {
-                            "message":  "ನಕಲಿಸಿ"
-                        },
-    "soundTitle":  {
-                       "message":  "ಧ್ವನಿ"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "charsLabel":  {
-                       "message":  "ಅಕ್ಷರಗಳು"
-                   },
-    "markerCloseTooltip":  {
-                               "message":  "ಮುಚ್ಚು"
-                           },
-    "playBtn":  {
-                    "message":  "ಪ್ಲೇ"
-                },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "markerLineTooltip":  {
-                              "message":  "ರೇಖೆ"
-                          },
-    "colorPickerCopied":  {
-                              "message":  "ನಕಲಿಸಲಾಗಿದೆ: "
-                          },
-    "swStatusReady":  {
-                          "message":  "ಸಿದ್ಧವಾಗಿದೆ"
-                      },
-    "cacheModalTitle":  {
-                            "message":  "ಕುಕಿಗಳು ಮತ್ತು ಕ್ಯಾಶ್"
-                        },
-    "trackerMonthLabel":  {
-                              "message":  "ಈ ತಿಂಗಳು"
-                          },
-    "colorPickerPicking":  {
-                               "message":  "ಆಯ್ಕೆ ಮಾಡಲಾಗುತ್ತಿದೆ..."
-                           },
-    "swUndoTitle":  {
-                        "message":  "ಈ ಕ್ಷಣವನ್ನು ಅಳಿಸಿ"
-                    },
-    "trackerAvgTotal":  {
-                            "message":  "Average"
-                        },
-    "addDateTooltip":  {
-                           "message":  "ಇಂದಿನ ದಿನಾಂಕವನ್ನು ಸೇರಿಸಿ"
-                       },
-    "techTitle":  {
-                      "message":  "ಸೈಟ್ ತಂತ್ರಜ್ಞಾನ"
-                  },
-    "trackerToday":  {
-                         "message":  "Today"
-                     },
-    "notesModalTitle":  {
-                            "message":  "ಸ್ಮಾರ್ಟ್ ಟಿಪ್ಪಣಿಗಳು"
-                        },
-    "notesTooLarge":  {
-                          "message":  "ಟಿಪ್ಪಣಿ ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ"
-                      },
-    "cacheCleared":  {
-                         "message":  "ಅಳಿಸಲಾಗಿದೆ!"
-                     },
-    "markerTitle":  {
-                        "message":  "ಪುಟದ ಮಾರ್ಕರ್"
-                    },
-    "exportNotesTooltip":  {
-                               "message":  "ಟಿಪ್ಪಣಿಗಳನ್ನು ರಫ್ತು ಮಾಡಿ"
-                           },
-    "techFoundPrefix":  {
-                            "message":  "ಕಂಡುಬಂದಿದೆ: "
-                        },
-    "techModalTitle":  {
-                           "message":  "ಸೈಟ್ ತಂತ್ರಜ್ಞಾನಗಳು"
-                       },
-    "confirmClearNotes":  {
-                              "message":  "ನೀವು ಖಂಡಿತವಾಗಿಯೂ ಎಲ್ಲಾ ಟಿಪ್ಪಣಿಗಳನ್ನು ಅಳಿಸಲು ಬಯಸುವಿರಾ?"
-                          },
-    "swNoLaps":  {
-                     "message":  "ಯಾವುದೇ ಕ್ಷಣಗಳು ದಾಖಲಾಗಿಲ್ಲ"
-                 },
-    "confirmClearCounter":  {
-                                "message":  "ನೀವು ನಿಜವಾಗಿಯೂ ಎಲ್ಲವನ್ನು ತೆರವುಗೊಳಿಸಲು ಬಯಸುವಿರಾ?"
-                            },
-    "supportDesc":  {
-                        "message":  "All In One ಸಂಪೂರ್ಣವಾಗಿ ಉಚಿತ ಸಾಧನವಾಗಿದೆ. ನಿಮ್ಮ ಬೆಂಬಲವು ಇದನ್ನು ಉಚಿತವಾಗಿ ಇರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ ಮತ್ತು ಹೊಸ ಆಯ್ಕೆಗಳ ಅಭಿವೃದ್ಧಿಗೆ ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ."
-                    },
-    "websiteTooltip":  {
-                           "message":  "ವಿಸ್ತರಣೆಯ ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್"
-                       },
-    "privacyLabel":  {
-                         "message":  "ಗೌಪ್ಯತಾ ನೀತಿ"
-                     },
-    "fontNotCopied":  {
-                          "message":  "ನಕಲಿಸಲಾಗಿಲ್ಲ"
-                      },
-    "trackerNoData":  {
-                          "message":  "No data for this period"
-                      },
-    "trackerModeMonth":  {
-                             "message":  "ಮಾಸಿಕ ದೃಶ್ಯ"
-                         },
-    "swExportTxtBtn":  {
-                           "message":  ".TXT ಆಗಿ ರಫ್ತು ಮಾಡಿ"
-                       },
-    "markerTextTooltip":  {
-                              "message":  "ಪಠ್ಯ"
-                          },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "cacheClearing":  {
-                          "message":  "ಅಳಿಸಲಾಗುತ್ತಿದೆ..."
-                      },
-    "trackerThatDay":  {
-                           "message":  "That day"
-                       },
-    "swTotalDurationPrefix":  {
-                                  "message":  "ಒಟ್ಟು ಅವಧಿ: "
-                              },
-    "trackerAvgThisMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Are you sure you want to delete data for"
-                             },
-    "ytDislikeTitle":  {
-                           "message":  "Return YouTube Dislike"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "ಐಟಂಗಳು"
-                        },
-    "rateBtn":  {
-                    "message":  "ವಿಸ್ತರಣೆಯನ್ನು ರೇಟ್ ಮಾಡಿ"
-                },
-    "clearNotesTooltip":  {
-                              "message":  "ಎಲ್ಲಾ ಟಿಪ್ಪಣಿಗಳನ್ನು ಅಳಿಸಿ"
-                          },
-    "fontCopied":  {
-                       "message":  "ನಕಲಿಸಲಾಗಿದೆ!"
-                   },
-    "websiteBtn":  {
-                       "message":  "ವಿಸ್ತರಣೆಯ ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್"
-                   },
-    "darkModeTitle":  {
-                          "message":  "ಕತ್ತಲೆ"
-                      },
-    "rulerTitle":  {
-                       "message":  "ಪುಟದ ಅಳತೆಗೋಲು"
-                   },
-    "trackerTodayLabel":  {
-                              "message":  "ಇಂದು"
-                          },
-    "currentRecordedLabel":  {
-                                 "message":  "ಪ್ರಸ್ತುತ ದಾಖಲಾಗಿರುವುದು"
-                             },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "extName":  {
-                    "message":  "All In One - ಅತ್ಯುತ್ತಮ ಉತ್ಪಾದಕತೆ ಸಾಧನ"
-                },
-    "trackerThisMonth":  {
-                             "message":  "This month"
-                         },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "trackerSelectedMonth":  {
-                                 "message":  "Selected month"
-                             },
-    "techLoadingMsg":  {
-                           "message":  "ಸ್ಕ್ಯಾನರ್ ಸೈಟ್ ಅನ್ನು ವಿಶ್ಲೇಷಿಸುತ್ತಿದೆ..."
-                       },
-    "radioPause":  {
-                       "message":  "ನಿಲ್ಲಿಸು"
-                   },
-    "trackerThisMonthShort":  {
-                                  "message":  "This month"
-                              },
-    "swCopyBtn":  {
-                      "message":  "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಿ"
-                  },
-    "swMomentLabel":  {
-                          "message":  "ಕ್ಷಣ "
-                      },
-    "donateBtn":  {
-                      "message":  "ದೇಣಿಗೆ ನೀಡಿ ಮತ್ತು ಕೆಲಸವನ್ನು ಬೆಂಬಲಿಸಿ"
-                  },
-    "systemPageDesc":  {
-                           "message":  "ಮಾರ್ಪಾಡು ಮಾಡುವ ಸಾಧನಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
-                       },
-    "radioTitle":  {
-                       "message":  "ರೇಡಿ"
-                   },
-    "notesTitle":  {
-                       "message":  "ಸ್ಮಾರ್ಟ್ ಟಿಪ್ಪಣಿಗಳು"
-                   },
-    "techScannerUnavailable":  {
-                                   "message":  "ಈ ಪುಟದಲ್ಲಿ ಸ್ಕ್ಯಾನರ್ ಲಭ್ಯವಿಲ್ಲ."
-                               },
-    "resetBtn":  {
-                     "message":  "ರಿಸೆಟ್"
-                 },
-    "linesLabel":  {
-                       "message":  "ಸಾಲುಗಳು"
-                   },
-    "stopBtn":  {
-                    "message":  "ನಿಲ್ಲಿಸಿ"
-                },
-    "supportTitle":  {
-                         "message":  "ವಿಸ್ತರಣೆಯನ್ನು ಬೆಂಬಲಿಸಿ"
-                     },
-    "cacheError":  {
-                       "message":  "ದೋಷ"
-                   },
-    "stopwatchTitle":  {
-                           "message":  "ಸ್ಟಾಪ್‌ವಾಚ್"
-                       },
-    "trackerModalTitle":  {
-                              "message":  "Webtime Tracker"
-                          },
-    "fontTitle":  {
-                      "message":  "ಫಾಂಟ್ ಫೈಂಡರ್"
-                  },
-    "notesPlaceholder":  {
-                             "message":  "ಟಿಪ್ಪಣಿಗಳನ್ನು ಇಲ್ಲಿ ಬರೆಯಿರಿ..."
-                         },
-    "cacheTitle":  {
-                       "message":  "ಕುಕಿಗಳು ಮತ್ತು ಕ್ಯಾಶ್"
-                   },
-    "radioArtist":  {
-                        "message":  "All In One ವಿಸ್ತರಣೆಯಿಂದ ನಡೆಸಲ್ಪಡುತ್ತಿದೆ"
-                    },
-    "liveHistoryLabel":  {
-                             "message":  "ಲೈವ್ ಇತಿಹಾಸ"
-                         },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "clearSiteDataBtn":  {
-                             "message":  "ಈ ಸೈಟ್‌ನಿಂದ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಅಳಿಸಿ"
-                         },
-    "settingsTooltip":  {
-                            "message":  "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
-                        },
-    "lapBtn":  {
-                   "message":  "ಲ್ಯಾಪ್"
-               },
-    "radioPlay":  {
-                      "message":  "ಪ್ಲೇ"
-                  },
-    "markerClearAllTooltip":  {
-                                  "message":  "ಎಲ್ಲವನ್ನೂ ಅಳಿಸಿ"
-                              },
-    "textLabel":  {
-                      "message":  "ಪಠ್ಯ"
-                  },
-    "cancelBtn":  {
-                      "message":  "ರದ್ದುಮಾಡಿ"
-                  },
-    "startBtn":  {
-                     "message":  "ಪ್ರಾರಂಭಿಸಿ"
-                 },
-    "counterModalTitle":  {
-                              "message":  "ಅಕ್ಷರಗಳ ಕೌಂಟರ್"
-                          },
-    "importNotesTooltip":  {
-                               "message":  "ಟಿಪ್ಪಣಿಗಳನ್ನು ಆಮದು ಮಾಡಿ"
-                           },
-    "markerThicknessTooltip":  {
-                                   "message":  "ದಪ್ಪ"
-                               },
-    "blockCookiesLabel":  {
-                              "message":  "ಕುಕಿಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನಿರ್ಬಂಧಿಸಿ"
-                          },
-    "confirmClearHistory":  {
-                                "message":  "ನೀವು ಖಂಡಿತವಾಗಿಯೂ ಎಲ್ಲಾ ಇತಿಹಾಸವನ್ನು ಅಳಿಸಲು ಬಯಸುವಿರಾ?"
-                            },
-    "systemPageTitle":  {
-                            "message":  "ಸಿಸ್ಟಮ್ ಪುಟ"
-                        },
-    "grabTextTooltip":  {
-                            "message":  "ಪುಟದಿಂದ ಪಠ್ಯವನ್ನು ಹೊರತೆಗೆಯಿರಿ"
-                        },
-    "markLapDesc":  {
-                        "message":  "ಸ್ಟಾಪ್‌ವಾಚ್‌ನಲ್ಲಿ ಕ್ಷಣವನ್ನು ದಾಖಲಿಸಿ"
-                    },
-    "techScannerFailed":  {
-                              "message":  "ಈ ಪುಟದಲ್ಲಿ ಸ್ಕ್ಯಾನ್ ವಿಫಲವಾಗಿದೆ."
-                          },
-    "markerMoveTooltip":  {
-                              "message":  "ಸರಿಸು"
-                          },
-    "trackerModeDay":  {
-                           "message":  "ದೈನಂದಿನ ದೃಶ್ಯ"
-                       },
-    "swDurationLabel":  {
-                            "message":  "ಅವಧಿ: "
-                        }
+    "notesTitle": {
+        "message": "ಸ್ಮಾರ್ಟ್ ಟಿಪ್ಪಣಿಗಳು"
+    },
+    "whatsNewDesc": {
+        "message": "ಆಲ್ ಇನ್ ಒನ್ ಅನ್ನು ಇನ್ನಷ್ಟು ವೇಗವಾಗಿ ಮತ್ತು ಹೆಚ್ಚು ಸೊಗಸಾಗಿ ಮಾಡುವ ಇತ್ತೀಚಿನ ಇಂಟರ್ಫೇಸ್ ಸುಧಾರಣೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ:"
+    },
+    "toastPermissionDenied": {
+        "message": "ಅನುಮತಿ ನೀಡಿಲ್ಲ"
+    },
+    "clearCounterTooltip": {
+        "message": "ಎಲ್ಲವನ್ನು ತೆರವುಗೊಳಿಸಿ"
+    },
+    "supportDesc": {
+        "message": "All In One ಸಂಪೂರ್ಣವಾಗಿ ಉಚಿತ ಸಾಧನವಾಗಿದೆ. ನಿಮ್ಮ ಬೆಂಬಲವು ಇದನ್ನು ಉಚಿತವಾಗಿ ಇರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ ಮತ್ತು ಹೊಸ ಆಯ್ಕೆಗಳ ಅಭಿವೃದ್ಧಿಗೆ ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ."
+    },
+    "trackerExportTruncated": {
+        "message": "ಪಾಪ್ಅಪ್ ಅನ್ನು ಸ್ಥಿರವಾಗಿಡಲು ರಫ್ತು 10MB ಗೆ ಮೊಟಕುಗೊಳಿಸಲಾಗಿದೆ."
+    },
+    "whatsNewClose": {
+        "message": "ಅರ್ಥವಾಯಿತು"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "ಅಳಿಸು"
+    },
+    "counterTitle": {
+        "message": "ಅಕ್ಷರಗಳ ಕೌಂಟರ್"
+    },
+    "trackerAvgLabel": {
+        "message": "ಸರಾಸರಿ"
+    },
+    "trackerModeMonth": {
+        "message": "ಮಾಸಿಕ ದೃಶ್ಯ"
+    },
+    "trackerModeAll": {
+        "message": "ಎಲ್ಲಾ ಸಮಯ"
+    },
+    "techCatMedia": {
+        "message": "ಮಾಧ್ಯಮ"
+    },
+    "trackerNoData": {
+        "message": "ಈ ಅವಧಿಗೆ ಯಾವುದೇ ಡೇಟಾ ಇಲ್ಲ"
+    },
+    "whatsNewFeature3": {
+        "message": "ಫೆವಿಕಾನ್ ಬೆಂಬಲ: ಟ್ರ್ಯಾಕರ್ ಪಟ್ಟಿಯಲ್ಲಿ ಸೈಟ್ ಫೆವಿಕಾನ್‌ಗಳು."
+    },
+    "swLiveTitlePrefix": {
+        "message": "ಲೈವ್ #"
+    },
+    "confirmClearNotes": {
+        "message": "ನೀವು ಖಂಡಿತವಾಗಿಯೂ ಎಲ್ಲಾ ಟಿಪ್ಪಣಿಗಳನ್ನು ಅಳಿಸಲು ಬಯಸುವಿರಾ?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "ಈ ಸೈಟ್‌ನಿಂದ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "ವೆಬ್‌ಸೈಟ್‌ಗಳನ್ನು ಹುಡುಕಿ..."
+    },
+    "techCatTools": {
+        "message": "ಪರಿಕರಗಳು"
+    },
+    "toastYtOff": {
+        "message": "YouTube ಇಷ್ಟವಿಲ್ಲದ ಪ್ರದರ್ಶನವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+    },
+    "soundTitle": {
+        "message": "ಧ್ವನಿ"
+    },
+    "cacheTitle": {
+        "message": "ಕುಕಿಗಳು ಮತ್ತು ಕ್ಯಾಶ್"
+    },
+    "markerCloseTooltip": {
+        "message": "ಮುಚ್ಚು"
+    },
+    "stopwatchTitle": {
+        "message": "ಸ್ಟಾಪ್‌ವಾಚ್"
+    },
+    "clearNotesTooltip": {
+        "message": "ಎಲ್ಲಾ ಟಿಪ್ಪಣಿಗಳನ್ನು ಅಳಿಸಿ"
+    },
+    "rulerTitle": {
+        "message": "ಪುಟದ ಅಳತೆಗೋಲು"
+    },
+    "markLapDesc": {
+        "message": "ಸ್ಟಾಪ್‌ವಾಚ್‌ನಲ್ಲಿ ಕ್ಷಣವನ್ನು ದಾಖಲಿಸಿ"
+    },
+    "trackerImportEmpty": {
+        "message": "ಆಮದು ಮಾಡಲು ಯಾವುದೇ ಮಾನ್ಯ ಟ್ರ್ಯಾಕರ್ ಡೇಟಾ ಇಲ್ಲ."
+    },
+    "whatsNewFeature1": {
+        "message": "ಸ್ಮೂತ್ ಟ್ರಾನ್ಸಿಶನ್‌ಗಳು: ಪರಿಕರಗಳ ನಡುವೆ ಸುಗಮ ಸ್ಲೈಡ್ ಅನಿಮೇಷನ್‌ಗಳು."
+    },
+    "systemPageDesc": {
+        "message": "ಮಾರ್ಪಾಡು ಮಾಡುವ ಸಾಧನಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+    },
+    "techStatLinks": {
+        "message": "ಲಿಂಕ್‌ಗಳು"
+    },
+    "stopBtn": {
+        "message": "ನಿಲ್ಲಿಸಿ"
+    },
+    "swNoLaps": {
+        "message": "ಯಾವುದೇ ಕ್ಷಣಗಳು ದಾಖಲಾಗಿಲ್ಲ"
+    },
+    "toastTrackerImportError": {
+        "message": "ಟ್ರ್ಯಾಕರ್ ಡೇಟಾವನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳುವಲ್ಲಿ ದೋಷ!"
+    },
+    "toastRadioPlayError": {
+        "message": "ಇದೀಗ ರೇಡಿಯೊವನ್ನು ಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
+    },
+    "trackerTitle": {
+        "message": "ವೆಬ್‌ಟೈಮ್ ಟ್ರ್ಯಾಕರ್"
+    },
+    "offscreenJustification": {
+        "message": "ರೇಡಿಯೋ ಸ್ಟ್ರೀಮಿಂಗ್ ಮತ್ತು ಸಿಸ್ಟಮ್ ಶಬ್ದಗಳು"
+    },
+    "trackerThisMonth": {
+        "message": "ಈ ತಿಂಗಳು"
+    },
+    "linesLabel": {
+        "message": "ಸಾಲುಗಳು"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "ಈ ಸೈಟ್‌ಗಾಗಿ ಕುಕೀಗಳನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ"
+    },
+    "toastTrackerError": {
+        "message": "ಡೇಟಾವನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡುವಲ್ಲಿ ದೋಷ"
+    },
+    "trackerExportEmpty": {
+        "message": "ರಫ್ತು ಮಾಡಲು ಯಾವುದೇ ಟ್ರ್ಯಾಕರ್ ಡೇಟಾ ಇಲ್ಲ."
+    },
+    "techCatComm": {
+        "message": "ಸಂವಹನ"
+    },
+    "deleteBtn": {
+        "message": "ಅಳಿಸಿ"
+    },
+    "techCatTech": {
+        "message": "ತಂತ್ರಜ್ಞಾನಗಳು"
+    },
+    "notesSaved": {
+        "message": "ಉಳಿಸಲಾಗಿದೆ"
+    },
+    "toastNotesExported": {
+        "message": "ಟಿಪ್ಪಣಿಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ರಫ್ತು ಮಾಡಲಾಗಿದೆ!"
+    },
+    "swMomentLabel": {
+        "message": "ಕ್ಷಣ "
+    },
+    "notesModalTitle": {
+        "message": "ಸ್ಮಾರ್ಟ್ ಟಿಪ್ಪಣಿಗಳು"
+    },
+    "trackerAvgThisMonth": {
+        "message": "ಸರಾಸರಿ (ತಿಂಗಳು)"
+    },
+    "versionLabel": {
+        "message": "ಆವೃತ್ತಿ:"
+    },
+    "importNotesTooltip": {
+        "message": "ಟಿಪ್ಪಣಿಗಳನ್ನು ಆಮದು ಮಾಡಿ"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "ಲೈಟ್ ಮೋಡ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+    },
+    "toastNotesCopied": {
+        "message": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಪಠ್ಯವನ್ನು ನಕಲಿಸಲಾಗಿದೆ!"
+    },
+    "whatsNewFeature2": {
+        "message": "ಪ್ರೀಮಿಯಂ ಟೋಸ್ಟ್‌ಗಳು: ಪ್ರಮುಖ ಕ್ರಿಯೆಗಳಿಗಾಗಿ ಆಧುನಿಕ ಅಧಿಸೂಚನೆ ವ್ಯವಸ್ಥೆ."
+    },
+    "fontNotCopied": {
+        "message": "ನಕಲಿಸಲಾಗಿಲ್ಲ"
+    },
+    "importTooltip": {
+        "message": "ಡೇಟಾವನ್ನು ಆಮದು ಮಾಡಿ"
+    },
+    "wordsLabelShort": {
+        "message": "ಪದಗಳು"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "ಬೆಂಬಲವಿಲ್ಲ"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "ಅಳಿಸಲಾಗುತ್ತಿದೆ..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "ಡೇಟಾವನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಲಾಗಿದೆ!"
+    },
+    "websiteBtn": {
+        "message": "ವಿಸ್ತರಣೆಯ ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್"
+    },
+    "markerThicknessTooltip": {
+        "message": "ದಪ್ಪ"
+    },
+    "confirmClearCounter": {
+        "message": "ನೀವು ನಿಜವಾಗಿಯೂ ಎಲ್ಲವನ್ನು ತೆರವುಗೊಳಿಸಲು ಬಯಸುವಿರಾ?"
+    },
+    "techCatAds": {
+        "message": "ಜಾಹೀರಾತುಗಳು"
+    },
+    "uiSettings": {
+        "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+    },
+    "trackerThatMonth": {
+        "message": "ಆ ತಿಂಗಳು"
+    },
+    "radioModalDesc": {
+        "message": "ನಿಮ್ಮ ಮೆಚ್ಚಿನ ರೇಡಿಯೊ ಸ್ಟೇಷನ್‌ಗೆ ನೇರ ಲಿಂಕ್ ಅನ್ನು ನಮೂದಿಸಿ"
+    },
+    "trackerDeleteConfirm": {
+        "message": "ಗಾಗಿ ಡೇಟಾವನ್ನು ಅಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ"
+    },
+    "darkModeTitle": {
+        "message": "ಕತ್ತಲೆ"
+    },
+    "toastCounterCleared": {
+        "message": "ಕೌಂಟರ್ ಪಠ್ಯವನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ!"
+    },
+    "techStatScripts": {
+        "message": "ಸ್ಕ್ರಿಪ್ಟ್‌ಗಳು"
+    },
+    "techNetworkOptInHint": {
+        "message": "dns.google ಮತ್ತು ipinfo.io ಗೆ ವಿನಂತಿಗಳನ್ನು ಕಳುಹಿಸುತ್ತದೆ."
+    },
+    "swNoHistory": {
+        "message": "ಯಾವುದೇ ಲೈವ್ ಇತಿಹಾಸವಿಲ್ಲ"
+    },
+    "whatsNewTitle": {
+        "message": "ಆವೃತ್ತಿ 1.6 ರಲ್ಲಿ ಹೊಸದೇನಿದೆ"
+    },
+    "techNotFound": {
+        "message": "ಯಾವುದೂ ಕಂಡುಬಂದಿಲ್ಲ."
+    },
+    "notesPlaceholder": {
+        "message": "ಟಿಪ್ಪಣಿಗಳನ್ನು ಇಲ್ಲಿ ಬರೆಯಿರಿ..."
+    },
+    "radioArtist": {
+        "message": "All In One ವಿಸ್ತರಣೆಯಿಂದ ನಡೆಸಲ್ಪಡುತ್ತಿದೆ"
+    },
+    "charsLabel": {
+        "message": "ಅಕ್ಷರಗಳು"
+    },
+    "trackerImportSuccess": {
+        "message": "ಡೇಟಾವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಆಮದು ಮಾಡಲಾಗಿದೆ!"
+    },
+    "copyEnableTitle": {
+        "message": "ನಕಲಿಸಿ"
+    },
+    "techCatStats": {
+        "message": "ಅಂಕಿಅಂಶಗಳು"
+    },
+    "dateLabel": {
+        "message": "ದಿನಾಂಕ"
+    },
+    "techCatNetwork": {
+        "message": "ನೆಟ್ವರ್ಕ್"
+    },
+    "techCatEcom": {
+        "message": "ಇ-ಕಾಮರ್ಸ್"
+    },
+    "currentRecordedLabel": {
+        "message": "ಪ್ರಸ್ತುತ ದಾಖಲಾಗಿರುವುದು"
+    },
+    "toastCookieOff": {
+        "message": "ಸ್ವಯಂಚಾಲಿತ ಕುಕೀ ನಿರ್ಬಂಧಿಸುವಿಕೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+    },
+    "toastModuleLoadError": {
+        "message": "ಮಾಡ್ಯೂಲ್ ಅನ್ನು ಲೋಡ್ ಮಾಡುವಲ್ಲಿ ದೋಷ"
+    },
+    "techCatStyles": {
+        "message": "ಶೈಲಿಗಳು"
+    },
+    "extDesc": {
+        "message": "ಎಲ್ಲಾ ಅಗತ್ಯ ಕಾರ್ಯಗಳನ್ನು ಒಂದು ವೇಗವಾದ, ಆಧುನಿಕ ಮತ್ತು ಉಚಿತ ಇಂಟರ್ಫೇಸ್‌ನಲ್ಲಿ ಸಂಯೋಜಿಸುವ ಅಂತಿಮ ಸಾಧನ."
+    },
+    "resetBtn": {
+        "message": "ರಿಸೆಟ್"
+    },
+    "addDateTooltip": {
+        "message": "ಇಂದಿನ ದಿನಾಂಕವನ್ನು ಸೇರಿಸಿ"
+    },
+    "supportTitle": {
+        "message": "ವಿಸ್ತರಣೆಯನ್ನು ಬೆಂಬಲಿಸಿ"
+    },
+    "toastCounterCopied": {
+        "message": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಪಠ್ಯವನ್ನು ನಕಲಿಸಲಾಗಿದೆ!"
+    },
+    "savedIndicator": {
+        "message": "ಉಳಿಸಲಾಗಿದೆ"
+    },
+    "counterPlaceholder": {
+        "message": "ಪಠ್ಯವನ್ನು ಇಲ್ಲಿ ಅಂಟಿಸಿ..."
+    },
+    "techFoundPrefix": {
+        "message": "ಕಂಡುಬಂದಿದೆ: "
+    },
+    "systemPageTitle": {
+        "message": "ಸಿಸ್ಟಮ್ ಪುಟ"
+    },
+    "markerClearAllTooltip": {
+        "message": "ಎಲ್ಲವನ್ನೂ ಅಳಿಸಿ"
+    },
+    "analyticsOptOutLabel": {
+        "message": "ವಿಶ್ಲೇಷಣೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"
+    },
+    "trackerModeDay": {
+        "message": "ದೈನಂದಿನ ದೃಶ್ಯ"
+    },
+    "techItemsSuffix": {
+        "message": "ಐಟಂಗಳು"
+    },
+    "toastStopwatchCleared": {
+        "message": "ಲೈವ್ ಇತಿಹಾಸವನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ!"
+    },
+    "trackerTotal": {
+        "message": "ಒಟ್ಟು"
+    },
+    "swStatusReady": {
+        "message": "ಸಿದ್ಧವಾಗಿದೆ"
+    },
+    "trackerTotalShort": {
+        "message": "ಒಟ್ಟು"
+    },
+    "blockCookiesLabel": {
+        "message": "ಕುಕಿಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನಿರ್ಬಂಧಿಸಿ"
+    },
+    "markerDrawTooltip": {
+        "message": "ಡ್ರಾ"
+    },
+    "trackerMonthLabel": {
+        "message": "ಈ ತಿಂಗಳು"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "ಕೋಷ್ಟಕಗಳು"
+    },
+    "techStatImages": {
+        "message": "ಚಿತ್ರಗಳು"
+    },
+    "toastRadioSaved": {
+        "message": "ರೇಡಿಯೋ ಸ್ಟೇಷನ್ URL ಉಳಿಸಲಾಗಿದೆ!"
+    },
+    "trackerToday": {
+        "message": "ಇಂದು"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "ಪದಗಳು"
+    },
+    "clearAllBtn": {
+        "message": "ಎಲ್ಲವನ್ನೂ ಅಳಿಸಿ"
+    },
+    "toastCopyOn": {
+        "message": "ಈ ಸೈಟ್‌ಗಾಗಿ ನಕಲು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+    },
+    "clearSiteDataBtn": {
+        "message": "ಈ ಸೈಟ್‌ನಿಂದ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಅಳಿಸಿ"
+    },
+    "colorPickerPicking": {
+        "message": "ಆಯ್ಕೆ ಮಾಡಲಾಗುತ್ತಿದೆ..."
+    },
+    "cacheClearConfirm": {
+        "message": "ಈ ಸೈಟ್‌ನಿಂದ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಅಳಿಸಿ"
+    },
+    "markerTextTooltip": {
+        "message": "ಪಠ್ಯ"
+    },
+    "radioTitle": {
+        "message": "ರೇಡಿ"
+    },
+    "trackerSelectedMonth": {
+        "message": "ಆಯ್ದ ತಿಂಗಳು"
+    },
+    "toastCopyOff": {
+        "message": "ನಕಲು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+    },
+    "fontCopied": {
+        "message": "ನಕಲಿಸಲಾಗಿದೆ!"
+    },
+    "notesLinkText": {
+        "message": "ಲಿಂಕ್"
+    },
+    "radioClearConfirm": {
+        "message": "ಉಳಿಸಿದ ರೇಡಿಯೋ ಸ್ಟೇಷನ್ ಅನ್ನು ತೆರವುಗೊಳಿಸುವುದೇ?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "ಸರಾಸರಿ (ತಿಂಗಳು)"
+    },
+    "techTitle": {
+        "message": "ಸೈಟ್ ತಂತ್ರಜ್ಞಾನ"
+    },
+    "lapBtn": {
+        "message": "ಲ್ಯಾಪ್"
+    },
+    "playBtn": {
+        "message": "ಪ್ಲೇ"
+    },
+    "toastDarkModeOn": {
+        "message": "ಡಾರ್ಕ್ ಮೋಡ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+    },
+    "techCatPayment": {
+        "message": "ಪಾವತಿ"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "ಈ ಸೈಟ್‌ಗೆ ಕುಕೀಗಳನ್ನು ಅನುಮತಿಸಲಾಗಿದೆ"
+    },
+    "markerLineTooltip": {
+        "message": "ರೇಖೆ"
+    },
+    "techStatIframes": {
+        "message": "ಐಫ್ರೇಮ್‌ಗಳು"
+    },
+    "counterModalTitle": {
+        "message": "ಅಕ್ಷರಗಳ ಕೌಂಟರ್"
+    },
+    "fontTitle": {
+        "message": "ಫಾಂಟ್ ಫೈಂಡರ್"
+    },
+    "toastTrackerExported": {
+        "message": "ಟ್ರ್ಯಾಕರ್ ಡೇಟಾವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ರಫ್ತು ಮಾಡಲಾಗಿದೆ!"
+    },
+    "toastNotesImportError": {
+        "message": "ನೋಟುಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳುವಲ್ಲಿ ದೋಷ!"
+    },
+    "swExportTxtBtn": {
+        "message": ".TXT ಆಗಿ ರಫ್ತು ಮಾಡಿ"
+    },
+    "swUndoTitle": {
+        "message": "ಈ ಕ್ಷಣವನ್ನು ಅಳಿಸಿ"
+    },
+    "startBtn": {
+        "message": "ಪ್ರಾರಂಭಿಸಿ"
+    },
+    "markerMoveTooltip": {
+        "message": "ಸರಿಸು"
+    },
+    "techModalTitle": {
+        "message": "ಸೈಟ್ ತಂತ್ರಜ್ಞಾನಗಳು"
+    },
+    "saveRadioStationBtn": {
+        "message": "ಸ್ಟೇಷನ್ ಉಳಿಸಿ"
+    },
+    "techCatDb": {
+        "message": "Database"
+    },
+    "toastNotesCleared": {
+        "message": "ಎಲ್ಲಾ ಟಿಪ್ಪಣಿಗಳನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ!"
+    },
+    "toastTrackerImported": {
+        "message": "ಟ್ರ್ಯಾಕರ್ ಡೇಟಾವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಆಮದು ಮಾಡಲಾಗಿದೆ!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "ಅಮಾನ್ಯ URL! URL http:// ಅಥವಾ https:// ನೊಂದಿಗೆ ಪ್ರಾರಂಭವಾಗಬೇಕು"
+    },
+    "trackerImportError": {
+        "message": "ಫೈಲ್ ಓದುವಲ್ಲಿ ದೋಷ."
+    },
+    "swStatusLive": {
+        "message": "ಲೈವ್ ನಡೆಯುತ್ತಿದೆ"
+    },
+    "linkLabel": {
+        "message": "ಲಿಂಕ್"
+    },
+    "techCatAnalytics": {
+        "message": "ಅನಾಲಿಟಿಕ್ಸ್"
+    },
+    "liveHistoryLabel": {
+        "message": "ಲೈವ್ ಇತಿಹಾಸ"
+    },
+    "colorPickerTitle": {
+        "message": "ಕಲರ್ ಪಿಕರ್"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "ಒಟ್ಟು ಅವಧಿ: "
+    },
+    "stopwatchReady": {
+        "message": "ಸಿದ್ಧವಾಗಿದೆ"
+    },
+    "confirmClearHistory": {
+        "message": "ನೀವು ಖಂಡಿತವಾಗಿಯೂ ಎಲ್ಲಾ ಇತಿಹಾಸವನ್ನು ಅಳಿಸಲು ಬಯಸುವಿರಾ?"
+    },
+    "markerTitle": {
+        "message": "ಪುಟದ ಮಾರ್ಕರ್"
+    },
+    "trackerModalTitle": {
+        "message": "Webtime Tracker"
+    },
+    "grabTextTooltip": {
+        "message": "ಪುಟದಿಂದ ಪಠ್ಯವನ್ನು ಹೊರತೆಗೆಯಿರಿ"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "ತೆರವುಗೊಳಿಸಿ ಕ್ಷೇತ್ರ"
+    },
+    "privacyLabel": {
+        "message": "ಗೌಪ್ಯತಾ ನೀತಿ"
+    },
+    "whatsNewFeature4": {
+        "message": "ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಟಾಗಲ್ ಮಾಡಿ: ಸಣ್ಣ ಪಲ್ಸ್ ಅನಿಮೇಷನ್‌ಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬದಲಾಯಿಸುವಾಗ ದೃಢೀಕರಣಗಳು."
+    },
+    "trackerThatDay": {
+        "message": "ಆ ದಿನ"
+    },
+    "toastCookieWhitelistError": {
+        "message": "ಪಟ್ಟಿಯನ್ನು ನವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
+    },
+    "cookieWhitelistLabel": {
+        "message": "ಈ ಸೈಟ್‌ಗಾಗಿ ಕುಕೀಗಳನ್ನು ಅನುಮತಿಸಿ"
+    },
+    "textLabel": {
+        "message": "ಪಠ್ಯ"
+    },
+    "cacheCleared": {
+        "message": "ಅಳಿಸಲಾಗಿದೆ!"
+    },
+    "importRadioTooltip": {
+        "message": "ಕಸ್ಟಮ್ ರೇಡಿಯೋ ಸ್ಟೇಷನ್ ಅನ್ನು ಆಮದು ಮಾಡಿ"
+    },
+    "radioPlay": {
+        "message": "ಪ್ಲೇ"
+    },
+    "techLoadingMsg": {
+        "message": "ಸ್ಕ್ಯಾನರ್ ಸೈಟ್ ಅನ್ನು ವಿಶ್ಲೇಷಿಸುತ್ತಿದೆ..."
+    },
+    "swCopyBtn": {
+        "message": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಿ"
+    },
+    "techScannerFailed": {
+        "message": "ಈ ಪುಟದಲ್ಲಿ ಸ್ಕ್ಯಾನ್ ವಿಫಲವಾಗಿದೆ."
+    },
+    "techNetworkOptInLabel": {
+        "message": "ನೆಟ್‌ವರ್ಕ್ ಮಾಹಿತಿಯನ್ನು ತೋರಿಸಿ (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "ಇಂದು"
+    },
+    "toastNotesImported": {
+        "message": "ಟಿಪ್ಪಣಿಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗಿದೆ!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "ನಕಲಿಸಲಾಗಿದೆ: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ ನಕಲಿಸಲಾಗಿದೆ"
+    },
+    "techCatCaching": {
+        "message": "ಹಿಡಿದಿಟ್ಟುಕೊಳ್ಳುವುದು"
+    },
+    "techCatSecurity": {
+        "message": "ಭದ್ರತೆ"
+    },
+    "toastYtOn": {
+        "message": "YouTube ಇಷ್ಟವಿಲ್ಲದ ಪ್ರದರ್ಶನವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+    },
+    "extName": {
+        "message": "All In One - ಅತ್ಯುತ್ತಮ ಉತ್ಪಾದಕತೆ ಸಾಧನ"
+    },
+    "toastCookieOn": {
+        "message": "ಸ್ವಯಂಚಾಲಿತ ಕುಕೀ ನಿರ್ಬಂಧಿಸುವಿಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+    },
+    "techScannerUnavailable": {
+        "message": "ಈ ಪುಟದಲ್ಲಿ ಸ್ಕ್ಯಾನರ್ ಲಭ್ಯವಿಲ್ಲ."
+    },
+    "notesTooLarge": {
+        "message": "ಟಿಪ್ಪಣಿ ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ"
+    },
+    "swDurationLabel": {
+        "message": "ಅವಧಿ: "
+    },
+    "ytDislikeTitle": {
+        "message": "Return YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "ದೇಣಿಗೆ ನೀಡಿ ಮತ್ತು ಕೆಲಸವನ್ನು ಬೆಂಬಲಿಸಿ"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+    },
+    "trackerThisMonthShort": {
+        "message": "ಈ ತಿಂಗಳು"
+    },
+    "techCatSystem": {
+        "message": "ವ್ಯವಸ್ಥೆ"
+    },
+    "exportTooltip": {
+        "message": "ಡೇಟಾವನ್ನು ರಫ್ತು ಮಾಡಿ"
+    },
+    "exportNotesTooltip": {
+        "message": "ಟಿಪ್ಪಣಿಗಳನ್ನು ರಫ್ತು ಮಾಡಿ"
+    },
+    "radioPause": {
+        "message": "ನಿಲ್ಲಿಸು"
+    },
+    "websiteTooltip": {
+        "message": "ವಿಸ್ತರಣೆಯ ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್"
+    },
+    "rateBtn": {
+        "message": "ವಿಸ್ತರಣೆಯನ್ನು ರೇಟ್ ಮಾಡಿ"
+    },
+    "techCatBase": {
+        "message": "ಬೇಸ್"
+    },
+    "cacheModalTitle": {
+        "message": "ಕುಕಿಗಳು ಮತ್ತು ಕ್ಯಾಶ್"
+    },
+    "cancelBtn": {
+        "message": "ರದ್ದುಮಾಡಿ"
+    },
+    "addUrlTooltip": {
+        "message": "ಪ್ರಸ್ತುತ ಪುಟದ URL ಸೇರಿಸಿ"
+    },
+    "trackerAvgTotal": {
+        "message": "ಸರಾಸರಿ"
+    },
+    "techStatForms": {
+        "message": "ರೂಪಗಳು"
+    },
+    "cacheError": {
+        "message": "ದೋಷ"
+    }
 }
