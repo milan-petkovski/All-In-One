@@ -48,6 +48,8 @@ export let currentLang = 'sr';
 export let elements = {};
 
 export async function initCore() {
+    host = null;
+    tab = null;
     const appLangData = await chrome.storage.local.get(['appLang']);
     currentLang = appLangData.appLang || 'sr';
 
@@ -324,7 +326,7 @@ export async function initCore() {
     elements.markerBtn?.addEventListener("click", () => {
         trackEvent("page_marker_open");
         if (tab?.id) {
-            chrome.scripting.executeScript({ target: { tabId: tab.id }, files: ["marker_engine.js"] }, () => {
+            chrome.scripting.executeScript({ target: { tabId: tab.id }, files: ["js/marker_engine.js"] }, () => {
                 if (chrome.runtime.lastError) return;
                 chrome.tabs.sendMessage(tab.id, { action: "initMarker" });
                 window.close();
@@ -523,6 +525,9 @@ export async function initCore() {
                     if (featuresEl) {
                         featuresEl.innerText = translation.opis || "";
                     }
+                    if (closeWhatsNewBtn) {
+                        closeWhatsNewBtn.innerText = lang === "sr" ? "RAZUMEM" : "GOT IT";
+                    }
 
                     whatsNewOverlay?.classList.remove("hidden");
                 }
@@ -538,6 +543,9 @@ export async function initCore() {
                     featuresEl.innerText = lang === "sr"
                         ? "Uspešno ste ažurirali ekstenziju! Posetite naš sajt da biste videli detaljan spisak izmena."
                         : "Extension successfully updated! Visit our website to see the detailed changelog.";
+                }
+                if (closeWhatsNewBtn) {
+                    closeWhatsNewBtn.innerText = lang === "sr" ? "RAZUMEM" : "GOT IT";
                 }
                 whatsNewOverlay?.classList.remove("hidden");
             }

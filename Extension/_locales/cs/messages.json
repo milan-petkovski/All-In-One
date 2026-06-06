@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Poznámky"
-                   },
-    "supportDesc":  {
-                        "message":  "All In One je zcela bezplatný nástroj. Vaše podpora pomáhá, aby to tak zůstalo a umožňuje vývoj nových funkcí."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Vymazat"
-                           },
-    "counterTitle":  {
-                         "message":  "Počítadlo"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Průměr"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Měsíční zobrazení"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Celkový čas"
-                       },
-    "techCatMedia":  {
-                         "message":  "Média"
-                     },
-    "trackerNoData":  {
-                          "message":  "Žádná data pro toto období"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "Živě #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Opravdu chcete vymazat všechny poznámky?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Nástroje"
-                     },
-    "soundTitle":  {
-                       "message":  "Zvuk"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "Vymazat vše"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Zavřít"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Stopky"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "Vymazat všechny poznámky"
-                          },
-    "rulerTitle":  {
-                       "message":  "Pravítko stránky"
-                   },
-    "markLapDesc":  {
-                        "message":  "Zaznamenej moment na stopkách"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "Nástroje pro úpravy jsou zakázány"
-                       },
-    "techStatLinks":  {
-                          "message":  "Odkazy"
-                      },
-    "stopBtn":  {
-                    "message":  "STOP"
-                },
-    "swNoLaps":  {
-                     "message":  "Žádné zaznamenané momenty"
-                 },
-    "trackerTitle":  {
-                         "message":  "Webový čas"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "Tento měsíc"
-                         },
-    "linesLabel":  {
-                       "message":  "Řádky"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "Komunikace"
-                    },
-    "deleteBtn":  {
-                      "message":  "VYMAZAT"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Uloženo"
-                   },
-    "lapBtn":  {
-                   "message":  "KOLO"
-               },
-    "notesModalTitle":  {
-                            "message":  "CHYTRÉ POZNÁMKY"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Průměr"
-                            },
-    "versionLabel":  {
-                         "message":  "Verze:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "Importovat poznámky"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Nezkopírováno"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Technologie"
-                    },
-    "techCatServer":  {
-                          "message":  "Server"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Nepodporováno"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Audio"
-                      },
-    "cacheClearing":  {
-                          "message":  "Mazání..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Rádio"
-                         },
-    "websiteBtn":  {
-                       "message":  "Oficiální webová stránka"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Tloušťka"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Opravdu chcete vše vymazat?"
-                            },
-    "techCatAds":  {
-                       "message":  "Reklamy"
-                   },
-    "uiSettings":  {
-                       "message":  "NASTAVENÍ"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "Ten měsíc"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Zadejte přímý odkaz na oblíbenou rozhlasovou stanici"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Opravdu chcete smazat data pro"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Tmavý režim"
-                      },
-    "techStatScripts":  {
-                            "message":  "Skripty"
-                        },
-    "swNoHistory":  {
-                        "message":  "Žádná živá historie"
-                    },
-    "techNotFound":  {
-                         "message":  "Nenalezeno."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Pište poznámky zde..."
-                         },
-    "radioArtist":  {
-                        "message":  "Běží na rozšíření All In One"
-                    },
-    "charsLabel":  {
-                       "message":  "Znaky"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Kopírovat"
-                        },
-    "techCatStats":  {
-                         "message":  "Statistiky"
-                     },
-    "dateLabel":  {
-                      "message":  "Datum"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Síť"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Commerce"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "AKTUÁLNĚ ZAZNAMENÁNO"
-                             },
-    "techCatStyles":  {
-                          "message":  "Styly"
-                      },
-    "extDesc":  {
-                    "message":  "Ultimátní nástroj, který spojuje všechny podstatné funkce do jednoho rychlého, moderního a bezplatného rozhraní."
-                },
-    "resetBtn":  {
-                     "message":  "Resetovat"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Přidat dnešní datum"
-                       },
-    "supportTitle":  {
-                         "message":  "Podpořte rozšíření"
-                     },
-    "savedIndicator":  {
-                           "message":  "Uloženo"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "Vložte text zde..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Nalezeno: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "SYSTÉMOVÁ STRÁNKA"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "Vymazat vše"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Denní zobrazení"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "položek"
-                        },
-    "trackerTotal":  {
-                         "message":  "Celkem"
-                     },
-    "swStatusReady":  {
-                          "message":  "PŘIPRAVENO"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Celkem"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Automaticky blokovat soubory cookie"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Kreslit"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Tento měsíc"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Tabulky"
-                       },
-    "techStatImages":  {
-                           "message":  "Obrázky"
-                       },
-    "trackerToday":  {
-                         "message":  "Dnes"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Slova"
-                   },
-    "clearAllBtn":  {
-                        "message":  "VYMAZAT VŠE"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "Vymazat všechna data z tohoto webu"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Vybírání..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Vymazat všechna data z tohoto webu"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Text"
-                          },
-    "radioTitle":  {
-                       "message":  "Rádio"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Vybraný měsíc"
-                             },
-    "fontCopied":  {
-                       "message":  "Zkopírováno!"
-                   },
-    "notesLinkText":  {
-                          "message":  "Odkaz"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Průměr"
-                            },
-    "techTitle":  {
-                      "message":  "Technologie"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Přesunout"
-                          },
-    "playBtn":  {
-                    "message":  "Přehrát"
-                },
-    "techCatPayment":  {
-                           "message":  "Platba"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Čára"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "POČÍTADLO ZNAKŮ"
-                          },
-    "fontTitle":  {
-                      "message":  "Písma"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "EXPORTOVAT JAKO .TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Smazat tento moment"
-                    },
-    "startBtn":  {
-                     "message":  "START"
-                 },
-    "techModalTitle":  {
-                           "message":  "TECHNOLOGIE WEBU"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "ULOŽIT STANICI"
-                            },
-    "techCatDb":  {
-                      "message":  "Databáze"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "PROBÍHÁ ŽIVĚ"
-                     },
-    "linkLabel":  {
-                      "message":  "Odkaz"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Analytika"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "ŽIVÁ HISTORIE"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Výběr barvy"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "Moment "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "CELKOVÁ DOBA TRVÁNÍ: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "PŘIPRAVENO"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Tento měsíc"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Opravdu chcete vymazat celou historii?"
-                            },
-    "markerTitle":  {
-                        "message":  "Záložka"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Sledování času"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Extrahovat text ze stránky"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Vymazat pole"
-                               },
-    "privacyLabel":  {
-                         "message":  "Zásady ochrany osobních údajů"
-                     },
-    "trackerThatDay":  {
-                           "message":  "Ten den"
-                       },
-    "textLabel":  {
-                      "message":  "Text"
-                  },
-    "cacheCleared":  {
-                         "message":  "Vymazáno!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Importovat vlastní rozhlasovou stanici"
-                           },
-    "radioPlay":  {
-                      "message":  "Play"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "Skener analyzuje web..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "ZKOPÍROVAT DO SCHRÁNKY"
-                  },
-    "techScannerFailed":  {
-                              "message":  "Skenování na této stránce selhalo."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "Dnes"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Zkopírováno: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ ZKOPÍROVÁNO"
-                    },
-    "techCatCaching":  {
-                           "message":  "Caching"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Bezpečnost"
-                        },
-    "extName":  {
-                    "message":  "All In One - Nejlepší nástroj pro produktivitu"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "Skener není na této stránce k dispozici."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Poznámka je příliš velká"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Doba trvání: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "Darovat a podpořit"
-                  },
-    "techStatVideo":  {
-                          "message":  "Video"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Nastavení"
-                        },
-    "cacheTitle":  {
-                       "message":  "Cookies/mezipaměť"
-                   },
-    "techCatSystem":  {
-                          "message":  "Systém"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "Exportovat poznámky"
-                           },
-    "radioPause":  {
-                       "message":  "Pauza"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Oficiální web"
-                       },
-    "rateBtn":  {
-                    "message":  "Ohodnotit rozšíření"
-                },
-    "techCatBase":  {
-                        "message":  "Základ"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "SOUBORY COOKIE A MEZIPAMĚŤ"
-                        },
-    "cancelBtn":  {
-                      "message":  "ZRUŠIT"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "Přidat aktuální URL adresu"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Průměr"
-                        },
-    "techStatForms":  {
-                          "message":  "Formuláře"
-                      },
-    "cacheError":  {
-                       "message":  "Chyba"
-                   }
+    "notesTitle": {
+        "message": "Poznámky"
+    },
+    "whatsNewDesc": {
+        "message": "Podívejte se na nejnovější vylepšení rozhraní, díky kterým je All In One ještě rychlejší a elegantnější:"
+    },
+    "toastPermissionDenied": {
+        "message": "Povolení nebylo uděleno"
+    },
+    "clearCounterTooltip": {
+        "message": "Vymazat vše"
+    },
+    "supportDesc": {
+        "message": "All In One je zcela bezplatný nástroj. Vaše podpora pomáhá, aby to tak zůstalo a umožňuje vývoj nových funkcí."
+    },
+    "trackerExportTruncated": {
+        "message": "Export zkrácen na 10 MB, aby bylo vyskakovací okno stabilní."
+    },
+    "whatsNewClose": {
+        "message": "ROZUMÍM"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Vymazat"
+    },
+    "counterTitle": {
+        "message": "Počítadlo"
+    },
+    "trackerAvgLabel": {
+        "message": "Průměr"
+    },
+    "trackerModeMonth": {
+        "message": "Měsíční zobrazení"
+    },
+    "trackerModeAll": {
+        "message": "Celkový čas"
+    },
+    "techCatMedia": {
+        "message": "Média"
+    },
+    "trackerNoData": {
+        "message": "Žádná data pro toto období"
+    },
+    "whatsNewFeature3": {
+        "message": "Podpora favicon: Favicon stránek v seznamu trackerů."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Živě #"
+    },
+    "confirmClearNotes": {
+        "message": "Opravdu chcete vymazat všechny poznámky?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Všechna data z tohoto webu byla vymazána!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Prohledat weby..."
+    },
+    "techCatTools": {
+        "message": "Nástroje"
+    },
+    "toastYtOff": {
+        "message": "Zobrazení Nelíbí se na YouTube zakázáno"
+    },
+    "soundTitle": {
+        "message": "Zvuk"
+    },
+    "cacheTitle": {
+        "message": "Cookies/mezipaměť"
+    },
+    "markerCloseTooltip": {
+        "message": "Zavřít"
+    },
+    "stopwatchTitle": {
+        "message": "Stopky"
+    },
+    "clearNotesTooltip": {
+        "message": "Vymazat všechny poznámky"
+    },
+    "rulerTitle": {
+        "message": "Pravítko stránky"
+    },
+    "markLapDesc": {
+        "message": "Zaznamenej moment na stopkách"
+    },
+    "trackerImportEmpty": {
+        "message": "Žádná platná data sledovače k ​​importu."
+    },
+    "whatsNewFeature1": {
+        "message": "Plynulé přechody: Plynulé animace snímků mezi nástroji."
+    },
+    "systemPageDesc": {
+        "message": "Nástroje pro úpravy jsou zakázány"
+    },
+    "techStatLinks": {
+        "message": "Odkazy"
+    },
+    "stopBtn": {
+        "message": "STOP"
+    },
+    "swNoLaps": {
+        "message": "Žádné zaznamenané momenty"
+    },
+    "toastTrackerImportError": {
+        "message": "Při importu dat sledovače došlo k chybě!"
+    },
+    "toastRadioPlayError": {
+        "message": "Rádio nyní nelze spustit."
+    },
+    "trackerTitle": {
+        "message": "Webový čas"
+    },
+    "offscreenJustification": {
+        "message": "Streamování rádia a systémové zvuky"
+    },
+    "trackerThisMonth": {
+        "message": "Tento měsíc"
+    },
+    "linesLabel": {
+        "message": "Řádky"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Pro tento web jsou blokovány soubory cookie"
+    },
+    "toastTrackerError": {
+        "message": "Při obnovování dat došlo k chybě"
+    },
+    "trackerExportEmpty": {
+        "message": "Žádná data sledovače k ​​exportu."
+    },
+    "techCatComm": {
+        "message": "Komunikace"
+    },
+    "deleteBtn": {
+        "message": "VYMAZAT"
+    },
+    "techCatTech": {
+        "message": "Technologie"
+    },
+    "notesSaved": {
+        "message": "Uloženo"
+    },
+    "toastNotesExported": {
+        "message": "Poznámky byly úspěšně exportovány!"
+    },
+    "swMomentLabel": {
+        "message": "Okamžik"
+    },
+    "notesModalTitle": {
+        "message": "CHYTRÉ POZNÁMKY"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Průměr"
+    },
+    "versionLabel": {
+        "message": "Verze:"
+    },
+    "importNotesTooltip": {
+        "message": "Importovat poznámky"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Světelný režim povolen"
+    },
+    "toastNotesCopied": {
+        "message": "Text zkopírován do schránky!"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toasts: Moderní systém upozornění na důležité akce."
+    },
+    "fontNotCopied": {
+        "message": "Nezkopírováno"
+    },
+    "importTooltip": {
+        "message": "Importujte data"
+    },
+    "wordsLabelShort": {
+        "message": "slova"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "Nepodporováno"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "Mazání..."
+    },
+    "radioTitleCustom": {
+        "message": "Rádio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Data obnovena!"
+    },
+    "websiteBtn": {
+        "message": "Oficiální webová stránka"
+    },
+    "markerThicknessTooltip": {
+        "message": "Tloušťka"
+    },
+    "confirmClearCounter": {
+        "message": "Opravdu chcete vše vymazat?"
+    },
+    "techCatAds": {
+        "message": "Reklamy"
+    },
+    "uiSettings": {
+        "message": "NASTAVENÍ"
+    },
+    "trackerThatMonth": {
+        "message": "Ten měsíc"
+    },
+    "radioModalDesc": {
+        "message": "Zadejte přímý odkaz na oblíbenou rozhlasovou stanici"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Opravdu chcete smazat data pro"
+    },
+    "darkModeTitle": {
+        "message": "Tmavý režim"
+    },
+    "toastCounterCleared": {
+        "message": "Text počítadla byl vymazán!"
+    },
+    "techStatScripts": {
+        "message": "Skripty"
+    },
+    "techNetworkOptInHint": {
+        "message": "Odesílá požadavky na dns.google a ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Žádná živá historie"
+    },
+    "whatsNewTitle": {
+        "message": "Co je nového ve verzi 1.6"
+    },
+    "techNotFound": {
+        "message": "Nenalezeno."
+    },
+    "notesPlaceholder": {
+        "message": "Pište poznámky zde..."
+    },
+    "radioArtist": {
+        "message": "Běží na rozšíření All In One"
+    },
+    "charsLabel": {
+        "message": "Znaky"
+    },
+    "trackerImportSuccess": {
+        "message": "Data byla úspěšně importována!"
+    },
+    "copyEnableTitle": {
+        "message": "Kopírovat"
+    },
+    "techCatStats": {
+        "message": "Statistiky"
+    },
+    "dateLabel": {
+        "message": "Datum"
+    },
+    "techCatNetwork": {
+        "message": "Síť"
+    },
+    "techCatEcom": {
+        "message": "Elektronický obchod"
+    },
+    "currentRecordedLabel": {
+        "message": "AKTUÁLNĚ ZAZNAMENÁNO"
+    },
+    "toastCookieOff": {
+        "message": "Automatické blokování souborů cookie je zakázáno"
+    },
+    "toastModuleLoadError": {
+        "message": "Chyba při načítání modulu"
+    },
+    "techCatStyles": {
+        "message": "Styly"
+    },
+    "extDesc": {
+        "message": "Ultimátní nástroj, který spojuje všechny podstatné funkce do jednoho rychlého, moderního a bezplatného rozhraní."
+    },
+    "resetBtn": {
+        "message": "Resetovat"
+    },
+    "addDateTooltip": {
+        "message": "Přidat dnešní datum"
+    },
+    "supportTitle": {
+        "message": "Podpořte rozšíření"
+    },
+    "toastCounterCopied": {
+        "message": "Text zkopírován do schránky!"
+    },
+    "savedIndicator": {
+        "message": "Uloženo"
+    },
+    "counterPlaceholder": {
+        "message": "Vložte text zde..."
+    },
+    "techFoundPrefix": {
+        "message": "Nalezeno: "
+    },
+    "systemPageTitle": {
+        "message": "SYSTÉMOVÁ STRÁNKA"
+    },
+    "markerClearAllTooltip": {
+        "message": "Vymazat vše"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Zakázat analýzu"
+    },
+    "trackerModeDay": {
+        "message": "Denní zobrazení"
+    },
+    "techItemsSuffix": {
+        "message": "položek"
+    },
+    "toastStopwatchCleared": {
+        "message": "Živá historie byla vymazána!"
+    },
+    "trackerTotal": {
+        "message": "Celkem"
+    },
+    "swStatusReady": {
+        "message": "PŘIPRAVENO"
+    },
+    "trackerTotalShort": {
+        "message": "Celkem"
+    },
+    "blockCookiesLabel": {
+        "message": "Automaticky blokovat soubory cookie"
+    },
+    "markerDrawTooltip": {
+        "message": "Kreslit"
+    },
+    "trackerMonthLabel": {
+        "message": "Tento měsíc"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Tabulky"
+    },
+    "techStatImages": {
+        "message": "Obrázky"
+    },
+    "toastRadioSaved": {
+        "message": "Adresa URL rozhlasové stanice byla uložena!"
+    },
+    "trackerToday": {
+        "message": "Dnes"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Slova"
+    },
+    "clearAllBtn": {
+        "message": "VYMAZAT VŠE"
+    },
+    "toastCopyOn": {
+        "message": "Kopírování povoleno pro tento web"
+    },
+    "clearSiteDataBtn": {
+        "message": "Vymazat všechna data z tohoto webu"
+    },
+    "colorPickerPicking": {
+        "message": "Vybírání..."
+    },
+    "cacheClearConfirm": {
+        "message": "Vymazat všechna data z tohoto webu"
+    },
+    "markerTextTooltip": {
+        "message": "Text"
+    },
+    "radioTitle": {
+        "message": "Rádio"
+    },
+    "trackerSelectedMonth": {
+        "message": "Vybraný měsíc"
+    },
+    "toastCopyOff": {
+        "message": "Kopírování zakázáno"
+    },
+    "fontCopied": {
+        "message": "Zkopírováno!"
+    },
+    "notesLinkText": {
+        "message": "Odkaz"
+    },
+    "radioClearConfirm": {
+        "message": "Vymazat uloženou rozhlasovou stanici?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Průměr"
+    },
+    "techTitle": {
+        "message": "Technologie"
+    },
+    "lapBtn": {
+        "message": "KOLO"
+    },
+    "playBtn": {
+        "message": "Přehrát"
+    },
+    "toastDarkModeOn": {
+        "message": "Tmavý režim povolen"
+    },
+    "techCatPayment": {
+        "message": "Platba"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Soubory cookie povolené pro tento web"
+    },
+    "markerLineTooltip": {
+        "message": "Čára"
+    },
+    "techStatIframes": {
+        "message": "iframe"
+    },
+    "counterModalTitle": {
+        "message": "POČÍTADLO ZNAKŮ"
+    },
+    "fontTitle": {
+        "message": "Písma"
+    },
+    "toastTrackerExported": {
+        "message": "Data sledovače byla úspěšně exportována!"
+    },
+    "toastNotesImportError": {
+        "message": "Při importu poznámek došlo k chybě!"
+    },
+    "swExportTxtBtn": {
+        "message": "EXPORTOVAT JAKO .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Smazat tento moment"
+    },
+    "startBtn": {
+        "message": "START"
+    },
+    "markerMoveTooltip": {
+        "message": "Přesunout"
+    },
+    "techModalTitle": {
+        "message": "TECHNOLOGIE WEBU"
+    },
+    "saveRadioStationBtn": {
+        "message": "ULOŽIT STANICI"
+    },
+    "techCatDb": {
+        "message": "Databáze"
+    },
+    "toastNotesCleared": {
+        "message": "Všechny poznámky byly vymazány!"
+    },
+    "toastTrackerImported": {
+        "message": "Data sledovače byla úspěšně importována!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Neplatná adresa URL! Adresa URL musí začínat http:// nebo https://"
+    },
+    "trackerImportError": {
+        "message": "Chyba při čtení souboru."
+    },
+    "swStatusLive": {
+        "message": "PROBÍHÁ ŽIVĚ"
+    },
+    "linkLabel": {
+        "message": "Odkaz"
+    },
+    "techCatAnalytics": {
+        "message": "Analytika"
+    },
+    "liveHistoryLabel": {
+        "message": "ŽIVÁ HISTORIE"
+    },
+    "colorPickerTitle": {
+        "message": "Výběr barvy"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "CELKOVÁ DOBA TRVÁNÍ: "
+    },
+    "stopwatchReady": {
+        "message": "PŘIPRAVENO"
+    },
+    "confirmClearHistory": {
+        "message": "Opravdu chcete vymazat celou historii?"
+    },
+    "markerTitle": {
+        "message": "Záložka"
+    },
+    "trackerModalTitle": {
+        "message": "Sledování času"
+    },
+    "grabTextTooltip": {
+        "message": "Extrahovat text ze stránky"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Vymazat pole"
+    },
+    "privacyLabel": {
+        "message": "Zásady ochrany osobních údajů"
+    },
+    "whatsNewFeature4": {
+        "message": "Toggle Feedback: Krátké pulzní animace a potvrzení při změně nastavení."
+    },
+    "trackerThatDay": {
+        "message": "Ten den"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Seznam nelze aktualizovat"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Povolit soubory cookie pro tento web"
+    },
+    "textLabel": {
+        "message": "Text"
+    },
+    "cacheCleared": {
+        "message": "Vymazáno!"
+    },
+    "importRadioTooltip": {
+        "message": "Importovat vlastní rozhlasovou stanici"
+    },
+    "radioPlay": {
+        "message": "Play"
+    },
+    "techLoadingMsg": {
+        "message": "Skener analyzuje web..."
+    },
+    "swCopyBtn": {
+        "message": "ZKOPÍROVAT DO SCHRÁNKY"
+    },
+    "techScannerFailed": {
+        "message": "Skenování na této stránce selhalo."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Zobrazit informace o síti (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Dnes"
+    },
+    "toastNotesImported": {
+        "message": "Poznámky byly úspěšně importovány!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Zkopírováno: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ ZKOPÍROVÁNO"
+    },
+    "techCatCaching": {
+        "message": "Ukládání do mezipaměti"
+    },
+    "techCatSecurity": {
+        "message": "Bezpečnost"
+    },
+    "toastYtOn": {
+        "message": "Zobrazení Nelíbí se na YouTube povoleno"
+    },
+    "extName": {
+        "message": "All In One - Nejlepší nástroj pro produktivitu"
+    },
+    "toastCookieOn": {
+        "message": "Je povoleno automatické blokování souborů cookie"
+    },
+    "techScannerUnavailable": {
+        "message": "Skener není na této stránce k dispozici."
+    },
+    "notesTooLarge": {
+        "message": "Poznámka je příliš velká"
+    },
+    "swDurationLabel": {
+        "message": "Doba trvání: "
+    },
+    "ytDislikeTitle": {
+        "message": "YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Darovat a podpořit"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Nastavení"
+    },
+    "trackerThisMonthShort": {
+        "message": "Tento měsíc"
+    },
+    "techCatSystem": {
+        "message": "Systém"
+    },
+    "exportTooltip": {
+        "message": "Export dat"
+    },
+    "exportNotesTooltip": {
+        "message": "Exportovat poznámky"
+    },
+    "radioPause": {
+        "message": "Pauza"
+    },
+    "websiteTooltip": {
+        "message": "Oficiální web"
+    },
+    "rateBtn": {
+        "message": "Ohodnotit rozšíření"
+    },
+    "techCatBase": {
+        "message": "Základ"
+    },
+    "cacheModalTitle": {
+        "message": "SOUBORY COOKIE A MEZIPAMĚŤ"
+    },
+    "cancelBtn": {
+        "message": "ZRUŠIT"
+    },
+    "addUrlTooltip": {
+        "message": "Přidat aktuální URL adresu"
+    },
+    "trackerAvgTotal": {
+        "message": "Průměr"
+    },
+    "techStatForms": {
+        "message": "Formuláře"
+    },
+    "cacheError": {
+        "message": "Chyba"
+    }
 }

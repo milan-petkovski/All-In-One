@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Mga Smart na Tala"
-                   },
-    "supportDesc":  {
-                        "message":  "Ang All In One ay isang libreng tool. Ang iyong suporta ay tumutulong upang mapanatili itong libre at nagbibigay-daan sa pagbuo ng mga bagong feature."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Burahin"
-                           },
-    "counterTitle":  {
-                         "message":  "Character Counter"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Average"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Buwanang view"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Lahat ng oras"
-                       },
-    "techCatMedia":  {
-                         "message":  "Media"
-                     },
-    "trackerNoData":  {
-                          "message":  "No data for this period"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "Live #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Sigurado ka bang gusto mong i-clear lahat ng tala?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Mga Tool"
-                     },
-    "soundTitle":  {
-                       "message":  "Tunog"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "I-clear lahat"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Isara"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Stopwatch"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "I-clear lahat ng tala"
-                          },
-    "rulerTitle":  {
-                       "message":  "Page Ruler"
-                   },
-    "markLapDesc":  {
-                        "message":  "Itala ang sandali sa stopwatch"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "Naka-disable ang mga modification tool"
-                       },
-    "techStatLinks":  {
-                          "message":  "Mga Link"
-                      },
-    "stopBtn":  {
-                    "message":  "ITIGIL"
-                },
-    "swNoLaps":  {
-                     "message":  "Walang na-record na sandali"
-                 },
-    "trackerTitle":  {
-                         "message":  "Webtime Tracker"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "This month"
-                         },
-    "linesLabel":  {
-                       "message":  "Mga Linya"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "Komunikasyon"
-                    },
-    "deleteBtn":  {
-                      "message":  "BURAHIN"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Naka-save na"
-                   },
-    "lapBtn":  {
-                   "message":  "LAP"
-               },
-    "notesModalTitle":  {
-                            "message":  "MGA SMART NA TALA"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "versionLabel":  {
-                         "message":  "Bersyon:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "I-import ang mga tala"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Hindi nakopya"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Teknolohiya"
-                    },
-    "techCatServer":  {
-                          "message":  "Server"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Hindi suportado"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Audio"
-                      },
-    "cacheClearing":  {
-                          "message":  "Kini-clear..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Radyo"
-                         },
-    "websiteBtn":  {
-                       "message":  "Opisyal na website"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Kapal"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Sigurado ka bang gusto mong i-clear lahat?"
-                            },
-    "techCatAds":  {
-                       "message":  "Mga Ad"
-                   },
-    "uiSettings":  {
-                       "message":  "MGA SETTING"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "Buwan na iyon"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Ilagay ang direktang link sa paborito mong istasyon ng radyo"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Sigurado ka bang gusto mong burahin ang data para sa"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Dark Mode"
-                      },
-    "techStatScripts":  {
-                            "message":  "Mga Script"
-                        },
-    "swNoHistory":  {
-                        "message":  "Walang live history"
-                    },
-    "techNotFound":  {
-                         "message":  "Hindi natagpuan."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Isulat ang mga tala dito..."
-                         },
-    "radioArtist":  {
-                        "message":  "Pinapagana ng All In One"
-                    },
-    "charsLabel":  {
-                       "message":  "Mga Karakter"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Bakit"
-                        },
-    "techCatStats":  {
-                         "message":  "Estadistika"
-                     },
-    "dateLabel":  {
-                      "message":  "Petsa"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Network"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Commerce"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "KASALUKUYANG NAKA-RECORD"
-                             },
-    "techCatStyles":  {
-                          "message":  "Mga Estilo"
-                      },
-    "extDesc":  {
-                    "message":  "Ang ultimate tool na pinagsasama ang lahat ng mahahalagang function sa isang mabilis, moderno, at libreng interface."
-                },
-    "resetBtn":  {
-                     "message":  "I-reset"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Idagdag ang petsa ngayon"
-                       },
-    "supportTitle":  {
-                         "message":  "Suportahan ang extension"
-                     },
-    "savedIndicator":  {
-                           "message":  "Naka-save na"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "I-paste ang teksto dito..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Natagpuan: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "SYSTEM PAGE"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "I-clear lahat"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Araw-araw na view"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "mga item"
-                        },
-    "trackerTotal":  {
-                         "message":  "Kabuuan"
-                     },
-    "swStatusReady":  {
-                          "message":  "HANDA NA"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Awtomatikong i-block ang cookies"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Gumuhit"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Ngayong buwan"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Mga Table"
-                       },
-    "techStatImages":  {
-                           "message":  "Mga Larawan"
-                       },
-    "trackerToday":  {
-                         "message":  "Ngayon"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Mga Salita"
-                   },
-    "clearAllBtn":  {
-                        "message":  "I-CLEAR LAHAT"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "I-clear lahat ng data sa site na ito"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Pumipili..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "I-clear lahat ng data mula sa site na ito"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Teksto"
-                          },
-    "radioTitle":  {
-                       "message":  "Radyo"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Selected month"
-                             },
-    "fontCopied":  {
-                       "message":  "Nakopya na!"
-                   },
-    "notesLinkText":  {
-                          "message":  "Link"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "techTitle":  {
-                      "message":  "Tech ng Site"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Ilipat"
-                          },
-    "playBtn":  {
-                    "message":  "I-play"
-                },
-    "techCatPayment":  {
-                           "message":  "Pagbabayad"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Linya"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "CHARACTER COUNTER"
-                          },
-    "fontTitle":  {
-                      "message":  "Font Finder"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "I-EXPORT BILANG .TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Burahin ang sandaling ito"
-                    },
-    "startBtn":  {
-                     "message":  "SIMULAN"
-                 },
-    "techModalTitle":  {
-                           "message":  "MGA TEKNOLOHIYA NG SITE"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "SAVE STATION"
-                            },
-    "techCatDb":  {
-                      "message":  "Database"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "LIVE NA NAGAGANAP"
-                     },
-    "linkLabel":  {
-                      "message":  "Link"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Analytics"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "LIVE HISTORY"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Color Picker"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "Sandali "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "KABUUANG TAGAL: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "HANDA NA"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Buwan na ito"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Sigurado ka bang gusto mong i-clear ang buong history?"
-                            },
-    "markerTitle":  {
-                        "message":  "Page Marker"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Tagasubaybay ng Oras"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Kunin ang teksto mula sa pahina"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Burahin ang field"
-                               },
-    "privacyLabel":  {
-                         "message":  "Patakaran sa Privacy"
-                     },
-    "trackerThatDay":  {
-                           "message":  "Araw na iyon"
-                       },
-    "textLabel":  {
-                      "message":  "Teksto"
-                  },
-    "cacheCleared":  {
-                         "message":  "Na-clear na!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Mag-import ng custom na istasyon ng radyo"
-                           },
-    "radioPlay":  {
-                      "message":  "I-play"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "Sinusuri ng scanner ang site..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "KOPYAHIN SA CLIPBOARD"
-                  },
-    "techScannerFailed":  {
-                              "message":  "Bigo ang pag-scan sa pahinang ito."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "Ngayon"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Nakopya: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ NAKOPYA NA"
-                    },
-    "techCatCaching":  {
-                           "message":  "Caching"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Seguridad"
-                        },
-    "extName":  {
-                    "message":  "All In One - Ang pinakamahusay na tool sa pagiging produktibo"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "Hindi available ang scanner sa pahinang ito."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Masyadong malaki ang tala"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Tagal: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "Ibalik ang YouTube Dislikes"
-                       },
-    "donateBtn":  {
-                      "message":  "Mag-donate at sumuporta"
-                  },
-    "techStatVideo":  {
-                          "message":  "Video"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Mga Setting"
-                        },
-    "cacheTitle":  {
-                       "message":  "Cookies at Cache"
-                   },
-    "techCatSystem":  {
-                          "message":  "Sistema"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "I-export ang mga tala"
-                           },
-    "radioPause":  {
-                       "message":  "I-pause"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Opisyal na website ng extension"
-                       },
-    "rateBtn":  {
-                    "message":  "I-rate ang extension"
-                },
-    "techCatBase":  {
-                        "message":  "Base"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "COOKIES AT CACHE"
-                        },
-    "cancelBtn":  {
-                      "message":  "KANSELAHIN"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "Idagdag ang kasalukuyang URL"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Average"
-                        },
-    "techStatForms":  {
-                          "message":  "Mga Form"
-                      },
-    "cacheError":  {
-                       "message":  "Error"
-                   }
+    "notesTitle": {
+        "message": "Mga Smart na Tala"
+    },
+    "whatsNewDesc": {
+        "message": "Tingnan ang pinakabagong mga pagpapahusay sa interface na ginagawang mas mabilis at mas eleganteng ang All In One:"
+    },
+    "toastPermissionDenied": {
+        "message": "Hindi ibinigay ang pahintulot"
+    },
+    "clearCounterTooltip": {
+        "message": "I-clear lahat"
+    },
+    "supportDesc": {
+        "message": "Ang All In One ay isang libreng tool. Ang iyong suporta ay tumutulong upang mapanatili itong libre at nagbibigay-daan sa pagbuo ng mga bagong feature."
+    },
+    "trackerExportTruncated": {
+        "message": "Pinutol ang pag-export sa 10MB para mapanatiling stable ang popup."
+    },
+    "whatsNewClose": {
+        "message": "NAKUHA NA"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Burahin"
+    },
+    "counterTitle": {
+        "message": "Tagabilang ng Character"
+    },
+    "trackerAvgLabel": {
+        "message": "Katamtaman"
+    },
+    "trackerModeMonth": {
+        "message": "Buwanang view"
+    },
+    "trackerModeAll": {
+        "message": "Lahat ng oras"
+    },
+    "techCatMedia": {
+        "message": "Media"
+    },
+    "trackerNoData": {
+        "message": "Walang data para sa panahong ito"
+    },
+    "whatsNewFeature3": {
+        "message": "Suporta sa Favicon: Mga favicon ng site sa listahan ng tracker."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Live #"
+    },
+    "confirmClearNotes": {
+        "message": "Sigurado ka bang gusto mong i-clear lahat ng tala?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Na-clear na ang lahat ng data mula sa site na ito!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Maghanap sa mga website..."
+    },
+    "techCatTools": {
+        "message": "Mga Tool"
+    },
+    "toastYtOff": {
+        "message": "Naka-disable ang display ng YouTube Dislike"
+    },
+    "soundTitle": {
+        "message": "Tunog"
+    },
+    "cacheTitle": {
+        "message": "Cookies at Cache"
+    },
+    "markerCloseTooltip": {
+        "message": "Isara"
+    },
+    "stopwatchTitle": {
+        "message": "Stopwatch"
+    },
+    "clearNotesTooltip": {
+        "message": "I-clear lahat ng tala"
+    },
+    "rulerTitle": {
+        "message": "Page Ruler"
+    },
+    "markLapDesc": {
+        "message": "Itala ang sandali sa stopwatch"
+    },
+    "trackerImportEmpty": {
+        "message": "Walang valid na tracker data na ii-import."
+    },
+    "whatsNewFeature1": {
+        "message": "Smooth Transitions: Smooth slide animation sa pagitan ng mga tool."
+    },
+    "systemPageDesc": {
+        "message": "Naka-disable ang mga modification tool"
+    },
+    "techStatLinks": {
+        "message": "Mga Link"
+    },
+    "stopBtn": {
+        "message": "ITIGIL"
+    },
+    "swNoLaps": {
+        "message": "Walang na-record na sandali"
+    },
+    "toastTrackerImportError": {
+        "message": "Error sa pag-import ng data ng tracker!"
+    },
+    "toastRadioPlayError": {
+        "message": "Hindi masimulan ang radyo sa ngayon."
+    },
+    "trackerTitle": {
+        "message": "Webtime Tracker"
+    },
+    "offscreenJustification": {
+        "message": "Radio streaming at mga tunog ng system"
+    },
+    "trackerThisMonth": {
+        "message": "Ngayong buwan"
+    },
+    "linesLabel": {
+        "message": "Mga Linya"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Na-block ang cookies para sa site na ito"
+    },
+    "toastTrackerError": {
+        "message": "Error sa pag-refresh ng data"
+    },
+    "trackerExportEmpty": {
+        "message": "Walang data ng tracker na ie-export."
+    },
+    "techCatComm": {
+        "message": "Komunikasyon"
+    },
+    "deleteBtn": {
+        "message": "BURAHIN"
+    },
+    "techCatTech": {
+        "message": "Teknolohiya"
+    },
+    "notesSaved": {
+        "message": "Naka-save na"
+    },
+    "toastNotesExported": {
+        "message": "Matagumpay na na-export ang mga tala!"
+    },
+    "swMomentLabel": {
+        "message": "Sandali "
+    },
+    "notesModalTitle": {
+        "message": "MGA SMART NA TALA"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Average (buwan)"
+    },
+    "versionLabel": {
+        "message": "Bersyon:"
+    },
+    "importNotesTooltip": {
+        "message": "I-import ang mga tala"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Pinagana ang light mode"
+    },
+    "toastNotesCopied": {
+        "message": "Nakopya ang teksto sa clipboard!"
+    },
+    "whatsNewFeature2": {
+        "message": "Mga Premium na Toast: Modernong sistema ng notification para sa mahahalagang aksyon."
+    },
+    "fontNotCopied": {
+        "message": "Hindi nakopya"
+    },
+    "importTooltip": {
+        "message": "Mag-import ng data"
+    },
+    "wordsLabelShort": {
+        "message": "mga salita"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "Hindi suportado"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "Kini-clear..."
+    },
+    "radioTitleCustom": {
+        "message": "Radyo"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Na-refresh ang data!"
+    },
+    "websiteBtn": {
+        "message": "Opisyal na website"
+    },
+    "markerThicknessTooltip": {
+        "message": "Kapal"
+    },
+    "confirmClearCounter": {
+        "message": "Sigurado ka bang gusto mong i-clear lahat?"
+    },
+    "techCatAds": {
+        "message": "Mga Ad"
+    },
+    "uiSettings": {
+        "message": "MGA SETTING"
+    },
+    "trackerThatMonth": {
+        "message": "Buwan na iyon"
+    },
+    "radioModalDesc": {
+        "message": "Ilagay ang direktang link sa paborito mong istasyon ng radyo"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Sigurado ka bang gusto mong burahin ang data para sa"
+    },
+    "darkModeTitle": {
+        "message": "Dark Mode"
+    },
+    "toastCounterCleared": {
+        "message": "Na-clear na ang counter text!"
+    },
+    "techStatScripts": {
+        "message": "Mga Script"
+    },
+    "techNetworkOptInHint": {
+        "message": "Nagpapadala ng mga kahilingan sa dns.google at ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Walang live history"
+    },
+    "whatsNewTitle": {
+        "message": "Ano ang Bago sa Bersyon 1.6"
+    },
+    "techNotFound": {
+        "message": "Hindi natagpuan."
+    },
+    "notesPlaceholder": {
+        "message": "Isulat ang mga tala dito..."
+    },
+    "radioArtist": {
+        "message": "Pinapagana ng All In One"
+    },
+    "charsLabel": {
+        "message": "Mga Karakter"
+    },
+    "trackerImportSuccess": {
+        "message": "Matagumpay na na-import ang data!"
+    },
+    "copyEnableTitle": {
+        "message": "Bakit"
+    },
+    "techCatStats": {
+        "message": "Estadistika"
+    },
+    "dateLabel": {
+        "message": "Petsa"
+    },
+    "techCatNetwork": {
+        "message": "Network"
+    },
+    "techCatEcom": {
+        "message": "E-Commerce"
+    },
+    "currentRecordedLabel": {
+        "message": "KASALUKUYANG NAKA-RECORD"
+    },
+    "toastCookieOff": {
+        "message": "Ang awtomatikong pag-block ng cookie ay hindi pinagana"
+    },
+    "toastModuleLoadError": {
+        "message": "Error sa paglo-load ng module"
+    },
+    "techCatStyles": {
+        "message": "Mga Estilo"
+    },
+    "extDesc": {
+        "message": "Ang ultimate tool na pinagsasama ang lahat ng mahahalagang function sa isang mabilis, moderno, at libreng interface."
+    },
+    "resetBtn": {
+        "message": "I-reset"
+    },
+    "addDateTooltip": {
+        "message": "Idagdag ang petsa ngayon"
+    },
+    "supportTitle": {
+        "message": "Suportahan ang extension"
+    },
+    "toastCounterCopied": {
+        "message": "Nakopya ang teksto sa clipboard!"
+    },
+    "savedIndicator": {
+        "message": "Naka-save na"
+    },
+    "counterPlaceholder": {
+        "message": "I-paste ang teksto dito..."
+    },
+    "techFoundPrefix": {
+        "message": "Natagpuan: "
+    },
+    "systemPageTitle": {
+        "message": "SYSTEM PAGE"
+    },
+    "markerClearAllTooltip": {
+        "message": "I-clear lahat"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Huwag paganahin ang analytics"
+    },
+    "trackerModeDay": {
+        "message": "Araw-araw na view"
+    },
+    "techItemsSuffix": {
+        "message": "mga item"
+    },
+    "toastStopwatchCleared": {
+        "message": "Na-clear na ang live na history!"
+    },
+    "trackerTotal": {
+        "message": "Kabuuan"
+    },
+    "swStatusReady": {
+        "message": "HANDA NA"
+    },
+    "trackerTotalShort": {
+        "message": "Kabuuan"
+    },
+    "blockCookiesLabel": {
+        "message": "Awtomatikong i-block ang cookies"
+    },
+    "markerDrawTooltip": {
+        "message": "Gumuhit"
+    },
+    "trackerMonthLabel": {
+        "message": "Ngayong buwan"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Mga Table"
+    },
+    "techStatImages": {
+        "message": "Mga Larawan"
+    },
+    "toastRadioSaved": {
+        "message": "Na-save ang URL ng istasyon ng radyo!"
+    },
+    "trackerToday": {
+        "message": "Ngayon"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Mga Salita"
+    },
+    "clearAllBtn": {
+        "message": "I-CLEAR LAHAT"
+    },
+    "toastCopyOn": {
+        "message": "Pinagana ang kopya para sa site na ito"
+    },
+    "clearSiteDataBtn": {
+        "message": "I-clear lahat ng data sa site na ito"
+    },
+    "colorPickerPicking": {
+        "message": "Pumipili..."
+    },
+    "cacheClearConfirm": {
+        "message": "I-clear lahat ng data mula sa site na ito"
+    },
+    "markerTextTooltip": {
+        "message": "Teksto"
+    },
+    "radioTitle": {
+        "message": "Radyo"
+    },
+    "trackerSelectedMonth": {
+        "message": "Napiling buwan"
+    },
+    "toastCopyOff": {
+        "message": "Naka-disable ang kopya"
+    },
+    "fontCopied": {
+        "message": "Nakopya na!"
+    },
+    "notesLinkText": {
+        "message": "Link"
+    },
+    "radioClearConfirm": {
+        "message": "I-clear ang naka-save na istasyon ng radyo?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Average (buwan)"
+    },
+    "techTitle": {
+        "message": "Tech ng Site"
+    },
+    "lapBtn": {
+        "message": "LAP"
+    },
+    "playBtn": {
+        "message": "I-play"
+    },
+    "toastDarkModeOn": {
+        "message": "Naka-enable ang dark mode"
+    },
+    "techCatPayment": {
+        "message": "Pagbabayad"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Pinapayagan ang cookies para sa site na ito"
+    },
+    "markerLineTooltip": {
+        "message": "Linya"
+    },
+    "techStatIframes": {
+        "message": "Mga Iframe"
+    },
+    "counterModalTitle": {
+        "message": "CHARACTER COUNTER"
+    },
+    "fontTitle": {
+        "message": "Font Finder"
+    },
+    "toastTrackerExported": {
+        "message": "Matagumpay na na-export ang data ng tagasubaybay!"
+    },
+    "toastNotesImportError": {
+        "message": "Error sa pag-import ng mga tala!"
+    },
+    "swExportTxtBtn": {
+        "message": "I-EXPORT BILANG .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Burahin ang sandaling ito"
+    },
+    "startBtn": {
+        "message": "SIMULAN"
+    },
+    "markerMoveTooltip": {
+        "message": "Ilipat"
+    },
+    "techModalTitle": {
+        "message": "MGA TEKNOLOHIYA NG SITE"
+    },
+    "saveRadioStationBtn": {
+        "message": "I-SAVE STATION"
+    },
+    "techCatDb": {
+        "message": "Database"
+    },
+    "toastNotesCleared": {
+        "message": "Ang lahat ng mga tala ay na-clear na!"
+    },
+    "toastTrackerImported": {
+        "message": "Matagumpay na na-import ang data ng tagasubaybay!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Di-wastong URL! Ang URL ay dapat magsimula sa http:// o https://"
+    },
+    "trackerImportError": {
+        "message": "Error sa pagbabasa ng file."
+    },
+    "swStatusLive": {
+        "message": "LIVE NA NAGAGANAP"
+    },
+    "linkLabel": {
+        "message": "Link"
+    },
+    "techCatAnalytics": {
+        "message": "Analytics"
+    },
+    "liveHistoryLabel": {
+        "message": "LIVE HISTORY"
+    },
+    "colorPickerTitle": {
+        "message": "Color Picker"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "KABUUANG TAGAL: "
+    },
+    "stopwatchReady": {
+        "message": "HANDA NA"
+    },
+    "confirmClearHistory": {
+        "message": "Sigurado ka bang gusto mong i-clear ang buong history?"
+    },
+    "markerTitle": {
+        "message": "Page Marker"
+    },
+    "trackerModalTitle": {
+        "message": "Tagasubaybay ng Oras"
+    },
+    "grabTextTooltip": {
+        "message": "Kunin ang teksto mula sa pahina"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Burahin ang field"
+    },
+    "privacyLabel": {
+        "message": "Patakaran sa Privacy"
+    },
+    "whatsNewFeature4": {
+        "message": "I-toggle ang Feedback: Maikling pulse animation at kumpirmasyon kapag nagbabago ng mga setting."
+    },
+    "trackerThatDay": {
+        "message": "Araw na iyon"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Hindi ma-update ang listahan"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Payagan ang cookies para sa site na ito"
+    },
+    "textLabel": {
+        "message": "Teksto"
+    },
+    "cacheCleared": {
+        "message": "Na-clear na!"
+    },
+    "importRadioTooltip": {
+        "message": "Mag-import ng custom na istasyon ng radyo"
+    },
+    "radioPlay": {
+        "message": "I-play"
+    },
+    "techLoadingMsg": {
+        "message": "Sinusuri ng scanner ang site..."
+    },
+    "swCopyBtn": {
+        "message": "KOPYAHIN SA CLIPBOARD"
+    },
+    "techScannerFailed": {
+        "message": "Bigo ang pag-scan sa pahinang ito."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Ipakita ang impormasyon ng network (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Ngayon"
+    },
+    "toastNotesImported": {
+        "message": "Matagumpay na na-import ang mga tala!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Nakopya: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ NAKOPYA NA"
+    },
+    "techCatCaching": {
+        "message": "Pag-cache"
+    },
+    "techCatSecurity": {
+        "message": "Seguridad"
+    },
+    "toastYtOn": {
+        "message": "Naka-enable ang display ng YouTube Dislike"
+    },
+    "extName": {
+        "message": "All In One - Ang pinakamahusay na tool sa pagiging produktibo"
+    },
+    "toastCookieOn": {
+        "message": "Ang awtomatikong pag-block ng cookie ay pinagana"
+    },
+    "techScannerUnavailable": {
+        "message": "Hindi available ang scanner sa pahinang ito."
+    },
+    "notesTooLarge": {
+        "message": "Masyadong malaki ang tala"
+    },
+    "swDurationLabel": {
+        "message": "Tagal: "
+    },
+    "ytDislikeTitle": {
+        "message": "Ibalik ang YouTube Dislikes"
+    },
+    "donateBtn": {
+        "message": "Mag-donate at sumuporta"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Mga Setting"
+    },
+    "trackerThisMonthShort": {
+        "message": "Buwan na ito"
+    },
+    "techCatSystem": {
+        "message": "Sistema"
+    },
+    "exportTooltip": {
+        "message": "I-export ang data"
+    },
+    "exportNotesTooltip": {
+        "message": "I-export ang mga tala"
+    },
+    "radioPause": {
+        "message": "I-pause"
+    },
+    "websiteTooltip": {
+        "message": "Opisyal na website ng extension"
+    },
+    "rateBtn": {
+        "message": "I-rate ang extension"
+    },
+    "techCatBase": {
+        "message": "Base"
+    },
+    "cacheModalTitle": {
+        "message": "COOKIES AT CACHE"
+    },
+    "cancelBtn": {
+        "message": "KANSELAHIN"
+    },
+    "addUrlTooltip": {
+        "message": "Idagdag ang kasalukuyang URL"
+    },
+    "trackerAvgTotal": {
+        "message": "Katamtaman"
+    },
+    "techStatForms": {
+        "message": "Mga Form"
+    },
+    "cacheError": {
+        "message": "Error"
+    }
 }

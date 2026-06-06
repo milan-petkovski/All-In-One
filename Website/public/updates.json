@@ -1,7 +1,21 @@
 [
     {
-        "verzija": "1.5.3",
+        "verzija": "1.5.4",
         "aktivno": true,
+        "sr": {
+            "datum": "6. Jun 2026.",
+            "naslov": "Maksimalna stabilnost",
+            "opis": "Novo ažuriranje donosi kompletnu reorganizaciju strukture projekta za znatno brži i stabilniji rad ekstenzije. Otklonjene su sve uočene greške, a test suite je proširen detaljnijim testovima koji garantuju maksimalnu stabilnost. Uvedena je automatska ESLint analiza kvaliteta koda, dok su svi jezici i prevodi detaljno očišćeni i sređeni."
+        },
+        "en": {
+            "datum": "June 6, 2026",
+            "naslov": "Maximum Stability",
+            "opis": "The latest update introduces a complete repository restructure for faster and more reliable performance. All identified issues have been resolved, and the test suite has been expanded with detailed scenarios to guarantee long-term stability. Automated ESLint code quality analysis is now integrated, and all localized translations have been meticulously cleaned and optimized."
+        }
+    },
+    {
+        "verzija": "1.5.3",
+        "aktivno": false,
         "sr": {
             "datum": "31. Maj 2026.",
             "naslov": "Pametna poboljšanja",

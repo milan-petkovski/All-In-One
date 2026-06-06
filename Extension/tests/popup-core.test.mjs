@@ -13,7 +13,7 @@ const env = createExtensionTestEnv({
   tabUrl: "https://demo.example/path"
 });
 
-const core = await import(new URL("../popup-core.js", import.meta.url));
+const core = await import(new URL("../js/popup-core.js", import.meta.url));
 
 const makeDom = () => {
   const i18n = env.addPopupElement("i18nNode");

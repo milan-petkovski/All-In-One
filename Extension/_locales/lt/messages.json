@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Išmanieji užrašai"
-                   },
-    "supportDesc":  {
-                        "message":  "„All In One“ yra visiškai nemokamas įrankis. Jūsų parama padeda jam tokiam išlikti ir leidžia reguliariai kurti naujas parinktis."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Trinti"
-                           },
-    "counterTitle":  {
-                         "message":  "Simbolių skaičiuoklė"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Vidurkis"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Mėnesio rodinys"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Visas laikas"
-                       },
-    "techCatMedia":  {
-                         "message":  "Medija"
-                     },
-    "trackerNoData":  {
-                          "message":  "Nėra duomenų šiam laikotarpiui"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "Tiesiogiai #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Ar tikrai norite ištrinti visus užrašus?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Įrankiai"
-                     },
-    "soundTitle":  {
-                       "message":  "Garsas"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "Ištrinti viską"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Uždaryti"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Chronometras"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "Ištrinti visus užrašus"
-                          },
-    "rulerTitle":  {
-                       "message":  "Puslapio liniuotė"
-                   },
-    "markLapDesc":  {
-                        "message":  "Užfiksuokite akimirką chronometru"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "Modifikavimo įrankiai išjungti"
-                       },
-    "techStatLinks":  {
-                          "message":  "Nuorodos"
-                      },
-    "stopBtn":  {
-                    "message":  "STABDYTI"
-                },
-    "swNoLaps":  {
-                     "message":  "Nėra užfiksuotų akimirkų"
-                 },
-    "trackerTitle":  {
-                         "message":  "Webtime Tracker"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "Šis mėnuo"
-                         },
-    "linesLabel":  {
-                       "message":  "Eilučių"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "Komunikacija"
-                    },
-    "deleteBtn":  {
-                      "message":  "IŠTRINTI"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Išsaugota"
-                   },
-    "lapBtn":  {
-                   "message":  "RATAS"
-               },
-    "notesModalTitle":  {
-                            "message":  "IŠMANIEJI UŽRAŠAI"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Vidurkis"
-                            },
-    "versionLabel":  {
-                         "message":  "Versija:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "Importuoti užrašus"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Nenukopijuota"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Technologijos"
-                    },
-    "techCatServer":  {
-                          "message":  "Serveris"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Nepalaikoma"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Garsas"
-                      },
-    "cacheClearing":  {
-                          "message":  "Trinama..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Radijas"
-                         },
-    "websiteBtn":  {
-                       "message":  "Oficiali plėtinio svetainė"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Storis"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Ar tikrai norite ištrinti viską?"
-                            },
-    "techCatAds":  {
-                       "message":  "Reklamos"
-                   },
-    "uiSettings":  {
-                       "message":  "NUSTATYMAI"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "Tas mėnuo"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Įveskite tiesioginę nuorodą į mėgstamą radijo stotį"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Ar tikrai norite ištrinti duomenis"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Tamsus"
-                      },
-    "techStatScripts":  {
-                            "message":  "Scenarijai"
-                        },
-    "swNoHistory":  {
-                        "message":  "Nėra tiesioginių transliacijų istorijos"
-                    },
-    "techNotFound":  {
-                         "message":  "Nieko nerasta."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Rašykite užrašus čia..."
-                         },
-    "radioArtist":  {
-                        "message":  "Palaiko All In One plėtinys"
-                    },
-    "charsLabel":  {
-                       "message":  "Simbolių"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Kopijavimas"
-                        },
-    "techCatStats":  {
-                         "message":  "Statistika"
-                     },
-    "dateLabel":  {
-                      "message":  "Data"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Tinklas"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Commerce"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "ŠIUO METU ĮRAŠYTA"
-                             },
-    "techCatStyles":  {
-                          "message":  "Stiliai"
-                      },
-    "extDesc":  {
-                    "message":  "Aukščiausios klasės įrankis, jungiantis visas svarbias funkcijas į vieną greitą, modernią ir nemokamą sąsają."
-                },
-    "resetBtn":  {
-                     "message":  "Atstatyti"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Pridėti šiandienos datą"
-                       },
-    "supportTitle":  {
-                         "message":  "Palaikykite plėtinį"
-                     },
-    "savedIndicator":  {
-                           "message":  "Išsaugota"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "Įklijuokite tekstą čia..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Rasta: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "SISTEMINIS PUSLAPIS"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "Ištrinti viską"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Dienos rodinys"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "elementai"
-                        },
-    "trackerTotal":  {
-                         "message":  "Iš viso"
-                     },
-    "swStatusReady":  {
-                          "message":  "PARUOŠTA"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Iš viso"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Automatiškai blokuoti slapukus"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Piešti"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Šis mėnuo"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Lentelės"
-                       },
-    "techStatImages":  {
-                           "message":  "Vaizdai"
-                       },
-    "trackerToday":  {
-                         "message":  "Šiandien"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Žodžių"
-                   },
-    "clearAllBtn":  {
-                        "message":  "IŠTRINTI VISKĄ"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "Ištrinti visus šios svetainės duomenis"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Renkama..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Ištrinti visus šios svetainės duomenis"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Tekstas"
-                          },
-    "radioTitle":  {
-                       "message":  "Radijas"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Pasirinktas mėnuo"
-                             },
-    "fontCopied":  {
-                       "message":  "Nukopijuota!"
-                   },
-    "notesLinkText":  {
-                          "message":  "Nuoroda"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Vidurkis"
-                            },
-    "techTitle":  {
-                      "message":  "Svetainės tech"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Perkelti"
-                          },
-    "playBtn":  {
-                    "message":  "Paleisti"
-                },
-    "techCatPayment":  {
-                           "message":  "Mokėjimas"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Linija"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "SIMBOLIŲ SKAIČIUOKLĖ"
-                          },
-    "fontTitle":  {
-                      "message":  "Šriftų ieškiklis"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "EKSPORTUOTI KAIP .TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Ištrinti šią akimirką"
-                    },
-    "startBtn":  {
-                     "message":  "PRADĖTI"
-                 },
-    "techModalTitle":  {
-                           "message":  "SVETAINĖS TECHNOLOGIJOS"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "IŠSAUGOTI STOTĮ"
-                            },
-    "techCatDb":  {
-                      "message":  "Duomenų bazė"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "TIESIOGIAI"
-                     },
-    "linkLabel":  {
-                      "message":  "Nuoroda"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Analitika"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "TIESIOGINIŲ TRANSLIACIJŲ ISTORIJA"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Spalvų parinkiklis"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "Akimirka "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "BENDRA TRUKMĖ: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "PARUOŠTA"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Šis mėnuo"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Ar tikrai norite ištrinti visą istoriją?"
-                            },
-    "markerTitle":  {
-                        "message":  "Puslapio žymeklis"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Laiko sekiklis"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Ištraukti tekstą iš puslapio"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Išvalyti lauką"
-                               },
-    "privacyLabel":  {
-                         "message":  "Privatumo politika"
-                     },
-    "trackerThatDay":  {
-                           "message":  "Ta diena"
-                       },
-    "textLabel":  {
-                      "message":  "Tekstas"
-                  },
-    "cacheCleared":  {
-                         "message":  "Ištrinta!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Importuoti pasirinktinę radijo stotį"
-                           },
-    "radioPlay":  {
-                      "message":  "Groti"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "Skeneryje analizuojama svetainė..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "KOPIJUOTI Į IŠKARPINĘ"
-                  },
-    "techScannerFailed":  {
-                              "message":  "Skenavimas nepavyko."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "Šiandien"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Nukopijuota: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ NUKOPIJUOTA"
-                    },
-    "techCatCaching":  {
-                           "message":  "Caching"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Saugumas"
-                        },
-    "extName":  {
-                    "message":  "All In One - geriausias produktyvumo įrankis"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "Skeneryje šis puslapis neprieinamas."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Užrašas per didelis"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Trukmė: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "Return YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "Paaukokite ir paremkite darbą"
-                  },
-    "techStatVideo":  {
-                          "message":  "Vaizdo įrašai"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Nustatymai"
-                        },
-    "cacheTitle":  {
-                       "message":  "Slapukai ir talpykla"
-                   },
-    "techCatSystem":  {
-                          "message":  "Sistema"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "Eksportuoti užrašus"
-                           },
-    "radioPause":  {
-                       "message":  "Pauzė"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Oficiali plėtinio svetainė"
-                       },
-    "rateBtn":  {
-                    "message":  "Įvertinkite plėtinį"
-                },
-    "techCatBase":  {
-                        "message":  "Bazė"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "SLAPUKAI IR TALPYKLA"
-                        },
-    "cancelBtn":  {
-                      "message":  "ATŠAUKTI"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "Pridėti dabartinio puslapio URL"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Vidurkis"
-                        },
-    "techStatForms":  {
-                          "message":  "Formos"
-                      },
-    "cacheError":  {
-                       "message":  "Klaida"
-                   }
+    "notesTitle": {
+        "message": "Išmanieji užrašai"
+    },
+    "whatsNewDesc": {
+        "message": "Peržiūrėkite naujausius sąsajos patobulinimus, dėl kurių viskas viename dar greitesnė ir elegantiškesnė:"
+    },
+    "toastPermissionDenied": {
+        "message": "Leidimas nesuteiktas"
+    },
+    "clearCounterTooltip": {
+        "message": "Ištrinti viską"
+    },
+    "supportDesc": {
+        "message": "„All In One“ yra visiškai nemokamas įrankis. Jūsų parama padeda jam tokiam išlikti ir leidžia reguliariai kurti naujas parinktis."
+    },
+    "trackerExportTruncated": {
+        "message": "Eksportuokite sutrumpintą iki 10 MB, kad iššokantis langas būtų stabilus."
+    },
+    "whatsNewClose": {
+        "message": "Supratau"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Trinti"
+    },
+    "counterTitle": {
+        "message": "Simbolių skaičiuoklė"
+    },
+    "trackerAvgLabel": {
+        "message": "Vidurkis"
+    },
+    "trackerModeMonth": {
+        "message": "Mėnesio rodinys"
+    },
+    "trackerModeAll": {
+        "message": "Visas laikas"
+    },
+    "techCatMedia": {
+        "message": "Medija"
+    },
+    "trackerNoData": {
+        "message": "Nėra duomenų šiam laikotarpiui"
+    },
+    "whatsNewFeature3": {
+        "message": "Favicon Support: Svetainės favicons stebėjimo priemonių sąraše."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Tiesiogiai #"
+    },
+    "confirmClearNotes": {
+        "message": "Ar tikrai norite ištrinti visus užrašus?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Visi duomenys iš šios svetainės buvo išvalyti!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Ieškoti svetainėse..."
+    },
+    "techCatTools": {
+        "message": "Įrankiai"
+    },
+    "toastYtOff": {
+        "message": "„YouTube“ ekranas „Nepatinka“ išjungtas"
+    },
+    "soundTitle": {
+        "message": "Garsas"
+    },
+    "cacheTitle": {
+        "message": "Slapukai ir talpykla"
+    },
+    "markerCloseTooltip": {
+        "message": "Uždaryti"
+    },
+    "stopwatchTitle": {
+        "message": "Chronometras"
+    },
+    "clearNotesTooltip": {
+        "message": "Ištrinti visus užrašus"
+    },
+    "rulerTitle": {
+        "message": "Puslapio liniuotė"
+    },
+    "markLapDesc": {
+        "message": "Užfiksuokite akimirką chronometru"
+    },
+    "trackerImportEmpty": {
+        "message": "Nėra galiojančių stebėjimo priemonės duomenų, kuriuos būtų galima importuoti."
+    },
+    "whatsNewFeature1": {
+        "message": "Smooth Transitions: sklandžiai skaidrių animacija tarp įrankių."
+    },
+    "systemPageDesc": {
+        "message": "Modifikavimo įrankiai išjungti"
+    },
+    "techStatLinks": {
+        "message": "Nuorodos"
+    },
+    "stopBtn": {
+        "message": "STABDYTI"
+    },
+    "swNoLaps": {
+        "message": "Nėra užfiksuotų akimirkų"
+    },
+    "toastTrackerImportError": {
+        "message": "Importuojant stebėjimo priemonės duomenis įvyko klaida!"
+    },
+    "toastRadioPlayError": {
+        "message": "Radijo šiuo metu negalima paleisti."
+    },
+    "trackerTitle": {
+        "message": "Webtime Tracker"
+    },
+    "offscreenJustification": {
+        "message": "Radijo transliacija ir sistemos garsai"
+    },
+    "trackerThisMonth": {
+        "message": "Šis mėnuo"
+    },
+    "linesLabel": {
+        "message": "Eilučių"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Šioje svetainėje užblokuoti slapukai"
+    },
+    "toastTrackerError": {
+        "message": "Klaida atnaujinant duomenis"
+    },
+    "trackerExportEmpty": {
+        "message": "Nėra eksportuojamų stebėjimo priemonės duomenų."
+    },
+    "techCatComm": {
+        "message": "Komunikacija"
+    },
+    "deleteBtn": {
+        "message": "IŠTRINTI"
+    },
+    "techCatTech": {
+        "message": "Technologijos"
+    },
+    "notesSaved": {
+        "message": "Išsaugota"
+    },
+    "toastNotesExported": {
+        "message": "Užrašai sėkmingai eksportuoti!"
+    },
+    "swMomentLabel": {
+        "message": "Akimirka "
+    },
+    "notesModalTitle": {
+        "message": "IŠMANIEJI UŽRAŠAI"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Vidurkis"
+    },
+    "versionLabel": {
+        "message": "Versija:"
+    },
+    "importNotesTooltip": {
+        "message": "Importuoti užrašus"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Įjungtas šviesos režimas"
+    },
+    "toastNotesCopied": {
+        "message": "Tekstas nukopijuotas į mainų sritį!"
+    },
+    "whatsNewFeature2": {
+        "message": "„Premium Toast“: moderni pranešimų apie svarbius veiksmus sistema."
+    },
+    "fontNotCopied": {
+        "message": "Nenukopijuota"
+    },
+    "importTooltip": {
+        "message": "Importuoti duomenis"
+    },
+    "wordsLabelShort": {
+        "message": "žodžius"
+    },
+    "techCatServer": {
+        "message": "Serveris"
+    },
+    "cacheNotSupported": {
+        "message": "Nepalaikoma"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Garsas"
+    },
+    "cacheClearing": {
+        "message": "Trinama..."
+    },
+    "radioTitleCustom": {
+        "message": "Radijas"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Duomenys atnaujinti!"
+    },
+    "websiteBtn": {
+        "message": "Oficiali plėtinio svetainė"
+    },
+    "markerThicknessTooltip": {
+        "message": "Storis"
+    },
+    "confirmClearCounter": {
+        "message": "Ar tikrai norite ištrinti viską?"
+    },
+    "techCatAds": {
+        "message": "Reklamos"
+    },
+    "uiSettings": {
+        "message": "NUSTATYMAI"
+    },
+    "trackerThatMonth": {
+        "message": "Tas mėnuo"
+    },
+    "radioModalDesc": {
+        "message": "Įveskite tiesioginę nuorodą į mėgstamą radijo stotį"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Ar tikrai norite ištrinti duomenis"
+    },
+    "darkModeTitle": {
+        "message": "Tamsus"
+    },
+    "toastCounterCleared": {
+        "message": "Skaitiklio tekstas išvalytas!"
+    },
+    "techStatScripts": {
+        "message": "Scenarijai"
+    },
+    "techNetworkOptInHint": {
+        "message": "Siunčia užklausas dns.google ir ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Nėra tiesioginių transliacijų istorijos"
+    },
+    "whatsNewTitle": {
+        "message": "Kas naujo 1.6 versijoje"
+    },
+    "techNotFound": {
+        "message": "Nieko nerasta."
+    },
+    "notesPlaceholder": {
+        "message": "Rašykite užrašus čia..."
+    },
+    "radioArtist": {
+        "message": "Palaiko All In One plėtinys"
+    },
+    "charsLabel": {
+        "message": "Simbolių"
+    },
+    "trackerImportSuccess": {
+        "message": "Duomenys sėkmingai importuoti!"
+    },
+    "copyEnableTitle": {
+        "message": "Kopijavimas"
+    },
+    "techCatStats": {
+        "message": "Statistika"
+    },
+    "dateLabel": {
+        "message": "Data"
+    },
+    "techCatNetwork": {
+        "message": "Tinklas"
+    },
+    "techCatEcom": {
+        "message": "Elektroninė prekyba"
+    },
+    "currentRecordedLabel": {
+        "message": "ŠIUO METU ĮRAŠYTA"
+    },
+    "toastCookieOff": {
+        "message": "Automatinis slapukų blokavimas išjungtas"
+    },
+    "toastModuleLoadError": {
+        "message": "Klaida įkeliant modulį"
+    },
+    "techCatStyles": {
+        "message": "Stiliai"
+    },
+    "extDesc": {
+        "message": "Aukščiausios klasės įrankis, jungiantis visas svarbias funkcijas į vieną greitą, modernią ir nemokamą sąsają."
+    },
+    "resetBtn": {
+        "message": "Atstatyti"
+    },
+    "addDateTooltip": {
+        "message": "Pridėti šiandienos datą"
+    },
+    "supportTitle": {
+        "message": "Palaikykite plėtinį"
+    },
+    "toastCounterCopied": {
+        "message": "Tekstas nukopijuotas į mainų sritį!"
+    },
+    "savedIndicator": {
+        "message": "Išsaugota"
+    },
+    "counterPlaceholder": {
+        "message": "Įklijuokite tekstą čia..."
+    },
+    "techFoundPrefix": {
+        "message": "Rasta: "
+    },
+    "systemPageTitle": {
+        "message": "SISTEMINIS PUSLAPIS"
+    },
+    "markerClearAllTooltip": {
+        "message": "Ištrinti viską"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Išjungti analizę"
+    },
+    "trackerModeDay": {
+        "message": "Dienos rodinys"
+    },
+    "techItemsSuffix": {
+        "message": "elementai"
+    },
+    "toastStopwatchCleared": {
+        "message": "Tiesioginė istorija išvalyta!"
+    },
+    "trackerTotal": {
+        "message": "Iš viso"
+    },
+    "swStatusReady": {
+        "message": "PARUOŠTA"
+    },
+    "trackerTotalShort": {
+        "message": "Iš viso"
+    },
+    "blockCookiesLabel": {
+        "message": "Automatiškai blokuoti slapukus"
+    },
+    "markerDrawTooltip": {
+        "message": "Piešti"
+    },
+    "trackerMonthLabel": {
+        "message": "Šis mėnuo"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Lentelės"
+    },
+    "techStatImages": {
+        "message": "Vaizdai"
+    },
+    "toastRadioSaved": {
+        "message": "Radijo stoties URL išsaugotas!"
+    },
+    "trackerToday": {
+        "message": "Šiandien"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Žodžių"
+    },
+    "clearAllBtn": {
+        "message": "IŠTRINTI VISKĄ"
+    },
+    "toastCopyOn": {
+        "message": "Šioje svetainėje įgalintas kopijavimas"
+    },
+    "clearSiteDataBtn": {
+        "message": "Ištrinti visus šios svetainės duomenis"
+    },
+    "colorPickerPicking": {
+        "message": "Renkama..."
+    },
+    "cacheClearConfirm": {
+        "message": "Ištrinti visus šios svetainės duomenis"
+    },
+    "markerTextTooltip": {
+        "message": "Tekstas"
+    },
+    "radioTitle": {
+        "message": "Radijas"
+    },
+    "trackerSelectedMonth": {
+        "message": "Pasirinktas mėnuo"
+    },
+    "toastCopyOff": {
+        "message": "Kopijavimas išjungtas"
+    },
+    "fontCopied": {
+        "message": "Nukopijuota!"
+    },
+    "notesLinkText": {
+        "message": "Nuoroda"
+    },
+    "radioClearConfirm": {
+        "message": "Išvalyti išsaugotą radijo stotį?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Vidurkis"
+    },
+    "techTitle": {
+        "message": "Svetainės tech"
+    },
+    "lapBtn": {
+        "message": "RATAS"
+    },
+    "playBtn": {
+        "message": "Paleisti"
+    },
+    "toastDarkModeOn": {
+        "message": "Tamsusis režimas įjungtas"
+    },
+    "techCatPayment": {
+        "message": "Mokėjimas"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Šioje svetainėje leidžiami slapukai"
+    },
+    "markerLineTooltip": {
+        "message": "Linija"
+    },
+    "techStatIframes": {
+        "message": "Iframes"
+    },
+    "counterModalTitle": {
+        "message": "SIMBOLIŲ SKAIČIUOKLĖ"
+    },
+    "fontTitle": {
+        "message": "Šriftų ieškiklis"
+    },
+    "toastTrackerExported": {
+        "message": "Stebėjimo priemonės duomenys sėkmingai eksportuoti!"
+    },
+    "toastNotesImportError": {
+        "message": "Importuojant pastabas įvyko klaida!"
+    },
+    "swExportTxtBtn": {
+        "message": "EKSPORTUOTI KAIP .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Ištrinti šią akimirką"
+    },
+    "startBtn": {
+        "message": "PRADĖTI"
+    },
+    "markerMoveTooltip": {
+        "message": "Perkelti"
+    },
+    "techModalTitle": {
+        "message": "SVETAINĖS TECHNOLOGIJOS"
+    },
+    "saveRadioStationBtn": {
+        "message": "IŠSAUGOTI STOTĮ"
+    },
+    "techCatDb": {
+        "message": "Duomenų bazė"
+    },
+    "toastNotesCleared": {
+        "message": "Visos pastabos išvalytos!"
+    },
+    "toastTrackerImported": {
+        "message": "Stebėjimo priemonės duomenys sėkmingai importuoti!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Netinkamas URL! URL turi prasidėti http:// arba https://"
+    },
+    "trackerImportError": {
+        "message": "Klaida skaitant failą."
+    },
+    "swStatusLive": {
+        "message": "TIESIOGIAI"
+    },
+    "linkLabel": {
+        "message": "Nuoroda"
+    },
+    "techCatAnalytics": {
+        "message": "Analitika"
+    },
+    "liveHistoryLabel": {
+        "message": "TIESIOGINIŲ TRANSLIACIJŲ ISTORIJA"
+    },
+    "colorPickerTitle": {
+        "message": "Spalvų parinkiklis"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "BENDRA TRUKMĖ: "
+    },
+    "stopwatchReady": {
+        "message": "PARUOŠTA"
+    },
+    "confirmClearHistory": {
+        "message": "Ar tikrai norite ištrinti visą istoriją?"
+    },
+    "markerTitle": {
+        "message": "Puslapio žymeklis"
+    },
+    "trackerModalTitle": {
+        "message": "Laiko sekiklis"
+    },
+    "grabTextTooltip": {
+        "message": "Ištraukti tekstą iš puslapio"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Išvalyti lauką"
+    },
+    "privacyLabel": {
+        "message": "Privatumo politika"
+    },
+    "whatsNewFeature4": {
+        "message": "Perjungti grįžtamąjį ryšį: trumpi impulsai ir patvirtinimai keičiant nustatymus."
+    },
+    "trackerThatDay": {
+        "message": "Ta diena"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Nepavyko atnaujinti sąrašo"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Leisti šios svetainės slapukus"
+    },
+    "textLabel": {
+        "message": "Tekstas"
+    },
+    "cacheCleared": {
+        "message": "Ištrinta!"
+    },
+    "importRadioTooltip": {
+        "message": "Importuoti pasirinktinę radijo stotį"
+    },
+    "radioPlay": {
+        "message": "Groti"
+    },
+    "techLoadingMsg": {
+        "message": "Skeneryje analizuojama svetainė..."
+    },
+    "swCopyBtn": {
+        "message": "KOPIJUOTI Į IŠKARPINĘ"
+    },
+    "techScannerFailed": {
+        "message": "Skenavimas nepavyko."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Rodyti tinklo informaciją (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Šiandien"
+    },
+    "toastNotesImported": {
+        "message": "Užrašai sėkmingai importuoti!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Nukopijuota: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ NUKOPIJUOTA"
+    },
+    "techCatCaching": {
+        "message": "Talpykla"
+    },
+    "techCatSecurity": {
+        "message": "Saugumas"
+    },
+    "toastYtOn": {
+        "message": "„YouTube“ ekranas „Nepatinka“."
+    },
+    "extName": {
+        "message": "All In One - geriausias produktyvumo įrankis"
+    },
+    "toastCookieOn": {
+        "message": "Įjungtas automatinis slapukų blokavimas"
+    },
+    "techScannerUnavailable": {
+        "message": "Skeneryje šis puslapis neprieinamas."
+    },
+    "notesTooLarge": {
+        "message": "Užrašas per didelis"
+    },
+    "swDurationLabel": {
+        "message": "Trukmė: "
+    },
+    "ytDislikeTitle": {
+        "message": "Return YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Paaukokite ir paremkite darbą"
+    },
+    "techStatVideo": {
+        "message": "Vaizdo įrašai"
+    },
+    "settingsTooltip": {
+        "message": "Nustatymai"
+    },
+    "trackerThisMonthShort": {
+        "message": "Šis mėnuo"
+    },
+    "techCatSystem": {
+        "message": "Sistema"
+    },
+    "exportTooltip": {
+        "message": "Eksportuoti duomenis"
+    },
+    "exportNotesTooltip": {
+        "message": "Eksportuoti užrašus"
+    },
+    "radioPause": {
+        "message": "Pauzė"
+    },
+    "websiteTooltip": {
+        "message": "Oficiali plėtinio svetainė"
+    },
+    "rateBtn": {
+        "message": "Įvertinkite plėtinį"
+    },
+    "techCatBase": {
+        "message": "Bazė"
+    },
+    "cacheModalTitle": {
+        "message": "SLAPUKAI IR TALPYKLA"
+    },
+    "cancelBtn": {
+        "message": "ATŠAUKTI"
+    },
+    "addUrlTooltip": {
+        "message": "Pridėti dabartinio puslapio URL"
+    },
+    "trackerAvgTotal": {
+        "message": "Vidurkis"
+    },
+    "techStatForms": {
+        "message": "Formos"
+    },
+    "cacheError": {
+        "message": "Klaida"
+    }
 }

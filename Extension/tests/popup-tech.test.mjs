@@ -26,8 +26,8 @@ void manifest;
 void canonical;
 void description;
 
-const core = await import(new URL("../popup-core.js", import.meta.url));
-const tech = await import(new URL("../popup-tech.js", import.meta.url));
+const core = await import(new URL("../js/popup-core.js", import.meta.url));
+const tech = await import(new URL("../js/popup-tech.js", import.meta.url));
 
 // Ensure popup-core has a tab context that points to our mocked page
 await core.initCore();

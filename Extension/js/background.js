@@ -407,7 +407,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         } else if (toolAction === "page_marker_open") {
             chrome.scripting.executeScript({
                 target: { tabId: sender.tab.id },
-                files: ['marker_engine.js']
+                files: ['js/marker_engine.js']
             }).then(() => {
                 chrome.tabs.sendMessage(sender.tab.id, { action: "initMarker" });
             }).catch(() => { });

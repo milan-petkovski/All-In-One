@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Notities"
-                   },
-    "supportDesc":  {
-                        "message":  "All In One is een volledig gratis tool. Je steun helpt dit zo te houden en maakt de ontwikkeling van nieuwe functies mogelijk."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Wissen"
-                           },
-    "counterTitle":  {
-                         "message":  "Teller"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Gemiddeld"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Maandelijkse weergave"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Alle tijd"
-                       },
-    "techCatMedia":  {
-                         "message":  "Media"
-                     },
-    "trackerNoData":  {
-                          "message":  "Geen gegevens voor deze periode"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "Live #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Weet je zeker dat je alle notities wilt wissen?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Tools"
-                     },
-    "soundTitle":  {
-                       "message":  "Geluid"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "Alles wissen"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Sluiten"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Stopwatch"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "Wis alle notities"
-                          },
-    "rulerTitle":  {
-                       "message":  "Pagina Liniaal"
-                   },
-    "markLapDesc":  {
-                        "message":  "Leg een moment vast op de stopwatch"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "Modificatietools zijn uitgeschakeld"
-                       },
-    "techStatLinks":  {
-                          "message":  "Links"
-                      },
-    "stopBtn":  {
-                    "message":  "STOPPEN"
-                },
-    "swNoLaps":  {
-                     "message":  "Geen opgenomen momenten"
-                 },
-    "trackerTitle":  {
-                         "message":  "Tijd Tracker"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "Deze maand"
-                         },
-    "linesLabel":  {
-                       "message":  "Regels"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "Communicatie"
-                    },
-    "deleteBtn":  {
-                      "message":  "VERWIJDEREN"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Opgeslagen"
-                   },
-    "lapBtn":  {
-                   "message":  "RONDE"
-               },
-    "notesModalTitle":  {
-                            "message":  "SLIMME NOTITIES"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Gemiddelde"
-                            },
-    "versionLabel":  {
-                         "message":  "Versie:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "Notities importeren"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Niet gekopieerd"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Technologieën"
-                    },
-    "techCatServer":  {
-                          "message":  "Server"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Niet ondersteund"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Audio"
-                      },
-    "cacheClearing":  {
-                          "message":  "Wissen..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Radio"
-                         },
-    "websiteBtn":  {
-                       "message":  "Officiële website"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Dikte"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Weet je zeker dat je alles wilt wissen?"
-                            },
-    "techCatAds":  {
-                       "message":  "Advertenties"
-                   },
-    "uiSettings":  {
-                       "message":  "INSTELLINGEN"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "Die maand"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Voer de directe link naar je favoriete radiostation in"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Weet je zeker dat je gegevens wilt verwijderen voor"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Donker"
-                      },
-    "techStatScripts":  {
-                            "message":  "Scripts"
-                        },
-    "swNoHistory":  {
-                        "message":  "Geen live geschiedenis"
-                    },
-    "techNotFound":  {
-                         "message":  "Niet gevonden."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Schrijf hier notities..."
-                         },
-    "radioArtist":  {
-                        "message":  "Aangedreven door de All In One extensie"
-                    },
-    "charsLabel":  {
-                       "message":  "Tekens"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Kopiën"
-                        },
-    "techCatStats":  {
-                         "message":  "Statistieken"
-                     },
-    "dateLabel":  {
-                      "message":  "Datum"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Netwerk"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Commerce"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "MOMENTEEL OPGENOMEN"
-                             },
-    "techCatStyles":  {
-                          "message":  "Stijlen"
-                      },
-    "extDesc":  {
-                    "message":  "De ultieme tool die alle essentiële functies combineert in een snelle, moderne en gratis interface."
-                },
-    "resetBtn":  {
-                     "message":  "Resetten"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Datum van vandaag toevoegen"
-                       },
-    "supportTitle":  {
-                         "message":  "Steun de extensie"
-                     },
-    "savedIndicator":  {
-                           "message":  "Opgeslagen"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "Plak hier tekst..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Gevonden: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "SYSTEEMPAGINA"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "Alles wissen"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Dagelijkse weergave"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "items"
-                        },
-    "trackerTotal":  {
-                         "message":  "Totaal"
-                     },
-    "swStatusReady":  {
-                          "message":  "KLAAR"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Totaal"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Cookies automatisch blokkeren"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Tekenen"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Deze maand"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Tabellen"
-                       },
-    "techStatImages":  {
-                           "message":  "Afbeeldingen"
-                       },
-    "trackerToday":  {
-                         "message":  "Vandaag"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Woorden"
-                   },
-    "clearAllBtn":  {
-                        "message":  "ALLES WISSEN"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "Wis alle gegevens van deze site"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Kiezen..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Wis alle gegevens van deze site"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Tekst"
-                          },
-    "radioTitle":  {
-                       "message":  "Radio"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Geselecteerde maand"
-                             },
-    "fontCopied":  {
-                       "message":  "Gekopieerd!"
-                   },
-    "notesLinkText":  {
-                          "message":  "Link"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Gemiddelde"
-                            },
-    "techTitle":  {
-                      "message":  "Technologieën"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Verplaatsen"
-                          },
-    "playBtn":  {
-                    "message":  "Afspelen"
-                },
-    "techCatPayment":  {
-                           "message":  "Betaling"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Lijn"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "TEKENTELLER"
-                          },
-    "fontTitle":  {
-                      "message":  "Lettertype"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "EXPORTEREN ALS .TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Wis dit moment"
-                    },
-    "startBtn":  {
-                     "message":  "STARTEN"
-                 },
-    "techModalTitle":  {
-                           "message":  "SITETECHNOLOGIEËN"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "STATION OPSLAAN"
-                            },
-    "techCatDb":  {
-                      "message":  "Database"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "LIVE BEZIG"
-                     },
-    "linkLabel":  {
-                      "message":  "Link"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Analytics"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "LIVE GESCHIEDENIS"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Kleurkiezer"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "Moment "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "TOTALE DUUR: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "KLAAR"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Deze maand"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Weet je zeker dat je de hele geschiedenis wilt wissen?"
-                            },
-    "markerTitle":  {
-                        "message":  "Markeerder"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Tijd Tracker"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Tekst van pagina extraheren"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Veld wissen"
-                               },
-    "privacyLabel":  {
-                         "message":  "Privacybeleid"
-                     },
-    "trackerThatDay":  {
-                           "message":  "Die dag"
-                       },
-    "textLabel":  {
-                      "message":  "Tekst"
-                  },
-    "cacheCleared":  {
-                         "message":  "Gewist!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Importeer aangepast radiostation"
-                           },
-    "radioPlay":  {
-                      "message":  "Play"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "Scanner analyseert de site..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "KOPIËREN NAAR KLEMBORD"
-                  },
-    "techScannerFailed":  {
-                              "message":  "Scannen mislukt op deze pagina."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "Vandaag"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Gekopieerd: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ GEKOPIEERD"
-                    },
-    "techCatCaching":  {
-                           "message":  "Caching"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Beveiliging"
-                        },
-    "extName":  {
-                    "message":  "All In One - De beste productiviteitstool"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "Scanner is niet beschikbaar op deze pagina."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Notitie te groot"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Duur: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "Doneer en steun"
-                  },
-    "techStatVideo":  {
-                          "message":  "Video"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Instellingen"
-                        },
-    "cacheTitle":  {
-                       "message":  "Cookies/Cache"
-                   },
-    "techCatSystem":  {
-                          "message":  "Systeem"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "Notities exporteren"
-                           },
-    "radioPause":  {
-                       "message":  "Pauze"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Officiële website"
-                       },
-    "rateBtn":  {
-                    "message":  "Beoordeel de extensie"
-                },
-    "techCatBase":  {
-                        "message":  "Basis"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "COOKIES EN CACHE"
-                        },
-    "cancelBtn":  {
-                      "message":  "ANNULEREN"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "Huidige URL toevoegen"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Gemiddeld"
-                        },
-    "techStatForms":  {
-                          "message":  "Formulieren"
-                      },
-    "cacheError":  {
-                       "message":  "Fout"
-                   }
+    "notesTitle": {
+        "message": "Notities"
+    },
+    "whatsNewDesc": {
+        "message": "Bekijk de nieuwste interfaceverbeteringen die All In One nog sneller en eleganter maken:"
+    },
+    "toastPermissionDenied": {
+        "message": "Toestemming niet verleend"
+    },
+    "clearCounterTooltip": {
+        "message": "Alles wissen"
+    },
+    "supportDesc": {
+        "message": "All In One is een volledig gratis tool. Je steun helpt dit zo te houden en maakt de ontwikkeling van nieuwe functies mogelijk."
+    },
+    "trackerExportTruncated": {
+        "message": "Export ingekort tot 10 MB om de pop-up stabiel te houden."
+    },
+    "whatsNewClose": {
+        "message": "KRIJG HET"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Wissen"
+    },
+    "counterTitle": {
+        "message": "Teller"
+    },
+    "trackerAvgLabel": {
+        "message": "Gemiddeld"
+    },
+    "trackerModeMonth": {
+        "message": "Maandelijkse weergave"
+    },
+    "trackerModeAll": {
+        "message": "Alle tijd"
+    },
+    "techCatMedia": {
+        "message": "Media"
+    },
+    "trackerNoData": {
+        "message": "Geen gegevens voor deze periode"
+    },
+    "whatsNewFeature3": {
+        "message": "Favicon-ondersteuning: Sitefavicons in de trackerlijst."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Live #"
+    },
+    "confirmClearNotes": {
+        "message": "Weet je zeker dat je alle notities wilt wissen?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Alle gegevens van deze site zijn gewist!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Websites zoeken..."
+    },
+    "techCatTools": {
+        "message": "Hulpmiddelen"
+    },
+    "toastYtOff": {
+        "message": "YouTube-dislike-weergave uitgeschakeld"
+    },
+    "soundTitle": {
+        "message": "Geluid"
+    },
+    "cacheTitle": {
+        "message": "Cookies/Cache"
+    },
+    "markerCloseTooltip": {
+        "message": "Sluiten"
+    },
+    "stopwatchTitle": {
+        "message": "Stopwatch"
+    },
+    "clearNotesTooltip": {
+        "message": "Wis alle notities"
+    },
+    "rulerTitle": {
+        "message": "Pagina Liniaal"
+    },
+    "markLapDesc": {
+        "message": "Leg een moment vast op de stopwatch"
+    },
+    "trackerImportEmpty": {
+        "message": "Er zijn geen geldige trackergegevens om te importeren."
+    },
+    "whatsNewFeature1": {
+        "message": "Vloeiende overgangen: vloeiende dia-animaties tussen gereedschappen."
+    },
+    "systemPageDesc": {
+        "message": "Modificatietools zijn uitgeschakeld"
+    },
+    "techStatLinks": {
+        "message": "Koppelingen"
+    },
+    "stopBtn": {
+        "message": "STOPPEN"
+    },
+    "swNoLaps": {
+        "message": "Geen opgenomen momenten"
+    },
+    "toastTrackerImportError": {
+        "message": "Fout bij het importeren van trackergegevens!"
+    },
+    "toastRadioPlayError": {
+        "message": "De radio kan momenteel niet worden gestart."
+    },
+    "trackerTitle": {
+        "message": "Tijd Tracker"
+    },
+    "offscreenJustification": {
+        "message": "Radiostreaming en systeemgeluiden"
+    },
+    "trackerThisMonth": {
+        "message": "Deze maand"
+    },
+    "linesLabel": {
+        "message": "Regels"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Cookies geblokkeerd voor deze site"
+    },
+    "toastTrackerError": {
+        "message": "Fout bij vernieuwen van gegevens"
+    },
+    "trackerExportEmpty": {
+        "message": "Geen trackergegevens om te exporteren."
+    },
+    "techCatComm": {
+        "message": "Communicatie"
+    },
+    "deleteBtn": {
+        "message": "VERWIJDEREN"
+    },
+    "techCatTech": {
+        "message": "Technologieën"
+    },
+    "notesSaved": {
+        "message": "Opgeslagen"
+    },
+    "toastNotesExported": {
+        "message": "Notities succesvol geëxporteerd!"
+    },
+    "swMomentLabel": {
+        "message": "Moment"
+    },
+    "notesModalTitle": {
+        "message": "SLIMME NOTITIES"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Gemiddelde"
+    },
+    "versionLabel": {
+        "message": "Versie:"
+    },
+    "importNotesTooltip": {
+        "message": "Notities importeren"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Lichtmodus ingeschakeld"
+    },
+    "toastNotesCopied": {
+        "message": "Tekst gekopieerd naar klembord!"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toasts: Modern notificatiesysteem voor belangrijke acties."
+    },
+    "fontNotCopied": {
+        "message": "Niet gekopieerd"
+    },
+    "importTooltip": {
+        "message": "Gegevens importeren"
+    },
+    "wordsLabelShort": {
+        "message": "woorden"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "Niet ondersteund"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "Wissen..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Gegevens vernieuwd!"
+    },
+    "websiteBtn": {
+        "message": "Officiële website"
+    },
+    "markerThicknessTooltip": {
+        "message": "Dikte"
+    },
+    "confirmClearCounter": {
+        "message": "Weet je zeker dat je alles wilt wissen?"
+    },
+    "techCatAds": {
+        "message": "Advertenties"
+    },
+    "uiSettings": {
+        "message": "INSTELLINGEN"
+    },
+    "trackerThatMonth": {
+        "message": "Die maand"
+    },
+    "radioModalDesc": {
+        "message": "Voer de directe link naar je favoriete radiostation in"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Weet je zeker dat je gegevens wilt verwijderen voor"
+    },
+    "darkModeTitle": {
+        "message": "Donker"
+    },
+    "toastCounterCleared": {
+        "message": "Tegentekst is gewist!"
+    },
+    "techStatScripts": {
+        "message": "Scripts"
+    },
+    "techNetworkOptInHint": {
+        "message": "Verzendt verzoeken naar dns.google en ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Geen live geschiedenis"
+    },
+    "whatsNewTitle": {
+        "message": "Wat is er nieuw in versie 1.6"
+    },
+    "techNotFound": {
+        "message": "Niet gevonden."
+    },
+    "notesPlaceholder": {
+        "message": "Schrijf hier notities..."
+    },
+    "radioArtist": {
+        "message": "Aangedreven door de All In One extensie"
+    },
+    "charsLabel": {
+        "message": "Tekens"
+    },
+    "trackerImportSuccess": {
+        "message": "Gegevens succesvol geïmporteerd!"
+    },
+    "copyEnableTitle": {
+        "message": "Kopiën"
+    },
+    "techCatStats": {
+        "message": "Statistieken"
+    },
+    "dateLabel": {
+        "message": "Datum"
+    },
+    "techCatNetwork": {
+        "message": "Netwerk"
+    },
+    "techCatEcom": {
+        "message": "E-commerce"
+    },
+    "currentRecordedLabel": {
+        "message": "MOMENTEEL OPGENOMEN"
+    },
+    "toastCookieOff": {
+        "message": "Het automatisch blokkeren van cookies is uitgeschakeld"
+    },
+    "toastModuleLoadError": {
+        "message": "Fout bij laden van module"
+    },
+    "techCatStyles": {
+        "message": "Stijlen"
+    },
+    "extDesc": {
+        "message": "De ultieme tool die alle essentiële functies combineert in een snelle, moderne en gratis interface."
+    },
+    "resetBtn": {
+        "message": "Resetten"
+    },
+    "addDateTooltip": {
+        "message": "Datum van vandaag toevoegen"
+    },
+    "supportTitle": {
+        "message": "Steun de extensie"
+    },
+    "toastCounterCopied": {
+        "message": "Tekst gekopieerd naar klembord!"
+    },
+    "savedIndicator": {
+        "message": "Opgeslagen"
+    },
+    "counterPlaceholder": {
+        "message": "Plak hier tekst..."
+    },
+    "techFoundPrefix": {
+        "message": "Gevonden: "
+    },
+    "systemPageTitle": {
+        "message": "SYSTEEMPAGINA"
+    },
+    "markerClearAllTooltip": {
+        "message": "Alles wissen"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Analyses uitschakelen"
+    },
+    "trackerModeDay": {
+        "message": "Dagelijkse weergave"
+    },
+    "techItemsSuffix": {
+        "message": "artikelen"
+    },
+    "toastStopwatchCleared": {
+        "message": "Livegeschiedenis is gewist!"
+    },
+    "trackerTotal": {
+        "message": "Totaal"
+    },
+    "swStatusReady": {
+        "message": "KLAAR"
+    },
+    "trackerTotalShort": {
+        "message": "Totaal"
+    },
+    "blockCookiesLabel": {
+        "message": "Cookies automatisch blokkeren"
+    },
+    "markerDrawTooltip": {
+        "message": "Tekenen"
+    },
+    "trackerMonthLabel": {
+        "message": "Deze maand"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Tabellen"
+    },
+    "techStatImages": {
+        "message": "Afbeeldingen"
+    },
+    "toastRadioSaved": {
+        "message": "URL van radiostation opgeslagen!"
+    },
+    "trackerToday": {
+        "message": "Vandaag"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Woorden"
+    },
+    "clearAllBtn": {
+        "message": "ALLES WISSEN"
+    },
+    "toastCopyOn": {
+        "message": "Kopiëren is ingeschakeld voor deze site"
+    },
+    "clearSiteDataBtn": {
+        "message": "Wis alle gegevens van deze site"
+    },
+    "colorPickerPicking": {
+        "message": "Kiezen..."
+    },
+    "cacheClearConfirm": {
+        "message": "Wis alle gegevens van deze site"
+    },
+    "markerTextTooltip": {
+        "message": "Tekst"
+    },
+    "radioTitle": {
+        "message": "Radio"
+    },
+    "trackerSelectedMonth": {
+        "message": "Geselecteerde maand"
+    },
+    "toastCopyOff": {
+        "message": "Kopiëren uitgeschakeld"
+    },
+    "fontCopied": {
+        "message": "Gekopieerd!"
+    },
+    "notesLinkText": {
+        "message": "Link"
+    },
+    "radioClearConfirm": {
+        "message": "Het opgeslagen radiostation wissen?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Gemiddelde"
+    },
+    "techTitle": {
+        "message": "Technologieën"
+    },
+    "lapBtn": {
+        "message": "RONDE"
+    },
+    "playBtn": {
+        "message": "Afspelen"
+    },
+    "toastDarkModeOn": {
+        "message": "Donkere modus ingeschakeld"
+    },
+    "techCatPayment": {
+        "message": "Betaling"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Cookies toegestaan ​​voor deze site"
+    },
+    "markerLineTooltip": {
+        "message": "Lijn"
+    },
+    "techStatIframes": {
+        "message": "Iframes"
+    },
+    "counterModalTitle": {
+        "message": "TEKENTELLER"
+    },
+    "fontTitle": {
+        "message": "Lettertype"
+    },
+    "toastTrackerExported": {
+        "message": "Trackergegevens succesvol geëxporteerd!"
+    },
+    "toastNotesImportError": {
+        "message": "Fout bij het importeren van notities!"
+    },
+    "swExportTxtBtn": {
+        "message": "EXPORTEREN ALS .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Wis dit moment"
+    },
+    "startBtn": {
+        "message": "STARTEN"
+    },
+    "markerMoveTooltip": {
+        "message": "Verplaatsen"
+    },
+    "techModalTitle": {
+        "message": "SITETECHNOLOGIEËN"
+    },
+    "saveRadioStationBtn": {
+        "message": "STATION OPSLAAN"
+    },
+    "techCatDb": {
+        "message": "Database"
+    },
+    "toastNotesCleared": {
+        "message": "Alle notities zijn gewist!"
+    },
+    "toastTrackerImported": {
+        "message": "Trackergegevens succesvol geïmporteerd!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Ongeldige URL! De URL moet beginnen met http:// of https://"
+    },
+    "trackerImportError": {
+        "message": "Fout bij het lezen van het bestand."
+    },
+    "swStatusLive": {
+        "message": "LIVE BEZIG"
+    },
+    "linkLabel": {
+        "message": "Link"
+    },
+    "techCatAnalytics": {
+        "message": "Analyse"
+    },
+    "liveHistoryLabel": {
+        "message": "LIVE GESCHIEDENIS"
+    },
+    "colorPickerTitle": {
+        "message": "Kleurkiezer"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "TOTALE DUUR: "
+    },
+    "stopwatchReady": {
+        "message": "KLAAR"
+    },
+    "confirmClearHistory": {
+        "message": "Weet je zeker dat je de hele geschiedenis wilt wissen?"
+    },
+    "markerTitle": {
+        "message": "Markeerder"
+    },
+    "trackerModalTitle": {
+        "message": "Tijd Tracker"
+    },
+    "grabTextTooltip": {
+        "message": "Tekst van pagina extraheren"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Veld wissen"
+    },
+    "privacyLabel": {
+        "message": "Privacybeleid"
+    },
+    "whatsNewFeature4": {
+        "message": "Toggle Feedback: korte pulsanimaties en bevestigingen bij het wijzigen van instellingen."
+    },
+    "trackerThatDay": {
+        "message": "Die dag"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Kan de lijst niet bijwerken"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Cookies toestaan ​​voor deze site"
+    },
+    "textLabel": {
+        "message": "Tekst"
+    },
+    "cacheCleared": {
+        "message": "Gewist!"
+    },
+    "importRadioTooltip": {
+        "message": "Importeer aangepast radiostation"
+    },
+    "radioPlay": {
+        "message": "Play"
+    },
+    "techLoadingMsg": {
+        "message": "Scanner analyseert de site..."
+    },
+    "swCopyBtn": {
+        "message": "KOPIËREN NAAR KLEMBORD"
+    },
+    "techScannerFailed": {
+        "message": "Scannen mislukt op deze pagina."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Netwerkinfo tonen (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Vandaag"
+    },
+    "toastNotesImported": {
+        "message": "Notities succesvol geïmporteerd!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Gekopieerd: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ GEKOPIEERD"
+    },
+    "techCatCaching": {
+        "message": "Caching"
+    },
+    "techCatSecurity": {
+        "message": "Beveiliging"
+    },
+    "toastYtOn": {
+        "message": "YouTube-dislike-weergave ingeschakeld"
+    },
+    "extName": {
+        "message": "All In One - De beste productiviteitstool"
+    },
+    "toastCookieOn": {
+        "message": "Automatische cookieblokkering is ingeschakeld"
+    },
+    "techScannerUnavailable": {
+        "message": "Scanner is niet beschikbaar op deze pagina."
+    },
+    "notesTooLarge": {
+        "message": "Notitie te groot"
+    },
+    "swDurationLabel": {
+        "message": "Duur: "
+    },
+    "ytDislikeTitle": {
+        "message": "YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Doneer en steun"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Instellingen"
+    },
+    "trackerThisMonthShort": {
+        "message": "Deze maand"
+    },
+    "techCatSystem": {
+        "message": "Systeem"
+    },
+    "exportTooltip": {
+        "message": "Gegevens exporteren"
+    },
+    "exportNotesTooltip": {
+        "message": "Notities exporteren"
+    },
+    "radioPause": {
+        "message": "Pauze"
+    },
+    "websiteTooltip": {
+        "message": "Officiële website"
+    },
+    "rateBtn": {
+        "message": "Beoordeel de extensie"
+    },
+    "techCatBase": {
+        "message": "Basis"
+    },
+    "cacheModalTitle": {
+        "message": "COOKIES EN CACHE"
+    },
+    "cancelBtn": {
+        "message": "ANNULEREN"
+    },
+    "addUrlTooltip": {
+        "message": "Huidige URL toevoegen"
+    },
+    "trackerAvgTotal": {
+        "message": "Gemiddeld"
+    },
+    "techStatForms": {
+        "message": "Formulieren"
+    },
+    "cacheError": {
+        "message": "Fout"
+    }
 }

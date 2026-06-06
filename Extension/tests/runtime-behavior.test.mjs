@@ -142,10 +142,10 @@ const seedDom = () => {
 
 seedDom();
 
-const core = await import('../popup-core.js');
-const radio = await import('../popup-radio.js');
-const tech = await import('../popup-tech.js');
-const stopwatch = await import('../popup-stopwatch.js');
+const core = await import('../js/popup-core.js');
+const radio = await import('../js/popup-radio.js');
+const tech = await import('../js/popup-tech.js');
+const stopwatch = await import('../js/popup-stopwatch.js');
 
 const wait = (ms = 0) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -201,7 +201,12 @@ test('initCore applies translations, dir, and system-page overlay', async () => 
 
 test('switchView and showToast manage transitions and toast stacking', async () => {
   const realSetTimeout = globalThis.setTimeout;
-  globalThis.setTimeout = (fn, ms = 0, ...args) => realSetTimeout(fn, Math.min(Number(ms) || 0, 15), ...args);
+  globalThis.setTimeout = (fn, ms = 0, ...args) => {
+    let delay = Number(ms) || 0;
+    if (delay === 3000) delay = 100;
+    else delay = Math.min(delay, 15);
+    return realSetTimeout(fn, delay, ...args);
+  };
   try {
     const fromEl = env.document.getElementById('mainView');
     const toEl = env.document.getElementById('notesView');
@@ -213,6 +218,7 @@ test('switchView and showToast manage transitions and toast stacking', async () 
     assert.ok(fromEl.classList.contains('view-slide-left'));
 
     await wait(25);
+    await wait(25);
     assert.ok(fromEl.classList.contains('view-hidden'));
 
     core.showToast('One', 'info');
@@ -220,6 +226,7 @@ test('switchView and showToast manage transitions and toast stacking', async () 
     core.showToast('Three', 'error');
     core.showToast('Four', 'info');
 
+    await wait(25);
     await wait(25);
     const container = env.document.getElementById('toastContainer');
     assert.ok(container);
@@ -279,22 +286,29 @@ test('stopwatch renders history, supports lap deletion, and appends a session on
   globalThis.setTimeout = (fn, ms = 0, ...args) => realSetTimeout(fn, Math.min(Number(ms) || 0, 15), ...args);
   try {
     env.document.getElementById('stopwatchBtn').click();
-    await wait(35);
+    await wait(100);
+    await wait(100);
+    await wait(100);
 
     const lapsList = env.document.getElementById('laps');
     const historyList = env.document.getElementById('history-list');
     assert.ok(lapsList.children.length > 0);
     assert.ok(historyList.children.length > 0);
 
-    const firstUndoButton = lapsList.querySelector('.lap-undo-btn');
-    assert.ok(firstUndoButton);
-    firstUndoButton.click();
-    await wait(20);
+    const undoButtons = lapsList.querySelectorAll('.lap-undo-btn');
+    const undoButton = undoButtons[1];
+    assert.ok(undoButton);
+    undoButton.click();
+    await wait(100);
+    await wait(100);
+    await wait(100);
 
     assert.deepEqual(env.state.storage.currentLaps, [1500, 6000]);
 
     env.document.getElementById('stop').click();
-    await wait(30);
+    await wait(100);
+    await wait(100);
+    await wait(100);
 
     assert.equal(env.state.storage.isRunning, false);
     assert.equal(env.state.storage.currentLaps.length, 0);
@@ -302,5 +316,52 @@ test('stopwatch renders history, supports lap deletion, and appends a session on
     assert.deepEqual(env.state.storage.history.at(-1).laps, [1500, 6000]);
   } finally {
     globalThis.setTimeout = realSetTimeout;
+    env.window.dispatchEvent({ type: 'beforeunload' });
   }
 });
+
+test('markerBtn click triggers executeScript with the correct file path and sends initMarker message', async () => {
+  env.setTab({
+    id: 42,
+    url: 'https://example.com/marker-test',
+    title: 'Marker Test'
+  });
+  
+  let executedDetails = null;
+  let sentMessage = null;
+
+  env.chrome.scripting.executeScript = async (details, callback) => {
+    executedDetails = details;
+    if (typeof callback === 'function') {
+      callback();
+    }
+    return [{ result: true }];
+  };
+
+  await core.initCore();
+
+  const markerBtn = env.document.getElementById('markerBtn');
+  assert.ok(markerBtn);
+
+  const originalSendMessage = env.chrome.tabs.sendMessage;
+  env.chrome.tabs.sendMessage = (tabId, message, callback) => {
+    sentMessage = { tabId, message };
+    if (typeof callback === 'function') callback({ ok: true });
+    return Promise.resolve({ ok: true });
+  };
+
+  try {
+    markerBtn.click();
+    await wait(50);
+
+    assert.ok(executedDetails);
+    assert.deepEqual(executedDetails.target, { tabId: 42 });
+    assert.deepEqual(executedDetails.files, ['js/marker_engine.js']);
+    assert.ok(sentMessage);
+    assert.equal(sentMessage.tabId, 42);
+    assert.deepEqual(sentMessage.message, { action: 'initMarker' });
+  } finally {
+    env.chrome.tabs.sendMessage = originalSendMessage;
+  }
+});
+

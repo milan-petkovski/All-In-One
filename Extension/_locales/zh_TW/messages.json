@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "筆記"
-                   },
-    "supportDesc":  {
-                        "message":  "免費服務。"
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "後端"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "擦除"
-                           },
-    "counterTitle":  {
-                         "message":  "計數器"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "平均"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "月檢視"
-                         },
-    "trackerModeAll":  {
-                           "message":  "全部時間"
-                       },
-    "techCatMedia":  {
-                         "message":  "媒體"
-                     },
-    "trackerNoData":  {
-                          "message":  "此期間無數據"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "即時 #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "刪除所有？"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "工具"
-                     },
-    "soundTitle":  {
-                       "message":  "聲音"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "全部清除"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "關閉"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "秒表"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "清除筆記"
-                          },
-    "rulerTitle":  {
-                       "message":  "標尺"
-                   },
-    "markLapDesc":  {
-                        "message":  "在秒表上記錄一個時刻"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "已停用"
-                       },
-    "techStatLinks":  {
-                          "message":  "連結"
-                      },
-    "stopBtn":  {
-                    "message":  "停止"
-                },
-    "swNoLaps":  {
-                     "message":  "無記錄"
-                 },
-    "trackerTitle":  {
-                         "message":  "追踪器"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "本月"
-                         },
-    "linesLabel":  {
-                       "message":  "行數"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "通訊"
-                    },
-    "deleteBtn":  {
-                      "message":  "刪除"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "保存成功"
-                   },
-    "lapBtn":  {
-                   "message":  "計圈"
-               },
-    "notesModalTitle":  {
-                            "message":  "筆記"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "平均"
-                            },
-    "versionLabel":  {
-                         "message":  "版本："
-                     },
-    "importNotesTooltip":  {
-                               "message":  "匯入"
-                           },
-    "techCatBuild":  {
-                         "message":  "建置"
-                     },
-    "fontNotCopied":  {
-                          "message":  "失敗"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "技術"
-                    },
-    "techCatServer":  {
-                          "message":  "伺服器"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "不支援"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "音訊"
-                      },
-    "cacheClearing":  {
-                          "message":  "清理中"
-                      },
-    "radioTitleCustom":  {
-                             "message":  "廣播"
-                         },
-    "websiteBtn":  {
-                       "message":  "官網"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "粗細"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "您確定要全部清除嗎？"
-                            },
-    "techCatAds":  {
-                       "message":  "廣告"
-                   },
-    "uiSettings":  {
-                       "message":  "設定"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "該月"
-                         },
-    "radioModalDesc":  {
-                           "message":  "輸入您喜愛的廣播電台直鏈"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "確定要刪除資料嗎"
-                             },
-    "darkModeTitle":  {
-                          "message":  "深色模式"
-                      },
-    "techStatScripts":  {
-                            "message":  "指令碼"
-                        },
-    "swNoHistory":  {
-                        "message":  "無歷史"
-                    },
-    "techNotFound":  {
-                         "message":  "未發現"
-                     },
-    "notesPlaceholder":  {
-                             "message":  "在此寫作"
-                         },
-    "radioArtist":  {
-                        "message":  "由 All In One 擴充功能提供支持"
-                    },
-    "charsLabel":  {
-                       "message":  "字元"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "開啟複製"
-                        },
-    "techCatStats":  {
-                         "message":  "統計資料"
-                     },
-    "dateLabel":  {
-                      "message":  "日期"
-                  },
-    "techCatNetwork":  {
-                           "message":  "網路"
-                       },
-    "techCatEcom":  {
-                        "message":  "電子商務"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "當前記錄"
-                             },
-    "techCatStyles":  {
-                          "message":  "樣式"
-                      },
-    "extDesc":  {
-                    "message":  "終極工具，在快速、現代且免費的介面中集成了所有基本功能。"
-                },
-    "resetBtn":  {
-                     "message":  "重設"
-                 },
-    "addDateTooltip":  {
-                           "message":  "添加日期"
-                       },
-    "supportTitle":  {
-                         "message":  "支持"
-                     },
-    "savedIndicator":  {
-                           "message":  "已保存"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "粘貼此處"
-                           },
-    "techFoundPrefix":  {
-                            "message":  "檢出："
-                        },
-    "systemPageTitle":  {
-                            "message":  "系統"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "全清"
-                              },
-    "trackerModeDay":  {
-                           "message":  "日檢視"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "項"
-                        },
-    "trackerTotal":  {
-                         "message":  "總計"
-                     },
-    "swStatusReady":  {
-                          "message":  "就緒"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "總計"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "自動攔截"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "畫筆"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "本月"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "表格"
-                       },
-    "techStatImages":  {
-                           "message":  "圖片"
-                       },
-    "trackerToday":  {
-                         "message":  "今天"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "字數"
-                   },
-    "clearAllBtn":  {
-                        "message":  "清空"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "清除數據"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "選取中"
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "刪除數據"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "文字"
-                          },
-    "radioTitle":  {
-                       "message":  "廣播"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "選定的月份"
-                             },
-    "fontCopied":  {
-                       "message":  "已複製"
-                   },
-    "notesLinkText":  {
-                          "message":  "連結"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "平均"
-                            },
-    "techTitle":  {
-                      "message":  "技術"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "移動"
-                          },
-    "playBtn":  {
-                    "message":  "播放"
-                },
-    "techCatPayment":  {
-                           "message":  "付款"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "直線"
-                          },
-    "techStatIframes":  {
-                            "message":  "框架"
-                        },
-    "counterModalTitle":  {
-                              "message":  "計數器"
-                          },
-    "fontTitle":  {
-                      "message":  "字體"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "匯出TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "撤銷"
-                    },
-    "startBtn":  {
-                     "message":  "開始"
-                 },
-    "techModalTitle":  {
-                           "message":  "技術"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "儲存電台"
-                            },
-    "techCatDb":  {
-                      "message":  "資料庫"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "運行中"
-                     },
-    "linkLabel":  {
-                      "message":  "連結"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "分析"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "歷史"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "取色器"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "時刻"
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "累計："
-                              },
-    "stopwatchReady":  {
-                           "message":  "就緒"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "本月"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "刪除歷史？"
-                            },
-    "markerTitle":  {
-                        "message":  "標記"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "時間追蹤器"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "提取文本"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "清除欄位"
-                               },
-    "privacyLabel":  {
-                         "message":  "隱私"
-                     },
-    "trackerThatDay":  {
-                           "message":  "那天"
-                       },
-    "textLabel":  {
-                      "message":  "文本"
-                  },
-    "cacheCleared":  {
-                         "message":  "已清理"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "匯入自訂廣播電台"
-                           },
-    "radioPlay":  {
-                      "message":  "播放"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "正在掃描"
-                       },
-    "swCopyBtn":  {
-                      "message":  "複製"
-                  },
-    "techScannerFailed":  {
-                              "message":  "掃描失敗"
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "今天"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "已複製："
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ 已複製"
-                    },
-    "techCatCaching":  {
-                           "message":  "快取"
-                       },
-    "techCatSecurity":  {
-                            "message":  "安全性"
-                        },
-    "extName":  {
-                    "message":  "All In One - 頂級生產力工具"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "不可用"
-                               },
-    "notesTooLarge":  {
-                          "message":  "容量超限"
-                      },
-    "swDurationLabel":  {
-                            "message":  "耗時："
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "Return YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "贊助支持"
-                  },
-    "techStatVideo":  {
-                          "message":  "影片"
-                      },
-    "settingsTooltip":  {
-                            "message":  "設定"
-                        },
-    "cacheTitle":  {
-                       "message":  "快取"
-                   },
-    "techCatSystem":  {
-                          "message":  "系統"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "匯出"
-                           },
-    "radioPause":  {
-                       "message":  "暫停"
-                   },
-    "websiteTooltip":  {
-                           "message":  "擴充功能的官方網站"
-                       },
-    "rateBtn":  {
-                    "message":  "評分"
-                },
-    "techCatBase":  {
-                        "message":  "基礎"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "快取"
-                        },
-    "cancelBtn":  {
-                      "message":  "取消"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "添加連結"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "平均"
-                        },
-    "techStatForms":  {
-                          "message":  "表單"
-                      },
-    "cacheError":  {
-                       "message":  "錯誤"
-                   }
+    "notesTitle": {
+        "message": "筆記"
+    },
+    "whatsNewDesc": {
+        "message": "查看最新的介面改進，使 All In One 更快、更優雅："
+    },
+    "toastPermissionDenied": {
+        "message": "未授予許可"
+    },
+    "clearCounterTooltip": {
+        "message": "全部清除"
+    },
+    "supportDesc": {
+        "message": "免費服務。"
+    },
+    "trackerExportTruncated": {
+        "message": "匯出截斷為 10MB 以保持彈出視窗穩定。"
+    },
+    "whatsNewClose": {
+        "message": "知道了"
+    },
+    "techCatBackend": {
+        "message": "後端"
+    },
+    "markerEraseTooltip": {
+        "message": "擦除"
+    },
+    "counterTitle": {
+        "message": "計數器"
+    },
+    "trackerAvgLabel": {
+        "message": "平均"
+    },
+    "trackerModeMonth": {
+        "message": "月檢視"
+    },
+    "trackerModeAll": {
+        "message": "全部時間"
+    },
+    "techCatMedia": {
+        "message": "媒體"
+    },
+    "trackerNoData": {
+        "message": "此期間無數據"
+    },
+    "whatsNewFeature3": {
+        "message": "網站圖示支援：追蹤器清單中的網站圖示。"
+    },
+    "swLiveTitlePrefix": {
+        "message": "即時 #"
+    },
+    "confirmClearNotes": {
+        "message": "刪除所有？"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "本站所有資料已清除！"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "搜尋網站..."
+    },
+    "techCatTools": {
+        "message": "工具"
+    },
+    "toastYtOff": {
+        "message": "YouTube 不喜歡顯示已停用"
+    },
+    "soundTitle": {
+        "message": "聲音"
+    },
+    "cacheTitle": {
+        "message": "快取"
+    },
+    "markerCloseTooltip": {
+        "message": "關閉"
+    },
+    "stopwatchTitle": {
+        "message": "秒表"
+    },
+    "clearNotesTooltip": {
+        "message": "清除筆記"
+    },
+    "rulerTitle": {
+        "message": "標尺"
+    },
+    "markLapDesc": {
+        "message": "在秒表上記錄一個時刻"
+    },
+    "trackerImportEmpty": {
+        "message": "沒有要匯入的有效追蹤器資料。"
+    },
+    "whatsNewFeature1": {
+        "message": "平滑過渡：工具之間平滑的幻燈片動畫。"
+    },
+    "systemPageDesc": {
+        "message": "已停用"
+    },
+    "techStatLinks": {
+        "message": "連結"
+    },
+    "stopBtn": {
+        "message": "停止"
+    },
+    "swNoLaps": {
+        "message": "無記錄"
+    },
+    "toastTrackerImportError": {
+        "message": "導入追蹤器資料時出錯！"
+    },
+    "toastRadioPlayError": {
+        "message": "收音機現在無法啟動。"
+    },
+    "trackerTitle": {
+        "message": "追踪器"
+    },
+    "offscreenJustification": {
+        "message": "廣播串流媒體與系統聲音"
+    },
+    "trackerThisMonth": {
+        "message": "本月"
+    },
+    "linesLabel": {
+        "message": "行數"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "該網站已封鎖 Cookie"
+    },
+    "toastTrackerError": {
+        "message": "刷新資料時出錯"
+    },
+    "trackerExportEmpty": {
+        "message": "沒有要匯出的追蹤器資料。"
+    },
+    "techCatComm": {
+        "message": "通訊"
+    },
+    "deleteBtn": {
+        "message": "刪除"
+    },
+    "techCatTech": {
+        "message": "技術"
+    },
+    "notesSaved": {
+        "message": "保存成功"
+    },
+    "toastNotesExported": {
+        "message": "筆記成功匯出！"
+    },
+    "swMomentLabel": {
+        "message": "時刻"
+    },
+    "notesModalTitle": {
+        "message": "筆記"
+    },
+    "trackerAvgThisMonth": {
+        "message": "平均"
+    },
+    "versionLabel": {
+        "message": "版本："
+    },
+    "importNotesTooltip": {
+        "message": "匯入"
+    },
+    "techCatBuild": {
+        "message": "建置"
+    },
+    "toastDarkModeOff": {
+        "message": "燈光模式已啟用"
+    },
+    "toastNotesCopied": {
+        "message": "文字已複製到剪貼簿！"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toasts：重要作業的現代通知系統。"
+    },
+    "fontNotCopied": {
+        "message": "失敗"
+    },
+    "importTooltip": {
+        "message": "導入數據"
+    },
+    "wordsLabelShort": {
+        "message": "字"
+    },
+    "techCatServer": {
+        "message": "伺服器"
+    },
+    "cacheNotSupported": {
+        "message": "不支援"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "音訊"
+    },
+    "cacheClearing": {
+        "message": "清理中"
+    },
+    "radioTitleCustom": {
+        "message": "廣播"
+    },
+    "toastTrackerRefreshed": {
+        "message": "資料刷新！"
+    },
+    "websiteBtn": {
+        "message": "官網"
+    },
+    "markerThicknessTooltip": {
+        "message": "粗細"
+    },
+    "confirmClearCounter": {
+        "message": "您確定要全部清除嗎？"
+    },
+    "techCatAds": {
+        "message": "廣告"
+    },
+    "uiSettings": {
+        "message": "設定"
+    },
+    "trackerThatMonth": {
+        "message": "該月"
+    },
+    "radioModalDesc": {
+        "message": "輸入您喜愛的廣播電台直鏈"
+    },
+    "trackerDeleteConfirm": {
+        "message": "確定要刪除資料嗎"
+    },
+    "darkModeTitle": {
+        "message": "深色模式"
+    },
+    "toastCounterCleared": {
+        "message": "計數器文字已清除！"
+    },
+    "techStatScripts": {
+        "message": "指令碼"
+    },
+    "techNetworkOptInHint": {
+        "message": "向 dns.google 和 ipinfo.io 發送請求。"
+    },
+    "swNoHistory": {
+        "message": "無歷史"
+    },
+    "whatsNewTitle": {
+        "message": "1.6 版本的新增功能"
+    },
+    "techNotFound": {
+        "message": "未發現"
+    },
+    "notesPlaceholder": {
+        "message": "在此寫作"
+    },
+    "radioArtist": {
+        "message": "由 All In One 擴充功能提供支持"
+    },
+    "charsLabel": {
+        "message": "字元"
+    },
+    "trackerImportSuccess": {
+        "message": "數據導入成功！"
+    },
+    "copyEnableTitle": {
+        "message": "開啟複製"
+    },
+    "techCatStats": {
+        "message": "統計資料"
+    },
+    "dateLabel": {
+        "message": "日期"
+    },
+    "techCatNetwork": {
+        "message": "網路"
+    },
+    "techCatEcom": {
+        "message": "電子商務"
+    },
+    "currentRecordedLabel": {
+        "message": "當前記錄"
+    },
+    "toastCookieOff": {
+        "message": "自動 cookie 封鎖已停用"
+    },
+    "toastModuleLoadError": {
+        "message": "載入模組時出錯"
+    },
+    "techCatStyles": {
+        "message": "樣式"
+    },
+    "extDesc": {
+        "message": "終極工具，在快速、現代且免費的介面中集成了所有基本功能。"
+    },
+    "resetBtn": {
+        "message": "重設"
+    },
+    "addDateTooltip": {
+        "message": "添加日期"
+    },
+    "supportTitle": {
+        "message": "支持"
+    },
+    "toastCounterCopied": {
+        "message": "文字已複製到剪貼簿！"
+    },
+    "savedIndicator": {
+        "message": "已保存"
+    },
+    "counterPlaceholder": {
+        "message": "粘貼此處"
+    },
+    "techFoundPrefix": {
+        "message": "檢出："
+    },
+    "systemPageTitle": {
+        "message": "系統"
+    },
+    "markerClearAllTooltip": {
+        "message": "全清"
+    },
+    "analyticsOptOutLabel": {
+        "message": "禁用分析"
+    },
+    "trackerModeDay": {
+        "message": "日檢視"
+    },
+    "techItemsSuffix": {
+        "message": "項"
+    },
+    "toastStopwatchCleared": {
+        "message": "即時歷史記錄已清除！"
+    },
+    "trackerTotal": {
+        "message": "總計"
+    },
+    "swStatusReady": {
+        "message": "就緒"
+    },
+    "trackerTotalShort": {
+        "message": "總計"
+    },
+    "blockCookiesLabel": {
+        "message": "自動攔截"
+    },
+    "markerDrawTooltip": {
+        "message": "畫筆"
+    },
+    "trackerMonthLabel": {
+        "message": "本月"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "表格"
+    },
+    "techStatImages": {
+        "message": "圖片"
+    },
+    "toastRadioSaved": {
+        "message": "廣播電台 URL 已儲存！"
+    },
+    "trackerToday": {
+        "message": "今天"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "字數"
+    },
+    "clearAllBtn": {
+        "message": "清空"
+    },
+    "toastCopyOn": {
+        "message": "該網站已啟用複製功能"
+    },
+    "clearSiteDataBtn": {
+        "message": "清除數據"
+    },
+    "colorPickerPicking": {
+        "message": "選取中"
+    },
+    "cacheClearConfirm": {
+        "message": "刪除數據"
+    },
+    "markerTextTooltip": {
+        "message": "文字"
+    },
+    "radioTitle": {
+        "message": "廣播"
+    },
+    "trackerSelectedMonth": {
+        "message": "選定的月份"
+    },
+    "toastCopyOff": {
+        "message": "複製已停用"
+    },
+    "fontCopied": {
+        "message": "已複製"
+    },
+    "notesLinkText": {
+        "message": "連結"
+    },
+    "radioClearConfirm": {
+        "message": "清除已保存的電台？"
+    },
+    "trackerAvgThatMonth": {
+        "message": "平均"
+    },
+    "techTitle": {
+        "message": "技術"
+    },
+    "lapBtn": {
+        "message": "計圈"
+    },
+    "playBtn": {
+        "message": "播放"
+    },
+    "toastDarkModeOn": {
+        "message": "啟用深色模式"
+    },
+    "techCatPayment": {
+        "message": "付款"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "本網站允許使用 Cookie"
+    },
+    "markerLineTooltip": {
+        "message": "直線"
+    },
+    "techStatIframes": {
+        "message": "框架"
+    },
+    "counterModalTitle": {
+        "message": "計數器"
+    },
+    "fontTitle": {
+        "message": "字體"
+    },
+    "toastTrackerExported": {
+        "message": "追蹤器數據成功匯出！"
+    },
+    "toastNotesImportError": {
+        "message": "導入筆記時發生錯誤！"
+    },
+    "swExportTxtBtn": {
+        "message": "匯出TXT"
+    },
+    "swUndoTitle": {
+        "message": "撤銷"
+    },
+    "startBtn": {
+        "message": "開始"
+    },
+    "markerMoveTooltip": {
+        "message": "移動"
+    },
+    "techModalTitle": {
+        "message": "技術"
+    },
+    "saveRadioStationBtn": {
+        "message": "儲存電台"
+    },
+    "techCatDb": {
+        "message": "資料庫"
+    },
+    "toastNotesCleared": {
+        "message": "所有筆記都已清除！"
+    },
+    "toastTrackerImported": {
+        "message": "追蹤器資料導入成功！"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "無效網址！ URL 必須以 http:// 或 https:// 開頭"
+    },
+    "trackerImportError": {
+        "message": "讀取文件時發生錯誤。"
+    },
+    "swStatusLive": {
+        "message": "運行中"
+    },
+    "linkLabel": {
+        "message": "連結"
+    },
+    "techCatAnalytics": {
+        "message": "分析"
+    },
+    "liveHistoryLabel": {
+        "message": "歷史"
+    },
+    "colorPickerTitle": {
+        "message": "取色器"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "累計："
+    },
+    "stopwatchReady": {
+        "message": "就緒"
+    },
+    "confirmClearHistory": {
+        "message": "刪除歷史？"
+    },
+    "markerTitle": {
+        "message": "標記"
+    },
+    "trackerModalTitle": {
+        "message": "時間追蹤器"
+    },
+    "grabTextTooltip": {
+        "message": "提取文本"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "清除欄位"
+    },
+    "privacyLabel": {
+        "message": "隱私"
+    },
+    "whatsNewFeature4": {
+        "message": "切換回饋：更改設定時的短脈衝動畫和確認。"
+    },
+    "trackerThatDay": {
+        "message": "那天"
+    },
+    "toastCookieWhitelistError": {
+        "message": "無法更新列表"
+    },
+    "cookieWhitelistLabel": {
+        "message": "允許該網站使用 cookie"
+    },
+    "textLabel": {
+        "message": "文本"
+    },
+    "cacheCleared": {
+        "message": "已清理"
+    },
+    "importRadioTooltip": {
+        "message": "匯入自訂廣播電台"
+    },
+    "radioPlay": {
+        "message": "播放"
+    },
+    "techLoadingMsg": {
+        "message": "正在掃描"
+    },
+    "swCopyBtn": {
+        "message": "複製"
+    },
+    "techScannerFailed": {
+        "message": "掃描失敗"
+    },
+    "techNetworkOptInLabel": {
+        "message": "顯示網路資訊（DNS/IP）"
+    },
+    "trackerTodayLabel": {
+        "message": "今天"
+    },
+    "toastNotesImported": {
+        "message": "筆記導入成功！"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "已複製："
+    },
+    "swCopiedBtn": {
+        "message": "✓ 已複製"
+    },
+    "techCatCaching": {
+        "message": "快取"
+    },
+    "techCatSecurity": {
+        "message": "安全性"
+    },
+    "toastYtOn": {
+        "message": "YouTube 不喜歡顯示已啟用"
+    },
+    "extName": {
+        "message": "All In One - 頂級生產力工具"
+    },
+    "toastCookieOn": {
+        "message": "自動 cookie 封鎖已啟用"
+    },
+    "techScannerUnavailable": {
+        "message": "不可用"
+    },
+    "notesTooLarge": {
+        "message": "容量超限"
+    },
+    "swDurationLabel": {
+        "message": "耗時："
+    },
+    "ytDislikeTitle": {
+        "message": "Return YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "贊助支持"
+    },
+    "techStatVideo": {
+        "message": "影片"
+    },
+    "settingsTooltip": {
+        "message": "設定"
+    },
+    "trackerThisMonthShort": {
+        "message": "本月"
+    },
+    "techCatSystem": {
+        "message": "系統"
+    },
+    "exportTooltip": {
+        "message": "匯出數據"
+    },
+    "exportNotesTooltip": {
+        "message": "匯出"
+    },
+    "radioPause": {
+        "message": "暫停"
+    },
+    "websiteTooltip": {
+        "message": "擴充功能的官方網站"
+    },
+    "rateBtn": {
+        "message": "評分"
+    },
+    "techCatBase": {
+        "message": "基礎"
+    },
+    "cacheModalTitle": {
+        "message": "快取"
+    },
+    "cancelBtn": {
+        "message": "取消"
+    },
+    "addUrlTooltip": {
+        "message": "添加連結"
+    },
+    "trackerAvgTotal": {
+        "message": "平均"
+    },
+    "techStatForms": {
+        "message": "表單"
+    },
+    "cacheError": {
+        "message": "錯誤"
+    }
 }

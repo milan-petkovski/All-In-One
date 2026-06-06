@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Notlar"
-                   },
-    "supportDesc":  {
-                        "message":  "All In One ücretsizdir. Desteğiniz yeni özellikler getirir."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Sil"
-                           },
-    "counterTitle":  {
-                         "message":  "Sayaç"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Ortalama"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Aylık görünüm"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Tüm zamanlar"
-                       },
-    "techCatMedia":  {
-                         "message":  "Medya"
-                     },
-    "trackerNoData":  {
-                          "message":  "Bu dönem için veri yok"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "Canlı #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Tüm notları temizle?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Araçlar"
-                     },
-    "soundTitle":  {
-                       "message":  "Ses"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "Hepsini temizle"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Kapat"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Kronometre"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "Notları temizle"
-                          },
-    "rulerTitle":  {
-                       "message":  "Cetvel"
-                   },
-    "markLapDesc":  {
-                        "message":  "Kronometrede bir anı kaydet"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "Araçlar devre dışı"
-                       },
-    "techStatLinks":  {
-                          "message":  "Bağlantılar"
-                      },
-    "stopBtn":  {
-                    "message":  "DURDUR"
-                },
-    "swNoLaps":  {
-                     "message":  "An yok"
-                 },
-    "trackerTitle":  {
-                         "message":  "Zaman İzleyici"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "Bu ay"
-                         },
-    "linesLabel":  {
-                       "message":  "Satırlar"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "İletişim"
-                    },
-    "deleteBtn":  {
-                      "message":  "SİL"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Kaydedildi"
-                   },
-    "lapBtn":  {
-                   "message":  "TUR"
-               },
-    "notesModalTitle":  {
-                            "message":  "NOTLAR"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Ortalama"
-                            },
-    "versionLabel":  {
-                         "message":  "Sürüm:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "İçe aktar"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Kopyalanmadı"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Teknolojiler"
-                    },
-    "techCatServer":  {
-                          "message":  "Sunucu"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Desteklenmiyor"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Ses"
-                      },
-    "cacheClearing":  {
-                          "message":  "Temizleniyor..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Radyo"
-                         },
-    "websiteBtn":  {
-                       "message":  "Resmi site"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Kalınlık"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Tümünü temizlemek istediğinizden emin misiniz?"
-                            },
-    "techCatAds":  {
-                       "message":  "Reklamlar"
-                   },
-    "uiSettings":  {
-                       "message":  "AYARLAR"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "O ay"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Favori radyo istasyonunuzun doğrudan bağlantısını girin"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Verileri silmek istediğinize emin misiniz"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Karanlık Mod"
-                      },
-    "techStatScripts":  {
-                            "message":  "Komut Dosyaları"
-                        },
-    "swNoHistory":  {
-                        "message":  "Geçmiş yok"
-                    },
-    "techNotFound":  {
-                         "message":  "Bulunamadı."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Notlar buraya..."
-                         },
-    "radioArtist":  {
-                        "message":  "All In One ile"
-                    },
-    "charsLabel":  {
-                       "message":  "Karakter"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Kopyala"
-                        },
-    "techCatStats":  {
-                         "message":  "İstatistikler"
-                     },
-    "dateLabel":  {
-                      "message":  "Tarih"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Ağ"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Ticaret"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "KAYITLI"
-                             },
-    "techCatStyles":  {
-                          "message":  "Stiller"
-                      },
-    "extDesc":  {
-                    "message":  "Tüm temel işlevleri hızlı, modern ve ücretsiz bir arayüzde birleştiren nihai araç."
-                },
-    "resetBtn":  {
-                     "message":  "Sıfırla"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Tarih ekle"
-                       },
-    "supportTitle":  {
-                         "message":  "Eklentiyi destekle"
-                     },
-    "savedIndicator":  {
-                           "message":  "Kaydedildi"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "Metin buraya..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Bulundu: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "SİSTEM"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "Tümünü temizle"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Günlük görünüm"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "öğe"
-                        },
-    "trackerTotal":  {
-                         "message":  "Toplam"
-                     },
-    "swStatusReady":  {
-                          "message":  "HAZIR"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Toplam"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Çerezleri engelle"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Çiz"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Bu ay"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Tablolar"
-                       },
-    "techStatImages":  {
-                           "message":  "Görüntüler"
-                       },
-    "trackerToday":  {
-                         "message":  "Bugün"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Kelime"
-                   },
-    "clearAllBtn":  {
-                        "message":  "TÜMÜNÜ TEMİZLE"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "Siteyi temizle"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Seçiliyor..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Siteyi temizle"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Metin"
-                          },
-    "radioTitle":  {
-                       "message":  "Radyo"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Seçili ay"
-                             },
-    "fontCopied":  {
-                       "message":  "Kopyalandı!"
-                   },
-    "notesLinkText":  {
-                          "message":  "Bağlantı"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Ortalama"
-                            },
-    "techTitle":  {
-                      "message":  "Teknolojiler"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Taşı"
-                          },
-    "playBtn":  {
-                    "message":  "Oynat"
-                },
-    "techCatPayment":  {
-                           "message":  "Ödeme"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Çizgi"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "SAYAÇ"
-                          },
-    "fontTitle":  {
-                      "message":  "Yazı Tipi"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "DIŞA AKTAR .TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Anı sil"
-                    },
-    "startBtn":  {
-                     "message":  "BAŞLA"
-                 },
-    "techModalTitle":  {
-                           "message":  "TEKNOLOJİLER"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "İSTASYONU KAYDET"
-                            },
-    "techCatDb":  {
-                      "message":  "Veritabanı"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "CANLI"
-                     },
-    "linkLabel":  {
-                      "message":  "Bağlantı"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Analitik"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "GEÇMİŞ"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Renkler"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "An "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "TOPLAM: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "HAZIR"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Bu ay"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Geçmişi temizle?"
-                            },
-    "markerTitle":  {
-                        "message":  "İşaretleyici"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Zaman Takibi"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Metin çıkar"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Alanı temizle"
-                               },
-    "privacyLabel":  {
-                         "message":  "Gizlilik"
-                     },
-    "trackerThatDay":  {
-                           "message":  "O gün"
-                       },
-    "textLabel":  {
-                      "message":  "Metin"
-                  },
-    "cacheCleared":  {
-                         "message":  "Temizlendi!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Özel radyo istasyonu içe aktar"
-                           },
-    "radioPlay":  {
-                      "message":  "Oynat"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "Site analiz ediliyor..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "KOPYALA"
-                  },
-    "techScannerFailed":  {
-                              "message":  "Tarama hatası."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "Bugün"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Kopyalandı: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ KOPYALANDI"
-                    },
-    "techCatCaching":  {
-                           "message":  "Önbellek"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Güvenlik"
-                        },
-    "extName":  {
-                    "message":  "All In One - En İyi Verimlilik Aracı"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "Tarayıcı yok."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Not çok büyük"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Süre: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "Bağış yap ve destekle"
-                  },
-    "techStatVideo":  {
-                          "message":  "Video"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Ayarlar"
-                        },
-    "cacheTitle":  {
-                       "message":  "Çerezler \u0026 Önbellek"
-                   },
-    "techCatSystem":  {
-                          "message":  "Sistem"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "Dışa aktar"
-                           },
-    "radioPause":  {
-                       "message":  "Durak"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Resmi site"
-                       },
-    "rateBtn":  {
-                    "message":  "Eklentiyi değerlendir"
-                },
-    "techCatBase":  {
-                        "message":  "Temel"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "ÇEREZLER/ÖNBELLEK"
-                        },
-    "cancelBtn":  {
-                      "message":  "İPTAL"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "URL ekle"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Ortalama"
-                        },
-    "techStatForms":  {
-                          "message":  "Formlar"
-                      },
-    "cacheError":  {
-                       "message":  "Hata"
-                   }
+    "notesTitle": {
+        "message": "Notlar"
+    },
+    "whatsNewDesc": {
+        "message": "Hepsi Bir Arada'yı daha da hızlı ve daha şık hale getiren en son arayüz iyileştirmelerine göz atın:"
+    },
+    "toastPermissionDenied": {
+        "message": "İzin verilmedi"
+    },
+    "clearCounterTooltip": {
+        "message": "Hepsini temizle"
+    },
+    "supportDesc": {
+        "message": "All In One ücretsizdir. Desteğiniz yeni özellikler getirir."
+    },
+    "trackerExportTruncated": {
+        "message": "Açılır pencerenin sabit kalması için dışa aktarma boyutu 10 MB'a kısaltıldı."
+    },
+    "whatsNewClose": {
+        "message": "ANLADIM"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Sil"
+    },
+    "counterTitle": {
+        "message": "Sayaç"
+    },
+    "trackerAvgLabel": {
+        "message": "Ortalama"
+    },
+    "trackerModeMonth": {
+        "message": "Aylık görünüm"
+    },
+    "trackerModeAll": {
+        "message": "Tüm zamanlar"
+    },
+    "techCatMedia": {
+        "message": "Medya"
+    },
+    "trackerNoData": {
+        "message": "Bu dönem için veri yok"
+    },
+    "whatsNewFeature3": {
+        "message": "Favicon Desteği: Takipçi listesindeki site favicon'ları."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Canlı #"
+    },
+    "confirmClearNotes": {
+        "message": "Tüm notları temizle?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Bu sitedeki tüm veriler temizlendi!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Web sitelerinde ara..."
+    },
+    "techCatTools": {
+        "message": "Araçlar"
+    },
+    "toastYtOff": {
+        "message": "YouTube Beğenmeme ekranı devre dışı bırakıldı"
+    },
+    "soundTitle": {
+        "message": "Ses"
+    },
+    "cacheTitle": {
+        "message": "Çerezler & Önbellek"
+    },
+    "markerCloseTooltip": {
+        "message": "Kapat"
+    },
+    "stopwatchTitle": {
+        "message": "Kronometre"
+    },
+    "clearNotesTooltip": {
+        "message": "Notları temizle"
+    },
+    "rulerTitle": {
+        "message": "Cetvel"
+    },
+    "markLapDesc": {
+        "message": "Kronometrede bir anı kaydet"
+    },
+    "trackerImportEmpty": {
+        "message": "İçe aktarılacak geçerli izleyici verisi yok."
+    },
+    "whatsNewFeature1": {
+        "message": "Düzgün Geçişler: Araçlar arasında düzgün slayt animasyonları."
+    },
+    "systemPageDesc": {
+        "message": "Araçlar devre dışı"
+    },
+    "techStatLinks": {
+        "message": "Bağlantılar"
+    },
+    "stopBtn": {
+        "message": "DURDUR"
+    },
+    "swNoLaps": {
+        "message": "An yok"
+    },
+    "toastTrackerImportError": {
+        "message": "Takipçi verileri içe aktarılırken hata oluştu!"
+    },
+    "toastRadioPlayError": {
+        "message": "Radyo şu anda başlatılamıyor."
+    },
+    "trackerTitle": {
+        "message": "Zaman İzleyici"
+    },
+    "offscreenJustification": {
+        "message": "Radyo akışı ve sistem sesleri"
+    },
+    "trackerThisMonth": {
+        "message": "Bu ay"
+    },
+    "linesLabel": {
+        "message": "Satırlar"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Bu site için çerezler engellendi"
+    },
+    "toastTrackerError": {
+        "message": "Veriler yenilenirken hata oluştu"
+    },
+    "trackerExportEmpty": {
+        "message": "Dışa aktarılacak izleyici verisi yok."
+    },
+    "techCatComm": {
+        "message": "İletişim"
+    },
+    "deleteBtn": {
+        "message": "SİL"
+    },
+    "techCatTech": {
+        "message": "Teknolojiler"
+    },
+    "notesSaved": {
+        "message": "Kaydedildi"
+    },
+    "toastNotesExported": {
+        "message": "Notlar başarıyla dışa aktarıldı!"
+    },
+    "swMomentLabel": {
+        "message": "An "
+    },
+    "notesModalTitle": {
+        "message": "NOTLAR"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Ortalama"
+    },
+    "versionLabel": {
+        "message": "Sürüm:"
+    },
+    "importNotesTooltip": {
+        "message": "İçe aktar"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Işık modu etkin"
+    },
+    "toastNotesCopied": {
+        "message": "Metin panoya kopyalandı!"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Tostlar: Önemli eylemler için modern bildirim sistemi."
+    },
+    "fontNotCopied": {
+        "message": "Kopyalanmadı"
+    },
+    "importTooltip": {
+        "message": "Verileri içe aktar"
+    },
+    "wordsLabelShort": {
+        "message": "kelimeler"
+    },
+    "techCatServer": {
+        "message": "Sunucu"
+    },
+    "cacheNotSupported": {
+        "message": "Desteklenmiyor"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Ses"
+    },
+    "cacheClearing": {
+        "message": "Temizleniyor..."
+    },
+    "radioTitleCustom": {
+        "message": "Radyo"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Veriler yenilendi!"
+    },
+    "websiteBtn": {
+        "message": "Resmi site"
+    },
+    "markerThicknessTooltip": {
+        "message": "Kalınlık"
+    },
+    "confirmClearCounter": {
+        "message": "Tümünü temizlemek istediğinizden emin misiniz?"
+    },
+    "techCatAds": {
+        "message": "Reklamlar"
+    },
+    "uiSettings": {
+        "message": "AYARLAR"
+    },
+    "trackerThatMonth": {
+        "message": "O ay"
+    },
+    "radioModalDesc": {
+        "message": "Favori radyo istasyonunuzun doğrudan bağlantısını girin"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Verileri silmek istediğinize emin misiniz"
+    },
+    "darkModeTitle": {
+        "message": "Karanlık Mod"
+    },
+    "toastCounterCleared": {
+        "message": "Karşı metin temizlendi!"
+    },
+    "techStatScripts": {
+        "message": "Komut Dosyaları"
+    },
+    "techNetworkOptInHint": {
+        "message": "İstekleri dns.google ve ipinfo.io'ya gönderir."
+    },
+    "swNoHistory": {
+        "message": "Geçmiş yok"
+    },
+    "whatsNewTitle": {
+        "message": "Sürüm 1.6'daki Yenilikler"
+    },
+    "techNotFound": {
+        "message": "Bulunamadı."
+    },
+    "notesPlaceholder": {
+        "message": "Notlar buraya..."
+    },
+    "radioArtist": {
+        "message": "All In One ile"
+    },
+    "charsLabel": {
+        "message": "Karakter"
+    },
+    "trackerImportSuccess": {
+        "message": "Veriler başarıyla içe aktarıldı!"
+    },
+    "copyEnableTitle": {
+        "message": "Kopyala"
+    },
+    "techCatStats": {
+        "message": "İstatistikler"
+    },
+    "dateLabel": {
+        "message": "Tarih"
+    },
+    "techCatNetwork": {
+        "message": "Ağ"
+    },
+    "techCatEcom": {
+        "message": "E-Ticaret"
+    },
+    "currentRecordedLabel": {
+        "message": "KAYITLI"
+    },
+    "toastCookieOff": {
+        "message": "Otomatik çerez engelleme devre dışı bırakıldı"
+    },
+    "toastModuleLoadError": {
+        "message": "Modül yüklenirken hata oluştu"
+    },
+    "techCatStyles": {
+        "message": "Stiller"
+    },
+    "extDesc": {
+        "message": "Tüm temel işlevleri hızlı, modern ve ücretsiz bir arayüzde birleştiren nihai araç."
+    },
+    "resetBtn": {
+        "message": "Sıfırla"
+    },
+    "addDateTooltip": {
+        "message": "Tarih ekle"
+    },
+    "supportTitle": {
+        "message": "Eklentiyi destekle"
+    },
+    "toastCounterCopied": {
+        "message": "Metin panoya kopyalandı!"
+    },
+    "savedIndicator": {
+        "message": "Kaydedildi"
+    },
+    "counterPlaceholder": {
+        "message": "Metin buraya..."
+    },
+    "techFoundPrefix": {
+        "message": "Bulundu: "
+    },
+    "systemPageTitle": {
+        "message": "SİSTEM"
+    },
+    "markerClearAllTooltip": {
+        "message": "Tümünü temizle"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Analitiği devre dışı bırak"
+    },
+    "trackerModeDay": {
+        "message": "Günlük görünüm"
+    },
+    "techItemsSuffix": {
+        "message": "öğe"
+    },
+    "toastStopwatchCleared": {
+        "message": "Canlı geçmiş temizlendi!"
+    },
+    "trackerTotal": {
+        "message": "Toplam"
+    },
+    "swStatusReady": {
+        "message": "HAZIR"
+    },
+    "trackerTotalShort": {
+        "message": "Toplam"
+    },
+    "blockCookiesLabel": {
+        "message": "Çerezleri engelle"
+    },
+    "markerDrawTooltip": {
+        "message": "Çiz"
+    },
+    "trackerMonthLabel": {
+        "message": "Bu ay"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Tablolar"
+    },
+    "techStatImages": {
+        "message": "Görüntüler"
+    },
+    "toastRadioSaved": {
+        "message": "Radyo istasyonu URL'si kaydedildi!"
+    },
+    "trackerToday": {
+        "message": "Bugün"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Kelime"
+    },
+    "clearAllBtn": {
+        "message": "TÜMÜNÜ TEMİZLE"
+    },
+    "toastCopyOn": {
+        "message": "Bu site için kopyalama etkin"
+    },
+    "clearSiteDataBtn": {
+        "message": "Siteyi temizle"
+    },
+    "colorPickerPicking": {
+        "message": "Seçiliyor..."
+    },
+    "cacheClearConfirm": {
+        "message": "Siteyi temizle"
+    },
+    "markerTextTooltip": {
+        "message": "Metin"
+    },
+    "radioTitle": {
+        "message": "Radyo"
+    },
+    "trackerSelectedMonth": {
+        "message": "Seçili ay"
+    },
+    "toastCopyOff": {
+        "message": "Kopyalama devre dışı bırakıldı"
+    },
+    "fontCopied": {
+        "message": "Kopyalandı!"
+    },
+    "notesLinkText": {
+        "message": "Bağlantı"
+    },
+    "radioClearConfirm": {
+        "message": "Kaydedilen radyo istasyonu silinsin mi?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Ortalama"
+    },
+    "techTitle": {
+        "message": "Teknolojiler"
+    },
+    "lapBtn": {
+        "message": "TUR"
+    },
+    "playBtn": {
+        "message": "Oynat"
+    },
+    "toastDarkModeOn": {
+        "message": "Karanlık mod etkin"
+    },
+    "techCatPayment": {
+        "message": "Ödeme"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Bu site için çerezlere izin veriliyor"
+    },
+    "markerLineTooltip": {
+        "message": "Çizgi"
+    },
+    "techStatIframes": {
+        "message": "Iframe'ler"
+    },
+    "counterModalTitle": {
+        "message": "SAYAÇ"
+    },
+    "fontTitle": {
+        "message": "Yazı Tipi"
+    },
+    "toastTrackerExported": {
+        "message": "Takipçi verileri başarıyla dışa aktarıldı!"
+    },
+    "toastNotesImportError": {
+        "message": "Notlar içe aktarılırken hata oluştu!"
+    },
+    "swExportTxtBtn": {
+        "message": "DIŞA AKTAR .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Anı sil"
+    },
+    "startBtn": {
+        "message": "BAŞLA"
+    },
+    "markerMoveTooltip": {
+        "message": "Taşı"
+    },
+    "techModalTitle": {
+        "message": "TEKNOLOJİLER"
+    },
+    "saveRadioStationBtn": {
+        "message": "İSTASYONU KAYDET"
+    },
+    "techCatDb": {
+        "message": "Veritabanı"
+    },
+    "toastNotesCleared": {
+        "message": "Tüm notlar temizlendi!"
+    },
+    "toastTrackerImported": {
+        "message": "Takipçi verileri başarıyla içe aktarıldı!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Geçersiz URL! URL http:// veya https:// ile başlamalıdır"
+    },
+    "trackerImportError": {
+        "message": "Dosya okunurken hata oluştu."
+    },
+    "swStatusLive": {
+        "message": "CANLI"
+    },
+    "linkLabel": {
+        "message": "Bağlantı"
+    },
+    "techCatAnalytics": {
+        "message": "Analitik"
+    },
+    "liveHistoryLabel": {
+        "message": "GEÇMİŞ"
+    },
+    "colorPickerTitle": {
+        "message": "Renkler"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "TOPLAM: "
+    },
+    "stopwatchReady": {
+        "message": "HAZIR"
+    },
+    "confirmClearHistory": {
+        "message": "Geçmişi temizle?"
+    },
+    "markerTitle": {
+        "message": "İşaretleyici"
+    },
+    "trackerModalTitle": {
+        "message": "Zaman Takibi"
+    },
+    "grabTextTooltip": {
+        "message": "Metin çıkar"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Alanı temizle"
+    },
+    "privacyLabel": {
+        "message": "Gizlilik"
+    },
+    "whatsNewFeature4": {
+        "message": "Geri Bildirimi Değiştir: Kısa darbeli animasyonlar ve ayarlar değiştirilirken onaylar."
+    },
+    "trackerThatDay": {
+        "message": "O gün"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Liste güncellenemedi"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Bu site için çerezlere izin ver"
+    },
+    "textLabel": {
+        "message": "Metin"
+    },
+    "cacheCleared": {
+        "message": "Temizlendi!"
+    },
+    "importRadioTooltip": {
+        "message": "Özel radyo istasyonu içe aktar"
+    },
+    "radioPlay": {
+        "message": "Oynat"
+    },
+    "techLoadingMsg": {
+        "message": "Site analiz ediliyor..."
+    },
+    "swCopyBtn": {
+        "message": "KOPYALA"
+    },
+    "techScannerFailed": {
+        "message": "Tarama hatası."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Ağ bilgilerini göster (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Bugün"
+    },
+    "toastNotesImported": {
+        "message": "Notlar başarıyla içe aktarıldı!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Kopyalandı: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ KOPYALANDI"
+    },
+    "techCatCaching": {
+        "message": "Önbellek"
+    },
+    "techCatSecurity": {
+        "message": "Güvenlik"
+    },
+    "toastYtOn": {
+        "message": "YouTube Beğenmeme ekranı etkin"
+    },
+    "extName": {
+        "message": "All In One - En İyi Verimlilik Aracı"
+    },
+    "toastCookieOn": {
+        "message": "Otomatik çerez engelleme etkin"
+    },
+    "techScannerUnavailable": {
+        "message": "Tarayıcı yok."
+    },
+    "notesTooLarge": {
+        "message": "Not çok büyük"
+    },
+    "swDurationLabel": {
+        "message": "Süre: "
+    },
+    "ytDislikeTitle": {
+        "message": "YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Bağış yap ve destekle"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Ayarlar"
+    },
+    "trackerThisMonthShort": {
+        "message": "Bu ay"
+    },
+    "techCatSystem": {
+        "message": "Sistem"
+    },
+    "exportTooltip": {
+        "message": "Verileri dışa aktar"
+    },
+    "exportNotesTooltip": {
+        "message": "Dışa aktar"
+    },
+    "radioPause": {
+        "message": "Durak"
+    },
+    "websiteTooltip": {
+        "message": "Resmi site"
+    },
+    "rateBtn": {
+        "message": "Eklentiyi değerlendir"
+    },
+    "techCatBase": {
+        "message": "Temel"
+    },
+    "cacheModalTitle": {
+        "message": "ÇEREZLER/ÖNBELLEK"
+    },
+    "cancelBtn": {
+        "message": "İPTAL"
+    },
+    "addUrlTooltip": {
+        "message": "URL ekle"
+    },
+    "trackerAvgTotal": {
+        "message": "Ortalama"
+    },
+    "techStatForms": {
+        "message": "Formlar"
+    },
+    "cacheError": {
+        "message": "Hata"
+    }
 }

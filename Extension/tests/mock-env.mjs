@@ -52,9 +52,32 @@ export function createMockEnvironment(options = {}) {
     };
   };
 
+  class FakeTextNode {
+    constructor(document, text = '') {
+      this.ownerDocument = document;
+      this.nodeType = 3;
+      this._text = String(text);
+      this.parentNode = null;
+      this.children = [];
+    }
+    get textContent() {
+      return this._text;
+    }
+    set textContent(value) {
+      this._text = String(value);
+    }
+    get nodeValue() {
+      return this._text;
+    }
+    set nodeValue(value) {
+      this._text = String(value);
+    }
+  }
+
   class FakeElement {
     constructor(document, tagName = 'div') {
       this.ownerDocument = document;
+      this.nodeType = 1;
       this.tagName = String(tagName).toUpperCase();
       this.children = [];
       this.parentNode = null;
@@ -74,17 +97,52 @@ export function createMockEnvironment(options = {}) {
       this.offsetParent = document.body;
     }
 
+    get className() {
+      return this.getAttribute('class') || '';
+    }
+
+    set className(value) {
+      this.setAttribute('class', value);
+    }
+
     set innerHTML(value) {
       this._html = String(value);
       this.children = [];
+      this._text = "";
+      this._innerText = "";
+      if (value) {
+        const parser = new globalThis.DOMParser();
+        const doc = parser.parseFromString(String(value), "text/html");
+        const parsedChildren = [...doc.body.children];
+        parsedChildren.forEach(child => this.appendChild(child));
+      }
     }
 
     get innerHTML() {
-      return this._html;
+      if (this.children.length > 0) {
+        return this.children.map(child => {
+          if (child.nodeType === 3) {
+            return child.textContent;
+          }
+          const attrs = Object.entries(child.attributes)
+            .map(([k, v]) => ` ${k}="${v}"`)
+            .join('');
+          return `<${child.tagName.toLowerCase()}${attrs}>${child.innerHTML}</${child.tagName.toLowerCase()}>`;
+        }).join('');
+      }
+      return this._html || this._text || "";
     }
 
     set textContent(value) {
       this._text = String(value);
+      this._html = "";
+      this.children = [];
+      this._innerText = String(value);
+      if (value) {
+        const textNode = this.ownerDocument ? this.ownerDocument.createTextNode(String(value)) : new FakeTextNode(null, String(value));
+        textNode.parentNode = this;
+        this.children.push(textNode);
+      }
     }
 
     get textContent() {
@@ -94,10 +152,26 @@ export function createMockEnvironment(options = {}) {
     set innerText(value) {
       this._innerText = String(value);
       this._text = String(value);
+      this._html = "";
+      this.children = [];
+      if (value) {
+        const textNode = this.ownerDocument ? this.ownerDocument.createTextNode(String(value)) : new FakeTextNode(null, String(value));
+        textNode.parentNode = this;
+        this.children.push(textNode);
+      }
     }
 
     get innerText() {
       return this._innerText || this._text;
+    }
+
+    contains(other) {
+      let current = other;
+      while (current) {
+        if (current === this) return true;
+        current = current.parentNode;
+      }
+      return false;
     }
 
     setAttribute(name, value) {
@@ -133,7 +207,68 @@ export function createMockEnvironment(options = {}) {
           : Object.prototype.hasOwnProperty.call(this.attributes, key);
     }
 
+    get childNodes() {
+      return this.children;
+    }
+
+    get firstChild() {
+      return this.children[0] || null;
+    }
+
+    get lastChild() {
+      return this.children[this.children.length - 1] || null;
+    }
+
+    removeChild(child) {
+      const idx = this.children.indexOf(child);
+      if (idx >= 0) {
+        this.children.splice(idx, 1);
+        child.parentNode = null;
+      }
+      return child;
+    }
+
+    replaceChild(newChild, oldChild) {
+      const idx = this.children.indexOf(oldChild);
+      if (idx >= 0) {
+        if (newChild.nodeType === 11) {
+          const fragmentChildren = [...newChild.children];
+          this.children.splice(idx, 1);
+          oldChild.parentNode = null;
+          fragmentChildren.forEach(child => {
+            if (child.parentNode) {
+              child.parentNode.removeChild(child);
+            }
+            child.parentNode = this;
+          });
+          this.children.splice(idx, 0, ...fragmentChildren);
+          if (this.ownerDocument) {
+            fragmentChildren.forEach(child => this.ownerDocument._registerTree(child));
+          }
+        } else {
+          if (newChild.parentNode) {
+            newChild.parentNode.removeChild(newChild);
+          }
+          this.children[idx] = newChild;
+          newChild.parentNode = this;
+          oldChild.parentNode = null;
+          if (this.ownerDocument) {
+            this.ownerDocument._registerTree(newChild);
+          }
+        }
+      }
+      return oldChild;
+    }
+
     appendChild(child) {
+      if (child.nodeType === 11) {
+        const fragmentChildren = [...child.children];
+        fragmentChildren.forEach(c => this.appendChild(c));
+        return child;
+      }
+      if (child.parentNode) {
+        child.parentNode.removeChild(child);
+      }
       child.parentNode = this;
       this.children.push(child);
       this.ownerDocument._registerTree(child);
@@ -226,6 +361,7 @@ export function createMockEnvironment(options = {}) {
   };
 
   const matchesSimpleSelector = (element, selector) => {
+    if (!element || element.nodeType !== 1) return false;
     const { base, negate } = parseSelector(selector);
     if (base.tag && element.tagName !== base.tag) return false;
     if (base.id && element.id !== base.id) return false;
@@ -254,6 +390,17 @@ export function createMockEnvironment(options = {}) {
       return new FakeElement(this, tagName);
     }
 
+    createTextNode(text) {
+      return new FakeTextNode(this, text);
+    }
+
+    createDocumentFragment() {
+      const frag = this.createElement('div');
+      frag.nodeType = 11;
+      frag.tagName = '#document-fragment';
+      return frag;
+    }
+
     _registerElement(element) {
       if (element.id) this.elementsById.set(element.id, element);
     }
@@ -261,7 +408,9 @@ export function createMockEnvironment(options = {}) {
     _registerTree(element) {
       if (!element) return;
       if (element.id) this._registerElement(element);
-      element.children.forEach((child) => this._registerTree(child));
+      if (element.children) {
+        element.children.forEach((child) => this._registerTree(child));
+      }
     }
 
     getElementById(id) {
@@ -304,6 +453,111 @@ export function createMockEnvironment(options = {}) {
       return this.querySelectorAllWithin(this.documentElement, selector);
     }
   }
+
+  class DOMParserMock {
+    parseFromString(html, type) {
+      const doc = new FakeDocument();
+      const root = doc.createElement('div');
+      const tagRegex = /(<[^>]+>|[^<]+)/g;
+      const stack = [root];
+      let match;
+      while ((match = tagRegex.exec(html))) {
+        const token = match[0];
+        if (token.startsWith('</')) {
+          if (stack.length > 1) stack.pop();
+        } else if (token.startsWith('<')) {
+          const tagMatch = token.match(/<([a-zA-Z1-6]+)/);
+          if (tagMatch) {
+            const tagName = tagMatch[1];
+            const el = doc.createElement(tagName);
+            const hrefMatch = token.match(/href="([^"]+)"/) || token.match(/href='([^']+)'/);
+            if (hrefMatch) el.setAttribute('href', hrefMatch[1]);
+            const styleMatch = token.match(/style="([^"]+)"/) || token.match(/style='([^']+)'/);
+            if (styleMatch) el.setAttribute('style', styleMatch[1]);
+            
+            stack[stack.length - 1].appendChild(el);
+            if (!token.endsWith('/>') && !['br', 'img', 'hr'].includes(tagName.toLowerCase())) {
+              stack.push(el);
+            }
+          }
+        } else {
+          const textNode = doc.createTextNode(token);
+          stack[stack.length - 1].appendChild(textNode);
+        }
+      }
+      [...root.children].forEach(child => {
+        doc.body.appendChild(child);
+      });
+      return doc;
+    }
+  }
+
+  class MockRange {
+    constructor() {
+      this.commonAncestorContainer = null;
+    }
+    selectNodeContents(node) {
+      this.commonAncestorContainer = node;
+    }
+    collapse(toStart) {}
+    deleteContents() {
+      if (this.commonAncestorContainer) {
+        this.commonAncestorContainer.children = [];
+        this.commonAncestorContainer.textContent = "";
+      }
+    }
+    insertNode(node) {
+      if (this.commonAncestorContainer) {
+        this.commonAncestorContainer.appendChild(node);
+      }
+    }
+    setStartAfter(node) {}
+    setEndBefore(node) {}
+  }
+
+  class MockTreeWalker {
+    constructor(root) {
+      this.root = root;
+      this.currentNode = null;
+      this.allNodes = [];
+      const collect = (node) => {
+        if (node.nodeType === 3) this.allNodes.push(node);
+        if (node.children) node.children.forEach(collect);
+      };
+      collect(root);
+      this.index = -1;
+    }
+    nextNode() {
+      this.index++;
+      if (this.index < this.allNodes.length) {
+        this.currentNode = this.allNodes[this.index];
+        return this.currentNode;
+      }
+      this.currentNode = null;
+      return null;
+    }
+  }
+
+  class MockFileReader {
+    constructor() {
+      this.onload = null;
+      this.onerror = null;
+    }
+    readAsText(file) {
+      setTimeout(() => {
+        if (this.onload) {
+          this.onload({ target: { result: file.content || '' } });
+        }
+      }, 0);
+    }
+  }
+
+  const mockSelection = {
+    rangeCount: 1,
+    getRangeAt: () => new MockRange(),
+    removeAllRanges: () => {},
+    addRange: () => {}
+  };
 
   const document = new FakeDocument();
   const window = {
@@ -500,8 +754,33 @@ export function createMockEnvironment(options = {}) {
     return fresh;
   };
 
+  const createLocalStorageMock = () => {
+    const store = new Map();
+    return {
+      getItem: (key) => store.get(String(key)) ?? null,
+      setItem: (key, value) => store.set(String(key), String(value)),
+      removeItem: (key) => store.delete(String(key)),
+      clear: () => store.clear(),
+      get length() { return store.size; },
+      key: (index) => Array.from(store.keys())[index] || null
+    };
+  };
+  window.localStorage = createLocalStorageMock();
+
   globalThis.window = window;
   globalThis.document = document;
+  globalThis.DOMParser = DOMParserMock;
+  globalThis.Node = { ELEMENT_NODE: 1, TEXT_NODE: 3, DOCUMENT_FRAGMENT_NODE: 11 };
+  globalThis.NodeFilter = { SHOW_TEXT: 4 };
+  globalThis.FileReader = MockFileReader;
+  Object.defineProperty(globalThis, 'localStorage', {
+    configurable: true,
+    get() { return window.localStorage; },
+    set(v) { window.localStorage = v; }
+  });
+  document.createRange = () => new MockRange();
+  document.createTreeWalker = (root) => new MockTreeWalker(root);
+  window.getSelection = () => mockSelection;
   globalThis.chrome = chrome;
   globalThis.fetch = fetch;
   globalThis.location = window.location;

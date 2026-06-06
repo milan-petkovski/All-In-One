@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Muistiinpanot"
-                   },
-    "supportDesc":  {
-                        "message":  "All In One on täysin ilmainen työkalu. Tukesi auttaa pitämään sen sellaisena ja mahdollistaa uusien ominaisuuksien kehittämisen."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Pyyhi"
-                           },
-    "counterTitle":  {
-                         "message":  "Laskuri"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Keskiarvo"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Kuukausinäkymä"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Koko aika"
-                       },
-    "techCatMedia":  {
-                         "message":  "Media"
-                     },
-    "trackerNoData":  {
-                          "message":  "Ei dataa tälle ajalle"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "Live #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Haluatko varmasti tyhjentää kaikki muistiinpanot?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Työkalut"
-                     },
-    "soundTitle":  {
-                       "message":  "Ääni"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "Tyhjennä kaikki"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Sulje"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Sekuntikello"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "Tyhjennä kaikki muistiinpanot"
-                          },
-    "rulerTitle":  {
-                       "message":  "Viivain"
-                   },
-    "markLapDesc":  {
-                        "message":  "Tallenna hetki sekuntikellolla"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "Muokkaustyökalut on poistettu käytöstä"
-                       },
-    "techStatLinks":  {
-                          "message":  "Linkit"
-                      },
-    "stopBtn":  {
-                    "message":  "PYSÄYTÄ"
-                },
-    "swNoLaps":  {
-                     "message":  "Ei tallennettuja hetkiä"
-                 },
-    "trackerTitle":  {
-                         "message":  "Ajan seuranta"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "Tämä kuukausi"
-                         },
-    "linesLabel":  {
-                       "message":  "Rivejä"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "Viestintä"
-                    },
-    "deleteBtn":  {
-                      "message":  "POISTA"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Tallennettu"
-                   },
-    "lapBtn":  {
-                   "message":  "KIERROS"
-               },
-    "notesModalTitle":  {
-                            "message":  "ÄLYKKÄÄT MUISTIINPANOT"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Keskiarvo"
-                            },
-    "versionLabel":  {
-                         "message":  "Versio:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "Tuo muistiinpanot"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Ei kopioitu"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Teknologiat"
-                    },
-    "techCatServer":  {
-                          "message":  "Palvelin"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Ei tueta"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Ääni"
-                      },
-    "cacheClearing":  {
-                          "message":  "Tyhjennetään..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Radio"
-                         },
-    "websiteBtn":  {
-                       "message":  "Virallinen verkkosivusto"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Paksuus"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Haluatko varmasti tyhjentää kaiken?"
-                            },
-    "techCatAds":  {
-                       "message":  "Mainokset"
-                   },
-    "uiSettings":  {
-                       "message":  "ASETUKSET"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "Se kuukausi"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Syötä suosikkiradioasemasi suora linkki"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Haluatko varmasti poistaa tiedot kohteelle"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Tumma tila"
-                      },
-    "techStatScripts":  {
-                            "message":  "Skriptit"
-                        },
-    "swNoHistory":  {
-                        "message":  "Ei live-historiaa"
-                    },
-    "techNotFound":  {
-                         "message":  "Ei löytynyt."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Kirjoita muistiinpanot tähän..."
-                         },
-    "radioArtist":  {
-                        "message":  "All In One tarjoaa"
-                    },
-    "charsLabel":  {
-                       "message":  "Merkkiä"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Kopioi"
-                        },
-    "techCatStats":  {
-                         "message":  "Tilastot"
-                     },
-    "dateLabel":  {
-                      "message":  "Päivämäärä"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Verkko"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Commerce"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "TALLENNETTU NYT"
-                             },
-    "techCatStyles":  {
-                          "message":  "Tyylit"
-                      },
-    "extDesc":  {
-                    "message":  "Ultimaattinen työkalu, joka yhdistää kaikki olennaiset toiminnot nopeaan, nykyaikaiseen ja ilmaiseen käyttöliittymään."
-                },
-    "resetBtn":  {
-                     "message":  "Nollaa"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Lisää tämän päivän päivämäärä"
-                       },
-    "supportTitle":  {
-                         "message":  "Tue laajennusta"
-                     },
-    "savedIndicator":  {
-                           "message":  "Tallennettu"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "Liitä teksti tähän..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Löydetty: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "JÄRJESTELMÄSIVU"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "Tyhjennä kaikki"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Päivänäkymä"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "kohdetta"
-                        },
-    "trackerTotal":  {
-                         "message":  "Yhteensä"
-                     },
-    "swStatusReady":  {
-                          "message":  "VALMIS"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Yhteensä"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Estä evästeet"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Piirrä"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Tämä kuukausi"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Taulukot"
-                       },
-    "techStatImages":  {
-                           "message":  "Kuvat"
-                       },
-    "trackerToday":  {
-                         "message":  "Tänään"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Sanaa"
-                   },
-    "clearAllBtn":  {
-                        "message":  "TYHJENNÄ KAIKKI"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "Tyhjennä sivusto"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Valitaan..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Tyhjennä kaikki tiedot tältä sivustolta"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Teksti"
-                          },
-    "radioTitle":  {
-                       "message":  "Radio"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Valittu kuukausi"
-                             },
-    "fontCopied":  {
-                       "message":  "Kopioitu!"
-                   },
-    "notesLinkText":  {
-                          "message":  "Linkki"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Keskiarvo"
-                            },
-    "techTitle":  {
-                      "message":  "Teknologiat"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Siirrä"
-                          },
-    "playBtn":  {
-                    "message":  "Toista"
-                },
-    "techCatPayment":  {
-                           "message":  "Maksu"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Viiva"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "MERKKILASKURI"
-                          },
-    "fontTitle":  {
-                      "message":  "Fontit"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "VIE .TXT-MUODOSSA"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Poista tämä hetki"
-                    },
-    "startBtn":  {
-                     "message":  "ALOITA"
-                 },
-    "techModalTitle":  {
-                           "message":  "SIVUSTON TEKNOLOGIAT"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "TALLASEMA"
-                            },
-    "techCatDb":  {
-                      "message":  "Tietokanta"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "LIVE KÄYNNISSÄ"
-                     },
-    "linkLabel":  {
-                      "message":  "Linkki"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Analytiikka"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "LIVE-HISTORIA"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Värit"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "Hetki "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "KOKONAISKESTO: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "VALMIS"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Tämä kuukausi"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Haluatko varmasti tyhjentää koko historian?"
-                            },
-    "markerTitle":  {
-                        "message":  "Merkki"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Ajan seuranta"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Pura teksti sivulta"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Tyhjennä kenttä"
-                               },
-    "privacyLabel":  {
-                         "message":  "Tietosuojakäytäntö"
-                     },
-    "trackerThatDay":  {
-                           "message":  "Se päivä"
-                       },
-    "textLabel":  {
-                      "message":  "Teksti"
-                  },
-    "cacheCleared":  {
-                         "message":  "Tyhjennetty!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Tuo mukautettu radioasema"
-                           },
-    "radioPlay":  {
-                      "message":  "Toista"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "Skanneri analysoi sivustoa..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "KOPIOI LEIKEPÖYDÄLLE"
-                  },
-    "techScannerFailed":  {
-                              "message":  "Skannaus epäonnistui tällä sivulla."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "Tänään"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Kopioitu: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ KOPIOITU"
-                    },
-    "techCatCaching":  {
-                           "message":  "Välimuisti"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Turvallisuus"
-                        },
-    "extName":  {
-                    "message":  "All In One - Paras tuottavuustyökalu"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "Skanneri ei ole käytettävissä tällä sivulla."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Muistiinpano on liian suuri"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Kesto: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "Lahjoita ja tue"
-                  },
-    "techStatVideo":  {
-                          "message":  "Video"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Asetukset"
-                        },
-    "cacheTitle":  {
-                       "message":  "Evästeet/välimuisti"
-                   },
-    "techCatSystem":  {
-                          "message":  "Järjestelmä"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "Vie muistiinpanot"
-                           },
-    "radioPause":  {
-                       "message":  "Tauko"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Virallinen sivusto"
-                       },
-    "rateBtn":  {
-                    "message":  "Arvostele laajennus"
-                },
-    "techCatBase":  {
-                        "message":  "Perusta"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "EVÄSTEET/VÄLIMUISTI"
-                        },
-    "cancelBtn":  {
-                      "message":  "PERUUTA"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "Lisää nykyinen URL-osoite"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Keskiarvo"
-                        },
-    "techStatForms":  {
-                          "message":  "Lomakkeet"
-                      },
-    "cacheError":  {
-                       "message":  "Virhe"
-                   }
+    "notesTitle": {
+        "message": "Muistiinpanot"
+    },
+    "whatsNewDesc": {
+        "message": "Tutustu uusimpiin käyttöliittymäparannuksiin, jotka tekevät All In Onesta entistä nopeamman ja tyylikkäämmän:"
+    },
+    "toastPermissionDenied": {
+        "message": "Lupaa ei myönnetty"
+    },
+    "clearCounterTooltip": {
+        "message": "Tyhjennä kaikki"
+    },
+    "supportDesc": {
+        "message": "All In One on täysin ilmainen työkalu. Tukesi auttaa pitämään sen sellaisena ja mahdollistaa uusien ominaisuuksien kehittämisen."
+    },
+    "trackerExportTruncated": {
+        "message": "Vie lyhennettynä 10 megatavuun pitääksesi ponnahdusikkunan vakaana."
+    },
+    "whatsNewClose": {
+        "message": "SAAT"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Pyyhi"
+    },
+    "counterTitle": {
+        "message": "Laskuri"
+    },
+    "trackerAvgLabel": {
+        "message": "Keskiarvo"
+    },
+    "trackerModeMonth": {
+        "message": "Kuukausinäkymä"
+    },
+    "trackerModeAll": {
+        "message": "Koko aika"
+    },
+    "techCatMedia": {
+        "message": "Media"
+    },
+    "trackerNoData": {
+        "message": "Ei dataa tälle ajalle"
+    },
+    "whatsNewFeature3": {
+        "message": "Favicon-tuki: Sivuston faviconit seurantaluettelossa."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Live #"
+    },
+    "confirmClearNotes": {
+        "message": "Haluatko varmasti tyhjentää kaikki muistiinpanot?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Kaikki tämän sivuston tiedot on poistettu!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Hae verkkosivuilta..."
+    },
+    "techCatTools": {
+        "message": "Työkalut"
+    },
+    "toastYtOff": {
+        "message": "YouTuben En pidä -näyttö poissa käytöstä"
+    },
+    "soundTitle": {
+        "message": "Ääni"
+    },
+    "cacheTitle": {
+        "message": "Evästeet/välimuisti"
+    },
+    "markerCloseTooltip": {
+        "message": "Sulje"
+    },
+    "stopwatchTitle": {
+        "message": "Sekuntikello"
+    },
+    "clearNotesTooltip": {
+        "message": "Tyhjennä kaikki muistiinpanot"
+    },
+    "rulerTitle": {
+        "message": "Viivain"
+    },
+    "markLapDesc": {
+        "message": "Tallenna hetki sekuntikellolla"
+    },
+    "trackerImportEmpty": {
+        "message": "Ei kelvollisia tuottavia seurantatietoja."
+    },
+    "whatsNewFeature1": {
+        "message": "Smooth Transitions: Tasaiset diaanimaatiot työkalujen välillä."
+    },
+    "systemPageDesc": {
+        "message": "Muokkaustyökalut on poistettu käytöstä"
+    },
+    "techStatLinks": {
+        "message": "Linkit"
+    },
+    "stopBtn": {
+        "message": "PYSÄYTÄ"
+    },
+    "swNoLaps": {
+        "message": "Ei tallennettuja hetkiä"
+    },
+    "toastTrackerImportError": {
+        "message": "Virhe tuottaessa seurantatietoja!"
+    },
+    "toastRadioPlayError": {
+        "message": "Radiota ei voi käynnistää juuri nyt."
+    },
+    "trackerTitle": {
+        "message": "Ajan seuranta"
+    },
+    "offscreenJustification": {
+        "message": "Radion suoratoisto ja järjestelmääänet"
+    },
+    "trackerThisMonth": {
+        "message": "Tämä kuukausi"
+    },
+    "linesLabel": {
+        "message": "Rivejä"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Evästeet estetty tälle sivustolle"
+    },
+    "toastTrackerError": {
+        "message": "Virhe päivitettäessä tietoja"
+    },
+    "trackerExportEmpty": {
+        "message": "Ei vietäviä seurantatietoja."
+    },
+    "techCatComm": {
+        "message": "Viestintä"
+    },
+    "deleteBtn": {
+        "message": "POISTA"
+    },
+    "techCatTech": {
+        "message": "Teknologiat"
+    },
+    "notesSaved": {
+        "message": "Tallennettu"
+    },
+    "toastNotesExported": {
+        "message": "Muistiinpanot vietiin onnistuneesti!"
+    },
+    "swMomentLabel": {
+        "message": "Hetki "
+    },
+    "notesModalTitle": {
+        "message": "ÄLYKKÄÄT MUISTIINPANOT"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Keskiarvo"
+    },
+    "versionLabel": {
+        "message": "Versio:"
+    },
+    "importNotesTooltip": {
+        "message": "Tuo muistiinpanot"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Valotila käytössä"
+    },
+    "toastNotesCopied": {
+        "message": "Teksti kopioitu leikepöydälle!"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toast: Moderni ilmoitusjärjestelmä tärkeille toimille."
+    },
+    "fontNotCopied": {
+        "message": "Ei kopioitu"
+    },
+    "importTooltip": {
+        "message": "Tuo tiedot"
+    },
+    "wordsLabelShort": {
+        "message": "sanoja"
+    },
+    "techCatServer": {
+        "message": "Palvelin"
+    },
+    "cacheNotSupported": {
+        "message": "Ei tueta"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Ääni"
+    },
+    "cacheClearing": {
+        "message": "Tyhjennetään..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Tiedot päivitetty!"
+    },
+    "websiteBtn": {
+        "message": "Virallinen verkkosivusto"
+    },
+    "markerThicknessTooltip": {
+        "message": "Paksuus"
+    },
+    "confirmClearCounter": {
+        "message": "Haluatko varmasti tyhjentää kaiken?"
+    },
+    "techCatAds": {
+        "message": "Mainokset"
+    },
+    "uiSettings": {
+        "message": "ASETUKSET"
+    },
+    "trackerThatMonth": {
+        "message": "Se kuukausi"
+    },
+    "radioModalDesc": {
+        "message": "Syötä suosikkiradioasemasi suora linkki"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Haluatko varmasti poistaa tiedot kohteelle"
+    },
+    "darkModeTitle": {
+        "message": "Tumma tila"
+    },
+    "toastCounterCleared": {
+        "message": "Vastateksti on tyhjennetty!"
+    },
+    "techStatScripts": {
+        "message": "Skriptit"
+    },
+    "techNetworkOptInHint": {
+        "message": "Lähettää pyynnöt osoitteisiin dns.google ja ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Ei live-historiaa"
+    },
+    "whatsNewTitle": {
+        "message": "Mitä uutta versiossa 1.6"
+    },
+    "techNotFound": {
+        "message": "Ei löytynyt."
+    },
+    "notesPlaceholder": {
+        "message": "Kirjoita muistiinpanot tähän..."
+    },
+    "radioArtist": {
+        "message": "All In One tarjoaa"
+    },
+    "charsLabel": {
+        "message": "Merkkiä"
+    },
+    "trackerImportSuccess": {
+        "message": "Tietojen tuonti onnistui!"
+    },
+    "copyEnableTitle": {
+        "message": "Kopioi"
+    },
+    "techCatStats": {
+        "message": "Tilastot"
+    },
+    "dateLabel": {
+        "message": "Päivämäärä"
+    },
+    "techCatNetwork": {
+        "message": "Verkko"
+    },
+    "techCatEcom": {
+        "message": "Sähköinen kaupankäynti"
+    },
+    "currentRecordedLabel": {
+        "message": "TALLENNETTU NYT"
+    },
+    "toastCookieOff": {
+        "message": "Automaattinen evästeiden esto on poistettu käytöstä"
+    },
+    "toastModuleLoadError": {
+        "message": "Virhe ladattaessa moduulia"
+    },
+    "techCatStyles": {
+        "message": "Tyylit"
+    },
+    "extDesc": {
+        "message": "Ultimaattinen työkalu, joka yhdistää kaikki olennaiset toiminnot nopeaan, nykyaikaiseen ja ilmaiseen käyttöliittymään."
+    },
+    "resetBtn": {
+        "message": "Nollaa"
+    },
+    "addDateTooltip": {
+        "message": "Lisää tämän päivän päivämäärä"
+    },
+    "supportTitle": {
+        "message": "Tue laajennusta"
+    },
+    "toastCounterCopied": {
+        "message": "Teksti kopioitu leikepöydälle!"
+    },
+    "savedIndicator": {
+        "message": "Tallennettu"
+    },
+    "counterPlaceholder": {
+        "message": "Liitä teksti tähän..."
+    },
+    "techFoundPrefix": {
+        "message": "Löydetty: "
+    },
+    "systemPageTitle": {
+        "message": "JÄRJESTELMÄSIVU"
+    },
+    "markerClearAllTooltip": {
+        "message": "Tyhjennä kaikki"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Poista analytiikka käytöstä"
+    },
+    "trackerModeDay": {
+        "message": "Päivänäkymä"
+    },
+    "techItemsSuffix": {
+        "message": "kohdetta"
+    },
+    "toastStopwatchCleared": {
+        "message": "Livehistoria on tyhjennetty!"
+    },
+    "trackerTotal": {
+        "message": "Yhteensä"
+    },
+    "swStatusReady": {
+        "message": "VALMIS"
+    },
+    "trackerTotalShort": {
+        "message": "Yhteensä"
+    },
+    "blockCookiesLabel": {
+        "message": "Estä evästeet"
+    },
+    "markerDrawTooltip": {
+        "message": "Piirrä"
+    },
+    "trackerMonthLabel": {
+        "message": "Tämä kuukausi"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Taulukot"
+    },
+    "techStatImages": {
+        "message": "Kuvat"
+    },
+    "toastRadioSaved": {
+        "message": "Radioaseman URL-osoite tallennettu!"
+    },
+    "trackerToday": {
+        "message": "Tänään"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Sanaa"
+    },
+    "clearAllBtn": {
+        "message": "TYHJENNÄ KAIKKI"
+    },
+    "toastCopyOn": {
+        "message": "Kopiointi on käytössä tällä sivustolla"
+    },
+    "clearSiteDataBtn": {
+        "message": "Tyhjennä sivusto"
+    },
+    "colorPickerPicking": {
+        "message": "Valitaan..."
+    },
+    "cacheClearConfirm": {
+        "message": "Tyhjennä kaikki tiedot tältä sivustolta"
+    },
+    "markerTextTooltip": {
+        "message": "Teksti"
+    },
+    "radioTitle": {
+        "message": "Radio"
+    },
+    "trackerSelectedMonth": {
+        "message": "Valittu kuukausi"
+    },
+    "toastCopyOff": {
+        "message": "Kopiointi pois käytöstä"
+    },
+    "fontCopied": {
+        "message": "Kopioitu!"
+    },
+    "notesLinkText": {
+        "message": "Linkki"
+    },
+    "radioClearConfirm": {
+        "message": "Poistetaanko tallennettu radioasema?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Keskiarvo"
+    },
+    "techTitle": {
+        "message": "Teknologiat"
+    },
+    "lapBtn": {
+        "message": "KIERROS"
+    },
+    "playBtn": {
+        "message": "Toista"
+    },
+    "toastDarkModeOn": {
+        "message": "Tumma tila käytössä"
+    },
+    "techCatPayment": {
+        "message": "Maksu"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Evästeet sallittu tälle sivustolle"
+    },
+    "markerLineTooltip": {
+        "message": "Viiva"
+    },
+    "techStatIframes": {
+        "message": "Iframes"
+    },
+    "counterModalTitle": {
+        "message": "MERKKILASKURI"
+    },
+    "fontTitle": {
+        "message": "Fontit"
+    },
+    "toastTrackerExported": {
+        "message": "Seurantatietojen vienti onnistui!"
+    },
+    "toastNotesImportError": {
+        "message": "Virhe muistiinpanojen tuonnissa!"
+    },
+    "swExportTxtBtn": {
+        "message": "VIE .TXT-MUODOSSA"
+    },
+    "swUndoTitle": {
+        "message": "Poista tämä hetki"
+    },
+    "startBtn": {
+        "message": "ALOITA"
+    },
+    "markerMoveTooltip": {
+        "message": "Siirrä"
+    },
+    "techModalTitle": {
+        "message": "SIVUSTON TEKNOLOGIAT"
+    },
+    "saveRadioStationBtn": {
+        "message": "TALLASEMA"
+    },
+    "techCatDb": {
+        "message": "Tietokanta"
+    },
+    "toastNotesCleared": {
+        "message": "Kaikki muistiinpanot on tyhjennetty!"
+    },
+    "toastTrackerImported": {
+        "message": "Seurantatietojen tuonti onnistui!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Virheellinen URL-osoite! URL-osoitteen alussa on oltava http:// tai https://"
+    },
+    "trackerImportError": {
+        "message": "Virhe tiedoston lukemisessa."
+    },
+    "swStatusLive": {
+        "message": "LIVE KÄYNNISSÄ"
+    },
+    "linkLabel": {
+        "message": "Linkki"
+    },
+    "techCatAnalytics": {
+        "message": "Analytiikka"
+    },
+    "liveHistoryLabel": {
+        "message": "LIVE-HISTORIA"
+    },
+    "colorPickerTitle": {
+        "message": "Värit"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "KOKONAISKESTO: "
+    },
+    "stopwatchReady": {
+        "message": "VALMIS"
+    },
+    "confirmClearHistory": {
+        "message": "Haluatko varmasti tyhjentää koko historian?"
+    },
+    "markerTitle": {
+        "message": "Merkki"
+    },
+    "trackerModalTitle": {
+        "message": "Ajan seuranta"
+    },
+    "grabTextTooltip": {
+        "message": "Pura teksti sivulta"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Tyhjennä kenttä"
+    },
+    "privacyLabel": {
+        "message": "Tietosuojakäytäntö"
+    },
+    "whatsNewFeature4": {
+        "message": "Vaihda palautetta: Lyhyet pulssianimaatiot ja vahvistukset asetuksia muuttaessa."
+    },
+    "trackerThatDay": {
+        "message": "Se päivä"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Listaa ei voitu päivittää"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Salli evästeet tälle sivustolle"
+    },
+    "textLabel": {
+        "message": "Teksti"
+    },
+    "cacheCleared": {
+        "message": "Tyhjennetty!"
+    },
+    "importRadioTooltip": {
+        "message": "Tuo mukautettu radioasema"
+    },
+    "radioPlay": {
+        "message": "Toista"
+    },
+    "techLoadingMsg": {
+        "message": "Skanneri analysoi sivustoa..."
+    },
+    "swCopyBtn": {
+        "message": "KOPIOI LEIKEPÖYDÄLLE"
+    },
+    "techScannerFailed": {
+        "message": "Skannaus epäonnistui tällä sivulla."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Näytä verkkotiedot (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Tänään"
+    },
+    "toastNotesImported": {
+        "message": "Muistiinpanot on tuotu onnistuneesti!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Kopioitu: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ KOPIOITU"
+    },
+    "techCatCaching": {
+        "message": "Välimuisti"
+    },
+    "techCatSecurity": {
+        "message": "Turvallisuus"
+    },
+    "toastYtOn": {
+        "message": "YouTuben En tykkää -näyttö käytössä"
+    },
+    "extName": {
+        "message": "All In One - Paras tuottavuustyökalu"
+    },
+    "toastCookieOn": {
+        "message": "Automaattinen evästeiden esto on käytössä"
+    },
+    "techScannerUnavailable": {
+        "message": "Skanneri ei ole käytettävissä tällä sivulla."
+    },
+    "notesTooLarge": {
+        "message": "Muistiinpano on liian suuri"
+    },
+    "swDurationLabel": {
+        "message": "Kesto: "
+    },
+    "ytDislikeTitle": {
+        "message": "YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Lahjoita ja tue"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Asetukset"
+    },
+    "trackerThisMonthShort": {
+        "message": "Tämä kuukausi"
+    },
+    "techCatSystem": {
+        "message": "Järjestelmä"
+    },
+    "exportTooltip": {
+        "message": "Vie tiedot"
+    },
+    "exportNotesTooltip": {
+        "message": "Vie muistiinpanot"
+    },
+    "radioPause": {
+        "message": "Tauko"
+    },
+    "websiteTooltip": {
+        "message": "Virallinen sivusto"
+    },
+    "rateBtn": {
+        "message": "Arvostele laajennus"
+    },
+    "techCatBase": {
+        "message": "Perusta"
+    },
+    "cacheModalTitle": {
+        "message": "EVÄSTEET/VÄLIMUISTI"
+    },
+    "cancelBtn": {
+        "message": "PERUUTA"
+    },
+    "addUrlTooltip": {
+        "message": "Lisää nykyinen URL-osoite"
+    },
+    "trackerAvgTotal": {
+        "message": "Keskiarvo"
+    },
+    "techStatForms": {
+        "message": "Lomakkeet"
+    },
+    "cacheError": {
+        "message": "Virhe"
+    }
 }

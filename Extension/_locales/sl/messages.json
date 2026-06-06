@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Pametni zapiski"
-                   },
-    "supportDesc":  {
-                        "message":  "All In One je popolnoma brezplačno orodje. Vaša podpora pomaga ohraniti to stanje in omogoča razvoj novih funkcij."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Izbriši"
-                           },
-    "counterTitle":  {
-                         "message":  "Števec znakov"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Povprečje"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Mesečni prikaz"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Ves čas"
-                       },
-    "techCatMedia":  {
-                         "message":  "Mediji"
-                     },
-    "trackerNoData":  {
-                          "message":  "Ni podatkov za to obdobje"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "V živo #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Ste prepričani, da želite izbrisati vse zapiske?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Orodja"
-                     },
-    "soundTitle":  {
-                       "message":  "Zvok"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "Počisti vse"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Zapri"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Štoparica"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "Počisti vse zapiske"
-                          },
-    "rulerTitle":  {
-                       "message":  "Ravnilo strani"
-                   },
-    "markLapDesc":  {
-                        "message":  "Zabeleži trenutek na štoparici"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "Orodja za spreminjanje so onemogočena"
-                       },
-    "techStatLinks":  {
-                          "message":  "Povezave"
-                      },
-    "stopBtn":  {
-                    "message":  "USTAVI"
-                },
-    "swNoLaps":  {
-                     "message":  "Ni zabeleženih trenutkov"
-                 },
-    "trackerTitle":  {
-                         "message":  "Sledilnik časa"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "Ta mesec"
-                         },
-    "linesLabel":  {
-                       "message":  "Vrstice"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "Komunikacija"
-                    },
-    "deleteBtn":  {
-                      "message":  "IZBRIŠI"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Shranjeno"
-                   },
-    "lapBtn":  {
-                   "message":  "KROG"
-               },
-    "notesModalTitle":  {
-                            "message":  "PAMETNI ZAPISKI"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Povprečje"
-                            },
-    "versionLabel":  {
-                         "message":  "Različica:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "Uvozi zapiske"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Ni kopirano"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Tehnologije"
-                    },
-    "techCatServer":  {
-                          "message":  "Strežnik"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Ni podprto"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Zvok"
-                      },
-    "cacheClearing":  {
-                          "message":  "Brisanje..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Radio"
-                         },
-    "websiteBtn":  {
-                       "message":  "Uradna spletna stran"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Debelina"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Ali ste prepričani, da želite počistiti vse?"
-                            },
-    "techCatAds":  {
-                       "message":  "Oglasi"
-                   },
-    "uiSettings":  {
-                       "message":  "NASTAVITVE"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "Tisti mesec"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Vnesite neposredno povezavo do priljubljene radijske postaje"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Ali ste prepričani, da želite izbrisati podatke za"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Temni način"
-                      },
-    "techStatScripts":  {
-                            "message":  "Skripti"
-                        },
-    "swNoHistory":  {
-                        "message":  "Ni zgodovine v živo"
-                    },
-    "techNotFound":  {
-                         "message":  "Ni najdeno."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Tukaj pišite zapiske..."
-                         },
-    "radioArtist":  {
-                        "message":  "Poganja razširitev All In One"
-                    },
-    "charsLabel":  {
-                       "message":  "Znakov"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Kopiranje"
-                        },
-    "techCatStats":  {
-                         "message":  "Statistika"
-                     },
-    "dateLabel":  {
-                      "message":  "Datum"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Omrežje"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Commerce"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "TRENUTNO ZABELEŽENO"
-                             },
-    "techCatStyles":  {
-                          "message":  "Slogi"
-                      },
-    "extDesc":  {
-                    "message":  "Vrhunsko orodje, ki združuje vse bistvene funkcije v enem hitrem, modernem in brezplačnem vmesniku."
-                },
-    "resetBtn":  {
-                     "message":  "Ponastavi"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Dodaj današnji datum"
-                       },
-    "supportTitle":  {
-                         "message":  "Podprite razširitev"
-                     },
-    "savedIndicator":  {
-                           "message":  "Shranjeno"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "Prilepite besedilo tukaj..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Najdeno: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "SISTEMSKA STRAN"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "Počisti vse"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Dnevni prikaz"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "elementov"
-                        },
-    "trackerTotal":  {
-                         "message":  "Skupaj"
-                     },
-    "swStatusReady":  {
-                          "message":  "PRIPRAVLJENO"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Skupaj"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Samodejno blokiraj piškotke"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Risanje"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Ta mesec"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Tabele"
-                       },
-    "techStatImages":  {
-                           "message":  "Slike"
-                       },
-    "trackerToday":  {
-                         "message":  "Danes"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Besed"
-                   },
-    "clearAllBtn":  {
-                        "message":  "POČISTI VSE"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "Počisti vse podatke s tega mesta"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Izbiranje..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Počisti vse podatke s tega mesta"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Besedilo"
-                          },
-    "radioTitle":  {
-                       "message":  "Radio"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Izbrani mesec"
-                             },
-    "fontCopied":  {
-                       "message":  "Kopirano!"
-                   },
-    "notesLinkText":  {
-                          "message":  "Povezava"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Povprečje"
-                            },
-    "techTitle":  {
-                      "message":  "Tehnologije"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Premakni"
-                          },
-    "playBtn":  {
-                    "message":  "Predvajaj"
-                },
-    "techCatPayment":  {
-                           "message":  "Plačilo"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Črta"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "ŠTEVEC ZNAKOV"
-                          },
-    "fontTitle":  {
-                      "message":  "Iskalnik pisav"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "IZVOZI KOT .TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Izbriši ta trenutek"
-                    },
-    "startBtn":  {
-                     "message":  "ZAČNI"
-                 },
-    "techModalTitle":  {
-                           "message":  "TEHNOLOGIJE SPLETNEGA MESTA"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "SHRANI POSTAJO"
-                            },
-    "techCatDb":  {
-                      "message":  "Baza podatkov"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "V ŽIVO POTEKA"
-                     },
-    "linkLabel":  {
-                      "message":  "Povezava"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Analitika"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "ZGODOVINA V ŽIVO"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Izbirnik barv"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "Trenutek "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "SKUPNO TRAJANJE: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "PRIPRAVLJENO"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Ta mesec"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Ste prepričani, da želite počistiti vso zgodovino?"
-                            },
-    "markerTitle":  {
-                        "message":  "Označevalec strani"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Sledilnik časa"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Izvleci besedilo s strani"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Počisti polje"
-                               },
-    "privacyLabel":  {
-                         "message":  "Politika zasebnosti"
-                     },
-    "trackerThatDay":  {
-                           "message":  "Tisti dan"
-                       },
-    "textLabel":  {
-                      "message":  "Besedilo"
-                  },
-    "cacheCleared":  {
-                         "message":  "Izbrisano!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Uvozi prilagojeno radijsko postajo"
-                           },
-    "radioPlay":  {
-                      "message":  "Play"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "Skener analizira spletno mesto..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "KOPIRAJ V ODLAGIŠČE"
-                  },
-    "techScannerFailed":  {
-                              "message":  "Skeniranje na tej strani ni uspelo."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "Danes"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Kopirano: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ KOPIRANO"
-                    },
-    "techCatCaching":  {
-                           "message":  "Caching"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Varnost"
-                        },
-    "extName":  {
-                    "message":  "All In One - Najboljše orodje za produktivnost"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "Skener ni na voljo na tej strani."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Zapisek je prevelik"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Trajanje: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "Vrni YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "Donirajte in podprite"
-                  },
-    "techStatVideo":  {
-                          "message":  "Video"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Nastavitve"
-                        },
-    "cacheTitle":  {
-                       "message":  "Piškotki"
-                   },
-    "techCatSystem":  {
-                          "message":  "Sistem"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "Izvozi zapiske"
-                           },
-    "radioPause":  {
-                       "message":  "Pause"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Uradna spletna stran razširitve"
-                       },
-    "rateBtn":  {
-                    "message":  "Ocenite razširitev"
-                },
-    "techCatBase":  {
-                        "message":  "Osnova"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "PIŠKOTKI IN PREDPOMNILNIK"
-                        },
-    "cancelBtn":  {
-                      "message":  "PREKLIČI"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "Dodaj trenutni URL"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Povprečje"
-                        },
-    "techStatForms":  {
-                          "message":  "Obrazci"
-                      },
-    "cacheError":  {
-                       "message":  "Napaka"
-                   }
+    "notesTitle": {
+        "message": "Pametni zapiski"
+    },
+    "whatsNewDesc": {
+        "message": "Oglejte si najnovejše izboljšave vmesnika, zaradi katerih je All In One še hitrejši in elegantnejši:"
+    },
+    "toastPermissionDenied": {
+        "message": "Dovoljenje ni izdano"
+    },
+    "clearCounterTooltip": {
+        "message": "Počisti vse"
+    },
+    "supportDesc": {
+        "message": "All In One je popolnoma brezplačno orodje. Vaša podpora pomaga ohraniti to stanje in omogoča razvoj novih funkcij."
+    },
+    "trackerExportTruncated": {
+        "message": "Izvoz je okrnjen na 10 MB, da ostane pojavno okno stabilno."
+    },
+    "whatsNewClose": {
+        "message": "RAZUMEM"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Izbriši"
+    },
+    "counterTitle": {
+        "message": "Števec znakov"
+    },
+    "trackerAvgLabel": {
+        "message": "Povprečje"
+    },
+    "trackerModeMonth": {
+        "message": "Mesečni prikaz"
+    },
+    "trackerModeAll": {
+        "message": "Ves čas"
+    },
+    "techCatMedia": {
+        "message": "Mediji"
+    },
+    "trackerNoData": {
+        "message": "Ni podatkov za to obdobje"
+    },
+    "whatsNewFeature3": {
+        "message": "Podpora za priljubljene ikone: priljubljene ikone spletnih mest na seznamu sledilcev."
+    },
+    "swLiveTitlePrefix": {
+        "message": "V živo #"
+    },
+    "confirmClearNotes": {
+        "message": "Ste prepričani, da želite izbrisati vse zapiske?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Vsi podatki s tega mesta so bili izbrisani!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Išči po spletnih mestih ..."
+    },
+    "techCatTools": {
+        "message": "Orodja"
+    },
+    "toastYtOff": {
+        "message": "Prikaz »Ni mi všeč« v YouTubu je onemogočen"
+    },
+    "soundTitle": {
+        "message": "Zvok"
+    },
+    "cacheTitle": {
+        "message": "Piškotki"
+    },
+    "markerCloseTooltip": {
+        "message": "Zapri"
+    },
+    "stopwatchTitle": {
+        "message": "Štoparica"
+    },
+    "clearNotesTooltip": {
+        "message": "Počisti vse zapiske"
+    },
+    "rulerTitle": {
+        "message": "Ravnilo strani"
+    },
+    "markLapDesc": {
+        "message": "Zabeleži trenutek na štoparici"
+    },
+    "trackerImportEmpty": {
+        "message": "Ni veljavnih podatkov sledilnika za uvoz."
+    },
+    "whatsNewFeature1": {
+        "message": "Gladki prehodi: gladke animacije diapozitivov med orodji."
+    },
+    "systemPageDesc": {
+        "message": "Orodja za spreminjanje so onemogočena"
+    },
+    "techStatLinks": {
+        "message": "Povezave"
+    },
+    "stopBtn": {
+        "message": "USTAVI"
+    },
+    "swNoLaps": {
+        "message": "Ni zabeleženih trenutkov"
+    },
+    "toastTrackerImportError": {
+        "message": "Napaka pri uvozu podatkov sledilnika!"
+    },
+    "toastRadioPlayError": {
+        "message": "Radia trenutno ni mogoče zagnati."
+    },
+    "trackerTitle": {
+        "message": "Sledilnik časa"
+    },
+    "offscreenJustification": {
+        "message": "Pretakanje radia in sistemski zvoki"
+    },
+    "trackerThisMonth": {
+        "message": "Ta mesec"
+    },
+    "linesLabel": {
+        "message": "Vrstice"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Piškotki so blokirani za to spletno mesto"
+    },
+    "toastTrackerError": {
+        "message": "Napaka pri osveževanju podatkov"
+    },
+    "trackerExportEmpty": {
+        "message": "Ni podatkov sledilnika za izvoz."
+    },
+    "techCatComm": {
+        "message": "Komunikacija"
+    },
+    "deleteBtn": {
+        "message": "IZBRIŠI"
+    },
+    "techCatTech": {
+        "message": "Tehnologije"
+    },
+    "notesSaved": {
+        "message": "Shranjeno"
+    },
+    "toastNotesExported": {
+        "message": "Opombe uspešno izvožene!"
+    },
+    "swMomentLabel": {
+        "message": "Trenutek "
+    },
+    "notesModalTitle": {
+        "message": "PAMETNI ZAPISKI"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Povprečje"
+    },
+    "versionLabel": {
+        "message": "Različica:"
+    },
+    "importNotesTooltip": {
+        "message": "Uvozi zapiske"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Svetlobni način je omogočen"
+    },
+    "toastNotesCopied": {
+        "message": "Besedilo kopirano v odložišče!"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toasts: Sodoben sistem obveščanja o pomembnih dejanjih."
+    },
+    "fontNotCopied": {
+        "message": "Ni kopirano"
+    },
+    "importTooltip": {
+        "message": "Uvoz podatkov"
+    },
+    "wordsLabelShort": {
+        "message": "besede"
+    },
+    "techCatServer": {
+        "message": "Strežnik"
+    },
+    "cacheNotSupported": {
+        "message": "Ni podprto"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Zvok"
+    },
+    "cacheClearing": {
+        "message": "Brisanje..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Podatki osveženi!"
+    },
+    "websiteBtn": {
+        "message": "Uradna spletna stran"
+    },
+    "markerThicknessTooltip": {
+        "message": "Debelina"
+    },
+    "confirmClearCounter": {
+        "message": "Ali ste prepričani, da želite počistiti vse?"
+    },
+    "techCatAds": {
+        "message": "Oglasi"
+    },
+    "uiSettings": {
+        "message": "NASTAVITVE"
+    },
+    "trackerThatMonth": {
+        "message": "Tisti mesec"
+    },
+    "radioModalDesc": {
+        "message": "Vnesite neposredno povezavo do priljubljene radijske postaje"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Ali ste prepričani, da želite izbrisati podatke za"
+    },
+    "darkModeTitle": {
+        "message": "Temni način"
+    },
+    "toastCounterCleared": {
+        "message": "Besedilo števca je bilo izbrisano!"
+    },
+    "techStatScripts": {
+        "message": "Skripti"
+    },
+    "techNetworkOptInHint": {
+        "message": "Pošilja zahteve dns.google in ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Ni zgodovine v živo"
+    },
+    "whatsNewTitle": {
+        "message": "Kaj je novega v različici 1.6"
+    },
+    "techNotFound": {
+        "message": "Ni najdeno."
+    },
+    "notesPlaceholder": {
+        "message": "Tukaj pišite zapiske..."
+    },
+    "radioArtist": {
+        "message": "Poganja razširitev All In One"
+    },
+    "charsLabel": {
+        "message": "Znakov"
+    },
+    "trackerImportSuccess": {
+        "message": "Podatki uspešno uvoženi!"
+    },
+    "copyEnableTitle": {
+        "message": "Kopiranje"
+    },
+    "techCatStats": {
+        "message": "Statistika"
+    },
+    "dateLabel": {
+        "message": "Datum"
+    },
+    "techCatNetwork": {
+        "message": "Omrežje"
+    },
+    "techCatEcom": {
+        "message": "E-trgovina"
+    },
+    "currentRecordedLabel": {
+        "message": "TRENUTNO ZABELEŽENO"
+    },
+    "toastCookieOff": {
+        "message": "Samodejno blokiranje piškotkov je onemogočeno"
+    },
+    "toastModuleLoadError": {
+        "message": "Napaka pri nalaganju modula"
+    },
+    "techCatStyles": {
+        "message": "Slogi"
+    },
+    "extDesc": {
+        "message": "Vrhunsko orodje, ki združuje vse bistvene funkcije v enem hitrem, modernem in brezplačnem vmesniku."
+    },
+    "resetBtn": {
+        "message": "Ponastavi"
+    },
+    "addDateTooltip": {
+        "message": "Dodaj današnji datum"
+    },
+    "supportTitle": {
+        "message": "Podprite razširitev"
+    },
+    "toastCounterCopied": {
+        "message": "Besedilo kopirano v odložišče!"
+    },
+    "savedIndicator": {
+        "message": "Shranjeno"
+    },
+    "counterPlaceholder": {
+        "message": "Prilepite besedilo tukaj..."
+    },
+    "techFoundPrefix": {
+        "message": "Najdeno: "
+    },
+    "systemPageTitle": {
+        "message": "SISTEMSKA STRAN"
+    },
+    "markerClearAllTooltip": {
+        "message": "Počisti vse"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Onemogoči analitiko"
+    },
+    "trackerModeDay": {
+        "message": "Dnevni prikaz"
+    },
+    "techItemsSuffix": {
+        "message": "elementov"
+    },
+    "toastStopwatchCleared": {
+        "message": "Zgodovina v živo je bila izbrisana!"
+    },
+    "trackerTotal": {
+        "message": "Skupaj"
+    },
+    "swStatusReady": {
+        "message": "PRIPRAVLJENO"
+    },
+    "trackerTotalShort": {
+        "message": "Skupaj"
+    },
+    "blockCookiesLabel": {
+        "message": "Samodejno blokiraj piškotke"
+    },
+    "markerDrawTooltip": {
+        "message": "Risanje"
+    },
+    "trackerMonthLabel": {
+        "message": "Ta mesec"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Tabele"
+    },
+    "techStatImages": {
+        "message": "Slike"
+    },
+    "toastRadioSaved": {
+        "message": "URL radijske postaje shranjen!"
+    },
+    "trackerToday": {
+        "message": "Danes"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Besed"
+    },
+    "clearAllBtn": {
+        "message": "POČISTI VSE"
+    },
+    "toastCopyOn": {
+        "message": "Kopiranje je omogočeno za to spletno mesto"
+    },
+    "clearSiteDataBtn": {
+        "message": "Počisti vse podatke s tega mesta"
+    },
+    "colorPickerPicking": {
+        "message": "Izbiranje..."
+    },
+    "cacheClearConfirm": {
+        "message": "Počisti vse podatke s tega mesta"
+    },
+    "markerTextTooltip": {
+        "message": "Besedilo"
+    },
+    "radioTitle": {
+        "message": "Radio"
+    },
+    "trackerSelectedMonth": {
+        "message": "Izbrani mesec"
+    },
+    "toastCopyOff": {
+        "message": "Kopiranje onemogočeno"
+    },
+    "fontCopied": {
+        "message": "Kopirano!"
+    },
+    "notesLinkText": {
+        "message": "Povezava"
+    },
+    "radioClearConfirm": {
+        "message": "Želite izbrisati shranjeno radijsko postajo?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Povprečje"
+    },
+    "techTitle": {
+        "message": "Tehnologije"
+    },
+    "lapBtn": {
+        "message": "KROG"
+    },
+    "playBtn": {
+        "message": "Predvajaj"
+    },
+    "toastDarkModeOn": {
+        "message": "Temni način je omogočen"
+    },
+    "techCatPayment": {
+        "message": "Plačilo"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Piškotki so dovoljeni za to spletno mesto"
+    },
+    "markerLineTooltip": {
+        "message": "Črta"
+    },
+    "techStatIframes": {
+        "message": "iframes"
+    },
+    "counterModalTitle": {
+        "message": "ŠTEVEC ZNAKOV"
+    },
+    "fontTitle": {
+        "message": "Iskalnik pisav"
+    },
+    "toastTrackerExported": {
+        "message": "Podatki sledilnika uspešno izvoženi!"
+    },
+    "toastNotesImportError": {
+        "message": "Napaka pri uvozu zapiskov!"
+    },
+    "swExportTxtBtn": {
+        "message": "IZVOZI KOT .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Izbriši ta trenutek"
+    },
+    "startBtn": {
+        "message": "ZAČNI"
+    },
+    "markerMoveTooltip": {
+        "message": "Premakni"
+    },
+    "techModalTitle": {
+        "message": "TEHNOLOGIJE SPLETNEGA MESTA"
+    },
+    "saveRadioStationBtn": {
+        "message": "SHRANI POSTAJO"
+    },
+    "techCatDb": {
+        "message": "Baza podatkov"
+    },
+    "toastNotesCleared": {
+        "message": "Vse opombe so počiščene!"
+    },
+    "toastTrackerImported": {
+        "message": "Podatki sledilnika so uspešno uvoženi!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Neveljaven URL! URL se mora začeti s http:// ali https://"
+    },
+    "trackerImportError": {
+        "message": "Napaka pri branju datoteke."
+    },
+    "swStatusLive": {
+        "message": "V ŽIVO POTEKA"
+    },
+    "linkLabel": {
+        "message": "Povezava"
+    },
+    "techCatAnalytics": {
+        "message": "Analitika"
+    },
+    "liveHistoryLabel": {
+        "message": "ZGODOVINA V ŽIVO"
+    },
+    "colorPickerTitle": {
+        "message": "Izbirnik barv"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "SKUPNO TRAJANJE: "
+    },
+    "stopwatchReady": {
+        "message": "PRIPRAVLJENO"
+    },
+    "confirmClearHistory": {
+        "message": "Ste prepričani, da želite počistiti vso zgodovino?"
+    },
+    "markerTitle": {
+        "message": "Označevalec strani"
+    },
+    "trackerModalTitle": {
+        "message": "Sledilnik časa"
+    },
+    "grabTextTooltip": {
+        "message": "Izvleci besedilo s strani"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Počisti polje"
+    },
+    "privacyLabel": {
+        "message": "Politika zasebnosti"
+    },
+    "whatsNewFeature4": {
+        "message": "Toggle Feedback: kratke animacije in potrditve ob spreminjanju nastavitev."
+    },
+    "trackerThatDay": {
+        "message": "Tisti dan"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Seznama ni bilo mogoče posodobiti"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Dovoli piškotke za to stran"
+    },
+    "textLabel": {
+        "message": "Besedilo"
+    },
+    "cacheCleared": {
+        "message": "Izbrisano!"
+    },
+    "importRadioTooltip": {
+        "message": "Uvozi prilagojeno radijsko postajo"
+    },
+    "radioPlay": {
+        "message": "Play"
+    },
+    "techLoadingMsg": {
+        "message": "Skener analizira spletno mesto..."
+    },
+    "swCopyBtn": {
+        "message": "KOPIRAJ V ODLAGIŠČE"
+    },
+    "techScannerFailed": {
+        "message": "Skeniranje na tej strani ni uspelo."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Pokaži informacije o omrežju (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Danes"
+    },
+    "toastNotesImported": {
+        "message": "Opombe uspešno uvožene!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Kopirano: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ KOPIRANO"
+    },
+    "techCatCaching": {
+        "message": "Predpomnjenje"
+    },
+    "techCatSecurity": {
+        "message": "Varnost"
+    },
+    "toastYtOn": {
+        "message": "YouTubov prikaz Ni mi všeč je omogočen"
+    },
+    "extName": {
+        "message": "All In One - Najboljše orodje za produktivnost"
+    },
+    "toastCookieOn": {
+        "message": "Omogočeno je samodejno blokiranje piškotkov"
+    },
+    "techScannerUnavailable": {
+        "message": "Skener ni na voljo na tej strani."
+    },
+    "notesTooLarge": {
+        "message": "Zapisek je prevelik"
+    },
+    "swDurationLabel": {
+        "message": "Trajanje: "
+    },
+    "ytDislikeTitle": {
+        "message": "Vrni YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Donirajte in podprite"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Nastavitve"
+    },
+    "trackerThisMonthShort": {
+        "message": "Ta mesec"
+    },
+    "techCatSystem": {
+        "message": "Sistem"
+    },
+    "exportTooltip": {
+        "message": "Izvoz podatkov"
+    },
+    "exportNotesTooltip": {
+        "message": "Izvozi zapiske"
+    },
+    "radioPause": {
+        "message": "Pause"
+    },
+    "websiteTooltip": {
+        "message": "Uradna spletna stran razširitve"
+    },
+    "rateBtn": {
+        "message": "Ocenite razširitev"
+    },
+    "techCatBase": {
+        "message": "Osnova"
+    },
+    "cacheModalTitle": {
+        "message": "PIŠKOTKI IN PREDPOMNILNIK"
+    },
+    "cancelBtn": {
+        "message": "PREKLIČI"
+    },
+    "addUrlTooltip": {
+        "message": "Dodaj trenutni URL"
+    },
+    "trackerAvgTotal": {
+        "message": "Povprečje"
+    },
+    "techStatForms": {
+        "message": "Obrazci"
+    },
+    "cacheError": {
+        "message": "Napaka"
+    }
 }

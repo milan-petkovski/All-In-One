@@ -25,9 +25,9 @@ test('critical entry files are wired in the popup and offscreen pages', async ()
   const popup = await readFile(path.join(root, 'popup.html'), 'utf8');
   const offscreen = await readFile(path.join(root, 'offscreen.html'), 'utf8');
 
-  assert.match(popup, /<link rel="preload" href="style\.css" as="style">/);
-  assert.match(popup, /<script type="module" src="popup\.js"><\/script>/);
-  assert.match(offscreen, /<script src="offscreen\.js"><\/script>/);
+  assert.match(popup, /<link rel="preload" href="css\/style\.css" as="style">/);
+  assert.match(popup, /<script type="module" src="js\/popup\.js"><\/script>/);
+  assert.match(offscreen, /<script src="js\/offscreen\.js"><\/script>/);
 });
 
 test('locale bundles parse and expose required base strings', async () => {

@@ -53,9 +53,32 @@ export class MockClassList {
   }
 }
 
+export class MockTextNode {
+  constructor(text = "", documentRef = null) {
+    this.ownerDocument = documentRef;
+    this.nodeType = 3;
+    this.textContent = String(text);
+    this.parentNode = null;
+    this.children = [];
+  }
+  get nodeValue() {
+    return this.textContent;
+  }
+  set nodeValue(value) {
+    this.textContent = String(value);
+  }
+  get innerText() {
+    return this.textContent;
+  }
+  set innerText(value) {
+    this.textContent = String(value);
+  }
+}
+
 export class MockElement {
   constructor(tagName = "div", documentRef = null) {
     this.ownerDocument = documentRef;
+    this.nodeType = 1;
     this.tagName = String(tagName).toUpperCase();
     this.children = [];
     this.parentNode = null;
@@ -64,13 +87,13 @@ export class MockElement {
     this.dataset = {};
     this.style = {};
     this.listeners = new Map();
-    this.textContent = "";
+    this._textContent = "";
     this._innerHTML = "";
     this._className = "";
     this.value = "";
     this.title = "";
     this.placeholder = "";
-    this.innerText = "";
+    this._innerText = "";
     this.isContentEditable = false;
     this.focused = false;
     this.removed = false;
@@ -96,19 +119,72 @@ export class MockElement {
   }
 
   get innerHTML() {
-    return this._innerHTML;
+    if (this.children.length > 0) {
+      return this.children.map(child => {
+        if (child.nodeType === 3) {
+          return child.textContent;
+        }
+        const attrs = Array.from(child.attributes.entries())
+          .map(([k, v]) => ` ${k}="${v}"`)
+          .join('');
+        return `<${child.tagName.toLowerCase()}${attrs}>${child.innerHTML}</${child.tagName.toLowerCase()}>`;
+      }).join('');
+    }
+    return this._innerHTML || this._textContent || "";
   }
 
   set innerHTML(value) {
     this._innerHTML = String(value);
+    this.children = [];
+    this._textContent = "";
+    this._innerText = "";
+    if (value) {
+      const parser = new globalThis.DOMParser();
+      const doc = parser.parseFromString(String(value), "text/html");
+      const parsedChildren = [...doc.body.children];
+      parsedChildren.forEach(child => this.appendChild(child));
+    }
+  }
+
+  get textContent() {
+    return this._textContent || "";
+  }
+
+  set textContent(value) {
+    this._textContent = String(value);
+    this._innerHTML = "";
+    this.children = [];
+    this._innerText = String(value);
+    if (value) {
+      const textNode = this.ownerDocument ? this.ownerDocument.createTextNode(String(value)) : new MockTextNode(String(value));
+      textNode.parentNode = this;
+      this.children.push(textNode);
+    }
   }
 
   get innerText() {
-    return this.textContent;
+    return this._innerText || this._textContent || "";
   }
 
   set innerText(value) {
-    this.textContent = String(value);
+    this._innerText = String(value);
+    this._textContent = String(value);
+    this._innerHTML = "";
+    this.children = [];
+    if (value) {
+      const textNode = this.ownerDocument ? this.ownerDocument.createTextNode(String(value)) : new MockTextNode(String(value));
+      textNode.parentNode = this;
+      this.children.push(textNode);
+    }
+  }
+
+  contains(other) {
+    let current = other;
+    while (current) {
+      if (current === this) return true;
+      current = current.parentNode;
+    }
+    return false;
   }
 
   setAttribute(name, value) {
@@ -151,8 +227,69 @@ export class MockElement {
     }
   }
 
+  get childNodes() {
+    return this.children;
+  }
+
+  get firstChild() {
+    return this.children[0] || null;
+  }
+
+  get lastChild() {
+    return this.children[this.children.length - 1] || null;
+  }
+
+  removeChild(child) {
+    const idx = this.children.indexOf(child);
+    if (idx >= 0) {
+      this.children.splice(idx, 1);
+      child.parentNode = null;
+    }
+    return child;
+  }
+
+  replaceChild(newChild, oldChild) {
+    const idx = this.children.indexOf(oldChild);
+    if (idx >= 0) {
+      if (newChild.nodeType === 11) {
+        const fragmentChildren = [...newChild.children];
+        this.children.splice(idx, 1);
+        oldChild.parentNode = null;
+        fragmentChildren.forEach(child => {
+          if (child.parentNode) {
+            child.parentNode.removeChild(child);
+          }
+          child.parentNode = this;
+        });
+        this.children.splice(idx, 0, ...fragmentChildren);
+        if (this.ownerDocument) {
+          fragmentChildren.forEach(child => this.ownerDocument._registerTree(child));
+        }
+      } else {
+        if (newChild.parentNode) {
+          newChild.parentNode.removeChild(newChild);
+        }
+        this.children[idx] = newChild;
+        newChild.parentNode = this;
+        oldChild.parentNode = null;
+        if (this.ownerDocument) {
+          this.ownerDocument._registerTree(newChild);
+        }
+      }
+    }
+    return oldChild;
+  }
+
   appendChild(child) {
     assert.ok(child, "appendChild expects a child node");
+    if (child.nodeType === 11) {
+      const fragmentChildren = [...child.children];
+      fragmentChildren.forEach(c => this.appendChild(c));
+      return child;
+    }
+    if (child.parentNode) {
+      child.parentNode.removeChild(child);
+    }
     child.parentNode = this;
     this.children.push(child);
     if (this.ownerDocument) {
@@ -225,6 +362,19 @@ class MockDocument {
     return element;
   }
 
+  createTextNode(text) {
+    const node = new MockTextNode(text, this);
+    this._register(node);
+    return node;
+  }
+
+  createDocumentFragment() {
+    const frag = this.createElement('div');
+    frag.nodeType = 11;
+    frag.tagName = '#document-fragment';
+    return frag;
+  }
+
   getElementById(id) {
     return this._byId.get(String(id)) || null;
   }
@@ -288,7 +438,9 @@ class MockDocument {
 
   _registerTree(element) {
     this._register(element);
-    element.children.forEach((child) => this._registerTree(child));
+    if (element.children) {
+      element.children.forEach((child) => this._registerTree(child));
+    }
   }
 
   _isDescendantOf(element, root) {
@@ -334,6 +486,7 @@ class MockDocument {
   }
 
   _matchesSelector(element, selector) {
+    if (!element || element.nodeType !== 1) return false;
     const trimmed = selector.trim();
     if (!trimmed) return false;
 
@@ -440,6 +593,111 @@ function normalizeStorageKeys(keys, storageState) {
   return {};
 }
 
+class DOMParserMock {
+  parseFromString(html, type) {
+    const doc = new MockDocument();
+    const root = doc.createElement('div');
+    const tagRegex = /(<[^>]+>|[^<]+)/g;
+    const stack = [root];
+    let match;
+    while ((match = tagRegex.exec(html))) {
+      const token = match[0];
+      if (token.startsWith('</')) {
+        if (stack.length > 1) stack.pop();
+      } else if (token.startsWith('<')) {
+        const tagMatch = token.match(/<([a-zA-Z1-6]+)/);
+        if (tagMatch) {
+          const tagName = tagMatch[1];
+          const el = doc.createElement(tagName);
+          const hrefMatch = token.match(/href="([^"]+)"/) || token.match(/href='([^']+)'/);
+          if (hrefMatch) el.setAttribute('href', hrefMatch[1]);
+          const styleMatch = token.match(/style="([^"]+)"/) || token.match(/style='([^']+)'/);
+          if (styleMatch) el.setAttribute('style', styleMatch[1]);
+          
+          stack[stack.length - 1].appendChild(el);
+          if (!token.endsWith('/>') && !['br', 'img', 'hr'].includes(tagName.toLowerCase())) {
+            stack.push(el);
+          }
+        }
+      } else {
+        const textNode = doc.createTextNode(token);
+        stack[stack.length - 1].appendChild(textNode);
+      }
+    }
+    [...root.children].forEach(child => {
+      doc.body.appendChild(child);
+    });
+    return doc;
+  }
+}
+
+class MockRange {
+  constructor() {
+    this.commonAncestorContainer = null;
+  }
+  selectNodeContents(node) {
+    this.commonAncestorContainer = node;
+  }
+  collapse(toStart) {}
+  deleteContents() {
+    if (this.commonAncestorContainer) {
+      this.commonAncestorContainer.children = [];
+      this.commonAncestorContainer.textContent = "";
+    }
+  }
+  insertNode(node) {
+    if (this.commonAncestorContainer) {
+      this.commonAncestorContainer.appendChild(node);
+    }
+  }
+  setStartAfter(node) {}
+  setEndBefore(node) {}
+}
+
+class MockTreeWalker {
+  constructor(root) {
+    this.root = root;
+    this.currentNode = null;
+    this.allNodes = [];
+    const collect = (node) => {
+      if (node.nodeType === 3) this.allNodes.push(node);
+      if (node.children) node.children.forEach(collect);
+    };
+    collect(root);
+    this.index = -1;
+  }
+  nextNode() {
+    this.index++;
+    if (this.index < this.allNodes.length) {
+      this.currentNode = this.allNodes[this.index];
+      return this.currentNode;
+    }
+    this.currentNode = null;
+    return null;
+  }
+}
+
+class MockFileReader {
+  constructor() {
+    this.onload = null;
+    this.onerror = null;
+  }
+  readAsText(file) {
+    setTimeout(() => {
+      if (this.onload) {
+        this.onload({ target: { result: file.content || '' } });
+      }
+    }, 0);
+  }
+}
+
+const mockSelection = {
+  rangeCount: 1,
+  getRangeAt: () => new MockRange(),
+  removeAllRanges: () => {},
+  addRange: () => {}
+};
+
 export function createExtensionTestEnv(options = {}) {
   const storageState = { ...(options.storage || {}) };
   const storageListeners = new Set();
@@ -467,7 +725,8 @@ export function createExtensionTestEnv(options = {}) {
     "requestAnimationFrame",
     "cancelAnimationFrame",
     "setTimeout",
-    "clearTimeout"
+    "clearTimeout",
+    "localStorage"
   ].forEach(remember);
 
   const clipboardWrites = [];
@@ -631,6 +890,7 @@ export function createExtensionTestEnv(options = {}) {
           chromeRuntimeLastError: chrome.runtime.lastError
         };
 
+        let response;
         try {
           globalThis.document = pageDocument;
           globalThis.window = pageWindow;
@@ -638,15 +898,11 @@ export function createExtensionTestEnv(options = {}) {
           globalThis.navigator = pageWindow.navigator || globalThis.navigator;
           pageWindow.chrome = { runtime: pageRuntime };
           const result = await details.func(...(details.args || []));
-          const response = [{ result }];
+          response = [{ result }];
           chrome.runtime.lastError = null;
-          if (typeof callback === "function") callback(response);
-          return response;
         } catch (err) {
           chrome.runtime.lastError = { message: err?.message || "executeScript failed" };
-
-          if (typeof callback === "function") callback(undefined);
-          return undefined;
+          response = undefined;
         } finally {
           globalThis.document = previous.document;
           globalThis.window = previous.window;
@@ -654,6 +910,8 @@ export function createExtensionTestEnv(options = {}) {
           globalThis.navigator = previous.navigator;
           chrome.runtime.lastError = previous.chromeRuntimeLastError;
         }
+        if (typeof callback === "function") callback(response);
+        return response;
       }
     }
   };
@@ -695,8 +953,37 @@ export function createExtensionTestEnv(options = {}) {
     };
   };
 
+  const createLocalStorageMock = () => {
+    const store = new Map();
+    return {
+      getItem: (key) => store.get(String(key)) ?? null,
+      setItem: (key, value) => store.set(String(key), String(value)),
+      removeItem: (key) => store.delete(String(key)),
+      clear: () => store.clear(),
+      get length() { return store.size; },
+      key: (index) => Array.from(store.keys())[index] || null
+    };
+  };
+  popupWindow.localStorage = createLocalStorageMock();
+  pageWindow.localStorage = createLocalStorageMock();
+
   setGlobal('window', popupWindow);
   setGlobal('document', popupDocument);
+  setGlobal('DOMParser', DOMParserMock);
+  setGlobal('Node', { ELEMENT_NODE: 1, TEXT_NODE: 3, DOCUMENT_FRAGMENT_NODE: 11 });
+  setGlobal('NodeFilter', { SHOW_TEXT: 4 });
+  setGlobal('FileReader', MockFileReader);
+  Object.defineProperty(globalThis, 'localStorage', {
+    configurable: true,
+    get() { return popupWindow.localStorage; },
+    set(v) { popupWindow.localStorage = v; }
+  });
+  popupDocument.createRange = () => new MockRange();
+  pageDocument.createRange = () => new MockRange();
+  popupDocument.createTreeWalker = (root) => new MockTreeWalker(root);
+  pageDocument.createTreeWalker = (root) => new MockTreeWalker(root);
+  popupWindow.getSelection = () => mockSelection;
+  pageWindow.getSelection = () => mockSelection;
   setGlobal('location', popupWindow.location);
   setGlobal('navigator', {
     language: options.language || "en-US",

@@ -1,413 +1,656 @@
 {
-    "swCopiedBtn":  {
-                        "message":  "✓ KOPEERITUD"
-                    },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "techNotFound":  {
-                         "message":  "Ei leitud."
-                     },
-    "cacheNotSupported":  {
-                              "message":  "Ei toetata"
-                          },
-    "trackerAvgLabel":  {
-                            "message":  "Keskmine"
-                        },
-    "colorPickerTitle":  {
-                             "message":  "Värvivalija"
-                         },
-    "trackerThatMonth":  {
-                             "message":  "That month"
-                         },
-    "counterPlaceholder":  {
-                               "message":  "Kleebi tekst siia..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Kustuta kõik andmed sellelt saidilt"
-                          },
-    "trackerModeAll":  {
-                           "message":  "Kogu aeg"
-                       },
-    "swLiveTitlePrefix":  {
-                              "message":  "Otse #"
-                          },
-    "notesSaved":  {
-                       "message":  "Salvestatud"
-                   },
-    "trackerTitle":  {
-                         "message":  "Veebiaja jälgija"
-                     },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "trackerTotal":  {
-                         "message":  "Total"
-                     },
-    "savedIndicator":  {
-                           "message":  "Salvestatud"
-                       },
-    "markerDrawTooltip":  {
-                              "message":  "Joonista"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "wordsLabel":  {
-                       "message":  "Sõnu"
-                   },
-    "stopwatchReady":  {
-                           "message":  "VALMIS"
-                       },
-    "notesLinkText":  {
-                          "message":  "Link"
-                      },
-    "extDesc":  {
-                    "message":  "Ülim tööriist, mis ühendab kõik olulised funktsioonid ühte kiiresse, kaasaegsesse ja tasuta liidesesse."
-                },
-    "dateLabel":  {
-                      "message":  "Kuupäev"
-                  },
-    "swStatusLive":  {
-                         "message":  "OTSEÜLEKANNE KÄIMAS"
-                     },
-    "linkLabel":  {
-                      "message":  "Link"
-                  },
-    "trackerAvgThatMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "addUrlTooltip":  {
-                          "message":  "Lisa praeguse lehe URL"
-                      },
-    "clearCounterTooltip":  {
-                                "message":  "Kustuta kõik"
-                            },
-    "counterTitle":  {
-                         "message":  "Tähemärkide loendur"
-                     },
-    "markerEraseTooltip":  {
-                               "message":  "Kustuta"
-                           },
-    "swNoHistory":  {
-                        "message":  "Otseülekannete ajalugu puudub"
-                    },
-    "deleteBtn":  {
-                      "message":  "KUSTUTA"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "versionLabel":  {
-                         "message":  "Versioon:"
-                     },
-    "clearAllBtn":  {
-                        "message":  "KUSTUTA KÕIK"
-                    },
-    "uiSettings":  {
-                       "message":  "SEADED"
-                   },
-    "copyEnableTitle":  {
-                            "message":  "Kopeerimine"
-                        },
-    "soundTitle":  {
-                       "message":  "Heli"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "charsLabel":  {
-                       "message":  "Tähemärke"
-                   },
-    "markerCloseTooltip":  {
-                               "message":  "Sulge"
-                           },
-    "playBtn":  {
-                    "message":  "Mängi"
-                },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "markerLineTooltip":  {
-                              "message":  "Joon"
-                          },
-    "colorPickerCopied":  {
-                              "message":  "Kopeeritud: "
-                          },
-    "swStatusReady":  {
-                          "message":  "VALMIS"
-                      },
-    "cacheModalTitle":  {
-                            "message":  "KÜPSISED JA VAHEMÄLU"
-                        },
-    "trackerMonthLabel":  {
-                              "message":  "See kuu"
-                          },
-    "colorPickerPicking":  {
-                               "message":  "Valimine..."
-                           },
-    "swUndoTitle":  {
-                        "message":  "Kustuta see hetk"
-                    },
-    "trackerAvgTotal":  {
-                            "message":  "Average"
-                        },
-    "addDateTooltip":  {
-                           "message":  "Lisa tänane kuupäev"
-                       },
-    "techTitle":  {
-                      "message":  "Saidi tehnoloogiad"
-                  },
-    "trackerToday":  {
-                         "message":  "Today"
-                     },
-    "notesModalTitle":  {
-                            "message":  "NUTIKAD MÄRKMED"
-                        },
-    "notesTooLarge":  {
-                          "message":  "Märge on liiga suur"
-                      },
-    "cacheCleared":  {
-                         "message":  "Kustutatud!"
-                     },
-    "markerTitle":  {
-                        "message":  "Lehe marker"
-                    },
-    "exportNotesTooltip":  {
-                               "message":  "Ekspordi märkmed"
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Leitud: "
-                        },
-    "techModalTitle":  {
-                           "message":  "SAIDI TEHNOLOOGIAD"
-                       },
-    "confirmClearNotes":  {
-                              "message":  "Kas soovite kindlasti kõik märkmed kustutada?"
-                          },
-    "swNoLaps":  {
-                     "message":  "Salvestatud hetki pole"
-                 },
-    "confirmClearCounter":  {
-                                "message":  "Kas olete kindel, et soovite kõik kustutada?"
-                            },
-    "supportDesc":  {
-                        "message":  "All In One on täiesti tasuta tööriist. Sinu toetus aitab seda sellisena hoida ja võimaldab uute funktsioonide regulaarset arendamist."
-                    },
-    "websiteTooltip":  {
-                           "message":  "Ametlik veebisait"
-                       },
-    "privacyLabel":  {
-                         "message":  "Privaatsuspoliitika"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Ei kopeeritud"
-                      },
-    "trackerNoData":  {
-                          "message":  "No data for this period"
-                      },
-    "trackerModeMonth":  {
-                             "message":  "Kuu vaade"
-                         },
-    "swExportTxtBtn":  {
-                           "message":  "EKSPORDI .TXT FORMAADIS"
-                       },
-    "markerTextTooltip":  {
-                              "message":  "Tekst"
-                          },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "cacheClearing":  {
-                          "message":  "Kustutamine..."
-                      },
-    "trackerThatDay":  {
-                           "message":  "That day"
-                       },
-    "swTotalDurationPrefix":  {
-                                  "message":  "KOGUKESTUS: "
-                              },
-    "trackerAvgThisMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Are you sure you want to delete data for"
-                             },
-    "ytDislikeTitle":  {
-                           "message":  "Tagasta YouTube\u0027i dislaigid"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "üksust"
-                        },
-    "rateBtn":  {
-                    "message":  "Hinda laiendust"
-                },
-    "clearNotesTooltip":  {
-                              "message":  "Kustuta kõik märkmed"
-                          },
-    "fontCopied":  {
-                       "message":  "Kopeeritud!"
-                   },
-    "websiteBtn":  {
-                       "message":  "Ametlik veebisait"
-                   },
-    "darkModeTitle":  {
-                          "message":  "Tume režiim"
-                      },
-    "rulerTitle":  {
-                       "message":  "Lehe joonlaud"
-                   },
-    "trackerTodayLabel":  {
-                              "message":  "Täna"
-                          },
-    "currentRecordedLabel":  {
-                                 "message":  "PRAEGU SALVESTATUD"
-                             },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "extName":  {
-                    "message":  "All In One - Parim produktiivsustööriist"
-                },
-    "trackerThisMonth":  {
-                             "message":  "This month"
-                         },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "trackerSelectedMonth":  {
-                                 "message":  "Selected month"
-                             },
-    "techLoadingMsg":  {
-                           "message":  "Skänner analüüsib saiti..."
-                       },
-    "radioPause":  {
-                       "message":  "Paus"
-                   },
-    "trackerThisMonthShort":  {
-                                  "message":  "This month"
-                              },
-    "swCopyBtn":  {
-                      "message":  "KOPEERI LÕIKELAUALE"
-                  },
-    "swMomentLabel":  {
-                          "message":  "Hetk "
-                      },
-    "donateBtn":  {
-                      "message":  "Anneta ja toeta"
-                  },
-    "systemPageDesc":  {
-                           "message":  "Muutmistööriistad on keelatud"
-                       },
-    "radioTitle":  {
-                       "message":  "Raadio IN"
-                   },
-    "notesTitle":  {
-                       "message":  "Nutikad märkmed"
-                   },
-    "techScannerUnavailable":  {
-                                   "message":  "Skänner ei ole sellel lehel saadaval."
-                               },
-    "resetBtn":  {
-                     "message":  "Lähtesta"
-                 },
-    "linesLabel":  {
-                       "message":  "Ridu"
-                   },
-    "stopBtn":  {
-                    "message":  "PEATA"
-                },
-    "supportTitle":  {
-                         "message":  "Toeta laiendust"
-                     },
-    "cacheError":  {
-                       "message":  "Viga"
-                   },
-    "stopwatchTitle":  {
-                           "message":  "Stopper"
-                       },
-    "trackerModalTitle":  {
-                              "message":  "Webtime Tracker"
-                          },
-    "fontTitle":  {
-                      "message":  "Fondi leidja"
-                  },
-    "notesPlaceholder":  {
-                             "message":  "Kirjuta märkmed siia..."
-                         },
-    "cacheTitle":  {
-                       "message":  "Küpsised ja vahemälu"
-                   },
-    "radioArtist":  {
-                        "message":  "Toetab All In One laiendus"
-                    },
-    "liveHistoryLabel":  {
-                             "message":  "OTSESAADETE AJALUGU"
-                         },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "clearSiteDataBtn":  {
-                             "message":  "Kustuta kõik andmed sellelt saidilt"
-                         },
-    "settingsTooltip":  {
-                            "message":  "Seaded"
-                        },
-    "lapBtn":  {
-                   "message":  "RING"
-               },
-    "radioPlay":  {
-                      "message":  "Mängi"
-                  },
-    "markerClearAllTooltip":  {
-                                  "message":  "Kustuta kõik"
-                              },
-    "textLabel":  {
-                      "message":  "Tekst"
-                  },
-    "cancelBtn":  {
-                      "message":  "TÜHISTA"
-                  },
-    "startBtn":  {
-                     "message":  "ALUSTA"
-                 },
-    "counterModalTitle":  {
-                              "message":  "TÄHEMÄRKIDE LOENDUR"
-                          },
-    "importNotesTooltip":  {
-                               "message":  "Impordi märkmed"
-                           },
-    "markerThicknessTooltip":  {
-                                   "message":  "Paksus"
-                               },
-    "blockCookiesLabel":  {
-                              "message":  "Blokeeri küpsised automaatselt"
-                          },
-    "confirmClearHistory":  {
-                                "message":  "Kas soovite kindlasti kogu ajaloo kustutada?"
-                            },
-    "systemPageTitle":  {
-                            "message":  "SÜSTEEMILEHT"
-                        },
-    "grabTextTooltip":  {
-                            "message":  "Eralda tekst lehelt"
-                        },
-    "markLapDesc":  {
-                        "message":  "Salvesta hetk stopperil"
-                    },
-    "techScannerFailed":  {
-                              "message":  "Skannimine sellel lehel ebaõnnestus."
-                          },
-    "markerMoveTooltip":  {
-                              "message":  "Liiguta"
-                          },
-    "trackerModeDay":  {
-                           "message":  "Päevane vaade"
-                       },
-    "swDurationLabel":  {
-                            "message":  "Kestus: "
-                        }
+    "notesTitle": {
+        "message": "Nutikad märkmed"
+    },
+    "whatsNewDesc": {
+        "message": "Vaadake uusimaid liidese täiustusi, mis muudavad All In One veelgi kiiremaks ja elegantsemaks:"
+    },
+    "toastPermissionDenied": {
+        "message": "Luba ei antud"
+    },
+    "clearCounterTooltip": {
+        "message": "Kustuta kõik"
+    },
+    "supportDesc": {
+        "message": "All In One on täiesti tasuta tööriist. Sinu toetus aitab seda sellisena hoida ja võimaldab uute funktsioonide regulaarset arendamist."
+    },
+    "trackerExportTruncated": {
+        "message": "Hüpikakna stabiilsena hoidmiseks eksportige kärbituna 10 MB-ni."
+    },
+    "whatsNewClose": {
+        "message": "SAAB SEE"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Kustuta"
+    },
+    "counterTitle": {
+        "message": "Tähemärkide loendur"
+    },
+    "trackerAvgLabel": {
+        "message": "Keskmine"
+    },
+    "trackerModeMonth": {
+        "message": "Kuu vaade"
+    },
+    "trackerModeAll": {
+        "message": "Kogu aeg"
+    },
+    "techCatMedia": {
+        "message": "Meedia"
+    },
+    "trackerNoData": {
+        "message": "Selle perioodi kohta andmed puuduvad"
+    },
+    "whatsNewFeature3": {
+        "message": "Faviconi tugi: saidi lemmikud jälgijate loendis."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Otse #"
+    },
+    "confirmClearNotes": {
+        "message": "Kas soovite kindlasti kõik märkmed kustutada?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Kõik selle saidi andmed on kustutatud!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Otsige veebisaite..."
+    },
+    "techCatTools": {
+        "message": "Tööriistad"
+    },
+    "toastYtOff": {
+        "message": "YouTube'i ekraan, mis ei meeldi, on keelatud"
+    },
+    "soundTitle": {
+        "message": "Heli"
+    },
+    "cacheTitle": {
+        "message": "Küpsised ja vahemälu"
+    },
+    "markerCloseTooltip": {
+        "message": "Sulge"
+    },
+    "stopwatchTitle": {
+        "message": "Stopper"
+    },
+    "clearNotesTooltip": {
+        "message": "Kustuta kõik märkmed"
+    },
+    "rulerTitle": {
+        "message": "Lehe joonlaud"
+    },
+    "markLapDesc": {
+        "message": "Salvesta hetk stopperil"
+    },
+    "trackerImportEmpty": {
+        "message": "Importimiseks pole kehtivaid jälgija andmeid."
+    },
+    "whatsNewFeature1": {
+        "message": "Sujuvad üleminekud: sujuvad slaidianimatsioonid tööriistade vahel."
+    },
+    "systemPageDesc": {
+        "message": "Muutmistööriistad on keelatud"
+    },
+    "techStatLinks": {
+        "message": "Lingid"
+    },
+    "stopBtn": {
+        "message": "PEATA"
+    },
+    "swNoLaps": {
+        "message": "Salvestatud hetki pole"
+    },
+    "toastTrackerImportError": {
+        "message": "Viga jälgija andmete importimisel!"
+    },
+    "toastRadioPlayError": {
+        "message": "Raadiot ei saa praegu käivitada."
+    },
+    "trackerTitle": {
+        "message": "Veebiaja jälgija"
+    },
+    "offscreenJustification": {
+        "message": "Raadio voogesitus ja süsteemihelid"
+    },
+    "trackerThisMonth": {
+        "message": "Sel kuul"
+    },
+    "linesLabel": {
+        "message": "Ridu"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Sellel saidil on küpsised blokeeritud"
+    },
+    "toastTrackerError": {
+        "message": "Viga andmete värskendamisel"
+    },
+    "trackerExportEmpty": {
+        "message": "Eksportimiseks pole jälgija andmeid."
+    },
+    "techCatComm": {
+        "message": "Suhtlemine"
+    },
+    "deleteBtn": {
+        "message": "KUSTUTA"
+    },
+    "techCatTech": {
+        "message": "Tehnoloogiad"
+    },
+    "notesSaved": {
+        "message": "Salvestatud"
+    },
+    "toastNotesExported": {
+        "message": "Märkmed edukalt eksporditud!"
+    },
+    "swMomentLabel": {
+        "message": "Hetk "
+    },
+    "notesModalTitle": {
+        "message": "NUTIKAD MÄRKMED"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Keskmine (kuu)"
+    },
+    "versionLabel": {
+        "message": "Versioon:"
+    },
+    "importNotesTooltip": {
+        "message": "Impordi märkmed"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Valgusrežiim lubatud"
+    },
+    "toastNotesCopied": {
+        "message": "Tekst on lõikelauale kopeeritud!"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toast: kaasaegne teavitussüsteem oluliste toimingute jaoks."
+    },
+    "fontNotCopied": {
+        "message": "Ei kopeeritud"
+    },
+    "importTooltip": {
+        "message": "Andmete importimine"
+    },
+    "wordsLabelShort": {
+        "message": "sõnad"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "Ei toetata"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "Kustutamine..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Andmed värskendatud!"
+    },
+    "websiteBtn": {
+        "message": "Ametlik veebisait"
+    },
+    "markerThicknessTooltip": {
+        "message": "Paksus"
+    },
+    "confirmClearCounter": {
+        "message": "Kas olete kindel, et soovite kõik kustutada?"
+    },
+    "techCatAds": {
+        "message": "Reklaamid"
+    },
+    "uiSettings": {
+        "message": "SEADED"
+    },
+    "trackerThatMonth": {
+        "message": "See kuu"
+    },
+    "radioModalDesc": {
+        "message": "Sisestage otselink oma lemmikraadiojaamale"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Kas olete kindel, et soovite andmed kustutada"
+    },
+    "darkModeTitle": {
+        "message": "Tume režiim"
+    },
+    "toastCounterCleared": {
+        "message": "Vastutekst on kustutatud!"
+    },
+    "techStatScripts": {
+        "message": "Skriptid"
+    },
+    "techNetworkOptInHint": {
+        "message": "Saadab päringud aadressile dns.google ja ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Otseülekannete ajalugu puudub"
+    },
+    "whatsNewTitle": {
+        "message": "Mis on uut versioonis 1.6"
+    },
+    "techNotFound": {
+        "message": "Ei leitud."
+    },
+    "notesPlaceholder": {
+        "message": "Kirjuta märkmed siia..."
+    },
+    "radioArtist": {
+        "message": "Toetab All In One laiendus"
+    },
+    "charsLabel": {
+        "message": "Tähemärke"
+    },
+    "trackerImportSuccess": {
+        "message": "Andmed edukalt imporditud!"
+    },
+    "copyEnableTitle": {
+        "message": "Kopeerimine"
+    },
+    "techCatStats": {
+        "message": "Statistika"
+    },
+    "dateLabel": {
+        "message": "Kuupäev"
+    },
+    "techCatNetwork": {
+        "message": "Võrk"
+    },
+    "techCatEcom": {
+        "message": "E-kaubandus"
+    },
+    "currentRecordedLabel": {
+        "message": "PRAEGU SALVESTATUD"
+    },
+    "toastCookieOff": {
+        "message": "Küpsiste automaatne blokeerimine on keelatud"
+    },
+    "toastModuleLoadError": {
+        "message": "Viga mooduli laadimisel"
+    },
+    "techCatStyles": {
+        "message": "Stiilid"
+    },
+    "extDesc": {
+        "message": "Ülim tööriist, mis ühendab kõik olulised funktsioonid ühte kiiresse, kaasaegsesse ja tasuta liidesesse."
+    },
+    "resetBtn": {
+        "message": "Lähtesta"
+    },
+    "addDateTooltip": {
+        "message": "Lisa tänane kuupäev"
+    },
+    "supportTitle": {
+        "message": "Toeta laiendust"
+    },
+    "toastCounterCopied": {
+        "message": "Tekst on lõikelauale kopeeritud!"
+    },
+    "savedIndicator": {
+        "message": "Salvestatud"
+    },
+    "counterPlaceholder": {
+        "message": "Kleebi tekst siia..."
+    },
+    "techFoundPrefix": {
+        "message": "Leitud: "
+    },
+    "systemPageTitle": {
+        "message": "SÜSTEEMILEHT"
+    },
+    "markerClearAllTooltip": {
+        "message": "Kustuta kõik"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Keela analüütika"
+    },
+    "trackerModeDay": {
+        "message": "Päevane vaade"
+    },
+    "techItemsSuffix": {
+        "message": "üksust"
+    },
+    "toastStopwatchCleared": {
+        "message": "Reaalajas ajalugu on kustutatud!"
+    },
+    "trackerTotal": {
+        "message": "Kokku"
+    },
+    "swStatusReady": {
+        "message": "VALMIS"
+    },
+    "trackerTotalShort": {
+        "message": "Kokku"
+    },
+    "blockCookiesLabel": {
+        "message": "Blokeeri küpsised automaatselt"
+    },
+    "markerDrawTooltip": {
+        "message": "Joonista"
+    },
+    "trackerMonthLabel": {
+        "message": "See kuu"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Tabelid"
+    },
+    "techStatImages": {
+        "message": "Pildid"
+    },
+    "toastRadioSaved": {
+        "message": "Raadiojaama URL on salvestatud!"
+    },
+    "trackerToday": {
+        "message": "Täna"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Sõnu"
+    },
+    "clearAllBtn": {
+        "message": "KUSTUTA KÕIK"
+    },
+    "toastCopyOn": {
+        "message": "Selle saidi jaoks on kopeerimine lubatud"
+    },
+    "clearSiteDataBtn": {
+        "message": "Kustuta kõik andmed sellelt saidilt"
+    },
+    "colorPickerPicking": {
+        "message": "Valimine..."
+    },
+    "cacheClearConfirm": {
+        "message": "Kustuta kõik andmed sellelt saidilt"
+    },
+    "markerTextTooltip": {
+        "message": "Tekst"
+    },
+    "radioTitle": {
+        "message": "Raadio IN"
+    },
+    "trackerSelectedMonth": {
+        "message": "Valitud kuu"
+    },
+    "toastCopyOff": {
+        "message": "Kopeerimine keelatud"
+    },
+    "fontCopied": {
+        "message": "Kopeeritud!"
+    },
+    "notesLinkText": {
+        "message": "Link"
+    },
+    "radioClearConfirm": {
+        "message": "Kas kustutada salvestatud raadiojaam?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Keskmine (kuu)"
+    },
+    "techTitle": {
+        "message": "Saidi tehnoloogiad"
+    },
+    "lapBtn": {
+        "message": "RING"
+    },
+    "playBtn": {
+        "message": "Mängi"
+    },
+    "toastDarkModeOn": {
+        "message": "Tume režiim on lubatud"
+    },
+    "techCatPayment": {
+        "message": "Makse"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Sellel saidil on küpsised lubatud"
+    },
+    "markerLineTooltip": {
+        "message": "Joon"
+    },
+    "techStatIframes": {
+        "message": "Ifraame"
+    },
+    "counterModalTitle": {
+        "message": "TÄHEMÄRKIDE LOENDUR"
+    },
+    "fontTitle": {
+        "message": "Fondi leidja"
+    },
+    "toastTrackerExported": {
+        "message": "Jälgija andmed edukalt eksporditud!"
+    },
+    "toastNotesImportError": {
+        "message": "Viga märkmete importimisel!"
+    },
+    "swExportTxtBtn": {
+        "message": "EKSPORDI .TXT FORMAADIS"
+    },
+    "swUndoTitle": {
+        "message": "Kustuta see hetk"
+    },
+    "startBtn": {
+        "message": "ALUSTA"
+    },
+    "markerMoveTooltip": {
+        "message": "Liiguta"
+    },
+    "techModalTitle": {
+        "message": "SAIDI TEHNOLOOGIAD"
+    },
+    "saveRadioStationBtn": {
+        "message": "SALVESTA JAAM"
+    },
+    "techCatDb": {
+        "message": "Database"
+    },
+    "toastNotesCleared": {
+        "message": "Kõik märkmed on kustutatud!"
+    },
+    "toastTrackerImported": {
+        "message": "Jälgija andmed edukalt imporditud!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Vigane URL! URL peab algama tähega http:// või https://"
+    },
+    "trackerImportError": {
+        "message": "Viga faili lugemisel."
+    },
+    "swStatusLive": {
+        "message": "OTSEÜLEKANNE KÄIMAS"
+    },
+    "linkLabel": {
+        "message": "Link"
+    },
+    "techCatAnalytics": {
+        "message": "Analüütika"
+    },
+    "liveHistoryLabel": {
+        "message": "OTSESAADETE AJALUGU"
+    },
+    "colorPickerTitle": {
+        "message": "Värvivalija"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "KOGUKESTUS: "
+    },
+    "stopwatchReady": {
+        "message": "VALMIS"
+    },
+    "confirmClearHistory": {
+        "message": "Kas soovite kindlasti kogu ajaloo kustutada?"
+    },
+    "markerTitle": {
+        "message": "Lehe marker"
+    },
+    "trackerModalTitle": {
+        "message": "Webtime Tracker"
+    },
+    "grabTextTooltip": {
+        "message": "Eralda tekst lehelt"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Puhas väli"
+    },
+    "privacyLabel": {
+        "message": "Privaatsuspoliitika"
+    },
+    "whatsNewFeature4": {
+        "message": "Lülitage tagasiside sisse: Lühikesed impulssanimatsioonid ja kinnitused sätete muutmisel."
+    },
+    "trackerThatDay": {
+        "message": "Sel päeval"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Loendit ei saanud värskendada"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Luba sellel saidil küpsised"
+    },
+    "textLabel": {
+        "message": "Tekst"
+    },
+    "cacheCleared": {
+        "message": "Kustutatud!"
+    },
+    "importRadioTooltip": {
+        "message": "Importige kohandatud raadiojaam"
+    },
+    "radioPlay": {
+        "message": "Mängi"
+    },
+    "techLoadingMsg": {
+        "message": "Skänner analüüsib saiti..."
+    },
+    "swCopyBtn": {
+        "message": "KOPEERI LÕIKELAUALE"
+    },
+    "techScannerFailed": {
+        "message": "Skannimine sellel lehel ebaõnnestus."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Kuva võrguteave (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Täna"
+    },
+    "toastNotesImported": {
+        "message": "Märkmed edukalt imporditud!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Kopeeritud: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ KOPEERITUD"
+    },
+    "techCatCaching": {
+        "message": "Vahemällu salvestamine"
+    },
+    "techCatSecurity": {
+        "message": "Turvalisus"
+    },
+    "toastYtOn": {
+        "message": "YouTube'i ekraan, mis ei meeldi, on lubatud"
+    },
+    "extName": {
+        "message": "All In One - Parim produktiivsustööriist"
+    },
+    "toastCookieOn": {
+        "message": "Küpsiste automaatne blokeerimine on lubatud"
+    },
+    "techScannerUnavailable": {
+        "message": "Skänner ei ole sellel lehel saadaval."
+    },
+    "notesTooLarge": {
+        "message": "Märge on liiga suur"
+    },
+    "swDurationLabel": {
+        "message": "Kestus: "
+    },
+    "ytDislikeTitle": {
+        "message": "Tagasta YouTube'i dislaigid"
+    },
+    "donateBtn": {
+        "message": "Anneta ja toeta"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Seaded"
+    },
+    "trackerThisMonthShort": {
+        "message": "Sel kuul"
+    },
+    "techCatSystem": {
+        "message": "Süsteem"
+    },
+    "exportTooltip": {
+        "message": "Ekspordi andmed"
+    },
+    "exportNotesTooltip": {
+        "message": "Ekspordi märkmed"
+    },
+    "radioPause": {
+        "message": "Paus"
+    },
+    "websiteTooltip": {
+        "message": "Ametlik veebisait"
+    },
+    "rateBtn": {
+        "message": "Hinda laiendust"
+    },
+    "techCatBase": {
+        "message": "Alus"
+    },
+    "cacheModalTitle": {
+        "message": "KÜPSISED JA VAHEMÄLU"
+    },
+    "cancelBtn": {
+        "message": "TÜHISTA"
+    },
+    "addUrlTooltip": {
+        "message": "Lisa praeguse lehe URL"
+    },
+    "trackerAvgTotal": {
+        "message": "Keskmine"
+    },
+    "techStatForms": {
+        "message": "Vormid"
+    },
+    "cacheError": {
+        "message": "Viga"
+    }
 }

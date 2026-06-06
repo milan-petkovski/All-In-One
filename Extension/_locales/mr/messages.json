@@ -1,413 +1,656 @@
 {
-    "swCopiedBtn":  {
-                        "message":  "✓ कॉपी केले"
-                    },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "techNotFound":  {
-                         "message":  "सापडले नाही."
-                     },
-    "cacheNotSupported":  {
-                              "message":  "समर्थित नाही"
-                          },
-    "trackerAvgLabel":  {
-                            "message":  "सरासरी"
-                        },
-    "colorPickerTitle":  {
-                             "message":  "कलर पिकर"
-                         },
-    "trackerThatMonth":  {
-                             "message":  "That month"
-                         },
-    "counterPlaceholder":  {
-                               "message":  "येथे मजकूर पेस्ट करा..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "या साइटवरील सर्व डेटा साफ करा"
-                          },
-    "trackerModeAll":  {
-                           "message":  "सर्व काळ"
-                       },
-    "swLiveTitlePrefix":  {
-                              "message":  "लाइव्ह #"
-                          },
-    "notesSaved":  {
-                       "message":  "जतन केले"
-                   },
-    "trackerTitle":  {
-                         "message":  "वेबटाइम ट्रॅकर"
-                     },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "trackerTotal":  {
-                         "message":  "Total"
-                     },
-    "savedIndicator":  {
-                           "message":  "जतन केले"
-                       },
-    "markerDrawTooltip":  {
-                              "message":  "काढा"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "wordsLabel":  {
-                       "message":  "शब्द"
-                   },
-    "stopwatchReady":  {
-                           "message":  "तयार"
-                       },
-    "notesLinkText":  {
-                          "message":  "लिंक"
-                      },
-    "extDesc":  {
-                    "message":  "एक अंतिम साधन जे सर्व आवश्यक कार्ये एका जलद, आधुनिक आणि विनामूल्य इंटरफेसमध्ये एकत्र करते."
-                },
-    "dateLabel":  {
-                      "message":  "तारीख"
-                  },
-    "swStatusLive":  {
-                         "message":  "लाइव्ह सुरू आहे"
-                     },
-    "linkLabel":  {
-                      "message":  "लिंक"
-                  },
-    "trackerAvgThatMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "addUrlTooltip":  {
-                          "message":  "सध्याची URL जोडा"
-                      },
-    "clearCounterTooltip":  {
-                                "message":  "सर्व साफ करा"
-                            },
-    "counterTitle":  {
-                         "message":  "कॅरेक्टर काउंटर"
-                     },
-    "markerEraseTooltip":  {
-                               "message":  "खोडा"
-                           },
-    "swNoHistory":  {
-                        "message":  "कोणताही लाइव्ह इतिहास नाही"
-                    },
-    "deleteBtn":  {
-                      "message":  "हटवा"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "versionLabel":  {
-                         "message":  "आवृत्ती:"
-                     },
-    "clearAllBtn":  {
-                        "message":  "सर्व साफ करा"
-                    },
-    "uiSettings":  {
-                       "message":  "सेटिंग्ज"
-                   },
-    "copyEnableTitle":  {
-                            "message":  "कॉपी सक्षम करा"
-                        },
-    "soundTitle":  {
-                       "message":  "आवाज"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "charsLabel":  {
-                       "message":  "अक्षरे"
-                   },
-    "markerCloseTooltip":  {
-                               "message":  "बंद करा"
-                           },
-    "playBtn":  {
-                    "message":  "प्ले करा"
-                },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "markerLineTooltip":  {
-                              "message":  "लाइन"
-                          },
-    "colorPickerCopied":  {
-                              "message":  "कॉपी केले: "
-                          },
-    "swStatusReady":  {
-                          "message":  "तयार"
-                      },
-    "cacheModalTitle":  {
-                            "message":  "कुकीज आणि कॅशे"
-                        },
-    "trackerMonthLabel":  {
-                              "message":  "हा महिना"
-                          },
-    "colorPickerPicking":  {
-                               "message":  "निवडत आहे..."
-                           },
-    "swUndoTitle":  {
-                        "message":  "हा क्षण हटवा"
-                    },
-    "trackerAvgTotal":  {
-                            "message":  "Average"
-                        },
-    "addDateTooltip":  {
-                           "message":  "आजची तारीख जोडा"
-                       },
-    "techTitle":  {
-                      "message":  "साइट तंत्रज्ञान"
-                  },
-    "trackerToday":  {
-                         "message":  "Today"
-                     },
-    "notesModalTitle":  {
-                            "message":  "स्मार्ट नोट्स"
-                        },
-    "notesTooLarge":  {
-                          "message":  "नोट खूप मोठी आहे"
-                      },
-    "cacheCleared":  {
-                         "message":  "साफ केले!"
-                     },
-    "markerTitle":  {
-                        "message":  "पेज मार्कर"
-                    },
-    "exportNotesTooltip":  {
-                               "message":  "नोट्स एक्सपोर्ट करा"
-                           },
-    "techFoundPrefix":  {
-                            "message":  "सापडले: "
-                        },
-    "techModalTitle":  {
-                           "message":  "साइट तंत्रज्ञान"
-                       },
-    "confirmClearNotes":  {
-                              "message":  "तुम्हाला खात्री आहे की तुम्ही सर्व नोट्स साफ करू इच्छिता?"
-                          },
-    "swNoLaps":  {
-                     "message":  "कोणतेही रेकॉर्ड केलेले क्षण नाहीत"
-                 },
-    "confirmClearCounter":  {
-                                "message":  "तुम्हाला खात्री आहे का सर्व साफ करायचे आहे?"
-                            },
-    "supportDesc":  {
-                        "message":  "All In One हे पूर्णपणे विनामूल्य साधन आहे. तुमचे समर्थन नवीन वैशिष्ट्यांचा विकास करण्यास मदत करते."
-                    },
-    "websiteTooltip":  {
-                           "message":  "अधिकृत विस्तार वेबसाइट"
-                       },
-    "privacyLabel":  {
-                         "message":  "गोपनीयता धोरण"
-                     },
-    "fontNotCopied":  {
-                          "message":  "कॉपी केले नाही"
-                      },
-    "trackerNoData":  {
-                          "message":  "No data for this period"
-                      },
-    "trackerModeMonth":  {
-                             "message":  "मासिक दृश्य"
-                         },
-    "swExportTxtBtn":  {
-                           "message":  ".TXT म्हणून एक्सपोर्ट करा"
-                       },
-    "markerTextTooltip":  {
-                              "message":  "मजकूर"
-                          },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "cacheClearing":  {
-                          "message":  "साफ करत आहे..."
-                      },
-    "trackerThatDay":  {
-                           "message":  "That day"
-                       },
-    "swTotalDurationPrefix":  {
-                                  "message":  "एकूण कालावधी: "
-                              },
-    "trackerAvgThisMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Are you sure you want to delete data for"
-                             },
-    "ytDislikeTitle":  {
-                           "message":  "YouTube डिसलाइक परत आणा"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "आयटम"
-                        },
-    "rateBtn":  {
-                    "message":  "विस्ताराला रेट करा"
-                },
-    "clearNotesTooltip":  {
-                              "message":  "सर्व नोट्स साफ करा"
-                          },
-    "fontCopied":  {
-                       "message":  "कॉपी केले!"
-                   },
-    "websiteBtn":  {
-                       "message":  "अधिकृत वेबसाइट"
-                   },
-    "darkModeTitle":  {
-                          "message":  "डार्क मोड"
-                      },
-    "rulerTitle":  {
-                       "message":  "पेज रूलर"
-                   },
-    "trackerTodayLabel":  {
-                              "message":  "आज"
-                          },
-    "currentRecordedLabel":  {
-                                 "message":  "सध्या रेकॉर्ड केलेले"
-                             },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "extName":  {
-                    "message":  "All In One - सर्वोत्तम उत्पादकता साधन"
-                },
-    "trackerThisMonth":  {
-                             "message":  "This month"
-                         },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "trackerSelectedMonth":  {
-                                 "message":  "Selected month"
-                             },
-    "techLoadingMsg":  {
-                           "message":  "स्कॅनर साइटचे विश्लेषण करत आहे..."
-                       },
-    "radioPause":  {
-                       "message":  "थामवा"
-                   },
-    "trackerThisMonthShort":  {
-                                  "message":  "This month"
-                              },
-    "swCopyBtn":  {
-                      "message":  "क्लिपबोर्डवर कॉपी करा"
-                  },
-    "swMomentLabel":  {
-                          "message":  "क्षण "
-                      },
-    "donateBtn":  {
-                      "message":  "देणगी द्या आणि समर्थन करा"
-                  },
-    "systemPageDesc":  {
-                           "message":  "बदल साधने अक्षम केली आहेत"
-                       },
-    "radioTitle":  {
-                       "message":  "रेडिओ IN"
-                   },
-    "notesTitle":  {
-                       "message":  "स्मार्ट नोट्स"
-                   },
-    "techScannerUnavailable":  {
-                                   "message":  "या पृष्ठावर स्कॅनर उपलब्ध नाही."
-                               },
-    "resetBtn":  {
-                     "message":  "रीसेट करा"
-                 },
-    "linesLabel":  {
-                       "message":  "ओळी"
-                   },
-    "stopBtn":  {
-                    "message":  "थांबवा"
-                },
-    "supportTitle":  {
-                         "message":  "विस्ताराला समर्थन द्या"
-                     },
-    "cacheError":  {
-                       "message":  "त्रुटी"
-                   },
-    "stopwatchTitle":  {
-                           "message":  "स्टॉपवॉच"
-                       },
-    "trackerModalTitle":  {
-                              "message":  "Webtime Tracker"
-                          },
-    "fontTitle":  {
-                      "message":  "फॉन्ट फाइंडर"
-                  },
-    "notesPlaceholder":  {
-                             "message":  "येथे नोट्स लिहा..."
-                         },
-    "cacheTitle":  {
-                       "message":  "कुकीज आणि कॅशे"
-                   },
-    "radioArtist":  {
-                        "message":  "All In One विस्ताराद्वारे समर्थित"
-                    },
-    "liveHistoryLabel":  {
-                             "message":  "लाइव्ह इतिहास"
-                         },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "clearSiteDataBtn":  {
-                             "message":  "या साइटवरील सर्व डेटा साफ करा"
-                         },
-    "settingsTooltip":  {
-                            "message":  "सेटिंग्ज"
-                        },
-    "lapBtn":  {
-                   "message":  "लॅप"
-               },
-    "radioPlay":  {
-                      "message":  "प्ले करा"
-                  },
-    "markerClearAllTooltip":  {
-                                  "message":  "सर्व साफ करा"
-                              },
-    "textLabel":  {
-                      "message":  "मजकूर"
-                  },
-    "cancelBtn":  {
-                      "message":  "रद्द करा"
-                  },
-    "startBtn":  {
-                     "message":  "सुरू करा"
-                 },
-    "counterModalTitle":  {
-                              "message":  "कॅरेक्टर काउंटर"
-                          },
-    "importNotesTooltip":  {
-                               "message":  "नोट्स इम्पोर्ट करा"
-                           },
-    "markerThicknessTooltip":  {
-                                   "message":  "जाडी"
-                               },
-    "blockCookiesLabel":  {
-                              "message":  "स्वयंचलितपणे कुकीज ब्लॉक करा"
-                          },
-    "confirmClearHistory":  {
-                                "message":  "तुम्हाला खात्री आहे की तुम्ही सर्व इतिहास साफ करू इच्छिता?"
-                            },
-    "systemPageTitle":  {
-                            "message":  "सिस्टम पृष्ठ"
-                        },
-    "grabTextTooltip":  {
-                            "message":  "पृष्ठावरून मजकूर काढा"
-                        },
-    "markLapDesc":  {
-                        "message":  "स्टॉपवॉचवर एक क्षण नोंदवा"
-                    },
-    "techScannerFailed":  {
-                              "message":  "या पृष्ठावर स्कॅनिंग अयशस्वी झाले."
-                          },
-    "markerMoveTooltip":  {
-                              "message":  "हलवा"
-                          },
-    "trackerModeDay":  {
-                           "message":  "दैनंदिन दृश्य"
-                       },
-    "swDurationLabel":  {
-                            "message":  "कालावधी: "
-                        }
+    "notesTitle": {
+        "message": "स्मार्ट नोट्स"
+    },
+    "whatsNewDesc": {
+        "message": "ऑल इन वन आणखी जलद आणि अधिक शोभिवंत बनवणाऱ्या नवीनतम इंटरफेस सुधारणा पहा:"
+    },
+    "toastPermissionDenied": {
+        "message": "परवानगी दिली नाही"
+    },
+    "clearCounterTooltip": {
+        "message": "सर्व साफ करा"
+    },
+    "supportDesc": {
+        "message": "All In One हे पूर्णपणे विनामूल्य साधन आहे. तुमचे समर्थन नवीन वैशिष्ट्यांचा विकास करण्यास मदत करते."
+    },
+    "trackerExportTruncated": {
+        "message": "पॉपअप स्थिर ठेवण्यासाठी 10MB वर निर्यात करा."
+    },
+    "whatsNewClose": {
+        "message": "समजले"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "खोडा"
+    },
+    "counterTitle": {
+        "message": "कॅरेक्टर काउंटर"
+    },
+    "trackerAvgLabel": {
+        "message": "सरासरी"
+    },
+    "trackerModeMonth": {
+        "message": "मासिक दृश्य"
+    },
+    "trackerModeAll": {
+        "message": "सर्व काळ"
+    },
+    "techCatMedia": {
+        "message": "मीडिया"
+    },
+    "trackerNoData": {
+        "message": "या कालावधीसाठी कोणताही डेटा नाही"
+    },
+    "whatsNewFeature3": {
+        "message": "फेविकॉन सपोर्ट: ट्रॅकर सूचीमधील साइट फेविकॉन."
+    },
+    "swLiveTitlePrefix": {
+        "message": "लाइव्ह #"
+    },
+    "confirmClearNotes": {
+        "message": "तुम्हाला खात्री आहे की तुम्ही सर्व नोट्स साफ करू इच्छिता?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "या साइटवरील सर्व डेटा साफ केला गेला आहे!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "वेबसाइट शोधा..."
+    },
+    "techCatTools": {
+        "message": "साधने"
+    },
+    "toastYtOff": {
+        "message": "YouTube नापसंत प्रदर्शन अक्षम केले"
+    },
+    "soundTitle": {
+        "message": "आवाज"
+    },
+    "cacheTitle": {
+        "message": "कुकीज आणि कॅशे"
+    },
+    "markerCloseTooltip": {
+        "message": "बंद करा"
+    },
+    "stopwatchTitle": {
+        "message": "स्टॉपवॉच"
+    },
+    "clearNotesTooltip": {
+        "message": "सर्व नोट्स साफ करा"
+    },
+    "rulerTitle": {
+        "message": "पेज रूलर"
+    },
+    "markLapDesc": {
+        "message": "स्टॉपवॉचवर एक क्षण नोंदवा"
+    },
+    "trackerImportEmpty": {
+        "message": "आयात करण्यासाठी कोणताही वैध ट्रॅकर डेटा नाही."
+    },
+    "whatsNewFeature1": {
+        "message": "गुळगुळीत संक्रमणे: साधनांमधील गुळगुळीत स्लाइड ॲनिमेशन."
+    },
+    "systemPageDesc": {
+        "message": "बदल साधने अक्षम केली आहेत"
+    },
+    "techStatLinks": {
+        "message": "दुवे"
+    },
+    "stopBtn": {
+        "message": "थांबवा"
+    },
+    "swNoLaps": {
+        "message": "कोणतेही रेकॉर्ड केलेले क्षण नाहीत"
+    },
+    "toastTrackerImportError": {
+        "message": "ट्रॅकर डेटा आयात करताना त्रुटी!"
+    },
+    "toastRadioPlayError": {
+        "message": "रेडिओ आत्ता सुरू होऊ शकत नाही."
+    },
+    "trackerTitle": {
+        "message": "वेबटाइम ट्रॅकर"
+    },
+    "offscreenJustification": {
+        "message": "रेडिओ प्रवाह आणि सिस्टम ध्वनी"
+    },
+    "trackerThisMonth": {
+        "message": "या महिन्यात"
+    },
+    "linesLabel": {
+        "message": "ओळी"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "या साइटसाठी कुकीज अवरोधित केल्या आहेत"
+    },
+    "toastTrackerError": {
+        "message": "डेटा रिफ्रेश करताना त्रुटी"
+    },
+    "trackerExportEmpty": {
+        "message": "निर्यात करण्यासाठी कोणताही ट्रॅकर डेटा नाही."
+    },
+    "techCatComm": {
+        "message": "संवाद"
+    },
+    "deleteBtn": {
+        "message": "हटवा"
+    },
+    "techCatTech": {
+        "message": "तंत्रज्ञान"
+    },
+    "notesSaved": {
+        "message": "जतन केले"
+    },
+    "toastNotesExported": {
+        "message": "टिपा यशस्वीरित्या निर्यात केल्या!"
+    },
+    "swMomentLabel": {
+        "message": "क्षण "
+    },
+    "notesModalTitle": {
+        "message": "स्मार्ट नोट्स"
+    },
+    "trackerAvgThisMonth": {
+        "message": "सरासरी (महिना)"
+    },
+    "versionLabel": {
+        "message": "आवृत्ती:"
+    },
+    "importNotesTooltip": {
+        "message": "नोट्स इम्पोर्ट करा"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "प्रकाश मोड सक्षम"
+    },
+    "toastNotesCopied": {
+        "message": "क्लिपबोर्डवर मजकूर कॉपी केला!"
+    },
+    "whatsNewFeature2": {
+        "message": "प्रीमियम टोस्ट: महत्त्वाच्या क्रियांसाठी आधुनिक सूचना प्रणाली."
+    },
+    "fontNotCopied": {
+        "message": "कॉपी केले नाही"
+    },
+    "importTooltip": {
+        "message": "डेटा आयात करा"
+    },
+    "wordsLabelShort": {
+        "message": "शब्द"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "समर्थित नाही"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "साफ करत आहे..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "डेटा रिफ्रेश!"
+    },
+    "websiteBtn": {
+        "message": "अधिकृत वेबसाइट"
+    },
+    "markerThicknessTooltip": {
+        "message": "जाडी"
+    },
+    "confirmClearCounter": {
+        "message": "तुम्हाला खात्री आहे का सर्व साफ करायचे आहे?"
+    },
+    "techCatAds": {
+        "message": "जाहिराती"
+    },
+    "uiSettings": {
+        "message": "सेटिंग्ज"
+    },
+    "trackerThatMonth": {
+        "message": "त्या महिन्यात"
+    },
+    "radioModalDesc": {
+        "message": "तुमच्या आवडत्या रेडिओ स्टेशनची थेट लिंक एंटर करा"
+    },
+    "trackerDeleteConfirm": {
+        "message": "तुम्हाला खात्री आहे की तुम्ही यासाठी डेटा हटवू इच्छिता"
+    },
+    "darkModeTitle": {
+        "message": "डार्क मोड"
+    },
+    "toastCounterCleared": {
+        "message": "काउंटर मजकूर साफ केला गेला आहे!"
+    },
+    "techStatScripts": {
+        "message": "स्क्रिप्ट"
+    },
+    "techNetworkOptInHint": {
+        "message": "dns.google आणि ipinfo.io वर विनंत्या पाठवते."
+    },
+    "swNoHistory": {
+        "message": "कोणताही लाइव्ह इतिहास नाही"
+    },
+    "whatsNewTitle": {
+        "message": "आवृत्ती 1.6 मध्ये नवीन काय आहे"
+    },
+    "techNotFound": {
+        "message": "सापडले नाही."
+    },
+    "notesPlaceholder": {
+        "message": "येथे नोट्स लिहा..."
+    },
+    "radioArtist": {
+        "message": "All In One विस्ताराद्वारे समर्थित"
+    },
+    "charsLabel": {
+        "message": "अक्षरे"
+    },
+    "trackerImportSuccess": {
+        "message": "डेटा यशस्वीरित्या आयात केला!"
+    },
+    "copyEnableTitle": {
+        "message": "कॉपी सक्षम करा"
+    },
+    "techCatStats": {
+        "message": "आकडेवारी"
+    },
+    "dateLabel": {
+        "message": "तारीख"
+    },
+    "techCatNetwork": {
+        "message": "नेटवर्क"
+    },
+    "techCatEcom": {
+        "message": "ई-कॉमर्स"
+    },
+    "currentRecordedLabel": {
+        "message": "सध्या रेकॉर्ड केलेले"
+    },
+    "toastCookieOff": {
+        "message": "स्वयंचलित कुकी अवरोधित करणे अक्षम केले आहे"
+    },
+    "toastModuleLoadError": {
+        "message": "मॉड्यूल लोड करताना त्रुटी"
+    },
+    "techCatStyles": {
+        "message": "शैली"
+    },
+    "extDesc": {
+        "message": "एक अंतिम साधन जे सर्व आवश्यक कार्ये एका जलद, आधुनिक आणि विनामूल्य इंटरफेसमध्ये एकत्र करते."
+    },
+    "resetBtn": {
+        "message": "रीसेट करा"
+    },
+    "addDateTooltip": {
+        "message": "आजची तारीख जोडा"
+    },
+    "supportTitle": {
+        "message": "विस्ताराला समर्थन द्या"
+    },
+    "toastCounterCopied": {
+        "message": "क्लिपबोर्डवर मजकूर कॉपी केला!"
+    },
+    "savedIndicator": {
+        "message": "जतन केले"
+    },
+    "counterPlaceholder": {
+        "message": "येथे मजकूर पेस्ट करा..."
+    },
+    "techFoundPrefix": {
+        "message": "सापडले: "
+    },
+    "systemPageTitle": {
+        "message": "सिस्टम पृष्ठ"
+    },
+    "markerClearAllTooltip": {
+        "message": "सर्व साफ करा"
+    },
+    "analyticsOptOutLabel": {
+        "message": "विश्लेषणे अक्षम करा"
+    },
+    "trackerModeDay": {
+        "message": "दैनंदिन दृश्य"
+    },
+    "techItemsSuffix": {
+        "message": "आयटम"
+    },
+    "toastStopwatchCleared": {
+        "message": "थेट इतिहास साफ केला गेला आहे!"
+    },
+    "trackerTotal": {
+        "message": "एकूण"
+    },
+    "swStatusReady": {
+        "message": "तयार"
+    },
+    "trackerTotalShort": {
+        "message": "एकूण"
+    },
+    "blockCookiesLabel": {
+        "message": "स्वयंचलितपणे कुकीज ब्लॉक करा"
+    },
+    "markerDrawTooltip": {
+        "message": "काढा"
+    },
+    "trackerMonthLabel": {
+        "message": "हा महिना"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "टेबल्स"
+    },
+    "techStatImages": {
+        "message": "प्रतिमा"
+    },
+    "toastRadioSaved": {
+        "message": "रेडिओ स्टेशनची URL जतन केली!"
+    },
+    "trackerToday": {
+        "message": "आज"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "शब्द"
+    },
+    "clearAllBtn": {
+        "message": "सर्व साफ करा"
+    },
+    "toastCopyOn": {
+        "message": "या साइटसाठी कॉपी सक्षम केली आहे"
+    },
+    "clearSiteDataBtn": {
+        "message": "या साइटवरील सर्व डेटा साफ करा"
+    },
+    "colorPickerPicking": {
+        "message": "निवडत आहे..."
+    },
+    "cacheClearConfirm": {
+        "message": "या साइटवरील सर्व डेटा साफ करा"
+    },
+    "markerTextTooltip": {
+        "message": "मजकूर"
+    },
+    "radioTitle": {
+        "message": "रेडिओ IN"
+    },
+    "trackerSelectedMonth": {
+        "message": "निवडलेला महिना"
+    },
+    "toastCopyOff": {
+        "message": "कॉपी अक्षम"
+    },
+    "fontCopied": {
+        "message": "कॉपी केले!"
+    },
+    "notesLinkText": {
+        "message": "लिंक"
+    },
+    "radioClearConfirm": {
+        "message": "सेव्ह केलेले रेडिओ स्टेशन साफ ​​करायचे?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "सरासरी (महिना)"
+    },
+    "techTitle": {
+        "message": "साइट तंत्रज्ञान"
+    },
+    "lapBtn": {
+        "message": "लॅप"
+    },
+    "playBtn": {
+        "message": "प्ले करा"
+    },
+    "toastDarkModeOn": {
+        "message": "गडद मोड सक्षम"
+    },
+    "techCatPayment": {
+        "message": "पेमेंट"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "या साइटसाठी कुकीजला परवानगी आहे"
+    },
+    "markerLineTooltip": {
+        "message": "लाइन"
+    },
+    "techStatIframes": {
+        "message": "Iframes"
+    },
+    "counterModalTitle": {
+        "message": "कॅरेक्टर काउंटर"
+    },
+    "fontTitle": {
+        "message": "फॉन्ट फाइंडर"
+    },
+    "toastTrackerExported": {
+        "message": "ट्रॅकर डेटा यशस्वीरित्या निर्यात केला!"
+    },
+    "toastNotesImportError": {
+        "message": "टिपा आयात करताना त्रुटी!"
+    },
+    "swExportTxtBtn": {
+        "message": ".TXT म्हणून एक्सपोर्ट करा"
+    },
+    "swUndoTitle": {
+        "message": "हा क्षण हटवा"
+    },
+    "startBtn": {
+        "message": "सुरू करा"
+    },
+    "markerMoveTooltip": {
+        "message": "हलवा"
+    },
+    "techModalTitle": {
+        "message": "साइट तंत्रज्ञान"
+    },
+    "saveRadioStationBtn": {
+        "message": "स्टेशन जतन करा"
+    },
+    "techCatDb": {
+        "message": "Database"
+    },
+    "toastNotesCleared": {
+        "message": "सर्व नोट्स साफ केल्या गेल्या आहेत!"
+    },
+    "toastTrackerImported": {
+        "message": "ट्रॅकर डेटा यशस्वीरित्या आयात केला!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "अवैध URL! URL http:// किंवा https:// ने सुरू होणे आवश्यक आहे"
+    },
+    "trackerImportError": {
+        "message": "फाइल वाचण्यात एरर आली."
+    },
+    "swStatusLive": {
+        "message": "लाइव्ह सुरू आहे"
+    },
+    "linkLabel": {
+        "message": "लिंक"
+    },
+    "techCatAnalytics": {
+        "message": "विश्लेषण"
+    },
+    "liveHistoryLabel": {
+        "message": "लाइव्ह इतिहास"
+    },
+    "colorPickerTitle": {
+        "message": "कलर पिकर"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "एकूण कालावधी: "
+    },
+    "stopwatchReady": {
+        "message": "तयार"
+    },
+    "confirmClearHistory": {
+        "message": "तुम्हाला खात्री आहे की तुम्ही सर्व इतिहास साफ करू इच्छिता?"
+    },
+    "markerTitle": {
+        "message": "पेज मार्कर"
+    },
+    "trackerModalTitle": {
+        "message": "Webtime Tracker"
+    },
+    "grabTextTooltip": {
+        "message": "पृष्ठावरून मजकूर काढा"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "साफ फील्ड"
+    },
+    "privacyLabel": {
+        "message": "गोपनीयता धोरण"
+    },
+    "whatsNewFeature4": {
+        "message": "फीडबॅक टॉगल करा: सेटिंग्ज बदलताना शॉर्ट पल्स ॲनिमेशन आणि पुष्टीकरण."
+    },
+    "trackerThatDay": {
+        "message": "त्या दिवशी"
+    },
+    "toastCookieWhitelistError": {
+        "message": "सूची अपडेट करू शकलो नाही"
+    },
+    "cookieWhitelistLabel": {
+        "message": "या साइटसाठी कुकीजला अनुमती द्या"
+    },
+    "textLabel": {
+        "message": "मजकूर"
+    },
+    "cacheCleared": {
+        "message": "साफ केले!"
+    },
+    "importRadioTooltip": {
+        "message": "सानुकूल रेडिओ स्टेशन आयात करा"
+    },
+    "radioPlay": {
+        "message": "प्ले करा"
+    },
+    "techLoadingMsg": {
+        "message": "स्कॅनर साइटचे विश्लेषण करत आहे..."
+    },
+    "swCopyBtn": {
+        "message": "क्लिपबोर्डवर कॉपी करा"
+    },
+    "techScannerFailed": {
+        "message": "या पृष्ठावर स्कॅनिंग अयशस्वी झाले."
+    },
+    "techNetworkOptInLabel": {
+        "message": "नेटवर्क माहिती दाखवा (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "आज"
+    },
+    "toastNotesImported": {
+        "message": "टिपा यशस्वीरित्या आयात केल्या!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "कॉपी केले: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ कॉपी केले"
+    },
+    "techCatCaching": {
+        "message": "कॅशिंग"
+    },
+    "techCatSecurity": {
+        "message": "सुरक्षा"
+    },
+    "toastYtOn": {
+        "message": "YouTube नापसंत प्रदर्शन सक्षम केले"
+    },
+    "extName": {
+        "message": "All In One - सर्वोत्तम उत्पादकता साधन"
+    },
+    "toastCookieOn": {
+        "message": "स्वयंचलित कुकी अवरोधित करणे सक्षम केले आहे"
+    },
+    "techScannerUnavailable": {
+        "message": "या पृष्ठावर स्कॅनर उपलब्ध नाही."
+    },
+    "notesTooLarge": {
+        "message": "नोट खूप मोठी आहे"
+    },
+    "swDurationLabel": {
+        "message": "कालावधी: "
+    },
+    "ytDislikeTitle": {
+        "message": "YouTube डिसलाइक परत आणा"
+    },
+    "donateBtn": {
+        "message": "देणगी द्या आणि समर्थन करा"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "सेटिंग्ज"
+    },
+    "trackerThisMonthShort": {
+        "message": "या महिन्यात"
+    },
+    "techCatSystem": {
+        "message": "प्रणाली"
+    },
+    "exportTooltip": {
+        "message": "डेटा निर्यात करा"
+    },
+    "exportNotesTooltip": {
+        "message": "नोट्स एक्सपोर्ट करा"
+    },
+    "radioPause": {
+        "message": "थामवा"
+    },
+    "websiteTooltip": {
+        "message": "अधिकृत विस्तार वेबसाइट"
+    },
+    "rateBtn": {
+        "message": "विस्ताराला रेट करा"
+    },
+    "techCatBase": {
+        "message": "बेस"
+    },
+    "cacheModalTitle": {
+        "message": "कुकीज आणि कॅशे"
+    },
+    "cancelBtn": {
+        "message": "रद्द करा"
+    },
+    "addUrlTooltip": {
+        "message": "सध्याची URL जोडा"
+    },
+    "trackerAvgTotal": {
+        "message": "सरासरी"
+    },
+    "techStatForms": {
+        "message": "फॉर्म"
+    },
+    "cacheError": {
+        "message": "त्रुटी"
+    }
 }

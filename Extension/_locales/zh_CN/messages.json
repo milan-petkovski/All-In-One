@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "笔记"
-                   },
-    "supportDesc":  {
-                        "message":  "免费服务。"
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "后端"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "擦除"
-                           },
-    "counterTitle":  {
-                         "message":  "计数器"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "平均"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "月视图"
-                         },
-    "trackerModeAll":  {
-                           "message":  "全部时间"
-                       },
-    "techCatMedia":  {
-                         "message":  "媒体"
-                     },
-    "trackerNoData":  {
-                          "message":  "此期间无数据"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "实时 #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "删除所有？"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "工具"
-                     },
-    "soundTitle":  {
-                       "message":  "声音"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "清除全部"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "关闭"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "秒表"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "清除笔记"
-                          },
-    "rulerTitle":  {
-                       "message":  "标尺"
-                   },
-    "markLapDesc":  {
-                        "message":  "在秒表上记录一个时刻"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "已禁用"
-                       },
-    "techStatLinks":  {
-                          "message":  "链接"
-                      },
-    "stopBtn":  {
-                    "message":  "停止"
-                },
-    "swNoLaps":  {
-                     "message":  "无记录"
-                 },
-    "trackerTitle":  {
-                         "message":  "追踪器"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "本月"
-                         },
-    "linesLabel":  {
-                       "message":  "行数"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "通信"
-                    },
-    "deleteBtn":  {
-                      "message":  "删除"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "保存成功"
-                   },
-    "lapBtn":  {
-                   "message":  "计圈"
-               },
-    "notesModalTitle":  {
-                            "message":  "笔记"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "平均"
-                            },
-    "versionLabel":  {
-                         "message":  "版本："
-                     },
-    "importNotesTooltip":  {
-                               "message":  "导入"
-                           },
-    "techCatBuild":  {
-                         "message":  "构建"
-                     },
-    "fontNotCopied":  {
-                          "message":  "失败"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "技术"
-                    },
-    "techCatServer":  {
-                          "message":  "服务器"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "不支持"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "音频"
-                      },
-    "cacheClearing":  {
-                          "message":  "清理中"
-                      },
-    "radioTitleCustom":  {
-                             "message":  "广播"
-                         },
-    "websiteBtn":  {
-                       "message":  "官网"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "粗细"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "您确定要清除全部吗？"
-                            },
-    "techCatAds":  {
-                       "message":  "广告"
-                   },
-    "uiSettings":  {
-                       "message":  "设置"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "该月"
-                         },
-    "radioModalDesc":  {
-                           "message":  "输入您喜爱的电台直链"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "确定要删除数据吗"
-                             },
-    "darkModeTitle":  {
-                          "message":  "深色模式"
-                      },
-    "techStatScripts":  {
-                            "message":  "脚本"
-                        },
-    "swNoHistory":  {
-                        "message":  "无历史"
-                    },
-    "techNotFound":  {
-                         "message":  "未发现"
-                     },
-    "notesPlaceholder":  {
-                             "message":  "在此写作"
-                         },
-    "radioArtist":  {
-                        "message":  "由 All In One 扩展程序提供支持"
-                    },
-    "charsLabel":  {
-                       "message":  "字符"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "开启复制"
-                        },
-    "techCatStats":  {
-                         "message":  "统计"
-                     },
-    "dateLabel":  {
-                      "message":  "日期"
-                  },
-    "techCatNetwork":  {
-                           "message":  "网络"
-                       },
-    "techCatEcom":  {
-                        "message":  "电子商务"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "当前记录"
-                             },
-    "techCatStyles":  {
-                          "message":  "样式"
-                      },
-    "extDesc":  {
-                    "message":  "终极工具，在快速、现代且免费的界面中集成了所有基本功能。"
-                },
-    "resetBtn":  {
-                     "message":  "重置"
-                 },
-    "addDateTooltip":  {
-                           "message":  "添加日期"
-                       },
-    "supportTitle":  {
-                         "message":  "支持"
-                     },
-    "savedIndicator":  {
-                           "message":  "已保存"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "粘贴此处"
-                           },
-    "techFoundPrefix":  {
-                            "message":  "检出："
-                        },
-    "systemPageTitle":  {
-                            "message":  "系统"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "全清"
-                              },
-    "trackerModeDay":  {
-                           "message":  "日视图"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "项"
-                        },
-    "trackerTotal":  {
-                         "message":  "总计"
-                     },
-    "swStatusReady":  {
-                          "message":  "就绪"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "总计"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "自动拦截"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "画笔"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "本月"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "表格"
-                       },
-    "techStatImages":  {
-                           "message":  "图片"
-                       },
-    "trackerToday":  {
-                         "message":  "今天"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "字数"
-                   },
-    "clearAllBtn":  {
-                        "message":  "清空"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "清除数据"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "选取中"
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "删除数据"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "文字"
-                          },
-    "radioTitle":  {
-                       "message":  "广播"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "选定的月份"
-                             },
-    "fontCopied":  {
-                       "message":  "已复制"
-                   },
-    "notesLinkText":  {
-                          "message":  "链接"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "平均"
-                            },
-    "techTitle":  {
-                      "message":  "技术"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "移动"
-                          },
-    "playBtn":  {
-                    "message":  "播放"
-                },
-    "techCatPayment":  {
-                           "message":  "支付"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "直线"
-                          },
-    "techStatIframes":  {
-                            "message":  "框架"
-                        },
-    "counterModalTitle":  {
-                              "message":  "计数器"
-                          },
-    "fontTitle":  {
-                      "message":  "字体"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "导出TXT"
-                       },
-    "swUndoTitle":  {
-                        "message":  "撤销"
-                    },
-    "startBtn":  {
-                     "message":  "开始"
-                 },
-    "techModalTitle":  {
-                           "message":  "技术"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "保存电台"
-                            },
-    "techCatDb":  {
-                      "message":  "数据库"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "运行中"
-                     },
-    "linkLabel":  {
-                      "message":  "链接"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "分析"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "历史"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "取色器"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "时刻"
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "累计："
-                              },
-    "stopwatchReady":  {
-                           "message":  "就绪"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "本月"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "删除历史？"
-                            },
-    "markerTitle":  {
-                        "message":  "标记"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "时间追踪器"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "提取文本"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "清除字段"
-                               },
-    "privacyLabel":  {
-                         "message":  "隐私"
-                     },
-    "trackerThatDay":  {
-                           "message":  "那天"
-                       },
-    "textLabel":  {
-                      "message":  "文本"
-                  },
-    "cacheCleared":  {
-                         "message":  "已清理"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "导入自定义电台"
-                           },
-    "radioPlay":  {
-                      "message":  "播放"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "正在扫描"
-                       },
-    "swCopyBtn":  {
-                      "message":  "复制"
-                  },
-    "techScannerFailed":  {
-                              "message":  "扫描失败"
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "今天"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "已复制："
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ 已复制"
-                    },
-    "techCatCaching":  {
-                           "message":  "缓存"
-                       },
-    "techCatSecurity":  {
-                            "message":  "安全"
-                        },
-    "extName":  {
-                    "message":  "All In One - 顶级生产力工具"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "不可用"
-                               },
-    "notesTooLarge":  {
-                          "message":  "容量超限"
-                      },
-    "swDurationLabel":  {
-                            "message":  "耗时："
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "Return YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "赞助支持"
-                  },
-    "techStatVideo":  {
-                          "message":  "视频"
-                      },
-    "settingsTooltip":  {
-                            "message":  "设置"
-                        },
-    "cacheTitle":  {
-                       "message":  "缓存"
-                   },
-    "techCatSystem":  {
-                          "message":  "系统"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "导出"
-                           },
-    "radioPause":  {
-                       "message":  "暂停"
-                   },
-    "websiteTooltip":  {
-                           "message":  "扩展程序的官方网站"
-                       },
-    "rateBtn":  {
-                    "message":  "评分"
-                },
-    "techCatBase":  {
-                        "message":  "基础"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "缓存"
-                        },
-    "cancelBtn":  {
-                      "message":  "取消"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "添加链接"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "平均"
-                        },
-    "techStatForms":  {
-                          "message":  "表单"
-                      },
-    "cacheError":  {
-                       "message":  "错误"
-                   }
+    "notesTitle": {
+        "message": "笔记"
+    },
+    "whatsNewDesc": {
+        "message": "查看最新的界面改进，使 All In One 变得更快、更优雅："
+    },
+    "toastPermissionDenied": {
+        "message": "未授予许可"
+    },
+    "clearCounterTooltip": {
+        "message": "清除全部"
+    },
+    "supportDesc": {
+        "message": "免费服务。"
+    },
+    "trackerExportTruncated": {
+        "message": "导出截断为 10MB 以保持弹出窗口稳定。"
+    },
+    "whatsNewClose": {
+        "message": "知道了"
+    },
+    "techCatBackend": {
+        "message": "后端"
+    },
+    "markerEraseTooltip": {
+        "message": "擦除"
+    },
+    "counterTitle": {
+        "message": "计数器"
+    },
+    "trackerAvgLabel": {
+        "message": "平均"
+    },
+    "trackerModeMonth": {
+        "message": "月视图"
+    },
+    "trackerModeAll": {
+        "message": "全部时间"
+    },
+    "techCatMedia": {
+        "message": "媒体"
+    },
+    "trackerNoData": {
+        "message": "此期间无数据"
+    },
+    "whatsNewFeature3": {
+        "message": "网站图标支持：跟踪器列表中的网站图标。"
+    },
+    "swLiveTitlePrefix": {
+        "message": "实时 #"
+    },
+    "confirmClearNotes": {
+        "message": "删除所有？"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "本站所有数据已被清除！"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "搜索网站..."
+    },
+    "techCatTools": {
+        "message": "工具"
+    },
+    "toastYtOff": {
+        "message": "YouTube 不喜欢显示已禁用"
+    },
+    "soundTitle": {
+        "message": "声音"
+    },
+    "cacheTitle": {
+        "message": "缓存"
+    },
+    "markerCloseTooltip": {
+        "message": "关闭"
+    },
+    "stopwatchTitle": {
+        "message": "秒表"
+    },
+    "clearNotesTooltip": {
+        "message": "清除笔记"
+    },
+    "rulerTitle": {
+        "message": "标尺"
+    },
+    "markLapDesc": {
+        "message": "在秒表上记录一个时刻"
+    },
+    "trackerImportEmpty": {
+        "message": "没有要导入的有效跟踪器数据。"
+    },
+    "whatsNewFeature1": {
+        "message": "平滑过渡：工具之间平滑的幻灯片动画。"
+    },
+    "systemPageDesc": {
+        "message": "已禁用"
+    },
+    "techStatLinks": {
+        "message": "链接"
+    },
+    "stopBtn": {
+        "message": "停止"
+    },
+    "swNoLaps": {
+        "message": "无记录"
+    },
+    "toastTrackerImportError": {
+        "message": "导入跟踪器数据时出错！"
+    },
+    "toastRadioPlayError": {
+        "message": "收音机现在无法启动。"
+    },
+    "trackerTitle": {
+        "message": "追踪器"
+    },
+    "offscreenJustification": {
+        "message": "广播流媒体和系统声音"
+    },
+    "trackerThisMonth": {
+        "message": "本月"
+    },
+    "linesLabel": {
+        "message": "行数"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "该网站已阻止 Cookie"
+    },
+    "toastTrackerError": {
+        "message": "刷新数据时出错"
+    },
+    "trackerExportEmpty": {
+        "message": "没有要导出的跟踪器数据。"
+    },
+    "techCatComm": {
+        "message": "通信"
+    },
+    "deleteBtn": {
+        "message": "删除"
+    },
+    "techCatTech": {
+        "message": "技术"
+    },
+    "notesSaved": {
+        "message": "保存成功"
+    },
+    "toastNotesExported": {
+        "message": "笔记成功导出！"
+    },
+    "swMomentLabel": {
+        "message": "时刻"
+    },
+    "notesModalTitle": {
+        "message": "笔记"
+    },
+    "trackerAvgThisMonth": {
+        "message": "平均"
+    },
+    "versionLabel": {
+        "message": "版本："
+    },
+    "importNotesTooltip": {
+        "message": "导入"
+    },
+    "techCatBuild": {
+        "message": "构建"
+    },
+    "toastDarkModeOff": {
+        "message": "灯光模式已启用"
+    },
+    "toastNotesCopied": {
+        "message": "文本已复制到剪贴板！"
+    },
+    "whatsNewFeature2": {
+        "message": "Premium Toasts：重要操作的现代通知系统。"
+    },
+    "fontNotCopied": {
+        "message": "失败"
+    },
+    "importTooltip": {
+        "message": "导入数据"
+    },
+    "wordsLabelShort": {
+        "message": "字"
+    },
+    "techCatServer": {
+        "message": "服务器"
+    },
+    "cacheNotSupported": {
+        "message": "不支持"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "音频"
+    },
+    "cacheClearing": {
+        "message": "清理中"
+    },
+    "radioTitleCustom": {
+        "message": "广播"
+    },
+    "toastTrackerRefreshed": {
+        "message": "数据刷新！"
+    },
+    "websiteBtn": {
+        "message": "官网"
+    },
+    "markerThicknessTooltip": {
+        "message": "粗细"
+    },
+    "confirmClearCounter": {
+        "message": "您确定要清除全部吗？"
+    },
+    "techCatAds": {
+        "message": "广告"
+    },
+    "uiSettings": {
+        "message": "设置"
+    },
+    "trackerThatMonth": {
+        "message": "该月"
+    },
+    "radioModalDesc": {
+        "message": "输入您喜爱的电台直链"
+    },
+    "trackerDeleteConfirm": {
+        "message": "确定要删除数据吗"
+    },
+    "darkModeTitle": {
+        "message": "深色模式"
+    },
+    "toastCounterCleared": {
+        "message": "计数器文本已被清除！"
+    },
+    "techStatScripts": {
+        "message": "脚本"
+    },
+    "techNetworkOptInHint": {
+        "message": "向 dns.google 和 ipinfo.io 发送请求。"
+    },
+    "swNoHistory": {
+        "message": "无历史"
+    },
+    "whatsNewTitle": {
+        "message": "1.6 版本的新增功能"
+    },
+    "techNotFound": {
+        "message": "未发现"
+    },
+    "notesPlaceholder": {
+        "message": "在此写作"
+    },
+    "radioArtist": {
+        "message": "由 All In One 扩展程序提供支持"
+    },
+    "charsLabel": {
+        "message": "字符"
+    },
+    "trackerImportSuccess": {
+        "message": "数据导入成功！"
+    },
+    "copyEnableTitle": {
+        "message": "开启复制"
+    },
+    "techCatStats": {
+        "message": "统计"
+    },
+    "dateLabel": {
+        "message": "日期"
+    },
+    "techCatNetwork": {
+        "message": "网络"
+    },
+    "techCatEcom": {
+        "message": "电子商务"
+    },
+    "currentRecordedLabel": {
+        "message": "当前记录"
+    },
+    "toastCookieOff": {
+        "message": "自动 cookie 阻止已禁用"
+    },
+    "toastModuleLoadError": {
+        "message": "加载模块时出错"
+    },
+    "techCatStyles": {
+        "message": "样式"
+    },
+    "extDesc": {
+        "message": "终极工具，在快速、现代且免费的界面中集成了所有基本功能。"
+    },
+    "resetBtn": {
+        "message": "重置"
+    },
+    "addDateTooltip": {
+        "message": "添加日期"
+    },
+    "supportTitle": {
+        "message": "支持"
+    },
+    "toastCounterCopied": {
+        "message": "文本已复制到剪贴板！"
+    },
+    "savedIndicator": {
+        "message": "已保存"
+    },
+    "counterPlaceholder": {
+        "message": "粘贴此处"
+    },
+    "techFoundPrefix": {
+        "message": "检出："
+    },
+    "systemPageTitle": {
+        "message": "系统"
+    },
+    "markerClearAllTooltip": {
+        "message": "全清"
+    },
+    "analyticsOptOutLabel": {
+        "message": "禁用分析"
+    },
+    "trackerModeDay": {
+        "message": "日视图"
+    },
+    "techItemsSuffix": {
+        "message": "项"
+    },
+    "toastStopwatchCleared": {
+        "message": "实时历史记录已被清除！"
+    },
+    "trackerTotal": {
+        "message": "总计"
+    },
+    "swStatusReady": {
+        "message": "就绪"
+    },
+    "trackerTotalShort": {
+        "message": "总计"
+    },
+    "blockCookiesLabel": {
+        "message": "自动拦截"
+    },
+    "markerDrawTooltip": {
+        "message": "画笔"
+    },
+    "trackerMonthLabel": {
+        "message": "本月"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "表格"
+    },
+    "techStatImages": {
+        "message": "图片"
+    },
+    "toastRadioSaved": {
+        "message": "广播电台 URL 已保存！"
+    },
+    "trackerToday": {
+        "message": "今天"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "字数"
+    },
+    "clearAllBtn": {
+        "message": "清空"
+    },
+    "toastCopyOn": {
+        "message": "该网站已启用复制功能"
+    },
+    "clearSiteDataBtn": {
+        "message": "清除数据"
+    },
+    "colorPickerPicking": {
+        "message": "选取中"
+    },
+    "cacheClearConfirm": {
+        "message": "删除数据"
+    },
+    "markerTextTooltip": {
+        "message": "文字"
+    },
+    "radioTitle": {
+        "message": "广播"
+    },
+    "trackerSelectedMonth": {
+        "message": "选定的月份"
+    },
+    "toastCopyOff": {
+        "message": "复制已禁用"
+    },
+    "fontCopied": {
+        "message": "已复制"
+    },
+    "notesLinkText": {
+        "message": "链接"
+    },
+    "radioClearConfirm": {
+        "message": "清除已保存的电台？"
+    },
+    "trackerAvgThatMonth": {
+        "message": "平均"
+    },
+    "techTitle": {
+        "message": "技术"
+    },
+    "lapBtn": {
+        "message": "计圈"
+    },
+    "playBtn": {
+        "message": "播放"
+    },
+    "toastDarkModeOn": {
+        "message": "启用深色模式"
+    },
+    "techCatPayment": {
+        "message": "支付"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "本网站允许使用 Cookie"
+    },
+    "markerLineTooltip": {
+        "message": "直线"
+    },
+    "techStatIframes": {
+        "message": "框架"
+    },
+    "counterModalTitle": {
+        "message": "计数器"
+    },
+    "fontTitle": {
+        "message": "字体"
+    },
+    "toastTrackerExported": {
+        "message": "追踪器数据成功导出！"
+    },
+    "toastNotesImportError": {
+        "message": "导入笔记时出错！"
+    },
+    "swExportTxtBtn": {
+        "message": "导出TXT"
+    },
+    "swUndoTitle": {
+        "message": "撤销"
+    },
+    "startBtn": {
+        "message": "开始"
+    },
+    "markerMoveTooltip": {
+        "message": "移动"
+    },
+    "techModalTitle": {
+        "message": "技术"
+    },
+    "saveRadioStationBtn": {
+        "message": "保存电台"
+    },
+    "techCatDb": {
+        "message": "数据库"
+    },
+    "toastNotesCleared": {
+        "message": "所有笔记都已清除！"
+    },
+    "toastTrackerImported": {
+        "message": "追踪器数据导入成功！"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "无效网址！ URL 必须以 http:// 或 https:// 开头"
+    },
+    "trackerImportError": {
+        "message": "读取文件时出错。"
+    },
+    "swStatusLive": {
+        "message": "运行中"
+    },
+    "linkLabel": {
+        "message": "链接"
+    },
+    "techCatAnalytics": {
+        "message": "分析"
+    },
+    "liveHistoryLabel": {
+        "message": "历史"
+    },
+    "colorPickerTitle": {
+        "message": "取色器"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "累计："
+    },
+    "stopwatchReady": {
+        "message": "就绪"
+    },
+    "confirmClearHistory": {
+        "message": "删除历史？"
+    },
+    "markerTitle": {
+        "message": "标记"
+    },
+    "trackerModalTitle": {
+        "message": "时间追踪器"
+    },
+    "grabTextTooltip": {
+        "message": "提取文本"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "清除字段"
+    },
+    "privacyLabel": {
+        "message": "隐私"
+    },
+    "whatsNewFeature4": {
+        "message": "切换反馈：更改设置时的短脉冲动画和确认。"
+    },
+    "trackerThatDay": {
+        "message": "那天"
+    },
+    "toastCookieWhitelistError": {
+        "message": "无法更新列表"
+    },
+    "cookieWhitelistLabel": {
+        "message": "允许该网站使用 cookie"
+    },
+    "textLabel": {
+        "message": "文本"
+    },
+    "cacheCleared": {
+        "message": "已清理"
+    },
+    "importRadioTooltip": {
+        "message": "导入自定义电台"
+    },
+    "radioPlay": {
+        "message": "播放"
+    },
+    "techLoadingMsg": {
+        "message": "正在扫描"
+    },
+    "swCopyBtn": {
+        "message": "复制"
+    },
+    "techScannerFailed": {
+        "message": "扫描失败"
+    },
+    "techNetworkOptInLabel": {
+        "message": "显示网络信息（DNS/IP）"
+    },
+    "trackerTodayLabel": {
+        "message": "今天"
+    },
+    "toastNotesImported": {
+        "message": "笔记导入成功！"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "已复制："
+    },
+    "swCopiedBtn": {
+        "message": "✓ 已复制"
+    },
+    "techCatCaching": {
+        "message": "缓存"
+    },
+    "techCatSecurity": {
+        "message": "安全"
+    },
+    "toastYtOn": {
+        "message": "YouTube 不喜欢显示已启用"
+    },
+    "extName": {
+        "message": "All In One - 顶级生产力工具"
+    },
+    "toastCookieOn": {
+        "message": "自动 cookie 阻止已启用"
+    },
+    "techScannerUnavailable": {
+        "message": "不可用"
+    },
+    "notesTooLarge": {
+        "message": "容量超限"
+    },
+    "swDurationLabel": {
+        "message": "耗时："
+    },
+    "ytDislikeTitle": {
+        "message": "Return YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "赞助支持"
+    },
+    "techStatVideo": {
+        "message": "视频"
+    },
+    "settingsTooltip": {
+        "message": "设置"
+    },
+    "trackerThisMonthShort": {
+        "message": "本月"
+    },
+    "techCatSystem": {
+        "message": "系统"
+    },
+    "exportTooltip": {
+        "message": "导出数据"
+    },
+    "exportNotesTooltip": {
+        "message": "导出"
+    },
+    "radioPause": {
+        "message": "暂停"
+    },
+    "websiteTooltip": {
+        "message": "扩展程序的官方网站"
+    },
+    "rateBtn": {
+        "message": "评分"
+    },
+    "techCatBase": {
+        "message": "基础"
+    },
+    "cacheModalTitle": {
+        "message": "缓存"
+    },
+    "cancelBtn": {
+        "message": "取消"
+    },
+    "addUrlTooltip": {
+        "message": "添加链接"
+    },
+    "trackerAvgTotal": {
+        "message": "平均"
+    },
+    "techStatForms": {
+        "message": "表单"
+    },
+    "cacheError": {
+        "message": "错误"
+    }
 }

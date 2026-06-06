@@ -1,413 +1,656 @@
 {
-    "swCopiedBtn":  {
-                        "message":  "✓ IMENAKILIWA"
-                    },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "techNotFound":  {
-                         "message":  "Haipatikani."
-                     },
-    "cacheNotSupported":  {
-                              "message":  "Haitumiki"
-                          },
-    "trackerAvgLabel":  {
-                            "message":  "Wastani"
-                        },
-    "colorPickerTitle":  {
-                             "message":  "Kichagua Rangi"
-                         },
-    "trackerThatMonth":  {
-                             "message":  "That month"
-                         },
-    "counterPlaceholder":  {
-                               "message":  "Bandika maandishi hapa..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Futa data yote kwenye tovuti hii"
-                          },
-    "trackerModeAll":  {
-                           "message":  "Muda wote"
-                       },
-    "swLiveTitlePrefix":  {
-                              "message":  "Moja kwa moja #"
-                          },
-    "notesSaved":  {
-                       "message":  "Imehifadhiwa"
-                   },
-    "trackerTitle":  {
-                         "message":  "Muda wa Tovuti"
-                     },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "trackerTotal":  {
-                         "message":  "Total"
-                     },
-    "savedIndicator":  {
-                           "message":  "Imehifadhiwa"
-                       },
-    "markerDrawTooltip":  {
-                              "message":  "Chora"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "wordsLabel":  {
-                       "message":  "Maneno"
-                   },
-    "stopwatchReady":  {
-                           "message":  "TAYARI"
-                       },
-    "notesLinkText":  {
-                          "message":  "Kiungo"
-                      },
-    "extDesc":  {
-                    "message":  "Chombo bora kinachounganisha kazi zote muhimu katika kiolesura cha haraka, cha kisasa na cha bure."
-                },
-    "dateLabel":  {
-                      "message":  "Tarehe"
-                  },
-    "swStatusLive":  {
-                         "message":  "MOJA KWA MOJA INAENDELEA"
-                     },
-    "linkLabel":  {
-                      "message":  "Kiungo"
-                  },
-    "trackerAvgThatMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "addUrlTooltip":  {
-                          "message":  "Ongeza URL ya sasa"
-                      },
-    "clearCounterTooltip":  {
-                                "message":  "Futa yote"
-                            },
-    "counterTitle":  {
-                         "message":  "Kihesabu Herufi"
-                     },
-    "markerEraseTooltip":  {
-                               "message":  "Futa"
-                           },
-    "swNoHistory":  {
-                        "message":  "Hakuna historia ya moja kwa moja"
-                    },
-    "deleteBtn":  {
-                      "message":  "FUTA"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "versionLabel":  {
-                         "message":  "Toleo:"
-                     },
-    "clearAllBtn":  {
-                        "message":  "FUTA YOTE"
-                    },
-    "uiSettings":  {
-                       "message":  "MIPANGILIO"
-                   },
-    "copyEnableTitle":  {
-                            "message":  "Washa Nakili"
-                        },
-    "soundTitle":  {
-                       "message":  "Sauti"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "charsLabel":  {
-                       "message":  "Herufi"
-                   },
-    "markerCloseTooltip":  {
-                               "message":  "Funga"
-                           },
-    "playBtn":  {
-                    "message":  "Cheza"
-                },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "markerLineTooltip":  {
-                              "message":  "Mstari"
-                          },
-    "colorPickerCopied":  {
-                              "message":  "Imenakiliwa: "
-                          },
-    "swStatusReady":  {
-                          "message":  "TAYARI"
-                      },
-    "cacheModalTitle":  {
-                            "message":  "VIDAKUZI NA AKIBA"
-                        },
-    "trackerMonthLabel":  {
-                              "message":  "Mwezi huu"
-                          },
-    "colorPickerPicking":  {
-                               "message":  "Inachagua..."
-                           },
-    "swUndoTitle":  {
-                        "message":  "Futa muda huu"
-                    },
-    "trackerAvgTotal":  {
-                            "message":  "Average"
-                        },
-    "addDateTooltip":  {
-                           "message":  "Ongeza tarehe ya leo"
-                       },
-    "techTitle":  {
-                      "message":  "Teknolojia za Tovuti"
-                  },
-    "trackerToday":  {
-                         "message":  "Today"
-                     },
-    "notesModalTitle":  {
-                            "message":  "VIDOKEZO MAHIRI"
-                        },
-    "notesTooLarge":  {
-                          "message":  "Kidokezo kikubwa sana"
-                      },
-    "cacheCleared":  {
-                         "message":  "Imefutwa!"
-                     },
-    "markerTitle":  {
-                        "message":  "Alama ya Ukurasa"
-                    },
-    "exportNotesTooltip":  {
-                               "message":  "Hamisha vidokezo"
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Imepatikana: "
-                        },
-    "techModalTitle":  {
-                           "message":  "TEKNOLOJIA ZA TOVUTI"
-                       },
-    "confirmClearNotes":  {
-                              "message":  "Je, una uhakika unataka kufuta vidokezo vyote?"
-                          },
-    "swNoLaps":  {
-                     "message":  "Hakuna muda uliorekodiwa"
-                 },
-    "confirmClearCounter":  {
-                                "message":  "Una uhakika unataka kufuta yote?"
-                            },
-    "supportDesc":  {
-                        "message":  "All In One ni zana ya bure kabisa. Usaidizi wako unasaidia kuiweka hivyo na inaruhusu ukuzaji wa vipengele vipya."
-                    },
-    "websiteTooltip":  {
-                           "message":  "Tovuti rasmi ya kiendelezi"
-                       },
-    "privacyLabel":  {
-                         "message":  "Sera ya Faragha"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Haijanakiliwa"
-                      },
-    "trackerNoData":  {
-                          "message":  "No data for this period"
-                      },
-    "trackerModeMonth":  {
-                             "message":  "Mwonekano wa kila mwezi"
-                         },
-    "swExportTxtBtn":  {
-                           "message":  "HAMISHA KAMA .TXT"
-                       },
-    "markerTextTooltip":  {
-                              "message":  "Maandishi"
-                          },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "cacheClearing":  {
-                          "message":  "Inafuta..."
-                      },
-    "trackerThatDay":  {
-                           "message":  "That day"
-                       },
-    "swTotalDurationPrefix":  {
-                                  "message":  "JUMLA YA MUDA: "
-                              },
-    "trackerAvgThisMonth":  {
-                                "message":  "Average (month)"
-                            },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Are you sure you want to delete data for"
-                             },
-    "ytDislikeTitle":  {
-                           "message":  "Rejesha Dislike za YouTube"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "vipengee"
-                        },
-    "rateBtn":  {
-                    "message":  "Kadiria kiendelezi"
-                },
-    "clearNotesTooltip":  {
-                              "message":  "Futa vidokezo vyote"
-                          },
-    "fontCopied":  {
-                       "message":  "Imenakiliwa!"
-                   },
-    "websiteBtn":  {
-                       "message":  "Tovuti rasmi"
-                   },
-    "darkModeTitle":  {
-                          "message":  "Hali ya Giza"
-                      },
-    "rulerTitle":  {
-                       "message":  "Rula ya Ukurasa"
-                   },
-    "trackerTodayLabel":  {
-                              "message":  "Leo"
-                          },
-    "currentRecordedLabel":  {
-                                 "message":  "ILIYOREKODIWA SASA"
-                             },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "extName":  {
-                    "message":  "All In One - Chombo bora cha tija"
-                },
-    "trackerThisMonth":  {
-                             "message":  "This month"
-                         },
-    "trackerTotalShort":  {
-                              "message":  "Total"
-                          },
-    "trackerSelectedMonth":  {
-                                 "message":  "Selected month"
-                             },
-    "techLoadingMsg":  {
-                           "message":  "Kichanganuzi kinachambua tovuti..."
-                       },
-    "radioPause":  {
-                       "message":  "Sitisha"
-                   },
-    "trackerThisMonthShort":  {
-                                  "message":  "This month"
-                              },
-    "swCopyBtn":  {
-                      "message":  "NAKILI KWENYE UBAO KILIPI"
-                  },
-    "swMomentLabel":  {
-                          "message":  "Muda "
-                      },
-    "donateBtn":  {
-                      "message":  "Changia na usaidie"
-                  },
-    "systemPageDesc":  {
-                           "message":  "Zana za kurekebisha zimezimwa"
-                       },
-    "radioTitle":  {
-                       "message":  "Redio IN"
-                   },
-    "notesTitle":  {
-                       "message":  "Vidokezo Mahiri"
-                   },
-    "techScannerUnavailable":  {
-                                   "message":  "Kichanganuzi hakipatikani kwenye ukurasa huu."
-                               },
-    "resetBtn":  {
-                     "message":  "Weka upya"
-                 },
-    "linesLabel":  {
-                       "message":  "Mistari"
-                   },
-    "stopBtn":  {
-                    "message":  "SIMAMA"
-                },
-    "supportTitle":  {
-                         "message":  "Saidia kiendelezi"
-                     },
-    "cacheError":  {
-                       "message":  "Hitilafu"
-                   },
-    "stopwatchTitle":  {
-                           "message":  "Saa ya kupimia"
-                       },
-    "trackerModalTitle":  {
-                              "message":  "Webtime Tracker"
-                          },
-    "fontTitle":  {
-                      "message":  "Kitafuta Fonti"
-                  },
-    "notesPlaceholder":  {
-                             "message":  "Andika vidokezo hapa..."
-                         },
-    "cacheTitle":  {
-                       "message":  "Vidakuzi na Akiba"
-                   },
-    "radioArtist":  {
-                        "message":  "Inaendeshwa na All In One"
-                    },
-    "liveHistoryLabel":  {
-                             "message":  "HISTORIA YA MOJA KWA MOJA"
-                         },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "clearSiteDataBtn":  {
-                             "message":  "Futa data yote kwenye tovuti hii"
-                         },
-    "settingsTooltip":  {
-                            "message":  "Mipangilio"
-                        },
-    "lapBtn":  {
-                   "message":  "MZUNGUKO"
-               },
-    "radioPlay":  {
-                      "message":  "Cheza"
-                  },
-    "markerClearAllTooltip":  {
-                                  "message":  "Futa yote"
-                              },
-    "textLabel":  {
-                      "message":  "Maandishi"
-                  },
-    "cancelBtn":  {
-                      "message":  "GHAIRI"
-                  },
-    "startBtn":  {
-                     "message":  "ANZA"
-                 },
-    "counterModalTitle":  {
-                              "message":  "KIHESABU HERUFI"
-                          },
-    "importNotesTooltip":  {
-                               "message":  "Ingiza vidokezo"
-                           },
-    "markerThicknessTooltip":  {
-                                   "message":  "Unene"
-                               },
-    "blockCookiesLabel":  {
-                              "message":  "Zuia vidakuzi kiotomatiki"
-                          },
-    "confirmClearHistory":  {
-                                "message":  "Je, una uhakika unataka kufuta historia yote?"
-                            },
-    "systemPageTitle":  {
-                            "message":  "UKURASA WA MFUMO"
-                        },
-    "grabTextTooltip":  {
-                            "message":  "Chukua maandishi kwenye ukurasa"
-                        },
-    "markLapDesc":  {
-                        "message":  "Rekodi muda kwenye saa ya mshale"
-                    },
-    "techScannerFailed":  {
-                              "message":  "Kuchanganua kumeshindwa kwenye ukurasa huu."
-                          },
-    "markerMoveTooltip":  {
-                              "message":  "Sogeza"
-                          },
-    "trackerModeDay":  {
-                           "message":  "Mwonekano wa kila siku"
-                       },
-    "swDurationLabel":  {
-                            "message":  "Muda: "
-                        }
+    "notesTitle": {
+        "message": "Vidokezo Mahiri"
+    },
+    "whatsNewDesc": {
+        "message": "Angalia maboresho ya hivi punde ya kiolesura ambayo hufanya All In One kuwa haraka na maridadi zaidi:"
+    },
+    "toastPermissionDenied": {
+        "message": "Ruhusa haijatolewa"
+    },
+    "clearCounterTooltip": {
+        "message": "Futa yote"
+    },
+    "supportDesc": {
+        "message": "All In One ni zana ya bure kabisa. Usaidizi wako unasaidia kuiweka hivyo na inaruhusu ukuzaji wa vipengele vipya."
+    },
+    "trackerExportTruncated": {
+        "message": "Uhamishaji umepunguzwa hadi 10MB ili kudumisha kidirisha ibukizi."
+    },
+    "whatsNewClose": {
+        "message": "NIMEPATA"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Futa"
+    },
+    "counterTitle": {
+        "message": "Kihesabu Herufi"
+    },
+    "trackerAvgLabel": {
+        "message": "Wastani"
+    },
+    "trackerModeMonth": {
+        "message": "Mwonekano wa kila mwezi"
+    },
+    "trackerModeAll": {
+        "message": "Muda wote"
+    },
+    "techCatMedia": {
+        "message": "Vyombo vya habari"
+    },
+    "trackerNoData": {
+        "message": "Hakuna data ya kipindi hiki"
+    },
+    "whatsNewFeature3": {
+        "message": "Usaidizi wa Favicon: Favicons za tovuti kwenye orodha ya kifuatiliaji."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Moja kwa moja #"
+    },
+    "confirmClearNotes": {
+        "message": "Je, una uhakika unataka kufuta vidokezo vyote?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Data yote kutoka kwa tovuti hii imefutwa!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Tafuta tovuti..."
+    },
+    "techCatTools": {
+        "message": "Zana"
+    },
+    "toastYtOff": {
+        "message": "Onyesho la kutopenda kwenye YouTube limezimwa"
+    },
+    "soundTitle": {
+        "message": "Sauti"
+    },
+    "cacheTitle": {
+        "message": "Vidakuzi na Akiba"
+    },
+    "markerCloseTooltip": {
+        "message": "Funga"
+    },
+    "stopwatchTitle": {
+        "message": "Saa ya kupimia"
+    },
+    "clearNotesTooltip": {
+        "message": "Futa vidokezo vyote"
+    },
+    "rulerTitle": {
+        "message": "Rula ya Ukurasa"
+    },
+    "markLapDesc": {
+        "message": "Rekodi muda kwenye saa ya mshale"
+    },
+    "trackerImportEmpty": {
+        "message": "Hakuna data halali ya kifuatiliaji cha kuleta."
+    },
+    "whatsNewFeature1": {
+        "message": "Mabadiliko Laini: Uhuishaji laini wa slaidi kati ya zana."
+    },
+    "systemPageDesc": {
+        "message": "Zana za kurekebisha zimezimwa"
+    },
+    "techStatLinks": {
+        "message": "Viungo"
+    },
+    "stopBtn": {
+        "message": "SIMAMA"
+    },
+    "swNoLaps": {
+        "message": "Hakuna muda uliorekodiwa"
+    },
+    "toastTrackerImportError": {
+        "message": "Hitilafu katika kuleta data ya kifuatiliaji!"
+    },
+    "toastRadioPlayError": {
+        "message": "Redio haiwezi kuanzishwa kwa sasa."
+    },
+    "trackerTitle": {
+        "message": "Muda wa Tovuti"
+    },
+    "offscreenJustification": {
+        "message": "Utiririshaji wa redio na sauti za mfumo"
+    },
+    "trackerThisMonth": {
+        "message": "Mwezi huu"
+    },
+    "linesLabel": {
+        "message": "Mistari"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "Vidakuzi vimezuiwa kwa tovuti hii"
+    },
+    "toastTrackerError": {
+        "message": "Hitilafu imetokea wakati wa kuonyesha upya data"
+    },
+    "trackerExportEmpty": {
+        "message": "Hakuna data ya kifuatiliaji cha kusafirisha."
+    },
+    "techCatComm": {
+        "message": "Mawasiliano"
+    },
+    "deleteBtn": {
+        "message": "FUTA"
+    },
+    "techCatTech": {
+        "message": "Teknolojia"
+    },
+    "notesSaved": {
+        "message": "Imehifadhiwa"
+    },
+    "toastNotesExported": {
+        "message": "Vidokezo vimetumwa kwa mafanikio!"
+    },
+    "swMomentLabel": {
+        "message": "Muda "
+    },
+    "notesModalTitle": {
+        "message": "VIDOKEZO MAHIRI"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Wastani (mwezi)"
+    },
+    "versionLabel": {
+        "message": "Toleo:"
+    },
+    "importNotesTooltip": {
+        "message": "Ingiza vidokezo"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Hali ya mwanga imewezeshwa"
+    },
+    "toastNotesCopied": {
+        "message": "Maandishi yamenakiliwa kwenye ubao wa kunakili!"
+    },
+    "whatsNewFeature2": {
+        "message": "Toasts za Kulipiwa: Mfumo wa kisasa wa arifa kwa vitendo muhimu."
+    },
+    "fontNotCopied": {
+        "message": "Haijanakiliwa"
+    },
+    "importTooltip": {
+        "message": "Ingiza data"
+    },
+    "wordsLabelShort": {
+        "message": "maneno"
+    },
+    "techCatServer": {
+        "message": "Server"
+    },
+    "cacheNotSupported": {
+        "message": "Haitumiki"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Audio"
+    },
+    "cacheClearing": {
+        "message": "Inafuta..."
+    },
+    "radioTitleCustom": {
+        "message": "Radio"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Data imeonyeshwa upya!"
+    },
+    "websiteBtn": {
+        "message": "Tovuti rasmi"
+    },
+    "markerThicknessTooltip": {
+        "message": "Unene"
+    },
+    "confirmClearCounter": {
+        "message": "Una uhakika unataka kufuta yote?"
+    },
+    "techCatAds": {
+        "message": "Matangazo"
+    },
+    "uiSettings": {
+        "message": "MIPANGILIO"
+    },
+    "trackerThatMonth": {
+        "message": "Mwezi huo"
+    },
+    "radioModalDesc": {
+        "message": "Ingiza kiungo cha moja kwa moja kwa kituo chako cha redio unachopenda"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Je, una uhakika unataka kufuta data kwa ajili yake"
+    },
+    "darkModeTitle": {
+        "message": "Hali ya Giza"
+    },
+    "toastCounterCleared": {
+        "message": "Maandishi ya kaunta yamefutwa!"
+    },
+    "techStatScripts": {
+        "message": "Hati"
+    },
+    "techNetworkOptInHint": {
+        "message": "Hutuma maombi kwa dns.google na ipinfo.io."
+    },
+    "swNoHistory": {
+        "message": "Hakuna historia ya moja kwa moja"
+    },
+    "whatsNewTitle": {
+        "message": "Nini Kipya katika Toleo la 1.6"
+    },
+    "techNotFound": {
+        "message": "Haipatikani."
+    },
+    "notesPlaceholder": {
+        "message": "Andika vidokezo hapa..."
+    },
+    "radioArtist": {
+        "message": "Inaendeshwa na All In One"
+    },
+    "charsLabel": {
+        "message": "Herufi"
+    },
+    "trackerImportSuccess": {
+        "message": "Data imefaulu kuletwa!"
+    },
+    "copyEnableTitle": {
+        "message": "Washa Nakili"
+    },
+    "techCatStats": {
+        "message": "Takwimu"
+    },
+    "dateLabel": {
+        "message": "Tarehe"
+    },
+    "techCatNetwork": {
+        "message": "Mtandao"
+    },
+    "techCatEcom": {
+        "message": "Biashara ya Mtandaoni"
+    },
+    "currentRecordedLabel": {
+        "message": "ILIYOREKODIWA SASA"
+    },
+    "toastCookieOff": {
+        "message": "Kizuizi kiotomatiki cha vidakuzi kimezimwa"
+    },
+    "toastModuleLoadError": {
+        "message": "Hitilafu katika upakiaji wa moduli"
+    },
+    "techCatStyles": {
+        "message": "Mitindo"
+    },
+    "extDesc": {
+        "message": "Chombo bora kinachounganisha kazi zote muhimu katika kiolesura cha haraka, cha kisasa na cha bure."
+    },
+    "resetBtn": {
+        "message": "Weka upya"
+    },
+    "addDateTooltip": {
+        "message": "Ongeza tarehe ya leo"
+    },
+    "supportTitle": {
+        "message": "Saidia kiendelezi"
+    },
+    "toastCounterCopied": {
+        "message": "Maandishi yamenakiliwa kwenye ubao wa kunakili!"
+    },
+    "savedIndicator": {
+        "message": "Imehifadhiwa"
+    },
+    "counterPlaceholder": {
+        "message": "Bandika maandishi hapa..."
+    },
+    "techFoundPrefix": {
+        "message": "Imepatikana: "
+    },
+    "systemPageTitle": {
+        "message": "UKURASA WA MFUMO"
+    },
+    "markerClearAllTooltip": {
+        "message": "Futa yote"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Lemaza uchanganuzi"
+    },
+    "trackerModeDay": {
+        "message": "Mwonekano wa kila siku"
+    },
+    "techItemsSuffix": {
+        "message": "vipengee"
+    },
+    "toastStopwatchCleared": {
+        "message": "Historia ya moja kwa moja imefutwa!"
+    },
+    "trackerTotal": {
+        "message": "Jumla"
+    },
+    "swStatusReady": {
+        "message": "TAYARI"
+    },
+    "trackerTotalShort": {
+        "message": "Jumla"
+    },
+    "blockCookiesLabel": {
+        "message": "Zuia vidakuzi kiotomatiki"
+    },
+    "markerDrawTooltip": {
+        "message": "Chora"
+    },
+    "trackerMonthLabel": {
+        "message": "Mwezi huu"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Majedwali"
+    },
+    "techStatImages": {
+        "message": "Picha"
+    },
+    "toastRadioSaved": {
+        "message": "URL ya kituo cha redio imehifadhiwa!"
+    },
+    "trackerToday": {
+        "message": "Leo"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Maneno"
+    },
+    "clearAllBtn": {
+        "message": "FUTA YOTE"
+    },
+    "toastCopyOn": {
+        "message": "Nakala imewezeshwa kwa tovuti hii"
+    },
+    "clearSiteDataBtn": {
+        "message": "Futa data yote kwenye tovuti hii"
+    },
+    "colorPickerPicking": {
+        "message": "Inachagua..."
+    },
+    "cacheClearConfirm": {
+        "message": "Futa data yote kwenye tovuti hii"
+    },
+    "markerTextTooltip": {
+        "message": "Maandishi"
+    },
+    "radioTitle": {
+        "message": "Redio IN"
+    },
+    "trackerSelectedMonth": {
+        "message": "Mwezi uliochaguliwa"
+    },
+    "toastCopyOff": {
+        "message": "Nakili imezimwa"
+    },
+    "fontCopied": {
+        "message": "Imenakiliwa!"
+    },
+    "notesLinkText": {
+        "message": "Kiungo"
+    },
+    "radioClearConfirm": {
+        "message": "Je, ungependa kufuta redio iliyohifadhiwa?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Wastani (mwezi)"
+    },
+    "techTitle": {
+        "message": "Teknolojia za Tovuti"
+    },
+    "lapBtn": {
+        "message": "MZUNGUKO"
+    },
+    "playBtn": {
+        "message": "Cheza"
+    },
+    "toastDarkModeOn": {
+        "message": "Hali nyeusi imewashwa"
+    },
+    "techCatPayment": {
+        "message": "Malipo"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Vidakuzi vinavyoruhusiwa kwa tovuti hii"
+    },
+    "markerLineTooltip": {
+        "message": "Mstari"
+    },
+    "techStatIframes": {
+        "message": "Iframes"
+    },
+    "counterModalTitle": {
+        "message": "KIHESABU HERUFI"
+    },
+    "fontTitle": {
+        "message": "Kitafuta Fonti"
+    },
+    "toastTrackerExported": {
+        "message": "Data ya kifuatiliaji imetumwa kwa mafanikio!"
+    },
+    "toastNotesImportError": {
+        "message": "Hitilafu katika kuleta madokezo!"
+    },
+    "swExportTxtBtn": {
+        "message": "HAMISHA KAMA .TXT"
+    },
+    "swUndoTitle": {
+        "message": "Futa muda huu"
+    },
+    "startBtn": {
+        "message": "ANZA"
+    },
+    "markerMoveTooltip": {
+        "message": "Sogeza"
+    },
+    "techModalTitle": {
+        "message": "TEKNOLOJIA ZA TOVUTI"
+    },
+    "saveRadioStationBtn": {
+        "message": "HIFADHI KITUO"
+    },
+    "techCatDb": {
+        "message": "Database"
+    },
+    "toastNotesCleared": {
+        "message": "Vidokezo vyote vimefutwa!"
+    },
+    "toastTrackerImported": {
+        "message": "Data ya kifuatiliaji imeingizwa kwa mafanikio!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "URL batili! URL lazima ianze na http:// au https://"
+    },
+    "trackerImportError": {
+        "message": "Hitilafu katika kusoma faili."
+    },
+    "swStatusLive": {
+        "message": "MOJA KWA MOJA INAENDELEA"
+    },
+    "linkLabel": {
+        "message": "Kiungo"
+    },
+    "techCatAnalytics": {
+        "message": "Uchanganuzi"
+    },
+    "liveHistoryLabel": {
+        "message": "HISTORIA YA MOJA KWA MOJA"
+    },
+    "colorPickerTitle": {
+        "message": "Kichagua Rangi"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "JUMLA YA MUDA: "
+    },
+    "stopwatchReady": {
+        "message": "TAYARI"
+    },
+    "confirmClearHistory": {
+        "message": "Je, una uhakika unataka kufuta historia yote?"
+    },
+    "markerTitle": {
+        "message": "Alama ya Ukurasa"
+    },
+    "trackerModalTitle": {
+        "message": "Webtime Tracker"
+    },
+    "grabTextTooltip": {
+        "message": "Chukua maandishi kwenye ukurasa"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Futa uga"
+    },
+    "privacyLabel": {
+        "message": "Sera ya Faragha"
+    },
+    "whatsNewFeature4": {
+        "message": "Geuza Maoni: Uhuishaji wa mpigo mfupi na uthibitisho wakati wa kubadilisha mipangilio."
+    },
+    "trackerThatDay": {
+        "message": "Siku hiyo"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Haikuweza kusasisha orodha"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Ruhusu vidakuzi kwa tovuti hii"
+    },
+    "textLabel": {
+        "message": "Maandishi"
+    },
+    "cacheCleared": {
+        "message": "Imefutwa!"
+    },
+    "importRadioTooltip": {
+        "message": "Ingiza kituo maalum cha redio"
+    },
+    "radioPlay": {
+        "message": "Cheza"
+    },
+    "techLoadingMsg": {
+        "message": "Kichanganuzi kinachambua tovuti..."
+    },
+    "swCopyBtn": {
+        "message": "NAKILI KWENYE UBAO KILIPI"
+    },
+    "techScannerFailed": {
+        "message": "Kuchanganua kumeshindwa kwenye ukurasa huu."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Onyesha maelezo ya mtandao (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Leo"
+    },
+    "toastNotesImported": {
+        "message": "Vidokezo vimeingizwa kwa mafanikio!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Imenakiliwa: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ IMENAKILIWA"
+    },
+    "techCatCaching": {
+        "message": "Kuhifadhi akiba"
+    },
+    "techCatSecurity": {
+        "message": "Usalama"
+    },
+    "toastYtOn": {
+        "message": "Onyesho la kutopenda kwenye YouTube limewashwa"
+    },
+    "extName": {
+        "message": "All In One - Chombo bora cha tija"
+    },
+    "toastCookieOn": {
+        "message": "Uzuiaji wa kidakuzi kiotomatiki umewezeshwa"
+    },
+    "techScannerUnavailable": {
+        "message": "Kichanganuzi hakipatikani kwenye ukurasa huu."
+    },
+    "notesTooLarge": {
+        "message": "Kidokezo kikubwa sana"
+    },
+    "swDurationLabel": {
+        "message": "Muda: "
+    },
+    "ytDislikeTitle": {
+        "message": "Rejesha Dislike za YouTube"
+    },
+    "donateBtn": {
+        "message": "Changia na usaidie"
+    },
+    "techStatVideo": {
+        "message": "Video"
+    },
+    "settingsTooltip": {
+        "message": "Mipangilio"
+    },
+    "trackerThisMonthShort": {
+        "message": "Mwezi huu"
+    },
+    "techCatSystem": {
+        "message": "Mfumo"
+    },
+    "exportTooltip": {
+        "message": "Hamisha data"
+    },
+    "exportNotesTooltip": {
+        "message": "Hamisha vidokezo"
+    },
+    "radioPause": {
+        "message": "Sitisha"
+    },
+    "websiteTooltip": {
+        "message": "Tovuti rasmi ya kiendelezi"
+    },
+    "rateBtn": {
+        "message": "Kadiria kiendelezi"
+    },
+    "techCatBase": {
+        "message": "Msingi"
+    },
+    "cacheModalTitle": {
+        "message": "VIDAKUZI NA AKIBA"
+    },
+    "cancelBtn": {
+        "message": "GHAIRI"
+    },
+    "addUrlTooltip": {
+        "message": "Ongeza URL ya sasa"
+    },
+    "trackerAvgTotal": {
+        "message": "Wastani"
+    },
+    "techStatForms": {
+        "message": "Fomu"
+    },
+    "cacheError": {
+        "message": "Hitilafu"
+    }
 }

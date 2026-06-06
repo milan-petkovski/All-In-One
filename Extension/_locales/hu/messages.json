@@ -1,527 +1,656 @@
 {
-    "notesTitle":  {
-                       "message":  "Jegyzetek"
-                   },
-    "supportDesc":  {
-                        "message":  "Az All In One egy teljesen ingyenes eszköz. Támogatása segít, hogy ez így is maradjon, és lehetővé teszi új funkciók rendszeres fejlesztését."
-                    },
-    "trackerExportTruncated":  {
-                                   "message":  "Export truncated to 10MB to keep the popup stable."
-                               },
-    "techCatBackend":  {
-                           "message":  "Backend"
-                       },
-    "markerEraseTooltip":  {
-                               "message":  "Törlés"
-                           },
-    "counterTitle":  {
-                         "message":  "Számláló"
-                     },
-    "trackerAvgLabel":  {
-                            "message":  "Átlag"
-                        },
-    "trackerModeMonth":  {
-                             "message":  "Havi nézet"
-                         },
-    "trackerModeAll":  {
-                           "message":  "Összes idő"
-                       },
-    "techCatMedia":  {
-                         "message":  "Média"
-                     },
-    "trackerNoData":  {
-                          "message":  "Nincs adat erre az időszakra"
-                      },
-    "swLiveTitlePrefix":  {
-                              "message":  "Élő #"
-                          },
-    "confirmClearNotes":  {
-                              "message":  "Biztosan törölni szeretné az összes jegyzetet?"
-                          },
-    "techCatSeo":  {
-                       "message":  "SEO"
-                   },
-    "techCatTools":  {
-                         "message":  "Eszközök"
-                     },
-    "soundTitle":  {
-                       "message":  "Hang"
-                   },
-    "clearCounterTooltip":  {
-                                "message":  "Mindent töröl"
-                            },
-    "markerCloseTooltip":  {
-                               "message":  "Bezárás"
-                           },
-    "stopwatchTitle":  {
-                           "message":  "Stopper"
-                       },
-    "clearNotesTooltip":  {
-                              "message":  "Minden jegyzet törlése"
-                          },
-    "rulerTitle":  {
-                       "message":  "Oldalvonalzó"
-                   },
-    "markLapDesc":  {
-                        "message":  "Pillanat rögzítése a stopperen"
-                    },
-    "trackerImportEmpty":  {
-                               "message":  "No valid tracker data to import."
-                           },
-    "systemPageDesc":  {
-                           "message":  "A módosító eszközök le vannak tiltva"
-                       },
-    "techStatLinks":  {
-                          "message":  "Linkek"
-                      },
-    "stopBtn":  {
-                    "message":  "LEÁLLÍTÁS"
-                },
-    "swNoLaps":  {
-                     "message":  "Nincsenek rögzített pillanatok"
-                 },
-    "trackerTitle":  {
-                         "message":  "Webidő"
-                     },
-    "trackerThisMonth":  {
-                             "message":  "Ez a hónap"
-                         },
-    "linesLabel":  {
-                       "message":  "Sorok"
-                   },
-    "toastTrackerError":  {
-                              "message":  "Error refreshing data"
-                          },
-    "trackerExportEmpty":  {
-                               "message":  "No tracker data to export."
-                           },
-    "techCatComm":  {
-                        "message":  "Kommunikáció"
-                    },
-    "deleteBtn":  {
-                      "message":  "TÖRLÉS"
-                  },
-    "toastModuleLoadError":  {
-                                 "message":  "Error loading module"
-                             },
-    "notesSaved":  {
-                       "message":  "Mentve"
-                   },
-    "lapBtn":  {
-                   "message":  "KÖR"
-               },
-    "notesModalTitle":  {
-                            "message":  "INTELLIGENS JEGYZETEK"
-                        },
-    "trackerAvgThisMonth":  {
-                                "message":  "Átlag"
-                            },
-    "versionLabel":  {
-                         "message":  "Verzió:"
-                     },
-    "importNotesTooltip":  {
-                               "message":  "Jegyzetek importálása"
-                           },
-    "techCatBuild":  {
-                         "message":  "Build"
-                     },
-    "fontNotCopied":  {
-                          "message":  "Nincs másolva"
-                      },
-    "importTooltip":  {
-                          "message":  "Import data"
-                      },
-    "techCatTech":  {
-                        "message":  "Technológiák"
-                    },
-    "techCatServer":  {
-                          "message":  "Szerver"
-                      },
-    "cacheNotSupported":  {
-                              "message":  "Nem támogatott"
-                          },
-    "techStatCss":  {
-                        "message":  "CSS"
-                    },
-    "techStatAudio":  {
-                          "message":  "Hang"
-                      },
-    "cacheClearing":  {
-                          "message":  "Törlés..."
-                      },
-    "radioTitleCustom":  {
-                             "message":  "Rádió"
-                         },
-    "websiteBtn":  {
-                       "message":  "Hivatalos weboldal"
-                   },
-    "markerThicknessTooltip":  {
-                                   "message":  "Vastagság"
-                               },
-    "confirmClearCounter":  {
-                                "message":  "Biztosan törölni szeretnél mindent?"
-                            },
-    "techCatAds":  {
-                       "message":  "Hirdetések"
-                   },
-    "uiSettings":  {
-                       "message":  "BEÁLLÍTÁSOK"
-                   },
-    "trackerThatMonth":  {
-                             "message":  "Az a hónap"
-                         },
-    "radioModalDesc":  {
-                           "message":  "Adja meg a kedvenc rádióállomás közvetlen linkjét"
-                       },
-    "trackerDeleteConfirm":  {
-                                 "message":  "Biztosan törli az adatokat ehhez"
-                             },
-    "darkModeTitle":  {
-                          "message":  "Sötét mód"
-                      },
-    "techStatScripts":  {
-                            "message":  "Szkriptek"
-                        },
-    "swNoHistory":  {
-                        "message":  "Nincs élő előzmény"
-                    },
-    "techNotFound":  {
-                         "message":  "Nem található."
-                     },
-    "notesPlaceholder":  {
-                             "message":  "Írja ide a jegyzeteket..."
-                         },
-    "radioArtist":  {
-                        "message":  "Az All In One bővítmény működteti"
-                    },
-    "charsLabel":  {
-                       "message":  "Karakterek"
-                   },
-    "trackerImportSuccess":  {
-                                 "message":  "Data successfully imported!"
-                             },
-    "copyEnableTitle":  {
-                            "message":  "Másolás"
-                        },
-    "techCatStats":  {
-                         "message":  "Statisztika"
-                     },
-    "dateLabel":  {
-                      "message":  "Dátum"
-                  },
-    "techCatNetwork":  {
-                           "message":  "Hálózat"
-                       },
-    "techCatEcom":  {
-                        "message":  "E-Commerce"
-                    },
-    "currentRecordedLabel":  {
-                                 "message":  "JELENLEG RÖGZÍTVE"
-                             },
-    "techCatStyles":  {
-                          "message":  "Stílusok"
-                      },
-    "extDesc":  {
-                    "message":  "A végső eszköz, amely minden alapvető funkciót egyetlen gyors, modern és ingyenes felületen egyesít."
-                },
-    "resetBtn":  {
-                     "message":  "Reset"
-                 },
-    "addDateTooltip":  {
-                           "message":  "Mai dátum hozzáadása"
-                       },
-    "supportTitle":  {
-                         "message":  "Támogassa a bővítményt"
-                     },
-    "savedIndicator":  {
-                           "message":  "Mentve"
-                       },
-    "counterPlaceholder":  {
-                               "message":  "Illessze be a szöveget ide..."
-                           },
-    "techFoundPrefix":  {
-                            "message":  "Találat: "
-                        },
-    "systemPageTitle":  {
-                            "message":  "RENDSZEROLDAL"
-                        },
-    "markerClearAllTooltip":  {
-                                  "message":  "Mindent törlés"
-                              },
-    "trackerModeDay":  {
-                           "message":  "Napi nézet"
-                       },
-    "techItemsSuffix":  {
-                            "message":  "elem"
-                        },
-    "trackerTotal":  {
-                         "message":  "Összesen"
-                     },
-    "swStatusReady":  {
-                          "message":  "KÉSZ"
-                      },
-    "trackerTotalShort":  {
-                              "message":  "Összesen"
-                          },
-    "blockCookiesLabel":  {
-                              "message":  "Sütik automatikus blokkolása"
-                          },
-    "markerDrawTooltip":  {
-                              "message":  "Rajzolás"
-                          },
-    "trackerMonthLabel":  {
-                              "message":  "Ez a hónap"
-                          },
-    "techStatSvg":  {
-                        "message":  "SVG"
-                    },
-    "techStatTables":  {
-                           "message":  "Táblázatok"
-                       },
-    "techStatImages":  {
-                           "message":  "Képek"
-                       },
-    "trackerToday":  {
-                         "message":  "Ma"
-                     },
-    "techStatDom":  {
-                        "message":  "DOM"
-                    },
-    "wordsLabel":  {
-                       "message":  "Szavak"
-                   },
-    "clearAllBtn":  {
-                        "message":  "MINDENT TÖRLÉS"
-                    },
-    "clearSiteDataBtn":  {
-                             "message":  "Minden adat törlése erről a webhelyről"
-                         },
-    "colorPickerPicking":  {
-                               "message":  "Kiválasztás..."
-                           },
-    "cacheClearConfirm":  {
-                              "message":  "Minden adat törlése erről a webhelyről"
-                          },
-    "markerTextTooltip":  {
-                              "message":  "Szöveg"
-                          },
-    "radioTitle":  {
-                       "message":  "Rádió"
-                   },
-    "trackerSelectedMonth":  {
-                                 "message":  "Kiválasztott hónap"
-                             },
-    "fontCopied":  {
-                       "message":  "Másolva!"
-                   },
-    "notesLinkText":  {
-                          "message":  "Link"
-                      },
-    "trackerAvgThatMonth":  {
-                                "message":  "Átlag"
-                            },
-    "techTitle":  {
-                      "message":  "Technológiák"
-                  },
-    "markerMoveTooltip":  {
-                              "message":  "Mozgatás"
-                          },
-    "playBtn":  {
-                    "message":  "Lejátszás"
-                },
-    "techCatPayment":  {
-                           "message":  "Fizetés"
-                       },
-    "markerLineTooltip":  {
-                              "message":  "Vonal"
-                          },
-    "techStatIframes":  {
-                            "message":  "Iframes"
-                        },
-    "counterModalTitle":  {
-                              "message":  "KARAKTERSZÁMLÁLO"
-                          },
-    "fontTitle":  {
-                      "message":  "Betűtípusok"
-                  },
-    "swExportTxtBtn":  {
-                           "message":  "EXPORTÁLÁS .TXT FORMÁTUMBAN"
-                       },
-    "swUndoTitle":  {
-                        "message":  "Törölje ezt a pillanatot"
-                    },
-    "startBtn":  {
-                     "message":  "INDÍTÁS"
-                 },
-    "techModalTitle":  {
-                           "message":  "WEBHELY TECHNOLÓGIÁK"
-                       },
-    "saveRadioStationBtn":  {
-                                "message":  "ÁLLOMÁS MENTÉSE"
-                            },
-    "techCatDb":  {
-                      "message":  "Adatbázis"
-                  },
-    "trackerImportError":  {
-                               "message":  "Error reading the file."
-                           },
-    "swStatusLive":  {
-                         "message":  "ÉLŐ KÖZVETÍTÉS FOLYAMATBAN"
-                     },
-    "linkLabel":  {
-                      "message":  "Link"
-                  },
-    "techCatAnalytics":  {
-                             "message":  "Elemzés"
-                         },
-    "liveHistoryLabel":  {
-                             "message":  "ÉLŐ ELŐZMÉNYEK"
-                         },
-    "colorPickerTitle":  {
-                             "message":  "Színválasztó"
-                         },
-    "appTitle":  {
-                     "message":  "ALL IN ONE"
-                 },
-    "swMomentLabel":  {
-                          "message":  "Pillanat "
-                      },
-    "swTotalDurationPrefix":  {
-                                  "message":  "TELJES IDŐTARTAM: "
-                              },
-    "stopwatchReady":  {
-                           "message":  "KÉSZ"
-                       },
-    "trackerThisMonthShort":  {
-                                  "message":  "Ez a hónap"
-                              },
-    "confirmClearHistory":  {
-                                "message":  "Biztosan törölni szeretné az összes előzményt?"
-                            },
-    "markerTitle":  {
-                        "message":  "Jelző"
-                    },
-    "trackerModalTitle":  {
-                              "message":  "Időkövetés"
-                          },
-    "grabTextTooltip":  {
-                            "message":  "Szöveg kinyerése az oldalról"
-                        },
-    "radioUrlPlaceholder":  {
-                                "message":  "https://stream.radio.com/play"
-                            },
-    "clearRadioInputTooltip":  {
-                                   "message":  "Mező törlése"
-                               },
-    "privacyLabel":  {
-                         "message":  "Adatvédelmi irányelvek"
-                     },
-    "trackerThatDay":  {
-                           "message":  "Aznap"
-                       },
-    "textLabel":  {
-                      "message":  "Szöveg"
-                  },
-    "cacheCleared":  {
-                         "message":  "Törölve!"
-                     },
-    "importRadioTooltip":  {
-                               "message":  "Egyéni rádióállomás importálása"
-                           },
-    "radioPlay":  {
-                      "message":  "Play"
-                  },
-    "techLoadingMsg":  {
-                           "message":  "A szkenner elemzi a webhelyet..."
-                       },
-    "swCopyBtn":  {
-                      "message":  "MÁSOLÁS VÁGÓLAPRA"
-                  },
-    "techScannerFailed":  {
-                              "message":  "A szkennelés sikertelen ezen az oldalon."
-                          },
-    "trackerTodayLabel":  {
-                              "message":  "Ma"
-                          },
-    "techCatCdn":  {
-                       "message":  "CDN"
-                   },
-    "colorPickerCopied":  {
-                              "message":  "Másolva: "
-                          },
-    "swCopiedBtn":  {
-                        "message":  "✓ MÁSOLVA"
-                    },
-    "techCatCaching":  {
-                           "message":  "Gyorsítótár"
-                       },
-    "techCatSecurity":  {
-                            "message":  "Biztonság"
-                        },
-    "extName":  {
-                    "message":  "All In One - A legjobb produktivitási eszköz"
-                },
-    "techScannerUnavailable":  {
-                                   "message":  "A szkenner nem érhető el ezen az oldalon."
-                               },
-    "notesTooLarge":  {
-                          "message":  "Túl nagy jegyzet"
-                      },
-    "swDurationLabel":  {
-                            "message":  "Időtartam: "
-                        },
-    "ytDislikeTitle":  {
-                           "message":  "YouTube Dislike"
-                       },
-    "donateBtn":  {
-                      "message":  "Adományozzon és támogasson"
-                  },
-    "techStatVideo":  {
-                          "message":  "Videó"
-                      },
-    "settingsTooltip":  {
-                            "message":  "Beállítások"
-                        },
-    "cacheTitle":  {
-                       "message":  "Sütik/gyorsítótár"
-                   },
-    "techCatSystem":  {
-                          "message":  "Rendszer"
-                      },
-    "exportTooltip":  {
-                          "message":  "Export data"
-                      },
-    "exportNotesTooltip":  {
-                               "message":  "Jegyzetek exportálása"
-                           },
-    "radioPause":  {
-                       "message":  "Szünet"
-                   },
-    "websiteTooltip":  {
-                           "message":  "Hivatalos oldal"
-                       },
-    "rateBtn":  {
-                    "message":  "Értékelje a bővítményt"
-                },
-    "techCatBase":  {
-                        "message":  "Alap"
-                    },
-    "cacheModalTitle":  {
-                            "message":  "SÜTIK ÉS GYORSÍTÓTÁR"
-                        },
-    "cancelBtn":  {
-                      "message":  "MÉGSE"
-                  },
-    "addUrlTooltip":  {
-                          "message":  "Jelenlegi URL hozzáadása"
-                      },
-    "trackerAvgTotal":  {
-                            "message":  "Átlag"
-                        },
-    "techStatForms":  {
-                          "message":  "Űrlapok"
-                      },
-    "cacheError":  {
-                       "message":  "Hiba"
-                   }
+    "notesTitle": {
+        "message": "Jegyzetek"
+    },
+    "whatsNewDesc": {
+        "message": "Tekintse meg a legújabb kezelőfelület-fejlesztéseket, amelyek még gyorsabbá és elegánsabbá teszik az All In One-t:"
+    },
+    "toastPermissionDenied": {
+        "message": "Az engedély nem adott"
+    },
+    "clearCounterTooltip": {
+        "message": "Mindent töröl"
+    },
+    "supportDesc": {
+        "message": "Az All In One egy teljesen ingyenes eszköz. Támogatása segít, hogy ez így is maradjon, és lehetővé teszi új funkciók rendszeres fejlesztését."
+    },
+    "trackerExportTruncated": {
+        "message": "Exportálás 10 MB-ra csonkolva, hogy az előugró ablak stabil maradjon."
+    },
+    "whatsNewClose": {
+        "message": "MEGÉRTEM"
+    },
+    "techCatBackend": {
+        "message": "Backend"
+    },
+    "markerEraseTooltip": {
+        "message": "Törlés"
+    },
+    "counterTitle": {
+        "message": "Számláló"
+    },
+    "trackerAvgLabel": {
+        "message": "Átlag"
+    },
+    "trackerModeMonth": {
+        "message": "Havi nézet"
+    },
+    "trackerModeAll": {
+        "message": "Összes idő"
+    },
+    "techCatMedia": {
+        "message": "Média"
+    },
+    "trackerNoData": {
+        "message": "Nincs adat erre az időszakra"
+    },
+    "whatsNewFeature3": {
+        "message": "Favicon támogatás: Webhely faviconok a tracker listában."
+    },
+    "swLiveTitlePrefix": {
+        "message": "Élő #"
+    },
+    "confirmClearNotes": {
+        "message": "Biztosan törölni szeretné az összes jegyzetet?"
+    },
+    "techCatSeo": {
+        "message": "SEO"
+    },
+    "toastCacheCleared": {
+        "message": "Az oldalról minden adat törölve lett!"
+    },
+    "trackerSearchPlaceholder": {
+        "message": "Webhelyek keresése..."
+    },
+    "techCatTools": {
+        "message": "Eszközök"
+    },
+    "toastYtOff": {
+        "message": "A YouTube Nem tetszik megjelenítése letiltva"
+    },
+    "soundTitle": {
+        "message": "Hang"
+    },
+    "cacheTitle": {
+        "message": "Sütik/gyorsítótár"
+    },
+    "markerCloseTooltip": {
+        "message": "Bezárás"
+    },
+    "stopwatchTitle": {
+        "message": "Stopper"
+    },
+    "clearNotesTooltip": {
+        "message": "Minden jegyzet törlése"
+    },
+    "rulerTitle": {
+        "message": "Oldalvonalzó"
+    },
+    "markLapDesc": {
+        "message": "Pillanat rögzítése a stopperen"
+    },
+    "trackerImportEmpty": {
+        "message": "Nincs érvényes nyomkövető adat, amelyet importálni lehetne."
+    },
+    "whatsNewFeature1": {
+        "message": "Sima átmenetek: Sima diaanimációk az eszközök között."
+    },
+    "systemPageDesc": {
+        "message": "A módosító eszközök le vannak tiltva"
+    },
+    "techStatLinks": {
+        "message": "Linkek"
+    },
+    "stopBtn": {
+        "message": "LEÁLLÍTÁS"
+    },
+    "swNoLaps": {
+        "message": "Nincsenek rögzített pillanatok"
+    },
+    "toastTrackerImportError": {
+        "message": "Hiba a nyomkövető adatainak importálásakor!"
+    },
+    "toastRadioPlayError": {
+        "message": "A rádiót jelenleg nem lehet elindítani."
+    },
+    "trackerTitle": {
+        "message": "Webidő"
+    },
+    "offscreenJustification": {
+        "message": "Rádió streaming és rendszerhangok"
+    },
+    "trackerThisMonth": {
+        "message": "Ez a hónap"
+    },
+    "linesLabel": {
+        "message": "Sorok"
+    },
+    "toastCookieWhitelistOff": {
+        "message": "A cookie-k letiltva ezen az oldalon"
+    },
+    "toastTrackerError": {
+        "message": "Hiba az adatok frissítésekor"
+    },
+    "trackerExportEmpty": {
+        "message": "Nincs exportálható nyomkövető adat."
+    },
+    "techCatComm": {
+        "message": "Kommunikáció"
+    },
+    "deleteBtn": {
+        "message": "TÖRLÉS"
+    },
+    "techCatTech": {
+        "message": "Technológiák"
+    },
+    "notesSaved": {
+        "message": "Mentve"
+    },
+    "toastNotesExported": {
+        "message": "A jegyzetek sikeresen exportálva!"
+    },
+    "swMomentLabel": {
+        "message": "Pillanat "
+    },
+    "notesModalTitle": {
+        "message": "INTELLIGENS JEGYZETEK"
+    },
+    "trackerAvgThisMonth": {
+        "message": "Átlag"
+    },
+    "versionLabel": {
+        "message": "Verzió:"
+    },
+    "importNotesTooltip": {
+        "message": "Jegyzetek importálása"
+    },
+    "techCatBuild": {
+        "message": "Build"
+    },
+    "toastDarkModeOff": {
+        "message": "Fény mód engedélyezve"
+    },
+    "toastNotesCopied": {
+        "message": "A szöveg a vágólapra másolva!"
+    },
+    "whatsNewFeature2": {
+        "message": "Prémium Toast: Modern értesítési rendszer a fontos műveletekről."
+    },
+    "fontNotCopied": {
+        "message": "Nincs másolva"
+    },
+    "importTooltip": {
+        "message": "Adatok importálása"
+    },
+    "wordsLabelShort": {
+        "message": "szavak"
+    },
+    "techCatServer": {
+        "message": "Szerver"
+    },
+    "cacheNotSupported": {
+        "message": "Nem támogatott"
+    },
+    "techStatCss": {
+        "message": "CSS"
+    },
+    "techStatAudio": {
+        "message": "Hang"
+    },
+    "cacheClearing": {
+        "message": "Törlés..."
+    },
+    "radioTitleCustom": {
+        "message": "Rádió"
+    },
+    "toastTrackerRefreshed": {
+        "message": "Adatok frissítve!"
+    },
+    "websiteBtn": {
+        "message": "Hivatalos weboldal"
+    },
+    "markerThicknessTooltip": {
+        "message": "Vastagság"
+    },
+    "confirmClearCounter": {
+        "message": "Biztosan törölni szeretnél mindent?"
+    },
+    "techCatAds": {
+        "message": "Hirdetések"
+    },
+    "uiSettings": {
+        "message": "BEÁLLÍTÁSOK"
+    },
+    "trackerThatMonth": {
+        "message": "Az a hónap"
+    },
+    "radioModalDesc": {
+        "message": "Adja meg a kedvenc rádióállomás közvetlen linkjét"
+    },
+    "trackerDeleteConfirm": {
+        "message": "Biztosan törli az adatokat ehhez"
+    },
+    "darkModeTitle": {
+        "message": "Sötét mód"
+    },
+    "toastCounterCleared": {
+        "message": "A számláló szövege törölve!"
+    },
+    "techStatScripts": {
+        "message": "Szkriptek"
+    },
+    "techNetworkOptInHint": {
+        "message": "Kéréseket küld a dns.google és az ipinfo.io címre."
+    },
+    "swNoHistory": {
+        "message": "Nincs élő előzmény"
+    },
+    "whatsNewTitle": {
+        "message": "Az 1.6-os verzió újdonságai"
+    },
+    "techNotFound": {
+        "message": "Nem található."
+    },
+    "notesPlaceholder": {
+        "message": "Írja ide a jegyzeteket..."
+    },
+    "radioArtist": {
+        "message": "Az All In One bővítmény működteti"
+    },
+    "charsLabel": {
+        "message": "Karakterek"
+    },
+    "trackerImportSuccess": {
+        "message": "Az adatok sikeresen importálva!"
+    },
+    "copyEnableTitle": {
+        "message": "Másolás"
+    },
+    "techCatStats": {
+        "message": "Statisztika"
+    },
+    "dateLabel": {
+        "message": "Dátum"
+    },
+    "techCatNetwork": {
+        "message": "Hálózat"
+    },
+    "techCatEcom": {
+        "message": "E-kereskedelem"
+    },
+    "currentRecordedLabel": {
+        "message": "JELENLEG RÖGZÍTVE"
+    },
+    "toastCookieOff": {
+        "message": "A cookie-k automatikus blokkolása le van tiltva"
+    },
+    "toastModuleLoadError": {
+        "message": "Hiba a modul betöltésekor"
+    },
+    "techCatStyles": {
+        "message": "Stílusok"
+    },
+    "extDesc": {
+        "message": "A végső eszköz, amely minden alapvető funkciót egyetlen gyors, modern és ingyenes felületen egyesít."
+    },
+    "resetBtn": {
+        "message": "Reset"
+    },
+    "addDateTooltip": {
+        "message": "Mai dátum hozzáadása"
+    },
+    "supportTitle": {
+        "message": "Támogassa a bővítményt"
+    },
+    "toastCounterCopied": {
+        "message": "A szöveg a vágólapra másolva!"
+    },
+    "savedIndicator": {
+        "message": "Mentve"
+    },
+    "counterPlaceholder": {
+        "message": "Illessze be a szöveget ide..."
+    },
+    "techFoundPrefix": {
+        "message": "Találat: "
+    },
+    "systemPageTitle": {
+        "message": "RENDSZEROLDAL"
+    },
+    "markerClearAllTooltip": {
+        "message": "Mindent törlés"
+    },
+    "analyticsOptOutLabel": {
+        "message": "Az elemzés letiltása"
+    },
+    "trackerModeDay": {
+        "message": "Napi nézet"
+    },
+    "techItemsSuffix": {
+        "message": "elem"
+    },
+    "toastStopwatchCleared": {
+        "message": "Az élő előzmények törölve!"
+    },
+    "trackerTotal": {
+        "message": "Összesen"
+    },
+    "swStatusReady": {
+        "message": "KÉSZ"
+    },
+    "trackerTotalShort": {
+        "message": "Összesen"
+    },
+    "blockCookiesLabel": {
+        "message": "Sütik automatikus blokkolása"
+    },
+    "markerDrawTooltip": {
+        "message": "Rajzolás"
+    },
+    "trackerMonthLabel": {
+        "message": "Ez a hónap"
+    },
+    "techStatSvg": {
+        "message": "SVG"
+    },
+    "techStatTables": {
+        "message": "Táblázatok"
+    },
+    "techStatImages": {
+        "message": "Képek"
+    },
+    "toastRadioSaved": {
+        "message": "A rádióállomás URL-je elmentve!"
+    },
+    "trackerToday": {
+        "message": "Ma"
+    },
+    "techStatDom": {
+        "message": "DOM"
+    },
+    "wordsLabel": {
+        "message": "Szavak"
+    },
+    "clearAllBtn": {
+        "message": "MINDENT TÖRLÉS"
+    },
+    "toastCopyOn": {
+        "message": "A másolás engedélyezve van ezen a webhelyen"
+    },
+    "clearSiteDataBtn": {
+        "message": "Minden adat törlése erről a webhelyről"
+    },
+    "colorPickerPicking": {
+        "message": "Kiválasztás..."
+    },
+    "cacheClearConfirm": {
+        "message": "Minden adat törlése erről a webhelyről"
+    },
+    "markerTextTooltip": {
+        "message": "Szöveg"
+    },
+    "radioTitle": {
+        "message": "Rádió"
+    },
+    "trackerSelectedMonth": {
+        "message": "Kiválasztott hónap"
+    },
+    "toastCopyOff": {
+        "message": "Másolás letiltva"
+    },
+    "fontCopied": {
+        "message": "Másolva!"
+    },
+    "notesLinkText": {
+        "message": "Link"
+    },
+    "radioClearConfirm": {
+        "message": "Törli a mentett rádióállomást?"
+    },
+    "trackerAvgThatMonth": {
+        "message": "Átlag"
+    },
+    "techTitle": {
+        "message": "Technológiák"
+    },
+    "lapBtn": {
+        "message": "KÖR"
+    },
+    "playBtn": {
+        "message": "Lejátszás"
+    },
+    "toastDarkModeOn": {
+        "message": "Sötét mód engedélyezve"
+    },
+    "techCatPayment": {
+        "message": "Fizetés"
+    },
+    "toastCookieWhitelistOn": {
+        "message": "Cookie-k használata engedélyezett ezen az oldalon"
+    },
+    "markerLineTooltip": {
+        "message": "Vonal"
+    },
+    "techStatIframes": {
+        "message": "Iframe-ek"
+    },
+    "counterModalTitle": {
+        "message": "KARAKTERSZÁMLÁLO"
+    },
+    "fontTitle": {
+        "message": "Betűtípusok"
+    },
+    "toastTrackerExported": {
+        "message": "A nyomkövető adatai sikeresen exportálva!"
+    },
+    "toastNotesImportError": {
+        "message": "Hiba a jegyzetek importálásakor!"
+    },
+    "swExportTxtBtn": {
+        "message": "EXPORTÁLÁS .TXT FORMÁTUMBAN"
+    },
+    "swUndoTitle": {
+        "message": "Törölje ezt a pillanatot"
+    },
+    "startBtn": {
+        "message": "INDÍTÁS"
+    },
+    "markerMoveTooltip": {
+        "message": "Mozgatás"
+    },
+    "techModalTitle": {
+        "message": "WEBHELY TECHNOLÓGIÁK"
+    },
+    "saveRadioStationBtn": {
+        "message": "ÁLLOMÁS MENTÉSE"
+    },
+    "techCatDb": {
+        "message": "Adatbázis"
+    },
+    "toastNotesCleared": {
+        "message": "Minden jegyzet törölve lett!"
+    },
+    "toastTrackerImported": {
+        "message": "A nyomkövető adatai sikeresen importálva!"
+    },
+    "toastInvalidRadioUrl": {
+        "message": "Érvénytelen URL! Az URL-nek http:// vagy https:// előtaggal kell kezdődnie"
+    },
+    "trackerImportError": {
+        "message": "Hiba a fájl olvasásakor."
+    },
+    "swStatusLive": {
+        "message": "ÉLŐ KÖZVETÍTÉS FOLYAMATBAN"
+    },
+    "linkLabel": {
+        "message": "Link"
+    },
+    "techCatAnalytics": {
+        "message": "Elemzés"
+    },
+    "liveHistoryLabel": {
+        "message": "ÉLŐ ELŐZMÉNYEK"
+    },
+    "colorPickerTitle": {
+        "message": "Színválasztó"
+    },
+    "appTitle": {
+        "message": "ALL IN ONE"
+    },
+    "swTotalDurationPrefix": {
+        "message": "TELJES IDŐTARTAM: "
+    },
+    "stopwatchReady": {
+        "message": "KÉSZ"
+    },
+    "confirmClearHistory": {
+        "message": "Biztosan törölni szeretné az összes előzményt?"
+    },
+    "markerTitle": {
+        "message": "Jelző"
+    },
+    "trackerModalTitle": {
+        "message": "Időkövetés"
+    },
+    "grabTextTooltip": {
+        "message": "Szöveg kinyerése az oldalról"
+    },
+    "radioUrlPlaceholder": {
+        "message": "https://stream.radio.com/play"
+    },
+    "clearRadioInputTooltip": {
+        "message": "Mező törlése"
+    },
+    "privacyLabel": {
+        "message": "Adatvédelmi irányelvek"
+    },
+    "whatsNewFeature4": {
+        "message": "Visszajelzés váltása: Rövid impulzusanimációk és megerősítések a beállítások megváltoztatásakor."
+    },
+    "trackerThatDay": {
+        "message": "Aznap"
+    },
+    "toastCookieWhitelistError": {
+        "message": "Nem sikerült frissíteni a listát"
+    },
+    "cookieWhitelistLabel": {
+        "message": "Cookie-k engedélyezése ezen az oldalon"
+    },
+    "textLabel": {
+        "message": "Szöveg"
+    },
+    "cacheCleared": {
+        "message": "Törölve!"
+    },
+    "importRadioTooltip": {
+        "message": "Egyéni rádióállomás importálása"
+    },
+    "radioPlay": {
+        "message": "Play"
+    },
+    "techLoadingMsg": {
+        "message": "A szkenner elemzi a webhelyet..."
+    },
+    "swCopyBtn": {
+        "message": "MÁSOLÁS VÁGÓLAPRA"
+    },
+    "techScannerFailed": {
+        "message": "A szkennelés sikertelen ezen az oldalon."
+    },
+    "techNetworkOptInLabel": {
+        "message": "Hálózati adatok megjelenítése (DNS/IP)"
+    },
+    "trackerTodayLabel": {
+        "message": "Ma"
+    },
+    "toastNotesImported": {
+        "message": "Jegyzetek sikeresen importálva!"
+    },
+    "techCatCdn": {
+        "message": "CDN"
+    },
+    "colorPickerCopied": {
+        "message": "Másolva: "
+    },
+    "swCopiedBtn": {
+        "message": "✓ MÁSOLVA"
+    },
+    "techCatCaching": {
+        "message": "Gyorsítótár"
+    },
+    "techCatSecurity": {
+        "message": "Biztonság"
+    },
+    "toastYtOn": {
+        "message": "A YouTube Nem tetszik megjelenítése engedélyezve van"
+    },
+    "extName": {
+        "message": "All In One - A legjobb produktivitási eszköz"
+    },
+    "toastCookieOn": {
+        "message": "Az automatikus cookie-blokkolás engedélyezve van"
+    },
+    "techScannerUnavailable": {
+        "message": "A szkenner nem érhető el ezen az oldalon."
+    },
+    "notesTooLarge": {
+        "message": "Túl nagy jegyzet"
+    },
+    "swDurationLabel": {
+        "message": "Időtartam: "
+    },
+    "ytDislikeTitle": {
+        "message": "YouTube Dislike"
+    },
+    "donateBtn": {
+        "message": "Adományozzon és támogasson"
+    },
+    "techStatVideo": {
+        "message": "Videó"
+    },
+    "settingsTooltip": {
+        "message": "Beállítások"
+    },
+    "trackerThisMonthShort": {
+        "message": "Ez a hónap"
+    },
+    "techCatSystem": {
+        "message": "Rendszer"
+    },
+    "exportTooltip": {
+        "message": "Adatok exportálása"
+    },
+    "exportNotesTooltip": {
+        "message": "Jegyzetek exportálása"
+    },
+    "radioPause": {
+        "message": "Szünet"
+    },
+    "websiteTooltip": {
+        "message": "Hivatalos oldal"
+    },
+    "rateBtn": {
+        "message": "Értékelje a bővítményt"
+    },
+    "techCatBase": {
+        "message": "Alap"
+    },
+    "cacheModalTitle": {
+        "message": "SÜTIK ÉS GYORSÍTÓTÁR"
+    },
+    "cancelBtn": {
+        "message": "MÉGSE"
+    },
+    "addUrlTooltip": {
+        "message": "Jelenlegi URL hozzáadása"
+    },
+    "trackerAvgTotal": {
+        "message": "Átlag"
+    },
+    "techStatForms": {
+        "message": "Űrlapok"
+    },
+    "cacheError": {
+        "message": "Hiba"
+    }
 }
