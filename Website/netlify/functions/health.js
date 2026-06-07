@@ -124,7 +124,7 @@ function checkGAEndpoint() {
             timeout: 5000
         }, (res) => {
             resolve({
-                reachable: [200, 400, 401, 403].includes(res.statusCode),
+                reachable: [200, 204, 400, 401, 403].includes(res.statusCode),
                 responseTime: Date.now() - start,
                 statusCode: res.statusCode
             });

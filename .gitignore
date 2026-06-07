@@ -63,6 +63,7 @@ Desktop.ini
 .next/
 tmp/
 temp/
+.netlify/
 
 # Misc
 *.bak

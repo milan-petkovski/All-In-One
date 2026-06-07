@@ -171,7 +171,7 @@
                 <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
                     class="inline-flex items-center justify-center gap-2 bg-brand text-black font-[1000] py-3 px-8 rounded-full hover:bg-[#00ff88] hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_10px_25px_rgba(0,255,136,0.4)] whitespace-nowrap uppercase text-sm"
                     target="_blank"
-                    onclick="gtag('event', 'DodajEkstenziju', {event_category: 'CTA', event_label: 'Navbar'});">
+                    onclick="gtag('event', 'website_add', {location: 'Navbar'});">
                     <i data-lucide="download" class="w-5 h-5 stroke-[3]"></i>
                     <span class="max-[425px]:hidden" data-i18n="nav_add">Dodaj ekstenziju</span>
                 </a>
@@ -186,7 +186,7 @@
                     aria-label="Doniraj kafu"
                     class="inline-flex items-center justify-center gap-2 bg-brand text-black font-[1000] py-3 px-5 rounded-full hover:bg-[#00ff88] hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_10px_25px_rgba(0,255,136,0.4)] whitespace-nowrap uppercase text-sm"
                     target="_blank"
-                    onclick="gtag('event', 'DodajKafu', {event_category: 'CTA', event_label: 'Navbar'});">
+                    onclick="gtag('event', 'website_coffee');">
                     <i data-lucide="coffee" class="w-5 h-5 stroke-[3]"></i>
                 </a>
             </div>
@@ -229,7 +229,8 @@
                 <div class="flex items-center gap-6">
                     <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
                         class="bg-brand text-black font-[900] py-5 px-10 rounded-2xl text-xl hover:bg-green-400 hover:scale-105 transition-all shadow-2xl shadow-brand/30 flex items-center gap-3 uppercase italic tracking-tighter"
-                        target="_blank">
+                        target="_blank"
+                        onclick="gtag('event', 'website_add', {location: 'Hero'});">
                         <i data-lucide="download" class="w-6 h-6"></i> <span data-i18n="hero_btn">Dodaj
                             ekstenziju</span>
                     </a>
@@ -242,49 +243,56 @@
                     <ul class="flex flex-wrap items-center gap-5 list-none p-0">
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank">
+                                class="hover:opacity-80 transition-opacity" target="_blank"
+                                onclick="gtag('event', 'website_add', {location: 'Browser Chrome'});">
                                 <img src="/Browser/1.png"
                                     alt="Instaliraj All In One ekstenziju za Chrome" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank">
+                                class="hover:opacity-80 transition-opacity" target="_blank"
+                                onclick="gtag('event', 'website_add', {location: 'Browser Edge'});">
                                 <img src="/Browser/2.png"
                                     alt="Instaliraj All In One ekstenziju za Edge" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank">
+                                class="hover:opacity-80 transition-opacity" target="_blank"
+                                onclick="gtag('event', 'website_add', {location: 'Browser Brave'});">
                                 <img src="/Browser/3.png"
                                     alt="Instaliraj All In One ekstenziju za Brave" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank">
+                                class="hover:opacity-80 transition-opacity" target="_blank"
+                                onclick="gtag('event', 'website_add', {location: 'Browser Opera'});">
                                 <img src="/Browser/4.png"
                                     alt="Instaliraj All In One ekstenziju za Opera" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank">
+                                class="hover:opacity-80 transition-opacity" target="_blank"
+                                onclick="gtag('event', 'website_add', {location: 'Browser Opera GX'});">
                                 <img src="/Browser/5.png"
                                     alt="Instaliraj All In One ekstenziju za Opera GX" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank">
+                                class="hover:opacity-80 transition-opacity" target="_blank"
+                                onclick="gtag('event', 'website_add', {location: 'Browser Vivaldi'});">
                                 <img src="/Browser/6.png"
                                     alt="Instaliraj All In One ekstenziju za Vivaldi" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank">
+                                class="hover:opacity-80 transition-opacity" target="_blank"
+                                onclick="gtag('event', 'website_add', {location: 'Browser Arc'});">
                                 <img src="/Browser/7.png"
                                     alt="Instaliraj All In One ekstenziju za Arc" class="h-8 w-8">
                             </a>
@@ -295,6 +303,7 @@
                 <div class="mt-6 flex items-center gap-3">
                     <span class="text-xs font-black uppercase tracking-[0.2em] text-gray-400">Powered by</span>
                     <a href="https://milanwebportal.com"
+                        onclick="gtag('event', 'website_milan');"
                         class="text-gray-900 hover:text-brand transition-colors font-black text-sm uppercase tracking-widest underline decoration-brand decoration-2 underline-offset-4"
                         target="_blank">milanwebportal.com</a>
                     <span class="text-gray-300">•</span>
@@ -1435,7 +1444,9 @@
         </div>
         <div class="max-w-7xl mx-auto px-6 mt-16 flex justify-center">
             <a href="https://chromewebstore.google.com/detail/all-in-one/hmkcbieabcldlndhjeemggokhlebjoem/reviews"
-                class="group relative px-10 py-5 bg-brand rounded-2xl transition-all duration-300 hover:shadow-[0_0_30px_#00ff88] hover:scale-[1.02] active:scale-95 flex items-center justify-center">
+                class="group relative px-10 py-5 bg-brand rounded-2xl transition-all duration-300 hover:shadow-[0_0_30px_#00ff88] hover:scale-[1.02] active:scale-95 flex items-center justify-center"
+                target="_blank"
+                onclick="gtag('event', 'website_rate', {location: 'Testimonials'});">
                 <div class="flex items-center gap-3 relative z-10">
                     <i data-lucide="pen-tool" class="w-6 h-6 text-gray-900 fill-gray-900/10"></i>
 
@@ -1472,7 +1483,8 @@
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
                         <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
                             class="w-full sm:w-auto bg-brand text-black font-[1000] py-6 px-12 rounded-2xl text-2xl hover:bg-green-400 hover:scale-105 active:scale-95 transition-all shadow-[0_20px_50px_rgba(0,255,136,0.3)] flex items-center justify-center gap-3 uppercase italic tracking-tighter"
-                            target="_blank">
+                            target="_blank"
+                            onclick="gtag('event', 'website_add', {location: 'Bottom CTA'});">
                             <i data-lucide="download" class="w-8 h-8 stroke-[3]"></i> <span data-i18n="cta_btn">Dodaj
                                 Besplatno</span>
                         </a>
@@ -1595,6 +1607,7 @@
                 class="text-gray-500 text-sm font-medium text-center md:text-left bg-gray-50/80 px-6 py-2.5 rounded-full border border-gray-100 shadow-sm">
                 &copy; 2026
                 <a href="https://milanwebportal.com" target="_blank"
+                    onclick="gtag('event', 'website_milan');"
                     class="text-brand transition-all font-bold relative inline-block group/link">
                     Milan Web Portal
                     <span
