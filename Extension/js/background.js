@@ -341,8 +341,121 @@ async function clearSiteDataEverywhere(urlString) {
     );
 }
 
+async function syncKickLiveStatus(channelSlug) {
+    try {
+        const response = await fetch(`https://kick.com/api/v1/channels/${encodeURIComponent(channelSlug)}`);
+        if (!response.ok) {
+            throw new Error(`Greška pri povezivanju sa Kick API-jem (Status: ${response.status})`);
+        }
+        const data = await response.json();
+        if (data && data.livestream) {
+            const createdAt = data.livestream.created_at;
+            if (!createdAt) {
+                return { isLive: false, error: "Kanal nije uživo." };
+            }
+            let serverTime;
+            if (typeof createdAt === "string") {
+                const trimmed = createdAt.trim();
+                if (!trimmed.includes("Z") && !trimmed.includes("+") && !/-\d{2}:\d{2}$/.test(trimmed)) {
+                    const formatted = trimmed.replace(" ", "T");
+                    serverTime = new Date(formatted + "Z").getTime();
+                } else {
+                    serverTime = new Date(trimmed).getTime();
+                }
+            } else {
+                serverTime = new Date(createdAt).getTime();
+            }
+            const store = await chrome.storage.local.get(["isRunning", "startTime"]);
+            const diff = Math.abs((store.startTime || 0) - serverTime);
+
+            if (store.isRunning !== true || diff > 5000) {
+                await chrome.storage.local.set({
+                    isRunning: true,
+                    startTime: serverTime,
+                    kickChannel: channelSlug
+                });
+                safeSendRuntimeMessage({ action: "update_ui" });
+            } else {
+                await chrome.storage.local.set({
+                    kickChannel: channelSlug
+                });
+                safeSendRuntimeMessage({ action: "update_ui" });
+            }
+            return { isLive: true, kickChannel: channelSlug };
+        } else {
+            return { isLive: false, offlineConfirmed: true, error: "Kanal trenutno nije uživo." };
+        }
+    } catch (error) {
+        logger.error("syncKickLiveStatus error:", error);
+        return { isLive: false, error: error.message || "Greška pri povezivanju sa Kick API-jem." };
+    }
+}
+
+async function checkKickStatusPeriodically(force = false) {
+    try {
+        const store = await chrome.storage.local.get(["isRunning", "kickChannel", "startTime", "currentLaps", "history"]);
+        if (store.isRunning === true && store.kickChannel) {
+            const lastCheckKey = "lastKickCheckAt";
+            const now = Date.now();
+            if (!force) {
+                const lastCheckRes = await chrome.storage.local.get([lastCheckKey]);
+                const lastCheck = lastCheckRes[lastCheckKey] || 0;
+                // 45 seconds rate limiting protection
+                if (now - lastCheck < 45000) {
+                    return;
+                }
+            }
+            await chrome.storage.local.set({ [lastCheckKey]: now });
+
+            const res = await syncKickLiveStatus(store.kickChannel);
+            // Only auto-stop if successfully confirmed by API response that stream is ended (not a network timeout/rate limit error)
+            if (res && res.isLive === false && res.offlineConfirmed === true) {
+                const startTime = Number.isFinite(store.startTime) ? store.startTime : now;
+                const currentLaps = Array.isArray(store.currentLaps) ? store.currentLaps : [];
+                const channelName = typeof store.kickChannel === 'string' && store.kickChannel.trim() ? store.kickChannel : null;
+                const latestHistory = Array.isArray(store.history) ? store.history : [];
+
+                const updates = {
+                    isRunning: false,
+                    startTime: 0,
+                    currentLaps: [],
+                    kickChannel: ""
+                };
+
+                if (currentLaps.length > 0) {
+                    const session = { sessionStart: Date.now(), laps: currentLaps, ...(channelName && { channelName }) };
+                    updates.history = [...latestHistory, session];
+                }
+
+                await chrome.storage.local.set(updates);
+                safeSendRuntimeMessage({ action: "update_ui" });
+            }
+        }
+    } catch (err) {
+        logger.error("checkKickStatusPeriodically error:", err);
+    }
+}
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     const action = request?.action;
+
+    if (action === "check_kick_status") {
+        checkKickStatusPeriodically(request.force)
+            .then(() => sendResponse({ ok: true }))
+            .catch(() => sendResponse({ ok: false }));
+        return true;
+    }
+
+    if (action === "sync_kick_live") {
+        syncKickLiveStatus(request.channelSlug)
+            .then((res) => {
+                safeSendRuntimeMessage({ action: "sync_kick_response", ...res });
+            })
+            .catch((err) => {
+                safeSendRuntimeMessage({ action: "sync_kick_response", isLive: false, error: err.message });
+            });
+        return false;
+    }
 
     if (action === "get_system_idle_state") {
         sendResponse({ state: systemIdleState });
@@ -853,7 +966,7 @@ chrome.commands.onCommand.addListener((command) => {
 function ensureKeepAliveAlarm() {
     chrome.alarms.get('keepAlive', (alarm) => {
         if (!alarm) {
-            chrome.alarms.create('keepAlive', { periodInMinutes: 0.5 });
+            chrome.alarms.create('keepAlive', { periodInMinutes: 1 });
         }
     });
 }
@@ -889,6 +1002,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
     if (alarm.name === 'keepAlive') {
         checkRealRadioStatus().catch(() => { });
         flushTrackerBuffer().catch(() => { });
+        checkKickStatusPeriodically().catch(() => { });
         ensureKeepAliveAlarm();
     }
 });

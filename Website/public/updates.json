@@ -1,7 +1,21 @@
 [
     {
-        "verzija": "1.5.4",
+        "verzija": "1.5.4.2",
         "aktivno": true,
+        "sr": {
+            "datum": "12. Jun 2026.",
+            "naslov": "Kick integracija",
+            "opis": "Ovo ažuriranje donosi integraciju sa Kick.com platformom. Štoperica se sada automatski sinhronizuje sa prenosom uživo na Kick kanalu i pouzdano čuva podatke o trajanju sesije i momentima nakon završetka strima."
+        },
+        "en": {
+            "datum": "June 12, 2026",
+            "naslov": "Kick Integration",
+            "opis": "This update introduces integration with the Kick.com platform. The stopwatch now automatically synchronizes with active Kick live streams and reliably saves session durations and moments when the stream goes offline."
+        }
+    },
+    {
+        "verzija": "1.5.4",
+        "aktivno": false,
         "sr": {
             "datum": "6. Jun 2026.",
             "naslov": "Maksimalna stabilnost",

@@ -295,7 +295,7 @@ test('stopwatch renders history, supports lap deletion, and appends a session on
     assert.ok(lapsList.children.length > 0);
     assert.ok(historyList.children.length > 0);
 
-    const undoButtons = lapsList.querySelectorAll('.lap-undo-btn');
+    const undoButtons = lapsList.querySelectorAll('.lap-x-btn');
     const undoButton = undoButtons[1];
     assert.ok(undoButton);
     undoButton.click();
@@ -313,7 +313,9 @@ test('stopwatch renders history, supports lap deletion, and appends a session on
     assert.equal(env.state.storage.isRunning, false);
     assert.equal(env.state.storage.currentLaps.length, 0);
     assert.equal(env.state.storage.history.length, 2);
-    assert.deepEqual(env.state.storage.history.at(-1).laps, [1500, 6000]);
+    assert.equal(env.state.storage.history.at(-1).laps.length, 2);
+    assert.equal(env.state.storage.history.at(-1).laps[0], 1500);
+    assert.equal(env.state.storage.history.at(-1).laps[1], 6000);
   } finally {
     globalThis.setTimeout = realSetTimeout;
     env.window.dispatchEvent({ type: 'beforeunload' });

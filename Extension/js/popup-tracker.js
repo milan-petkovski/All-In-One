@@ -372,13 +372,6 @@ export function initTracker() {
 
         // Prevent spam: if we had a confirmed refresh recently, ignore click silently
         if (Date.now() - lastRefreshConfirmedAt < REFRESH_COOLDOWN_MS) {
-            // quick visual flash to indicate the action was ignored
-            const icon = document.getElementById("trackerRefreshBtn");
-            if (icon) {
-                const prev = icon.style.opacity;
-                icon.style.opacity = '0.6';
-                setTimeout(() => { icon.style.opacity = prev || ''; }, 220);
-            }
             return;
         }
 

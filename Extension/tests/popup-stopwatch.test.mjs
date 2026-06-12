@@ -56,7 +56,21 @@ test("stop button appends session history and clears running state", async () =>
   await env.flush(40);
   assert.equal(env.storageState.isRunning, false);
   assert.equal(env.storageState.history.length, 1);
-  assert.deepEqual(env.storageState.history[0].laps, [5000, 10000]);
+  assert.equal(env.storageState.history[0].laps.length, 2);
+  assert.equal(env.storageState.history[0].laps[0], 5000);
+  assert.equal(env.storageState.history[0].laps[1], 10000);
+  assert.equal(env.storageState.currentLaps.length, 0);
+});
+
+test("stop button does not save session if no laps recorded", async () => {
+  env.storageState.isRunning = true;
+  env.storageState.startTime = 1000;
+  env.storageState.currentLaps = [];
+  env.storageState.history = [];
+  env.popupDocument.getElementById("stop").click();
+  await env.flush(40);
+  assert.equal(env.storageState.isRunning, false);
+  assert.equal(env.storageState.history.length, 0);
   assert.equal(env.storageState.currentLaps.length, 0);
 });
 

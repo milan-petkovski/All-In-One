@@ -298,6 +298,37 @@ export class MockElement {
     return child;
   }
 
+  insertBefore(newChild, referenceChild) {
+    if (!newChild) return null;
+    if (newChild.parentNode) {
+      newChild.parentNode.removeChild(newChild);
+    }
+    if (!referenceChild) {
+      return this.appendChild(newChild);
+    }
+    const idx = this.children.indexOf(referenceChild);
+    if (idx < 0) {
+      throw new Error("referenceChild is not a child of this node");
+    }
+    if (newChild.nodeType === 11) {
+      const fragmentChildren = [...newChild.children];
+      fragmentChildren.forEach(child => {
+        child.parentNode = this;
+        if (this.ownerDocument) {
+          this.ownerDocument._registerTree(child);
+        }
+      });
+      this.children.splice(idx, 0, ...fragmentChildren);
+    } else {
+      newChild.parentNode = this;
+      this.children.splice(idx, 0, newChild);
+      if (this.ownerDocument) {
+        this.ownerDocument._registerTree(newChild);
+      }
+    }
+    return newChild;
+  }
+
   remove() {
     this.removed = true;
     if (this.parentNode) {
