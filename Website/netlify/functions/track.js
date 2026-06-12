@@ -61,8 +61,8 @@ exports.handler = async (event, context) => {
 
         const clientId = data.client_id;
 
-        // Validate client_id format
-        const clientIdRegex = /^[a-f0-9-]{36}$|^[a-z0-9]{20,40}$/i;
+        // Validate client_id format (allowing 8-40 chars for shorter fallback IDs in older extension versions)
+        const clientIdRegex = /^[a-f0-9-]{36}$|^[a-z0-9]{8,40}$/i;
         if (!clientIdRegex.test(clientId)) {
             return {
                 statusCode: 400,
