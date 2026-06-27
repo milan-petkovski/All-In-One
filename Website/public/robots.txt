@@ -4,4 +4,7 @@ Disallow: /hvala
 Disallow: /obrisano
 Disallow: /404
 
+# Crawl delay (dobrovoljna preporuka)
+Crawl-delay: 2
+
 Sitemap: https://allinone.milanwebportal.com/sitemap.xml

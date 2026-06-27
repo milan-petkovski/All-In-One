@@ -18,26 +18,36 @@
     <!-- Kanonski URL -->
     <link rel="canonical" href="https://allinone.milanwebportal.com">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
     <link rel="stylesheet" href="input.css">
+
+    <!-- Hreflang — višejezična podrška (sr/en single-page i18n) -->
+    <link rel="alternate" hreflang="sr" href="https://allinone.milanwebportal.com/">
+    <link rel="alternate" hreflang="en" href="https://allinone.milanwebportal.com/">
+    <link rel="alternate" hreflang="x-default" href="https://allinone.milanwebportal.com/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:locale" content="sr_RS">
+    <meta property="og:locale:alternate" content="en_US">
     <meta property="og:site_name" content="All In One">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://allinone.milanwebportal.com">
-    <meta property="og:title" content="All In One | Najbolji alat za produktivnost">
+    <meta property="og:title" content="All In One | Najbolja Browser Ekstenzija za Produktivnost">
     <meta property="og:description"
-        content="Ekstenzija za developere koja drastično ubrzava rad i optimizuje svakodnevni workflow.">
+        content="Besplatna browser ekstenzija koja nudi 15+ moćnih alata za developere i kreatore. Optimizujte svoj radni dan uz All In One sistem bez ometanja.">
     <meta property="og:image" content="https://allinone.milanwebportal.com/Branding/EN/1.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="800">
+    <meta property="og:image:alt" content="All In One browser ekstenzija — 15+ alata za produktivnost">
 
-    <!-- Twitter -->
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="All In One Ekstenzija">
-    <meta name="twitter:description" content="Unapredite radni tok uz najbolji alat za developere i kreatore.">
+    <meta name="twitter:site" content="@milanwebportal">
+    <meta name="twitter:creator" content="@milanwebportal">
+    <meta name="twitter:title" content="All In One | Najbolja Browser Ekstenzija za Produktivnost">
+    <meta name="twitter:description" content="Besplatna browser ekstenzija koja nudi 15+ moćnih alata za developere i kreatore. Optimizujte svoj radni dan bez ometanja.">
     <meta name="twitter:image" content="https://allinone.milanwebportal.com/Branding/EN/1.png">
+    <meta name="twitter:image:alt" content="All In One browser ekstenzija — 15+ alata za produktivnost">
 
     <!-- Fontovi -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,32 +67,210 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "All In One",
-        "url": "https://allinone.milanwebportal.com/"
+        "url": "https://allinone.milanwebportal.com/",
+        "description": "Besplatna browser ekstenzija sa 15+ alata za maksimalnu produktivnost developera i kreatora.",
+        "inLanguage": ["sr", "en"],
+        "publisher": { "@id": "https://milanwebportal.com/#organization" }
     },
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
+        "@type": "Organization",
+        "@id": "https://milanwebportal.com/#organization",
+        "name": "Milan Web Portal",
+        "url": "https://milanwebportal.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://allinone.milanwebportal.com/logo.png",
+            "width": 512,
+            "height": 512
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Milan Petkovski",
+            "url": "https://milanwebportal.com"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@milanwebportal.com",
+            "contactType": "customer support",
+            "availableLanguage": ["Serbian", "English"]
+        },
+        "sameAs": [
+            "https://github.com/milan-petkovski",
+            "https://linkedin.com/in/milan--petkovski"
+        ]
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
         "name": "All In One",
+        "alternateName": "All In One Browser Extension",
         "url": "https://allinone.milanwebportal.com/",
+        "downloadUrl": "https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem",
         "image": "https://allinone.milanwebportal.com/Branding/EN/1.png",
-        "description": "Besplatna browser ekstenzija sa preko 15 alata za maksimalnu produktivnost.",
-        "operatingSystem": "Windows, macOS, Linux, ChromeOS",
+        "screenshot": "https://allinone.milanwebportal.com/Branding/EN/1.png",
+        "description": "Besplatna browser ekstenzija sa 15+ moćnih alata za maksimalnu produktivnost. Uključuje Color Picker, Dark Mode, Page Ruler, Font Finder, Radio IN, Webtime Tracker, Pametne Beleške i još mnogo toga.",
         "applicationCategory": "DeveloperApplication",
+        "applicationSubCategory": "Browser Extension",
+        "operatingSystem": "Windows, macOS, Linux, ChromeOS",
+        "browserRequirements": "Requires Chrome, Microsoft Edge, Brave, Opera, Opera GX, Vivaldi or Arc browser",
+        "featureList": [
+            "Radio IN — slušanje radija direktno iz ekstenzije",
+            "Zvuk 1000% — pojačavanje zvuka na bilo kom tabu do 1000%",
+            "Color Picker — izvlačenje HEX koda boje sa bilo koje stranice",
+            "Dark Mode — forsiranje tamnog režima na svakom sajtu",
+            "Page Ruler — merenje dimenzija elemenata u pikselima",
+            "Enable Copy — zaobilaženje blokade desnog klika i selekcije teksta",
+            "Page Marker — crtanje i pisanje direktno po ekranu",
+            "Tehnologije sajta — analiza tech stacka bilo kog sajta",
+            "Kolačići i keš — brisanje keša i automatsko skrivanje cookie banera",
+            "Font Finder — identifikacija fonta prelaskom miša",
+            "Brojač karaktera — prebrojavanje selektovanih reči i karaktera",
+            "Štoperica — automatsko beleženje timestamp-ova tokom lajva",
+            "Pametne Beleške — beleženje ideja sa smart math i datumskim funkcijama",
+            "Webtime Tracker — praćenje vremena provedenog na sajtovima",
+            "Return YouTube Dislike — vraćanje YouTube dislikes brojača"
+        ],
         "offers": {
             "@type": "Offer",
             "price": "0",
-            "priceCurrency": "RSD"
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
         },
-        "creator": {
-            "@type": "Organization",
-            "name": "Milan Web Portal",
+        "author": {
+            "@type": "Person",
+            "name": "Milan Petkovski",
             "url": "https://milanwebportal.com"
         },
+        "creator": { "@id": "https://milanwebportal.com/#organization" },
+        "publisher": { "@id": "https://milanwebportal.com/#organization" },
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "5.0",
+            "bestRating": "5",
+            "worstRating": "1",
             "ratingCount": "10"
-        }
+        },
+        "inLanguage": ["sr", "en"]
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Šta je All In One ekstenzija?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All In One je besplatna browser ekstenzija koja objedinjuje 15+ alata za produktivnost na jednom mestu. Sadrži Color Picker, Dark Mode, Page Ruler, Font Finder, Radio IN, Webtime Tracker, Pametne Beleške i još mnogo toga — sve bez usporavanja pretraživača."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Da li je All In One ekstenzija besplatna?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Da, All In One ekstenzija je 100% besplatna. Nema skrivenih troškova, pretplata niti premium planova. Sve funkcionalnosti su dostupne odmah po instalaciji bez registracije."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Na kojim pretraživačima radi All In One?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All In One radi na svim Chromium-baziranim pretraživačima: Google Chrome, Microsoft Edge, Brave, Opera, Opera GX, Vivaldi i Arc. Instalira se direktno sa Chrome Web Store-a i funkcioniše na Windows, macOS i Linux operativnim sistemima."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Koliko alata ima All In One ekstenzija?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All In One ekstenzija sadrži 15 alata: Radio IN, Zvuk 1000%, Color Picker, Dark Mode, Page Ruler, Enable Copy, Page Marker, Tehnologije sajta, Kolačići i keš, Font Finder, Brojač karaktera, Štoperica, Pametne Beleške, Webtime Tracker i Return YouTube Dislike."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Da li All In One prikuplja lične podatke?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ne. All In One ekstenzija ne prikuplja, ne čuva niti ne deli lične podatke korisnika. Svi podaci ostaju lokalno u vašem pretraživaču. Ekstenzija je dizajnirana sa fokusom na privatnost i sigurnost korisnika."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kako se instalira All In One ekstenzija?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All In One se instalira u tri koraka: 1) Posetite Chrome Web Store i kliknite 'Dodaj u Chrome'. 2) Kliknite ikonicu slagalice u pretraživaču i pin-ujte All In One za brz pristup na toolbar. 3) Kliknite na ikonicu All In One i počnite da koristite svih 15 alata odmah."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Da li All In One radi na mobilnom telefonu?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ne. All In One je desktop browser ekstenzija i nije kompatibilna sa mobilnim pretraživačima. Browser ekstenzije generalno ne rade na mobilnim verzijama pretraživača — potreban je desktop računar."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Za koga je All In One ekstenzija namenjena?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All In One je namenjena web developerima, dizajnerima, kreatorima sadržaja, studentima i svima koji provode mnogo vremena u pretraživaču. Alati poput Color Picker, Font Finder i Page Ruler su posebno korisni za developere i dizajnere, dok su Pametne Beleške i Webtime Tracker idealni za studente i kreatore."
+                }
+            }
+        ]
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Kako instalirati All In One Browser Ekstenziju",
+        "description": "Instalirajte All In One browser ekstenziju za Chrome, Edge, Brave i Opera u tri jednostavna koraka i odmah počnite da koristite 15+ alata za produktivnost.",
+        "totalTime": "PT2M",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "USD",
+            "value": "0"
+        },
+        "tool": {
+            "@type": "HowToTool",
+            "name": "Chromium-baziran pretraživač (Chrome, Edge, Brave, Opera, Vivaldi)"
+        },
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Instaliraj ekstenziju",
+                "text": "Posetite Chrome Web Store stranicu All In One ekstenzije i kliknite dugme 'Dodaj u Chrome'. Ekstenzija je besplatna i instalira se za manje od 30 sekundi. Kompatibilna sa Chrome, Edge, Brave, Opera i Vivaldi pretraživačima.",
+                "url": "https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Pin-uj za brz pristup",
+                "text": "Kliknite na ikonicu slagalice (puzzle) u gornjem desnom uglu pretraživača da otvorite listu ekstenzija. Pronađite All In One i kliknite ikonicu pinezice da je zakačite na toolbar za jednoklični pristup."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Klikni i koristi",
+                "text": "Kliknite na ikonicu All In One u toolbar-u pretraživača kada god vam zatreba neki alat. Izaberite jedan od 15 dostupnih alata iz menija. Sve funkcionalnosti su dostupne na jedan klik, bez reklama i bez iskačućih obaveštenja."
+            }
+        ]
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "All In One — Početna",
+                "item": "https://allinone.milanwebportal.com/"
+            }
+        ]
     }
     ]
     </script>
@@ -154,18 +342,10 @@
         <nav
             class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center bg-white/70 backdrop-blur-2xl rounded-full border border-white/40 shadow-[0_20px_40px_rgba(0,0,0,0.08)] pointer-events-auto transition-all duration-500 hover:shadow-brand/5 hover:border-brand/20">
 
-            <div class="flex items-center gap-4 group cursor-pointer">
-                <div class="grid grid-cols-2 gap-1 w-8 h-8 transition-transform duration-500 group-hover:rotate-12">
-                    <div class="bg-brand w-full h-full rounded-sm"></div>
-                    <div class="bg-brand w-full h-full rounded-tr-xl rounded-sm"></div>
-                    <div class="bg-brand w-full h-full rounded-tr-xl rounded-sm"></div>
-                    <div class="bg-brand w-full h-full rounded-sm"></div>
-                </div>
-
-                <a href="index.html">
-                    <span class="font-black text-3xl text-brand uppercase">All In One</span>
-                </a>
-            </div>
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <img src="/logo.png" alt="All In One Logo" class="w-8 h-8 object-contain transition-transform duration-500 group-hover:rotate-12">
+                <span class="font-black text-3xl text-brand uppercase leading-none relative -top-[1px]">All In One</span>
+            </a>
 
             <div class="flex items-center gap-3">
                 <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
@@ -315,13 +495,8 @@
             <div
                 class="bg-[#0b0b0e] rounded-[2rem] p-4 shadow-2xl relative border border-gray-900 mx-auto w-full max-w-sm font-sans group hover:shadow-brand/10 transition-shadow duration-500">
                 <div class="flex justify-between items-center mb-6 px-1">
-                    <div class="grid grid-cols-2 gap-1 w-6 h-6">
-                        <div class="bg-[#00ff88] w-full h-full rounded-sm"></div>
-                        <div class="bg-[#00ff88] w-full h-full rounded-tr-xl rounded-sm"></div>
-                        <div class="bg-[#00ff88] w-full h-full rounded-tr-xl rounded-sm"></div>
-                        <div class="bg-[#00ff88] w-full h-full rounded-sm"></div>
-                    </div>
-                    <h3 class="text-[#00ff88] font-black uppercase tracking-widest text-base">All In One</h3>
+                    <img src="/logo.png" alt="All In One Logo" class="w-6 h-6 object-contain">
+                    <h3 class="text-[#00ff88] font-black uppercase tracking-widest text-base leading-none">All In One</h3>
                     <i data-lucide="settings"
                         class="w-6 h-6 text-gray-400 opacity-80 group-hover:rotate-180 transition-transform duration-700"></i>
                 </div>
@@ -1289,17 +1464,15 @@
                         <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
                     </div>
-                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_1">"Sjajna ekstenzija. Pomogla
-                        mi je da povecam
-                        produktivnost"</p>
+                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_1">"It helped me be more productive."</p>
                 </div>
                 <div class="flex items-center gap-4 relative z-10">
-                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjWAZ1JZT-C5XOFjpea7BQYnjC9soAro_sjMOAv8yF4Nt2SByl3E=s48-w48-h48"
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjXfoXQvmloep4BukcYCsj8Pr4mFYcyEXEuQljMKu4mDgHaC0D4E=s48-w48-h48"
                         class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
-                        alt="Milan Petrovic">
+                        alt="Luka Cvetković">
                     <div>
-                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Milan Petrovic</h4>
-                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d1">2 APR 2026</p>
+                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Luka Cvetković</h4>
+                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d1">7 MART 2026</p>
                     </div>
                 </div>
             </div>
@@ -1317,8 +1490,33 @@
                         <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
                     </div>
-                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_2">"Sjajna ekstenzija. Jako mi
-                        je pomogla."</p>
+                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_2">"Bas korisno!!!"</p>
+                </div>
+                <div class="flex items-center gap-4 relative z-10">
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjXWJ7HY5UM9SDS55cyQd7hhGeST6WVxvGy_k-dXptC3m34m4SrK=s48-w48-h48"
+                        class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
+                        alt="Simeon Kljakić">
+                    <div>
+                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Simeon Kljakić</h4>
+                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d2">9 MART 2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-bglight p-10 rounded-[2.5rem] border border-gray-100 feature-card flex flex-col justify-between relative overflow-hidden group">
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div class="relative z-10">
+                    <div class="flex gap-1 mb-6">
+                        <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
+                    </div>
+                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_3">"Sjajna ekstenzija. Jako mi je pomogla."</p>
                 </div>
                 <div class="flex items-center gap-4 relative z-10">
                     <img src="https://lh3.googleusercontent.com/a/ACg8ocKPbvjXYGfB19ZfMilLn2zXtHa40ZxE9l3Vvga-1ceClU0Vnw=s48-w48-h48"
@@ -1326,8 +1524,7 @@
                         alt="Benjamin Nenyahu">
                     <div>
                         <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Benjamin Nenyahu</h4>
-                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d2">24 MART 2026
-                        </p>
+                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d3">24 MART 2026</p>
                     </div>
                 </div>
             </div>
@@ -1345,16 +1542,15 @@
                         <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
                     </div>
-                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_3">"Bas korisno!!!"</p>
+                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_4">"Sjajna ekstenzija. Pomogla mi je da povecam produktivnost"</p>
                 </div>
                 <div class="flex items-center gap-4 relative z-10">
-                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjXWJ7HY5UM9SDS55cyQd7hhGeST6WVxvGy_k-dXptC3m34m4SrK=s48-w48-h48"
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjWAZ1JZT-C5XOFjpea7BQYnjC9soAro_sjMOAv8yF4Nt2SByl3E=s48-w48-h48"
                         class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
-                        alt="Simeon Kljakic">
+                        alt="Milan Petrović">
                     <div>
-                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Simeon Kljakic</h4>
-                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d3">9 MART 2026
-                        </p>
+                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Milan Petrović</h4>
+                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d4">2 APR 2026</p>
                     </div>
                 </div>
             </div>
@@ -1372,17 +1568,15 @@
                         <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
                     </div>
-                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_4">"It helped me be more
-                        productive."</p>
+                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_5">"Ne mogu više da zamislim korišćenje pretraživača bez ovoga. 5 zvezdica!"</p>
                 </div>
                 <div class="flex items-center gap-4 relative z-10">
-                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjXfoXQvmloep4BukcYCsj8Pr4mFYcyEXEuQljMKu4mDgHaC0D4E=s48-w48-h48"
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjXgn4egJ_De1azUQKOAeeaA7maA0JPjs3zlLthuHZtkQUZMITs=s48-w48-h48"
                         class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
-                        alt="Luka Cvetkovic">
+                        alt="Ana">
                     <div>
-                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Luka Cvetkovic</h4>
-                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d4">7 MART 2026
-                        </p>
+                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Ana</h4>
+                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d5">14 Jun 2026</p>
                     </div>
                 </div>
             </div>
@@ -1400,46 +1594,20 @@
                         <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
                     </div>
-                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_5">"extra"</p>
+                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_6">"Ova ekstenzija je spas! Jednostavna, brza i radi besprekorno."</p>
                 </div>
                 <div class="flex items-center gap-4 relative z-10">
-                    <img src="https://lh3.googleusercontent.com/a/ACg8ocKnYlBuICwycaCqVZS1Q_ZBxgJWxuBKkUq3qVoJ8zb-E6Wp=s48-w48-h48"
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocKgLYi9ZpMxG4sZ2y5_F1wLpSB8xte24TomPjt9X0tzCrzVfg=s48-w48-h48"
                         class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
-                        alt="sanel hurem">
+                        alt="Marko Popović">
                     <div>
-                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">sanel hurem</h4>
-                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d5">7 MART 2026
-                        </p>
+                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Marko Popović</h4>
+                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d6">14 Jun 2026</p>
                     </div>
                 </div>
             </div>
 
-            <div
-                class="bg-bglight p-10 rounded-[2.5rem] border border-gray-100 feature-card flex flex-col justify-between relative overflow-hidden group">
-                <div
-                    class="absolute inset-0 bg-gradient-to-b from-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                </div>
-                <div class="relative z-10">
-                    <div class="flex gap-1 mb-6">
-                        <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
-                        <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
-                        <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
-                        <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
-                        <i data-lucide="star" class="w-4 h-4 fill-brand text-brand drop-shadow-[0_0_8px_#00ff88]"></i>
-                    </div>
-                    <p class="text-gray-800 text-lg font-bold italic mb-8" data-i18n="tm_6">"super"</p>
-                </div>
-                <div class="flex items-center gap-4 relative z-10">
-                    <img src="https://lh3.googleusercontent.com/a/ACg8ocItgRE9CSyiNtWAoTTFU86RWEbLkEsXCPXqox8sLfQzbQKGtA=s48-w48-h48"
-                        class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
-                        alt="Editox Editi">
-                    <div>
-                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Editox Editi</h4>
-                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d6">7 MART 2026
-                        </p>
-                    </div>
-                </div>
-            </div>
+        </div>
 
         </div>
         <div class="max-w-7xl mx-auto px-6 mt-16 flex justify-center">
@@ -1590,18 +1758,10 @@
 
         <div class="relative max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
 
-            <div class="flex items-center gap-4 group cursor-pointer">
-                <div class="grid grid-cols-2 gap-1 w-10 h-10 transition-transform duration-500 group-hover:rotate-12">
-                    <div class="bg-brand w-full h-full rounded-sm"></div>
-                    <div class="bg-brand w-full h-full rounded-tr-xl rounded-sm"></div>
-                    <div class="bg-brand w-full h-full rounded-tr-xl rounded-sm"></div>
-                    <div class="bg-brand w-full h-full rounded-sm"></div>
-                </div>
-
-                <a href="index.html">
-                    <span class="font-black text-4xl text-brand uppercase">All In One</span>
-                </a>
-            </div>
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <img src="/logo.png" alt="All In One Logo" class="w-10 h-10 object-contain transition-transform duration-500 group-hover:rotate-12">
+                <span class="font-black text-4xl text-brand uppercase leading-none relative -top-[2px]">All In One</span>
+            </a>
 
             <div
                 class="text-gray-500 text-sm font-medium text-center md:text-left bg-gray-50/80 px-6 py-2.5 rounded-full border border-gray-100 shadow-sm">
@@ -1635,6 +1795,48 @@
                 stroke-linecap="round" />
         </svg>
         <i data-lucide="arrow-up" class="w-5 h-5 text-gray-800 relative z-10"></i>
+    </div>
+
+    <!-- Announcement Modal for New Logo -->
+    <div id="logo-modal" class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-xl opacity-0 pointer-events-none transition-all duration-500">
+        <div class="relative w-11/12 max-w-lg p-8 md:p-10 rounded-[3rem] bg-[#1a1a1f]/95 border border-white/10 shadow-[0_0_50px_rgba(0,255,136,0.15)] flex flex-col items-center text-center transform scale-95 opacity-0 transition-all duration-500 modal-content overflow-hidden">
+            <!-- Glowing background effect -->
+            <div class="absolute -top-40 -left-40 w-80 h-80 bg-brand/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div class="absolute -bottom-40 -right-40 w-80 h-80 bg-brand/10 rounded-full blur-[100px] pointer-events-none"></div>
+            
+            <h3 class="text-3xl md:text-4xl font-[1000] italic uppercase text-white tracking-tighter mb-4" data-i18n="logo_modal_title">
+                Novi Vizuelni Identitet!
+            </h3>
+            
+            <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-8 max-w-md font-medium" data-i18n="logo_modal_desc">
+                All In One ekstenzija ima novi logotip!
+            </p>
+            
+            <!-- Badge -->
+            <div id="modal-logo-badge" class="mb-4 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-white/5 text-gray-400 border border-white/10 transition-all duration-300 shadow-sm" data-i18n="logo_modal_old_badge">
+                Stari izgled
+            </div>
+            
+            <!-- Logo transition animation box -->
+            <div id="modal-logo-container" class="relative w-48 h-48 mb-8 flex items-center justify-center bg-white/5 rounded-[2.5rem] border border-white/10 p-6 shadow-inner overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-tr from-brand/5 to-transparent"></div>
+                
+                <!-- Flash effect -->
+                <div id="modal-logo-flash" class="absolute inset-0 bg-brand/40 opacity-0 pointer-events-none mix-blend-screen"></div>
+                
+                <!-- Old Logo -->
+                <img id="modal-old-logo" src="/aio.png" alt="Old Logo" class="absolute w-24 h-24 object-contain">
+                
+                <!-- New Logo -->
+                <img id="modal-new-logo" src="/logo.png" alt="New Logo" class="absolute w-24 h-24 object-contain opacity-0">
+            </div>
+            
+            <!-- Close Button -->
+            <button id="close-logo-modal" class="w-full py-4 bg-brand hover:bg-brand/90 text-gray-900 text-lg font-[1000] italic uppercase tracking-tighter rounded-2xl transition-all duration-300 hover:shadow-[0_0_30px_#00ff88] hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2">
+                <span data-i18n="logo_modal_btn">Nastavi na sajt</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </button>
+        </div>
     </div>
 
     <script type="module" src="/main.js"></script>

@@ -1,7 +1,21 @@
 [
     {
-        "verzija": "1.5.4.2",
+        "verzija": "1.5.4.3",
         "aktivno": true,
+        "sr": {
+            "datum": "28. Jun 2026.",
+            "naslov": "Vizuelni identitet",
+            "opis": "Ovo ažuriranje donosi novi, modernizovani logotip i osveženi vizuelni identitet na veb sajtu i u samoj ekstenziji. Svi elementi brendinga su detaljno ažurirani i usklađeni."
+        },
+        "en": {
+            "datum": "June 28, 2026",
+            "naslov": "Visual Identity",
+            "opis": "This update introduces a new, modernized logo and refreshed visual identity across the website and extension UI. All branding assets have been carefully updated and aligned."
+        }
+    },
+    {
+        "verzija": "1.5.4.2",
+        "aktivno": false,
         "sr": {
             "datum": "12. Jun 2026.",
             "naslov": "Kick integracija",

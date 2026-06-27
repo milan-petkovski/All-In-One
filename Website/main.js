@@ -286,6 +286,177 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobileBlocker.classList.add('flex');
     }
 
+    // Modal za najavu novog logotipa
+    const logoModal = document.getElementById('logo-modal');
+    if (logoModal && typeof gsap !== 'undefined') {
+        const modalContent = logoModal.querySelector('.modal-content');
+        const oldLogo = document.getElementById('modal-old-logo');
+        const newLogo = document.getElementById('modal-new-logo');
+        const logoBadge = document.getElementById('modal-logo-badge');
+        const logoContainer = document.getElementById('modal-logo-container');
+        const logoFlash = document.getElementById('modal-logo-flash');
+        const closeBtn = document.getElementById('close-logo-modal');
+        let logoAnimInterval = null;
+        let logoAnimTimeout = null;
+        let isShowingNew = false;
+
+        function animateToNew() {
+            gsap.killTweensOf([oldLogo, newLogo, logoBadge, logoContainer, logoFlash]);
+            
+            // 1. Old logo spins out and blurs
+            gsap.to(oldLogo, {
+                scale: 0.1,
+                rotation: 180,
+                opacity: 0,
+                filter: "blur(8px)",
+                duration: 0.5,
+                ease: "power2.in"
+            });
+            
+            // 2. Animate badge text and style
+            gsap.to(logoBadge, {
+                opacity: 0,
+                scale: 0.8,
+                duration: 0.25,
+                onComplete: () => {
+                    const isSr = (window.currentLanguage === 'sr' || localStorage.getItem('lang') === 'sr');
+                    logoBadge.innerText = isSr ? "Novi izgled" : "New Look";
+                    logoBadge.className = "mb-4 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-brand/20 text-brand border border-brand/30 shadow-[0_0_15px_rgba(0,255,136,0.3)] transition-all duration-300";
+                    gsap.to(logoBadge, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out" });
+                }
+            });
+            
+            // 3. Swap and impact triggers at delay
+            logoAnimTimeout = setTimeout(() => {
+                // Flash overlay burst
+                gsap.set(logoFlash, { opacity: 0.9, scale: 1 });
+                gsap.to(logoFlash, { opacity: 0, scale: 1.1, duration: 0.7, ease: "power2.out" });
+                
+                // Container impact pulse
+                gsap.fromTo(logoContainer, 
+                    { scale: 0.95, borderColor: "rgba(0, 255, 136, 0.5)", boxShadow: "0 0 35px rgba(0, 255, 136, 0.4)" },
+                    { scale: 1, borderColor: "rgba(255, 255, 255, 0.1)", boxShadow: "0 0 0px rgba(0,0,0,0)", duration: 0.8, ease: "back.out(2)" }
+                );
+                
+                // New logo elastic spring in
+                gsap.to(newLogo, {
+                    scale: 1,
+                    rotation: 0,
+                    opacity: 1,
+                    filter: "blur(0px)",
+                    duration: 1.2,
+                    ease: "elastic.out(1.1, 0.6)"
+                });
+            }, 350);
+        }
+
+        function animateToOld() {
+            gsap.killTweensOf([oldLogo, newLogo, logoBadge, logoContainer, logoFlash]);
+            
+            // 1. New logo spins out and blurs
+            gsap.to(newLogo, {
+                scale: 0.1,
+                rotation: -180,
+                opacity: 0,
+                filter: "blur(8px)",
+                duration: 0.5,
+                ease: "power2.in"
+            });
+            
+            // 2. Animate badge text and style
+            gsap.to(logoBadge, {
+                opacity: 0,
+                scale: 0.8,
+                duration: 0.25,
+                onComplete: () => {
+                    const isSr = (window.currentLanguage === 'sr' || localStorage.getItem('lang') === 'sr');
+                    logoBadge.innerText = isSr ? "Stari izgled" : "Old Look";
+                    logoBadge.className = "mb-4 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-white/5 text-gray-400 border border-white/10 shadow-sm transition-all duration-300";
+                    gsap.to(logoBadge, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out" });
+                }
+            });
+            
+            // 3. Swap and impact triggers at delay
+            logoAnimTimeout = setTimeout(() => {
+                // Subtle white flash overlay burst
+                gsap.set(logoFlash, { opacity: 0.5 });
+                gsap.to(logoFlash, { opacity: 0, duration: 0.5, ease: "power2.out" });
+                
+                // Container impact pulse
+                gsap.fromTo(logoContainer,
+                    { scale: 0.98 },
+                    { scale: 1, duration: 0.6, ease: "back.out(1.5)" }
+                );
+                
+                // Old logo elastic spring in
+                gsap.to(oldLogo, {
+                    scale: 1,
+                    rotation: 0,
+                    opacity: 1,
+                    filter: "blur(0px)",
+                    duration: 1.2,
+                    ease: "elastic.out(1.1, 0.6)"
+                });
+            }, 350);
+        }
+
+        function startLoop() {
+            stopLoop();
+            
+            // Set initial state
+            const isSr = (window.currentLanguage === 'sr' || localStorage.getItem('lang') === 'sr');
+            logoBadge.innerText = isSr ? "Stari izgled" : "Old Look";
+            logoBadge.className = "mb-4 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-white/5 text-gray-400 border border-white/10 shadow-sm transition-all duration-300";
+            
+            gsap.set(oldLogo, { scale: 1, rotation: 0, opacity: 1, filter: "blur(0px)" });
+            gsap.set(newLogo, { scale: 0.1, rotation: -180, opacity: 0, filter: "blur(8px)" });
+            gsap.set(logoFlash, { opacity: 0 });
+            gsap.set(logoBadge, { opacity: 1, scale: 1 });
+            isShowingNew = false;
+            
+            logoAnimInterval = setInterval(() => {
+                if (isShowingNew) {
+                    animateToOld();
+                    isShowingNew = false;
+                } else {
+                    animateToNew();
+                    isShowingNew = true;
+                }
+            }, 3500);
+
+            // Prvi prelaz na novi logo
+            logoAnimTimeout = setTimeout(() => {
+                animateToNew();
+                isShowingNew = true;
+            }, 1200);
+        }
+
+        function stopLoop() {
+            if (logoAnimInterval) clearInterval(logoAnimInterval);
+            if (logoAnimTimeout) clearTimeout(logoAnimTimeout);
+            gsap.killTweensOf([oldLogo, newLogo, logoBadge, logoContainer, logoFlash]);
+        }
+
+        // Pokaži modal odmah i svaki put
+        logoModal.classList.remove('pointer-events-none', 'opacity-0');
+        logoModal.classList.add('opacity-100');
+        modalContent.classList.remove('scale-95', 'opacity-0');
+        modalContent.classList.add('scale-100', 'opacity-100');
+        startLoop();
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                stopLoop();
+                
+                // Sakrij modal sa lepim fade-outom
+                logoModal.classList.remove('opacity-100');
+                logoModal.classList.add('opacity-0', 'pointer-events-none');
+                modalContent.classList.remove('scale-100', 'opacity-100');
+                modalContent.classList.add('scale-95', 'opacity-0');
+            });
+        }
+    }
+
     // Scroll Progress & Back to Top
     const backToTop = document.getElementById('backToTop');
     const progressRing = document.getElementById('progressRing');
