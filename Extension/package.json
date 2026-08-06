@@ -1,13 +1,15 @@
 {
   "name": "all-in-one-extension",
-  "version": "1.5.4.2",
+  "version": "1.5.5",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "check:js": "node --check js/background.js && node --check js/content.js && node --check js/offscreen.js && node --check js/popup.js && node --check js/popup-core.js && node --check js/popup-radio.js && node --check js/popup-notes.js && node --check js/popup-counter.js && node --check js/popup-tracker.js && node --check js/popup-stopwatch.js && node --check js/popup-settings.js && node --check js/popup-tech.js && node --check js/yt.js",
-    "lint": "npx eslint js",
-    "lint:fix": "npx eslint js --fix"
+    "lint": "eslint js",
+    "lint:fix": "eslint js --fix"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
 }

@@ -13,9 +13,7 @@ function countGraphemes(str) {
     if (cleaned === '') return 0;
     if (typeof Intl.Segmenter === 'function') {
         const segmenter = new Intl.Segmenter(undefined, { granularity: 'grapheme' });
-        let count = 0;
-        for (const seg of segmenter.segment(cleaned)) count++;
-        return count;
+        return [...segmenter.segment(cleaned)].length;
     } else {
         return Array.from(cleaned).length;
     }
@@ -69,13 +67,13 @@ export function initCounter() {
         let legacyText = null;
         try {
             legacyText = localStorage.getItem("aio_counter_text");
-        } catch (_) { }
+        } catch {}
 
         if (legacyText !== null) {
             chrome.storage.local.set({ aio_counter_text: legacyText }, () => {
                 try {
                     localStorage.removeItem("aio_counter_text");
-                } catch (_) { }
+                } catch {}
             });
             counterArea.value = legacyText;
             updateCounts(legacyText);

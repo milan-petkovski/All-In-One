@@ -155,7 +155,7 @@ async function loadBgTranslations(lang) {
     try {
         const res = await fetch(chrome.runtime.getURL(`_locales/${lang}/messages.json`));
         bgI18nDict = await res.json();
-    } catch (e) { }
+    } catch {}
 }
 chrome.storage.local.get(['appLang'], (data) => {
     loadBgTranslations(data.appLang || 'sr');
@@ -177,7 +177,7 @@ function safeSendRuntimeMessage(payload) {
         if (maybePromise && typeof maybePromise.catch === "function") {
             maybePromise.catch(() => { });
         }
-    } catch (_) {
+    } catch {
         // Extension context can be reloading/invalidated.
     }
 }
@@ -239,7 +239,7 @@ async function resolveNetworkInfo(hostname) {
         if (ipinfo.loc) results.push({ category: "Mreža", name: ipinfo.loc });
         if (ipinfo.timezone) results.push({ category: "Mreža", name: ipinfo.timezone });
         if (ipinfo.postal) results.push({ category: "Mreža", name: ipinfo.postal });
-    } catch (_) {
+    } catch {
         return results;
     }
     return results;
@@ -423,7 +423,7 @@ async function checkKickStatusPeriodically(force = false) {
                 };
 
                 if (currentLaps.length > 0) {
-                    const session = { sessionStart: Date.now(), laps: currentLaps, ...(channelName && { channelName }) };
+                    const session = { sessionStart: startTime, laps: currentLaps, ...(channelName && { channelName }) };
                     updates.history = [...latestHistory, session];
                 }
 
@@ -686,10 +686,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                     return;
                 }
 
-                const rawSeconds = Number(request.seconds);
-                const seconds = Number.isFinite(rawSeconds)
-                    ? Math.max(1, Math.min(Math.floor(rawSeconds), MAX_HEARTBEAT_SECONDS))
-                    : 0;
+                const seconds = getTrackableSeconds(request.seconds);
 
                 await trackerHeartbeat(domain, seconds);
                 sendResponse({ ok: true });
@@ -777,9 +774,10 @@ let trackerIndexCache = null;
 let trackerIndexLoadPromise = null;
 let trackerIndexDebounce = null;
 
-function getTrackableSeconds(diff) {
-    if (!Number.isFinite(diff) || diff <= 0) return 0;
-    return Math.min(diff, MAX_HEARTBEAT_SECONDS);
+function getTrackableSeconds(seconds) {
+    const raw = Number(seconds);
+    if (!Number.isFinite(raw) || raw <= 0) return 0;
+    return Math.max(1, Math.min(Math.floor(raw), MAX_HEARTBEAT_SECONDS));
 }
 
 function extractDomain(url) {
@@ -901,9 +899,7 @@ async function trackerHeartbeat(domain, seconds) {
     const cleanDomain = normalizeDomain(domain);
     if (!cleanDomain) return;
 
-    const safeSeconds = Number.isFinite(Number(seconds))
-        ? Math.max(1, Math.min(Math.floor(Number(seconds)), MAX_HEARTBEAT_SECONDS))
-        : 0;
+    const safeSeconds = getTrackableSeconds(seconds);
 
     if (safeSeconds <= 0) return;
 
@@ -1052,3 +1048,15 @@ chrome.runtime.onInstalled.addListener((details) => {
 });
 
 chrome.runtime.setUninstallURL("https://allinone.milanwebportal.com/obrisano");
+
+export {
+    toOriginSet,
+    getI18nMsg,
+    safeSendRuntimeMessage,
+    sendToOffscreen,
+    resolveNetworkInfo,
+    syncKickLiveStatus,
+    trackEvent,
+    flushAnalyticsQueue
+};
+

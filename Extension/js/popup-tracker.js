@@ -63,7 +63,7 @@ async function forceTrackerTickAndRender() {
         let response = { ok: false };
         try {
             response = await sendMessageAsync({ action: "tracker_force_tick", domain });
-        } catch (_) {
+        } catch {
             response = { ok: false };
         }
 
@@ -71,7 +71,7 @@ async function forceTrackerTickAndRender() {
         invalidateTrackerCache();
         renderStats();
         return response.ok === true;
-    }).catch((err) => {
+    }).catch(() => {
         // Silent fail
     });
     return trackerRefreshQueue;
@@ -489,7 +489,7 @@ export function initTracker() {
                     renderStats();
                     showToast(getI18nMsg("toastTrackerImported", "Tracker podaci su uspešno uvezeni!"), "success");
                 });
-            } catch (err) {
+            } catch {
                 showToast(getI18nMsg("toastTrackerImportError", "Greška pri uvozu tracker podataka!"), "error");
             }
         };

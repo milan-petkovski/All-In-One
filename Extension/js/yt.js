@@ -2,13 +2,11 @@ let ytEnabled = false;
 let ytInitialized = false;
 let ytReqId = 0;
 let ytDebounceTimer = null;
-let ytLastUrl = location.href;
 let ytLastVideoId = "";
 let ytLastDislikes = null;
 let ytRetryTimer = null;
 let ytRetryEndAt = 0;
 let ytApplyDebounce = null;
-let ytUrlWatcher = null;
 let ytObserver = null;
 let ytListenersAttached = false;
 

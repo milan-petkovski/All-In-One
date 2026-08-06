@@ -14,7 +14,8 @@ if (!GA_MEASUREMENT_ID || !GA_API_SECRET) {
 
 const GA_ENDPOINT = `https://www.google-analytics.com/mp/collect?measurement_id=${GA_MEASUREMENT_ID}&api_secret=${GA_API_SECRET}`;
 
-// Rate limiting (simple in-memory, resets on deploy)
+// Rate limiting (simple in-memory, resets on deploy).
+// Za veci obim saobracaja razmotri Netlify Blobs ili externi Redis/Upstash rate-limit.
 const rateLimitMap = new Map();
 const RATE_LIMIT_MAX = 200;
 const RATE_LIMIT_WINDOW = 3600000; // 1 hour in ms
@@ -22,7 +23,7 @@ const RATE_LIMIT_WINDOW = 3600000; // 1 hour in ms
 exports.handler = async (event, context) => {
     // CORS headers
     const headers = {
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': 'https://allinone.milanwebportal.com',
         'Access-Control-Allow-Methods': 'POST, OPTIONS',
         'Access-Control-Allow-Headers': 'Content-Type',
         'Content-Type': 'application/json'

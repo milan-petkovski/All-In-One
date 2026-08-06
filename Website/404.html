@@ -80,47 +80,7 @@
         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-brand/5 blur-[120px] -z-10">
     </div>
 
-    <!-- Announcement Modal for New Logo -->
-    <div id="logo-modal" class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-xl opacity-0 pointer-events-none transition-all duration-500">
-        <div class="relative w-11/12 max-w-lg p-8 md:p-10 rounded-[3rem] bg-[#1a1a1f]/95 border border-white/10 shadow-[0_0_50px_rgba(0,255,136,0.15)] flex flex-col items-center text-center transform scale-95 opacity-0 transition-all duration-500 modal-content overflow-hidden">
-            <!-- Glowing background effect -->
-            <div class="absolute -top-40 -left-40 w-80 h-80 bg-brand/10 rounded-full blur-[100px] pointer-events-none"></div>
-            <div class="absolute -bottom-40 -right-40 w-80 h-80 bg-brand/10 rounded-full blur-[100px] pointer-events-none"></div>
-            
-            <h3 class="text-3xl md:text-4xl font-[1000] italic uppercase text-white tracking-tighter mb-4" data-i18n="logo_modal_title">
-                Novi Vizuelni Identitet!
-            </h3>
-            
-            <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-8 max-w-md font-medium" data-i18n="logo_modal_desc">
-                All In One ekstenzija ima novi logotip!
-            </p>
-            
-            <!-- Badge -->
-            <div id="modal-logo-badge" class="mb-4 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-white/5 text-gray-400 border border-white/10 transition-all duration-300 shadow-sm" data-i18n="logo_modal_old_badge">
-                Stari izgled
-            </div>
-            
-            <!-- Logo transition animation box -->
-            <div id="modal-logo-container" class="relative w-48 h-48 mb-8 flex items-center justify-center bg-white/5 rounded-[2.5rem] border border-white/10 p-6 shadow-inner overflow-hidden group">
-                <div class="absolute inset-0 bg-gradient-to-tr from-brand/5 to-transparent"></div>
-                
-                <!-- Flash effect -->
-                <div id="modal-logo-flash" class="absolute inset-0 bg-brand/40 opacity-0 pointer-events-none mix-blend-screen"></div>
-                
-                <!-- Old Logo -->
-                <img id="modal-old-logo" src="/aio.png" alt="Old Logo" class="absolute w-24 h-24 object-contain">
-                
-                <!-- New Logo -->
-                <img id="modal-new-logo" src="/logo.png" alt="New Logo" class="absolute w-24 h-24 object-contain opacity-0">
-            </div>
-            
-            <!-- Close Button -->
-            <button id="close-logo-modal" class="w-full py-4 bg-brand hover:bg-brand/90 text-gray-900 text-lg font-[1000] italic uppercase tracking-tighter rounded-2xl transition-all duration-300 hover:shadow-[0_0_30px_#00ff88] hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2">
-                <span data-i18n="logo_modal_btn">Nastavi na sajt</span>
-                <i data-lucide="arrow-right" class="w-5 h-5"></i>
-            </button>
-        </div>
-    </div>
+
 
     <script type="module" src="/main.js"></script>
     <script>

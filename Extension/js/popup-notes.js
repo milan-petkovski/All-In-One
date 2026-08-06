@@ -3,8 +3,10 @@ import { trackEvent, escapeHtml, getI18nMsg, currentLang, tab, switchView, showT
 let clearModal = null;
 let noteArea = null;
 let saveIndicator = null;
-const MAX_NOTES_CHARS = 1000000;
+const MAX_NOTES_BYTES = 4000000;
 let saveTimeout;
+let indicatorTimeout = null;
+let indicatorRafId = null;
 let notesSaveQueue = Promise.resolve();
 const notesTrustedTypesPolicy = window.trustedTypes?.createPolicy
     ? window.trustedTypes.createPolicy("aio-notes-html", {
@@ -88,7 +90,7 @@ function setNoteAreaHtml(rawHtml = "") {
 function persistNotesHtml(safeHtml) {
     notesSaveQueue = notesSaveQueue.then(async () => {
         await chrome.storage.local.set({ "mojeBeleske": safeHtml });
-    }).catch((err) => {
+    }).catch(() => {
         // Silent fail
     });
     return notesSaveQueue;
@@ -104,6 +106,9 @@ function getUtf8ByteLength(value) {
 
 function showSaveIndicator(text = getI18nMsg("notesSaved", "Sačuvano"), isError = false) {
     if (!saveIndicator) return;
+    if (indicatorTimeout) clearTimeout(indicatorTimeout);
+    if (indicatorRafId) cancelAnimationFrame(indicatorRafId);
+
     saveIndicator.textContent = text;
     saveIndicator.style.color = isError ? "#ff7a7a" : "var(--accent)";
     saveIndicator.style.opacity = "1";
@@ -114,9 +119,8 @@ function showSaveIndicator(text = getI18nMsg("notesSaved", "Sačuvano"), isError
             saveIndicator.style.color = "var(--accent)";
         }
     };
-    let rafId = null;
-    setTimeout(() => {
-        rafId = requestAnimationFrame(hideIndicator);
+    indicatorTimeout = setTimeout(() => {
+        indicatorRafId = requestAnimationFrame(hideIndicator);
     }, 1200);
 }
 
@@ -127,7 +131,7 @@ function saveNotes(immediate = false) {
         if (noteArea.innerHTML !== safeHtml) {
             setNoteAreaHtml(safeHtml);
         }
-        if (safeHtml.length > MAX_NOTES_CHARS) {
+        if (getUtf8ByteLength(safeHtml) > MAX_NOTES_BYTES) {
             showSaveIndicator(getI18nMsg("notesTooLarge", "Prevelika beleška"), true);
             return;
         }
@@ -386,9 +390,7 @@ export function initNotes() {
     noteArea.addEventListener("paste", (e) => {
         e.preventDefault();
         const text = (e.clipboardData || window.clipboardData).getData("text/plain");
-        const currentLength = (noteArea.innerHTML || "").length;
-        const incomingLength = text.length;
-        if (currentLength + incomingLength > MAX_NOTES_CHARS) {
+        if (getUtf8ByteLength(noteArea.innerHTML || "") + getUtf8ByteLength(text) > MAX_NOTES_BYTES) {
             showSaveIndicator(getI18nMsg("notesTooLarge", "Prevelika beleška"), true);
             return;
         }
@@ -417,7 +419,7 @@ export function initNotes() {
                     appendToNotes(`<i>"${escapeHtml(res[0].result.trim())}"</i>`, true);
                 }
             });
-        } catch (err) {
+        } catch {
             // Silent fail
         }
     });
@@ -430,7 +432,7 @@ export function initNotes() {
                 const safeTitle = escapeHtml(tab.title || safeHref || getI18nMsg("notesLinkText", "Link"));
                 if (safeHref) appendToNotes(`<a href="${safeHref}">${safeTitle}</a>`, true);
             }
-        } catch (err) {
+        } catch {
             // Silent fail
         }
     });
@@ -473,7 +475,7 @@ export function initNotes() {
         reader.onload = (event) => {
             try {
                 const content = String(event.target.result || "");
-                if (content.length > MAX_NOTES_CHARS) {
+                if (getUtf8ByteLength(content) > MAX_NOTES_BYTES) {
                     showToast(getI18nMsg("notesTooLarge", "Prevelika beleška"), "error");
                     e.target.value = "";
                     return;
@@ -481,7 +483,7 @@ export function initNotes() {
                 setNoteAreaHtml(content);
                 saveNotes();
                 showToast(getI18nMsg("toastNotesImported", "Beleške uspešno uvezene!"), "success");
-            } catch (err) {
+            } catch {
                 showToast(getI18nMsg("toastNotesImportError", "Greška pri uvozu beleški!"), "error");
             }
             e.target.value = "";

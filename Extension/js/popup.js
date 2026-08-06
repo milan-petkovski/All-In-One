@@ -10,7 +10,7 @@ async function lazyLoadModule(path, initName) {
         loadedModules[path] = mod;
     }
     if (initName && !initializedModules.has(path) && typeof mod[initName] === 'function') {
-        try { mod[initName](); initializedModules.add(path); } catch (e) { /* swallow init errors */ }
+        try { mod[initName](); initializedModules.add(path); } catch { /* swallow init errors */ }
     }
     return mod;
 }
@@ -38,12 +38,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                 try {
                     const ev = new MouseEvent('click', { bubbles: true, cancelable: true });
                     originalTarget.dispatchEvent(ev);
-                } catch (_) {
+                } catch {
                     // fallback to clicking the element itself
-                    try { el.click(); } catch (_) { }
+                    try { el.click(); } catch {}
                 }
             } catch (err) {
-                try { showToast(getI18nMsg('toastModuleLoadError', 'Greška pri učitavanju modula'), 'error'); } catch (_) { }
+                try { showToast(getI18nMsg('toastModuleLoadError', 'Greška pri učitavanju modula'), 'error'); } catch {}
                 console.error('Module load error', modulePath, err);
             } finally {
                 loadingModules.delete(modulePath);
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             // Warm other heavy modules (don't call their init yet to keep startup light)
             const warmPaths = ['./popup-notes.js', './popup-tracker.js', './popup-counter.js', './popup-stopwatch.js', './popup-settings.js'];
             warmPaths.forEach(p => import(p).then(m => { loadedModules[p] = m; }).catch(() => { }));
-        } catch (e) {
+        } catch {
             // ignore prefetch errors
         }
     };

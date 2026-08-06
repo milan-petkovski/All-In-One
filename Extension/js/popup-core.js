@@ -13,7 +13,7 @@ export function trackEvent(eventName, eventData = {}) {
                 page_title: pageTitle
             }
         });
-    } catch (err) {
+    } catch {
         // Ignore errors
     }
 }
@@ -45,7 +45,7 @@ window.getI18nMsg = getI18nMsg;
 export let tab = null;
 export let host = null;
 export let currentLang = 'sr';
-export let elements = {};
+export const elements = {};
 
 export async function initCore() {
     host = null;
@@ -64,7 +64,7 @@ export async function initCore() {
     try {
         const res = await fetch(chrome.runtime.getURL(`_locales/${currentLang}/messages.json`));
         window.i18nDict = await res.json();
-    } catch (e) {
+    } catch {
         // Silent fail in production
     }
 
@@ -104,11 +104,11 @@ export async function initCore() {
         if (url && url.startsWith("http")) {
             try {
                 host = new URL(url).hostname;
-            } catch (e) {
+            } catch {
                 host = null;
             }
         }
-    } catch (err) {
+    } catch {
         host = null;
     }
 
@@ -375,7 +375,7 @@ export async function initCore() {
                     return;
                 }
             }
-        } catch (_) {
+        } catch {
             showToast(getI18nMsg("toastPermissionDenied", "Dozvola nije odobrena"), "error");
             return;
         }
@@ -392,8 +392,8 @@ export async function initCore() {
             chrome.scripting.executeScript({
                 target: { tabId: tab.id },
                 func: async () => {
-                    try { sessionStorage.clear(); } catch (_) { }
-                    try { localStorage.clear(); } catch (_) { }
+                    try { sessionStorage.clear(); } catch {}
+                    try { localStorage.clear(); } catch {}
                     try {
                         if (window.indexedDB && indexedDB.databases) {
                             const dbs = await indexedDB.databases();
@@ -404,24 +404,24 @@ export async function initCore() {
                                     req.onsuccess = () => resolve();
                                     req.onerror = () => resolve();
                                     req.onblocked = () => resolve();
-                                } catch (_) {
+                                } catch {
                                     resolve();
                                 }
                             })));
                         }
-                    } catch (_) { }
+                    } catch {}
                     try {
                         if (window.caches && caches.keys) {
                             const keys = await caches.keys();
                             await Promise.all(keys.map((key) => caches.delete(key)));
                         }
-                    } catch (_) { }
+                    } catch {}
                     try {
                         if (navigator.serviceWorker?.getRegistrations) {
                             const regs = await navigator.serviceWorker.getRegistrations();
                             await Promise.all(regs.map((r) => r.unregister()));
                         }
-                    } catch (_) { }
+                    } catch {}
                 }
             }).catch(() => { });
             elements.realClearBtn.innerText = getI18nMsg("cacheCleared", "Obrisano!");
@@ -461,7 +461,7 @@ export async function initCore() {
                     ? getI18nMsg("toastCookieWhitelistOn", "Kolačići dozvoljeni za ovaj sajt")
                     : getI18nMsg("toastCookieWhitelistOff", "Kolačići blokirani za ovaj sajt"), "success");
                 refreshCurrentTab();
-            } catch (_) {
+            } catch {
                 showToast(getI18nMsg("toastCookieWhitelistError", "Greška pri promeni liste"), "error");
             }
         });
@@ -474,7 +474,7 @@ export async function initCore() {
             await chrome.storage.local.set({ cookieBlock: isBlocking });
             showToast(isBlocking ? getI18nMsg("toastCookieOn", "Automatsko blokiranje kolačića je uključeno") : getI18nMsg("toastCookieOff", "Automatsko blokiranje kolačića je isključeno"), "success");
             refreshCurrentTab();
-        } catch (err) {
+        } catch {
             // Silent fail
         }
     });
@@ -531,7 +531,7 @@ export async function initCore() {
 
                     whatsNewOverlay?.classList.remove("hidden");
                 }
-            } catch (err) {
+            } catch {
                 const titleEl = document.getElementById("whatsNewTitle");
                 const featuresEl = document.getElementById("whatsNewFeatures");
                 const lang = (currentLang === "sr") ? "sr" : "en";
@@ -627,6 +627,7 @@ export function switchView(fromId, toId, isBack = false) {
 
         setTimeout(() => {
             fromEl.classList.add("view-hidden");
+            fromEl.classList.remove("view-slide-left", "view-visible");
             // Focus textarea after transition is complete to prevent layout bounce
             if (toId === "notesView") {
                 document.getElementById("noteArea")?.focus();
@@ -643,12 +644,12 @@ export function switchView(fromId, toId, isBack = false) {
         toEl.offsetHeight;
 
         toEl.classList.remove("view-slide-left");
+        toEl.classList.add("view-visible");
         fromEl.classList.add("view-slide-right");
-        fromEl.classList.remove("view-visible");
 
         setTimeout(() => {
             fromEl.classList.add("view-hidden");
-            fromEl.classList.remove("view-slide-right");
+            fromEl.classList.remove("view-slide-right", "view-visible");
         }, 300);
     }
 }

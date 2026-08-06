@@ -245,7 +245,7 @@ const swRenderHistory = () => {
                                 a.download = `${cleanName}.txt`;
                                 a.click();
                                 URL.revokeObjectURL(url);
-                            } catch (err) {
+                            } catch {
                                 // Silent fail
                             }
                         };
@@ -274,7 +274,7 @@ const swRenderHistory = () => {
                                 }).catch(() => {
                                     // Silent fail
                                 });
-                            } catch (err) {
+                            } catch {
                                 // Silent fail
                             }
                         };
@@ -312,7 +312,7 @@ const doKickSync = (channelSlug) => {
     }
     try {
         chrome.runtime.sendMessage({ action: "sync_kick_live", channelSlug });
-    } catch (err) {
+    } catch {
         if (syncBtn) {
             syncBtn.disabled = false;
             syncBtn.innerText = "Sinhronizuj";
@@ -340,7 +340,7 @@ const doFullReset = () => {
                     kickChannel: ""
                 };
                 if (hasLaps) {
-                    const session = { sessionStart: Date.now(), laps: currentLaps, ...(channelName && { channelName }) };
+                    const session = { sessionStart: startTime, laps: currentLaps, ...(channelName && { channelName }) };
                     const latest = await chrome.storage.local.get(["history"]);
                     const latestHistory = Array.isArray(latest.history) ? latest.history : [];
                     updates.history = [...latestHistory, session];
@@ -464,7 +464,7 @@ export function initStopwatch() {
                             kickChannel: ""
                         };
                         if (hasLaps) {
-                            const session = { sessionStart: Date.now(), laps: currentLaps, ...(channelName && { channelName }) };
+                            const session = { sessionStart: startTime, laps: currentLaps, ...(channelName && { channelName }) };
                             const latest = await chrome.storage.local.get(["history"]);
                             const latestHistory = Array.isArray(latest.history) ? latest.history : [];
                             updates.history = [...latestHistory, session];
@@ -627,7 +627,7 @@ export function initStopwatch() {
         if (!swModal) return;
         swHistoryWriteQueue = swHistoryWriteQueue.then(async () => {
             await chrome.storage.local.set({ history: [] });
-        }).catch((err) => {
+        }).catch(() => {
             // Silent fail
         });
         swHistoryWriteQueue.then(() => {
@@ -660,7 +660,7 @@ export function initStopwatch() {
                         const latestHistory = Array.isArray(latest.history) ? latest.history : [];
                         const updates = { currentLaps: [] };
                         if (saveOld) {
-                             const oldSession = { sessionStart: Date.now(), laps: oldLaps, ...(prevChannel && { channelName: prevChannel }) };
+                             const oldSession = { sessionStart: oldStart || Date.now(), laps: oldLaps, ...(prevChannel && { channelName: prevChannel }) };
                             updates.history = [...latestHistory, oldSession];
                         }
                         await chrome.storage.local.set(updates);

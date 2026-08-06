@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "1.5.4.3",
+  "version": "1.5.5",
   "name": "__MSG_extName__",
   "description": "__MSG_extDesc__",
   "default_locale": "en",
@@ -36,7 +36,8 @@
     "https://allinone.milanwebportal.com/"
   ],
   "background": {
-    "service_worker": "js/background.js"
+    "service_worker": "js/background.js",
+    "type": "module"
   },
   "content_scripts": [
     {

@@ -45,7 +45,7 @@ async function loadNetworkResults(url) {
             hostname
         });
         return Array.isArray(response?.results) ? response.results : [];
-    } catch (_) {
+    } catch {
         return [];
     }
 }
@@ -286,7 +286,7 @@ export async function runTechScanner() {
                             if (header('cache-control')) add('Keširanje', 'Cache Control');
                             if (header('etag')) add('Keširanje', 'ETag');
                             if (header('cf-cache-status')) add('Keširanje', 'Cloudflare Cache');
-                        } catch (e) { }
+                        } catch {}
 
                         const generator = getMetaByName('generator').toLowerCase();
                         if (generator.includes('wordpress') || links.some(l => l.includes('wp-content'))) add('Sistem', 'WordPress');
@@ -451,10 +451,10 @@ export async function runTechScanner() {
             } else {
                 showTechMessage(listContainer, loading, getI18nMsg("techScannerFailed", "Skeniranje nije uspelo na ovoj stranici."));
             }
-        } catch (err) {
+        } catch {
             showTechMessage(listContainer, loading, getI18nMsg("techScannerFailed", "Skeniranje nije uspelo na ovoj stranici."));
         }
-    } catch (err) {
+    } catch {
         // Silent fail
     }
 }

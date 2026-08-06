@@ -1,5 +1,5 @@
-const isSystemPage = () => {
-  const url = window.location.href;
+const isSystemPage = (urlStr) => {
+  const url = urlStr || (typeof window !== "undefined" && window.location ? window.location.href : "");
   return (
     url.startsWith("chrome://") ||
     url.startsWith("edge://") ||
@@ -10,9 +10,39 @@ const isSystemPage = () => {
   );
 };
 
-if (!isSystemPage()) {
+const rgbToHex = (r, g, b) => "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase();
+
+const INTRUSIVE_TEXT_KEYWORDS = [
+  'cookie', 'kolačić', 'kolacic', 'kolačic', 'consent', 'gdpr', 'privatnost', 'privacy policy',
+  'obaveštenj', 'obavestenj', 'notifik', 'newsletter', 'push obave', 'web push',
+  'prihvatam', 'prihvati sve', 'accept all', 'accept cookies', 'agree to all', 'i agree',
+  'slažem se', 'slazem se', 'saglasan', 'koristimo kolačiće', 'use cookies',
+  'reklam', 'advertisement', 'personalizovane reklame', 'sponsored',
+  'pretplat', 'subscribe', 'sign up for', 'email list'
+];
+
+const isProtectedModal = (el) => {
+  if (!el) return true;
+  const token = `${el.id || ""} ${String(el.className || "")}`.toLowerCase();
+  if (/\b(login|sign-?in|sign-?up|register|auth|checkout|payment|billing|account)\b/.test(token)) {
+    return true;
+  }
+  if (el.querySelector && el.querySelector('input[type="password"]')) return true;
+  if (el.closest && el.closest('[data-aio-dark-exempt="1"]')) return true;
+  return false;
+};
+
+const elementMatchesIntrusiveText = (el) => {
+  const rawText = typeof el === "string" ? el : (el?.innerText || el?.textContent || "");
+  const text = rawText.replace(/\s+/g, " ").trim().toLowerCase();
+  if (!text || text.length > 4000) return false;
+  return INTRUSIVE_TEXT_KEYWORDS.some((kw) => text.includes(kw));
+};
+
+if (typeof window !== "undefined" && typeof isSystemPage === "function" && !isSystemPage()) {
   runMainContentScript();
 }
+
 
 function runMainContentScript() {
 
@@ -28,8 +58,8 @@ function runMainContentScript() {
             if (chrome.runtime.lastError) return resolve({ ok: false });
             resolve(res || { ok: false });
           });
-        } catch (err) {
-          resolve({ ok: false, error: String(err?.message || err) });
+        } catch {
+          resolve({ ok: false });
         }
       });
       if (response.ok && response.messages) {
@@ -38,7 +68,7 @@ function runMainContentScript() {
         contentI18nWarned = true;
         console.warn("All In One: translations not loaded for content script.");
       }
-    } catch (e) { }
+    } catch {}
   }
   loadTranslations();
   // Slušaj ako se jezik promeni u hodu
@@ -206,8 +236,6 @@ function runMainContentScript() {
       widget.style.transform = 'scale(1)';
     });
 
-    const rgbToHex = (r, g, b) => "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase();
-
     let virtualX = 0;
     let virtualY = 0;
     let hasPointer = false;
@@ -260,7 +288,7 @@ function runMainContentScript() {
           magCtx.moveTo(0, pos); magCtx.lineTo(MAG_SIZE, pos);
         }
         magCtx.stroke();
-      } catch (err) { }
+      } catch {}
     };
 
     const pickColorAndExit = async () => {
@@ -294,7 +322,7 @@ function runMainContentScript() {
         document.body.appendChild(toast);
         requestAnimationFrame(() => { toast.style.opacity = '1'; toast.style.transform = 'translateX(-50%) translateY(0)'; });
         setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateX(-50%) translateY(20px)'; setTimeout(() => toast.remove(), 500); }, 2500);
-      } catch (err) { }
+      } catch {}
       cleanup();
     };
 
@@ -359,7 +387,7 @@ function runMainContentScript() {
     const clearSelection = () => {
       try {
         window.getSelection()?.removeAllRanges();
-      } catch (_) { }
+      } catch {}
     };
     const esc = (e) => { if (e.key === "Escape") cleanup(); };
     const onGlobalMouseUp = () => {
@@ -617,32 +645,6 @@ function runMainContentScript() {
     'iframe[id*="consent" i]', 'iframe[src*="consent" i]', 'iframe[src*="cmp." i]', 'iframe[src*="gdpr" i]'
   ];
 
-  const INTRUSIVE_TEXT_KEYWORDS = [
-    'cookie', 'kolačić', 'kolacic', 'kolačic', 'consent', 'gdpr', 'privatnost', 'privacy policy',
-    'obaveštenj', 'obavestenj', 'notifik', 'newsletter', 'push obave', 'web push',
-    'prihvatam', 'prihvati sve', 'accept all', 'accept cookies', 'agree to all', 'i agree',
-    'slažem se', 'slazem se', 'saglasan', 'koristimo kolačiće', 'use cookies',
-    'reklam', 'advertisement', 'personalizovane reklame', 'sponsored',
-    'pretplat', 'subscribe', 'sign up for', 'email list'
-  ];
-
-  const isProtectedModal = (el) => {
-    if (!el) return true;
-    const token = `${el.id || ""} ${String(el.className || "")}`.toLowerCase();
-    if (/\b(login|sign-?in|sign-?up|register|auth|checkout|payment|billing|account)\b/.test(token)) {
-      return true;
-    }
-    if (el.querySelector('input[type="password"]')) return true;
-    if (el.closest('[data-aio-dark-exempt="1"]')) return true;
-    return false;
-  };
-
-  const elementMatchesIntrusiveText = (el) => {
-    const text = (el.innerText || el.textContent || "").replace(/\s+/g, " ").trim().toLowerCase();
-    if (!text || text.length > 4000) return false;
-    return INTRUSIVE_TEXT_KEYWORDS.some((kw) => text.includes(kw));
-  };
-
   const isLikelyIntrusiveOverlay = (el) => {
     if (!el || el.nodeType !== 1 || isProtectedModal(el)) return false;
     if (isCriticalAppContainer(el)) return false;
@@ -724,7 +726,7 @@ function runMainContentScript() {
       }
 
       return false;
-    } catch (_) {
+    } catch {
       return false;
     }
   };
@@ -733,7 +735,7 @@ function runMainContentScript() {
   let volumeOverrideActive = false;
   try {
     originalVolumeDescriptor = Object.getOwnPropertyDescriptor(HTMLMediaElement.prototype, 'volume');
-  } catch (_) { }
+  } catch {}
 
   const captureBaseVolume = (media) => {
     if (media.hasOwnProperty('_aioBaseVolume')) return media._aioBaseVolume;
@@ -742,7 +744,7 @@ function runMainContentScript() {
       const lastMult = media._aioLastMultiplier ?? 1.0;
       const computedBase = lastMult > 0 ? (actual / lastMult) : actual;
       media._aioBaseVolume = Number.isFinite(computedBase) ? Math.max(0, Math.min(computedBase, 1)) : 1.0;
-    } catch (_) {
+    } catch {
       media._aioBaseVolume = 1.0;
     }
     return media._aioBaseVolume;
@@ -771,7 +773,7 @@ function runMainContentScript() {
       const nodes = { source, gainNode };
       window.aioMediaNodes.set(media, nodes);
       return nodes;
-    } catch (_) {
+    } catch {
       window.aioMediaNodes.set(media, null);
       return null;
     }
@@ -791,14 +793,14 @@ function runMainContentScript() {
       if (!chain) {
         try {
           originalVolumeDescriptor.set.call(media, 1.0);
-        } catch (_) { }
+        } catch {}
         media._aioLastMultiplier = 1.0;
         return;
       }
       try {
         originalVolumeDescriptor.set.call(media, base);
         chain.gainNode.gain.setTargetAtTime(multiplier, window.aioVolCtx.currentTime, 0.01);
-      } catch (_) { }
+      } catch {}
       media._aioLastMultiplier = multiplier;
       return;
     }
@@ -807,7 +809,7 @@ function runMainContentScript() {
       try {
         originalVolumeDescriptor.set.call(media, base);
         nodes.gainNode.gain.setTargetAtTime(multiplier, window.aioVolCtx.currentTime, 0.01);
-      } catch (_) { }
+      } catch {}
       media._aioLastMultiplier = multiplier;
       return;
     }
@@ -816,7 +818,7 @@ function runMainContentScript() {
       const clampedTarget = Math.max(0, Math.min(target, 1.0));
       originalVolumeDescriptor.set.call(media, clampedTarget);
       media._aioLastMultiplier = (clampedTarget > 0 && base > 0) ? (clampedTarget / base) : multiplier;
-    } catch (_) {
+    } catch {
       media._aioLastMultiplier = multiplier;
     }
   };
@@ -840,7 +842,7 @@ function runMainContentScript() {
         }
       });
       volumeOverrideActive = true;
-    } catch (_) { }
+    } catch {}
   };
 
   const restoreVolumeOverride = () => {
@@ -848,13 +850,13 @@ function runMainContentScript() {
     try {
       Object.defineProperty(HTMLMediaElement.prototype, 'volume', originalVolumeDescriptor);
       volumeOverrideActive = false;
-    } catch (_) { }
+    } catch {}
   };
 
   const captureAllMediaBaselines = () => {
     try {
       document.querySelectorAll("audio, video").forEach((media) => captureBaseVolume(media));
-    } catch (_) { }
+    } catch {}
   };
 
   const restoreMediaVolumesAt100 = () => {
@@ -866,15 +868,15 @@ function runMainContentScript() {
         if (nodes?.gainNode) {
           try {
             nodes.gainNode.gain.setTargetAtTime(1.0, window.aioVolCtx?.currentTime || 0, 0.01);
-          } catch (_) { }
+          } catch {}
         }
         try {
           originalVolumeDescriptor.set.call(media, base);
-        } catch (_) { }
+        } catch {}
         delete media._aioBaseVolume;
         delete media._aioLastMultiplier;
       });
-    } catch (_) { }
+    } catch {}
 
     restoreVolumeOverride();
 
@@ -919,7 +921,7 @@ function runMainContentScript() {
         window.aioVolObserver = new MutationObserver(connectMedia);
         window.aioVolObserver.observe(document.documentElement, { childList: true, subtree: true });
       }
-    } catch (_) { }
+    } catch {}
   };
 
   const syncVolumeFromStorage = () => {
@@ -953,11 +955,11 @@ function runMainContentScript() {
         isSiteAlreadyDark = true;
       } else {
         let bgColor = null;
-        let elements = [body, html, document.querySelector('main'), document.querySelector('[role="application"]'), document.querySelector('#root'), document.querySelector('#__next')];
+        const elements = [body, html, document.querySelector('main'), document.querySelector('[role="application"]'), document.querySelector('#root'), document.querySelector('#__next')];
 
-        for (let el of elements) {
+        for (const el of elements) {
           if (!el) continue;
-          let bg = window.getComputedStyle(el).backgroundColor;
+          const bg = window.getComputedStyle(el).backgroundColor;
           if (bg && bg !== 'rgba(0, 0, 0, 0)' && bg !== 'transparent' && bg !== '') {
             bgColor = bg;
             break;
@@ -1155,7 +1157,7 @@ function runMainContentScript() {
           hideCookieElement(el);
           hideIntrusiveBackdrop(el);
         });
-      } catch (_) { }
+      } catch {}
 
       unlockPageScroll();
       cookieCleanupPending = false;
@@ -1270,7 +1272,7 @@ function runMainContentScript() {
           buffer[domain] = (Number(buffer[domain]) || 0) + seconds;
           chrome.storage.local.set({ tracker_buffer: buffer }).catch(() => { });
         });
-      } catch (_) { }
+      } catch {}
     };
 
     const sendHeartbeatSeconds = (totalSeconds) => {
@@ -1289,7 +1291,7 @@ function runMainContentScript() {
           if (p && typeof p.catch === "function") {
             p.catch(() => saveToEmergencyBuffer(domain, seconds));
           }
-        } catch (_) {
+        } catch {
           saveToEmergencyBuffer(domain, seconds);
         }
       } else {
@@ -1399,14 +1401,14 @@ function runMainContentScript() {
     window.addEventListener("pagehide", () => {
       try {
         flushTrackedTime(Date.now());
-      } catch (_) { }
+      } catch {}
       stopTrackerHeartbeat();
     }, false);
 
     window.addEventListener("beforeunload", () => {
       try {
         flushTrackedTime(Date.now());
-      } catch (_) { }
+      } catch {}
       stopTrackerHeartbeat();
     }, false);
     // --- SHORTCUT ENGINE ---
@@ -1436,3 +1438,16 @@ function runMainContentScript() {
   }
 
 } // kraj runMainContentScript()
+
+if (typeof globalThis !== "undefined") {
+  globalThis.aioContentHelpers = {
+    isSystemPage,
+    rgbToHex,
+    INTRUSIVE_TEXT_KEYWORDS,
+    isProtectedModal,
+    elementMatchesIntrusiveText,
+    runMainContentScript
+  };
+}
+
+

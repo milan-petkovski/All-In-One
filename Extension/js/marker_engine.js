@@ -30,7 +30,7 @@ function trackMarkerEvent(eventName, eventData = {}) {
                 page_location: location.href
             }
         });
-    } catch (e) { }
+    } catch {}
 }
 
 async function pokreniMarker() {
@@ -56,14 +56,14 @@ async function pokreniMarker() {
                         if (chrome.runtime.lastError) return resolve({ ok: false });
                         resolve(res || { ok: false });
                     });
-                } catch (err) {
-                    resolve({ ok: false, error: String(err?.message || err) });
+                } catch {
+                    resolve({ ok: false });
                 }
             });
             if (response.ok && response.messages) {
                 markerDict = response.messages;
             }
-        } catch (e) {
+        } catch {
             console.warn("Marker translation fetch failed");
         }
 

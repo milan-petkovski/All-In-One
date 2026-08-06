@@ -1,16 +1,16 @@
 [
     {
-        "verzija": "1.5.4.3",
+        "verzija": "1.5.5",
         "aktivno": true,
         "sr": {
-            "datum": "28. Jun 2026.",
-            "naslov": "Vizuelni identitet",
-            "opis": "Ovo ažuriranje donosi novi, modernizovani logotip i osveženi vizuelni identitet na veb sajtu i u samoj ekstenziji. Svi elementi brendinga su detaljno ažurirani i usklađeni."
+            "datum": "7. Avgust 2026.",
+            "naslov": "Gladak Prikaz",
+            "opis": "Novo ažuriranje donosi potpunu stabilizaciju prikaza ekstenzije u Chromium pregledačima, usavršen rendering popup prozora, glatke tranzicije između stranica i precizno beleženje istorije štoperice."
         },
         "en": {
-            "datum": "June 28, 2026",
-            "naslov": "Visual Identity",
-            "opis": "This update introduces a new, modernized logo and refreshed visual identity across the website and extension UI. All branding assets have been carefully updated and aligned."
+            "datum": "August 7, 2026",
+            "naslov": "Smooth Rendering",
+            "opis": "This release stabilizes popup rendering in Chromium browsers, fixes window transparency issues, ensures smooth page transitions, and corrects stopwatch history timestamps."
         }
     },
     {

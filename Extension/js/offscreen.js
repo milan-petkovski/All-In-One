@@ -14,7 +14,7 @@ function safeSendRuntimeMessage(payload) {
     if (maybePromise && typeof maybePromise.catch === "function") {
       maybePromise.catch(() => { });
     }
-  } catch (_) {
+  } catch {
     // Extension context can be reloading/invalidated.
   }
 }
