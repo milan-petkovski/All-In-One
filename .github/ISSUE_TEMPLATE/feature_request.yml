@@ -1,0 +1,41 @@
+name: Feature Request
+description: Suggest a new idea or improvement for All In One
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea or new feature to improve the All In One extension or website? Let us know!
+  - type: dropdown
+    id: target
+    attributes:
+      label: Target Component
+      description: Where should this feature be added?
+      options:
+        - Chrome Extension Tool
+        - New Extension Feature
+        - Website & Documentation
+        - Translation / Localization
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Use Case
+      description: What problem would this feature solve?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you would like.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions or features you have considered.
+    validations:
+      required: false

@@ -1,0 +1,65 @@
+name: Bug Report
+description: File a bug report for the Extension or Website
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please fill out the form below with as much detail as possible.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which part of the project has the bug?
+      options:
+        - Chrome Extension
+        - Website
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & Version
+      description: e.g. Chrome 124, Edge 124, Brave 1.65, etc.
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: e.g. Windows 11, macOS Sonoma, Ubuntu 24.04
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Open extension popup
+        2. Click on ...
+        3. See error ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any console logs, screenshots, or other context about the problem.
+    validations:
+      required: false

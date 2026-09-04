@@ -3,6 +3,7 @@
 // Converts PHP track.php to Node.js for Netlify
 
 const https = require('https');
+const crypto = require('crypto');
 
 // GA Configuration (server-side only in Netlify environment variables)
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
@@ -14,11 +15,12 @@ if (!GA_MEASUREMENT_ID || !GA_API_SECRET) {
 
 const GA_ENDPOINT = `https://www.google-analytics.com/mp/collect?measurement_id=${GA_MEASUREMENT_ID}&api_secret=${GA_API_SECRET}`;
 
-// Rate limiting (simple in-memory, resets on deploy).
+// Rate limiting (simple in-memory with automatic pruning, resets on deploy).
 // Za veci obim saobracaja razmotri Netlify Blobs ili externi Redis/Upstash rate-limit.
 const rateLimitMap = new Map();
 const RATE_LIMIT_MAX = 200;
 const RATE_LIMIT_WINDOW = 3600000; // 1 hour in ms
+const RATE_LIMIT_MAX_ENTRIES = 1000;
 
 exports.handler = async (event, context) => {
     // CORS headers
@@ -73,10 +75,30 @@ exports.handler = async (event, context) => {
         }
 
         // Rate limiting by IP
-        const ip = event.headers['x-forwarded-for'] || event.headers['client-ip'] || 'unknown';
-        const ipHash = Buffer.from(ip).toString('base64').slice(0, 16);
+        const ip = (event.headers && (event.headers['x-forwarded-for'] || event.headers['client-ip'])) || 'unknown';
+        // Genuine irreversible SHA-256 hash for privacy-safe rate limiting and log pseudonymization
+        const ipHash = crypto.createHash('sha256').update(ip).digest('hex').slice(0, 16);
 
         const now = Date.now();
+
+        // Memory leak prevention: prune expired keys when map exceeds threshold
+        if (rateLimitMap.size > RATE_LIMIT_MAX_ENTRIES) {
+            for (const [key, val] of rateLimitMap.entries()) {
+                if (now > val.resetAt) {
+                    rateLimitMap.delete(key);
+                }
+            }
+            if (rateLimitMap.size > RATE_LIMIT_MAX_ENTRIES) {
+                // Sort by resetAt ascending so earliest-to-expire entries are evicted first
+                const sortedEntries = Array.from(rateLimitMap.entries())
+                    .sort((a, b) => a[1].resetAt - b[1].resetAt);
+                const toPrune = rateLimitMap.size - (RATE_LIMIT_MAX_ENTRIES - 200);
+                for (let i = 0; i < toPrune && i < sortedEntries.length; i++) {
+                    rateLimitMap.delete(sortedEntries[i][0]);
+                }
+            }
+        }
+
         const rateData = rateLimitMap.get(ipHash) || { count: 0, resetAt: now + RATE_LIMIT_WINDOW };
 
         if (now > rateData.resetAt) {

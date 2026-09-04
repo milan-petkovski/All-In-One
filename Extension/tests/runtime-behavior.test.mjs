@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { createMockEnvironment } from './mock-env.mjs';
+import { createMockEnvironment } from './runtime-mock-env.mjs';
 
 const localeMessages = {
   en: {

@@ -5,10 +5,17 @@
   <h1>All In One Extension</h1>
   <p>The ultimate tool that combines all essential features into one fast, modern, and free interface.</p>
 
+  <p>
+    <a href="https://github.com/milan-petkovski/All-In-One/actions/workflows/ci.yml"><img src="https://github.com/milan-petkovski/All-In-One/actions/workflows/ci.yml/badge.svg" alt="CI Status" /></a>
+    <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"><img src="https://img.shields.io/badge/Chrome_Web_Store-Available-blue?logo=googlechrome&logoColor=white" alt="Chrome Web Store" /></a>
+    <img src="https://img.shields.io/badge/Languages-55_Supported-success" alt="55 Languages Supported" />
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-EULA-green" alt="License" /></a>
+  </p>
+
   <h2>
-    <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem">📥 Download Extension</a>
+    <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem">Download Extension</a>
     &nbsp; | &nbsp;
-    <a href="https://allinone.milanwebportal.com">🌐 Visit Official Website</a>
+    <a href="https://allinone.milanwebportal.com">Visit Official Website</a>
   </h2>
 
   <p><b>🌍 Available Globally:</b> Supported in all 55 languages provided by the Chrome Web Store!</p>
@@ -57,7 +64,7 @@ Every donation means a lot and helps me maintain and improve the extension. Than
 
 *For users who want to install the extension directly via source code.*
 
-1. Go to the [Releases](https://github.com/milan-petkovski/All-in-one-extension/releases) section of this repository
+1. Go to the [Releases](https://github.com/milan-petkovski/All-In-One/releases) section of this repository
 2. Download the latest published All.In.One.zip file
 3. Extract the archive into a separate folder on your computer
 4. Open your browser and navigate to chrome://extensions/
@@ -119,7 +126,7 @@ The All In One ecosystem includes a high-performance web platform that serves as
 4. The extension is immediately ready to use
 
 ### 🛠️ Extension: Manual (Developer Mode)
-1. Go to the [Releases](https://github.com/milan-petkovski/All-in-one-extension/releases) section of this repository
+1. Go to the [Releases](https://github.com/milan-petkovski/All-In-One/releases) section of this repository
 2. Download the latest `All.In.One.zip` file
 3. Extract the archive into a separate folder
 4. Open your browser and navigate to `chrome://extensions/`

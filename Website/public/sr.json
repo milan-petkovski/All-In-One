@@ -202,6 +202,7 @@
   "priv_sec_external_li1": "Opcija \"YouTube Dislike\" koristi javni API servisa Return YouTube Dislike.",
   "priv_sec_external_li2": "Radio IN funkcija strimuje zvuk direktno sa zvaničnog radio servera uz dobijenu dozvolu.",
   "priv_sec_external_li3": "Nikakvi lični podaci se ne prosleđuju ovim servisima.",
+  "priv_sec_external_li4": "Na web sajtu koristimo servis ipapi.co isključivo za jednokratnu geolokaciju države posetioca radi automatskog odabira jezika (srpski/engleski). IP adresa se ne čuva niti profilira.",
   "priv_sec_permissions_title": "Dozvole ekstenzije",
   "priv_sec_permissions_desc": "Dozvole poput \"scripting\" i \"all_urls\" koriste se isključivo za rad funkcija kao što su Dark Mode, Ruler i Enable Copy. Sve radnje se izvršavaju unutar tvog pretraživača bez eksterne komunikacije.",
   "priv_sec_changes_title": "Izmene politike",

@@ -203,6 +203,7 @@
   "priv_sec_external_li1": "The \"YouTube Dislike\" option uses the public API of the Return YouTube Dislike service.",
   "priv_sec_external_li2": "The Radio IN feature streams audio directly from the official radio server with permission.",
   "priv_sec_external_li3": "No personal data is forwarded to these services.",
+  "priv_sec_external_li4": "On our website, we use ipapi.co solely for one-time visitor country detection to serve the appropriate language (Serbian/English). IP addresses are never stored or profiled.",
   "priv_sec_permissions_title": "Extension Permissions",
   "priv_sec_permissions_desc": "Permissions like \"scripting\" and \"all_urls\" are used exclusively for features such as Dark Mode, Ruler, and Enable Copy. All actions are executed within your browser without external communication.",
   "priv_sec_changes_title": "Policy Changes",

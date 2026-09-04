@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /hvala
+Disallow: /azurirano
 Disallow: /obrisano
 Disallow: /404
 

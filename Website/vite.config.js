@@ -10,12 +10,12 @@ export default defineConfig({
     reportCompressedSize: false,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        404: resolve(__dirname, '404.html'),
-        azurirano: resolve(__dirname, 'azurirano.html'),
-        hvala: resolve(__dirname, 'hvala.html'),
-        obrisano: resolve(__dirname, 'obrisano.html'),
-        privacy: resolve(__dirname, 'privacy.html')
+        main: resolve(import.meta.dirname, 'index.html'),
+        404: resolve(import.meta.dirname, '404.html'),
+        azurirano: resolve(import.meta.dirname, 'azurirano.html'),
+        hvala: resolve(import.meta.dirname, 'hvala.html'),
+        obrisano: resolve(import.meta.dirname, 'obrisano.html'),
+        privacy: resolve(import.meta.dirname, 'privacy.html')
       }
     }
   },
