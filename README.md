@@ -98,7 +98,7 @@ Every donation means a lot and helps me maintain and improve the extension. Than
 # 🌐 Web Platform
 
 <div align="center">
-  <img src="https://milanwebportal.com/images/Projects/website2.jpg" width="600px" alt="All In One Web Platform" />
+  <img src="https://milanwebportal.com/images/Projects/website2.webp" width="600px" alt="All In One Web Platform" />
 </div>
 
 <br>
