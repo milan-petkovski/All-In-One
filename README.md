@@ -31,13 +31,14 @@
 
   <p>...and all other Chromium based browsers.</p>
 
-  <a href="https://www.producthunt.com/products/all-in-one-extension?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-all-in-one-extension" target="_blank" rel="noopener noreferrer">        <img alt="All In One Extension - Ultimate productivity and design toolkit for your browser. | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1124470&amp;theme=light&amp;t=1777113476173"></a>
+<a href="https://www.producthunt.com/products/all-in-one-extension?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-all-in-one-extension" target="_blank" rel="noopener noreferrer"> <img alt="All In One Extension - Ultimate productivity and design toolkit for your browser. | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1124470&amp;theme=light&amp;t=1777113476173"></a>
 </div>
 
 <br>
 
 # ☕ The Story & Support
-Hi! I am Milan, a 19 year old student and web developer from Serbia. I built the All In One extension to help people boost their productivity with a clean, fast, and completely free tool.
+
+Hi! I am Milan, a 20-year-old student and web developer from Serbia. I built the All In One extension to help people boost their productivity with a clean, fast, and completely free tool.
 
 I am committed to keeping this extension 100% free forever, with zero ads and zero popups. If this tool saves you time and you want to support my late night coding sessions, you can buy me a coffee!
 
@@ -51,7 +52,7 @@ Every donation means a lot and helps me maintain and improve the extension. Than
 
 **Option 1: Official Store (Recommended)**
 
-*The fastest way to always have the latest version.*
+_The fastest way to always have the latest version._
 
 1. Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem) page
 2. Click the Add to Chrome button
@@ -62,7 +63,7 @@ Every donation means a lot and helps me maintain and improve the extension. Than
 
 **Option 2: Manual Installation (Developer mode)**
 
-*For users who want to install the extension directly via source code.*
+_For users who want to install the extension directly via source code._
 
 1. Go to the [Releases](https://github.com/milan-petkovski/All-In-One/releases) section of this repository
 2. Download the latest published All.In.One.zip file
@@ -77,21 +78,21 @@ Every donation means a lot and helps me maintain and improve the extension. Than
 
 # 🛠️ Features and Tools
 
-* 📻 **Radio IN**: Listen to the radio directly from the extension
-* 🔊 **Volume 1000%**: Boost the volume up to maximum on any tab
-* 🎨 **Color Picker**: Eyedropper tool to quickly grab HEX color codes
-* 🌙 **Dark Mode**: Force dark theme on all websites
-* 📏 **Page Ruler**: Precisely measure elements in pixels
-* 🔓 **Enable Copy**: Unlock blocked right clicks and text selection
-* 🖍️ **Page Marker**: Draw and write directly on the screen
-* ⚙️ **Site Technologies**: Detailed insight into the structure of the current site
-* 🍪 **Cookies and Cache**: Quickly clear data for the current site
-* 🔠 **Font Finder**: Identify fonts used on the page
-* 🔢 **Character Counter**: Check text length and SEO statistics
-* ⏱️ **Stopwatch**: Record timestamps for easier video editing
-* 📝 **Smart Notes**: Advanced note taking with math support
-* ⏳ **Webtime Tracker**: Analyze time spent on websites
-* 👎 **Return YT Dislike**: Bring back the dislike counter on YouTube
+- 📻 **Radio IN**: Listen to the radio directly from the extension
+- 🔊 **Volume 1000%**: Boost the volume up to maximum on any tab
+- 🎨 **Color Picker**: Eyedropper tool to quickly grab HEX color codes
+- 🌙 **Dark Mode**: Force dark theme on all websites
+- 📏 **Page Ruler**: Precisely measure elements in pixels
+- 🔓 **Enable Copy**: Unlock blocked right clicks and text selection
+- 🖍️ **Page Marker**: Draw and write directly on the screen
+- ⚙️ **Site Technologies**: Detailed insight into the structure of the current site
+- 🍪 **Cookies and Cache**: Quickly clear data for the current site
+- 🔠 **Font Finder**: Identify fonts used on the page
+- 🔢 **Character Counter**: Check text length and SEO statistics
+- ⏱️ **Stopwatch**: Record timestamps for easier video editing
+- 📝 **Smart Notes**: Advanced note taking with math support
+- ⏳ **Webtime Tracker**: Analyze time spent on websites
+- 👎 **Return YT Dislike**: Bring back the dislike counter on YouTube
 
 <br>
 
@@ -105,27 +106,30 @@ Every donation means a lot and helps me maintain and improve the extension. Than
 
 The All In One ecosystem includes a high-performance web platform that serves as the central hub for onboarding and documentation.
 
-* ⚡ **Vite-Powered**: Ultra-fast loading and smooth SPA-like navigation.
-* 🎨 **Tailwind CSS**: Clean, modern, and professional UI built with utility-first styling.
-* 📱 **Mobile Optimized**: Fully responsive design with specific onboarding flows for mobile vs. desktop users.
-* 🔍 **SEO Ready**: Proper semantic structure and meta tags for maximum visibility.
+- ⚡ **Vite-Powered**: Ultra-fast loading and smooth SPA-like navigation.
+- 🎨 **Tailwind CSS**: Clean, modern, and professional UI built with utility-first styling.
+- 📱 **Mobile Optimized**: Fully responsive design with specific onboarding flows for mobile vs. desktop users.
+- 🔍 **SEO Ready**: Proper semantic structure and meta tags for maximum visibility.
 
 ### 🎯 Case Study: The Website
-*   **The Problem**: Users often struggle to understand the value of multi-tool extensions. A simple store listing isn't enough to showcase 15+ features.
-*   **The Solution**: A dedicated platform that segments features by user profile (Creators, Developers, Power Users) and provides clear, 3-step installation guides.
-*   **The Result**: Higher conversion rates and better user retention through clear value proposition and feature demonstrations.
+
+- **The Problem**: Users often struggle to understand the value of multi-tool extensions. A simple store listing isn't enough to showcase 15+ features.
+- **The Solution**: A dedicated platform that segments features by user profile (Creators, Developers, Power Users) and provides clear, 3-step installation guides.
+- **The Result**: Higher conversion rates and better user retention through clear value proposition and feature demonstrations.
 
 <br>
 
 # 🚀 Installation & Development
 
 ### 🧩 Extension: Official Store (Recommended)
+
 1. Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem) page
 2. Click the **Add to Chrome** button
 3. Confirm the installation in the popup window
 4. The extension is immediately ready to use
 
 ### 🛠️ Extension: Manual (Developer Mode)
+
 1. Go to the [Releases](https://github.com/milan-petkovski/All-In-One/releases) section of this repository
 2. Download the latest `All.In.One.zip` file
 3. Extract the archive into a separate folder
@@ -134,6 +138,7 @@ The All In One ecosystem includes a high-performance web platform that serves as
 6. Click **Load unpacked** and select the folder you extracted
 
 ### 💻 Web Project: Local Setup
+
 1. Navigate to the `Website` directory:
    ```bash
    cd Website
@@ -150,6 +155,7 @@ The All In One ecosystem includes a high-performance web platform that serves as
 <br>
 
 # 🤝 Contributing & Translations
+
 We welcome contributions from the community to make this extension even better!
 
 **Translations**: Since the extension supports 55 languages, you can help by improving existing translations or adding better context in the `_locales` folder.
@@ -197,6 +203,7 @@ We welcome contributions from the community to make this extension even better!
 <br>
 
 # 📬 Contact
+
 Official Extension Website: <a href="https://allinone.milanwebportal.com/">allinone.milanwebportal.com</a>
 
 Project Author: Milan Petkovski (Milan Web Portal)

@@ -1,72 +1,79 @@
 # Extension
 
-Ovaj folder sadrzi Chrome/Chromium ekstenziju (Manifest V3) za **All In One** projekat.
+This directory contains the Chrome/Chromium browser extension (Manifest V3) for the **All In One** project.
 
-## Struktura `js/` foldera
+## Structure of the `js/` Directory
 
-| Fajl | Uloga |
-|------|-------|
-| `popup-core.js` | Centralni inicijalizator popupa: i18n, dark mode, volume, toast, keyboard nav |
-| `popup.js` | Entry point — importuje sve module, inicijalizuje |
-| `popup-settings.js` | Panel sa podesavanjima — jezici, tema, eksport |
-| `popup-notes.js` | Beleznik (rich-text editor) |
-| `popup-counter.js` | Brojac klikova |
-| `popup-radio.js` | Radio IN — streaming audio |
-| `popup-stopwatch.js` | Stopwatch sa istorijom sesija i Kick.com integracijom |
-| `popup-tracker.js` | Tracker projekata i zadataka |
-| `popup-tech.js` | Skener tehnologija — DOM inspekcija + mreza |
-| `background.js` | Service Worker — poruke, GA tracking, clear-site-data, alarmi |
-| `content.js` | Content script — dark mode, ruler, font finder, copy unlock |
-| `marker_engine.js` | Page marker/highlighter (injektuje se po potrebi) |
-| `offscreen.js` | Offscreen document za audio (radio) |
-| `yt.js` | YouTube content script — dislike prikaz |
+| File                 | Role                                                                                         |
+| -------------------- | -------------------------------------------------------------------------------------------- |
+| `popup-core.js`      | Central popup initializer: i18n, dark mode, volume, toast notifications, keyboard navigation |
+| `popup.js`           | Main entry point — imports all modules and initializes components                            |
+| `popup-settings.js`  | Settings panel — language selection, theme switcher, data export                             |
+| `popup-notes.js`     | Notepad (rich-text markdown-ready editor)                                                    |
+| `popup-counter.js`   | Interactive click counter                                                                    |
+| `popup-radio.js`     | Radio IN — live audio streaming engine                                                       |
+| `popup-stopwatch.js` | Precision stopwatch with session history and Kick.com integration                            |
+| `popup-tracker.js`   | Project and task progress tracker                                                            |
+| `popup-tech.js`      | Technology detector — DOM inspection + network stack analysis                                |
+| `background.js`      | Service Worker — message bus, GA analytics tracking, clear-site-data, alarms                 |
+| `content.js`         | Content script — dark mode injection, screen ruler, font finder, copy unlock                 |
+| `marker_engine.js`   | Page marker / highlighter engine (injected on-demand)                                        |
+| `offscreen.js`       | Offscreen document dedicated to audio playback (radio)                                       |
+| `yt.js`              | YouTube content script — return YouTube dislike integration                                  |
 
-## Pokretanje testova
+## Running Tests
 
 ```bash
 cd Extension
 npm test
 ```
 
-Testovi koriste Node.js built-in test runner (`node:test`) — nema potrebe za instalacijom.
+Tests run via the native Node.js test runner (`node:test`) — zero extra dependencies required.
 
-## Lint
+## Linting
 
 ```bash
-npm run lint          # ESLint provera
-npm run lint:fix      # ESLint auto-fix
+npm run lint          # Run ESLint validation
+npm run lint:fix      # Automatically fix ESLint issues
 ```
 
-## Syntax check
+## Syntax Check
 
-Brza provera ispravnosti svih JS fajlova bez lintinga:
+Quick syntax validation across all JavaScript files without running the full linter:
 
 ```bash
 npm run check:js
 ```
 
-## Struktura testova
+## Test Suite Structure
 
 ```
 tests/
-  mock-env.mjs              # createMockEnvironment — niska DOM/Chrome simulacija
-  helpers/mock-env.mjs      # createExtensionTestEnv — dva-prozorska simulacija (popup + page)
-  extension-smoke.test.mjs  # Manifest/package sinhronizacija, locale provjera
-  runtime-behavior.test.mjs # Integracija: core, radio, tech, stopwatch
+  mock-env.mjs              # createMockEnvironment — low-level DOM / Chrome API mock
+  helpers/mock-env.mjs      # createExtensionTestEnv — dual-window simulation (popup + active tab)
+  extension-smoke.test.mjs  # Manifest / package sync, locale integrity check
+  runtime-behavior.test.mjs # Integration: core, radio, tech detector, stopwatch
   popup-core.test.mjs       # Unit: escapeHtml, getI18nMsg, switchView, showToast, initCore
-  popup-counter.test.mjs    # Unit: brojac
-  popup-notes.test.mjs      # Unit: beleznik
-  popup-radio.test.mjs      # Unit: radio
-  popup-stopwatch.test.mjs  # Unit: start/stop/lap/history/format
-  popup-tech.test.mjs       # Unit: tech scanner, icon map
-  popup-tracker.test.mjs    # Unit: tracker projekata
-  translations.test.mjs     # Unit: locale provjera
-  background-logic.test.mjs # Unit: background message handlers
-  content-logic.test.mjs    # Unit: content script helper logika
-  popup-js-smoke.test.mjs   # Smoke: popup.js wiring i popup-settings.js logika
+  popup-counter.test.mjs    # Unit: click counter logic
+  popup-notes.test.mjs      # Unit: notepad storage & actions
+  popup-radio.test.mjs      # Unit: radio stream management
+  popup-stopwatch.test.mjs  # Unit: start/stop/lap/history/formatting
+  popup-tech.test.mjs       # Unit: tech detector engine, icon mappings
+  popup-tracker.test.mjs    # Unit: project tracking logic
+  translations.test.mjs     # Unit: locale key and completeness checks
+  background-logic.test.mjs # Unit: background worker message handlers
+  content-logic.test.mjs    # Unit: content script helper algorithms
+  popup-js-smoke.test.mjs   # Smoke: popup.js wiring & popup-settings.js state handling
 ```
 
-## Verzija
+## Versioning
 
-Verzija mora biti ista u `manifest.json` i `package.json`.
-CI test `"manifest and package metadata stay aligned"` automatski proverava ovo na svakom push-u.
+The version number must remain identical across `manifest.json` and `package.json`.
+The CI test `"manifest and package metadata stay aligned"` automatically verifies this on every push.
+
+---
+
+## ☕ Author & Support
+
+Crafted by **Milan Petkovski** &bull; [Milan Web Portal](https://milanwebportal.com)  
+💖 [Support my work via PayPal](https://paypal.me/milanwebportal)
