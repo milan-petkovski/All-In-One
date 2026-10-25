@@ -99,7 +99,7 @@ _For users who want to install the extension directly via source code._
 # 🌐 Web Platform
 
 <div align="center">
-  <img src="https://milanwebportal.com/images/Projects/website2.webp" width="600px" alt="All In One Web Platform" />
+  <img src="https://milanwebportal.com/images/Projects/allinone.webp" width="600px" alt="All In One Web Platform" />
 </div>
 
 <br>
@@ -213,3 +213,6 @@ Author's Website: <a href="https://milanwebportal.com/">milanwebportal.com</a>
 Contact Email: contact@milanwebportal.com
 
 💖 <a href="https://paypal.me/milanwebportal">Support my work via PayPal</a>
+
+---
+<p align="center">Made with ❤️ by <b>Milan Web Portal</b></p>

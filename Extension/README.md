@@ -77,3 +77,6 @@ The CI test `"manifest and package metadata stay aligned"` automatically verifie
 
 Crafted by **Milan Petkovski** &bull; [Milan Web Portal](https://milanwebportal.com)  
 💖 [Support my work via PayPal](https://paypal.me/milanwebportal)
+
+---
+<p align="center">Made with ❤️ by <b>Milan Web Portal</b></p>
