@@ -81,9 +81,6 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-# Crawl delay
-Crawl-delay: 2
-
 # Sitemaps & AI Context Endpoints
 Sitemap: https://allinone.milanwebportal.com/sitemap.xml
 # AI Agents Manifest: https://allinone.milanwebportal.com/llms.txt

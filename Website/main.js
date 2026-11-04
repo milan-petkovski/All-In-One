@@ -112,6 +112,8 @@ export function toggleLanguage() {
 function renderUpdates(lang) {
     const container = document.getElementById('update-container');
     if (!container || !Array.isArray(updateData) || updateData.length === 0) return;
+    if (container.dataset.renderedLang === lang) return;
+    container.dataset.renderedLang = lang;
 
     container.innerHTML = '';
     let prosaoAktivni = false;
@@ -234,20 +236,13 @@ async function detectInitialLanguage() {
     const saved = localStorage.getItem("lang");
     if (saved) return saved;
 
-    try {
-        const response = await fetch('https://ipapi.co/json/');
-        if (response.ok) {
-            const data = await response.json();
-            const balkanCountries = ['RS', 'BA', 'HR', 'ME', 'MK'];
-            if (balkanCountries.includes(data.country_code)) {
-                return 'sr';
-            }
-        }
-    } catch {
-        // Fallback na jezik browsera
-    }
+    const langs = navigator.languages || [navigator.language || ''];
+    const isBalkan = langs.some(l => {
+        const lower = (l || '').toLowerCase();
+        return lower.startsWith('sr') || lower.startsWith('bs') || lower.startsWith('hr') || lower.startsWith('me') || lower.startsWith('mk') || lower.includes('rs');
+    });
 
-    return navigator.language?.startsWith("sr") ? "sr" : "en";
+    return isBalkan ? 'sr' : 'en';
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
