@@ -82,12 +82,13 @@ Crafted by **Milan Petkovski** &bull; [Milan Web Portal](https://milanwebportal.
 <p align="center">Made with care by <b>Milan Web Portal</b></p>
 
 
-## Changes in 1.6.0
+## Changes in 1.6.0 (05.11.2026)
 
-- Content script no longer loads translations on every page and frame; they load only when the color picker or font finder starts (fewer service worker wakeups).
-- Heavy tools (color picker, ruler, font finder) are injected on-demand, keeping the initial content script ultra-light.
-- Background: validated locale codes for get_locale_messages, guarded shortcut actions that need a tab, and added load_content_tools handler.
-- Tracker list: domain names are now escaped in the data-domain attribute (injection fix).
-- Notes and Counter: debounced storage persistence with pagehide and visibilitychange flushes to avoid data loss.
-- Popup accessibility: icon-only buttons receive aria-label, global :focus-visible ring, prefers-reduced-motion support, and subtle card hover states.
-- Logo link uses rel="noopener noreferrer".
+- Character Counter: added comprehensive SEO hint validation, estimated reading time, and clean floating saved status.
+- Webtime Tracker: added daily productivity limits with modern modal, quick presets, and localhost/dev domain filter toggle.
+- Tech Scanner: expanded modern tech stack detection (Astro, Svelte 5, Supabase, Bun, Three.js, GSAP, Tailwind).
+- Cookie Blocker: added smart host protection for web messaging apps (WhatsApp Web, Telegram, Discord, Slack) to prevent interface breakage.
+- Content Script Optimization: lightweight initial script, on-demand injection of heavy tools (Color Picker, Ruler, Font Finder) via IIFE with duplicate protection.
+- Radio Player: borderless plus button, centered input controls, and auto-reconnect stream stability.
+- UI & UX: perfectly centered headers, smooth gear rotation on settings hover without layout shift, and floating save indicators on both Notes and Counter.
+- Accessibility & Security: global :focus-visible rings, prefers-reduced-motion support, strict MV3 CSP compliance, and 100% automated test coverage.

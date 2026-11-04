@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "check:js": "node --check js/background.js && node --check js/content.js && node --check js/content-tools.js && node --check js/offscreen.js && node --check js/popup.js && node --check js/popup-core.js && node --check js/popup-radio.js && node --check js/popup-notes.js && node --check js/popup-counter.js && node --check js/popup-tracker.js && node --check js/popup-stopwatch.js && node --check js/popup-settings.js && node --check js/popup-tech.js && node --check js/yt.js",
+    "check:js": "node --check js/background.js && node --check js/content.js && node --check js/content-tools.js && node --check js/marker_engine.js && node --check js/offscreen.js && node --check js/popup.js && node --check js/popup-core.js && node --check js/popup-radio.js && node --check js/popup-notes.js && node --check js/popup-counter.js && node --check js/popup-tracker.js && node --check js/popup-stopwatch.js && node --check js/popup-settings.js && node --check js/popup-tech.js && node --check js/yt.js",
     "lint": "eslint js",
-    "lint:fix": "eslint js --fix"
+    "lint:fix": "eslint js --fix",
+    "build:zip": "node scripts/package-extension.mjs"
   },
   "devDependencies": {
     "eslint": "^10.14.0"

@@ -2,9 +2,11 @@ if (typeof window.markerInitAttempts !== 'number') window.markerInitAttempts = 0
 if (typeof window.MAX_MARKER_INIT_ATTEMPTS !== 'number') window.MAX_MARKER_INIT_ATTEMPTS = 100;
 
 if (!window.aioMarkerMessageListenerAttached) {
-    chrome.runtime.onMessage.addListener((request) => {
+    chrome.runtime.onMessage.addListener((request, _sender, sendResponse) => {
         if (request.action === "initMarker") {
             pokreniMarker();
+            if (typeof sendResponse === "function") sendResponse({ ok: true });
+            return true;
         }
         if (request.action === "initMarkerColor") {
             window.markerCurrentColor = request.color;
@@ -15,6 +17,8 @@ if (!window.aioMarkerMessageListenerAttached) {
                 wrapper.style.backgroundColor = request.color;
                 wrapper.style.borderColor = request.color;
             }
+            if (typeof sendResponse === "function") sendResponse({ ok: true });
+            return true;
         }
     });
     window.aioMarkerMessageListenerAttached = true;

@@ -49,7 +49,8 @@ export function initRadio() {
 
     elements.radioVol?.addEventListener("input", () => {
         const val = parseInt(elements.radioVol.value);
-        chrome.runtime.sendMessage({ action: "setRadioVolume", value: val });
+        const p = chrome.runtime.sendMessage({ action: "setRadioVolume", value: val });
+        if (p && typeof p.catch === "function") p.catch(() => { });
         persistVolume(val);
     });
 

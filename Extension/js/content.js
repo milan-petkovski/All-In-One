@@ -1,3 +1,11 @@
+(() => {
+  if (typeof window !== "undefined" && window.__aioContentScriptLoaded) {
+    return;
+  }
+  if (typeof window !== "undefined") {
+    window.__aioContentScriptLoaded = true;
+  }
+
 const isSystemPage = (urlStr) => {
   const url = urlStr || (typeof window !== "undefined" && window.location ? window.location.href : "");
   return (
@@ -67,20 +75,38 @@ function runMainContentScript() {
     }
   }
   // Slušač za poruke iz background/popup-a
-  chrome.runtime.onMessage.addListener((request) => {
+  chrome.runtime.onMessage.addListener((request, _sender, sendResponse) => {
     if (request.action === "toggleColorPicker") {
-      chrome.runtime.sendMessage({ action: "captureTab" }, (response) => {
-        if (chrome.runtime.lastError || !response || !response.ok) return;
-        withTools((tools) => tools.initColorPicker(response.dataUrl));
-      });
+      if (typeof sendResponse === "function") sendResponse({ ok: true });
+      const runCapture = (retries = 3) => {
+        chrome.runtime.sendMessage({ action: "captureTab" }, (response) => {
+          if (chrome.runtime.lastError || !response || !response.ok) {
+            if (retries > 0) {
+              setTimeout(() => runCapture(retries - 1), 80);
+            }
+            return;
+          }
+          withTools((tools) => tools.initColorPicker(response.dataUrl));
+        });
+      };
+      runCapture();
+      return true;
     } else if (request.action === "toggleRuler") {
       withTools((tools) => tools.initRuler());
+      if (typeof sendResponse === "function") sendResponse({ ok: true });
+      return true;
     } else if (request.action === "toggleFontFinder") {
       withTools((tools) => tools.initFontFinder());
+      if (typeof sendResponse === "function") sendResponse({ ok: true });
+      return true;
     } else if (request.action === "setDarkMode") {
       applyDark(request.enabled === true, true);
+      if (typeof sendResponse === "function") sendResponse({ ok: true });
+      return true;
     } else if (request.action === "setMasterVolume") {
       applyMasterVolume(request.value);
+      if (typeof sendResponse === "function") sendResponse({ ok: true });
+      return true;
     }
   });
 
@@ -91,14 +117,20 @@ function runMainContentScript() {
   let cookieScanTimer = null;
   let cookieWhitelist = [];
 
+  const isProtectedAppHost = (hostname) => {
+    if (!hostname) return false;
+    return /(^|\.)(whatsapp\.com|telegram\.org|messenger\.com|discord\.com|slack\.com)$/i.test(hostname);
+  };
+
   window.aioMediaNodes = window.aioMediaNodes || new WeakMap();
 
   const isCriticalAppContainer = (el) => {
     if (!el || el.nodeType !== 1) return false;
     if (el === document.documentElement || el === document.body) return true;
+    if (isProtectedAppHost(host)) return true;
     const id = String(el.id || "").toLowerCase();
     if (id === "root" || id === "__next" || id === "app" || id === "__nuxt") return true;
-    if (el.matches?.('main, #root, #__next, #app, #__nuxt, [data-reactroot], [data-react-helmet]')) return true;
+    if (el.matches?.('main, #root, #__next, #app, #__nuxt, [data-reactroot], [data-react-helmet], [data-testid], [data-id], [role="application"], [role="main"], [role="region"], [role="log"]')) return true;
     return false;
   };
 
@@ -682,6 +714,7 @@ function runMainContentScript() {
 
   const enableCookieBlock = () => {
     if (window.top !== window) return;
+    if (isProtectedAppHost(host)) return;
     if (cookieObserver) return;
 
     killCookies();
@@ -713,6 +746,7 @@ function runMainContentScript() {
 
   const isWhitelisted = (domain) => {
     if (!domain) return false;
+    if (isProtectedAppHost(domain)) return true;
     return cookieWhitelist.includes(domain);
   };
 
@@ -727,11 +761,15 @@ function runMainContentScript() {
 
   let systemIsIdle = false;
 
-  chrome.runtime.onMessage.addListener((request) => {
+  chrome.runtime.onMessage.addListener((request, _sender, sendResponse) => {
     if (request?.action === "system_idle") {
       systemIsIdle = true;
+      if (typeof sendResponse === "function") sendResponse({ ok: true });
+      return true;
     } else if (request?.action === "system_active") {
       systemIsIdle = false;
+      if (typeof sendResponse === "function") sendResponse({ ok: true });
+      return true;
     }
   });
 
@@ -957,5 +995,8 @@ if (typeof globalThis !== "undefined") {
     runMainContentScript
   };
 }
+
+})();
+
 
 

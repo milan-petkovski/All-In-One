@@ -665,16 +665,19 @@ export function initStopwatch() {
         if (changes.history) swRenderHistory();
     });
 
-    chrome.runtime.onMessage.addListener((msg) => {
+    chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
         if (msg.action === "update_ui") {
             swRefreshUI();
             swRenderHistory();
+            if (typeof sendResponse === "function") sendResponse({ ok: true });
+            return true;
         } else if (msg.action === "sync_kick_response") {
             const syncBtn = document.getElementById("syncKickBtn");
             if (syncBtn) {
                 syncBtn.disabled = false;
                 syncBtn.innerText = "Sinhronizuj";
             }
+            if (typeof sendResponse === "function") sendResponse({ ok: true });
             if (msg.isLive) {
                 // Save old session to history (with channel name), then clear laps for new stream
                 chrome.storage.local.get(["isRunning", "startTime", "currentLaps", "history", "kickChannel"], (res) => {

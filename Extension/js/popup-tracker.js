@@ -341,24 +341,77 @@ export function initTracker() {
         debouncedRenderStats();
     });
 
+    let activeLimitDomain = null;
+    const trackerLimitModal = document.getElementById("trackerLimitModal");
+    const trackerLimitDomainTitle = document.getElementById("trackerLimitDomainTitle");
+    const trackerLimitInput = document.getElementById("trackerLimitInput");
+    const trackerLimitCancelBtn = document.getElementById("trackerLimitCancelBtn");
+    const trackerLimitSaveBtn = document.getElementById("trackerLimitSaveBtn");
+    const presetChips = trackerLimitModal?.querySelectorAll(".limit-preset-chip");
+
+    presetChips?.forEach(chip => {
+        chip.addEventListener("click", () => {
+            const min = chip.getAttribute("data-min");
+            if (trackerLimitInput) {
+                trackerLimitInput.value = min;
+                presetChips.forEach(c => c.classList.remove("active"));
+                chip.classList.add("active");
+            }
+        });
+    });
+
+    const closeLimitModal = () => {
+        activeLimitDomain = null;
+        if (trackerLimitModal) trackerLimitModal.classList.add("hidden");
+    };
+
+    trackerLimitCancelBtn?.addEventListener("click", () => {
+        closeLimitModal();
+    });
+
+    trackerLimitSaveBtn?.addEventListener("click", () => {
+        if (!activeLimitDomain) {
+            closeLimitModal();
+            return;
+        }
+        const val = trackerLimitInput?.value?.trim();
+        const num = parseInt(val, 10);
+        if (Number.isFinite(num) && num > 0) {
+            trackerLimits[activeLimitDomain] = num;
+        } else {
+            delete trackerLimits[activeLimitDomain];
+        }
+        chrome.storage.local.set({ tracker_limits: trackerLimits }, () => {
+            debouncedRenderStats();
+            closeLimitModal();
+            showToast(getI18nMsg("toastSettingsSaved", "Podešavanja su sačuvana!"), "success");
+        });
+    });
+
+    trackerLimitModal?.addEventListener("click", (e) => {
+        if (e.target === trackerLimitModal) {
+            closeLimitModal();
+        }
+    });
+
     trackerList?.addEventListener("click", (e) => {
         const btn = e.target.closest("[data-limit-domain]");
         if (!btn) return;
         const domain = btn.getAttribute("data-limit-domain");
         if (!domain) return;
+        activeLimitDomain = domain;
         const currentLimit = trackerLimits[domain] || "";
-        const promptMsg = `${domain} - ${getI18nMsg("trackerSetLimit", "Dnevni limit (min)")} (0 = ${getI18nMsg("deleteBtn", "OBRISI")}):`;
-        const input = typeof window.prompt === "function" ? window.prompt(promptMsg, currentLimit ? String(currentLimit) : "30") : null;
-        if (input === null) return;
-        const num = parseInt(input.trim(), 10);
-        if (Number.isFinite(num) && num > 0) {
-            trackerLimits[domain] = num;
-        } else {
-            delete trackerLimits[domain];
+        if (trackerLimitDomainTitle) trackerLimitDomainTitle.textContent = domain;
+        if (trackerLimitInput) {
+            trackerLimitInput.value = currentLimit ? String(currentLimit) : "30";
         }
-        chrome.storage.local.set({ tracker_limits: trackerLimits }, () => {
-            debouncedRenderStats();
+        presetChips?.forEach(c => {
+            c.classList.toggle("active", c.getAttribute("data-min") === String(trackerLimitInput?.value));
         });
+        if (trackerLimitModal) {
+            trackerLimitModal.classList.remove("hidden");
+            setTimeout(() => trackerLimitInput?.focus(), 50);
+        }
     });
 
     // Otvaranje trackera

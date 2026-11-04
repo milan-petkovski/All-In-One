@@ -53,7 +53,14 @@
   // --- TOOL ENGINES ---
   function initColorPicker(dataUrl) {
     ensureTranslations();
-    if (window.aioEyeDropperActive) return;
+    const existingOverlay = document.getElementById('aioColorOverlay');
+    const existingWidget = document.getElementById('aioColorWidget');
+    if (existingOverlay) existingOverlay.remove();
+    if (existingWidget) existingWidget.remove();
+    if (!dataUrl) {
+      window.aioEyeDropperActive = false;
+      return;
+    }
     window.aioEyeDropperActive = true;
 
     const dpr = window.devicePixelRatio || 1;
@@ -107,6 +114,7 @@
     document.body.style.overflow = 'hidden';
 
     const overlay = document.createElement('div');
+    overlay.id = 'aioColorOverlay';
     overlay.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:2147483640;cursor:none;background:transparent;';
     document.body.appendChild(overlay);
 
@@ -116,6 +124,7 @@
 
     // Unified widget wrapper centered on the cursor
     const widget = document.createElement('div');
+    widget.id = 'aioColorWidget';
     widget.setAttribute('data-aio-dark-exempt', '1');
     widget.style.cssText = `
       position: fixed;

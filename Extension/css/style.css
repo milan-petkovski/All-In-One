@@ -219,16 +219,16 @@ h1 {
 .special-card {
   margin-top: 12px;
   background: linear-gradient(145deg, #16161e 0%, #1a1a24 100%);
-  border: 1px solid rgba(0, 255, 136, 0.25);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 255, 136, 0.08);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
 .clickable:hover {
   background: var(--bg-hover);
   cursor: pointer;
   transform: none !important;
-  border-color: rgba(0, 255, 136, 0.28);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35), 0 0 12px rgba(0, 255, 136, 0.12);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 .clickable:active {
@@ -269,8 +269,8 @@ button.secondary {
 
 button.secondary:hover {
   background: var(--bg-hover) !important;
-  border-color: rgba(0, 255, 136, 0.4) !important;
-  box-shadow: 0 0 8px rgba(0, 255, 136, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
 }
 
 #resetVolBtn {
@@ -494,10 +494,11 @@ input:checked+.slider:before {
 .settings-trigger {
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(calc(-50% + 2px));
-  width: 31px;
-  height: 31px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 28px;
+  height: 28px;
   background: none !important;
   border: none;
   box-shadow: none !important;
@@ -508,33 +509,40 @@ input:checked+.slider:before {
   align-items: center;
   justify-content: center;
   color: var(--text-dim);
-  transition: color 0.3s, transform 0.3s ease;
+  transition: color 0.3s ease;
+  transform: none !important;
 }
 
 .settings-trigger svg {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   stroke: currentColor;
   fill: none;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
 }
 
 .settings-trigger:hover {
   color: var(--accent);
-  transform: translateY(calc(-50% + 2px)) rotate(180deg);
+  transform: none !important;
 }
 
-.settings-trigger:active {
-  transform: translateY(calc(-50% + 2px)) rotate(180deg) scale(0.9);
+.settings-trigger:hover svg {
+  transform: rotate(180deg);
+}
+
+.settings-trigger:active svg {
+  transform: rotate(180deg) scale(0.9);
 }
 
 .logo-link {
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(calc(-50% + 2px));
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
   width: 28px;
   height: 28px;
   display: flex;
@@ -542,6 +550,8 @@ input:checked+.slider:before {
   justify-content: center;
   text-decoration: none;
   z-index: 10;
+  transform: none !important;
+}
   transition: opacity 0.2s ease;
 }
 
@@ -701,36 +711,38 @@ input:checked+.slider:before {
 
 .note-footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 10px;
-  padding: 0 4px;
+  padding: 0;
   width: 100%;
   box-sizing: border-box;
 }
 
 .note-actions {
   display: flex;
-  gap: 4px;
+  gap: 3px;
   background: var(--bg-card);
-  padding: 3px;
-  border-radius: 10px;
+  padding: 3px 5px;
+  border-radius: 8px;
   border: 1px solid var(--border-color);
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .note-btn {
   background: transparent;
   color: var(--text-dim);
   border: none;
-  padding: 6px 8px;
+  padding: 4px 6px;
   border-radius: 6px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   white-space: nowrap;
 }
 
@@ -741,8 +753,8 @@ input:checked+.slider:before {
 }
 
 .note-btn svg {
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
   stroke: currentColor;
   fill: none;
   stroke-width: 2.5;
@@ -752,17 +764,20 @@ input:checked+.slider:before {
 
 .save-status {
   text-align: right;
-  height: 15px;
-  margin-top: 8px;
-  min-width: 65px;
+  height: auto;
+  margin: 0;
+  padding-left: 6px;
+  flex-shrink: 0;
 }
 
-#saveIndicator {
+#saveIndicator,
+#counterSaveIndicator {
   color: var(--accent);
   font-size: 11px;
   font-weight: 800;
   opacity: 0;
   transition: opacity 0.3s ease;
+  white-space: nowrap;
 }
 
 /* =========================================
@@ -913,27 +928,47 @@ input:checked+.slider:before {
 }
 
 .tracker-limit-btn {
-  background: transparent;
-  border: none;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
   cursor: pointer;
-  padding: 2px 4px;
-  color: var(--text-dim);
+  padding: 3px 5px !important;
+  color: var(--text-dim) !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
-  transition: color 0.2s, background 0.2s;
+  border-radius: 6px;
+  transition: color 0.2s ease;
+  transform: none !important;
 }
 
 .tracker-limit-btn:hover {
-  color: var(--accent);
-  background: rgba(0, 255, 136, 0.1);
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: var(--accent) !important;
+  transform: none !important;
 }
 
+.tracker-limit-btn svg {
+  stroke: currentColor;
+  transition: stroke 0.2s ease;
+}
+
+#trackerFilterDevBtn.active,
 .icon-btn.active {
-  background: rgba(0, 255, 136, 0.15);
-  border-color: var(--accent);
-  color: var(--accent);
+  background: rgba(0, 255, 136, 0.15) !important;
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.3) !important;
+}
+
+#trackerFilterDevBtn.active svg,
+#trackerFilterDevBtn.active svg polyline,
+.icon-btn.active svg {
+  color: var(--accent) !important;
+  stroke: var(--accent) !important;
 }
 
 #trackerDate,
@@ -1030,16 +1065,80 @@ input:checked+.slider:before {
 /* =========================================
    10. BROJAČ (COUNTER) I STATISTIKA
    ========================================= */
-.counter-container {
-  flex: 1;
+#counterView {
+  flex-direction: column;
+  height: 535px;
+  box-sizing: border-box;
+}
+
+#counterView.view-visible {
+  display: flex !important;
+}
+
+#counterView.hidden,
+#counterView.view-hidden {
+  display: none !important;
+}
+
+#counterView .counter-container {
+  flex: 1 1 0% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 0 !important;
+  margin-top: 10px !important;
+  margin-bottom: 8px !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+#counterView #counterArea {
+  flex: 1 1 100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.counter-save-status {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  user-select: none;
+  background: rgba(22, 22, 30, 0.9);
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 255, 136, 0.25);
+  z-index: 5;
+}
+
+.counter-seo-hint:empty {
+  display: none !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.counter-seo-hint {
+  margin: 0 0 6px 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .counter-stats {
-  margin-top: 12px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
+  flex-shrink: 0 !important;
+  padding-bottom: 2px;
 }
 
 .counter-seo-hint {
@@ -2022,6 +2121,91 @@ input:checked+.slider:before {
   flex-direction: column;
 }
 
+#trackerLimitModal .modal-content {
+  background: linear-gradient(165deg, #1b1b26 0%, #111118 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 255, 136, 0.04) !important;
+  border-radius: 16px;
+  padding: 22px;
+  width: 290px;
+}
+
+.limit-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.limit-domain-text {
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.tracker-limit-input {
+  width: 100%;
+  height: 40px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.tracker-limit-input::-webkit-outer-spin-button,
+.tracker-limit-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tracker-limit-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.25);
+}
+
+.limit-presets {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.limit-preset-chip {
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  color: var(--text-dim);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  transform: none !important;
+}
+
+.limit-preset-chip:hover {
+  background: var(--bg-hover);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.limit-preset-chip.active {
+  background: rgba(0, 255, 136, 0.15);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 .modal-setting-row {
   margin: 0;
   padding: 12px;
@@ -2172,11 +2356,16 @@ input:checked+.slider:before {
 .radio-input-clear {
   position: absolute;
   right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  padding: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 24px;
+  height: 24px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0;
   cursor: pointer;
   color: var(--text-dim);
   display: flex;
@@ -2184,13 +2373,13 @@ input:checked+.slider:before {
   justify-content: center;
   border-radius: 4px;
   transition: color 0.2s ease;
+  transform: none !important;
 }
 
 .radio-input-clear:hover {
   color: #fff;
   background: transparent !important;
   box-shadow: none !important;
-  top: 7px !important;
   transform: none !important;
 }
 
@@ -2876,7 +3065,7 @@ button:focus-visible,
 }
 
 .card:hover {
-  border-color: rgba(0, 255, 136, 0.25);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 @media (prefers-reduced-motion: reduce) {

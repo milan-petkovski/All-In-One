@@ -4,7 +4,7 @@ export function trackEvent(eventName, eventData = {}) {
     try {
         const pageLocation = tab?.url || location.href;
         const pageTitle = tab?.title || document.title;
-        chrome.runtime.sendMessage({
+        const promise = chrome.runtime.sendMessage({
             action: "aio_track_event",
             eventName,
             eventData: {
@@ -13,6 +13,9 @@ export function trackEvent(eventName, eventData = {}) {
                 page_title: pageTitle
             }
         });
+        if (promise && typeof promise.catch === "function") {
+            promise.catch(() => { });
+        }
     } catch {
         // Ignore errors
     }
@@ -283,9 +286,28 @@ export async function initCore() {
     elements.colorBtn?.addEventListener("click", () => {
         trackEvent("color_picker_open");
         if (tab?.id) {
-            chrome.tabs.sendMessage(tab.id, { action: "toggleColorPicker" });
+            chrome.tabs.sendMessage(tab.id, { action: "toggleColorPicker" }, (response) => {
+                const err = chrome.runtime.lastError;
+                if (err || !response?.ok) {
+                    chrome.scripting.executeScript({ target: { tabId: tab.id }, files: ["js/content.js"] }, () => {
+                        const scriptErr = chrome.runtime.lastError;
+                        if (scriptErr) {
+                            window.close();
+                            return;
+                        }
+                        chrome.tabs.sendMessage(tab.id, { action: "toggleColorPicker" }, () => {
+                            const secondErr = chrome.runtime.lastError;
+                            if (secondErr) { /* ignore */ }
+                            window.close();
+                        });
+                    });
+                } else {
+                    window.close();
+                }
+            });
+        } else {
+            window.close();
         }
-        window.close();
     });
 
     elements.nightToggle?.addEventListener("change", (e) => {
@@ -323,7 +345,8 @@ export async function initCore() {
     elements.rulerBtn?.addEventListener("click", () => {
         trackEvent("page_ruler_open");
         if (tab?.id) {
-            chrome.tabs.sendMessage(tab.id, { action: "toggleRuler" });
+            const p = chrome.tabs.sendMessage(tab.id, { action: "toggleRuler" });
+            if (p && typeof p.catch === "function") p.catch(() => { });
         }
         window.close();
     });
@@ -332,17 +355,25 @@ export async function initCore() {
         trackEvent("page_marker_open");
         if (tab?.id) {
             chrome.scripting.executeScript({ target: { tabId: tab.id }, files: ["js/marker_engine.js"] }, () => {
-                if (chrome.runtime.lastError) return;
-                chrome.tabs.sendMessage(tab.id, { action: "initMarker" });
+                const scriptErr = chrome.runtime.lastError;
+                if (scriptErr) {
+                    window.close();
+                    return;
+                }
+                const p = chrome.tabs.sendMessage(tab.id, { action: "initMarker" });
+                if (p && typeof p.catch === "function") p.catch(() => { });
                 window.close();
             });
+        } else {
+            window.close();
         }
     });
 
     elements.fontBtn?.addEventListener("click", () => {
         trackEvent("font_finder_click");
         if (tab?.id) {
-            chrome.tabs.sendMessage(tab.id, { action: "toggleFontFinder" });
+            const p = chrome.tabs.sendMessage(tab.id, { action: "toggleFontFinder" });
+            if (p && typeof p.catch === "function") p.catch(() => { });
         }
         window.close();
     });

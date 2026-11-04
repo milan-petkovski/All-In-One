@@ -75,10 +75,23 @@ const updateCounts = (text = "") => {
 
 let counterSaveTimeout = null;
 let pendingCounterText = null;
+let counterSaveIndicator = null;
+let counterIndicatorTimeout = null;
+
+const showCounterSaveIndicator = () => {
+    if (!counterSaveIndicator) return;
+    if (counterIndicatorTimeout) clearTimeout(counterIndicatorTimeout);
+    counterSaveIndicator.style.opacity = "1";
+    counterIndicatorTimeout = setTimeout(() => {
+        if (counterSaveIndicator) counterSaveIndicator.style.opacity = "0";
+    }, 1200);
+};
 
 const flushCounterSave = () => {
     if (pendingCounterText !== null) {
-        chrome.storage.local.set({ aio_counter_text: pendingCounterText });
+        chrome.storage.local.set({ aio_counter_text: pendingCounterText }, () => {
+            showCounterSaveIndicator();
+        });
         pendingCounterText = null;
     }
     if (counterSaveTimeout) {
@@ -124,6 +137,7 @@ export function initCounter() {
     readingTime = document.getElementById("readingTime");
     seoHint = document.getElementById("seoHint");
     clearCounterModal = document.getElementById("clearCounterModal");
+    counterSaveIndicator = document.getElementById("counterSaveIndicator");
 
     // Initialization and Legacy LocalStorage Migration
     if (counterArea) {
