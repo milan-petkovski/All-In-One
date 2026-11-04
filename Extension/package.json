@@ -1,15 +1,18 @@
 {
   "name": "all-in-one-extension",
-  "version": "1.5.5",
+  "version": "1.6.0",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "check:js": "node --check js/background.js && node --check js/content.js && node --check js/offscreen.js && node --check js/popup.js && node --check js/popup-core.js && node --check js/popup-radio.js && node --check js/popup-notes.js && node --check js/popup-counter.js && node --check js/popup-tracker.js && node --check js/popup-stopwatch.js && node --check js/popup-settings.js && node --check js/popup-tech.js && node --check js/yt.js",
+    "check:js": "node --check js/background.js && node --check js/content.js && node --check js/content-tools.js && node --check js/offscreen.js && node --check js/popup.js && node --check js/popup-core.js && node --check js/popup-radio.js && node --check js/popup-notes.js && node --check js/popup-counter.js && node --check js/popup-tracker.js && node --check js/popup-stopwatch.js && node --check js/popup-settings.js && node --check js/popup-tech.js && node --check js/yt.js",
     "lint": "eslint js",
     "lint:fix": "eslint js --fix"
   },
   "devDependencies": {
-    "eslint": "^10.13.0"
+    "eslint": "^10.14.0"
+  },
+  "overrides": {
+    "minimatch": "^11.0.4"
   }
 }

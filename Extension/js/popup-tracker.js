@@ -10,8 +10,24 @@ let trackerRefreshQueue = Promise.resolve();
 let renderStatsDebounceId = null;
 let trackerDataCache = null;
 let trackerDataPromise = null;
+let hideDevDomains = false;
+let trackerLimits = {};
 const faviconCache = new Map();
 const faviconInFlight = new Map();
+
+function isDevDomain(domain) {
+    if (!domain) return false;
+    const d = domain.toLowerCase();
+    return d === "localhost" ||
+        d === "127.0.0.1" ||
+        d === "::1" ||
+        d === "0.0.0.0" ||
+        d.endsWith(".local") ||
+        d.endsWith(".test") ||
+        d.endsWith(".internal") ||
+        d.endsWith(".localhost") ||
+        d.includes(":");
+}
 
 function invalidateTrackerCache() {
     trackerDataCache = null;
@@ -261,22 +277,45 @@ function renderStats() {
         const sorted = Object.entries(listTotals).sort((a, b) => b[1] - a[1]);
         const query = (document.getElementById("trackerSearch")?.value || "").toLowerCase().trim();
         const filtered = sorted.filter(([domain]) => {
+            if (hideDevDomains && isDevDomain(domain)) return false;
             return domain.toLowerCase().includes(query);
         });
-        trackerList.innerHTML = filtered.length ? "" : `<div class='empty-msg'>${getI18nMsg("trackerNoData", "Nema podataka za ovaj period")}</div>`;
+        trackerList.innerHTML = filtered.length ? "" : `<div class='empty-msg'>${escapeHtml(getI18nMsg("trackerNoData", "Nema podataka za ovaj period"))}</div>`;
         filtered.forEach(([domain, sec]) => {
             const percent = ((sec / listTotalSec) * 100).toFixed(1);
+            const limitMin = Number(trackerLimits[domain]) || 0;
+            const limitSec = limitMin * 60;
+            const isExceeded = limitSec > 0 && sec >= limitSec;
+
+            let limitBadgeHtml = "";
+            if (limitMin > 0) {
+                const badgeClass = isExceeded ? "tracker-limit-badge exceeded" : "tracker-limit-badge";
+                const badgeTitle = isExceeded
+                    ? getI18nMsg("trackerLimitExceeded", "Limit prekoračen")
+                    : `${getI18nMsg("trackerSetLimit", "Dnevni limit (min)")}: ${limitMin}m`;
+                limitBadgeHtml = `<span class="${badgeClass}" title="${escapeHtml(badgeTitle)}">${limitMin}m</span>`;
+            }
+
             const item = document.createElement("div");
-            item.className = "tracker-item";
+            item.className = "tracker-item" + (isExceeded ? " limit-exceeded" : "");
             item.innerHTML = `
                 <div style="display:flex; justify-content:space-between; position:relative; z-index:2; align-items:center;">
                     <span style="font-weight:bold; max-width:60%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; display:flex; align-items:center; gap:6px;">
-                        <img data-domain="${domain}" width="16" height="16" style="border-radius:2px; display:inline-block; vertical-align:middle;" alt="">
+                        <img data-domain="${escapeHtml(domain)}" width="16" height="16" style="border-radius:2px; display:inline-block; vertical-align:middle;" alt="">
                         ${escapeHtml(domain)}
+                        ${limitBadgeHtml}
                     </span>
-                    <span style="color:var(--accent); font-family:monospace;">${formatTime(sec)}</span>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span style="color:var(--accent); font-family:monospace;">${formatTime(sec)}</span>
+                        <button class="tracker-limit-btn" data-limit-domain="${escapeHtml(domain)}" title="${escapeHtml(getI18nMsg("trackerSetLimit", "Dnevni limit (min)"))}">
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                <div class="tracker-bar" style="width: ${percent}%"></div>
+                <div class="tracker-bar${isExceeded ? " limit-exceeded" : ""}" style="width: ${percent}%"></div>
             `;
             trackerList.appendChild(item);
 
@@ -287,6 +326,41 @@ function renderStats() {
 }
 
 export function initTracker() {
+    chrome.storage.local.get(["tracker_hide_dev", "tracker_limits"], (res) => {
+        hideDevDomains = Boolean(res.tracker_hide_dev);
+        trackerLimits = (res.tracker_limits && typeof res.tracker_limits === "object") ? res.tracker_limits : {};
+        const filterDevBtn = document.getElementById("trackerFilterDevBtn");
+        if (filterDevBtn) filterDevBtn.classList.toggle("active", hideDevDomains);
+    });
+
+    document.getElementById("trackerFilterDevBtn")?.addEventListener("click", () => {
+        hideDevDomains = !hideDevDomains;
+        const filterDevBtn = document.getElementById("trackerFilterDevBtn");
+        if (filterDevBtn) filterDevBtn.classList.toggle("active", hideDevDomains);
+        chrome.storage.local.set({ tracker_hide_dev: hideDevDomains });
+        debouncedRenderStats();
+    });
+
+    trackerList?.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-limit-domain]");
+        if (!btn) return;
+        const domain = btn.getAttribute("data-limit-domain");
+        if (!domain) return;
+        const currentLimit = trackerLimits[domain] || "";
+        const promptMsg = `${domain} - ${getI18nMsg("trackerSetLimit", "Dnevni limit (min)")} (0 = ${getI18nMsg("deleteBtn", "OBRISI")}):`;
+        const input = typeof window.prompt === "function" ? window.prompt(promptMsg, currentLimit ? String(currentLimit) : "30") : null;
+        if (input === null) return;
+        const num = parseInt(input.trim(), 10);
+        if (Number.isFinite(num) && num > 0) {
+            trackerLimits[domain] = num;
+        } else {
+            delete trackerLimits[domain];
+        }
+        chrome.storage.local.set({ tracker_limits: trackerLimits }, () => {
+            debouncedRenderStats();
+        });
+    });
+
     // Otvaranje trackera
     document.getElementById("trackerBtn")?.addEventListener("click", () => {
         trackEvent("tracker_open");

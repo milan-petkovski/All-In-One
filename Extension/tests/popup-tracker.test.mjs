@@ -45,6 +45,7 @@ env.addPopupElement("trackerDatePrikaz", "input");
 env.addPopupElement("importTrackerFile", "input");
 env.addPopupElement("trackerSearch", "input");
 env.addPopupElement("trackerRefreshBtn", "button");
+env.addPopupElement("trackerFilterDevBtn", "button");
 env.addPopupElement("exportTrackerBtn", "button");
 env.addPopupElement("importTrackerBtn", "button");
 env.addPopupElement("statTotal", "span");

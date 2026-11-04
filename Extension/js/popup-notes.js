@@ -444,6 +444,44 @@ export function initNotes() {
         appendToNotes(`<b>${str}</b>`, true);
     });
 
+    document.getElementById("aiNotesBtn")?.addEventListener("click", async () => {
+        trackEvent("notes_ai_click");
+        const rawText = noteArea ? (noteArea.innerText || "").trim() : "";
+        if (!rawText) {
+            showToast("Unesite tekst beleške pre pokretanja AI asistenta.", "error");
+            return;
+        }
+
+        const aiObj = (typeof window !== "undefined" && window.ai) || (typeof globalThis !== "undefined" && globalThis.ai);
+        if (!aiObj || !aiObj.languageModel) {
+            showToast("Ugrađeni Chrome AI (Gemini Nano) nije omogućen na ovom uređaju. Funkcija je 100% besplatna i radi lokalno.", "info");
+            return;
+        }
+
+        try {
+            showToast("Lokalni AI obrađuje tekst...", "info");
+            const capabilities = await aiObj.languageModel.capabilities?.();
+            if (capabilities && capabilities.available === "no") {
+                showToast("Lokalni model nije podržan na trenutnoj konfiguraciji računara.", "error");
+                return;
+            }
+
+            const session = await aiObj.languageModel.create({
+                systemPrompt: "Ti si sažet asistent za beleške. Sažmi uneti tekst na srpskom jeziku u 2 do 3 jasne tačke, direktno i bez uvoda."
+            });
+
+            const summary = await session.prompt(rawText);
+            session.destroy?.();
+
+            if (summary && summary.trim()) {
+                appendToNotes(`<br><b>Lokalni AI Sažetak:</b><br>${escapeHtml(summary.trim())}<br>`, true);
+                showToast("AI sažetak uspešno kreiran!", "success");
+            }
+        } catch {
+            showToast("Došlo je do greške pri lokalnoj AI obradi teksta.", "error");
+        }
+    });
+
     // EXPORT i IMPORT
     document.getElementById("exportNotesBtn")?.addEventListener("click", () => {
         trackEvent("notes_export");
@@ -514,4 +552,9 @@ export function initNotes() {
             }).catch(() => { });
         });
     }
+
+    window.addEventListener("pagehide", () => saveNotes(true));
+    document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "hidden") saveNotes(true);
+    });
 }

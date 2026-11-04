@@ -91,7 +91,12 @@ export async function initCore() {
         document.querySelectorAll('[data-i18n-title]').forEach(el => {
             const key = el.getAttribute('data-i18n-title');
             if (window.i18nDict[key]) {
-                el.setAttribute('title', window.i18nDict[key].message);
+                const message = window.i18nDict[key].message;
+                el.setAttribute('title', message);
+                // Icon-only controls need an accessible name for screen readers.
+                if (!el.textContent.trim() && !el.hasAttribute('aria-labelledby')) {
+                    el.setAttribute('aria-label', message);
+                }
             }
         });
     }

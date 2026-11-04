@@ -14,7 +14,7 @@ const root = path.resolve(process.cwd());
 const settingsEnv = createExtensionTestEnv({
   storage: {},
   tabUrl: 'https://example.com/',
-  manifest: { version: '1.5.5' }
+  manifest: { version: '1.6.0' }
 });
 
 // DOM elements that initSettings() hooks into
@@ -25,6 +25,7 @@ const settingsEnv = createExtensionTestEnv({
   ['mainView', 'div'],
   ['verNum', 'span'],
   ['donateBtn', 'button'],
+  ['exportAllSettingsBtn', 'button'],
   ['webBtn', 'button'],
   ['portalBtn', 'button'],
   ['rateBtn', 'button'],
@@ -45,7 +46,7 @@ const settingsMod = await import(new URL('../js/popup-settings.js', import.meta.
 test('initSettings sets verNum to manifest version', () => {
   settingsMod.initSettings();
   const verNum = settingsEnv.popupDocument.getElementById('verNum');
-  assert.equal(verNum.innerText, '1.5.5');
+  assert.equal(verNum.innerText, '1.6.0');
 });
 
 test('settingsBtn click triggers switchView to settingsView', async () => {

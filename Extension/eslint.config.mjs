@@ -40,6 +40,8 @@ export default [
         setInterval: "readonly",
         setTimeout: "readonly",
         clearTimeout: "readonly",
+        AbortController: "readonly",
+        AbortSignal: "readonly",
         window: "readonly"
       }
     },

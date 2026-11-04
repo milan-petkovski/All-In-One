@@ -105,33 +105,33 @@ function swFormat(ms) {
   return `${h}:${m}:${s}`;
 }
 
-test("swFormat — NaN returns 00:00:00", () => {
+test("swFormat: NaN returns 00:00:00", () => {
   assert.equal(swFormat(NaN), '00:00:00');
 });
 
-test("swFormat — Infinity returns 00:00:00", () => {
+test("swFormat: Infinity returns 00:00:00", () => {
   assert.equal(swFormat(Infinity), '00:00:00');
   assert.equal(swFormat(-Infinity), '00:00:00');
 });
 
-test("swFormat — negative ms treated as 0", () => {
+test("swFormat: negative ms treated as 0", () => {
   assert.equal(swFormat(-5000), '00:00:00');
 });
 
-test("swFormat — zero ms", () => {
+test("swFormat: zero ms", () => {
   assert.equal(swFormat(0), '00:00:00');
 });
 
-test("swFormat — exactly 1 hour", () => {
+test("swFormat: exactly 1 hour", () => {
   assert.equal(swFormat(3600000), '01:00:00');
 });
 
-test("swFormat — 2h 30m 15s", () => {
+test("swFormat: 2h 30m 15s", () => {
   const ms = (2 * 3600 + 30 * 60 + 15) * 1000;
   assert.equal(swFormat(ms), '02:30:15');
 });
 
-test("swFormat — pads single digits", () => {
+test("swFormat: pads single digits", () => {
   assert.equal(swFormat(1000), '00:00:01');
   assert.equal(swFormat(60000), '00:01:00');
   assert.equal(swFormat(3661000), '01:01:01');
@@ -186,7 +186,7 @@ test("kickChannel Kick sync/unsync UI state reflects channel presence", async ()
 
   // After flush, swUpdateKickUI would have been called
   // kickSyncedMode should be flex when channel is set
-  // (depends on swRefreshUI being called — we verify storage is consistent)
+  // (depends on swRefreshUI being called: we verify storage is consistent)
   assert.equal(typeof env.storageState.kickChannel, 'string');
   assert.equal(env.storageState.kickChannel, 'testchannel');
 });

@@ -102,7 +102,7 @@ test("runTechScanner shows unavailable message for system pages (no HTTP tab)", 
 
 
 test("getTechIconHtml returns known badge for React", async () => {
-  // Access via tech scanner — test through the exported runTechScanner
+  // Access via tech scanner: test through the exported runTechScanner
   // We verify the icon map logic by reading the source
   const { readFile } = await import('node:fs/promises');
   const { resolve } = await import('node:path');
@@ -134,7 +134,7 @@ test("runTechScanner handles executeScript with runtime.lastError gracefully", a
 
   // Should show an error/failure message, not crash
   const text = list.innerHTML || list.textContent || "";
-  // Any message is acceptable — just confirm it didn't leave loading spinner visible
+  // Any message is acceptable: just confirm it didn't leave loading spinner visible
   assert.equal(
     env.popupDocument.getElementById("techLoading").style.display,
     "none",

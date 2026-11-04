@@ -1,6 +1,6 @@
 let ytEnabled = false;
-let ytInitialized = false;
 let ytReqId = 0;
+let ytAbortController = null;
 let ytDebounceTimer = null;
 let ytLastVideoId = "";
 let ytLastDislikes = null;
@@ -185,12 +185,26 @@ async function fetchAndApplyDislikes() {
   const videoId = getVideoId();
   if (!videoId) return;
 
-  if (videoId === ytLastVideoId) return;
+  if (videoId === ytLastVideoId) {
+    // Same video (for example the feature was toggled off and on): re-apply the cached count.
+    if (Number.isFinite(ytLastDislikes)) {
+      applyDislikes(ytLastDislikes);
+      startRetryWindow();
+    }
+    return;
+  }
 
+  // New video: never show the previous video's count while the request is in flight or after it fails.
+  ytLastVideoId = "";
+  ytLastDislikes = null;
+  if (ytAbortController) ytAbortController.abort();
+  const controller = new AbortController();
+  ytAbortController = controller;
+  const timeoutId = setTimeout(() => controller.abort(), 8000);
   const reqId = ++ytReqId;
 
   try {
-    const res = await fetch(`https://returnyoutubedislikeapi.com/votes?videoId=${encodeURIComponent(videoId)}`);
+    const res = await fetch(`https://returnyoutubedislikeapi.com/votes?videoId=${encodeURIComponent(videoId)}`, { signal: controller.signal });
     if (!res.ok) return;
 
     const data = await res.json();
@@ -205,6 +219,9 @@ async function fetchAndApplyDislikes() {
     startRetryWindow();
   } catch {
     // Silent fail.
+  } finally {
+    clearTimeout(timeoutId);
+    if (ytAbortController === controller) ytAbortController = null;
   }
 }
 
@@ -221,9 +238,6 @@ function initYtRyd() {
     document.addEventListener("yt-navigate-finish", scheduleFetch);
     document.addEventListener("yt-page-data-updated", scheduleFetch);
     ytListenersAttached = true;
-  }
-  if (!ytInitialized) {
-    ytInitialized = true;
   }
   startYtWatchers();
 }
@@ -272,10 +286,13 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
 
   if (ytEnabled) {
     initYtRyd();
-    startYtWatchers();
     scheduleFetch();
   } else {
     stopRetry();
+    if (ytAbortController) {
+      ytAbortController.abort();
+      ytAbortController = null;
+    }
     stopYtWatchers();
     if (ytApplyDebounce) {
       clearTimeout(ytApplyDebounce);
@@ -290,11 +307,9 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
 
 chrome.storage.local.get(["ytToggle"], (data) => {
   ytEnabled = data.ytToggle === true;
-  initYtRyd();
+  // Nothing is attached (no observer, no listeners) unless the feature is enabled.
   if (ytEnabled) {
-    startYtWatchers();
+    initYtRyd();
     scheduleFetch();
-  } else {
-    stopYtWatchers();
   }
 });

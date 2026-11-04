@@ -7,19 +7,19 @@ This directory contains the Chrome/Chromium browser extension (Manifest V3) for 
 | File                 | Role                                                                                         |
 | -------------------- | -------------------------------------------------------------------------------------------- |
 | `popup-core.js`      | Central popup initializer: i18n, dark mode, volume, toast notifications, keyboard navigation |
-| `popup.js`           | Main entry point — imports all modules and initializes components                            |
-| `popup-settings.js`  | Settings panel — language selection, theme switcher, data export                             |
+| `popup.js`           | Main entry point: imports all modules and initializes components                            |
+| `popup-settings.js`  | Settings panel: language selection, theme switcher, data export                             |
 | `popup-notes.js`     | Notepad (rich-text markdown-ready editor)                                                    |
 | `popup-counter.js`   | Interactive click counter                                                                    |
-| `popup-radio.js`     | Radio IN — live audio streaming engine                                                       |
+| `popup-radio.js`     | Radio IN: live audio streaming engine                                                       |
 | `popup-stopwatch.js` | Precision stopwatch with session history and Kick.com integration                            |
 | `popup-tracker.js`   | Project and task progress tracker                                                            |
-| `popup-tech.js`      | Technology detector — DOM inspection + network stack analysis                                |
-| `background.js`      | Service Worker — message bus, GA analytics tracking, clear-site-data, alarms                 |
-| `content.js`         | Content script — dark mode injection, screen ruler, font finder, copy unlock                 |
+| `popup-tech.js`      | Technology detector: DOM inspection + network stack analysis                                |
+| `background.js`      | Service Worker: message bus, GA analytics tracking, clear-site-data, alarms                 |
+| `content.js`         | Content script: dark mode injection, screen ruler, font finder, copy unlock                 |
 | `marker_engine.js`   | Page marker / highlighter engine (injected on-demand)                                        |
 | `offscreen.js`       | Offscreen document dedicated to audio playback (radio)                                       |
-| `yt.js`              | YouTube content script — return YouTube dislike integration                                  |
+| `yt.js`              | YouTube content script: return YouTube dislike integration                                  |
 
 ## Running Tests
 
@@ -28,7 +28,7 @@ cd Extension
 npm test
 ```
 
-Tests run via the native Node.js test runner (`node:test`) — zero extra dependencies required.
+Tests run via the native Node.js test runner (`node:test`): zero extra dependencies required.
 
 ## Linting
 
@@ -49,8 +49,8 @@ npm run check:js
 
 ```
 tests/
-  mock-env.mjs              # createMockEnvironment — low-level DOM / Chrome API mock
-  helpers/mock-env.mjs      # createExtensionTestEnv — dual-window simulation (popup + active tab)
+  mock-env.mjs              # createMockEnvironment: low-level DOM / Chrome API mock
+  helpers/mock-env.mjs      # createExtensionTestEnv: dual-window simulation (popup + active tab)
   extension-smoke.test.mjs  # Manifest / package sync, locale integrity check
   runtime-behavior.test.mjs # Integration: core, radio, tech detector, stopwatch
   popup-core.test.mjs       # Unit: escapeHtml, getI18nMsg, switchView, showToast, initCore
@@ -73,10 +73,21 @@ The CI test `"manifest and package metadata stay aligned"` automatically verifie
 
 ---
 
-## ☕ Author & Support
+## Author & Support
 
 Crafted by **Milan Petkovski** &bull; [Milan Web Portal](https://milanwebportal.com)  
-💖 [Support my work via PayPal](https://paypal.me/milanwebportal)
+[Support my work via PayPal](https://paypal.me/milanwebportal)
 
 ---
-<p align="center">Made with ❤️ by <b>Milan Web Portal</b></p>
+<p align="center">Made with care by <b>Milan Web Portal</b></p>
+
+
+## Changes in 1.6.0
+
+- Content script no longer loads translations on every page and frame; they load only when the color picker or font finder starts (fewer service worker wakeups).
+- Heavy tools (color picker, ruler, font finder) are injected on-demand, keeping the initial content script ultra-light.
+- Background: validated locale codes for get_locale_messages, guarded shortcut actions that need a tab, and added load_content_tools handler.
+- Tracker list: domain names are now escaped in the data-domain attribute (injection fix).
+- Notes and Counter: debounced storage persistence with pagehide and visibilitychange flushes to avoid data loss.
+- Popup accessibility: icon-only buttons receive aria-label, global :focus-visible ring, prefers-reduced-motion support, and subtle card hover states.
+- Logo link uses rel="noopener noreferrer".

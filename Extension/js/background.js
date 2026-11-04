@@ -135,7 +135,27 @@ chrome.runtime.onSuspend?.addListener(() => {
 // --- OFFSCREEN ---
 let offscreenCreating = false;
 let offscreenCreatePromise = null;
+let offscreenIdleTimer = null;
 let bgI18nDict = null;
+
+function cancelOffscreenIdleTimer() {
+    if (offscreenIdleTimer) {
+        clearTimeout(offscreenIdleTimer);
+        offscreenIdleTimer = null;
+    }
+}
+
+function scheduleOffscreenClose(delayMs = 150000) {
+    cancelOffscreenIdleTimer();
+    offscreenIdleTimer = setTimeout(async () => {
+        try {
+            const data = await chrome.storage.local.get('playing');
+            if (!data.playing && chrome.offscreen && (await chrome.offscreen.hasDocument())) {
+                await chrome.offscreen.closeDocument();
+            }
+        } catch { }
+    }, delayMs);
+}
 let systemIdleState = 'active'; // 'active' | 'idle' | 'locked'
 
 /**
@@ -151,8 +171,18 @@ chrome.storage.onChanged.addListener((changes) => {
     }
 });
 
+/**
+ * Validates a locale folder name so only bundled _locales entries can be requested.
+ * @param {unknown} lang
+ * @returns {boolean}
+ */
+function isValidLocaleCode(lang) {
+    return typeof lang === "string" && /^[A-Za-z]{2,3}(_[A-Za-z0-9]{2,4})?$/.test(lang);
+}
+
 async function loadBgTranslations(lang) {
     try {
+        if (!isValidLocaleCode(lang)) return;
         const res = await fetch(chrome.runtime.getURL(`_locales/${lang}/messages.json`));
         bgI18nDict = await res.json();
     } catch {}
@@ -246,6 +276,7 @@ async function resolveNetworkInfo(hostname) {
 }
 
 async function setupOffscreen() {
+    cancelOffscreenIdleTimer();
     if (await chrome.offscreen.hasDocument()) return;
 
     if (offscreenCreating) return offscreenCreatePromise;
@@ -275,6 +306,7 @@ async function playSystemSound(type) {
     try {
         await setupOffscreen();
         safeSendRuntimeMessage({ action: "playAudio", soundType: type });
+        scheduleOffscreenClose();
     } catch (e) {
         logger.error("Audio error:", e);
     }
@@ -495,7 +527,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (action === "get_locale_messages") {
         (async () => {
             try {
-                const lang = typeof request.lang === "string" ? request.lang : "sr";
+                const lang = isValidLocaleCode(request.lang) ? request.lang : "sr";
                 const res = await fetch(chrome.runtime.getURL(`_locales/${lang}/messages.json`));
                 if (!res.ok) throw new Error("fetch_failed");
                 const json = await res.json();
@@ -507,8 +539,26 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         return true;
     }
 
+    if (action === "load_content_tools") {
+        const tabId = sender?.tab?.id;
+        if (!tabId) {
+            sendResponse({ ok: false, error: "no_tab" });
+            return false;
+        }
+        chrome.scripting.executeScript({
+            target: { tabId, frameIds: [sender.frameId || 0] },
+            files: ["js/content-tools.js"]
+        }).then(() => {
+            sendResponse({ ok: true });
+        }).catch((err) => {
+            sendResponse({ ok: false, error: err?.message || "inject_failed" });
+        });
+        return true;
+    }
+
     if (action === "shortcut_triggered") {
         const toolAction = request.toolAction;
+        if (!sender?.tab?.id && toolAction !== "dark_mode_toggle" && toolAction !== "enable_copy_toggle") return false;
         if (toolAction === "dark_mode_toggle") {
             chrome.storage.local.get(['darkMode'], (res) => {
                 chrome.storage.local.set({ darkMode: !res.darkMode });
@@ -619,6 +669,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
     if (action === "hardwarePause") {
         safeSendRuntimeMessage({ action: "pause" });
+        scheduleOffscreenClose();
         chrome.storage.local.set({ playing: false }).then(() => {
             sendResponse({ ok: true });
         });
@@ -627,6 +678,11 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
     if (action === "radio_status") {
         const isPlaying = Boolean(request.playing);
+        if (isPlaying) {
+            cancelOffscreenIdleTimer();
+        } else {
+            scheduleOffscreenClose();
+        }
         chrome.storage.local.set({ playing: isPlaying }).catch(() => { });
         sendResponse({ ok: true });
         return false;
@@ -753,6 +809,7 @@ async function handleToggle(sendResponse) {
             }
         } else {
             await sendToOffscreen({ action: "pause" });
+            scheduleOffscreenClose();
         }
 
         await chrome.storage.local.set({ playing: newState }).catch(() => { });

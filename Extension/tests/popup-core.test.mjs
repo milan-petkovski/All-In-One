@@ -117,7 +117,7 @@ test("showToast enforces max 3 active toasts and evicts oldest", async () => {
     core.showToast("T1", "info");
     core.showToast("T2", "success");
     core.showToast("T3", "error");
-    core.showToast("T4", "info"); // 4th — oldest should be evicted
+    core.showToast("T4", "info"); // 4th: oldest should be evicted
     const container = env.popupDocument.getElementById("toastContainer");
     const active = container.querySelectorAll(".toast:not(.toast-fade-out)");
     assert.equal(active.length, 3);

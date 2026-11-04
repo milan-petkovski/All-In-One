@@ -21,6 +21,8 @@ env.addPopupElement("counterArea", "textarea");
 env.addPopupElement("charCount", "span");
 env.addPopupElement("wordCount", "span");
 env.addPopupElement("lineCount", "span");
+env.addPopupElement("readingTime", "span");
+env.addPopupElement("seoHint", "div");
 env.addPopupElement("clearCounterModal", "div");
 env.addPopupElement("counterBtn", "button");
 env.addPopupElement("counterClearBtn", "button");
@@ -36,6 +38,7 @@ const counterArea = env.popupDocument.getElementById("counterArea");
 const charCount = env.popupDocument.getElementById("charCount");
 const wordCount = env.popupDocument.getElementById("wordCount");
 const lineCount = env.popupDocument.getElementById("lineCount");
+const readingTime = env.popupDocument.getElementById("readingTime");
 
 // Import modules
 const core = await import(new URL("../js/popup-core.js", import.meta.url));
@@ -50,6 +53,7 @@ test("counter initialization hydrates text area and updates counts from storage"
   assert.equal(charCount.textContent, "24");
   assert.equal(wordCount.textContent, "4");
   assert.equal(lineCount.textContent, "1");
+  assert.equal(readingTime.textContent, "< 1 min");
 });
 
 test("counter updates counts on typing input", async () => {

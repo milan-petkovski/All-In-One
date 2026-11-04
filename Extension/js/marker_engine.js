@@ -41,6 +41,8 @@ async function pokreniMarker() {
         return;
     }
 
+    window.markerInitAttempts = 0;
+
     if (!window.markerInjected) {
         window.markerInjected = true;
         window.markerCurrentColor = "#00ff88";
@@ -136,6 +138,7 @@ async function pokreniMarker() {
             const btn = document.createElement("button");
             btn.id = id;
             btn.title = title;
+            btn.setAttribute("aria-label", title);
             if (id === "m_brush") btn.className = "active";
             btn.innerHTML = iconSvg; // SVGs are safe as they are hardcoded below
             return btn;
@@ -160,12 +163,14 @@ async function pokreniMarker() {
         sizeInput.max = "30";
         sizeInput.value = "5";
         sizeInput.title = getMsg("markerThicknessTooltip", "Debljina");
+        sizeInput.setAttribute("aria-label", sizeInput.title);
         menu.appendChild(sizeInput);
 
         const closeBtn = document.createElement("button");
         closeBtn.id = "m_close";
         closeBtn.className = "close-btn";
         closeBtn.title = getMsg("markerCloseTooltip", "Zatvori");
+        closeBtn.setAttribute("aria-label", closeBtn.title);
         closeBtn.innerHTML = `<svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`;
         menu.appendChild(closeBtn);
 
@@ -221,6 +226,8 @@ async function pokreniMarker() {
             const s = document.getElementById('marker-styles');
             if (s) s.remove();
             window.removeEventListener("mouseup", handleGlobalMouseUp);
+            window.removeEventListener("touchend", handleGlobalMouseUp);
+            window.removeEventListener('pagehide', removeMarker);
             window.markerInjected = false;
         };
 
@@ -311,7 +318,10 @@ async function pokreniMarker() {
                     }
                     input.remove();
                 };
-                input.onkeydown = (ee) => { if (ee.key === "Enter") input.blur(); };
+                input.onkeydown = (ee) => {
+                    if (ee.key === "Escape") input.value = "";
+                    if (ee.key === "Enter" || ee.key === "Escape") input.blur();
+                };
                 return;
             }
 
@@ -398,14 +408,15 @@ async function pokreniMarker() {
                 };
                 window.addEventListener("mousemove", move);
                 window.addEventListener("touchmove", move, { passive: false });
-                window.addEventListener("mouseup", () => {
+                // One shared end handler so neither the mouse nor the touch listener can leak.
+                const endMove = () => {
                     window.removeEventListener("mousemove", move);
                     window.removeEventListener("touchmove", move);
-                }, { once: true });
-                window.addEventListener("touchend", () => {
-                    window.removeEventListener("mousemove", move);
-                    window.removeEventListener("touchmove", move);
-                }, { once: true });
+                    window.removeEventListener("mouseup", endMove);
+                    window.removeEventListener("touchend", endMove);
+                };
+                window.addEventListener("mouseup", endMove);
+                window.addEventListener("touchend", endMove);
             };
             el.addEventListener("mousedown", mouseDownHandler);
             el.addEventListener("touchstart", mouseDownHandler, { passive: false });

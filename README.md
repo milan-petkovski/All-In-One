@@ -6,7 +6,6 @@
   <p>The ultimate tool that combines all essential features into one fast, modern, and free interface.</p>
 
   <p>
-    <a href="https://github.com/milan-petkovski/All-In-One/actions/workflows/ci.yml"><img src="https://github.com/milan-petkovski/All-In-One/actions/workflows/ci.yml/badge.svg" alt="CI Status" /></a>
     <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"><img src="https://img.shields.io/badge/Chrome_Web_Store-Available-blue?logo=googlechrome&logoColor=white" alt="Chrome Web Store" /></a>
     <img src="https://img.shields.io/badge/Languages-55_Supported-success" alt="55 Languages Supported" />
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-EULA-green" alt="License" /></a>
@@ -42,7 +41,7 @@ Hi! I am Milan, a 20-year-old student and web developer from Serbia. I built the
 
 I am committed to keeping this extension 100% free forever, with zero ads and zero popups. If this tool saves you time and you want to support my late night coding sessions, you can buy me a coffee!
 
-💖 <a href="https://paypal.me/milanwebportal">Support my work via PayPal</a>
+💖 [Support my work via PayPal](https://paypal.me/milanwebportal)
 
 Every donation means a lot and helps me maintain and improve the extension. Thank you!
 
@@ -212,7 +211,7 @@ Author's Website: <a href="https://milanwebportal.com/">milanwebportal.com</a>
 
 Contact Email: contact@milanwebportal.com
 
-💖 <a href="https://paypal.me/milanwebportal">Support my work via PayPal</a>
+💖 [Support my work via PayPal](https://paypal.me/milanwebportal)
 
 ---
 <p align="center">Made with ❤️ by <b>Milan Web Portal</b></p>

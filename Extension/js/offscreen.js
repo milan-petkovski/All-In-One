@@ -5,6 +5,42 @@ let audioCtx = null;
 let sfxCompressor = null;
 let sfxOutput = null;
 let audioCtxCloseTimer = null;
+let isUserPlaying = false;
+let reconnectTimer = null;
+let reconnectAttempts = 0;
+const MAX_RECONNECT_ATTEMPTS = 5;
+
+function cancelReconnect() {
+  if (reconnectTimer) {
+    clearTimeout(reconnectTimer);
+    reconnectTimer = null;
+  }
+}
+
+function scheduleReconnect() {
+  if (!isUserPlaying || !currentStreamUrl) return;
+  cancelReconnect();
+  if (reconnectAttempts >= MAX_RECONNECT_ATTEMPTS) {
+    updateRadioStatus(false);
+    return;
+  }
+  reconnectAttempts++;
+  reconnectTimer = setTimeout(() => {
+    if (!isUserPlaying || !currentStreamUrl) return;
+    try {
+      audio.src = currentStreamUrl;
+      audio.load();
+      audio.play().then(() => {
+        reconnectAttempts = 0;
+        updateRadioStatus(true);
+      }).catch(() => {
+        scheduleReconnect();
+      });
+    } catch {
+      scheduleReconnect();
+    }
+  }, 3000);
+}
 
 function safeSendRuntimeMessage(payload) {
   if (!chrome?.runtime?.id) return;
@@ -39,6 +75,33 @@ function updateRadioStatus(isPlaying) {
   safeSendRuntimeMessage({ action: "radio_status", playing: Boolean(isPlaying) });
 }
 
+
+/**
+ * Converts a 0-100 volume percentage to a safe value, falling back when invalid.
+ * @param {unknown} percent
+ * @param {number} fallback
+ * @returns {number} Percentage as a 0-1 audio volume.
+ */
+function normalizeVolume(percent, fallback) {
+  const n = Number(percent);
+  const safe = Number.isFinite(n) ? n : fallback;
+  return Math.max(0, Math.min(1, safe / 100));
+}
+
+/**
+ * Accepts only http(s) stream URLs; anything else falls back to the default station.
+ * @param {unknown} rawUrl
+ * @returns {string}
+ */
+function resolveStreamUrl(rawUrl) {
+  if (typeof rawUrl !== "string" || !rawUrl.trim()) return DEFAULT_STREAM_URL;
+  try {
+    const parsed = new URL(rawUrl.trim());
+    return parsed.protocol === "http:" || parsed.protocol === "https:" ? parsed.href : DEFAULT_STREAM_URL;
+  } catch {
+    return DEFAULT_STREAM_URL;
+  }
+}
 
 function setRadioVolume(vol) {
   audio.volume = Math.max(0, Math.min(1, vol));
@@ -135,21 +198,38 @@ if ('mediaSession' in navigator) {
   });
 }
 
+audio.addEventListener("playing", () => {
+  reconnectAttempts = 0;
+  cancelReconnect();
+  updateRadioStatus(true);
+});
 audio.addEventListener("play", () => updateRadioStatus(true));
-audio.addEventListener("pause", () => updateRadioStatus(false));
-audio.addEventListener("ended", () => updateRadioStatus(false));
-audio.addEventListener("error", () => updateRadioStatus(false));
+audio.addEventListener("pause", () => {
+  if (!isUserPlaying) updateRadioStatus(false);
+});
+audio.addEventListener("ended", () => {
+  if (isUserPlaying) scheduleReconnect();
+  else updateRadioStatus(false);
+});
+audio.addEventListener("error", () => {
+  if (isUserPlaying) scheduleReconnect();
+  else updateRadioStatus(false);
+});
+audio.addEventListener("stalled", () => {
+  if (isUserPlaying && audio.paused) scheduleReconnect();
+});
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   const action = request?.action;
 
   if (action === "play") {
-    currentStreamUrl = request.url && request.url.trim() ? request.url.trim() : DEFAULT_STREAM_URL;
+    isUserPlaying = true;
+    reconnectAttempts = 0;
+    cancelReconnect();
+    currentStreamUrl = resolveStreamUrl(request.url);
     audio.src = currentStreamUrl;
 
-    const vol = request.volume !== undefined ? request.volume / 100 : 0.30;
-    const normalized = Math.max(0, Math.min(1, vol));
-    audio.volume = normalized;
+    audio.volume = normalizeVolume(request.volume, 30);
     sendResponse({ ok: true });
     audio.play().catch((err) => {
       if (err.name === "AbortError") {
@@ -171,15 +251,19 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     }
     return false;
   } else if (action === "pause") {
+    isUserPlaying = false;
+    reconnectAttempts = 0;
+    cancelReconnect();
     audio.pause();
+    // Drop the live stream connection so it stops buffering while paused.
+    audio.removeAttribute("src");
+    audio.load();
     if ('mediaSession' in navigator) {
       navigator.mediaSession.playbackState = "paused";
     }
     sendResponse({ ok: true });
   } else if (action === "setVolume") {
-    const vol = request.value / 100;
-    const normalized = Math.max(0, Math.min(1, vol));
-    setRadioVolume(normalized);
+    setRadioVolume(normalizeVolume(request.value, 30));
     sendResponse({ ok: true });
   } else if (action === "playAudio") {
     try {

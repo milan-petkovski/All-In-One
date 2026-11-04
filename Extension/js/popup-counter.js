@@ -6,6 +6,8 @@ let counterArea = null;
 let charCount = null;
 let wordCount = null;
 let lineCount = null;
+let readingTime = null;
+let seoHint = null;
 let clearCounterModal = null;
 
 function countGraphemes(str) {
@@ -30,12 +32,59 @@ function countLines(str) {
     return lines.length === 0 ? 1 : lines.length;
 }
 
+function calculateReadingTime(words) {
+    if (words <= 0) return "0 min";
+    if (words < 100) return "< 1 min";
+    const minutes = Math.ceil(words / 200);
+    return `${minutes} min`;
+}
+
+function updateSeoHint(chars) {
+    if (!seoHint) return;
+    if (chars === 0) {
+        seoHint.textContent = "";
+        return;
+    }
+    if (chars >= 50 && chars <= 60) {
+        seoHint.innerHTML = `<span class="counter-seo-badge">SEO Title: Optimalno (${chars}/60)</span>`;
+    } else if (chars >= 140 && chars <= 160) {
+        seoHint.innerHTML = `<span class="counter-seo-badge">Meta Opis: Optimalno (${chars}/160)</span>`;
+    } else if (chars > 60 && chars <= 70) {
+        seoHint.innerHTML = `<span class="counter-seo-badge warning">SEO Title: Blizu limita (${chars}/60)</span>`;
+    } else if (chars > 160 && chars <= 175) {
+        seoHint.innerHTML = `<span class="counter-seo-badge warning">Meta Opis: Blizu limita (${chars}/160)</span>`;
+    } else {
+        seoHint.textContent = "";
+    }
+}
+
 const updateCounts = (text = "") => {
     if (!charCount || !wordCount || !lineCount) return;
     const normalized = String(text);
-    charCount.textContent = String(countGraphemes(normalized));
-    wordCount.textContent = String(countWords(normalized));
-    lineCount.textContent = String(countLines(normalized));
+    const chars = countGraphemes(normalized);
+    const words = countWords(normalized);
+    const lines = countLines(normalized);
+    charCount.textContent = String(chars);
+    wordCount.textContent = String(words);
+    lineCount.textContent = String(lines);
+    if (readingTime) {
+        readingTime.textContent = calculateReadingTime(words);
+    }
+    updateSeoHint(chars);
+};
+
+let counterSaveTimeout = null;
+let pendingCounterText = null;
+
+const flushCounterSave = () => {
+    if (pendingCounterText !== null) {
+        chrome.storage.local.set({ aio_counter_text: pendingCounterText });
+        pendingCounterText = null;
+    }
+    if (counterSaveTimeout) {
+        clearTimeout(counterSaveTimeout);
+        counterSaveTimeout = null;
+    }
 };
 
 const getSavedCounterText = (callback) => {
@@ -44,11 +93,24 @@ const getSavedCounterText = (callback) => {
     });
 };
 
-const setSavedCounterText = (text) => {
-    chrome.storage.local.set({ aio_counter_text: text });
+const setSavedCounterText = (text, immediate = false) => {
+    pendingCounterText = text;
+    if (counterSaveTimeout) clearTimeout(counterSaveTimeout);
+    if (immediate) {
+        flushCounterSave();
+        return;
+    }
+    counterSaveTimeout = setTimeout(() => {
+        flushCounterSave();
+    }, 250);
 };
 
 const clearSavedCounterText = () => {
+    pendingCounterText = null;
+    if (counterSaveTimeout) {
+        clearTimeout(counterSaveTimeout);
+        counterSaveTimeout = null;
+    }
     chrome.storage.local.remove("aio_counter_text");
 };
 
@@ -59,6 +121,8 @@ export function initCounter() {
     charCount = document.getElementById("charCount");
     wordCount = document.getElementById("wordCount");
     lineCount = document.getElementById("lineCount");
+    readingTime = document.getElementById("readingTime");
+    seoHint = document.getElementById("seoHint");
     clearCounterModal = document.getElementById("clearCounterModal");
 
     // Initialization and Legacy LocalStorage Migration
@@ -165,4 +229,9 @@ export function initCounter() {
             }).catch(() => { });
         });
     }
+
+    window.addEventListener("pagehide", () => flushCounterSave());
+    document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "hidden") flushCounterSave();
+    });
 }

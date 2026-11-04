@@ -1,5 +1,5 @@
 // Tests for background.js pure helper functions
-// background.js is a Service Worker — it cannot be imported as an ES module.
+// background.js is a Service Worker: it cannot be imported as an ES module.
 // These tests extract and test its pure helper logic in isolation using
 // a mock Chrome environment that mirrors what background.js expects.
 
@@ -108,7 +108,7 @@ function sanitizePageLocation(pageLocation) {
 
 // --- Tests ---
 
-test('toOriginSet — standard HTTPS URL produces 4 origins', () => {
+test('toOriginSet: standard HTTPS URL produces 4 origins', () => {
   const origins = toOriginSet('https://example.com/path?q=1');
   assert.ok(origins.includes('https://example.com'));
   assert.ok(origins.includes('http://example.com'));
@@ -117,20 +117,20 @@ test('toOriginSet — standard HTTPS URL produces 4 origins', () => {
   assert.equal(origins.length, 4);
 });
 
-test('toOriginSet — www. prefix URL produces bare domain variants', () => {
+test('toOriginSet: www. prefix URL produces bare domain variants', () => {
   const origins = toOriginSet('https://www.site.com/');
   assert.ok(origins.includes('https://www.site.com'));
   assert.ok(origins.includes('https://site.com'));
   assert.ok(origins.includes('http://site.com'));
 });
 
-test('toOriginSet — invalid URL returns empty array', () => {
+test('toOriginSet: invalid URL returns empty array', () => {
   assert.deepEqual(toOriginSet('not-a-url'), []);
   assert.deepEqual(toOriginSet(''), []);
   assert.deepEqual(toOriginSet(null), []);
 });
 
-test('toOriginSet — non-HTTP scheme with no HTTP/HTTPS returns origins based on hostname', () => {
+test('toOriginSet: non-HTTP scheme with no HTTP/HTTPS returns origins based on hostname', () => {
   // chrome://extensions has hostname 'extensions' via URL API,
   // so it DOES produce origins. The real guard is in clearSiteDataEverywhere
   // which checks origins.length === 0 before proceeding.
@@ -141,7 +141,7 @@ test('toOriginSet — non-HTTP scheme with no HTTP/HTTPS returns origins based o
   // Also verify that a URL with an empty hostname (like 'file:' with path)
   // gracefully returns []
   const fileResult = toOriginSet('file:///local/path');
-  // file:// has empty hostname — should return []
+  // file:// has empty hostname: should return []
   assert.deepEqual(fileResult, []);
 });
 
@@ -168,21 +168,21 @@ test('sanitizePageLocation returns undefined for empty string', () => {
   assert.equal(result, undefined);
 });
 
-test('resolveNetworkInfo hostname validation — valid hostnames', () => {
+test('resolveNetworkInfo hostname validation: valid hostnames', () => {
   assert.ok(resolveNetworkInfoHostnameValidation('example.com'));
   assert.ok(resolveNetworkInfoHostnameValidation('sub.domain.co.uk'));
   assert.ok(resolveNetworkInfoHostnameValidation('localhost'));
   assert.ok(resolveNetworkInfoHostnameValidation('123.456.789.0'));
 });
 
-test('resolveNetworkInfo hostname validation — rejects unsafe hostnames', () => {
+test('resolveNetworkInfo hostname validation: rejects unsafe hostnames', () => {
   assert.equal(resolveNetworkInfoHostnameValidation('evil.com; rm -rf /'), false);
   assert.equal(resolveNetworkInfoHostnameValidation('<script>alert(1)</script>'), false);
   assert.equal(resolveNetworkInfoHostnameValidation('x'.repeat(256)), false);
   assert.equal(resolveNetworkInfoHostnameValidation(''), false);
 });
 
-test('syncKickLiveStatus created_at string normalization — no timezone suffix', () => {
+test('syncKickLiveStatus created_at string normalization: no timezone suffix', () => {
   // Reproduces the logic in syncKickLiveStatus for parsing "created_at" timestamps
   const parseKickTimestamp = (createdAt) => {
     if (typeof createdAt === 'string') {
@@ -223,7 +223,7 @@ test('analytics opt-out skips queue (logic test)', () => {
   assert.equal(queue.length, 1, 'enabled should queue events');
 });
 
-test('analytics queue flush threshold — flushes at 20 events', () => {
+test('analytics queue flush threshold: flushes at 20 events', () => {
   let flushed = false;
   let queue = [];
 

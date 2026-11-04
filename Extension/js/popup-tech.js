@@ -13,7 +13,13 @@ const TECH_ICON_MAP = new Map([
     ["tailwind", "<span class='tech-icon-badge tech-icon-tailwind'>T</span>"],
     ["bootstrap", "<span class='tech-icon-badge tech-icon-bootstrap'>B</span>"],
     ["firebase", "<span class='tech-icon-badge tech-icon-firebase'>F</span>"],
-    ["supabase", "<span class='tech-icon-badge tech-icon-supabase'>S</span>"]
+    ["supabase", "<span class='tech-icon-badge tech-icon-supabase'>S</span>"],
+    ["bun", "<span class='tech-icon-badge tech-icon-bun'>B</span>"],
+    ["lucide", "<span class='tech-icon-badge tech-icon-lucide'>L</span>"],
+    ["tanstack", "<span class='tech-icon-badge tech-icon-tanstack'>T</span>"],
+    ["query", "<span class='tech-icon-badge tech-icon-tanstack'>Q</span>"],
+    ["three", "<span class='tech-icon-badge tech-icon-three'>3</span>"],
+    ["gsap", "<span class='tech-icon-badge tech-icon-gsap'>G</span>"]
 ]);
 
 function getTechIconHtml(name) {
@@ -276,6 +282,7 @@ export async function runTechScanner() {
                             if (poweredBy.includes('ruby')) add('Backend', 'Ruby on Rails');
                             if (poweredBy.includes('python')) add('Backend', 'Python');
                             if (poweredBy.includes('java')) add('Backend', 'Java');
+                            if (server.includes('bun') || poweredBy.includes('bun') || scripts.some(s => s.includes('bun'))) add('Backend', 'Bun');
                             if (header('content-security-policy')) add('Sigurnost', 'CSP');
                             if (header('strict-transport-security')) add('Sigurnost', 'HSTS');
                             if (header('x-frame-options')) add('Sigurnost', 'X Frame Options');
@@ -316,10 +323,12 @@ export async function runTechScanner() {
                         if (window.Vue || document.querySelector('[data-v-app]') || window.__VUE__) add('Tehnologije', 'Vue.js', vueVer);
                         const angularVer = document.querySelector('[ng-version]')?.getAttribute('ng-version');
                         if (window.angular || angularVer) add('Tehnologije', 'Angular', angularVer ? `v${angularVer}` : '');
-                        if (window.Svelte || document.querySelector('[data-svelte-h]')) add('Tehnologije', 'Svelte');
+                        const svelteVer = window.__svelte_version ? `v${window.__svelte_version}` : '';
+                        if (window.Svelte || window.__svelte || window.__svelte_version || document.querySelector('[data-svelte-h]') || document.querySelector('[class*="svelte-"]')) add('Tehnologije', 'Svelte', svelteVer);
                         if (window.__NUXT__ || document.querySelector('#__nuxt')) add('Tehnologije', 'Nuxt.js');
                         if (window.Remix || window.__remixContext) add('Tehnologije', 'Remix');
-                        if (document.querySelector('astro-island') || window.Astro) add('Tehnologije', 'Astro');
+                        if (document.querySelector('astro-island') || window.Astro || document.querySelector('[data-astro-cid]') || document.querySelector('[class*="astro-"]')) add('Tehnologije', 'Astro');
+                        if (window.__REACT_QUERY_STATE__ || window.__TANSTACK_QUERY__ || window.__tanstack || window.QueryClient) add('Tehnologije', 'TanStack Query');
                         if (window.Preact) add('Tehnologije', 'Preact');
                         const emberVer = window.Ember?.VERSION ? `v${window.Ember.VERSION}` : '';
                         if (window.Ember) add('Tehnologije', 'Ember.js', emberVer);
@@ -334,15 +343,16 @@ export async function runTechScanner() {
                         if (window.Chart) add('Tehnologije', 'Chart.js', window.Chart.version ? `v${window.Chart.version}` : '');
                         if (window.Swiper) add('Tehnologije', 'Swiper.js');
                         if (window.gsap) add('Tehnologije', 'GSAP', window.gsap.version ? `v${window.gsap.version}` : '');
-                        if (window.THREE) add('Tehnologije', 'Three.js', window.THREE.REVISION ? `r${window.THREE.REVISION}` : '');
+                        if (window.THREE || document.querySelector('canvas[data-engine*="three.js"]')) add('Tehnologije', 'Three.js', window.THREE?.REVISION ? `r${window.THREE.REVISION}` : '');
                         if (window.anime) add('Tehnologije', 'Anime.js', window.anime.version ? `v${window.anime.version}` : '');
                         if (window.PIXI) add('Tehnologije', 'PixiJS', window.PIXI.VERSION ? `v${window.PIXI.VERSION}` : '');
                         if (window.Alpine) add('Tehnologije', 'Alpine.js', window.Alpine.version ? `v${window.Alpine.version}` : '');
                         if (window.firebase) add('Baza Podataka', 'Firebase');
-                        if (window.supabase) add('Baza Podataka', 'Supabase');
+                        if (window.supabase || scripts.some(s => s.includes('supabase.co')) || links.some(l => l.includes('supabase.co'))) add('Baza Podataka', 'Supabase');
                         if (window.io) add('Tehnologije', 'Socket.io');
 
-                        if (links.some(l => l.includes('tailwindcss')) || scripts.some(s => s.includes('tailwind')) || document.querySelector('[class*="tw-"]')) add('Stilovi', 'Tailwind CSS');
+                        if (links.some(l => l.includes('tailwindcss') || l.includes('tailwind')) || scripts.some(s => s.includes('tailwind')) || document.querySelector('[class*="tw-"]') || document.querySelector('style[data-tailwind]') || document.querySelector('style')?.textContent?.includes('@theme') || document.querySelector('style')?.textContent?.includes('--tw-')) add('Stilovi', 'Tailwind CSS');
+                        if (document.querySelector('svg.lucide') || document.querySelector('[data-lucide]') || window.lucide) add('Stilovi', 'Lucide Icons');
                         if (document.querySelector('[class*="shadcn"]') || document.querySelector('[data-radix-collection]')) add('Stilovi', 'Shadcn UI / Radix UI');
                         if (document.querySelector('[class*="daisy"]') || document.querySelector('[data-theme]')) add('Stilovi', 'DaisyUI');
                         if (document.querySelector('[class*="mantine-"]')) add('Stilovi', 'Mantine');

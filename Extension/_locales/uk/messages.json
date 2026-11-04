@@ -1,656 +1,674 @@
 {
-    "notesTitle": {
-        "message": "Нотатки"
-    },
-    "whatsNewDesc": {
-        "message": "Перегляньте останні вдосконалення інтерфейсу, які роблять All In One ще швидшим і елегантнішим:"
-    },
-    "toastPermissionDenied": {
-        "message": "Дозвіл не надано"
-    },
-    "clearCounterTooltip": {
-        "message": "Очистити все"
-    },
-    "supportDesc": {
-        "message": "All In One — повністю безкоштовний інструмент. Ваша підтримка допомагає зберегти його таким і дозволяє розробляти нові функції."
-    },
-    "trackerExportTruncated": {
-        "message": "Експорт скорочено до 10 МБ, щоб спливаюче вікно було стабільним."
-    },
-    "whatsNewClose": {
-        "message": "ЗРАЗУМАЮ"
-    },
-    "techCatBackend": {
-        "message": "Backend"
-    },
-    "markerEraseTooltip": {
-        "message": "Стерти"
-    },
-    "counterTitle": {
-        "message": "Лічильник"
-    },
-    "trackerAvgLabel": {
-        "message": "Середнє"
-    },
-    "trackerModeMonth": {
-        "message": "Місячний перегляд"
-    },
-    "trackerModeAll": {
-        "message": "Весь час"
-    },
-    "techCatMedia": {
-        "message": "ЗМІ"
-    },
-    "trackerNoData": {
-        "message": "Немає даних за цей період"
-    },
-    "whatsNewFeature3": {
-        "message": "Підтримка Favicon: Фавіконки сайтів у списку трекера."
-    },
-    "swLiveTitlePrefix": {
-        "message": "Наживо #"
-    },
-    "confirmClearNotes": {
-        "message": "Ви впевнені, що хочете видалити всі нотатки?"
-    },
-    "techCatSeo": {
-        "message": "SEO"
-    },
-    "toastCacheCleared": {
-        "message": "Усі дані з цього сайту видалено!"
-    },
-    "trackerSearchPlaceholder": {
-        "message": "Пошук на веб-сайтах..."
-    },
-    "techCatTools": {
-        "message": "Інструменти"
-    },
-    "toastYtOff": {
-        "message": "Показ не подобається YouTube вимкнено"
-    },
-    "soundTitle": {
-        "message": "Звук"
-    },
-    "cacheTitle": {
-        "message": "Кукі/кеш"
-    },
-    "markerCloseTooltip": {
-        "message": "Закрити"
-    },
-    "stopwatchTitle": {
-        "message": "Секундомір"
-    },
-    "clearNotesTooltip": {
-        "message": "Очистити всі нотатки"
-    },
-    "rulerTitle": {
-        "message": "Лінійка для сторінки"
-    },
-    "markLapDesc": {
-        "message": "Зафіксувати момент на секундомірі"
-    },
-    "trackerImportEmpty": {
-        "message": "Немає дійсних даних трекера для імпорту."
-    },
-    "whatsNewFeature1": {
-        "message": "Плавні переходи: плавна анімація слайдів між інструментами."
-    },
-    "systemPageDesc": {
-        "message": "Інструменти зміни вимкнені"
-    },
-    "techStatLinks": {
-        "message": "Посилання"
-    },
-    "stopBtn": {
-        "message": "СТОП"
-    },
-    "swNoLaps": {
-        "message": "Немає записаних моментів"
-    },
-    "toastTrackerImportError": {
-        "message": "Помилка імпорту даних трекера!"
-    },
-    "toastRadioPlayError": {
-        "message": "Зараз неможливо запустити радіо."
-    },
-    "trackerTitle": {
-        "message": "Трекер Веб-час"
-    },
-    "offscreenJustification": {
-        "message": "Потокове радіо та системні звуки"
-    },
-    "trackerThisMonth": {
-        "message": "Цей місяць"
-    },
-    "linesLabel": {
-        "message": "Рядки"
-    },
-    "toastCookieWhitelistOff": {
-        "message": "Файли cookie заблоковано для цього сайту"
-    },
-    "toastTrackerError": {
-        "message": "Помилка оновлення даних"
-    },
-    "trackerExportEmpty": {
-        "message": "Немає даних трекера для експорту."
-    },
-    "techCatComm": {
-        "message": "спілкування"
-    },
-    "deleteBtn": {
-        "message": "ВИДАЛИТИ"
-    },
-    "techCatTech": {
-        "message": "Технології"
-    },
-    "notesSaved": {
-        "message": "Збережено"
-    },
-    "toastNotesExported": {
-        "message": "Нотатки успішно експортовано!"
-    },
-    "swMomentLabel": {
-        "message": "Момент "
-    },
-    "notesModalTitle": {
-        "message": "РОЗУМНІ НОТАТКИ"
-    },
-    "trackerAvgThisMonth": {
-        "message": "Середній (місяць)"
-    },
-    "versionLabel": {
-        "message": "Версія:"
-    },
-    "importNotesTooltip": {
-        "message": "Імпорт нотаток"
-    },
-    "techCatBuild": {
-        "message": "Build"
-    },
-    "toastDarkModeOff": {
-        "message": "Світлий режим увімкнено"
-    },
-    "toastNotesCopied": {
-        "message": "Текст скопійовано в буфер обміну!"
-    },
-    "whatsNewFeature2": {
-        "message": "Premium Toasts: сучасна система сповіщень про важливі дії."
-    },
-    "fontNotCopied": {
-        "message": "Не скопійовано"
-    },
-    "importTooltip": {
-        "message": "Імпорт даних"
-    },
-    "wordsLabelShort": {
-        "message": "слова"
-    },
-    "techCatServer": {
-        "message": "Server"
-    },
-    "cacheNotSupported": {
-        "message": "Не підтримується"
-    },
-    "techStatCss": {
-        "message": "CSS"
-    },
-    "techStatAudio": {
-        "message": "Audio"
-    },
-    "cacheClearing": {
-        "message": "Очищення..."
-    },
-    "radioTitleCustom": {
-        "message": "Radio"
-    },
-    "toastTrackerRefreshed": {
-        "message": "Дані оновлено!"
-    },
-    "websiteBtn": {
-        "message": "Офіційний сайт"
-    },
-    "markerThicknessTooltip": {
-        "message": "Товщина"
-    },
-    "confirmClearCounter": {
-        "message": "Ви впевнені, що хочете очистити все?"
-    },
-    "techCatAds": {
-        "message": "Оголошення"
-    },
-    "uiSettings": {
-        "message": "НАЛАШТУВАННЯ"
-    },
-    "trackerThatMonth": {
-        "message": "Той місяць"
-    },
-    "radioModalDesc": {
-        "message": "Введіть пряме посилання на вашу улюблену радіостанцію"
-    },
-    "trackerDeleteConfirm": {
-        "message": "Ви впевнені, що хочете видалити дані для"
-    },
-    "darkModeTitle": {
-        "message": "Темная тема"
-    },
-    "toastCounterCleared": {
-        "message": "Текст лічильника очищено!"
-    },
-    "techStatScripts": {
-        "message": "Сценарії"
-    },
-    "techNetworkOptInHint": {
-        "message": "Надсилає запити на dns.google та ipinfo.io."
-    },
-    "swNoHistory": {
-        "message": "Немає історії трансляцій"
-    },
-    "whatsNewTitle": {
-        "message": "Що нового у версії 1.6"
-    },
-    "techNotFound": {
-        "message": "Не знайдено."
-    },
-    "notesPlaceholder": {
-        "message": "Пишіть нотатки тут..."
-    },
-    "radioArtist": {
-        "message": "За підтримки розширення All In One"
-    },
-    "charsLabel": {
-        "message": "Символи"
-    },
-    "trackerImportSuccess": {
-        "message": "Дані успішно імпортовано!"
-    },
-    "copyEnableTitle": {
-        "message": "Копіювати"
-    },
-    "techCatStats": {
-        "message": "Статистика"
-    },
-    "dateLabel": {
-        "message": "Дата"
-    },
-    "techCatNetwork": {
-        "message": "Мережа"
-    },
-    "techCatEcom": {
-        "message": "Електронна комерція"
-    },
-    "currentRecordedLabel": {
-        "message": "ПОТОЧНИЙ ЗАПИС"
-    },
-    "toastCookieOff": {
-        "message": "Автоматичне блокування файлів cookie вимкнено"
-    },
-    "toastModuleLoadError": {
-        "message": "Помилка завантаження модуля"
-    },
-    "techCatStyles": {
-        "message": "Стилі"
-    },
-    "extDesc": {
-        "message": "Найкращий інструмент, що об'єднує всі основні функції у швидкому, сучасному та безкоштовному інтерфейсі."
-    },
-    "resetBtn": {
-        "message": "Скинути"
-    },
-    "addDateTooltip": {
-        "message": "Додати сьогоднішню дату"
-    },
-    "supportTitle": {
-        "message": "Підтримати розширення"
-    },
-    "toastCounterCopied": {
-        "message": "Текст скопійовано в буфер обміну!"
-    },
-    "savedIndicator": {
-        "message": "Збережено"
-    },
-    "counterPlaceholder": {
-        "message": "Вставте текст сюди..."
-    },
-    "techFoundPrefix": {
-        "message": "Знайдено: "
-    },
-    "systemPageTitle": {
-        "message": "СИСТЕМНА СТОРІНКА"
-    },
-    "markerClearAllTooltip": {
-        "message": "Очистити все"
-    },
-    "analyticsOptOutLabel": {
-        "message": "Вимкнути аналітику"
-    },
-    "trackerModeDay": {
-        "message": "Денний перегляд"
-    },
-    "techItemsSuffix": {
-        "message": "елементів"
-    },
-    "toastStopwatchCleared": {
-        "message": "Живу історію очищено!"
-    },
-    "trackerTotal": {
-        "message": "Всього"
-    },
-    "swStatusReady": {
-        "message": "ГОТОВО"
-    },
-    "trackerTotalShort": {
-        "message": "Всього"
-    },
-    "blockCookiesLabel": {
-        "message": "Автоматично блокувати файли cookie"
-    },
-    "markerDrawTooltip": {
-        "message": "Малювати"
-    },
-    "trackerMonthLabel": {
-        "message": "Цей місяць"
-    },
-    "techStatSvg": {
-        "message": "SVG"
-    },
-    "techStatTables": {
-        "message": "Таблиці"
-    },
-    "techStatImages": {
-        "message": "Зображення"
-    },
-    "toastRadioSaved": {
-        "message": "URL-адресу радіостанції збережено!"
-    },
-    "trackerToday": {
-        "message": "Сьогодні"
-    },
-    "techStatDom": {
-        "message": "DOM"
-    },
-    "wordsLabel": {
-        "message": "Слова"
-    },
-    "clearAllBtn": {
-        "message": "ОЧИСТИТИ ВСЕ"
-    },
-    "toastCopyOn": {
-        "message": "Для цього сайту ввімкнено копіювання"
-    },
-    "clearSiteDataBtn": {
-        "message": "Очистити всі дані з цього сайту"
-    },
-    "colorPickerPicking": {
-        "message": "Вибір..."
-    },
-    "cacheClearConfirm": {
-        "message": "Очистити всі дані з цього сайту"
-    },
-    "markerTextTooltip": {
-        "message": "Текст"
-    },
-    "radioTitle": {
-        "message": "Радіо IN"
-    },
-    "trackerSelectedMonth": {
-        "message": "Вибраний місяць"
-    },
-    "toastCopyOff": {
-        "message": "Копіювання вимкнено"
-    },
-    "fontCopied": {
-        "message": "Скопійовано!"
-    },
-    "notesLinkText": {
-        "message": "Посилання"
-    },
-    "radioClearConfirm": {
-        "message": "Очистити збережену радіостанцію?"
-    },
-    "trackerAvgThatMonth": {
-        "message": "Середній (місяць)"
-    },
-    "techTitle": {
-        "message": "Технології"
-    },
-    "lapBtn": {
-        "message": "КОЛО"
-    },
-    "playBtn": {
-        "message": "Відтворити"
-    },
-    "toastDarkModeOn": {
-        "message": "Темний режим увімкнено"
-    },
-    "techCatPayment": {
-        "message": "Оплата"
-    },
-    "toastCookieWhitelistOn": {
-        "message": "Файли cookie дозволені для цього сайту"
-    },
-    "markerLineTooltip": {
-        "message": "Лінія"
-    },
-    "techStatIframes": {
-        "message": "iframes"
-    },
-    "counterModalTitle": {
-        "message": "ЛІЧИЛЬНИК СИМВОЛІВ"
-    },
-    "fontTitle": {
-        "message": "Шрифти"
-    },
-    "toastTrackerExported": {
-        "message": "Дані трекера успішно експортовано!"
-    },
-    "toastNotesImportError": {
-        "message": "Помилка імпорту нотаток!"
-    },
-    "swExportTxtBtn": {
-        "message": "ЕКСПОРТ ЯК .TXT"
-    },
-    "swUndoTitle": {
-        "message": "Видалити цей момент"
-    },
-    "startBtn": {
-        "message": "СТАРТ"
-    },
-    "markerMoveTooltip": {
-        "message": "Перемістити"
-    },
-    "techModalTitle": {
-        "message": "ТЕХНОЛОГІЇ САЙТУ"
-    },
-    "saveRadioStationBtn": {
-        "message": "ЗБЕРЕГТИ СТАНЦІЮ"
-    },
-    "techCatDb": {
-        "message": "Database"
-    },
-    "toastNotesCleared": {
-        "message": "Усі примітки видалено!"
-    },
-    "toastTrackerImported": {
-        "message": "Дані трекера успішно імпортовано!"
-    },
-    "toastInvalidRadioUrl": {
-        "message": "Недійсний URL! URL-адреса має починатися з http:// або https://"
-    },
-    "trackerImportError": {
-        "message": "Помилка читання файлу."
-    },
-    "swStatusLive": {
-        "message": "ТРАНСЛЯЦІЯ ТРИВАЄ"
-    },
-    "linkLabel": {
-        "message": "Посилання"
-    },
-    "techCatAnalytics": {
-        "message": "Аналітика"
-    },
-    "liveHistoryLabel": {
-        "message": "ІСТОРІЯ НАЖИВО"
-    },
-    "colorPickerTitle": {
-        "message": "Вибір кольору"
-    },
-    "appTitle": {
-        "message": "ALL IN ONE"
-    },
-    "swTotalDurationPrefix": {
-        "message": "ЗАГАЛЬНА ТРИВАЛІСТЬ: "
-    },
-    "stopwatchReady": {
-        "message": "ГОТОВО"
-    },
-    "confirmClearHistory": {
-        "message": "Ви впевнені, що хочете очистити всю історію?"
-    },
-    "markerTitle": {
-        "message": "Маркер"
-    },
-    "trackerModalTitle": {
-        "message": "Webtime Tracker"
-    },
-    "grabTextTooltip": {
-        "message": "Витягти текст зі сторінки"
-    },
-    "radioUrlPlaceholder": {
-        "message": "https://stream.radio.com/play"
-    },
-    "clearRadioInputTooltip": {
-        "message": "Чисте поле"
-    },
-    "privacyLabel": {
-        "message": "Політика конфіденційності"
-    },
-    "whatsNewFeature4": {
-        "message": "Перемикання зворотнього зв’язку: анімація короткого пульсу та підтвердження під час зміни налаштувань."
-    },
-    "trackerThatDay": {
-        "message": "Того дня"
-    },
-    "toastCookieWhitelistError": {
-        "message": "Не вдалося оновити список"
-    },
-    "cookieWhitelistLabel": {
-        "message": "Дозволити файли cookie для цього сайту"
-    },
-    "textLabel": {
-        "message": "Текст"
-    },
-    "cacheCleared": {
-        "message": "Очищено!"
-    },
-    "importRadioTooltip": {
-        "message": "Імпорт радіостанції на замовлення"
-    },
-    "radioPlay": {
-        "message": "Играть"
-    },
-    "techLoadingMsg": {
-        "message": "Сканер аналізує сайт..."
-    },
-    "swCopyBtn": {
-        "message": "КОПІЮВАТИ В БУФЕР ОБМІНУ"
-    },
-    "techScannerFailed": {
-        "message": "Сканування не вдалося на цій сторінці."
-    },
-    "techNetworkOptInLabel": {
-        "message": "Показати інформацію про мережу (DNS/IP)"
-    },
-    "trackerTodayLabel": {
-        "message": "Сьогодні"
-    },
-    "toastNotesImported": {
-        "message": "Нотатки успішно імпортовано!"
-    },
-    "techCatCdn": {
-        "message": "CDN"
-    },
-    "colorPickerCopied": {
-        "message": "Скопійовано: "
-    },
-    "swCopiedBtn": {
-        "message": "✓ СКОПІЙОВАНО"
-    },
-    "techCatCaching": {
-        "message": "Кешування"
-    },
-    "techCatSecurity": {
-        "message": "Безпека"
-    },
-    "toastYtOn": {
-        "message": "Увімкнено відображення \"Не подобається\" на YouTube"
-    },
-    "extName": {
-        "message": "All In One - Найкращий інструмент для продуктивності"
-    },
-    "toastCookieOn": {
-        "message": "Увімкнено автоматичне блокування файлів cookie"
-    },
-    "techScannerUnavailable": {
-        "message": "Сканер недоступний на цій сторінці."
-    },
-    "notesTooLarge": {
-        "message": "Нотатка занадто велика"
-    },
-    "swDurationLabel": {
-        "message": "Тривалість: "
-    },
-    "ytDislikeTitle": {
-        "message": "YouTube Dislike"
-    },
-    "donateBtn": {
-        "message": "Пожертвувати та підтримати"
-    },
-    "techStatVideo": {
-        "message": "Video"
-    },
-    "settingsTooltip": {
-        "message": "Налаштування"
-    },
-    "trackerThisMonthShort": {
-        "message": "Цей місяць"
-    },
-    "techCatSystem": {
-        "message": "система"
-    },
-    "exportTooltip": {
-        "message": "Експорт даних"
-    },
-    "exportNotesTooltip": {
-        "message": "Експорт нотаток"
-    },
-    "radioPause": {
-        "message": "Пауза"
-    },
-    "websiteTooltip": {
-        "message": "Офіційний сайт"
-    },
-    "rateBtn": {
-        "message": "Оцінити розширення"
-    },
-    "techCatBase": {
-        "message": "База"
-    },
-    "cacheModalTitle": {
-        "message": "ФАЙЛИ COOKIE ТА КЕШ"
-    },
-    "cancelBtn": {
-        "message": "СКАСУВАТИ"
-    },
-    "addUrlTooltip": {
-        "message": "Додати поточну URL"
-    },
-    "trackerAvgTotal": {
-        "message": "Середній"
-    },
-    "techStatForms": {
-        "message": "Форми"
-    },
-    "cacheError": {
-        "message": "Помилка"
-    }
+  "notesTitle": {
+    "message": "Нотатки"
+  },
+  "whatsNewDesc": {
+    "message": "Перегляньте останні вдосконалення інтерфейсу, які роблять All In One ще швидшим і елегантнішим:"
+  },
+  "toastPermissionDenied": {
+    "message": "Дозвіл не надано"
+  },
+  "clearCounterTooltip": {
+    "message": "Очистити все"
+  },
+  "supportDesc": {
+    "message": "All In One — повністю безкоштовний інструмент. Ваша підтримка допомагає зберегти його таким і дозволяє розробляти нові функції."
+  },
+  "trackerExportTruncated": {
+    "message": "Експорт скорочено до 10 МБ, щоб спливаюче вікно було стабільним."
+  },
+  "whatsNewClose": {
+    "message": "ЗРАЗУМАЮ"
+  },
+  "techCatBackend": {
+    "message": "Backend"
+  },
+  "markerEraseTooltip": {
+    "message": "Стерти"
+  },
+  "counterTitle": {
+    "message": "Лічильник"
+  },
+  "trackerAvgLabel": {
+    "message": "Середнє"
+  },
+  "trackerModeMonth": {
+    "message": "Місячний перегляд"
+  },
+  "trackerModeAll": {
+    "message": "Весь час"
+  },
+  "techCatMedia": {
+    "message": "ЗМІ"
+  },
+  "trackerNoData": {
+    "message": "Немає даних за цей період"
+  },
+  "whatsNewFeature3": {
+    "message": "Підтримка Favicon: Фавіконки сайтів у списку трекера."
+  },
+  "swLiveTitlePrefix": {
+    "message": "Наживо #"
+  },
+  "confirmClearNotes": {
+    "message": "Ви впевнені, що хочете видалити всі нотатки?"
+  },
+  "techCatSeo": {
+    "message": "SEO"
+  },
+  "toastCacheCleared": {
+    "message": "Усі дані з цього сайту видалено!"
+  },
+  "trackerSearchPlaceholder": {
+    "message": "Пошук на веб-сайтах..."
+  },
+  "techCatTools": {
+    "message": "Інструменти"
+  },
+  "toastYtOff": {
+    "message": "Показ не подобається YouTube вимкнено"
+  },
+  "soundTitle": {
+    "message": "Звук"
+  },
+  "cacheTitle": {
+    "message": "Кукі/кеш"
+  },
+  "markerCloseTooltip": {
+    "message": "Закрити"
+  },
+  "stopwatchTitle": {
+    "message": "Секундомір"
+  },
+  "clearNotesTooltip": {
+    "message": "Очистити всі нотатки"
+  },
+  "rulerTitle": {
+    "message": "Лінійка для сторінки"
+  },
+  "markLapDesc": {
+    "message": "Зафіксувати момент на секундомірі"
+  },
+  "trackerImportEmpty": {
+    "message": "Немає дійсних даних трекера для імпорту."
+  },
+  "whatsNewFeature1": {
+    "message": "Плавні переходи: плавна анімація слайдів між інструментами."
+  },
+  "systemPageDesc": {
+    "message": "Інструменти зміни вимкнені"
+  },
+  "techStatLinks": {
+    "message": "Посилання"
+  },
+  "stopBtn": {
+    "message": "СТОП"
+  },
+  "swNoLaps": {
+    "message": "Немає записаних моментів"
+  },
+  "toastTrackerImportError": {
+    "message": "Помилка імпорту даних трекера!"
+  },
+  "toastRadioPlayError": {
+    "message": "Зараз неможливо запустити радіо."
+  },
+  "trackerTitle": {
+    "message": "Трекер Веб-час"
+  },
+  "offscreenJustification": {
+    "message": "Потокове радіо та системні звуки"
+  },
+  "trackerThisMonth": {
+    "message": "Цей місяць"
+  },
+  "linesLabel": {
+    "message": "Рядки"
+  },
+  "toastCookieWhitelistOff": {
+    "message": "Файли cookie заблоковано для цього сайту"
+  },
+  "toastTrackerError": {
+    "message": "Помилка оновлення даних"
+  },
+  "trackerExportEmpty": {
+    "message": "Немає даних трекера для експорту."
+  },
+  "techCatComm": {
+    "message": "спілкування"
+  },
+  "deleteBtn": {
+    "message": "ВИДАЛИТИ"
+  },
+  "techCatTech": {
+    "message": "Технології"
+  },
+  "notesSaved": {
+    "message": "Збережено"
+  },
+  "toastNotesExported": {
+    "message": "Нотатки успішно експортовано!"
+  },
+  "swMomentLabel": {
+    "message": "Момент "
+  },
+  "notesModalTitle": {
+    "message": "РОЗУМНІ НОТАТКИ"
+  },
+  "trackerAvgThisMonth": {
+    "message": "Середній (місяць)"
+  },
+  "versionLabel": {
+    "message": "Версія:"
+  },
+  "importNotesTooltip": {
+    "message": "Імпорт нотаток"
+  },
+  "techCatBuild": {
+    "message": "Build"
+  },
+  "toastDarkModeOff": {
+    "message": "Світлий режим увімкнено"
+  },
+  "toastNotesCopied": {
+    "message": "Текст скопійовано в буфер обміну!"
+  },
+  "whatsNewFeature2": {
+    "message": "Premium Toasts: сучасна система сповіщень про важливі дії."
+  },
+  "fontNotCopied": {
+    "message": "Не скопійовано"
+  },
+  "importTooltip": {
+    "message": "Імпорт даних"
+  },
+  "wordsLabelShort": {
+    "message": "слова"
+  },
+  "techCatServer": {
+    "message": "Server"
+  },
+  "cacheNotSupported": {
+    "message": "Не підтримується"
+  },
+  "techStatCss": {
+    "message": "CSS"
+  },
+  "techStatAudio": {
+    "message": "Audio"
+  },
+  "cacheClearing": {
+    "message": "Очищення..."
+  },
+  "radioTitleCustom": {
+    "message": "Radio"
+  },
+  "toastTrackerRefreshed": {
+    "message": "Дані оновлено!"
+  },
+  "websiteBtn": {
+    "message": "Офіційний сайт"
+  },
+  "markerThicknessTooltip": {
+    "message": "Товщина"
+  },
+  "confirmClearCounter": {
+    "message": "Ви впевнені, що хочете очистити все?"
+  },
+  "techCatAds": {
+    "message": "Оголошення"
+  },
+  "uiSettings": {
+    "message": "НАЛАШТУВАННЯ"
+  },
+  "trackerThatMonth": {
+    "message": "Той місяць"
+  },
+  "radioModalDesc": {
+    "message": "Введіть пряме посилання на вашу улюблену радіостанцію"
+  },
+  "trackerDeleteConfirm": {
+    "message": "Ви впевнені, що хочете видалити дані для"
+  },
+  "darkModeTitle": {
+    "message": "Темная тема"
+  },
+  "toastCounterCleared": {
+    "message": "Текст лічильника очищено!"
+  },
+  "techStatScripts": {
+    "message": "Сценарії"
+  },
+  "techNetworkOptInHint": {
+    "message": "Надсилає запити на dns.google та ipinfo.io."
+  },
+  "swNoHistory": {
+    "message": "Немає історії трансляцій"
+  },
+  "whatsNewTitle": {
+    "message": "Що нового у версії 1.6"
+  },
+  "techNotFound": {
+    "message": "Не знайдено."
+  },
+  "notesPlaceholder": {
+    "message": "Пишіть нотатки тут..."
+  },
+  "radioArtist": {
+    "message": "За підтримки розширення All In One"
+  },
+  "charsLabel": {
+    "message": "Символи"
+  },
+  "trackerImportSuccess": {
+    "message": "Дані успішно імпортовано!"
+  },
+  "copyEnableTitle": {
+    "message": "Копіювати"
+  },
+  "techCatStats": {
+    "message": "Статистика"
+  },
+  "dateLabel": {
+    "message": "Дата"
+  },
+  "techCatNetwork": {
+    "message": "Мережа"
+  },
+  "techCatEcom": {
+    "message": "Електронна комерція"
+  },
+  "currentRecordedLabel": {
+    "message": "ПОТОЧНИЙ ЗАПИС"
+  },
+  "toastCookieOff": {
+    "message": "Автоматичне блокування файлів cookie вимкнено"
+  },
+  "toastModuleLoadError": {
+    "message": "Помилка завантаження модуля"
+  },
+  "techCatStyles": {
+    "message": "Стилі"
+  },
+  "extDesc": {
+    "message": "Найкращий інструмент, що об'єднує всі основні функції у швидкому, сучасному та безкоштовному інтерфейсі."
+  },
+  "resetBtn": {
+    "message": "Скинути"
+  },
+  "addDateTooltip": {
+    "message": "Додати сьогоднішню дату"
+  },
+  "supportTitle": {
+    "message": "Підтримати розширення"
+  },
+  "toastCounterCopied": {
+    "message": "Текст скопійовано в буфер обміну!"
+  },
+  "savedIndicator": {
+    "message": "Збережено"
+  },
+  "counterPlaceholder": {
+    "message": "Вставте текст сюди..."
+  },
+  "techFoundPrefix": {
+    "message": "Знайдено: "
+  },
+  "systemPageTitle": {
+    "message": "СИСТЕМНА СТОРІНКА"
+  },
+  "markerClearAllTooltip": {
+    "message": "Очистити все"
+  },
+  "analyticsOptOutLabel": {
+    "message": "Вимкнути аналітику"
+  },
+  "trackerModeDay": {
+    "message": "Денний перегляд"
+  },
+  "techItemsSuffix": {
+    "message": "елементів"
+  },
+  "toastStopwatchCleared": {
+    "message": "Живу історію очищено!"
+  },
+  "trackerTotal": {
+    "message": "Всього"
+  },
+  "swStatusReady": {
+    "message": "ГОТОВО"
+  },
+  "trackerTotalShort": {
+    "message": "Всього"
+  },
+  "blockCookiesLabel": {
+    "message": "Автоматично блокувати файли cookie"
+  },
+  "markerDrawTooltip": {
+    "message": "Малювати"
+  },
+  "trackerMonthLabel": {
+    "message": "Цей місяць"
+  },
+  "techStatSvg": {
+    "message": "SVG"
+  },
+  "techStatTables": {
+    "message": "Таблиці"
+  },
+  "techStatImages": {
+    "message": "Зображення"
+  },
+  "toastRadioSaved": {
+    "message": "URL-адресу радіостанції збережено!"
+  },
+  "trackerToday": {
+    "message": "Сьогодні"
+  },
+  "techStatDom": {
+    "message": "DOM"
+  },
+  "wordsLabel": {
+    "message": "Слова"
+  },
+  "clearAllBtn": {
+    "message": "ОЧИСТИТИ ВСЕ"
+  },
+  "toastCopyOn": {
+    "message": "Для цього сайту ввімкнено копіювання"
+  },
+  "clearSiteDataBtn": {
+    "message": "Очистити всі дані з цього сайту"
+  },
+  "colorPickerPicking": {
+    "message": "Вибір..."
+  },
+  "cacheClearConfirm": {
+    "message": "Очистити всі дані з цього сайту"
+  },
+  "markerTextTooltip": {
+    "message": "Текст"
+  },
+  "radioTitle": {
+    "message": "Радіо IN"
+  },
+  "trackerSelectedMonth": {
+    "message": "Вибраний місяць"
+  },
+  "toastCopyOff": {
+    "message": "Копіювання вимкнено"
+  },
+  "fontCopied": {
+    "message": "Скопійовано!"
+  },
+  "notesLinkText": {
+    "message": "Посилання"
+  },
+  "radioClearConfirm": {
+    "message": "Очистити збережену радіостанцію?"
+  },
+  "trackerAvgThatMonth": {
+    "message": "Середній (місяць)"
+  },
+  "techTitle": {
+    "message": "Технології"
+  },
+  "lapBtn": {
+    "message": "КОЛО"
+  },
+  "playBtn": {
+    "message": "Відтворити"
+  },
+  "toastDarkModeOn": {
+    "message": "Темний режим увімкнено"
+  },
+  "techCatPayment": {
+    "message": "Оплата"
+  },
+  "toastCookieWhitelistOn": {
+    "message": "Файли cookie дозволені для цього сайту"
+  },
+  "markerLineTooltip": {
+    "message": "Лінія"
+  },
+  "techStatIframes": {
+    "message": "iframes"
+  },
+  "counterModalTitle": {
+    "message": "ЛІЧИЛЬНИК СИМВОЛІВ"
+  },
+  "fontTitle": {
+    "message": "Шрифти"
+  },
+  "toastTrackerExported": {
+    "message": "Дані трекера успішно експортовано!"
+  },
+  "toastNotesImportError": {
+    "message": "Помилка імпорту нотаток!"
+  },
+  "swExportTxtBtn": {
+    "message": "ЕКСПОРТ ЯК .TXT"
+  },
+  "swUndoTitle": {
+    "message": "Видалити цей момент"
+  },
+  "startBtn": {
+    "message": "СТАРТ"
+  },
+  "markerMoveTooltip": {
+    "message": "Перемістити"
+  },
+  "techModalTitle": {
+    "message": "ТЕХНОЛОГІЇ САЙТУ"
+  },
+  "saveRadioStationBtn": {
+    "message": "ЗБЕРЕГТИ СТАНЦІЮ"
+  },
+  "techCatDb": {
+    "message": "Database"
+  },
+  "toastNotesCleared": {
+    "message": "Усі примітки видалено!"
+  },
+  "toastTrackerImported": {
+    "message": "Дані трекера успішно імпортовано!"
+  },
+  "toastInvalidRadioUrl": {
+    "message": "Недійсний URL! URL-адреса має починатися з http:// або https://"
+  },
+  "trackerImportError": {
+    "message": "Помилка читання файлу."
+  },
+  "swStatusLive": {
+    "message": "ТРАНСЛЯЦІЯ ТРИВАЄ"
+  },
+  "linkLabel": {
+    "message": "Посилання"
+  },
+  "techCatAnalytics": {
+    "message": "Аналітика"
+  },
+  "liveHistoryLabel": {
+    "message": "ІСТОРІЯ НАЖИВО"
+  },
+  "colorPickerTitle": {
+    "message": "Вибір кольору"
+  },
+  "appTitle": {
+    "message": "ALL IN ONE"
+  },
+  "swTotalDurationPrefix": {
+    "message": "ЗАГАЛЬНА ТРИВАЛІСТЬ: "
+  },
+  "stopwatchReady": {
+    "message": "ГОТОВО"
+  },
+  "confirmClearHistory": {
+    "message": "Ви впевнені, що хочете очистити всю історію?"
+  },
+  "markerTitle": {
+    "message": "Маркер"
+  },
+  "trackerModalTitle": {
+    "message": "Webtime Tracker"
+  },
+  "grabTextTooltip": {
+    "message": "Витягти текст зі сторінки"
+  },
+  "radioUrlPlaceholder": {
+    "message": "https://stream.radio.com/play"
+  },
+  "clearRadioInputTooltip": {
+    "message": "Чисте поле"
+  },
+  "privacyLabel": {
+    "message": "Політика конфіденційності"
+  },
+  "whatsNewFeature4": {
+    "message": "Перемикання зворотнього зв’язку: анімація короткого пульсу та підтвердження під час зміни налаштувань."
+  },
+  "trackerThatDay": {
+    "message": "Того дня"
+  },
+  "toastCookieWhitelistError": {
+    "message": "Не вдалося оновити список"
+  },
+  "cookieWhitelistLabel": {
+    "message": "Дозволити файли cookie для цього сайту"
+  },
+  "textLabel": {
+    "message": "Текст"
+  },
+  "cacheCleared": {
+    "message": "Очищено!"
+  },
+  "importRadioTooltip": {
+    "message": "Імпорт радіостанції на замовлення"
+  },
+  "radioPlay": {
+    "message": "Играть"
+  },
+  "techLoadingMsg": {
+    "message": "Сканер аналізує сайт..."
+  },
+  "swCopyBtn": {
+    "message": "КОПІЮВАТИ В БУФЕР ОБМІНУ"
+  },
+  "techScannerFailed": {
+    "message": "Сканування не вдалося на цій сторінці."
+  },
+  "techNetworkOptInLabel": {
+    "message": "Показати інформацію про мережу (DNS/IP)"
+  },
+  "trackerTodayLabel": {
+    "message": "Сьогодні"
+  },
+  "toastNotesImported": {
+    "message": "Нотатки успішно імпортовано!"
+  },
+  "techCatCdn": {
+    "message": "CDN"
+  },
+  "colorPickerCopied": {
+    "message": "Скопійовано: "
+  },
+  "swCopiedBtn": {
+    "message": "✓ СКОПІЙОВАНО"
+  },
+  "techCatCaching": {
+    "message": "Кешування"
+  },
+  "techCatSecurity": {
+    "message": "Безпека"
+  },
+  "toastYtOn": {
+    "message": "Увімкнено відображення \"Не подобається\" на YouTube"
+  },
+  "extName": {
+    "message": "All In One - Найкращий інструмент для продуктивності"
+  },
+  "toastCookieOn": {
+    "message": "Увімкнено автоматичне блокування файлів cookie"
+  },
+  "techScannerUnavailable": {
+    "message": "Сканер недоступний на цій сторінці."
+  },
+  "notesTooLarge": {
+    "message": "Нотатка занадто велика"
+  },
+  "swDurationLabel": {
+    "message": "Тривалість: "
+  },
+  "ytDislikeTitle": {
+    "message": "YouTube Dislike"
+  },
+  "donateBtn": {
+    "message": "Пожертвувати та підтримати"
+  },
+  "techStatVideo": {
+    "message": "Video"
+  },
+  "settingsTooltip": {
+    "message": "Налаштування"
+  },
+  "trackerThisMonthShort": {
+    "message": "Цей місяць"
+  },
+  "techCatSystem": {
+    "message": "система"
+  },
+  "exportTooltip": {
+    "message": "Експорт даних"
+  },
+  "exportNotesTooltip": {
+    "message": "Експорт нотаток"
+  },
+  "radioPause": {
+    "message": "Пауза"
+  },
+  "websiteTooltip": {
+    "message": "Офіційний сайт"
+  },
+  "rateBtn": {
+    "message": "Оцінити розширення"
+  },
+  "techCatBase": {
+    "message": "База"
+  },
+  "cacheModalTitle": {
+    "message": "ФАЙЛИ COOKIE ТА КЕШ"
+  },
+  "cancelBtn": {
+    "message": "СКАСУВАТИ"
+  },
+  "addUrlTooltip": {
+    "message": "Додати поточну URL"
+  },
+  "trackerAvgTotal": {
+    "message": "Середній"
+  },
+  "techStatForms": {
+    "message": "Форми"
+  },
+  "cacheError": {
+    "message": "Помилка"
+  },
+  "readingTimeLabel": {
+    "message": "Читання"
+  },
+  "exportAllSettingsBtn": {
+    "message": "Експорт усіх налаштувань та даних"
+  },
+  "toastAllSettingsExported": {
+    "message": "Усі налаштування та дані успішно експортовано!"
+  },
+  "trackerDevFilter": {
+    "message": "Фільтрувати локальні/dev домени"
+  },
+  "trackerLimitExceeded": {
+    "message": "Ліміт перевищено"
+  },
+  "trackerSetLimit": {
+    "message": "Денний ліміт (хв)"
+  }
 }

@@ -8,7 +8,7 @@ let stopwatchInitialized = false;
 let swUiRafId = null;
 let swUiActive = false;
 let swLastUiTick = 0;
-let kickEditMode = false; // when true, user is editing channel — don't auto-snap back to synced mode
+let kickEditMode = false; // when true, user is editing channel: don't auto-snap back to synced mode
 let lastRenderedLapsJson = "";
 
 const swFormat = (ms) => {
@@ -21,6 +21,15 @@ const swFormat = (ms) => {
 };
 
 let swRefreshUIDebounceId = null;
+// Last known running state, so the 200ms ticker can update the clock without reading storage.
+let swCache = { isRunning: false, startTime: 0 };
+let swLastFullRefresh = 0;
+
+const swTickTimer = () => {
+    const timerEl = document.getElementById("timer");
+    if (!timerEl) return;
+    timerEl.innerText = swCache.isRunning ? swFormat(Date.now() - swCache.startTime) : "00:00:00";
+};
 
 // Switches kick-sync-container between input mode and synced mode
 const swUpdateKickUI = (kickChannel) => {
@@ -51,6 +60,7 @@ const swRefreshUI = () => {
                 const isRunning = data.isRunning === true;
                 const startTime = Number.isFinite(data.startTime) ? data.startTime : 0;
                 const currentLaps = Array.isArray(data.currentLaps) ? data.currentLaps : [];
+                swCache = { isRunning, startTime };
 
                 // Skip kick UI update when user is actively editing the channel name
                 if (!kickEditMode) swUpdateKickUI(data.kickChannel);
@@ -91,8 +101,12 @@ const swRefreshUI = () => {
                             removeBtn.title = "Ukloni momenat";
                             removeBtn.onclick = (e) => {
                                 e.stopPropagation();
-                                const newLaps = currentLaps.filter((_, i) => i !== originalIndex);
-                                chrome.storage.local.set({ currentLaps: newLaps }, swRefreshUI);
+                                // Re-read laps so laps added meanwhile (for example by the shortcut) are not lost.
+                                chrome.storage.local.get(["currentLaps"], (latest) => {
+                                    const latestLaps = Array.isArray(latest.currentLaps) ? latest.currentLaps : [];
+                                    const newLaps = latestLaps.filter((_, i) => i !== originalIndex);
+                                    chrome.storage.local.set({ currentLaps: newLaps }, swRefreshUI);
+                                });
                             };
 
                             row.appendChild(nameSpan);
@@ -244,7 +258,7 @@ const swRenderHistory = () => {
                                     : `lajv_${realIdx}_${dateFormatted}`;
                                 a.download = `${cleanName}.txt`;
                                 a.click();
-                                URL.revokeObjectURL(url);
+                                setTimeout(() => URL.revokeObjectURL(url), 1000);
                             } catch {
                                 // Silent fail
                             }
@@ -311,7 +325,8 @@ const doKickSync = (channelSlug) => {
         syncBtn.innerText = "Čekaj...";
     }
     try {
-        chrome.runtime.sendMessage({ action: "sync_kick_live", channelSlug });
+        const pending = chrome.runtime.sendMessage({ action: "sync_kick_live", channelSlug });
+        if (pending && typeof pending.catch === "function") pending.catch(() => { });
     } catch {
         if (syncBtn) {
             syncBtn.disabled = false;
@@ -445,7 +460,7 @@ export function initStopwatch() {
             }
         });
 
-        // Promeni — switch to edit mode (stops active session, saves to history, and opens edit mode)
+        // Promeni: switch to edit mode (stops active session, saves to history, and opens edit mode)
         changeBtn.addEventListener("click", () => {
             chrome.storage.local.get(["isRunning", "startTime", "currentLaps", "history", "kickChannel"], (data) => {
                 const oldChannel = data.kickChannel || "";
@@ -528,11 +543,17 @@ export function initStopwatch() {
     const startUiTicker = () => {
         swUiActive = true;
         swLastUiTick = 0;
+        swLastFullRefresh = 0;
         const tick = (time) => {
             if (!swUiActive) return;
             if (time - swLastUiTick > 200) {
                 swLastUiTick = time;
-                swRefreshUI();
+                swTickTimer();
+                // Full storage refresh only as a safety net; real changes arrive via storage.onChanged.
+                if (time - swLastFullRefresh > 2000) {
+                    swLastFullRefresh = time;
+                    swRefreshUI();
+                }
             }
             swUiRafId = requestAnimationFrame(tick);
         };
@@ -593,7 +614,8 @@ export function initStopwatch() {
 
     document.getElementById("lap")?.addEventListener("click", () => {
         trackEvent("stopwatch_lap");
-        chrome.runtime.sendMessage({ action: "manual_lap" });
+        const pending = chrome.runtime.sendMessage({ action: "manual_lap" });
+        if (pending && typeof pending.catch === "function") pending.catch(() => { });
     });
 
     document.getElementById("stop")?.addEventListener("click", () => {
@@ -635,6 +657,12 @@ export function initStopwatch() {
             swModal.classList.add("hidden");
             showToast(getI18nMsg("toastStopwatchCleared", "Istorija lajvova je obrisana!"), "success");
         });
+    });
+
+    chrome.storage.onChanged?.addListener((changes, areaName) => {
+        if (areaName && areaName !== "local") return;
+        if (changes.isRunning || changes.startTime || changes.currentLaps || changes.kickChannel) swRefreshUI();
+        if (changes.history) swRenderHistory();
     });
 
     chrome.runtime.onMessage.addListener((msg) => {
@@ -688,11 +716,11 @@ export function initStopwatch() {
             chrome.storage.local.get(["kickChannel"], (res) => {
                 const ch = res && res.kickChannel ? res.kickChannel : "";
                 if (ch) {
-                    // Has a synced channel — go back to synced display
+                    // Has a synced channel: go back to synced display
                     kickEditMode = false;
                     swUpdateKickUI(ch);
                 } else {
-                    // No channel synced yet — just stay in input mode
+                    // No channel synced yet: just stay in input mode
                     kickEditMode = false;
                 }
             });
