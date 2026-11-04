@@ -14,7 +14,6 @@ import {
     Clock,
     Code,
     Coffee,
-    Cookie,
     Copy,
     Database,
     Download,
@@ -59,6 +58,15 @@ import {
     ZapOff
 } from 'lucide';
 
+// Cista ikonica kolacica uskladjena sa All In One ekstenzijom (otporna na adblockere)
+const CookieIcon = [
+    ['path', { d: 'M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5' }],
+    ['path', { d: 'M8.5 8.5v.01' }],
+    ['path', { d: 'M16 12.5v.01' }],
+    ['path', { d: 'M12 16v.01' }],
+    ['path', { d: 'M11 12.5v.01' }]
+];
+
 export const siteIcons = {
     Activity,
     ArrowLeft,
@@ -67,6 +75,7 @@ export const siteIcons = {
     BarChart2,
     BarChart3,
     Bug,
+    CacheClean: CookieIcon,
     Calculator,
     Calendar,
     Check,
@@ -75,7 +84,8 @@ export const siteIcons = {
     Clock,
     Code,
     Coffee,
-    Cookie,
+    Cookie: CookieIcon,
+    CookieTool: CookieIcon,
     Copy,
     Database,
     Download,

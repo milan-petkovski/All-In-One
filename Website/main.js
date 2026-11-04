@@ -69,8 +69,9 @@ export async function applyLanguage(lang) {
         });
 
         // Dugme za promenu jezika
+        const nextLang = lang === 'sr' ? 'EN' : 'SR';
         document.querySelectorAll('#lang-text, [data-lang-text]').forEach(el => {
-            el.textContent = lang === 'sr' ? 'EN' : 'SR';
+            el.textContent = nextLang;
         });
 
         // Lokalizacija datuma
@@ -121,7 +122,7 @@ function renderUpdates(lang) {
 
         const isIspod = !isAktivno && prosaoAktivni;
         const card = document.createElement('div');
-        card.className = `relative flex flex-col md:flex-row items-center mb-24 ${isIspod ? "group opacity-60 hover:opacity-100 transition-all duration-500" : "group"}`;
+        card.className = `relative flex flex-col md:flex-row items-center mb-24 group`;
 
         const dot = document.createElement('div');
         dot.className = `absolute left-6 md:left-1/2 w-6 h-6 rounded-full -translate-x-1/2 z-20 ${isAktivno ? 'bg-darkpanel border-4 border-brand shadow-[0_0_20px_#00ff88]' : 'bg-gray-200 border-4 border-white'}`;
@@ -139,23 +140,23 @@ function renderUpdates(lang) {
 
         const versionWrapper = document.createElement('div');
         versionWrapper.className = "relative inline-block mt-4";
-        const versionH3 = document.createElement('h3');
-        versionH3.className = "text-6xl md:text-7xl font-black text-darkpanel tracking-tighter leading-none transition-transform duration-500 group-hover:scale-105 md:origin-right origin-left";
+        const versionH2 = document.createElement('h2');
+        versionH2.className = "text-6xl md:text-7xl font-black text-darkpanel tracking-tighter leading-none transition-transform duration-500 group-hover:scale-105 md:origin-right origin-left";
         
         const vSpan = document.createElement('span');
-        vSpan.className = "text-gray-300 text-4xl md:text-5xl mr-1 font-bold";
+        vSpan.className = "text-gray-600 text-4xl md:text-5xl mr-1 font-bold";
         vSpan.textContent = 'v';
-        versionH3.appendChild(vSpan);
-        versionH3.appendChild(document.createTextNode(item.verzija));
-        versionWrapper.appendChild(versionH3);
+        versionH2.appendChild(vSpan);
+        versionH2.appendChild(document.createTextNode(item.verzija));
+        versionWrapper.appendChild(versionH2);
         leftSide.appendChild(versionWrapper);
 
         const dateWrapper = document.createElement('div');
-        dateWrapper.className = "flex items-center gap-4 mt-4 opacity-60 group-hover:opacity-100 transition-opacity duration-500";
+        dateWrapper.className = "flex items-center gap-4 mt-4 transition-opacity duration-500";
         const line = document.createElement('div');
         line.className = "h-px w-12 bg-gradient-to-r from-transparent to-gray-400 hidden md:block";
         const dateP = document.createElement('p');
-        dateP.className = "text-gray-500 font-extrabold text-[11px] uppercase tracking-[0.3em]";
+        dateP.className = "text-gray-700 font-extrabold text-[11px] uppercase tracking-[0.3em]";
         dateP.textContent = item[lang]?.datum || '';
         dateWrapper.append(line, dateP);
         leftSide.appendChild(dateWrapper);
@@ -177,24 +178,24 @@ function renderUpdates(lang) {
         iconWrap.className = "w-10 h-10 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shadow-inner";
         const iconI = document.createElement('i');
         iconI.setAttribute('data-lucide', isAktivno ? 'zap' : 'package');
-        iconI.className = `w-5 h-5 ${isAktivno ? 'text-brand' : 'text-gray-500'}`;
+        iconI.className = `w-5 h-5 ${isAktivno ? 'text-brand' : 'text-gray-400'}`;
         iconWrap.appendChild(iconI);
         
         const titleWrap = document.createElement('div');
-        const h4 = document.createElement('h4');
-        h4.className = "text-white font-black text-lg uppercase tracking-tight italic leading-tight";
-        h4.textContent = item[lang]?.naslov || '';
+        const h3 = document.createElement('h3');
+        h3.className = "text-white font-black text-lg uppercase tracking-tight italic leading-tight";
+        h3.textContent = item[lang]?.naslov || '';
         const subP = document.createElement('p');
-        subP.className = "text-brand text-[9px] font-black uppercase tracking-widest opacity-80";
+        subP.className = "text-brand text-[9px] font-black uppercase tracking-widest";
         subP.textContent = window.currentTranslations['upd_dyn_stable'] || 'Stable Release';
-        titleWrap.append(h4, subP);
+        titleWrap.append(h3, subP);
         header.append(iconWrap, titleWrap);
         innerContent.appendChild(header);
 
         const descBox = document.createElement('div');
         descBox.className = "bg-white/5 rounded-[1.5rem] p-5 border border-white/5 shadow-inner";
         const descP = document.createElement('p');
-        descP.className = "text-gray-300 leading-relaxed font-medium text-[14px]";
+        descP.className = "text-gray-200 leading-relaxed font-medium text-[14px]";
         descP.textContent = item[lang]?.opis || '';
         descBox.appendChild(descP);
         innerContent.appendChild(descBox);
@@ -202,7 +203,7 @@ function renderUpdates(lang) {
         const footer = document.createElement('div');
         footer.className = "mt-6 flex items-center justify-between";
         const footLeft = document.createElement('div');
-        footLeft.className = "flex items-center gap-2 text-gray-500";
+        footLeft.className = "flex items-center gap-2 text-gray-400";
         const pulse = document.createElement('span');
         pulse.className = "w-1.5 h-1.5 rounded-full bg-brand animate-pulse";
         const footText = document.createElement('span');
@@ -270,6 +271,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const latestUpdate = updateData.find(item => item.aktivno) || updateData[0];
         const normalizedVersion = String(latestUpdate.verzija).replace(/^v/i, '');
         latestVersionLink.textContent = `v${normalizedVersion}`;
+        latestVersionLink.setAttribute('aria-label', `Verzija v${normalizedVersion}`);
     }
 
     // 4. Delegate klikove za data-ga-event

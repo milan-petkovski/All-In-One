@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="ins_page_title">All In One | Hvala na instalaciji</title>
 
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://allinone.milanwebportal.com/hvala.html">
     <meta name="description"
         content="Hvala što koristiš All In One ekstenziju. Tvoj novi, pametniji workflow počinje ovde.">
     <meta name="author" content="Milan Web Portal">
@@ -52,7 +53,7 @@
             </a>
         </div>
 
-        <div class="absolute bottom-10 opacity-20 font-black uppercase tracking-[0.3em] text-[10px]">
+        <div class="absolute bottom-10 font-black uppercase tracking-[0.3em] text-[10px] text-gray-700">
             Milan Web Portal
         </div>
     </div>
@@ -61,7 +62,7 @@
     <header class="fixed top-3 left-0 right-0 z-50 px-6 pointer-events-none">
         <nav
             class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center bg-white/70 backdrop-blur-2xl rounded-full border border-white/40 shadow-[0_20px_40px_rgba(0,0,0,0.08)] pointer-events-auto transition-all duration-500 hover:shadow-brand/5 hover:border-brand/20 flex-wrap gap-4">
-            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer" aria-label="All In One Početna">
                 <img src="/logo-128.webp" alt="All In One Logo" width="32" height="32" fetchpriority="high" decoding="async" class="w-8 h-8 object-contain transition-transform duration-500 group-hover:rotate-12">
                 <span class="font-black text-3xl text-brand uppercase leading-none relative -top-[1px]">All In One</span>
             </a>
@@ -69,12 +70,12 @@
             <div class="flex items-center gap-3">
                 <a href="https://chromewebstore.google.com/detail/all-in-one/hmkcbieabcldlndhjeemggokhlebjoem/reviews"
                     class="inline-flex items-center justify-center gap-2 bg-brand text-darkpanel font-black py-3 px-8 rounded-full hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_10px_25px_rgba(0,255,136,0.4)] whitespace-nowrap uppercase text-sm"
-                    target="_blank" rel="noopener noreferrer" data-ga-event="website_rate" data-ga-location="Navbar">
+                    target="_blank" rel="noopener noreferrer" data-ga-event="website_rate" data-ga-location="Navbar" aria-label="Oceni All In One na Chrome Web prodavnici">
                     <i data-lucide="star" class="w-5 h-5 stroke-[3]"></i>
                     <span class="max-[425px]:hidden" data-i18n="upd_nav_rate">Oceni na prodavnici</span>
                 </a>
 
-                <button id="lang-switch" aria-label="Promeni jezik"
+                <button id="lang-switch"
                     class="inline-flex items-center justify-center gap-2 bg-brand text-darkpanel font-black py-3 px-5 rounded-full hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_10px_25px_rgba(0,255,136,0.4)] whitespace-nowrap uppercase text-sm pointer-events-auto">
                     <i data-lucide="languages" class="w-5 h-5 stroke-[3]"></i>
                     <span id="lang-text">EN</span>
@@ -82,7 +83,7 @@
 
                 <a href="https://paypal.me/milanwebportal"
                     class="inline-flex items-center justify-center gap-2 bg-brand text-darkpanel font-black py-3 px-5 rounded-full hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_10px_25px_rgba(0,255,136,0.4)] whitespace-nowrap uppercase text-sm"
-                    target="_blank" rel="noopener noreferrer" data-ga-event="website_coffee">
+                    target="_blank" rel="noopener noreferrer" data-ga-event="website_coffee" aria-label="Doniraj kafu">
                     <i data-lucide="coffee" class="w-5 h-5 stroke-[3]"></i>
                 </a>
             </div>
@@ -103,7 +104,7 @@
                 data-i18n="ins_hero_title">
                 Hvala na <br><span class="text-brand">Instalaciji!</span>
             </h1>
-            <p class="text-xl text-gray-500 font-medium max-w-2xl mx-auto mb-14" data-i18n="ins_hero_subtitle">
+            <p class="text-xl text-gray-600 font-medium max-w-2xl mx-auto mb-14" data-i18n="ins_hero_subtitle">
                 Uspešno si dodao All In One u svoj browser. Otkrij sve funkcije koje su ti sada dostupne.
             </p>
 
@@ -116,8 +117,8 @@
                                 <i data-lucide="pin" class="w-5 h-5"></i>
                             </div>
                         </div>
-                        <h3 class="text-lg font-black text-gray-900 uppercase italic tracking-tight mb-2" data-i18n="ins_step1_title">Zakači ekstenziju</h3>
-                        <p class="text-sm text-gray-500 font-medium leading-relaxed" data-i18n="ins_step1_desc">Klikni na ikonicu slagalice u gornjem desnom uglu svog pregledača i zakači All In One u traku.</p>
+                        <h2 class="text-lg font-black text-gray-900 uppercase italic tracking-tight mb-2" data-i18n="ins_step1_title">Zakači ekstenziju</h2>
+                        <p class="text-sm text-gray-600 font-medium leading-relaxed" data-i18n="ins_step1_desc">Klikni na ikonicu slagalice u gornjem desnom uglu svog pregledača i zakači All In One u traku.</p>
                     </div>
                 </div>
 
@@ -129,8 +130,8 @@
                                 <i data-lucide="zap" class="w-5 h-5"></i>
                             </div>
                         </div>
-                        <h3 class="text-lg font-black text-gray-900 uppercase italic tracking-tight mb-2" data-i18n="ins_step2_title">Otvori brzi meni</h3>
-                        <p class="text-sm text-gray-500 font-medium leading-relaxed" data-i18n="ins_step2_desc">Jednim klikom na zelenu All In One ikonicu otvoriće se moderan kontrolni centar sa svim opcijama.</p>
+                        <h2 class="text-lg font-black text-gray-900 uppercase italic tracking-tight mb-2" data-i18n="ins_step2_title">Otvori brzi meni</h2>
+                        <p class="text-sm text-gray-600 font-medium leading-relaxed" data-i18n="ins_step2_desc">Jednim klikom na zelenu All In One ikonicu otvoriće se moderan kontrolni centar sa svim opcijama.</p>
                     </div>
                 </div>
 
@@ -142,15 +143,15 @@
                                 <i data-lucide="sparkles" class="w-5 h-5"></i>
                             </div>
                         </div>
-                        <h3 class="text-lg font-black text-gray-900 uppercase italic tracking-tight mb-2" data-i18n="ins_step3_title">Uživaj u svim alatima</h3>
-                        <p class="text-sm text-gray-500 font-medium leading-relaxed" data-i18n="ins_step3_desc">Isprobaj Radio, Zvuk 1000%, Dark Mode, Lenjir, Tech Scanner, Pametne Beleške i Webtime Tracker.</p>
+                        <h2 class="text-lg font-black text-gray-900 uppercase italic tracking-tight mb-2" data-i18n="ins_step3_title">Uživaj u svim alatima</h2>
+                        <p class="text-sm text-gray-600 font-medium leading-relaxed" data-i18n="ins_step3_desc">Isprobaj Radio, Zvuk 1000%, Dark Mode, Lenjir, Tech Scanner, Pametne Beleške i Webtime Tracker.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="pt-0">
-            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <div
                     class="bg-white p-10 rounded-[2.5rem] border border-gray-100 feature-card text-center flex flex-col relative overflow-hidden group">
@@ -162,9 +163,9 @@
                         <i data-lucide="radio"
                             class="w-12 h-12 text-brand relative z-10 drop-shadow-[0_0_15px_rgba(0,255,136,0.5)]"></i>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_1_t">Radio IN</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_1_d">Slušaj
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_1_t">Radio IN</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_1_d">Slušaj
                         omiljeni radio direktno iz ekstenzije. Pusti i pauziraj bez otvaranja novih tabova.</p>
                 </div>
 
@@ -183,9 +184,9 @@
                             </div>
                         </div>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_2_t">Zvuk 1000%</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_2_d">
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_2_t">Zvuk 1000%</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_2_d">
                         Pojačaj zvuk na bilo kom tabu do neverovatnih 1000%. Daleko iznad standardnog ograničenja.</p>
                 </div>
 
@@ -203,9 +204,9 @@
                                 class="font-mono text-white bg-black/60 px-4 py-1.5 rounded-xl text-xs font-black tracking-widest backdrop-blur-sm">#00FF88</span>
                         </div>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_3_t">Color Picker</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_3_d">Klikni
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_3_t">Color Picker</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_3_d">Klikni
                         bilo gde na stranici da pomoću pipete izvučeš i automatski kopiraš tačan HEX kod boje.</p>
                 </div>
 
@@ -221,9 +222,9 @@
                             </div>
                         </div>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_4_t">Dark Mode</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_4_d">
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_4_t">Dark Mode</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_4_d">
                         Forsiraj tamni režim na svakom sajtu. Pametna inverzija boja štiti tvoje oči tokom noćnog rada.
                     </p>
                 </div>
@@ -255,9 +256,9 @@
                             </div>
                         </div>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_5_t">Page Ruler</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_5_d">
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_5_t">Page Ruler</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_5_d">
                         Aktiviraj interaktivni lenjir i precizno izmeri dimenzije svakog elementa na sajtu u pikselima.
                     </p>
                 </div>
@@ -271,9 +272,9 @@
                         <i data-lucide="copy"
                             class="w-12 h-12 text-brand drop-shadow-[0_0_15px_rgba(0,255,136,0.4)] group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_6_t">Enable Copy</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_6_d">
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_6_t">Enable Copy</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_6_d">
                         Uključi opciju i zaobiđi blokadu desnog klika ili selekcije teksta na zaštićenim sajtovima.</p>
                 </div>
 
@@ -286,9 +287,9 @@
                         <i data-lucide="edit-3"
                             class="w-12 h-12 text-brand drop-shadow-[0_0_15px_rgba(0,255,136,0.4)] group-hover:-translate-y-1 transition-transform duration-500"></i>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_7_t">Page Marker</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_7_d">Crtaj,
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_7_t">Page Marker</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_7_d">Crtaj,
                         podvlači, piši, pomeraj i briši oznake direktno po ekranu. Odličan alat za video prezentacije.
                     </p>
                 </div>
@@ -308,9 +309,9 @@
                                 class="bg-[#25252b] text-gray-400 text-xs font-black px-4 py-2.5 rounded-xl border border-gray-700 shadow-inner">Angular</span>
                         </div>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_8_t">Tehnologije sajta</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_8_d">Saznaj
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_8_t">Tehnologije sajta</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_8_d">Saznaj
                         jednim klikom u čemu je sajt napravljen i analiziraj pozadinske strukture tog sajta.</p>
                 </div>
 
@@ -320,12 +321,12 @@
                         class="absolute inset-0 bg-gradient-to-b from-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     </div>
                     <div class="mini-ui relative z-10 group-hover:border-brand/30 transition-colors duration-500">
-                        <i data-lucide="cookie"
+                        <i data-lucide="cache-clean"
                             class="w-12 h-12 text-brand drop-shadow-[0_0_15px_rgba(0,255,136,0.4)] group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_9_t">Kolačići i keš</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_9_d">Obriši
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_9_t">Kolačići i keš</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_9_d">Obriši
                         keš i kolačiće za trenutni sajt u jednom kliku i automatski sakrij dosadne prozore za pristanak
                         na kolačiće.</p>
                 </div>
@@ -339,9 +340,9 @@
                         <span
                             class="text-6xl font-serif text-brand italic drop-shadow-[0_0_20px_rgba(0,255,136,0.5)]">Ff</span>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_10_t">Font Finder</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_10_d">Pređi
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_10_t">Font Finder</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_10_d">Pređi
                         mišem preko bilo kog teksta na sajtu da bi odmah saznao tačno koji font je u upotrebi.</p>
                 </div>
 
@@ -357,9 +358,9 @@
                                 class="text-brand font-mono text-3xl font-black tracking-widest drop-shadow-[0_0_10px_rgba(0,255,136,0.4)]">1,240</span>
                         </div>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_11_t">Brojač karaktera</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_11_d">Lako
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_11_t">Brojač karaktera</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_11_d">Lako
                         i brzo prebroj selektovane karaktere i reči. Idealno za pisanje SEO naslova i opisa.</p>
                 </div>
 
@@ -373,9 +374,9 @@
                             class="text-brand font-mono text-4xl font-black tracking-tighter drop-shadow-[0_0_15px_rgba(0,255,136,0.5)]">
                             00:15:30</div>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_12_t">Štoperica</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_12_d">
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_12_t">Štoperica</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_12_d">
                         Zabeleži bitne trenutke tokom lajva jednom prečicom. Automatska štoperica štedi sate u montaži i
                         menja ručno pisanje tajmstempova.</p>
                 </div>
@@ -388,9 +389,9 @@
                     <div class="mini-ui relative z-10 group-hover:border-brand/30 transition-colors duration-500">
                         <i data-lucide="file-text" class="w-12 h-12 text-brand"></i>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_13_t">Pametne Beleške</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_13_d">
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_13_t">Pametne Beleške</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_13_d">
                         Zapiši bitne ideje! Podržava pametno rešavanje matematike u tekstu i lako dodavanje trenutnog
                         vremena.</p>
                 </div>
@@ -408,9 +409,9 @@
                             <div class="w-2 h-12 bg-brand rounded-full"></div>
                         </div>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_14_t">Webtime Tracker</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_14_d">
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_14_t">Webtime Tracker</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_14_d">
                         Automatski prati tačno vreme koje provodiš na različitim domenima. Analiziraj svoju statistiku
                         upotrebe.</p>
                 </div>
@@ -426,9 +427,9 @@
                             <span class="text-brand font-bold">12.5k</span>
                         </div>
                     </div>
-                    <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                        data-i18n="gf_15_t">Return YT Dislike</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_15_d">Vraća
+                    <h2 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                        data-i18n="gf_15_t">Return YT Dislike</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_15_d">Vraća
                         vidljivost brojača "nesviđanja" (dislikes) ispod klipova, radi direktno i automatski na
                         YouTube-u.</p>
                 </div>
@@ -461,7 +462,7 @@
 
         <div class="relative max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
 
-            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer" aria-label="All In One Početna">
                 <img src="/logo-128.webp" alt="All In One Logo" width="40" height="40" class="w-10 h-10 object-contain transition-transform duration-500 group-hover:rotate-12">
                 <span class="font-black text-4xl text-brand uppercase leading-none relative -top-[2px]">All In One</span>
             </a>
@@ -479,7 +480,7 @@
 
             <div class="flex gap-8">
                 <a href="privacy.html"
-                    class="relative text-gray-400 hover:text-gray-900 transition-colors font-bold text-sm uppercase tracking-widest group">
+                    class="relative text-gray-700 hover:text-gray-900 transition-colors font-bold text-sm uppercase tracking-widest group">
                     <span data-i18n="ft_privacy">Politika privatnosti</span>
                     <span
                         class="absolute -bottom-2 left-0 w-0 h-[2px] bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
@@ -490,7 +491,7 @@
     </footer>
 
     <!-- Back to Top -->
-    <div id="backToTop"
+    <div id="backToTop" role="button" aria-label="Povratak na vrh" tabindex="0"
         class="fixed bottom-8 right-8 z-50 w-12 h-12 flex items-center justify-center cursor-pointer opacity-0 pointer-events-none transition-all duration-300 hover:-translate-y-1">
         <svg class="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="48" fill="none" stroke="#e5e7eb" stroke-width="2" />

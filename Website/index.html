@@ -286,7 +286,7 @@
 
 <body class="antialiased font-sans relative">
 
-    <div id="mobile-blocker"
+    <div id="mobile-blocker" role="region" aria-label="Obaveštenje za mobilne uređaje"
         class="fixed inset-0 z-[9999] bg-[#f5f6f7] hidden flex-col items-center justify-center px-6 text-center">
 
         <div class="max-w-xs flex flex-col items-center">
@@ -295,15 +295,15 @@
                 <div class="absolute inset-0 bg-brand/5 rounded-full animate-ping-slow opacity-60"></div>
 
                 <i data-lucide="monitor"
-                    class="w-16 h-16 text-brand relative z-10 drop-shadow-[0_0_10px_rgba(0,255,136,0.3)]"></i>
+                    class="w-16 h-16 text-brand relative z-10 drop-shadow-[0_0_10px_rgba(0,135,78,0.3)]"></i>
             </div>
 
-            <h2 class="text-5xl font-[1000] uppercase italic tracking-tighter text-gray-900 leading-[0.8] mb-6"
+            <p class="text-5xl font-[1000] uppercase italic tracking-tighter text-gray-900 leading-[0.8] mb-6"
                 data-i18n="mobile_title">
                 SAMO ZA <br><span class="text-brand">DESKTOP.</span>
-            </h2>
+            </p>
 
-            <p class="text-gray-500 font-bold text-sm mb-10 leading-tight" data-i18n="mobile_desc">
+            <p class="text-gray-600 font-bold text-sm mb-10 leading-tight" data-i18n="mobile_desc">
                 Desktop browser ekstenzije ne rade na telefonu. Pošalji sebi link i instaliraj na kompu.
             </p>
 
@@ -315,7 +315,7 @@
             </a>
         </div>
 
-        <div class="absolute bottom-10 opacity-20 font-black uppercase tracking-[0.3em] text-[10px]">
+        <div class="absolute bottom-10 font-black uppercase tracking-[0.3em] text-[10px] text-gray-700">
             Milan Web Portal
         </div>
     </div>
@@ -324,7 +324,7 @@
         <nav
             class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center bg-white/70 backdrop-blur-2xl rounded-full border border-white/40 shadow-[0_20px_40px_rgba(0,0,0,0.08)] pointer-events-auto transition-all duration-500 hover:shadow-brand/5 hover:border-brand/20">
 
-            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer" aria-label="All In One Početna">
                 <img src="/logo-128.webp" alt="All In One Logo" width="32" height="32" fetchpriority="high" decoding="async" class="w-8 h-8 object-contain transition-transform duration-500 group-hover:rotate-12">
                 <span class="font-black text-3xl text-brand uppercase leading-none relative -top-[1px]">All In One</span>
             </a>
@@ -332,7 +332,8 @@
             <div class="flex items-center gap-3">
                 <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
                     class="inline-flex items-center justify-center gap-2 bg-brand text-black font-[1000] py-3 px-8 rounded-full btn-glow whitespace-nowrap uppercase text-sm shadow-[0_10px_25px_rgba(0,255,136,0.4)]"
-                    target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Navbar">
+                    target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Navbar"
+                    aria-label="Dodaj All In One ekstenziju">
                     <i data-lucide="download" class="w-5 h-5 stroke-[3]"></i>
                     <span class="max-[425px]:hidden" data-i18n="nav_add">Dodaj ekstenziju</span>
                 </a>
@@ -363,14 +364,13 @@
                     </div>
 
                     <div class="flex flex-col">
-                        <span class="text-[10px] font-[1000] uppercase tracking-[0.3em] text-gray-400 leading-none mb-1"
+                        <span class="text-[10px] font-[1000] uppercase tracking-[0.3em] text-gray-600 leading-none mb-1"
                             data-i18n="hero_global_top">
                             Globalno dostupno
                         </span>
                         <span class="text-[12px] font-black uppercase tracking-widest text-gray-900 leading-none">
                             <span data-i18n="hero_global_main">55 jezika</span>
-                            <span class="text-brand" data-i18n="hero_global_brand">podržano!</span>
-                        </span>
+                            <span class="text-brand font-bold" data-i18n="hero_global_brand">podržano!</span>
                         </span>
                     </div>
                 </div>
@@ -380,7 +380,7 @@
                     Sve alatke na <br><span class="text-brand">jednom mestu.</span>
                 </h1>
 
-                <p class="text-xl text-gray-500 mb-10 leading-relaxed font-medium max-w-lg border-l-4 border-brand pl-6"
+                <p class="text-xl text-gray-600 mb-10 leading-relaxed font-medium max-w-lg border-l-4 border-brand pl-6"
                     data-i18n="hero_desc">
                     Ekstenzija za developere koja drastično ubrzava rad i optimizuje svakodnevni workflow. Dizajnirana za developere i kreatore koji žele
                     maksimalnu produktivnost bez suvišnih dodataka.
@@ -396,55 +396,55 @@
                 </div>
 
                 <div class="mt-8 flex flex-wrap items-center gap-4">
-                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400"
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-600"
                         data-i18n="hero_works">Radi na:</span>
 
                     <ul class="flex flex-wrap items-center gap-5 list-none p-0">
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Chrome">
+                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Chrome" aria-label="Instaliraj za Google Chrome">
                                 <img src="/Browser/1.png" width="32" height="32" loading="lazy" decoding="async"
                                     alt="Instaliraj All In One ekstenziju za Chrome" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Edge">
+                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Edge" aria-label="Instaliraj za Microsoft Edge">
                                 <img src="/Browser/2.png" width="32" height="32" loading="lazy" decoding="async"
                                     alt="Instaliraj All In One ekstenziju za Edge" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Brave">
+                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Brave" aria-label="Instaliraj za Brave">
                                 <img src="/Browser/3.png" width="32" height="32" loading="lazy" decoding="async"
                                     alt="Instaliraj All In One ekstenziju za Brave" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Opera">
+                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Opera" aria-label="Instaliraj za Opera">
                                 <img src="/Browser/4.png" width="32" height="32" loading="lazy" decoding="async"
                                     alt="Instaliraj All In One ekstenziju za Opera" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Opera GX">
+                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Opera GX" aria-label="Instaliraj za Opera GX">
                                 <img src="/Browser/5.png" width="32" height="32" loading="lazy" decoding="async"
                                     alt="Instaliraj All In One ekstenziju za Opera GX" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Vivaldi">
+                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Vivaldi" aria-label="Instaliraj za Vivaldi">
                                 <img src="/Browser/6.png" width="32" height="32" loading="lazy" decoding="async"
                                     alt="Instaliraj All In One ekstenziju za Vivaldi" class="h-8 w-8">
                             </a>
                         </li>
                         <li>
                             <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
-                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Arc">
+                                class="hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Browser Arc" aria-label="Instaliraj za Arc">
                                 <img src="/Browser/7.png" width="32" height="32" loading="lazy" decoding="async"
                                     alt="Instaliraj All In One ekstenziju za Arc" class="h-8 w-8">
                             </a>
@@ -453,13 +453,13 @@
                 </div>
 
                 <div class="mt-6 flex items-center gap-3">
-                    <span class="text-xs font-black uppercase tracking-[0.2em] text-gray-400" data-i18n="hero_powered">Powered by</span>
+                    <span class="text-xs font-black uppercase tracking-[0.2em] text-gray-600" data-i18n="hero_powered">Powered by</span>
                     <a href="https://milanwebportal.com" data-ga-event="website_milan"
                         class="text-gray-900 hover:text-brand transition-colors font-black text-sm uppercase tracking-widest underline decoration-brand decoration-2 underline-offset-4"
                         target="_blank" rel="noopener noreferrer">milanwebportal.com</a>
                     <span class="text-gray-300">•</span>
-                    <a href="azurirano.html" data-latest-version
-                        class="text-[11px] font-black uppercase tracking-[0.14em] text-gray-400 hover:text-gray-700 transition-colors"></a>
+                    <a href="azurirano.html" data-latest-version aria-label="Verzija v1.6.0"
+                        class="text-[11px] font-black uppercase tracking-[0.14em] text-gray-600 hover:text-gray-900 transition-colors">v1.6.0</a>
                 </div>
             </div>
 
@@ -467,7 +467,7 @@
                 class="bg-[#0b0b0e] rounded-[2rem] p-4 shadow-2xl relative border border-gray-900 mx-auto w-full max-w-sm font-sans group hover:shadow-brand/10 transition-shadow duration-500">
                 <div class="flex justify-between items-center mb-6 px-1">
                     <img src="/logo-128.webp" alt="All In One Logo" width="24" height="24" class="w-6 h-6 object-contain">
-                    <h3 class="text-[#00ff88] font-black uppercase tracking-widest text-base leading-none">All In One</h3>
+                    <div class="text-[#00ff88] font-black uppercase tracking-widest text-base leading-none">All In One</div>
                     <i data-lucide="settings"
                         class="w-6 h-6 text-gray-400 opacity-80 group-hover:rotate-180 transition-transform duration-700"></i>
                 </div>
@@ -481,7 +481,7 @@
                             </div>
                             <div class="flex items-center gap-2">
                                 <span class="text-gray-300 text-sm leading-none select-none">+</span>
-                                <button class="w-7 h-7 bg-[#00ff88] rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-lg shadow-[#00ff88]/20">
+                                <button class="w-7 h-7 bg-[#00ff88] rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-lg shadow-[#00ff88]/20" aria-label="Pusti radio">
                                     <i data-lucide="play" class="w-3 h-3 ml-0.5" style="color: black; fill: black;"></i>
                                 </button>
                             </div>
@@ -497,7 +497,7 @@
                                 <i data-lucide="volume-2" class="w-5 h-5 text-[#00ff88]"></i>
                                 <span class="text-white text-xs font-bold" data-i18n="ui_sound">Zvuk</span>
                             </div>
-                            <button class="p-0 bg-transparent border-none cursor-pointer hover:opacity-70 transition-opacity">
+                            <button class="p-0 bg-transparent border-none cursor-pointer hover:opacity-70 transition-opacity" aria-label="Resetuj jačinu zvuka">
                                 <i data-lucide="rotate-ccw" class="w-4 h-4 text-white"></i>
                             </button>
                         </div>
@@ -555,7 +555,7 @@
                     <div
                         class="bg-[#16161d] rounded-2xl p-4 flex justify-between items-center border border-gray-800/50 hover:bg-gray-800/50 transition-colors cursor-pointer">
                         <span class="text-white text-xs font-bold" data-i18n="ui_cookies">Kolačići i Keš</span>
-                        <i data-lucide="cookie" class="w-5 h-5 text-[#00ff88]"></i>
+                        <i data-lucide="cache-clean" class="w-5 h-5 text-[#00ff88]"></i>
                     </div>
 
                     <div
@@ -918,7 +918,7 @@
                             <h3 class="text-4xl font-[1000] uppercase italic text-gray-900 leading-none"
                                 data-i18n="ta_c1_t">KREATIVCI</h3>
                             <div class="h-1 w-0 bg-brand group-hover:w-full transition-all duration-500 mt-2"></div>
-                            <p class="text-gray-400 font-bold text-sm mt-2 max-w-[200px]" data-i18n="ta_c1_d">Precizni
+                            <p class="text-gray-600 font-bold text-sm mt-2 max-w-[200px]" data-i18n="ta_c1_d">Precizni
                                 alati za dizajn i
                                 brza inspekcija elemenata.</p>
                         </div>
@@ -936,7 +936,7 @@
                                 data-i18n="ta_c2_t">DEVELOPERI</h3>
                             <div class="h-1 w-0 bg-black group-hover:w-full transition-all duration-500 mt-2 ml-auto">
                             </div>
-                            <p class="text-gray-400 font-bold text-sm mt-2 max-w-[200px]" data-i18n="ta_c2_d">Duboki
+                            <p class="text-gray-600 font-bold text-sm mt-2 max-w-[200px]" data-i18n="ta_c2_d">Duboki
                                 uvid u tehnologije i
                                 ekspresno čišćenje keša.</p>
                         </div>
@@ -953,7 +953,7 @@
                             <h3 class="text-4xl font-[1000] uppercase italic text-gray-900 leading-none"
                                 data-i18n="ta_c3_t">PRODUKTIVCI
                             </h3>
-                            <p class="text-gray-400 font-bold text-sm mt-2 max-w-[200px]" data-i18n="ta_c3_d">Maksimalan
+                            <p class="text-gray-600 font-bold text-sm mt-2 max-w-[200px]" data-i18n="ta_c3_d">Maksimalan
                                 fokus uz muziku i
                                 precizno merenje vremena.</p>
                         </div>
@@ -970,7 +970,7 @@
                             <h3 class="text-4xl font-[1000] uppercase italic text-gray-900 leading-none"
                                 data-i18n="ta_c4_t">POWER USERS
                             </h3>
-                            <p class="text-gray-400 font-bold text-sm mt-2 max-w-[200px]" data-i18n="ta_c4_d">Internet
+                            <p class="text-gray-600 font-bold text-sm mt-2 max-w-[200px]" data-i18n="ta_c4_d">Internet
                                 bez barijera, oglasa
                                 i vizuelnog haosa.</p>
                         </div>
@@ -1012,9 +1012,9 @@
                     <i data-lucide="radio"
                         class="w-12 h-12 text-brand relative z-10 drop-shadow-[0_0_15px_rgba(0,255,136,0.5)]"></i>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                    data-i18n="gf_1_t">Radio IN</h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_1_d">Slušaj
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                    data-i18n="gf_1_t">Radio IN</h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_1_d">Slušaj
                     omiljeni radio
                     direktno iz ekstenzije. Pusti i pauziraj bez otvaranja novih tabova.</p>
             </div>
@@ -1034,9 +1034,9 @@
                         </div>
                     </div>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                    data-i18n="gf_2_t">Zvuk 1000%</h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_2_d">Pojačaj
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                    data-i18n="gf_2_t">Zvuk 1000%</h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_2_d">Pojačaj
                     zvuk na bilo kom tabu
                     do neverovatnih 1000%. Daleko iznad standardnog ograničenja.</p>
             </div>
@@ -1055,10 +1055,10 @@
                             class="font-mono text-white bg-black/60 px-4 py-1.5 rounded-xl text-xs font-black tracking-widest backdrop-blur-sm">#00FF88</span>
                     </div>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
                     data-i18n="gf_3_t">Color Picker
-                </h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_3_d">Klikni
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_3_d">Klikni
                     bilo gde na stranici
                     da pomoću pipete izvučeš i automatski kopiraš tačan HEX kod boje.</p>
             </div>
@@ -1075,9 +1075,9 @@
                         </div>
                     </div>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                    data-i18n="gf_4_t">Dark Mode</h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_4_d">Forsiraj
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                    data-i18n="gf_4_t">Dark Mode</h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_4_d">Forsiraj
                     tamni režim na
                     svakom sajtu. Pametna inverzija boja štiti tvoje oči tokom noćnog rada.</p>
             </div>
@@ -1114,9 +1114,9 @@
                         </div>
                     </div>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                    data-i18n="gf_5_t">Page Ruler</h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_5_d">Aktiviraj
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                    data-i18n="gf_5_t">Page Ruler</h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_5_d">Aktiviraj
                     interaktivni lenjir
                     i precizno izmeri dimenzije svakog elementa na sajtu u pikselima.</p>
             </div>
@@ -1130,10 +1130,10 @@
                     <i data-lucide="copy"
                         class="w-12 h-12 text-brand drop-shadow-[0_0_15px_rgba(0,255,136,0.4)] group-hover:scale-110 transition-transform duration-500"></i>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
                     data-i18n="gf_6_t">Enable Copy
-                </h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_6_d">Uključi
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_6_d">Uključi
                     opciju i zaobiđi
                     blokadu desnog klika ili selekcije teksta na zaštićenim sajtovima.</p>
             </div>
@@ -1147,10 +1147,10 @@
                     <i data-lucide="edit-3"
                         class="w-12 h-12 text-brand drop-shadow-[0_0_15px_rgba(0,255,136,0.4)] group-hover:-translate-y-1 transition-transform duration-500"></i>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
                     data-i18n="gf_7_t">Page Marker
-                </h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_7_d">Crtaj,
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_7_d">Crtaj,
                     podvlači, piši,
                     pomeraj i briši oznake direktno po ekranu. Odličan alat za video prezentacije.</p>
             </div>
@@ -1170,10 +1170,10 @@
                             class="bg-[#25252b] text-gray-400 text-xs font-black px-4 py-2.5 rounded-xl border border-gray-700 shadow-inner">Angular</span>
                     </div>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
                     data-i18n="gf_8_t">Tehnologije
-                    sajta</h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_8_d">Saznaj
+                    sajta</h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_8_d">Saznaj
                     jednim klikom u čemu
                     je sajt napravljen i analiziraj pozadinske strukture tog sajta.</p>
             </div>
@@ -1184,13 +1184,13 @@
                     class="absolute inset-0 bg-gradient-to-b from-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 </div>
                 <div class="mini-ui relative z-10 group-hover:border-brand/30 transition-colors duration-500">
-                    <i data-lucide="cookie"
+                    <i data-lucide="cache-clean"
                         class="w-12 h-12 text-brand drop-shadow-[0_0_15px_rgba(0,255,136,0.4)] group-hover:scale-110 transition-transform duration-500"></i>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
                     data-i18n="gf_9_t">Kolačići i keš
-                </h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_9_d">Obriši keš
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_9_d">Obriši keš
                     i kolačiće za
                     trenutni sajt u jednom kliku i automatski sakrij dosadne prozore za pristanak na kolačiće.</p>
             </div>
@@ -1204,10 +1204,10 @@
                     <span
                         class="text-6xl font-serif text-brand italic drop-shadow-[0_0_20px_rgba(0,255,136,0.5)]">Ff</span>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
                     data-i18n="gf_10_t">Font Finder
-                </h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_10_d">Pređi
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_10_d">Pređi
                     mišem preko bilo kog
                     teksta na sajtu da bi odmah saznao tačno koji font je u upotrebi.</p>
             </div>
@@ -1223,10 +1223,10 @@
                             class="text-brand font-mono text-3xl font-black tracking-widest drop-shadow-[0_0_10px_rgba(0,255,136,0.4)]">1,240</span>
                     </div>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
                     data-i18n="gf_11_t">Brojač
-                    karaktera</h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_11_d">Lako i
+                    karaktera</h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_11_d">Lako i
                     brzo prebroj
                     selektovane karaktere i reči. Idealno za pisanje SEO naslova i opisa.</p>
             </div>
@@ -1241,9 +1241,9 @@
                         class="text-brand font-mono text-4xl font-black tracking-tighter drop-shadow-[0_0_15px_rgba(0,255,136,0.5)]">
                         00:15:30</div>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
-                    data-i18n="gf_12_t">Štoperica</h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_12_d">Zabeleži
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                    data-i18n="gf_12_t">Štoperica</h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_12_d">Zabeleži
                     bitne trenutke tokom
                     lajva jednom prečicom. Automatska štoperica štedi sate u montaži i menja ručno pisanje tajmstempova.
                 </p>
@@ -1257,10 +1257,10 @@
                 <div class="mini-ui relative z-10 group-hover:border-brand/30 transition-colors duration-500">
                     <i data-lucide="file-text" class="w-12 h-12 text-brand"></i>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
                     data-i18n="gf_13_t">Pametne Beleške
-                </h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_13_d">
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_13_d">
                     Zapiši bitne ideje! Podržava pametno rešavanje matematike u tekstu i lako dodavanje trenutnog
                     vremena.
                 </p>
@@ -1279,10 +1279,10 @@
                         <div class="w-2 h-12 bg-brand rounded-full"></div>
                     </div>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
                     data-i18n="gf_14_t">Webtime Tracker
-                </h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_14_d">
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_14_d">
                     Automatski prati tačno vreme koje provodiš na različitim domenima. Analiziraj svoju statistiku
                     upotrebe.
                 </p>
@@ -1299,10 +1299,10 @@
                         <span class="text-brand font-bold">12.5k</span>
                     </div>
                 </div>
-                <h4 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
+                <h3 class="font-black text-lg uppercase tracking-wider mb-3 text-gray-900 relative z-10"
                     data-i18n="gf_15_t">Return YT
-                    Dislike</h4>
-                <p class="text-gray-500 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_15_d">
+                    Dislike</h3>
+                <p class="text-gray-600 text-sm leading-relaxed font-medium relative z-10" data-i18n="gf_15_d">
                     Vraća vidljivost brojača "nesviđanja" (dislikes) ispod klipova, radi direktno i automatski na
                     YouTube-u.
                 </p>
@@ -1442,8 +1442,8 @@
                         class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
                         alt="Luka Cvetković">
                     <div>
-                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Luka Cvetković</h4>
-                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d1">7 MART 2026</p>
+                        <h3 class="font-black text-gray-900 text-sm uppercase tracking-wider">Luka Cvetković</h3>
+                        <p class="text-[10px] text-gray-600 font-black tracking-widest" data-i18n="tm_d1">7 MART 2026</p>
                     </div>
                 </div>
             </div>
@@ -1468,8 +1468,8 @@
                         class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
                         alt="Simeon Kljakić">
                     <div>
-                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Simeon Kljakić</h4>
-                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d2">9 MART 2026</p>
+                        <h3 class="font-black text-gray-900 text-sm uppercase tracking-wider">Simeon Kljakić</h3>
+                        <p class="text-[10px] text-gray-600 font-black tracking-widest" data-i18n="tm_d2">9 MART 2026</p>
                     </div>
                 </div>
             </div>
@@ -1494,8 +1494,8 @@
                         class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
                         alt="Benjamin Nenyahu">
                     <div>
-                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Benjamin Nenyahu</h4>
-                        <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d3">24 MART 2026</p>
+                        <h3 class="font-black text-gray-900 text-sm uppercase tracking-wider">Benjamin Nenyahu</h3>
+                        <p class="text-[10px] text-gray-600 font-black tracking-widest" data-i18n="tm_d3">24 MART 2026</p>
                     </div>
                 </div>
             </div>
@@ -1520,7 +1520,7 @@
                         class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
                         alt="Milan Petrović">
                     <div>
-                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Milan Petrović</h4>
+                        <h3 class="font-black text-gray-900 text-sm uppercase tracking-wider">Milan Petrović</h3>
                         <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d4">2 APR 2026</p>
                     </div>
                 </div>
@@ -1546,7 +1546,7 @@
                         class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
                         alt="Ana">
                     <div>
-                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Ana</h4>
+                        <h3 class="font-black text-gray-900 text-sm uppercase tracking-wider">Ana</h3>
                         <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d5">14 Jun 2026</p>
                     </div>
                 </div>
@@ -1572,7 +1572,7 @@
                         class="w-12 h-12 rounded-xl object-cover border-2 border-brand/20 group-hover:border-brand transition-colors duration-500"
                         alt="Marko Popović">
                     <div>
-                        <h4 class="font-black text-gray-900 text-sm uppercase tracking-wider">Marko Popović</h4>
+                        <h3 class="font-black text-gray-900 text-sm uppercase tracking-wider">Marko Popović</h3>
                         <p class="text-[10px] text-gray-400 font-black tracking-widest" data-i18n="tm_d6">14 Jun 2026</p>
                     </div>
                 </div>
@@ -1729,7 +1729,7 @@
                         </a>
                     </div>
 
-                    <div class="mt-10 flex items-center justify-center gap-6 text-gray-500">
+                    <div class="mt-10 flex items-center justify-center gap-6 text-gray-300">
                         <div class="flex items-center gap-2">
                             <i data-lucide="check-circle" class="w-4 h-4 text-brand"></i>
                             <span class="text-[10px] font-black uppercase tracking-widest" data-i18n="cta_tag1">Bez
@@ -1746,7 +1746,7 @@
         </div>
     </section>
 
-    <section id="reviews" class="py-16 bg-white relative overflow-hidden section-lazy">
+    <section id="key-benefits" class="py-16 bg-white relative overflow-hidden section-lazy">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16">
 
@@ -1759,11 +1759,10 @@
                         <i data-lucide="shield-check"
                             class="w-12 h-12 text-brand relative z-10 drop-shadow-[0_0_10px_rgba(0,255,136,0.2)] group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-                    <h4 class="font-[1000] text-2xl text-gray-900 tracking-tighter italic uppercase mb-2 group-hover:text-brand transition-colors duration-500"
-                        data-i18n="fb_1_t">
-                        Sigurnost</h4>
+                    <h3 class="font-[1000] text-2xl text-gray-900 tracking-tighter italic uppercase mb-2 group-hover:text-brand transition-colors duration-500" data-i18n="fb_1_t">
+                        Sigurnost</h3>
                     <div class="h-0.5 w-8 bg-brand/30 mb-3 group-hover:w-16 transition-all duration-500"></div>
-                    <p class="text-gray-400 text-[10px] font-black uppercase tracking-[0.4em]" data-i18n="fb_1_d">
+                    <p class="text-gray-600 text-[10px] font-black uppercase tracking-[0.4em]" data-i18n="fb_1_d">
                         Enkriptovan kod</p>
                 </div>
 
@@ -1776,11 +1775,10 @@
                         <i data-lucide="zap"
                             class="w-12 h-12 text-brand relative z-10 drop-shadow-[0_0_10px_rgba(0,255,136,0.2)] group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-                    <h4 class="font-[1000] text-2xl text-gray-900 tracking-tighter italic uppercase mb-2 group-hover:text-brand transition-colors duration-500"
-                        data-i18n="fb_2_t">
-                        Brzina</h4>
+                    <h3 class="font-[1000] text-2xl text-gray-900 tracking-tighter italic uppercase mb-2 group-hover:text-brand transition-colors duration-500" data-i18n="fb_2_t">
+                        Brzina</h3>
                     <div class="h-0.5 w-8 bg-brand/30 mb-3 group-hover:w-16 transition-all duration-500"></div>
-                    <p class="text-gray-400 text-[10px] font-black uppercase tracking-[0.4em]" data-i18n="fb_2_d">
+                    <p class="text-gray-600 text-[10px] font-black uppercase tracking-[0.4em]" data-i18n="fb_2_d">
                         Instant odziv</p>
                 </div>
 
@@ -1793,11 +1791,10 @@
                         <i data-lucide="award"
                             class="w-12 h-12 text-brand relative z-10 drop-shadow-[0_0_10px_rgba(0,255,136,0.2)] group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-                    <h4 class="font-[1000] text-2xl text-gray-900 tracking-tighter italic uppercase mb-2 group-hover:text-brand transition-colors duration-500"
-                        data-i18n="fb_3_t">
-                        Kvalitet</h4>
+                    <h3 class="font-[1000] text-2xl text-gray-900 tracking-tighter italic uppercase mb-2 group-hover:text-brand transition-colors duration-500" data-i18n="fb_3_t">
+                        Kvalitet</h3>
                     <div class="h-0.5 w-8 bg-brand/30 mb-3 group-hover:w-16 transition-all duration-500"></div>
-                    <p class="text-gray-400 text-[10px] font-black uppercase tracking-[0.4em]" data-i18n="fb_3_d">
+                    <p class="text-gray-600 text-[10px] font-black uppercase tracking-[0.4em]" data-i18n="fb_3_d">
                         Vrhunska izrada</p>
                 </div>
 
@@ -1810,11 +1807,10 @@
                         <i data-lucide="users"
                             class="w-12 h-12 text-brand relative z-10 drop-shadow-[0_0_10px_rgba(0,255,136,0.2)] group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-                    <h4 class="font-[1000] text-2xl text-gray-900 tracking-tighter italic uppercase mb-2 group-hover:text-brand transition-colors duration-500"
-                        data-i18n="fb_4_t">
-                        Zajednica</h4>
+                    <h3 class="font-[1000] text-2xl text-gray-900 tracking-tighter italic uppercase mb-2 group-hover:text-brand transition-colors duration-500" data-i18n="fb_4_t">
+                        Zajednica</h3>
                     <div class="h-0.5 w-8 bg-brand/30 mb-3 group-hover:w-16 transition-all duration-500"></div>
-                    <p class="text-gray-400 text-[10px] font-black uppercase tracking-[0.4em]" data-i18n="fb_4_d">Izbor
+                    <p class="text-gray-600 text-[10px] font-black uppercase tracking-[0.4em]" data-i18n="fb_4_d">Izbor
                         stručnjaka</p>
                 </div>
 
@@ -1847,7 +1843,7 @@
 
             <div class="flex gap-8">
                 <a href="privacy.html"
-                    class="relative text-gray-400 hover:text-gray-900 transition-colors font-bold text-sm uppercase tracking-widest group">
+                    class="relative text-gray-700 hover:text-gray-900 transition-colors font-bold text-sm uppercase tracking-widest group">
                     <span data-i18n="ft_privacy">Politika privatnosti</span>
                     <span
                         class="absolute -bottom-2 left-0 w-0 h-[2px] bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
@@ -1857,7 +1853,7 @@
         </div>
     </footer>
 
-    <div id="backToTop"
+    <div id="backToTop" role="button" aria-label="Povratak na vrh" tabindex="0"
         class="fixed bottom-8 right-8 z-50 w-12 h-12 flex items-center justify-center cursor-pointer opacity-0 pointer-events-none transition-all duration-300 hover:-translate-y-1">
         <svg class="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="48" fill="none" stroke="#e5e7eb" stroke-width="2" />

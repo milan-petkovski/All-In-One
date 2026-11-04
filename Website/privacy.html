@@ -26,7 +26,7 @@
     <meta property="og:locale" content="sr_RS">
     <meta property="og:site_name" content="Milan Web Portal">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://allinone.milanwebportal.com/privacy.html">
+    <meta property="og:url" content="https://allinone.milanwebportal.com/privacy">
     <meta property="og:title" content="All In One | Politika Privatnosti">
     <meta property="og:description"
         content="Transparentnost i lokalna obrada podataka. Saznajte kako štitimo vašu privatnost.">
@@ -60,7 +60,7 @@
                 SAMO ZA <br><span class="text-brand">DESKTOP.</span>
             </h2>
 
-            <p class="text-gray-500 font-bold text-sm mb-10 leading-tight" data-i18n="priv_mobile_desc">
+            <p class="text-gray-600 font-bold text-sm mb-10 leading-tight" data-i18n="priv_mobile_desc">
                 Desktop browser ekstenzije ne rade na telefonu. Pošalji sebi link i instaliraj na kompu.
             </p>
 
@@ -72,7 +72,7 @@
             </a>
         </div>
 
-        <div class="absolute bottom-10 opacity-20 font-black uppercase tracking-[0.3em] text-[10px]">
+        <div class="absolute bottom-10 font-black uppercase tracking-[0.3em] text-[10px] text-gray-700">
             Milan Web Portal
         </div>
     </div>
@@ -81,7 +81,7 @@
         <nav
             class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center bg-white/70 backdrop-blur-2xl rounded-full border border-white/40 shadow-[0_20px_40px_rgba(0,0,0,0.08)] pointer-events-auto transition-all duration-500 hover:shadow-brand/5 hover:border-brand/20">
 
-            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer" aria-label="All In One Početna">
                 <img src="/logo-128.webp" alt="All In One Logo" width="32" height="32" fetchpriority="high" decoding="async" class="w-8 h-8 object-contain transition-transform duration-500 group-hover:rotate-12">
                 <span class="font-black text-3xl text-brand uppercase leading-none relative -top-[1px]">All In One</span>
             </a>
@@ -89,7 +89,7 @@
             <div class="flex items-center gap-3">
                 <a href="https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem"
                     class="inline-flex items-center justify-center gap-2 bg-brand text-black font-[1000] py-3 px-8 rounded-full hover:bg-[#00ff88] hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_10px_25px_rgba(0,255,136,0.4)] whitespace-nowrap uppercase text-sm"
-                    target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Navbar">
+                    target="_blank" rel="noopener noreferrer" data-ga-event="website_add" data-ga-location="Navbar" aria-label="Dodaj All In One ekstenziju">
                     <i data-lucide="download" class="w-5 h-5 stroke-[3]"></i>
                     <span class="max-[425px]:hidden" data-i18n="nav_add">Dodaj ekstenziju</span>
                 </a>
@@ -102,7 +102,7 @@
 
                 <a href="https://paypal.me/milanwebportal"
                     class="inline-flex items-center justify-center gap-2 bg-brand text-black font-[1000] py-3 px-5 rounded-full hover:bg-[#00ff88] hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_10px_25px_rgba(0,255,136,0.4)] whitespace-nowrap uppercase text-sm"
-                    target="_blank" rel="noopener noreferrer" data-ga-event="website_coffee">
+                    target="_blank" rel="noopener noreferrer" data-ga-event="website_coffee" aria-label="Doniraj kafu">
                     <i data-lucide="coffee" class="w-5 h-5 stroke-[3]"></i>
                 </a>
             </div>
@@ -114,7 +114,7 @@
             data-i18n="priv_hero_title">
             Politika <br><span class="text-brand">Privatnosti</span>
         </h1>
-        <p class="text-gray-500 font-medium italic" data-i18n="priv_hero_subtitle">Poslednji put ažurirano: Novembar 2026. (Usklađeno sa Chrome Web Store Limited Use pravilima)
+        <p class="text-gray-600 font-medium italic" data-i18n="priv_hero_subtitle">Poslednji put ažurirano: Novembar 2026. (Usklađeno sa Chrome Web Store Limited Use pravilima)
         </p>
     </section>
 
@@ -300,7 +300,7 @@
 
         <div class="relative max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
 
-            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer" aria-label="All In One Početna">
                 <img src="/logo-128.webp" alt="All In One Logo" width="40" height="40" class="w-10 h-10 object-contain transition-transform duration-500 group-hover:rotate-12">
                 <span class="font-black text-4xl text-brand uppercase leading-none relative -top-[2px]">All In One</span>
             </a>
@@ -318,7 +318,7 @@
 
             <div class="flex gap-8">
                 <a href="privacy.html"
-                    class="relative text-gray-400 hover:text-gray-900 transition-colors font-bold text-sm uppercase tracking-widest group">
+                    class="relative text-gray-700 hover:text-gray-900 transition-colors font-bold text-sm uppercase tracking-widest group">
                     <span data-i18n="ft_privacy">Politika privatnosti</span>
                     <span
                         class="absolute -bottom-2 left-0 w-0 h-[2px] bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
@@ -328,7 +328,7 @@
         </div>
     </footer>
 
-    <div id="backToTop"
+    <div id="backToTop" role="button" aria-label="Povratak na vrh" tabindex="0"
         class="fixed bottom-8 right-8 z-50 w-12 h-12 flex items-center justify-center cursor-pointer opacity-0 pointer-events-none transition-all duration-300 hover:-translate-y-1">
         <svg class="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="48" fill="none" stroke="#e5e7eb" stroke-width="2" />
