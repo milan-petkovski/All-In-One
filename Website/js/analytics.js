@@ -1,9 +1,9 @@
 /**
  * All In One - Advanced Analytics & Performance Monitoring (2026 Edition)
- * Optimized for GA4, Google Tag, and Consent Mode v2
+ * Optimized for GA4, Google Tag, Consent Mode v2 and Web Vitals
  */
+import { onCLS, onINP, onLCP, onFCP, onTTFB } from 'web-vitals';
 
-// Initialize dataLayer if not exists
 window.dataLayer = window.dataLayer || [];
 
 export function gtag() {
@@ -21,29 +21,64 @@ export const initConsentMode = () => {
     });
 };
 
+// Asynchronous GA4 Initialization without inline script blocks
+export const initGA = (measurementId = 'G-F52S6J4TZV') => {
+    initConsentMode();
+
+    gtag('js', new Date());
+    gtag('config', measurementId, {
+        anonymize_ip: true,
+        cookie_flags: 'SameSite=None;Secure'
+    });
+
+    if (!document.querySelector(`script[src*="${measurementId}"]`)) {
+        const s = document.createElement('script');
+        s.async = true;
+        s.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
+        document.head.appendChild(s);
+    }
+};
+
 // Error Tracking
 export const trackError = (message, source, lineno, colno, error) => {
     trackEvent('exception', {
-        'description': `${message} at ${source}:${lineno}:${colno}`,
-        'fatal': false
+        description: `${message} at ${source}:${lineno}:${colno}`,
+        fatal: false
     });
 };
 
-// Core Web Vitals Tracking
+// Real Core Web Vitals Tracking
 export const trackWebVitals = () => {
-    if ('performance' in window && 'getEntriesByType' in performance) {
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                const paint = performance.getEntriesByType('paint');
-                paint.forEach(entry => {
-                    trackEvent('web_vitals', {
-                        metric_name: entry.name,
-                        metric_value: entry.startTime,
-                        metric_id: entry.entryType
-                    });
-                });
-            }, 3000);
+    const sendMetric = ({ name, value, id, rating }) => {
+        trackEvent('web_vitals', {
+            metric_name: name,
+            metric_value: Math.round(name === 'CLS' ? value * 1000 : value),
+            metric_id: id,
+            metric_rating: rating
         });
+    };
+    try {
+        onCLS(sendMetric);
+        onINP(sendMetric);
+        onLCP(sendMetric);
+        onFCP(sendMetric);
+        onTTFB(sendMetric);
+    } catch {
+        // Fallback performance paint timing if web-vitals fails
+        if ('performance' in window && 'getEntriesByType' in performance) {
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    const paint = performance.getEntriesByType('paint');
+                    paint.forEach((entry) => {
+                        trackEvent('web_vitals', {
+                            metric_name: entry.name,
+                            metric_value: entry.startTime,
+                            metric_id: entry.entryType
+                        });
+                    });
+                }, 3000);
+            });
+        }
     }
 };
 
@@ -70,7 +105,7 @@ window.onerror = trackError;
 // Global Unhandled Rejection Handler
 window.onunhandledrejection = (event) => {
     trackEvent('exception', {
-        'description': `Unhandled Rejection: ${event.reason}`,
-        'fatal': false
+        description: `Unhandled Rejection: ${event.reason}`,
+        fatal: false
     });
 };

@@ -1,31 +1,44 @@
-let updateData = [];
-import { trackEvent, trackWebVitals } from './js/analytics.js';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { createIcons } from 'lucide';
+import { siteIcons } from './js/icons.js';
+import { initGA, trackEvent, trackWebVitals } from './js/analytics.js';
 
-// Initialize Analytics & Performance Monitoring
+// Register GSAP plugins
+gsap.registerPlugin(ScrollTrigger);
+
+// Initialize Analytics & Web Vitals
+initGA('G-F52S6J4TZV');
 trackWebVitals();
 
-// Expose functions to window for HTML event handlers (onclick)
+let updateData = [];
+window.currentTranslations = {};
 window.toggleLanguage = toggleLanguage;
 window.applyLanguage = applyLanguage;
 
-// Globalni objekat za prevode
-window.currentTranslations = {};
+function renderLucideIcons() {
+    try {
+        createIcons({ icons: siteIcons });
+    } catch (err) {
+        console.warn('Lucide icons error:', err);
+    }
+}
 
 /**
  * Primenjuje izabrani jezik na celu stranicu
  */
-async function applyLanguage(lang) {
+export async function applyLanguage(lang) {
     localStorage.setItem("lang", lang);
-    document.documentElement.lang = lang === 'sr' ? 'sr_RS' : 'en';
+    document.documentElement.lang = lang === 'sr' ? 'sr' : 'en';
 
     try {
         const response = await fetch(`/${lang}.json`);
-        if (!response.ok) throw new Error("Neuspešno učitavanje JSON-a");
+        if (!response.ok) throw new Error("Neuspesno ucitavanje JSON prevoda");
         
         const translations = await response.json();
         window.currentTranslations = translations;
 
-        // Osnovni prevodi elemenata (tekst unutar tagova)
+        // Tekstualni prevodi
         document.querySelectorAll("[data-i18n]").forEach(el => {
             const key = el.getAttribute("data-i18n");
             if (translations[key]) {
@@ -55,11 +68,10 @@ async function applyLanguage(lang) {
             }
         });
 
-        // Update teksta na toggle dugmetu (prikazuje suprotan jezik od trenutnog)
-        const langText = document.getElementById("lang-text");
-        if (langText) {
-            langText.textContent = lang === "sr" ? "EN" : "SR";
-        }
+        // Dugme za promenu jezika
+        document.querySelectorAll('#lang-text, [data-lang-text]').forEach(el => {
+            el.textContent = lang === 'sr' ? 'EN' : 'SR';
+        });
 
         // Lokalizacija datuma
         const options = { day: 'numeric', month: 'long', year: 'numeric' };
@@ -69,26 +81,24 @@ async function applyLanguage(lang) {
             el.textContent = danas;
         });
 
-        // Ako postoji kontejner za ažuriranja, ponovo ga iscrtaj
+        // Ponovo iscrtaj azuriranja ako postoji kontejner
         if (document.getElementById('update-container')) {
             renderUpdates(lang);
         }
 
-        // Ponovna inicijalizacija Lucide ikonica (obavezno jer innerHTML briše SVG)
-        if (typeof lucide !== 'undefined') lucide.createIcons();
+        // Osvezi ikonice
+        renderLucideIcons();
 
-        // Javljamo ostalim skriptama da je jezik učitan
         window.dispatchEvent(new CustomEvent('languageLoaded', { detail: lang }));
-
     } catch (error) {
-        console.error('Greška pri učitavanju prevoda:', error);
+        console.error('Greska pri ucitavanju prevoda:', error);
     }
 }
 
 /**
- * Menja jezik između SR i EN (Toggle)
+ * Menja jezik izmedju SR i EN (Toggle)
  */
-function toggleLanguage() {
+export function toggleLanguage() {
     const currentLang = localStorage.getItem("lang") || "en";
     const newLang = currentLang === "sr" ? "en" : "sr";
     trackEvent('website_lang', { from: currentLang, to: newLang });
@@ -96,11 +106,11 @@ function toggleLanguage() {
 }
 
 /**
- * Dinamičko iscrtavanje liste ažuriranja
+ * Dinamicko iscrtavanje liste azuriranja
  */
 function renderUpdates(lang) {
     const container = document.getElementById('update-container');
-    if (!container || typeof updateData === 'undefined') return;
+    if (!container || !Array.isArray(updateData) || updateData.length === 0) return;
 
     container.innerHTML = '';
     let prosaoAktivni = false;
@@ -113,12 +123,10 @@ function renderUpdates(lang) {
         const card = document.createElement('div');
         card.className = `relative flex flex-col md:flex-row items-center mb-24 ${isIspod ? "group opacity-60 hover:opacity-100 transition-all duration-500" : "group"}`;
 
-        // Kreiramo tacku na vremenskoj liniji
         const dot = document.createElement('div');
         dot.className = `absolute left-6 md:left-1/2 w-6 h-6 rounded-full -translate-x-1/2 z-20 ${isAktivno ? 'bg-darkpanel border-4 border-brand shadow-[0_0_20px_#00ff88]' : 'bg-gray-200 border-4 border-white'}`;
         card.appendChild(dot);
 
-        // Leva strana (Verzija i Datum)
         const leftSide = document.createElement('div');
         leftSide.className = "w-full md:w-1/2 md:pr-16 md:text-right pl-16 md:pl-0 flex flex-col md:items-end mt-2";
         
@@ -148,13 +156,12 @@ function renderUpdates(lang) {
         line.className = "h-px w-12 bg-gradient-to-r from-transparent to-gray-400 hidden md:block";
         const dateP = document.createElement('p');
         dateP.className = "text-gray-500 font-extrabold text-[11px] uppercase tracking-[0.3em]";
-        dateP.textContent = item[lang].datum;
+        dateP.textContent = item[lang]?.datum || '';
         dateWrapper.append(line, dateP);
         leftSide.appendChild(dateWrapper);
 
         card.appendChild(leftSide);
 
-        // Desna strana (Kartica sa opisom)
         const rightSide = document.createElement('div');
         rightSide.className = "w-full md:w-1/2 md:pl-16 pl-16 mt-6 md:mt-0 transition-all duration-500 hover:translate-x-1";
         
@@ -176,7 +183,7 @@ function renderUpdates(lang) {
         const titleWrap = document.createElement('div');
         const h4 = document.createElement('h4');
         h4.className = "text-white font-black text-lg uppercase tracking-tight italic leading-tight";
-        h4.textContent = item[lang].naslov;
+        h4.textContent = item[lang]?.naslov || '';
         const subP = document.createElement('p');
         subP.className = "text-brand text-[9px] font-black uppercase tracking-widest opacity-80";
         subP.textContent = window.currentTranslations['upd_dyn_stable'] || 'Stable Release';
@@ -188,7 +195,7 @@ function renderUpdates(lang) {
         descBox.className = "bg-white/5 rounded-[1.5rem] p-5 border border-white/5 shadow-inner";
         const descP = document.createElement('p');
         descP.className = "text-gray-300 leading-relaxed font-medium text-[14px]";
-        descP.textContent = item[lang].opis;
+        descP.textContent = item[lang]?.opis || '';
         descBox.appendChild(descP);
         innerContent.appendChild(descBox);
 
@@ -216,79 +223,80 @@ function renderUpdates(lang) {
 
         container.appendChild(card);
     });
-    if (typeof lucide !== 'undefined') lucide.createIcons();
+    renderLucideIcons();
 }
 
 /**
- * PAMETNA DETEKCIJA POČETNOG JEZIKA
+ * Pametna detekcija pocetnog jezika
  */
 async function detectInitialLanguage() {
-    // 1. Proveri da li korisnik već ima sačuvan izbor u browseru
     const saved = localStorage.getItem("lang");
     if (saved) return saved;
 
-    // 2. Proveri državu preko IP adrese
     try {
         const response = await fetch('https://ipapi.co/json/');
         if (response.ok) {
             const data = await response.json();
-            const country = data.country_code;
-
-            // Lista EX-YU država za koje forsiramo srpski/regionalni prevod
-            const balkanCountries = ['RS', 'BA', 'HR', 'ME', 'MK']; 
-            
-            if (balkanCountries.includes(country)) {
+            const balkanCountries = ['RS', 'BA', 'HR', 'ME', 'MK'];
+            if (balkanCountries.includes(data.country_code)) {
                 return 'sr';
             }
         }
-    } catch (e) {
-        console.warn("IP detekcija nije dostupna, prelazim na podešavanja browsera.");
+    } catch {
+        // Fallback na jezik browsera
     }
 
-    // 3. Zadnja opcija: Jezik browsera (ako je browser na srpskom, stavi srpski, inače engleski)
-    return navigator.language.startsWith("sr") ? "sr" : "en";
+    return navigator.language?.startsWith("sr") ? "sr" : "en";
 }
 
-/**
- * GLAVNA INICIJALIZACIJA
- */
 document.addEventListener('DOMContentLoaded', async () => {
-    // Učitaj ažuriranja dinamički
+    // 1. Ucitaj azuriranja
     try {
         const response = await fetch('/updates.json');
         if (response.ok) {
             updateData = await response.json();
         }
     } catch (error) {
-        console.error('Greška pri učitavanju ažuriranja:', error);
+        console.warn('Greska pri ucitavanju azuriranja:', error);
     }
 
-    // Odredi jezik i primeni ga
+    // 2. Primeni jezik
     const langToUse = await detectInitialLanguage();
-    applyLanguage(langToUse);
+    await applyLanguage(langToUse);
 
-    // Inicijalizuj ikonice
-    if (typeof lucide !== 'undefined') lucide.createIcons();
-
-    // Verzija u navigaciji
+    // 3. Prikaz najnovije verzije
     const latestVersionLink = document.querySelector('[data-latest-version]');
-    if (latestVersionLink && typeof updateData !== 'undefined' && updateData.length) {
+    if (latestVersionLink && Array.isArray(updateData) && updateData.length) {
         const latestUpdate = updateData.find(item => item.aktivno) || updateData[0];
         const normalizedVersion = String(latestUpdate.verzija).replace(/^v/i, '');
         latestVersionLink.textContent = `v${normalizedVersion}`;
     }
 
-    // Detekcija mobilnih uređaja
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
-    const mobileBlocker = document.getElementById('mobile-blocker');
-    if (isMobile && mobileBlocker) {
-        mobileBlocker.classList.remove('hidden');
-        mobileBlocker.classList.add('flex');
+    // 4. Delegate klikove za data-ga-event
+    document.addEventListener('click', (e) => {
+        const trackable = e.target.closest('[data-ga-event]');
+        if (trackable) {
+            const eventName = trackable.getAttribute('data-ga-event');
+            const location = trackable.getAttribute('data-ga-location');
+            trackEvent(eventName, location ? { location } : {});
+        }
+    });
+
+    // 5. Dugme za promenu jezika
+    document.addEventListener('click', (e) => {
+        const langBtn = e.target.closest('#lang-switch, [data-lang-switch]') || (e.target.closest('button')?.querySelector('#lang-text') ? e.target.closest('button') : null);
+        if (langBtn) {
+            e.preventDefault();
+            toggleLanguage();
+        }
+    });
+
+    const closeUpdateBtn = document.getElementById('closeUpdateBtn');
+    if (closeUpdateBtn) {
+        closeUpdateBtn.addEventListener('click', () => window.close());
     }
 
-
-
-    // Scroll Progress & Back to Top
+    // 6. Scroll Progress & Back to Top
     const backToTop = document.getElementById('backToTop');
     const progressRing = document.getElementById('progressRing');
 
@@ -313,131 +321,111 @@ document.addEventListener('DOMContentLoaded', async () => {
                 backToTop.classList.add('opacity-0', 'pointer-events-none');
                 backToTop.classList.remove('opacity-100', 'pointer-events-auto');
             }
-        });
+        }, { passive: true });
 
         backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     }
 
-    // GSAP Animacije (ako su biblioteke učitane)
-    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-        gsap.registerPlugin(ScrollTrigger);
-
-        // Komandni centar (Pinned cards stacking)
-        const cards = gsap.utils.toArray('.card');
-        if (cards.length > 0 && document.getElementById('komandni-centar')) {
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: "#komandni-centar",
-                    start: "top top",
-                    end: "+=3000",
-                    pin: true,
-                    scrub: 1.5,
-                    pinSpacing: true
-                }
-            });
-
-            cards.forEach((card, index) => {
-                if (index === 0) {
-                    // Prva karta lagano nestaje/skalira se kad druga dolazi
-                    tl.to(card, { scale: 0.95, opacity: 0.8, duration: 1 }, 0.5);
-                    return;
-                }
-                
-                // Ostale karte dolaze odozdo
-                tl.to(card, { 
-                    y: 0, 
-                    ease: "power2.out", 
-                    duration: 1.5 
-                }, (index - 0.5) * 1.2);
-
-                if (index < cards.length - 1) {
-                    // Karta koja je trenutno tu se blago povlači nazad
-                    tl.to(card, { scale: 0.95, opacity: 0.8, duration: 1 }, index * 1.2 + 0.5);
-                }
-            });
-        }
-
-        // Elitni radnik (Floating items parallax & move)
-        const floatingItems = gsap.utils.toArray('.floating-item');
-        if (floatingItems.length > 0 && document.getElementById('target-audience')) {
-            floatingItems.forEach((item, i) => {
-                // Početna nasumična pozicija za lebdenje
-                gsap.to(item, {
-                    y: "-=20",
-                    x: i % 2 === 0 ? "+=10" : "-=10",
-                    duration: 2 + i,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut"
-                });
-
-                // Scroll animacija - parallax efekat
-                gsap.to(item, {
-                    scrollTrigger: {
-                        trigger: "#target-audience",
-                        start: "top bottom",
-                        end: "bottom top",
-                        scrub: 2
-                    },
-                    y: i % 2 === 0 ? -100 : 100,
-                    rotation: i % 2 === 0 ? 10 : -10,
-                    ease: "none"
-                });
-            });
-
-            // Nucleus spin
-            if (document.getElementById('nucleus')) {
-                gsap.to('#nucleus', {
-                    scrollTrigger: {
-                        trigger: "#target-audience",
-                        start: "top bottom",
-                        end: "bottom top",
-                        scrub: 1
-                    },
-                    rotation: 360,
-                    scale: 1.2,
-                    ease: "none"
-                });
+    // 7. GSAP Animacije (komandni centar & timeline)
+    const cards = gsap.utils.toArray('.card');
+    if (cards.length > 0 && document.getElementById('komandni-centar')) {
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#komandni-centar",
+                start: "top top",
+                end: "+=3000",
+                pin: true,
+                scrub: 1.5,
+                pinSpacing: true
             }
-        }
+        });
 
-        // Tri koraka do produktivnosti (Timeline steps)
-        const steps = gsap.utils.toArray('.timeline-item');
-        if (steps.length > 0 && document.getElementById('workflow-timeline')) {
-            steps.forEach((step, i) => {
-                const number = step.querySelector('.step-number');
-                const icon = step.querySelector('.inline-flex');
+        cards.forEach((card, index) => {
+            if (index === 0) {
+                tl.to(card, { scale: 0.95, opacity: 0.8, duration: 1 }, 0.5);
+                return;
+            }
+            tl.to(card, { y: 0, ease: "power2.out", duration: 1.5 }, (index - 0.5) * 1.2);
+            if (index < cards.length - 1) {
+                tl.to(card, { scale: 0.95, opacity: 0.8, duration: 1 }, index * 1.2 + 0.5);
+            }
+        });
+    }
 
-                gsap.from(step, {
-                    scrollTrigger: {
-                        trigger: step,
-                        start: "top 80%",
-                        toggleActions: "play none none reverse"
-                    },
-                    y: 50,
-                    opacity: 0,
-                    duration: 1,
-                    ease: "power3.out"
-                });
+    // Elitni radnik (Floating items)
+    const floatingItems = gsap.utils.toArray('.floating-item');
+    if (floatingItems.length > 0 && document.getElementById('target-audience')) {
+        floatingItems.forEach((item, i) => {
+            gsap.to(item, {
+                y: "-=20",
+                x: i % 2 === 0 ? "+=10" : "-=10",
+                duration: 2 + i,
+                repeat: -1,
+                yoyo: true,
+                ease: "sine.inOut"
+            });
+            gsap.to(item, {
+                scrollTrigger: {
+                    trigger: "#target-audience",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 2
+                },
+                y: i % 2 === 0 ? -100 : 100,
+                rotation: i % 2 === 0 ? 10 : -10,
+                ease: "none"
+            });
+        });
 
-                if (number) {
-                    gsap.to(number, {
-                        scrollTrigger: {
-                            trigger: step,
-                            start: "top 60%",
-                            toggleActions: "play none none reverse"
-                        },
-                        color: "#00ff88", // Menja se u brand boju kad je u fokusu
-                        opacity: 0.15,
-                        scale: 1.1,
-                        duration: 0.8
-                    });
-                }
+        if (document.getElementById('nucleus')) {
+            gsap.to('#nucleus', {
+                scrollTrigger: {
+                    trigger: "#target-audience",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 1
+                },
+                rotation: 360,
+                scale: 1.2,
+                ease: "none"
             });
         }
     }
 
-    // Feedback Forma (Uninstall stranica)
+    // Timeline koraci
+    const steps = gsap.utils.toArray('.timeline-item');
+    if (steps.length > 0 && document.getElementById('workflow-timeline')) {
+        steps.forEach((step) => {
+            const number = step.querySelector('.step-number');
+            gsap.from(step, {
+                scrollTrigger: {
+                    trigger: step,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                ease: "power3.out"
+            });
+
+            if (number) {
+                gsap.to(number, {
+                    scrollTrigger: {
+                        trigger: step,
+                        start: "top 60%",
+                        toggleActions: "play none none reverse"
+                    },
+                    color: "#00ff88",
+                    opacity: 0.15,
+                    scale: 1.1,
+                    duration: 0.8
+                });
+            }
+        });
+    }
+
+    // 8. Feedback Forma (Uninstall stranica)
     const feedbackForm = document.getElementById('feedbackForm');
     if (feedbackForm) {
         feedbackForm.addEventListener('submit', function (e) {
@@ -461,12 +449,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                 } else throw new Error();
             })
             .catch(() => {
-                alert(window.currentTranslations['uni_alert_error'] || 'Greška.');
+                alert(window.currentTranslations['uni_alert_error'] || 'Greska pri slanju.');
                 if (btn) {
-                    btn.innerText = window.currentTranslations['uni_form_btn'] || 'Pošalji';
+                    btn.innerText = window.currentTranslations['uni_form_btn'] || 'Posalji';
                     btn.disabled = false;
                 }
             });
         });
     }
+
+    // Inicijalno iscrtavanje Lucide ikonica
+    renderLucideIcons();
 });

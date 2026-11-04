@@ -144,7 +144,7 @@
 
 
 
-  "mobile_mailto": "mailto:?subject=🚀 Your link for the All In One extension&body=Hey!%0A%0AInspiration found you on your phone, but All In One is installed on a computer.%0A%0AClick the link below when you are at your PC and maximize your workflow:%0A%0Ahttps://allinone.milanwebportal.com%0A%0A- All In One team",
+  "mobile_mailto": "mailto:?subject=Your link for the All In One extension&body=Hey!%0A%0AInspiration found you on your phone, but All In One is installed on a computer.%0A%0AClick the link below when you are at your PC and maximize your workflow:%0A%0Ahttps://allinone.milanwebportal.com%0A%0A- All In One team",
 
 
 
@@ -162,6 +162,15 @@
   "ins_page_title": "All In One | Thank you for installing",
   "ins_hero_title": "Thank you for <br><span class=\"text-brand\">Installing!</span>",
   "ins_hero_subtitle": "You have successfully added All In One to your browser. <br>Discover all the features now available to you below.",
+  "ins_step1_badge": "Step 01",
+  "ins_step1_title": "Pin the Extension",
+  "ins_step1_desc": "Click the puzzle piece icon in your Chrome toolbar and pin All In One for fast 1-click access.",
+  "ins_step2_badge": "Step 02",
+  "ins_step2_title": "Open Quick Menu",
+  "ins_step2_desc": "Click the green All In One icon to open a sleek control hub with all productivity tools.",
+  "ins_step3_badge": "Step 03",
+  "ins_step3_title": "Enjoy All 15+ Tools",
+  "ins_step3_desc": "Explore Radio, Volume 1000%, Dark Mode, Page Ruler, Tech Scanner, Smart Notes, and Webtime Tracker.",
   "ins_cta_title": "Have an idea for a new tool?",
   "ins_cta_desc": "All In One grows thanks to your suggestions.",
   "ins_cta_btn": "Contact us",
@@ -185,7 +194,13 @@
 
   "priv_page_title": "All In One | Privacy Policy",
   "priv_hero_title": "Privacy <br><span class=\"text-brand\">Policy</span>",
-  "priv_hero_subtitle": "Last updated: April 2026.",
+  "priv_hero_subtitle": "Last updated: November 2026 (Compliant with Chrome Web Store Limited Use Policy)",
+  "priv_sec_limited_title": "Chrome Web Store Limited Use Policy Compliance",
+  "priv_sec_limited_desc": "We strictly adhere to the Google Chrome Web Store Limited Use Policy (August 2026):",
+  "priv_sec_limited_li1": "Single Purpose Principle: All features in All In One serve solely for personal user productivity.",
+  "priv_sec_limited_li2": "Exclusively Local Storage (chrome.storage.local): User entries (notes, counter history, settings, stopwatch, and visited domains in Webtime Tracker) remain strictly on your local device.",
+  "priv_sec_limited_li3": "No Third-Party Data Transfers: Data is never transmitted, sold, or used for advertising profiling or training external AI models.",
+  "priv_sec_limited_li4": "Control and Deletion: Users can export all data in JSON or HTML at any time, or permanently delete it with a single click in settings.",
   "priv_sec_intro_title": "Introduction",
   "priv_sec_intro_desc": "All In One is an extension developed by Milan Web Portal. We highly value your privacy and are committed to protecting all information that may be processed through our add-on.",
   "priv_sec_data_title": "Data Collection",
@@ -209,5 +224,29 @@
   "priv_sec_changes_title": "Policy Changes",
   "priv_sec_changes_desc": "We reserve the right to periodically update this policy to reflect new features or legal regulations. All changes become effective as soon as they are published on this page.",
   "priv_sec_questions_title": "Questions?",
-  "priv_sec_questions_desc": "If you have any doubts, feel free to contact us."
+  "priv_sec_questions_desc": "If you have any doubts, feel free to contact us.",
+  "priv_mobile_title": "DESKTOP <br><span class=\"text-brand\">ONLY.</span>",
+  "priv_mobile_desc": "Desktop browser extensions do not run on mobile phones. Email yourself the link to install on your computer.",
+  "priv_mobile_btn": "SEND TO EMAIL",
+  "priv_mobile_mailto": "mailto:?subject=Your link for the All In One extension&body=Hey!%0A%0AInspiration found you on your phone, but All In One is installed on a computer.%0A%0AClick the link below when you are at your PC and maximize your workflow:%0A%0Ahttps://allinone.milanwebportal.com%0A%0A- All In One team",
+  "hero_powered": "Powered by",
+  "faq_subtitle": "ANSWERS TO QUESTIONS",
+  "faq_title": "Frequently Asked <br><span class=\"text-brand\">Questions</span>",
+  "faq_desc": "Everything you need to know about features, security, browsers, and installing the All In One extension.",
+  "faq_q1": "What is the All In One extension?",
+  "faq_a1": "All In One is a free browser extension combining 15 productivity tools in one place: Color Picker, Dark Mode, Page Ruler, Font Finder, Radio IN, 1000% Sound Booster, Webtime Tracker, Smart Notes, Page Marker, Return YouTube Dislike, and much more. Everything runs instantly without slowing down your browser.",
+  "faq_q2": "Is All In One really 100% free?",
+  "faq_a2": "Yes. All In One is 100% free. There are no hidden costs, subscriptions, premium paywalls, or ads. All tools are unlocked immediately after installation from the Chrome Web Store without registration or credit card.",
+  "faq_q3": "Which browsers support All In One?",
+  "faq_a3": "All In One works on all Chromium-based browsers: Google Chrome, Microsoft Edge, Brave, Opera, Opera GX, Vivaldi, and Arc. Supported on desktop operating systems: Windows, macOS, Linux, and ChromeOS.",
+  "faq_q4": "Does All In One collect personal data?",
+  "faq_a4": "No. All In One applies strict local-first data processing. Your notes, webtime tracking stats, stopwatch clips, and settings stay solely on your local computer. The extension never accesses passwords, private sessions, or tracks users.",
+  "faq_q5": "Can I boost browser audio above 100%?",
+  "faq_a5": "Yes. The Sound Booster tool utilizes a Web Audio API dynamic compressor to boost any tab's volume up to 1000%, well above default browser limitations. Includes a quick reset button to restore default levels.",
+  "faq_q6": "How do I use the live stopwatch shortcut?",
+  "faq_a6": "Press Alt+Shift+L at any moment during a live stream or video editing session. The extension logs the exact timestamp automatically, and the full clip list exports with one click as a clean .txt file ready for Premiere Pro, DaVinci Resolve, or CapCut.",
+  "faq_q7": "Does the extension work on mobile devices?",
+  "faq_a7": "No. All In One is designed specifically for desktop PCs and laptops. Mobile browsers do not support Chrome extensions. On mobile, you can send yourself a link via email and install it once on your desktop.",
+  "faq_q8": "How many languages are supported?",
+  "faq_a8": "All In One supports 55 languages on the Chrome Web Store, and the extension UI automatically detects your browser's language."
 }

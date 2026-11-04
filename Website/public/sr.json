@@ -144,7 +144,7 @@
 
 
 
-  "mobile_mailto": "mailto:?subject=🚀 Tvoj link za All In One ekstenziju&body=Hej!%0A%0AInspiracija te je našla na telefonu, ali se All In One instalira na kompjuteru.%0A%0AKlikni na link ispod kada budeš za kompjuterom i pokreni svoj workflow na max:%0A%0Ahttps://allinone.milanwebportal.com%0A%0A- All In One tim", 
+  "mobile_mailto": "mailto:?subject=Tvoj link za All In One ekstenziju&body=Hej!%0A%0AInspiracija te je nasla na telefonu, ali se All In One instalira na kompjuteru.%0A%0AKlikni na link ispod kada budes za kompjuterom i pokreni svoj workflow na max:%0A%0Ahttps://allinone.milanwebportal.com%0A%0A- All In One tim", 
   
   
   
@@ -162,6 +162,15 @@
   "ins_page_title": "All In One | Hvala na instalaciji",
   "ins_hero_title": "Hvala na <br><span class=\"text-brand\">Instalaciji!</span>",
   "ins_hero_subtitle": "Uspešno si dodao All In One u svoj browser. <br>U nastavku detaljno upoznaj sve funkcije koje su ti sada dostupne.",
+  "ins_step1_badge": "Korak 01",
+  "ins_step1_title": "Zakači ekstenziju",
+  "ins_step1_desc": "Klikni na ikonicu slagalice u gornjem desnom uglu svog pregledača i zakači All In One u traku.",
+  "ins_step2_badge": "Korak 02",
+  "ins_step2_title": "Otvori brzi meni",
+  "ins_step2_desc": "Jednim klikom na zelenu All In One ikonicu otvoriće se moderan kontrolni centar sa svim opcijama.",
+  "ins_step3_badge": "Korak 03",
+  "ins_step3_title": "Uživaj u svim alatima",
+  "ins_step3_desc": "Isprobaj Radio, Zvuk 1000%, Dark Mode, Lenjir, Tech Scanner, Pametne Beleške i Webtime Tracker.",
   "ins_cta_title": "Imaš ideju za novi alat?",
   "ins_cta_desc": "All In One raste zahvaljujući tvojim predlozima.",
   "ins_cta_btn": "Piši nam",
@@ -184,7 +193,13 @@
 
   "priv_page_title": "All In One | Politika Privatnosti",
   "priv_hero_title": "Politika <br><span class=\"text-brand\">Privatnosti</span>",
-  "priv_hero_subtitle": "Poslednji put ažurirano: April 2026.",
+  "priv_hero_subtitle": "Poslednji put ažurirano: Novembar 2026. (Usklađeno sa Chrome Web Store Limited Use pravilima)",
+  "priv_sec_limited_title": "Usklađenost sa Chrome Web Store Limited Use politikom",
+  "priv_sec_limited_desc": "U potpunosti poštujemo Google Chrome Web Store pravila o ograničenoj upotrebi podataka (Limited Use Policy, avgust 2026):",
+  "priv_sec_limited_li1": "Pravilo jedne primarne svrhe (Single Purpose): Sve funkcije ekstenzije All In One služe isključivo ličnoj produktivnosti korisnika.",
+  "priv_sec_limited_li2": "Isključivo lokalno skladište (chrome.storage.local): Korisnički unosi (beleške, istorija brojača, podešavanja, štoperica i sajtovi u Webtime Tracker-u) nalaze se isključivo u lokalnom profilu tvog računara.",
+  "priv_sec_limited_li3": "Bez prenosa trećim stranama: Podaci se nikada ne prenose, ne prodaju i ne koriste za reklamno profilisanje ili treniranje eksternih modela.",
+  "priv_sec_limited_li4": "Kontrola i brisanje: Korisnik u svakom trenutku može izvesti sve svoje podatke u JSON ili HTML formatu, ili ih jednim klikom u podešavanjima trajno obrisati.",
   "priv_sec_intro_title": "Uvod",
   "priv_sec_intro_desc": "All In One je ekstenzija razvijena od strane Milan Web Portal. Izuzetno cenimo tvoju privatnost i posvećeni smo zaštiti svih informacija koje se mogu procesuirati putem našeg dodatka.",
   "priv_sec_data_title": "Prikupljanje podataka",
@@ -208,5 +223,29 @@
   "priv_sec_changes_title": "Izmene politike",
   "priv_sec_changes_desc": "Zadržavamo pravo da povremeno ažuriramo ovu politiku kako bismo ispratili nove funkcije ili zakonske regulative. Sve izmene postaju važeće onog trenutka kada budu objavljene na ovoj stranici.",
   "priv_sec_questions_title": "Pitanja?",
-  "priv_sec_questions_desc": "Ukoliko imaš bilo kakve nedoumice, slobodno nas kontaktiraj."
+  "priv_sec_questions_desc": "Ukoliko imaš bilo kakve nedoumice, slobodno nas kontaktiraj.",
+  "priv_mobile_title": "SAMO ZA <br><span class=\"text-brand\">DESKTOP.</span>",
+  "priv_mobile_desc": "Desktop browser ekstenzije ne rade na telefonu. Pošalji sebi link i instaliraj na kompu.",
+  "priv_mobile_btn": "POŠALJI NA MAIL",
+  "priv_mobile_mailto": "mailto:?subject=Tvoj link za All In One ekstenziju&body=Hej!%0A%0AInspiracija te je nasla na telefonu, ali se All In One instalira na kompjuteru.%0A%0AKlikni na link ispod kada budes za kompjuterom i pokreni svoj workflow na max:%0A%0Ahttps://allinone.milanwebportal.com%0A%0A- All In One tim",
+  "hero_powered": "Powered by",
+  "faq_subtitle": "ODGOVORI NA PITANJA",
+  "faq_title": "Često postavljana <br><span class=\"text-brand\">pitanja</span>",
+  "faq_desc": "Sve što te zanima o funkcijama, sigurnosti, pretraživačima i instalaciji All In One ekstenzije.",
+  "faq_q1": "Šta je All In One ekstenzija?",
+  "faq_a1": "All In One je besplatna browser ekstenzija koja objedinjuje 15 alata za produktivnost na jednom mestu: Color Picker, Dark Mode, Page Ruler, Font Finder, Radio IN, Zvuk 1000%, Webtime Tracker, Pametne Beleške, Page Marker, Return YouTube Dislike i još mnogo toga. Sve radi instant bez usporavanja pretraživača.",
+  "faq_q2": "Da li je All In One zaista 100% besplatan?",
+  "faq_a2": "Da. All In One je 100% besplatan. Nema skrivenih troškova, pretplata, premium zaključavanja niti reklama. Svi alati su odmah dostupni nakon instalacije sa Chrome Web Store-a bez registracije ili unosa kartice.",
+  "faq_q3": "Na kojim pretraživačima radi All In One?",
+  "faq_a3": "All In One radi na svim Chromium-baziranim pretraživačima: Google Chrome, Microsoft Edge, Brave, Opera, Opera GX, Vivaldi i Arc. Podržani su svi desktop operativni sistemi: Windows, macOS, Linux i ChromeOS.",
+  "faq_q4": "Da li All In One prikuplja lične podatke?",
+  "faq_a4": "Ne. All In One primenjuje strogu lokalnu obradu podataka (local-first). Vaše beleške, statistika praćenja vremena, štoperica i sva podešavanja čuvaju se isključivo lokalno na vašem računaru. Ekstenzija nema pristup lozinkama, privatnim sesijama niti profilira korisnike.",
+  "faq_q5": "Mogu li da pojačam zvuk iznad 100% u pretraživaču?",
+  "faq_a5": "Da. Alat Zvuk koristi Web Audio API dinamički kompresor i omogućava pojačavanje tona bilo kog taba do čak 1000%, daleko iznad uobičajenog limita pretraživača. Uključeno je i brzo reset dugme za vraćanje na standardnu jačinu.",
+  "faq_q6": "Kako se koristi prečica za štopericu tokom lajva?",
+  "faq_a6": "Pritisnite prečicu Alt+Shift+L u bilo kom trenutku tokom prenosa uživo ili video montaže. Ekstenzija automatski beleži tačan tajmstemp, a cela lista klipova se jednim klikom eksportuje kao čist .txt fajl spreman za Premiere Pro, DaVinci Resolve ili CapCut.",
+  "faq_q7": "Da li ekstenzija radi na mobilnim telefonima?",
+  "faq_a7": "Ne. All In One je desktop Chrome ekstenzija napravljena za desktop računare i laptopove. Mobilni pretraživači ne podržavaju Chrome ekstenzije. Na telefonu možete poslati sebi link na mejl i instalirati ga kada budete za računarom.",
+  "faq_q8": "Koliko jezika je podržano?",
+  "faq_a8": "All In One podržava 55 svetskih jezika na Chrome Web Store prodavnici, a interfejs ekstenzije automatski prepoznaje jezik vašeg pretraživača i prilagođava se."
 }

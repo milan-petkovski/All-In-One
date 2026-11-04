@@ -12,49 +12,17 @@
     <meta name="author" content="Milan Web Portal">
     <meta name="theme-color" content="#f5f6f7">
 
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
     <link rel="stylesheet" href="input.css">
 
     <meta property="og:title" content="All In One | Uspešno ažurirano">
     <meta property="og:description" content="Tvoja omiljena ekstenzija je upravo postala još bolja.">
-    <meta property="og:image" content="https://allinone.milanwebportal.com/Branding/EN/1.png">
+    <meta property="og:image" content="https://allinone.milanwebportal.com/images/og-sr.jpg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"
-        media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap">
-    </noscript>
-
-    <script src="https://unpkg.com/lucide@latest" defer></script>
-
-    <!-- Google Tag & Consent Mode (2026 Modern Edition) -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-
-        // Default Consent Mode v2
-        gtag('consent', 'default', {
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied',
-            'analytics_storage': 'granted',
-            'wait_for_update': 500
-        });
-
-        gtag('js', new Date());
-        gtag('config', 'G-F52S6J4TZV', {
-            'anonymize_ip': true,
-            'cookie_flags': 'SameSite=None;Secure'
-        });
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F52S6J4TZV"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
 </head>
 
 <body class="antialiased font-sans bg-bglight">
@@ -98,20 +66,19 @@
         <nav
             class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center bg-white/70 backdrop-blur-2xl rounded-full border border-white/40 shadow-[0_20px_40px_rgba(0,0,0,0.08)] pointer-events-auto transition-all duration-500 hover:shadow-brand/5 hover:border-brand/20 flex-wrap gap-4">
             <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
-                <img src="/logo.png" alt="All In One Logo" class="w-8 h-8 object-contain transition-transform duration-500 group-hover:rotate-12">
+                <img src="/logo-128.webp" alt="All In One Logo" width="32" height="32" fetchpriority="high" decoding="async" class="w-8 h-8 object-contain transition-transform duration-500 group-hover:rotate-12">
                 <span class="font-black text-3xl text-brand uppercase leading-none relative -top-[1px]">All In One</span>
             </a>
 
             <div class="flex items-center gap-3">
                 <a href="https://chromewebstore.google.com/detail/all-in-one/hmkcbieabcldlndhjeemggokhlebjoem/reviews"
                     class="inline-flex items-center justify-center gap-2 bg-brand text-darkpanel font-black py-3 px-8 rounded-full hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_10px_25px_rgba(0,255,136,0.4)] whitespace-nowrap uppercase text-sm"
-                    target="_blank"
-                    onclick="gtag('event', 'website_rate', {location: 'Navbar'});">
+                    target="_blank" rel="noopener noreferrer" data-ga-event="website_rate" data-ga-location="Navbar">
                     <i data-lucide="star" class="w-5 h-5 stroke-[3]"></i>
                     <span class="max-[425px]:hidden" data-i18n="upd_nav_rate">Oceni na prodavnici</span>
                 </a>
 
-                <button onclick="toggleLanguage()"
+                <button id="lang-switch" aria-label="Promeni jezik"
                     class="inline-flex items-center justify-center gap-2 bg-brand text-darkpanel font-black py-3 px-5 rounded-full hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_10px_25px_rgba(0,255,136,0.4)] whitespace-nowrap uppercase text-sm pointer-events-auto">
                     <i data-lucide="languages" class="w-5 h-5 stroke-[3]"></i>
                     <span id="lang-text">EN</span>
@@ -119,8 +86,7 @@
 
                 <a href="https://paypal.me/milanwebportal"
                     class="inline-flex items-center justify-center gap-2 bg-brand text-darkpanel font-black py-3 px-5 rounded-full hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_10px_25px_rgba(0,255,136,0.4)] whitespace-nowrap uppercase text-sm"
-                    target="_blank"
-                    onclick="gtag('event', 'website_coffee');">
+                    target="_blank" rel="noopener noreferrer" data-ga-event="website_coffee">
                     <i data-lucide="coffee" class="w-5 h-5 stroke-[3]"></i>
                 </a>
             </div>
@@ -162,7 +128,7 @@
 
         <!-- Action Button -->
         <div class="mt-32 text-center">
-            <button onclick="window.close()" class="px-12 py-5 font-black rounded-2xl transition-all duration-300 hover:scale-105 active:scale-95 shadow-2xl outline-none focus:outline-none border-none ring-0 focus:ring-0
+            <button id="closeUpdateBtn" class="px-12 py-5 font-black rounded-2xl transition-all duration-300 hover:scale-105 active:scale-95 shadow-2xl outline-none focus:outline-none border-none ring-0 focus:ring-0
                     bg-darkpanel text-white 
                     hover:bg-brand hover:text-darkpanel">
 
@@ -183,15 +149,14 @@
         <div class="relative max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
 
             <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
-                <img src="/logo.png" alt="All In One Logo" class="w-10 h-10 object-contain transition-transform duration-500 group-hover:rotate-12">
+                <img src="/logo-128.webp" alt="All In One Logo" width="40" height="40" class="w-10 h-10 object-contain transition-transform duration-500 group-hover:rotate-12">
                 <span class="font-black text-4xl text-brand uppercase leading-none relative -top-[2px]">All In One</span>
             </a>
 
             <div
                 class="text-gray-500 text-sm font-medium text-center md:text-left bg-gray-50/80 px-6 py-2.5 rounded-full border border-gray-100 shadow-sm">
                 &copy; 2026
-                <a href="https://milanwebportal.com" target="_blank"
-                    onclick="gtag('event', 'website_milan');"
+                <a href="https://milanwebportal.com" target="_blank" rel="noopener noreferrer" data-ga-event="website_milan"
                     class="text-brand transition-all font-bold relative inline-block group/link">
                     Milan Web Portal
                     <span

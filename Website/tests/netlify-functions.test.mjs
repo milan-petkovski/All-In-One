@@ -121,7 +121,7 @@ test('track.js returns 400 when no valid events after sanitization', async () =>
 });
 
 
-test('track.js sanitizes event params — strips unsafe keys and truncates values', async () => {
+test('track.js sanitizes event params: strips unsafe keys and truncates values', async () => {
   const longString = 'x'.repeat(200);
   const event = makeEvent({
     body: JSON.stringify({
@@ -172,7 +172,7 @@ test('health.js handles OPTIONS preflight', async () => {
 
 test('health.js includes env and nodejs checks', async () => {
   const result = await healthFn.handler({ httpMethod: 'GET', headers: {} }, makeFakeContext());
-  // 200 or 503 depending on GA reachability — both are acceptable in unit test
+  // 200 or 503 depending on GA reachability: both are acceptable in unit test
   assert.ok([200, 503].includes(result.statusCode), `unexpected status ${result.statusCode}`);
   const body = JSON.parse(result.body);
   assert.ok(body.checks.nodejs);

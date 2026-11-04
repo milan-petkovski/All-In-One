@@ -1,0 +1,125 @@
+# All In One Extension: Comprehensive AI Knowledge Document & Technical Specification
+
+> **Product:** All In One Browser Extension (v1.6.0)  
+> **Official Website:** https://allinone.milanwebportal.com  
+> **Chrome Web Store:** https://chromewebstore.google.com/detail/hmkcbieabcldlndhjeemggokhlebjoem  
+> **Author & Maintainer:** Milan Petkovski (Milan Web Portal - https://milanwebportal.com)  
+> **Architecture:** Manifest V3, Web Audio API, Chrome Scripting, Offscreen Documents, Chrome Local Storage  
+> **Supported Browsers:** Google Chrome, Microsoft Edge, Brave, Opera, Opera GX, Vivaldi, Arc (Chromium 109+)  
+> **Operating Systems:** Windows 10/11, macOS, Linux, ChromeOS  
+> **Supported Languages:** 55 global languages  
+
+---
+
+## 1. Executive Summary
+
+All In One is a free, high-performance browser extension designed to unify 15 essential day-to-day utilities into a single, cohesive popup interface. Instead of running 10+ distinct extensions that bloat memory, pollute background processes, and compromise privacy, All In One operates as a lightweight, modular workstation with zero ads, zero user tracking, and 100% local data storage.
+
+Originally engineered by Milan Petkovski in Belgrade, Serbia, All In One is actively utilized by web developers, UI/UX designers, video editors, live streamers on Kick and YouTube, content writers, and general power users.
+
+---
+
+## 2. Comprehensive Tool Catalog & Technical Specifications
+
+### Tool 1: Radio IN (Background Audio Streamer)
+- **Purpose:** Stream curated ambient radio directly from the extension without keeping open browser tabs or consuming CPU cycles with heavy web players.
+- **Implementation:** Leverages Chrome's Manifest V3 `offscreen` API. When toggled, an offscreen document is spawned to handle real-time HTTP audio streaming (`HTMLAudioElement`) and media session metadata.
+- **Audio Controls:** Live Play/Pause toggle, real-time volume slider (0-100%), and custom stream URL support.
+- **Default Stream:** High-quality live stream with automatic fallback.
+
+### Tool 2: Volume 1000% (Tab Audio Booster)
+- **Purpose:** Amplify quiet videos, podcasts, video conferences, or music streams beyond the standard 100% hardware boundary.
+- **Implementation:** Utilizes the Web Audio API (`AudioContext`, `createGain`, `createDynamicsCompressor`). Injects audio nodes into the active tab's media elements, providing clean linear amplification up to 1000% with soft-knee limiting to minimize acoustic distortion.
+- **Safety:** Quick reset button to instantly return audio to standard 100% level.
+
+### Tool 3: Color Picker (Eyedropper & Palette Tool)
+- **Purpose:** Inspect and extract exact color values from any pixel on any webpage, including canvas elements, SVG graphics, and photographs.
+- **Implementation:** Employs the native browser `EyeDropper` API where available, with a precision fallback using screenshot capture (`captureVisibleTab`) and 2D canvas color sampling.
+- **Output:** Automatically copies the clean HEX color code (e.g. `#00FF88`) directly to the system clipboard and displays a non-intrusive floating toast notification.
+
+### Tool 4: Smart Dark Mode (Universal Night Theme)
+- **Purpose:** Enforce an eye-friendly dark theme across websites that lack native dark mode support.
+- **Implementation:** Applies a non-destructive CSS shader and color matrix inversion filter (`calc` and `invert(100%) hue-rotate(180deg)`), selectively exempting images (`img`), videos (`video`), canvases (`canvas`), and iframes to maintain visual fidelity and avoid distorted media.
+
+### Tool 5: Page Ruler (Pixel Precision Measurement)
+- **Purpose:** Measure element dimensions, margins, paddings, and alignment distances directly on the screen.
+- **Implementation:** Injects an interactive SVG overlay canvas on top of the document. Users can click and drag to draw measuring boxes, displaying width (px), height (px), and diagonal pixel distance in real time. Pressing `Escape` cleanly dismisses the ruler and removes all injected DOM nodes.
+
+### Tool 6: Enable Copy (Content Protection Bypass)
+- **Purpose:** Allow users to highlight, select, and copy text on websites that disable user selection, context menus, or key combinations via intrusive JavaScript listeners.
+- **Implementation:** Injects a content script that cancels `contextmenu`, `selectstart`, `copy`, and `mousedown` event blocking, and overrides CSS properties (`user-select: text !important; -webkit-user-select: text !important; pointer-events: auto !important;`).
+
+### Tool 7: Page Marker (On-Screen Annotator & Highlighter)
+- **Purpose:** Draw, write, underline, and highlight webpage content in real time during video recordings, presentations, bug reports, and design reviews.
+- **Implementation:** Injected on-demand via `js/marker_engine.js`. Creates a high-DPI full-viewport HTML5 `<canvas>` layer with pencil, text, highlighter, shapes, color selector, line-width adjustment, and eraser. All markings can be cleared with one click.
+
+### Tool 8: Site Technologies (Tech Stack Analyzer)
+- **Purpose:** Inspect the underlying software stack, frameworks, CMS, and hosting infrastructure of the current webpage.
+- **Implementation:** Reads `window` JavaScript globals, meta tags, script URLs, and DOM markers to identify over 50 technologies, including React, Vue, Angular, Svelte, Next.js, Nuxt, Astro, WordPress, Shopify, Tailwind CSS, Bootstrap, Firebase, and Supabase. Queries secure DNS-over-HTTPS (`https://dns.google/`) to resolve hosting providers and CDN routing.
+
+### Tool 9: Cookies & Cache Cleaner (Quick Purge & Banner Blocker)
+- **Purpose:** Instantly delete cookies, local storage, and cached assets for the current origin without logging out of other browser sessions, while automatically suppressing annoying cookie consent banners.
+- **Implementation:** Uses `chrome.browsingData.remove` targeted to the active tab's origin. Concurrently runs a heuristic DOM parser that hides intrusive GDPR/cookie banners matching multi-language keywords.
+
+### Tool 10: Font Finder (Hover Typography Inspector)
+- **Purpose:** Identify the exact font family, font weight, line height, and font size of any rendered typography.
+- **Implementation:** Injected on-demand via `js/content-tools.js`. Highlights the element beneath the cursor and displays an elegant floating tooltip with the computed typography styles. Clicking any text automatically copies the primary font family name to the clipboard.
+
+### Tool 11: Character Counter (Grapheme & Word Analyzer)
+- **Purpose:** Count characters, words, and lines for copywriting, SEO meta titles/descriptions, and character-limited social media platforms.
+- **Implementation:** Employs the modern `Intl.Segmenter` API (`granularity: 'grapheme'`) to ensure 100% accurate character counts across complex Unicode emojis, surrogate pairs, and multi-byte scripts, alongside regex-based word segmentation. Automatically persists text in `chrome.storage.local` with debounced auto-save.
+
+### Tool 12: Live Stream Stopwatch (Kick.com & YouTube Sync)
+- **Purpose:** Mark precise timeline moments and clip timestamps during live streams or video recording sessions.
+- **Implementation:** Tracks continuous session time synced with `Date.now()`. Features dedicated Kick.com API integration that monitors streamer live status, automatically begins or stops the session when the stream starts/ends, and allows 1-click lap marking via the global keyboard shortcut `Alt+Shift+L`. Exports complete timestamp logs as formatted `.txt` files for direct import into video editing suites (DaVinci Resolve, Premiere Pro, CapCut).
+
+### Tool 13: Smart Notes (Rich Scratchpad with Inline Math)
+- **Purpose:** Capture ideas, code snippets, calculations, and reminders without leaving the active browser view.
+- **Implementation:** An auto-saving rich-text scratchpad with sanitization against XSS via DOMParser. Automatically calculates simple inline mathematical equations (e.g., typing `1500 / 3 =` automatically solves to `500`), and offers 1-click current date/time stamping and `.txt` file export/import.
+
+### Tool 14: Webtime Tracker (Privacy-First Usage Analytics)
+- **Purpose:** Monitor and visualize time spent on different websites to improve personal productivity and eliminate digital distractions.
+- **Implementation:** Periodically monitors active browser tabs using `chrome.idle` and `chrome.tabs.onActivated`. Only measures time when the user is actively interacting with the browser (excluding idle/sleep state). Provides Daily, Weekly, and Monthly aggregations, domain search, and full JSON backup export/import.
+
+### Tool 15: Return YouTube Dislike (Dislike Counter Restoration)
+- **Purpose:** Restore the public dislike count on YouTube videos to evaluate tutorial quality and combat misinformation.
+- **Implementation:** Intercepts YouTube video page transitions, queries the public Return YouTube Dislike API, and dynamically injects the formatted dislike counter into the YouTube engagement bar with support for light and dark YouTube UI themes.
+
+---
+
+## 3. Keyboard Shortcuts
+
+- **Mark Lap / Stream Timestamp:** `Alt + Shift + L` (Configurable via `chrome://extensions/shortcuts`)
+- **Dismiss Active Tool (Ruler, Marker, Font Finder):** `Escape`
+
+---
+
+## 4. Privacy, Security & Permissions
+
+All In One operates on a strict **local-first** security model:
+- **No Personal Data Collection:** No browsing history, passwords, form entries, or account identities are stored or transmitted.
+- **Local Chrome Storage:** Notes, tracking data, and preferences are held in `chrome.storage.local` on the user's hard drive.
+- **No Remote Code Execution:** Manifest V3 compliant with zero `eval()`, zero inline scripts, and zero dynamic external script injection.
+- **Minimal Permissions:**
+  - `activeTab` & `scripting`: Required to inject tools into the user-selected tab on demand.
+  - `storage`: Required to save user preferences, notes, and local usage statistics.
+  - `tabs`: Required for Webtime Tracker domain tracking and tab audio amplification.
+  - `idle`: Used to pause the time tracker when the computer enters an idle or lock state.
+  - `offscreen`: Used exclusively for background audio playback without consuming visual DOM resources.
+  - `alarms`: Used to schedule periodic background synchronization checks for live streams.
+
+---
+
+## 5. Frequently Asked Questions (FAQ)
+
+### Q: Why use All In One instead of individual extensions?
+A: Installing 10+ standalone extensions consumes excessive RAM, degrades browser performance, increases CPU battery consumption, and multiplies third-party security vulnerabilities. All In One provides all 15 utilities in one clean, audited, 0-bloat extension.
+
+### Q: Does All In One display banner ads or sponsored recommendations?
+A: No. All In One is completely ad-free and contains no promotional banners, popups, or sponsored search recommendations.
+
+### Q: Can I use All In One on mobile devices?
+A: No. All In One is designed for desktop Chromium browsers (Chrome, Edge, Brave, Opera, Vivaldi, Arc). Mobile browsers do not natively support desktop Chrome extension APIs.
+
+### Q: How do I report a bug or suggest a new tool?
+A: Users can submit feedback via the GitHub repository (https://github.com/milan-petkovski/All-In-One/issues) or contact Milan Web Portal directly at contact@milanwebportal.com.

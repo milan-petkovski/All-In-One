@@ -1,3 +1,6 @@
+# All In One Extension Robots Configuration
+# Optimized for Search Engines (SEO), Answer Engines (AEO) & Generative AI Agents (GEO / AIO)
+
 User-agent: *
 Allow: /
 Disallow: /hvala
@@ -5,7 +8,83 @@ Disallow: /azurirano
 Disallow: /obrisano
 Disallow: /404
 
-# Crawl delay (dobrovoljna preporuka)
+# OpenAI / ChatGPT Search & GPT Agents
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Google Search & Gemini / AI Overviews
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Perplexity AI Search
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic / Claude AI
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Microsoft Bing & Copilot
+User-agent: Bingbot
+Allow: /
+
+# Apple Intelligence & Siri Spotlight
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI, DuckAssist, You.com, Cohere, Amazon & CommonCrawl
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Crawl delay
 Crawl-delay: 2
 
+# Sitemaps & AI Context Endpoints
 Sitemap: https://allinone.milanwebportal.com/sitemap.xml
+# AI Agents Manifest: https://allinone.milanwebportal.com/llms.txt
+# Full AI Knowledge Base: https://allinone.milanwebportal.com/llms-full.txt
